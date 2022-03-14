@@ -1,0 +1,711 @@
+[
+	{
+		"id": "http://zotero.org/groups/4578582/items/3XHZW3B9",
+		"type": "article-journal",
+		"abstract": "The purpose of this document is to dene a set of quality standards, procedures and best practices to conform a Service Quality Assurance plan to serve as a reference within the European research ecosystem related projects for the adequate development, deployment, operation and integration of services into production research infrastructures.",
+		"DOI": "10.20350/DIGITALCSIC/12533",
+		"language": "en",
+		"source": "DOI.org (Datacite)",
+		"title": "EOSC-synergy: A set of Common Service Quality Assurance Baseline Criteria for Research Projects",
+		"title-short": "EOSC-synergy",
+		"URL": "https://digital.csic.es/handle/10261/214441",
+		"author": [
+			{
+				"family": "Orviz Fernández",
+				"given": "Pablo"
+			},
+			{
+				"family": "David",
+				"given": "Mario"
+			},
+			{
+				"family": "Gomes",
+				"given": "Jorge"
+			},
+			{
+				"literal": "Joao Pina"
+			},
+			{
+				"family": "Bernardo",
+				"given": "Samuel"
+			},
+			{
+				"family": "Campos Plasencia",
+				"given": "Isabel"
+			},
+			{
+				"family": "Moltó",
+				"given": "Germán"
+			},
+			{
+				"family": "Caballer",
+				"given": "Miguel"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					2,
+					10
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020",
+					6,
+					15
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/groups/4578582/items/E5MWZ4RK",
+		"type": "article-journal",
+		"abstract": "This document is based on an extract from CESSDA Technical Architecture v1.0, May 2016. It was created so that readers interested in CESSDA’s Software Maturity Levels (SMLs) can find out more, without having to browse through the entire Technical Architecture document. Usability is not only a political imperative of European Research Infrastructure Consortiums’ need to maximise their return on investment, but is also essential for growth with limited funds and ongoing interoperability. Mandating and checking the sustainability/usability of the software components of CESSDA’s technical Research Infrastructure is essential if it is to strengthen and grow, however there are always risks attached, for example: how much effort is required to integrate it into the current technical framework, how will it be maintained, does it conform to the standards required? Therefore the need to measure the maturity of software designed for use by CESSDA is essential to ensure the quality of the technical Research Infrastructure is maintained.",
+		"language": "eng",
+		"note": "DOI: 10.5281/zenodo.2614050",
+		"source": "Zenodo",
+		"title": "CESSDA Software Maturity Levels",
+		"URL": "https://zenodo.org/record/2614050",
+		"author": [
+			{
+				"family": "Shepherdson",
+				"given": "John"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					2,
+					10
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2019",
+					3,
+					29
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/groups/4578582/items/GJKJ7U8N",
+		"type": "article-journal",
+		"abstract": "The purpose of this document is to define a set of quality standards, procedures and best practices to conform a Software Quality Assurance plan to serve as a reference within the European research ecosystem related projects for the adequate development and timely delivery of software products.",
+		"DOI": "10.20350/DIGITALCSIC/12543",
+		"language": "en",
+		"source": "DOI.org (Datacite)",
+		"title": "A set of common software quality assurance baseline criteria for research projects",
+		"URL": "https://digital.csic.es/handle/10261/160086",
+		"author": [
+			{
+				"family": "Orviz",
+				"given": "Pablo"
+			},
+			{
+				"family": "López García",
+				"given": "Álvaro"
+			},
+			{
+				"family": "Duma",
+				"given": "Doina Cristina"
+			},
+			{
+				"family": "Donvito",
+				"given": "Giacinto"
+			},
+			{
+				"family": "David",
+				"given": "Mario"
+			},
+			{
+				"family": "Gomes",
+				"given": "Jorge"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					2,
+					10
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2017"
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/groups/4578582/items/QKRKCSZQ",
+		"type": "book",
+		"abstract": "The Task Force on Scholarly Infrastructures of Research Software, as part of the Architecture WG of the European Open Science Cloud (EOSC) Executive Board, has established a set of recommendations to allow EOSC to include software, next to other research outputs like publications and data, in the realm of its research artifacts. This work is built upon a survey and documentation of a representative panel of current operational infrastructures across Europe, comparing their scopes and approaches. This report summarises the state of the art, identifies best practices, as well as open problems, and paves the way for federating the different approaches in view of supporting the software pillar of EOSC.",
+		"call-number": "KI-02-20-998-EN-N",
+		"event-place": "LU",
+		"ISBN": "978-92-76-25568-0",
+		"language": "eng",
+		"publisher": "Publications Office of the European Union",
+		"publisher-place": "LU",
+		"source": "Publications Office of the European Union",
+		"title": "Scholarly infrastructures for research software: report from the EOSC Executive Board Working Group (WG) Architecture Task Force (TF) SIRS",
+		"title-short": "Scholarly infrastructures for research software",
+		"URL": "https://data.europa.eu/doi/10.2777/28598",
+		"author": [
+			{
+				"literal": "Directorate-General for Research and Innovation\n                \n                        (European Commission)"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					1,
+					28
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020"
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/groups/4578582/items/93FXX5FC",
+		"type": "report",
+		"abstract": "Software is essential in modern research; it plays vital roles at multiple stages of the research lifecycle. The term Research Software is widely used in the academic community but, what do we mean when we use these terms? Software and research? When you think of software, you may think of a digital object that is executed on a machine. Yet software is more than just this, it is a complex and evolving artifact. It may be a concept or a project designed to solve a puzzle by a team or a community that develops its functionalities and algorithms, which might not be digital objects. Furthermore, the software artifacts are digital objects, e.g., executables and source code files for different environments. These digital artifacts, which are used in a scholarly setting, might be important in the research process, but should all these be considered Research Software? This report is the result of a discussion examining the scope of the community definition of the FAIR principles for Research Software as part of the work in the FAIR for Research Software working group (FAIR4RS). We aim to clarify the scope of the FAIR principles by identifying which software artifacts the FAIR principles should apply to. This discussion portrayed a complex landscape of software uses in research and existing definitions that can help to better understand the complexity of different types of software in academia. Finally we determine the scope of the FAIR4RS with a short and concise definition of Research Software as a separate metaphor of software in research.",
+		"note": "DOI: 10.5281/zenodo.5504016",
+		"publisher": "Zenodo",
+		"source": "Zenodo",
+		"title": "Defining Research Software: a controversial discussion",
+		"title-short": "Defining Research Software",
+		"URL": "https://zenodo.org/record/5504016",
+		"author": [
+			{
+				"family": "Gruenpeter",
+				"given": "Morane"
+			},
+			{
+				"family": "Katz",
+				"given": "Daniel S."
+			},
+			{
+				"family": "Lamprecht",
+				"given": "Anna-Lena"
+			},
+			{
+				"family": "Honeyman",
+				"given": "Tom"
+			},
+			{
+				"family": "Garijo",
+				"given": "Daniel"
+			},
+			{
+				"family": "Struck",
+				"given": "Alexander"
+			},
+			{
+				"family": "Niehues",
+				"given": "Anna"
+			},
+			{
+				"family": "Martinez",
+				"given": "Paula Andrea"
+			},
+			{
+				"family": "Castro",
+				"given": "Leyla Jael"
+			},
+			{
+				"family": "Rabemanantsoa",
+				"given": "Tovo"
+			},
+			{
+				"family": "Chue Hong",
+				"given": "Neil P."
+			},
+			{
+				"family": "Martinez-Ortiz",
+				"given": "Carlos"
+			},
+			{
+				"family": "Sesink",
+				"given": "Laurents"
+			},
+			{
+				"family": "Liffers",
+				"given": "Matthias"
+			},
+			{
+				"family": "Fouilloux",
+				"given": "Anne Claire"
+			},
+			{
+				"family": "Erdmann",
+				"given": "Chris"
+			},
+			{
+				"family": "Peroni",
+				"given": "Silvio"
+			},
+			{
+				"family": "Martinez Lavanchy",
+				"given": "Paula"
+			},
+			{
+				"family": "Todorov",
+				"given": "Ilian"
+			},
+			{
+				"family": "Sinha",
+				"given": "Manodeep"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					1,
+					28
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					9,
+					13
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/groups/4578582/items/FQHCMTGU",
+		"type": "article-journal",
+		"container-title": "Dagstuhl Reports",
+		"DOI": "10.4230/DagRep.5.11.29",
+		"ISSN": "2192-5283",
+		"issue": "11",
+		"page": "29–35",
+		"title": "Artifact Evaluation for Publications (Dagstuhl Perspectives Workshop 15452)",
+		"URL": "http://drops.dagstuhl.de/opus/volltexte/2016/5762",
+		"volume": "5",
+		"author": [
+			{
+				"family": "Childers",
+				"given": "Bruce R."
+			},
+			{
+				"family": "Fursin",
+				"given": "Grigori"
+			},
+			{
+				"family": "Krishnamurthi",
+				"given": "Shriram"
+			},
+			{
+				"family": "Zeller",
+				"given": "Andreas"
+			}
+		],
+		"editor": [
+			{
+				"family": "Childers",
+				"given": "Bruce R."
+			},
+			{
+				"family": "Fursin",
+				"given": "Grigori"
+			},
+			{
+				"family": "Krishnamurthi",
+				"given": "Shriram"
+			},
+			{
+				"family": "Zeller",
+				"given": "Andreas"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2016"
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/groups/4578582/items/U3KKBGIV",
+		"type": "article-journal",
+		"container-title": "Scientometrics",
+		"DOI": "10.1007/s11192-016-2204-y",
+		"ISSN": "0138-9130, 1588-2861",
+		"issue": "2",
+		"journalAbbreviation": "Scientometrics",
+		"language": "en",
+		"page": "1017-1033",
+		"source": "DOI.org (Crossref)",
+		"title": "Impact evaluation of open source software: an Altmetrics perspective",
+		"title-short": "Impact evaluation of open source software",
+		"URL": "http://link.springer.com/10.1007/s11192-016-2204-y",
+		"volume": "110",
+		"author": [
+			{
+				"family": "Zhao",
+				"given": "Rongying"
+			},
+			{
+				"family": "Wei",
+				"given": "Mingkun"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2020",
+					10,
+					15
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2017",
+					2
+				]
+			]
+		}
+	},
+	{
+		"id": "DARTS2017",
+		"type": "article-journal",
+		"DOI": "10.5281/ZENODO.583007",
+		"language": "English",
+		"note": "publisher: Zenodo\ntex.copyright: Creative Commons Attribution 4.0",
+		"title": "Hitting the Bull'S eye with darts: Artifact evaluation in computer science",
+		"URL": "https://zenodo.org/record/583007",
+		"author": [
+			{
+				"family": "Wagner",
+				"given": "Michael"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2017"
+				]
+			]
+		}
+	},
+	{
+		"id": "AboutPap55:online",
+		"type": "webpage",
+		"abstract": "The mission of Papers with Code is to create a free and open resource with Machine Learning papers, code and evaluation tables.\n\nWe believe this is best done together with the community, supported by NLP and ML.\n\nAll content on this website is openly licenced under CC-BY-SA (same as Wikipedia) and everyone can contribute - look for the \"Edit\" buttons!",
+		"title": "Papers With Code",
+		"URL": "https://paperswithcode.com/about",
+		"author": [
+			{
+				"family": "Stojnic",
+				"given": "Robert"
+			},
+			{
+				"family": "Taylor",
+				"given": "Ross"
+			},
+			{
+				"family": "Karadas",
+				"given": "Marcin"
+			},
+			{
+				"family": "Kerkez",
+				"given": "Victor"
+			},
+			{
+				"family": "Viaud",
+				"given": "Ludovic"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2019"
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/groups/4578582/items/QTKZDHID",
+		"type": "article-journal",
+		"title": "Artifact evaluation for software conferences",
+		"URL": "https://www.artifact-eval.org/",
+		"author": [
+			{
+				"family": "Krishnamurthi",
+				"given": "Shriram"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2011"
+				]
+			]
+		}
+	},
+	{
+		"id": "Katz2016",
+		"type": "article-journal",
+		"DOI": "10.7287/peerj.preprints.2630v1",
+		"note": "publisher: PeerJ",
+		"title": "Software vs. data in the context of citation",
+		"URL": "https://doi.org/10.7287/peerj.preprints.2630v1",
+		"author": [
+			{
+				"family": "Katz",
+				"given": "Daniel S"
+			},
+			{
+				"family": "Niemeyer",
+				"given": "Kyle E"
+			},
+			{
+				"family": "Smith",
+				"given": "Arfon M"
+			},
+			{
+				"family": "Anderson",
+				"given": "William L"
+			},
+			{
+				"family": "Boettiger",
+				"given": "Carl"
+			},
+			{
+				"family": "Hinsen",
+				"given": "Konrad"
+			},
+			{
+				"family": "Hooft",
+				"given": "Rob"
+			},
+			{
+				"family": "Hucka",
+				"given": "Michael"
+			},
+			{
+				"family": "Lee",
+				"given": "Allen"
+			},
+			{
+				"family": "Löffler",
+				"given": "Frank"
+			},
+			{
+				"family": "Pollard",
+				"given": "Tom"
+			},
+			{
+				"family": "Rios",
+				"given": "Fernando"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2016",
+					12
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/groups/4578582/items/QLMGD2S8",
+		"type": "article-journal",
+		"container-title": "Computing in Science and Engineering",
+		"DOI": "10.1109/MCSE.2013.91",
+		"issue": "4",
+		"page": "60–63",
+		"title": "Software Development for Reproducible Research",
+		"URL": "https://doi.org/10.1109/MCSE.2013.91",
+		"volume": "15",
+		"author": [
+			{
+				"family": "Hinsen",
+				"given": "Konrad"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2013"
+				]
+			]
+		}
+	},
+	{
+		"id": "GoodPrac52:online",
+		"type": "webpage",
+		"title": "Good practice principles for scholarly communication services",
+		"URL": "https://www.coar-repositories.org/news-updates/good-practice-principles-for-scholarly-communication-services-2/",
+		"author": [
+			{
+				"family": "COAR",
+				"given": ""
+			},
+			{
+				"family": "SPARC",
+				"given": ""
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2020",
+					6,
+					10
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2019",
+					1
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/groups/4578582/items/Y3CEVXS2",
+		"type": "report",
+		"genre": "Research report",
+		"note": "tex.hal_id: hal-02545142\ntex.hal_version: v1\ntex.pdf: https://hal.archives-ouvertes.fr/hal-02545142/file/Opportunity%20Noteₛoftware%20derived%20from%20research<sub>E</sub>N%20pm.pdf",
+		"publisher": "Committee for Open Science's Free Software and Open Source Project Group",
+		"title": "Encouraging a wider usage of software derived from research",
+		"URL": "https://hal.archives-ouvertes.fr/hal-02545142",
+		"author": [
+			{
+				"family": "Clément-Fontaine",
+				"given": "Mélanie"
+			},
+			{
+				"family": "Di Cosmo",
+				"given": "Roberto"
+			},
+			{
+				"family": "Guerry",
+				"given": "Bastien"
+			},
+			{
+				"family": "Moreau",
+				"given": "Patrick"
+			},
+			{
+				"family": "Pellegrini",
+				"given": "François"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2019",
+					11
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/groups/4578582/items/HU8CBGR7",
+		"type": "article-journal",
+		"container-title": "ACM SIGOPS Operating Systems Review",
+		"DOI": "10.1145/2723872.2723882",
+		"ISSN": "0163-5980",
+		"issue": "1",
+		"journalAbbreviation": "SIGOPS Oper. Syst. Rev.",
+		"language": "en",
+		"page": "71-79",
+		"source": "DOI.org (Crossref)",
+		"title": "An introduction to Docker for reproducible research",
+		"URL": "https://dl.acm.org/doi/10.1145/2723872.2723882",
+		"volume": "49",
+		"author": [
+			{
+				"family": "Boettiger",
+				"given": "Carl"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2020",
+					9,
+					25
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2015",
+					1,
+					20
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/groups/4578582/items/MU3MZ2UH",
+		"type": "article-journal",
+		"container-title": "Frontiers in Neuroinformatics",
+		"DOI": "10.3389/fninf.2017.00076",
+		"ISSN": "1662-5196",
+		"journalAbbreviation": "Front. Neuroinform.",
+		"page": "76",
+		"source": "DOI.org (Crossref)",
+		"title": "Reproducibility vs. Replicability: A Brief History of a Confused Terminology",
+		"title-short": "Reproducibility vs. Replicability",
+		"URL": "http://journal.frontiersin.org/article/10.3389/fninf.2017.00076/full",
+		"volume": "11",
+		"author": [
+			{
+				"family": "Plesser",
+				"given": "Hans E."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					3,
+					2
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2018",
+					1,
+					18
+				]
+			]
+		}
+	}
+]

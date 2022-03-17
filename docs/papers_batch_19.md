@@ -9,7 +9,7 @@ Agile methods can deliver software that fulfills customer needs rapidly and cont
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  |  |  |  | NO |
 ---
 
 # 1 - The Relation of Test-Related Factors to Software Quality: A Case Study on Apache Systems
@@ -22,7 +22,7 @@ Testing represents a crucial activity to ensure software quality. Recent studies
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  |  |  |  | NO |
 ---
 
 # 2 - A longitudinal study of static analysis warning evolution and the effects of PMD on software quality in Apache open source projects
@@ -35,7 +35,7 @@ Automated static analysis tools (ASATs) have become a major part of the software
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  |  |  |  | NO |
 ---
 
 # 3 - The sustainability of quality in free and open source software
@@ -48,7 +48,7 @@ We learned from the history of software that great software are theones who mana
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  |  |  |  | NO |
 ---
 
 # 4 - An empirical study of teaching qualities of popular computer science and software engineering instructors using RateMyProfessor.com data
@@ -61,7 +61,7 @@ The employment opportunity for Computer Science (CS), Information Technology and
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  |  |  |  | NO |
 ---
 
 # 5 - Deriving a usage-independent software quality metric
@@ -74,7 +74,7 @@ Context: The extent of post-release use of software affects the number of faults
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  |  |  |  | NO |
 ---
 
 # 6 - An empirical investigation into merge conflicts and their effect on software quality

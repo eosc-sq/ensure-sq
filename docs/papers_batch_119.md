@@ -24,7 +24,9 @@ A user survey was carried out to evaluate empirically ISO/IEC 9126's dimensional
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  | yes |  |  |  |
+
+**ER**: however it depends on its content, because ISO/IEC 9126 has been revised by ISO/IEC 25010:2011. 
 ---
 
 # 102 - Requirements engineering and process modelling in software quality management - Towards a generic process metamodel

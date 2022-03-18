@@ -39,7 +39,9 @@ This paper examines the concept of Quality in Software Engineering, its differen
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  | unsure |  |  |  |
+
+**ER**: useful for introducing the problem 
 ---
 
 # 103 - New Year's Resolutions for Software Quality
@@ -52,7 +54,7 @@ The views of various individuals on improvement of software quality are presente
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  | no |  |  |  |
 ---
 
 # 104 - Analogy-Based Practical Classification Rules for Software Quality Estimation
@@ -65,7 +67,10 @@ Software metrics-based quality estimation models can be effective tools for iden
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  | unsure |  |  |  |
+
+**ER**: useful for software metrics
+
 ---
 
 # 105 - Trade-offs between productivity and quality in selecting software development practices
@@ -78,7 +83,10 @@ Choosing appropriate practices for a project can be hard, given the various dime
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  |  no |  |  |  |
+
+**ER**: useful for software development process 
+
 ---
 
 # 106 - Fault prediction modeling for software quality estimation: Comparing commonly used techniques
@@ -91,7 +99,9 @@ High-assurance and complex mission-critical software systems are heavily depende
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  | no |  |  |  |
+
+**ER**: useful for fault prediction modeling
 ---
 
 # 107 - GEQUAMO - A generic, multilayered, customisable, software quality model
@@ -104,7 +114,9 @@ Software quality models have primarily been based on top down process improvemen
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  | no |  |  |  |
+
+**ER**: useful for building software quality model
 ---
 
 # 108 - Construction of a systemic quality model for evaluating a software product
@@ -117,7 +129,9 @@ Quality is currently considered one of the main assets with which a firm can enh
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  | yes |  |  |  |
+
+**ER**: it should identify set of attributes that overlaps various models
 ---
 
 # 109 - Empirical Measurement of the Effects of Cultural Diversity on Software Quality Management

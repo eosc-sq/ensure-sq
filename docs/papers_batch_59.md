@@ -90,7 +90,9 @@ We provide an overview of the approach developed by the Software Improvement Gro
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  |  |  |
+| yes | yes |  |  |  |
+
+**ER**: software definition, software metrics
 ---
 
 # 47 - Strategy to improve quality for software applications: A process view
@@ -171,7 +173,9 @@ In this keynote I explore what exactly do we mean by data quality, techniques to
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  |  |  |  |  |
+| no  | no |  |  |  |
+
+**ER**: software metrics analysis
 ---
 
 # 53 - A framework for evaluating quality-driven self-adaptive software systems
@@ -252,7 +256,9 @@ Software quality is of increasing importance in mission-critical embedded softwa
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  |  |  |
+| yes | unsure |  |  |  |
+
+**ER**: software metrics
 ---
 
 # 59 - A fuzzy regression and optimization approach for setting target levels in software quality function deployment

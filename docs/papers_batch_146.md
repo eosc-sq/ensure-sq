@@ -25,7 +25,9 @@ Quality is recognized as a pre-eminently important characteristic of software, y
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  |  |  |
+| yes | no |  |  |  |
+
+**ER**: the same author wrote the article [A model for software product quality, 1995](https://ieeexplore.ieee.org/document/345830). There is also [Security quality model: an extension of Dromey’s model, 2015](https://link.springer.com/article/10.1007/s11219-013-9223-1) 
 ---
 
 # 142 - Application of software reliability modeling to product quality and test process

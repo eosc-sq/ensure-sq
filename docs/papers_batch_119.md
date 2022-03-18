@@ -9,7 +9,9 @@ This research abstract presents two approaches for utilizing the developers' sub
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  | no |  |  |  |
+
+**ER**: useful for software development process
 ---
 
 # 101 - Measuring software product quality: A survey of ISO/IEC 9126

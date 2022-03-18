@@ -90,7 +90,9 @@ It is widely believed that distributed software development is riskier and more 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  |  unsure |  |  |  |
+
+**ER**: this should talk about software metrics, maybe it introduces some software characteristics in relation to the software metrics selected.
 ---
 
 # 67 - Improving Software quality via code searching and mining
@@ -248,7 +250,9 @@ OBJECTIVE - to assess the extent and types of techniques used to manage quality 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  | no |  |  |  |
+
+**ER**: software metrics analysis
 ---
 
 # 79 - Engineering models and software quality models: An example and a discussion

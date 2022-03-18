@@ -196,7 +196,9 @@ The paper describes results of a longitudinal study of developments in the area 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  | unsure |  |  |  |
+
+**ER**: useful for software development process
 ---
 
 # 114 - Method for software quality planning, control, and evaluation

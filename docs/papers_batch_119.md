@@ -54,7 +54,7 @@ The views of various individuals on improvement of software quality are presente
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  | no |  |  |  |
 ---
 
 # 104 - Analogy-Based Practical Classification Rules for Software Quality Estimation

@@ -39,7 +39,9 @@ This paper examines the concept of Quality in Software Engineering, its differen
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  | not sure |  |  |  |
+
+**ER**: useful for introducing the problem 
 ---
 
 # 103 - New Year's Resolutions for Software Quality

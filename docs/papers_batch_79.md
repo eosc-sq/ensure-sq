@@ -168,7 +168,9 @@ Most external software quality attributes are conceptually subjective. For examp
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  | yes |  |  |  |
+
+**ER**: software characteristics
 ---
 
 # 73 - Rational quality requirements for medical software

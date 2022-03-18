@@ -22,7 +22,10 @@ Software quality models are a well-accepted means to support quality management 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  | yes |  |  |  |
+
+**ER**: it should explain software chracteristics critically
+
 ---
 
 # 62 - The influence of team relationships on software quality

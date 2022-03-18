@@ -22,7 +22,10 @@ This Technical Briefing describes the nature of Software Qualities (SQs), ilitie
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  | unsure/yes |  |  |  |
+
+**ER**: useful for describing the problem, software characteristics
+
 ---
 
 # 22 - Cognitive biases in software quality and testing
@@ -61,7 +64,9 @@ Many software engineering problems are multi-objective in nature, which has been
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  | unsure |  |  |  |
+
+**ER**: software metrics
 ---
 
 # 25 - An experience-based framework for evaluating alignment of software quality goals
@@ -100,7 +105,7 @@ This article discusses six papers presented at events connected with the 2015 In
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  | no |  |  |  |
 ---
 
 # 28 - Why good developers write bad code: An observational case study of the impacts of organizational factors on software quality
@@ -113,7 +118,9 @@ How can organizational factors such as structure and culture have an impact on t
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  | yes |  |  |  |
+
+**ER**: useful for explaining negative impact on quality
 ---
 
 # 29 - Software Process versus Design Quality: Tug of War?
@@ -217,7 +224,9 @@ This special issue, owing to its fundamental software quality focus, comprises a
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  | unsure |  |  |  |
+
+**ER**: useful for newchallenges for software quality research
 ---
 
 # 37 - A framework for prioritization of quality requirements for inclusion in a software project

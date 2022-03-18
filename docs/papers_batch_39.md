@@ -9,7 +9,7 @@ Software quality is recognized as being very significant for achieving competiti
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+| unsure/no |  |  |  |  |
 ---
 
 # 21 - Improving and balancing software qualities
@@ -22,7 +22,7 @@ This Technical Briefing describes the nature of Software Qualities (SQs), ilitie
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+| no  |  |  |  |  |
 ---
 
 # 22 - Cognitive biases in software quality and testing
@@ -35,7 +35,7 @@ Humans are an integral entity for performing software quality and testing activi
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+| no  |  |  |  |  |
 ---
 
 # 23 - Revisiting code ownership and its relationship with software quality in the scope of modern code review
@@ -48,7 +48,7 @@ Code ownership establishes a chain of responsibility for modules in large softwa
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+| yes/unsure |  |  |  |  |
 ---
 
 # 24 - A practical guide to select quality indicators for assessing pareto-based search algorithms in search-based software engineering
@@ -61,7 +61,7 @@ Many software engineering problems are multi-objective in nature, which has been
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+| unsure/no |  |  |  |  |
 ---
 
 # 25 - An experience-based framework for evaluating alignment of software quality goals
@@ -74,7 +74,7 @@ Efficient quality management of software projects requires knowledge of how vari
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+| no  |  |  |  |  |
 ---
 
 # 26 - Handover of managerial responsibilities in global software development: a case study of source code evolution and quality
@@ -87,7 +87,7 @@ Studies report on the negative effect on quality in global software development 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+| no  |  |  |  |  |
 ---
 
 # 27 - Software Quality, Energy Awareness, and More
@@ -100,7 +100,7 @@ This article discusses six papers presented at events connected with the 2015 In
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+| no  |  |  |  |  |
 ---
 
 # 28 - Why good developers write bad code: An observational case study of the impacts of organizational factors on software quality
@@ -113,7 +113,7 @@ How can organizational factors such as structure and culture have an impact on t
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+| no  |  |  |  |  |
 ---
 
 # 29 - Software Process versus Design Quality: Tug of War?
@@ -126,7 +126,7 @@ Software processes and design quality are inextricably intertwined. So, develope
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+| no  |  |  |  |  |
 ---
 
 # 30 - A quality cost reduction model for large-scale software development
@@ -139,7 +139,7 @@ Understanding quality costs is recognized as a prerequisite for decreasing the v
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+| no  |  |  |  |  |
 ---
 
 # 31 - Understanding the impact of rapid releases on software quality: The case of firefox
@@ -152,7 +152,7 @@ Many software companies are shifting from the traditional multi-month release cy
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+| no  |  |  |  |  |
 ---
 
 # 32 - Studying the relationship between logging characteristics and the code quality of platform software
@@ -165,7 +165,7 @@ Platform software plays an important role in speeding up the development of larg
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+| no  |  |  |  |  |
 ---
 
 # 33 - Effective quality management: Value- and risk-based software quality management
@@ -178,7 +178,7 @@ Software quality management (SQM) must effectively deploy resources for quality 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+| no  |  |  |  |  |
 ---
 
 # 34 - Introduction of static quality analysis in small- and medium-sized software enterprises: experiences from technology transfer
@@ -191,7 +191,7 @@ Today, small- and medium-sized enterprises (SMEs) in the software industry face 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+| yes |  |  |  |  |
 ---
 
 # 35 - Quality attribute modeling and quality aware product configuration in software product lines
@@ -204,7 +204,7 @@ In software product line engineering, the customers mostly concentrate on the fu
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+| unsure/no |  |  |  |  |
 ---
 
 # 36 - New perspectives on software quality
@@ -217,7 +217,7 @@ This special issue, owing to its fundamental software quality focus, comprises a
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+| no  |  |  |  |  |
 ---
 
 # 37 - A framework for prioritization of quality requirements for inclusion in a software project
@@ -230,7 +230,7 @@ Non-functional requirements (NFRs) determine the characteristics of a software p
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+| no  |  |  |  |  |
 ---
 
 # 38 - Studying the effect of co-change dispersion on software quality
@@ -243,7 +243,7 @@ Software change history plays an important role in measuring software quality an
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+| unsure |  |  |  |  |
 ---
 
 # 39 - MIDAS: A design quality assessment method for industrial software
@@ -256,5 +256,5 @@ Siemens Corporate Development Center Asia Australia (CT DC AA) develops and main
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+| no  |  |  |  |  |
 ---

@@ -22,8 +22,7 @@ This Technical Briefing describes the nature of Software Qualities (SQs), ilitie
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  |  |  |  |  |
-|  | unsure/yes |  |  |  |
+| no  | unsure/yes |  |  |  |
 
 **ER**: useful for describing the problem, software characteristics
 
@@ -65,8 +64,7 @@ Many software engineering problems are multi-objective in nature, which has been
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure/no |  |  |  |  |
-|  | unsure |  |  |  |
+| unsure/no | unsure |  |  |  |
 
 **ER**: software metrics
 ---
@@ -107,8 +105,7 @@ This article discusses six papers presented at events connected with the 2015 In
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  |  |  |  |  |
-|  | no |  |  |  |
+| no  | no  |  |  |  |
 ---
 
 # 28 - Why good developers write bad code: An observational case study of the impacts of organizational factors on software quality
@@ -121,10 +118,11 @@ How can organizational factors such as structure and culture have an impact on t
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  |  |  |  |  |
-|  | yes |  |  |  |
+| no  | yes |  |  |  |
 
-**ER**: useful for explaining negative impact on quality
+* *ER* - useful for explaining negative impact on quality
+* *MD* - although I voted no I agree to keep it
+
 ---
 
 # 29 - Software Process versus Design Quality: Tug of War?
@@ -228,8 +226,7 @@ This special issue, owing to its fundamental software quality focus, comprises a
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  |  |  |  |  |
-|  | unsure |  |  |  |
+| no  | unsure |  |  |  |
 
 **ER**: useful for newchallenges for software quality research
 ---

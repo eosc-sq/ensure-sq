@@ -22,7 +22,7 @@ Testing represents a crucial activity to ensure software quality. Recent studies
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  | NO |
+|  |  |  | NO | NO |
 ---
 
 # 2 - A longitudinal study of static analysis warning evolution and the effects of PMD on software quality in Apache open source projects

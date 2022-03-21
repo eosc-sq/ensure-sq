@@ -48,7 +48,7 @@ We learned from the history of software that great software are theones who mana
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  | NO |
+|  |  |  | YES | NO |
 ---
 
 # 4 - An empirical study of teaching qualities of popular computer science and software engineering instructors using RateMyProfessor.com data

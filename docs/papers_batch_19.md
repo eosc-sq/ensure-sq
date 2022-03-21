@@ -61,7 +61,7 @@ The employment opportunity for Computer Science (CS), Information Technology and
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  | NO |
+|  |  |  | NO | NO |
 ---
 
 # 5 - Deriving a usage-independent software quality metric

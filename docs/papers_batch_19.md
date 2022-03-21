@@ -35,7 +35,7 @@ Automated static analysis tools (ASATs) have become a major part of the software
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  | NO |
+|  |  |  | NO | NO |
 ---
 
 # 3 - The sustainability of quality in free and open source software

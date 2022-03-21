@@ -9,7 +9,7 @@ Specifying the quality of software products is a valuable addition to functional
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  |  |  | Yes |  |
 ---
 
 # 121 - Supporting software quality in an integrated safety-critical systems development environment
@@ -22,7 +22,7 @@ Research is described, aimed to support traceability in the design of software f
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  |  |  | No |  |
 ---
 
 # 122 - Software quality assurance in practice
@@ -35,7 +35,7 @@ This paper presents the key findings of a survey of a representative sample of t
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  |  |  | No |  |
 ---
 
 # 123 - Building quality into scientific software
@@ -48,7 +48,7 @@ This paper has developed from the SoFEA project at The open University which is 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  |  |  | Yes |  |
 ---
 
 # 124 - Software quality: the elusive target
@@ -61,7 +61,7 @@ High-profile disasters and the ensuing debates in the press are alerting more pe
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  |  |  | unsure |  |
 ---
 
 # 125 - The impact of software evolution and reuse on software quality
@@ -74,7 +74,7 @@ This paper presents a case study of a software project in the maintenance phase.
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  |  |  | unsure |  |
 ---
 
 # 126 - Frameworks for quality software process: SEI Capability maturity model versus ISO 9000
@@ -87,7 +87,7 @@ With the historical characterization of software development as being costly due
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  |  |  | Maybe |  |
 ---
 
 # 127 - Factors affecting the quality of software project management:an empirical study based on the Capability Maturity Model
@@ -100,7 +100,7 @@ Rigorous project management can help raise a software product development proces
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  |  |  | Yes |  |
 ---
 
 # 128 - Experiences of software quality management using metrics through the life-cycle
@@ -113,7 +113,7 @@ Many software quality metrics to objectively grasp software products and process
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  |  |  | Yes |  |
 ---
 
 # 129 - Controlling and predicting the quality of space shuttle software using metrics
@@ -126,7 +126,7 @@ Software quality metrics have potential for helping to assure the quality of sof
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  |  |  | unsure |  |
 ---
 
 # 130 - Investigating ARIMA models of software system quality
@@ -139,7 +139,7 @@ In this paper, we investigate how to incorporate program complexity measures wit
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  |  |  | No |  |
 ---
 
 # 131 - Making reuse work at hewlett-packard: New views of mature ideas on software quality and productivity
@@ -152,7 +152,7 @@ For the last seven years, Martin Griss and his colleagues have investigated how 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  |  |  | No |  |
 ---
 
 # 132 - Measurement as an alternative to bureaucracy for the achievement of software quality
@@ -165,7 +165,7 @@ In this paper we discuss the two dominant modes of thought on the problem of sof
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  |  |  | unsure |  |
 ---
 
 # 133 - Software quality standards in practice: the limitations of using ISO-9001 to support software development
@@ -178,7 +178,7 @@ Quality management standard BS5740/ISO9001 is a key technology for UK and Europe
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  |  |  | unsure |  |
 ---
 
 # 134 - Instrumented approach to improving software quality through formal technical review
@@ -191,7 +191,7 @@ Formal technical review (FTR) is an essential component of all software quality 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  |  |  | No |  |
 ---
 
 # 135 - Current practice in software quality and the impact of certification schemes
@@ -204,7 +204,7 @@ The paper presents the findings of a survey that investigated the level of quali
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  |  |  | No |  |
 ---
 
 # 136 - Learning to construct quality software with the Ceilidh system
@@ -217,7 +217,7 @@ This paper describes the Ceilidh software quality control environment for the te
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  |  |  | No |  |
 ---
 
 # 137 - Reported effects of rapid prototyping on industrial software quality
@@ -230,7 +230,7 @@ Empirical data are required to determine the effect of rapid prototyping on soft
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  |  |  | No |  |
 ---
 
 # 138 - Reliable software and communication: software quality, reliability, and safety
@@ -243,7 +243,7 @@ The software created by industrial, educational, and research organizations is i
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  |  |  | unsure |  |
 ---
 
 # 139 - Software process maturity: measuring its impact on productivity and quality
@@ -256,5 +256,5 @@ With the current worldwide focus on improvement in software process, there is cl
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+|  |  |  | unsure |  |
 ---

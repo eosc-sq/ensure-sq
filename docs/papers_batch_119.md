@@ -9,9 +9,10 @@ This research abstract presents two approaches for utilizing the developers' sub
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  | no |  |  |  |
+| no  | no  |  |  |  |
 
 **ER**: useful for software development process
+
 ---
 
 # 101 - Measuring software product quality: A survey of ISO/IEC 9126
@@ -24,9 +25,10 @@ A user survey was carried out to evaluate empirically ISO/IEC 9126's dimensional
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  | yes |  |  |  |
+| yes | yes |  |  |  |
 
 **ER**: however it depends on its content, because ISO/IEC 9126 has been revised by ISO/IEC 25010:2011. 
+
 ---
 
 # 102 - Requirements engineering and process modelling in software quality management - Towards a generic process metamodel
@@ -39,9 +41,10 @@ This paper examines the concept of Quality in Software Engineering, its differen
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  | unsure |  |  |  |
+| unsure | unsure |  |  |  |
 
-**ER**: useful for introducing the problem 
+**ER**: useful for introducing the problem
+
 ---
 
 # 103 - New Year's Resolutions for Software Quality
@@ -54,7 +57,7 @@ The views of various individuals on improvement of software quality are presente
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  | no |  |  |  |
+| no  | no  |  |  |  |
 ---
 
 # 104 - Analogy-Based Practical Classification Rules for Software Quality Estimation
@@ -67,7 +70,7 @@ Software metrics-based quality estimation models can be effective tools for iden
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  | unsure |  |  |  |
+| unsure | unsure |  |  |  |
 
 **ER**: useful for software metrics
 
@@ -83,9 +86,9 @@ Choosing appropriate practices for a project can be hard, given the various dime
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  no |  |  |  |
+| no  |  no |  |  |  |
 
-**ER**: useful for software development process 
+**ER**: useful for software development process
 
 ---
 
@@ -102,6 +105,7 @@ High-assurance and complex mission-critical software systems are heavily depende
 |  | no |  |  |  |
 
 **ER**: useful for fault prediction modeling
+
 ---
 
 # 107 - GEQUAMO - A generic, multilayered, customisable, software quality model
@@ -117,6 +121,7 @@ Software quality models have primarily been based on top down process improvemen
 |  | no |  |  |  |
 
 **ER**: useful for building software quality model
+
 ---
 
 # 108 - Construction of a systemic quality model for evaluating a software product
@@ -132,6 +137,7 @@ Quality is currently considered one of the main assets with which a firm can enh
 |  | yes |  |  |  |
 
 **ER**: it should identify set of attributes that overlaps various models
+
 ---
 
 # 109 - Empirical Measurement of the Effects of Cultural Diversity on Software Quality Management
@@ -144,7 +150,7 @@ The difficulties of achieving social acceptance for Software Quality Management 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+| no  |  |  |  |  |
 ---
 
 # 110 - Software component quality assessment in practice: Successes and practical impediments
@@ -157,7 +163,7 @@ This paper describes the authors' experiences of initiating and sustaining a pro
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+| unsure |  |  |  |  |
 ---
 
 # 111 - Examining the Effect of the Transformational Leader on Software Quality
@@ -170,7 +176,7 @@ Developing and maintaining quality software is paramount in the information-inte
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+| unsure/no |  |  |  |  |
 ---
 
 # 112 - Multi-Criteria Methodology Contribution to the Software Quality Evaluation
@@ -183,7 +189,7 @@ Industrial evaluations of COTS software largely used the quality models provided
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+| yes |  |  |  |  |
 ---
 
 # 113 - Quality through Managed Improvement and Measurement (QMIM): Towards a Phased Development and Implementation of a Quality Management System for a Software Company
@@ -196,9 +202,10 @@ The paper describes results of a longitudinal study of developments in the area 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  | unsure |  |  |  |
+| unsure/no | unsure |  |  |  |
 
 **ER**: useful for software development process
+
 ---
 
 # 114 - Method for software quality planning, control, and evaluation
@@ -211,7 +218,7 @@ An increasing number of software process and product standards emphasize the nee
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+| unsure |  |  |  |  |
 ---
 
 # 115 - A quality software process for rapid application development
@@ -224,7 +231,7 @@ Software organizations can significantly improve the quality of their output if 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+| unsure/no |  |  |  |  |
 ---
 
 # 116 - Software quality analysis & measurement service activity in the company
@@ -237,7 +244,7 @@ It is very important to improve software quality using program analysis & measur
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+| yes |  |  |  |  |
 ---
 
 # 117 - Perceptions of software quality : A pilot study
@@ -250,7 +257,7 @@ Many software quality initiatives fail because they do not take account of the r
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+| no  |  |  |  |  |
 ---
 
 # 118 - A critical look at ISO 9000 for software quality management
@@ -263,7 +270,7 @@ A considerable number of software suppliers report improvements in product and s
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+| yes |  |  |  |  |
 ---
 
 # 119 - Efficiency of CAME tools in software quality assurance
@@ -276,5 +283,5 @@ Our paper describes the requirements and possibilities of integration of metrics
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+| unsure |  |  |  |  |
 ---

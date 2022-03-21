@@ -74,7 +74,7 @@ Context: The extent of post-release use of software affects the number of faults
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  | NO |
+|  |  |  | NO | NO |
 ---
 
 # 6 - An empirical investigation into merge conflicts and their effect on software quality
@@ -87,7 +87,7 @@ Merge conflicts are known to cause extra effort for developers, but little is kn
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  | NO |
+|  |  |  | NO | NO |
 ---
 
 # 7 - How does developer interaction relate to software quality? an examination of product development data
@@ -100,7 +100,7 @@ Industrial software systems are being increasingly developed by large and distri
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  | Yes | 
+|  |  |  | YES | Yes | 
 
 DG: I think that this paper explores the social dimension of software quality, and it may define interesting aspects.
 
@@ -116,7 +116,7 @@ Design quality is vital if software is to be maintainable. What practices do dev
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  | No |
+|  |  |  | NO | No |
 ---
 
 # 9 - Integrating software quality models into risk-based testing
@@ -129,7 +129,7 @@ Risk-based testing is a frequently used testing approach which utilizes identifi
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  | NO |
+|  |  |  | NO | NO |
 
 DG: This paper integrates existing quality models, but does not seem to define one. However, the referenced models could be used.
 ---
@@ -144,7 +144,7 @@ It is claimed by software quality management that the quality of a software prod
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  | No |
+|  |  |  | NO | No |
 ---
 
 # 11 - Software quality through the eyes of the end-user and static analysis tools: A study on Android OSS applications
@@ -157,7 +157,7 @@ Source code analysis tools have been the vehicle for measuring and assessing the
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  | Yes |
+|  |  |  | YES | Yes |
 ---
 
 # 12 - Quality Assurance of Bioinformatics Software: A Case Study of Testing a Biomedical Text Processing Tool Using Metamorphic Testing
@@ -170,7 +170,7 @@ Bioinformatics software plays a very important role in making critical decisions
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  | No |
+|  |  |  | NO | No |
 ---
 
 # 13 - A critical review of "a practical guide to select quality indicators for assessing pareto-based search algorithms in search-based software engineering": Essay on quality indicator selection for SBSE
@@ -183,7 +183,7 @@ This paper presents a critical review of the work published at ICSE'2016 on a pr
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  | YES |
+|  |  |  | NO | YES |
 
 DG: While a criticism, this paper defines quality indicators.
 ---
@@ -198,7 +198,7 @@ A real-time operating system for avionics (RTOS4A) provides an operating environ
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  | NO |
+|  |  |  | NO | NO |
 ---
 
 # 15 - Impact of customization over software quality in ERP projects: an empirical study
@@ -211,7 +211,7 @@ Enterprise resource planning (ERP) systems are recognized as management informat
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  | YES |
+|  |  |  | NO | YES |
 ---
 
 # 16 - Productivity paradoxes revisited: Assessing the relationship between quality maturity levels and labor productivity in brazilian software companies
@@ -224,7 +224,7 @@ The adoption of quality assurance methods based on software process improvement 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  | Maybe |
+|  |  |  | NO | Maybe |
 
 DG: This seems to be a comparison among existing models.
 ---
@@ -239,7 +239,7 @@ Bayesian networks (BN) have been used for decision making in software engineerin
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  | NO |
+|  |  |  | NO | NO |
 ---
 
 # 18 - On the use of many quality attributes for software refactoring: a many-objective search-based software engineering approach
@@ -252,7 +252,7 @@ Search-based software engineering (SBSE) solutions are still not scalable enough
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  | NO |
+|  |  |  | NO | NO |
 ---
 
 # 19 - An empirical study of the impact of modern code review practices on software quality
@@ -265,5 +265,5 @@ Software code review, i.e., the practice of having other team members critique c
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  |  | NO |
+|  |  |  | YES | NO |
 ---

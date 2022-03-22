@@ -30,6 +30,24 @@ Source code analysis tools have been the vehicle for measuring and assessing the
 
 ---
 
+## 34 - Introduction of static quality analysis in small- and medium-sized software enterprises: experiences from technology transfer
+
+### Gleirscher M., Golubitskiy D., Irlbeck M., Wagner S.
+
+### https://www.scopus.com/inward/record.uri?eid=2-s2.0-84927804487&doi=10.1007%2fs11219-013-9217-z&partnerID=40&md5=96b5166ac6f386a4db36845b014b836d
+
+Today, small- and medium-sized enterprises (SMEs) in the software industry face major challenges. Their resource constraints require high efficiency in development. Furthermore, quality assurance (QA) measures need to be taken to mitigate the risk of additional, expensive effort for bug fixes or compensations. Automated static analysis (ASA) can reduce this risk because it promises low application effort. SMEs seem to take little advantage of this opportunity. Instead, they still mainly rely on the dynamic analysis approach of software testing. In this article, we report on our experiences from a technology transfer project. Our aim was to evaluate the results static analysis can provide for SMEs as well as the problems that occur when introducing and using static analysis in SMEs. We analysed five software projects from five collaborating SMEs using three different ASA techniques: code clone detection, bug pattern detection and architecture conformance analysis. Following the analysis, we applied a quality model to aggregate and evaluate the results. Our study shows that the effort required to introduce ASA techniques in SMEs is small (mostly below one person-hour each). Furthermore, we encountered only few technical problems. By means of the analyses, we could detect multiple defects in production code. The participating companies perceived the analysis results to be a helpful addition to their current QA and will include the analyses in their QA process. With the help of the Quamoco quality model, we could efficiently aggregate and rate static analysis results. However, we also encountered a partial mismatch with the opinions of the SMEs. We conclude that ASA and quality models can be a valuable and affordable addition to the QA process of SMEs. © Springer Science+Business Media New York 2013.
+
+| MD  | ER  | MC  | VL  | DG  |
+| --- | --- | --- | --- | --- |
+| yes |  |  |  |  |
+
+---
+
+
+
+
+
 
 
 
@@ -109,5 +127,70 @@ Software code review, i.e., the practice of having other team members critique c
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
 |  |  |  | YES | NO |
+
+---
+
+## 21 - Improving and balancing software qualities
+
+### Boehm B.
+
+### https://www.scopus.com/inward/record.uri?eid=2-s2.0-85026633467&doi=10.1145%2f2889160.2891049&partnerID=40&md5=6d99ef500aabca2de5eabfb37df2b2d4
+
+This Technical Briefing describes the nature of Software Qualities (SQs), ilities, or non-functional requirements (reliability, usability, affordability, etc.), and discusses the importance of understanding their nature and interrelationships, and of bringing them into balance in the practice of software engineering. The relevance and timeliness of this topic reflects the current and future trends toward more software-intensive systems, with greater complexity, autonomy, speed of change, and need for interoperability within systems of systems, given the frequent system shortfalls and overruns that occur when their SQ balance is not achieved. It discusses the weaknesses of current SQ standards and guidance, and summarizes research toward strengthening current SQ definitions and relationships. This includes a set of initial SQ ontology elements and relationships, examples of their application to some key SQs, an identification of further research and development needed to make the ontology fully useful and evolvable, and the nature of an international collaborative effort to help improve current practices via a Qualipedia for accessing the evolving body of knowledge for improving SQ engineering. © 2016 Author.
+
+| MD  | ER  | MC  | VL  | DG  |
+| --- | --- | --- | --- | --- |
+| no  | unsure/yes |  |  |  |
+
+**ER**: useful for describing the problem, software characteristics
+
+---
+
+## 24 - A practical guide to select quality indicators for assessing pareto-based search algorithms in search-based software engineering
+
+### Wang S., Ali S., Yue T., Li Y., Liaaen M.
+
+### https://www.scopus.com/inward/record.uri?eid=2-s2.0-84971412816&doi=10.1145%2f2884781.2884880&partnerID=40&md5=fb106f940fea5f845deddb5ac287de81
+
+Many software engineering problems are multi-objective in nature, which has been largely recognized by the Search-based Software Engineering (SBSE) community. In this regard, Paretobased search algorithms, e.g., Non-dominated Sorting Genetic Algorithm II, have already shown good performance for solving multi-objective optimization problems. These algorithms produce Pareto fronts, where each Pareto front consists of a set of nondominated solutions. Eventually, a user selects one or more of the solutions from a Pareto front for their specific problems. A key challenge of applying Pareto-based search algorithms is to select appropriate quality indicators, e.g., hypervolume, to assess the quality of Pareto fronts. Based on the results of an extended literature review, we found that the current literature and practice in SBSE lacks a practical guide for selecting quality indicators despite a large number of published SBSE works. In this direction, the paper presents a practical guide for the SBSE community to select quality indicators for assessing Pareto-based search algorithms in different software engineering contexts. The practical guide is derived from the following complementary theoretical and empirical methods: 1) key theoretical foundations of quality indicators; 2) evidence from an extended literature review; and 3) evidence collected from an extensive experiment that was conducted to evaluate eight quality indicators from four different categories with six Pareto-based search algorithms using three real industrial problems from two diverse domains. © 2016 ACM.
+
+| MD  | ER  | MC  | VL  | DG  |
+| --- | --- | --- | --- | --- |
+| unsure/no | unsure |  |  |  |
+
+**ER**: software metrics
+
+---
+
+## 28 - Why good developers write bad code: An observational case study of the impacts of organizational factors on software quality
+
+### Lavallée M., Robillard P.N.
+
+### https://www.scopus.com/inward/record.uri?eid=2-s2.0-84951838553&doi=10.1109%2fICSE.2015.83&partnerID=40&md5=010ff95af592509e0c365f250fa510c3
+
+How can organizational factors such as structure and culture have an impact on the working conditions of developers? This study is based on ten months of observation of an in-house software development project within a large telecommunications company. The observation was conducted during mandatory weekly status meetings, where technical and managerial issues were raised and discussed. Preliminary results show that many decisions made under the pressure of certain organizational factors negatively affected software quality. This paper describes cases depicting the complexity of organizational factors and reports on ten issues that have had a negative impact on quality, followed by suggested avenues for corrective action. © 2015 IEEE.
+
+| MD  | ER  | MC  | VL  | DG  |
+| --- | --- | --- | --- | --- |
+| no  | yes |  |  |  |
+
+* *ER* - useful for explaining negative impact on quality
+* *MD* - although I voted no we should discuss
+
+---
+
+## 36 - New perspectives on software quality
+
+### Breu R., Kuntzmann-Combelles A., Felderer M.
+
+### https://www.scopus.com/inward/record.uri?eid=2-s2.0-84896288088&doi=10.1109%2fMS.2014.9&partnerID=40&md5=6e2e5fb2f50c47f1203ae65ab9be581d
+
+This special issue, owing to its fundamental software quality focus, comprises a collection of diverse articles that address the challenges and directions for software quality research. The Web extra at http://youtu.be/ T7V4RSr1KEE is an audio interview in which Davide Falessi speaks with guest editors Annie Kuntzmann-Combelles, Michael Felderer, and Ruth Breu about methods for improving software quality management, testing, and security on intelligent and interconnected devices. © 1984-2012 IEEE.
+
+| MD  | ER  | MC  | VL  | DG  |
+| --- | --- | --- | --- | --- |
+| no  | unsure |  |  |  |
+
+**ER**: useful for newchallenges for software quality research
 
 ---

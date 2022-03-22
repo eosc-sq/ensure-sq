@@ -121,7 +121,7 @@ How can organizational factors such as structure and culture have an impact on t
 | no  | yes |  |  |  |
 
 * *ER* - useful for explaining negative impact on quality
-* *MD* - although I voted no I agree to keep it
+* *MD* - although I voted no we should discuss
 
 ---
 

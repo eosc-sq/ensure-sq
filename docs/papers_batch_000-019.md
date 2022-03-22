@@ -1,4 +1,3 @@
-
 # 0 - Strategies to manage quality requirements in agile software development: a multiple case study
 
 ## Karhapää P., Behutiye W., Rodríguez P., Oivo M., Costal D., Franch X., Aaramaa S., Choraś M., Partanen J., Abherve A.

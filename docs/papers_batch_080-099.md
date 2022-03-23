@@ -9,7 +9,7 @@ The elicitation, analysis, and specification of quality requirements involve car
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure/no |  |  |  |  |
+| unsure/no |  |  | no |  |
 ---
 
 # 81 - Integrating fuzzy theory and hierarchy concepts to evaluate software quality
@@ -22,7 +22,7 @@ This study proposes a software quality evaluation model and its computing algori
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure/no |  |  |  |  |
+| unsure/no |  |  | no |  |
 ---
 
 # 82 - The EMISQ method - Expert based evaluation of internal software quality
@@ -35,7 +35,7 @@ Internal software quality, e.g. the quality of code, has great impact on the ove
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  |  |  |
+| yes |  |  | yes |  |
 ---
 
 # 83 - In search for a widely applicable and accepted software quality model for software quality engineering
@@ -48,7 +48,7 @@ Software Quality Engineering is an emerging discipline that is concerned with im
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  |  |  |
+| yes |  |  | yes |  |
 
 * *MD* - comparative evaluation of existing quality models
 
@@ -64,7 +64,7 @@ A detailed question set is required to test and measure the true extent that a s
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  |  |  |  |  |
+| no  |  |  | no |  |
 ---
 
 # 85 - Achieving quality in open-source software
@@ -77,7 +77,7 @@ The open source software community has published a substantial body of research 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  |  |  |
+| yes |  |  | yes |  |
 ---
 
 # 86 - Using fault slippage measurement for monitoring software process quality during development
@@ -90,7 +90,7 @@ In a competitive environment where time-to-market is crucial for success, softwa
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure/no |  |  |  |  |
+| unsure/no |  |  | no |  |
 ---
 
 # 87 - Experiments on quality evaluation of embedded software in Japan robot software design contest
@@ -103,7 +103,7 @@ As a practical opportunity for educating Japanese young developers in the field 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no |  |  |  |  |
+| no |  |  | no |  |
 ---
 
 # 88 - Driving software quality: How test-driven development impacts software quality
@@ -116,7 +116,7 @@ Recently, software development teams using agile processes have started widely a
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  |  |  |
+| yes |  |  | yes |  |
 ---
 
 # 89 - An instrument for the measurement of customer perceptions of quality management in the software industry: An empirical study in India
@@ -129,7 +129,7 @@ Most of the available literature on quality management is based on management's 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  |  |  |  |  |
+| no  |  |  | no |  |
 ---
 
 # 90 - A quantitative approach for setting technical targets based on impact analysis in software quality function deployment (SQFD)
@@ -142,7 +142,7 @@ Target setting in software quality function deployment (SQFD) is very important 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  |  |  |  |  |
+| no  |  |  | no |  |
 ---
 
 # 91 - The software quality challenges of service oriented architectures in e-commerce
@@ -155,7 +155,7 @@ Web Services technologies and their supporting collection of de facto standards 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure |  |  |  |  |
+| unsure |  |  | no |  |
 ---
 
 # 92 - Software quality development and assurance in RUP, MSF and XP -A comparative study
@@ -168,7 +168,7 @@ The support of software quality in a software development process may be regarde
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  |  |  |
+| yes |  |  | yes |  |
 ---
 
 # 93 - Early estimation of software quality using in-process testing metrics: A controlled case study
@@ -181,7 +181,7 @@ In industrial practice, information on post-release field quality of a product t
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure |  |  |  |  |
+| unsure |  |  | yes |  |
 ---
 
 # 94 - Improving scientific software component quality through assertions
@@ -194,7 +194,7 @@ We are proposing research on self-adaptive interface assertion enforcement for t
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  |  |  |
+| yes |  |  | unsure |  |
 ---
 
 # 95 - A quality-driven systematic approach for architecting distributed software applications
@@ -207,7 +207,7 @@ Architecting distributed software applications is a complex design activity. It 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  |  |  |  |  |
+| no  |  |  | no |  |
 ---
 
 # 96 - Improving after-the-fact tracing and mapping: Supporting software quality predictions
@@ -220,7 +220,7 @@ The requirements traceability matrix can successfully predict quality before cod
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  |  |  |  |  |
+| no  |  |  | no |  |
 ---
 
 # 97 - Assessment of a new three-group software quality classification technique: An empirical case study
@@ -233,7 +233,7 @@ An innovation method that circumvents the complexities, computational overhead, 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  |  |  |  |  |
+| no  |  |  | no |  |
 ---
 
 # 98 - A new challenge for applying time series metrics data to software quality estimation
@@ -246,7 +246,7 @@ In typical software development, a software reliability growth model (SRGM) is a
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  |  |  |  |  |
+| no  |  |  | no |  |
 ---
 
 # 99 - The evolution path for industrial software quality evaluation methods applying ISO/IEC 9126:2001 quality model: Example of MITRE's SQAE method
@@ -259,5 +259,5 @@ This paper examines how the industrial applicability of both ISO/IEC 9126:2001 a
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  |  |  |
+| yes |  |  | yes |  |
 ---

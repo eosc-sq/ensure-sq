@@ -9,7 +9,7 @@ This research abstract presents two approaches for utilizing the developers' sub
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  | no  |  |  |  |
+| no  | no  |  |  | NO |
 
 **ER**: useful for software development process
 
@@ -25,9 +25,10 @@ A user survey was carried out to evaluate empirically ISO/IEC 9126's dimensional
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes | yes |  |  |  |
+| yes | yes |  |  | Unsure |
 
-**ER**: however it depends on its content, because ISO/IEC 9126 has been revised by ISO/IEC 25010:2011. 
+* *ER*: however it depends on its content, because ISO/IEC 9126 has been revised by ISO/IEC 25010:2011. 
+* *DG*: I am unsure because this is a user survey based on existing models. We should probably focus on the models... 
 
 ---
 
@@ -41,7 +42,7 @@ This paper examines the concept of Quality in Software Engineering, its differen
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure | unsure |  |  |  |
+| unsure | unsure |  |  | NO |
 
 **ER**: useful for introducing the problem
 
@@ -57,7 +58,7 @@ The views of various individuals on improvement of software quality are presente
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  | no  |  |  |  |
+| no  | no  |  |  | NO |
 ---
 
 # 104 - Analogy-Based Practical Classification Rules for Software Quality Estimation
@@ -70,7 +71,7 @@ Software metrics-based quality estimation models can be effective tools for iden
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure | unsure |  |  |  |
+| unsure | unsure |  |  | NO |
 
 **ER**: useful for software metrics
 
@@ -86,7 +87,7 @@ Choosing appropriate practices for a project can be hard, given the various dime
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  |  no |  |  |  |
+| no  |  no |  |  | NO |
 
 **ER**: useful for software development process
 
@@ -102,7 +103,7 @@ High-assurance and complex mission-critical software systems are heavily depende
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  | no |  |  |  |
+|  | no |  |  | NO |
 
 **ER**: useful for fault prediction modeling
 
@@ -118,9 +119,10 @@ Software quality models have primarily been based on top down process improvemen
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  | no |  |  |  |
+|  | no |  |  | YES |
 
-**ER**: useful for building software quality model
+* **ER**: useful for building software quality model
+* *DG* - It's defining a quality model, which is kind of what we need to review, don't we?
 
 ---
 
@@ -134,7 +136,7 @@ Quality is currently considered one of the main assets with which a firm can enh
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  | yes |  |  |  |
+|  | yes |  |  | YES |
 
 **ER**: it should identify set of attributes that overlaps various models
 
@@ -150,7 +152,7 @@ The difficulties of achieving social acceptance for Software Quality Management 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  |  |  |  |  |
+| no  |  |  |  | NO |
 ---
 
 # 110 - Software component quality assessment in practice: Successes and practical impediments
@@ -163,7 +165,7 @@ This paper describes the authors' experiences of initiating and sustaining a pro
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure |  |  |  |  |
+| unsure |  |  |  | NO |
 ---
 
 # 111 - Examining the Effect of the Transformational Leader on Software Quality
@@ -176,7 +178,7 @@ Developing and maintaining quality software is paramount in the information-inte
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure/no |  |  |  |  |
+| unsure/no |  |  |  | NO |
 ---
 
 # 112 - Multi-Criteria Methodology Contribution to the Software Quality Evaluation
@@ -189,7 +191,7 @@ Industrial evaluations of COTS software largely used the quality models provided
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  |  |  |
+| yes |  |  |  | YES |
 ---
 
 # 113 - Quality through Managed Improvement and Measurement (QMIM): Towards a Phased Development and Implementation of a Quality Management System for a Software Company
@@ -202,7 +204,7 @@ The paper describes results of a longitudinal study of developments in the area 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure/no | unsure |  |  |  |
+| unsure/no | unsure |  |  | NO |
 
 **ER**: useful for software development process
 
@@ -218,7 +220,7 @@ An increasing number of software process and product standards emphasize the nee
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure |  |  |  |  |
+| unsure |  |  |  | NO |
 ---
 
 # 115 - A quality software process for rapid application development
@@ -231,7 +233,7 @@ Software organizations can significantly improve the quality of their output if 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure/no |  |  |  |  |
+| unsure/no |  |  |  | NO |
 ---
 
 # 116 - Software quality analysis & measurement service activity in the company
@@ -244,7 +246,7 @@ It is very important to improve software quality using program analysis & measur
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  |  |  |
+| yes |  |  |  | Unsure |
 ---
 
 # 117 - Perceptions of software quality : A pilot study
@@ -257,7 +259,7 @@ Many software quality initiatives fail because they do not take account of the r
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  |  |  |  |  |
+| no  |  |  |  | NO |
 ---
 
 # 118 - A critical look at ISO 9000 for software quality management
@@ -270,7 +272,7 @@ A considerable number of software suppliers report improvements in product and s
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  |  |  |
+| yes |  |  |  | YES |
 ---
 
 # 119 - Efficiency of CAME tools in software quality assurance
@@ -283,5 +285,5 @@ Our paper describes the requirements and possibilities of integration of metrics
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure |  |  |  |  |
+| unsure |  |  |  | NO |
 ---

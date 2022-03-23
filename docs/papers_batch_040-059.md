@@ -9,9 +9,10 @@ The literature reports that source code lexicon plays a paramount role in progra
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure/no |  |  |  |  |
+| unsure/no |  |  |  | NO |
 
 * *MD* - we propose source code vocabulary normalization approaches
+* *DG* - This may be useful for metadata representation, but not SQ
 
 ---
 
@@ -25,7 +26,9 @@ Software quality assessment shall monitor and guide the evolution of a system ba
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure |  |  |  |  |
+| unsure |  |  |  | YES |
+
+* *DG* - Quality measure definition may be useful
 ---
 
 # 42 - Influence of confirmation biases of developers on software quality: An empirical study
@@ -38,7 +41,7 @@ The thought processes of people have a significant impact on software quality, a
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  |  |  |  |  |
+| no  |  |  |  | NO |
 ---
 
 # 43 - Studying the impact of social interactions on software quality
@@ -51,7 +54,7 @@ Correcting software defects accounts for a significant amount of resources in a 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  |  |  |  |  |
+| no  |  |  |  | NO |
 ---
 
 # 44 - Enhancing defect tracking systems to facilitate software quality improvement
@@ -64,7 +67,7 @@ For projects that rely on empirical process control and deliver frequently worki
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure |  |  |  |  |
+| unsure |  |  |  | NO |
 ---
 
 # 45 - A systematic review of quality attributes and measures for software product lines
@@ -77,7 +80,7 @@ It is widely accepted that software measures provide an appropriate mechanism fo
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  |  |  |
+| yes |  |  |  | YES |
 ---
 
 # 46 - Standardized code quality benchmarking for improving software maintainability
@@ -90,7 +93,7 @@ We provide an overview of the approach developed by the Software Improvement Gro
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes | yes |  |  |  |
+| yes | yes |  |  | YES |
 
 **ER**: software definition, software metrics
 ---
@@ -105,7 +108,9 @@ Each organization devoted to developing software/web applications should have as
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure |  |  |  |  |
+| unsure |  |  |  | YES |
+
+* *DG* - It has a methodological view that  may be useful for quality definition
 ---
 
 # 48 - An industrial case study on quality impact prediction for evolving service-oriented software
@@ -118,7 +123,7 @@ Systematic decision support for architectural design decisions is a major concer
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  |  |  |  |  |
+| no  |  |  |  | NO |
 ---
 
 # 49 - Configuring global software teams: A multi-company analysis of project productivity, quality, and profits
@@ -131,7 +136,7 @@ In this paper, we examined the impact of project-level configurational choices o
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  |  |  |  |  |
+| no  |  |  |  | NO |
 ---
 
 # 50 - Pragmatic prioritization of software quality assurance efforts
@@ -144,7 +149,7 @@ A plethora of recent work leverages historical data to help practitioners better
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes/unsure |  |  |  |  |
+| yes/unsure |  |  |  | UNSURE |
 ---
 
 # 51 - The fractal dimension metric and its use to assess object-oriented software quality
@@ -157,7 +162,7 @@ We present a study were software systems are considered as complex networks whic
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  |  |  |  |  |
+| no  |  |  |  | NO |
 
 * *MD* - *original to say the least*
 
@@ -173,7 +178,7 @@ In this keynote I explore what exactly do we mean by data quality, techniques to
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  | no |  |  |  |
+| no  | no |  |  | NO |
 
 **ER**: software metrics analysis
 ---
@@ -188,7 +193,7 @@ Over the past decade the dynamic capabilities of self-adaptive software-intensiv
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure |  |  |  |  |
+| unsure |  |  |  | YES |
 ---
 
 # 54 - Conflict-centric software architectural views: Exposing trade-offs in quality requirements
@@ -201,7 +206,7 @@ Much work on software architectures has focused on how to document them. This ha
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  |  |  |  |  |
+| no  |  |  |  | NO |
 ---
 
 # 55 - An empirical analysis of team review approaches for teaching quality software development
@@ -214,7 +219,7 @@ Reviews are an integral part of the software development process. They are one o
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  |  |  |  |  |
+| no  |  |  |  | NO |
 ---
 
 # 56 - Concurrency design patterns, software quality attributes and their tactics
@@ -227,7 +232,7 @@ With the prevalent application of multi-core CPUs, software practitioners are fa
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure |  |  |  |  |
+| unsure |  |  |  | NO |
 
 * *MD* - probably check the quality attributes in the paper.
 
@@ -243,7 +248,7 @@ Software engineering process information extracted from version control systems 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure |  |  |  |  |
+| unsure |  |  |  | NO |
 ---
 
 # 58 - Quality specification and metrication, results from a case-study in a mission-critical software domain
@@ -256,7 +261,7 @@ Software quality is of increasing importance in mission-critical embedded softwa
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes | unsure |  |  |  |
+| yes | unsure |  |  | YES |
 
 **ER**: software metrics
 ---
@@ -271,5 +276,5 @@ With the rapid development of the software industry, improving the quality of so
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure/no |  |  |  |  |
+| unsure/no |  |  |  | NO |
 ---

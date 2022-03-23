@@ -9,9 +9,10 @@
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure |  |  |  |  |
+| unsure |  |  |  | NO |
 
 * *MD* - check reference to 13 widely-cited attributes related to software quality
+* *DG* -  +1 to that suggestion
 
 ---
 
@@ -25,7 +26,7 @@ Software quality models are a well-accepted means to support quality management 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes | yes |  |  |  |
+| yes | yes |  |  | YES |
 
 **ER**: it should explain software characteristics critically
 
@@ -41,7 +42,7 @@ Implementing software development successfully in an organization is possibly on
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  |  |  |  |  |
+| no  |  |  |  | NO |
 ---
 
 # 63 - Software aging assessment through a specialization of the SQuaRE quality model
@@ -54,9 +55,10 @@ In the last years the software application portfolio has become a key asset for 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes/unsure |  |  |  |  |
+| yes/unsure |  |  |  | NO |
 
 * *MD* - provide a specialization of the SQuaRE quality model
+* *DG* - We should include SQuaRE, but not this one (i think)
 
 ---
 
@@ -70,9 +72,10 @@ Early inspections of software requirements specifications (SRS) are known to be 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  |  |  |
+| yes |  |  |  | NO |
 
 * *MD* - quality attributes
+* *DG* - The focus is on software requirement specification, not software quality
 
 ---
 
@@ -86,7 +89,7 @@ Research in the fields of software quality and maintain-ability requires the ana
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  |  |  |  |  |
+| no  |  |  |  | NO |
 
 * *MD* - software quality monitoring platform
 
@@ -102,7 +105,7 @@ It is widely believed that distributed software development is riskier and more 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  |  unsure |  |  |  |
+| no  |  unsure |  |  | NO |
 
 * *ER* - this should talk about software metrics, maybe it introduces some software characteristics in relation to the software metrics selected.
 * *MD* - seems just distributed vs collocated teams comparison
@@ -119,7 +122,7 @@ Enormous amount of open source code is available on the Internet and various cod
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes/unsure |  |  |  |  |
+| yes/unsure |  |  |  | Unsure |
 
 * *MD* - software development tasks,... three tasks can contribute to improve the software quality
 
@@ -135,7 +138,7 @@ To keep the Windows operating system stable and secure, Microsoft constantly upd
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  |  |  |  |  |
+| no  |  |  |  | NO |
 ---
 
 # 69 - Using test case patterns to estimate software development and quality management cost
@@ -148,7 +151,7 @@ A novel process to discover test case patterns is proposed. This has led to the 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  |  |  |  |  |
+| no  |  |  |  | NO |
 ---
 
 # 70 - Evaluating the service quality of software providers appraised in CMM/CMMI
@@ -161,7 +164,7 @@ Recently, several companies have decided to adopt maturity models such as the CM
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  |  |  |  |  |
+| no  |  |  |  | NO |
 ---
 
 # 71 - Software quality analysis by combining multiple projects and learners
@@ -174,7 +177,7 @@ When building software quality models, the approach often consists of training d
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  |  |  |  |  |
+| no  |  |  |  | NO |
 ---
 
 # 72 - Should we try to measure software quality attributes directly?
@@ -187,7 +190,7 @@ Most external software quality attributes are conceptually subjective. For examp
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes | yes |  |  |  |
+| yes | yes |  |  | Yes? |
 
 **ER**: software characteristics
 
@@ -203,7 +206,7 @@ In this paper we discuss the challenges of software quality for medical software
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure/no |  |  |  |  |
+| unsure/no |  |  |  | NO |
 ---
 
 # 74 - Continuous software quality supervision using source inventory and columbus
@@ -216,7 +219,7 @@ Several tools and methods for source code quality assurance based on static anal
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  |  |  |
+| yes |  |  |  | Unsure |
 ---
 
 # 75 - The influence of organizational structure on software quality: An empirical case study
@@ -229,7 +232,7 @@ Often software systems are developed by organizations consisting of many teams o
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  |  |  |  |  |
+| no  |  |  |  | NO |
 ---
 
 # 76 - Towards a generic model for software quality prediction
@@ -242,7 +245,7 @@ Various models and techniques have been proposed and applied in literature for s
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  |  |  |  |  |
+| no  |  |  |  | NO |
 ---
 
 # 77 - Quality software development: What do we need to improve in the software development process?
@@ -255,7 +258,7 @@ There are a number of authors who have documented problems with our software dev
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  |  |  |  |  |
+| no  |  |  |  | NO |
 ---
 
 # 78 - Data sets and data quality in software engineering
@@ -268,7 +271,7 @@ OBJECTIVE - to assess the extent and types of techniques used to manage quality 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  | no  |  |  |  |
+| no  | no  |  |  | NO |
 
 **ER**: software metrics analysis
 
@@ -284,5 +287,6 @@ The paper compares the models used for software quality evaluation to the modell
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  |  |  |  |  |
+| no  |  |  |  | YES |
+* *DG* - I think the comparison may emphasize quality dimensions that could be interesting to include.
 ---

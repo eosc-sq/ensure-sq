@@ -176,7 +176,7 @@ Bioinformatics software plays a very important role in making critical decisions
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | NO | No |
+|  | no |  | NO | No |
 ---
 
 # 13 - A critical review of "a practical guide to select quality indicators for assessing pareto-based search algorithms in search-based software engineering": Essay on quality indicator selection for SBSE
@@ -189,9 +189,11 @@ This paper presents a critical review of the work published at ICSE'2016 on a pr
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | NO | YES |
+|  | unsure |  | NO | YES |
 
 DG: While a criticism, this paper defines quality indicators.
+
+ER: the abstract is quite general. It introduces the concept of quality indicator without introducing them.
 ---
 
 # 14 - Assessing the quality of industrial avionics software: an extensive empirical evaluation
@@ -204,7 +206,7 @@ A real-time operating system for avionics (RTOS4A) provides an operating environ
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | NO | NO |
+|  | no |  | NO | NO |
 ---
 
 # 15 - Impact of customization over software quality in ERP projects: an empirical study
@@ -217,7 +219,7 @@ Enterprise resource planning (ERP) systems are recognized as management informat
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | NO | YES |
+|  | no  |  | NO | YES |
 ---
 
 # 16 - Productivity paradoxes revisited: Assessing the relationship between quality maturity levels and labor productivity in brazilian software companies
@@ -230,7 +232,7 @@ The adoption of quality assurance methods based on software process improvement 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | NO | Maybe |
+|  | no |  | NO | Maybe |
 
 DG: This seems to be a comparison among existing models.
 ---
@@ -245,7 +247,7 @@ Bayesian networks (BN) have been used for decision making in software engineerin
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | NO | NO |
+|  |no  |  | NO | NO |
 ---
 
 # 18 - On the use of many quality attributes for software refactoring: a many-objective search-based software engineering approach
@@ -258,7 +260,7 @@ Search-based software engineering (SBSE) solutions are still not scalable enough
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | NO | NO |
+|  | no |  | NO | NO |
 ---
 
 # 19 - An empirical study of the impact of modern code review practices on software quality
@@ -271,5 +273,5 @@ Software code review, i.e., the practice of having other team members critique c
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | YES | NO |
+|  | no |  | YES | NO |
 ---

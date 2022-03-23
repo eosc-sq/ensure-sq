@@ -34,7 +34,7 @@ Automated static analysis tools (ASATs) have become a major part of the software
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | NO | NO |
+|  | no |  | NO | NO |
 ---
 
 # 3 - The sustainability of quality in free and open source software
@@ -47,7 +47,10 @@ We learned from the history of software that great software are theones who mana
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | YES | NO |
+|  | unsure |  | YES | NO |
+
+**ER**: this paper seems to be related to software development process. However it talks about sustainability factor and this could be one of the software dimention characteristics.
+
 ---
 
 # 4 - An empirical study of teaching qualities of popular computer science and software engineering instructors using RateMyProfessor.com data
@@ -60,7 +63,7 @@ The employment opportunity for Computer Science (CS), Information Technology and
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | NO | NO |
+|  | no |  | NO | NO |
 ---
 
 # 5 - Deriving a usage-independent software quality metric
@@ -73,7 +76,7 @@ Context: The extent of post-release use of software affects the number of faults
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | NO | NO |
+|  | no |  | NO | NO |
 ---
 
 # 6 - An empirical investigation into merge conflicts and their effect on software quality
@@ -86,7 +89,7 @@ Merge conflicts are known to cause extra effort for developers, but little is kn
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | NO | NO |
+|  | no |  | NO | NO |
 ---
 
 # 7 - How does developer interaction relate to software quality? an examination of product development data
@@ -99,9 +102,11 @@ Industrial software systems are being increasingly developed by large and distri
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | YES | Yes | 
+|  | no |  | YES | Yes | 
 
 DG: I think that this paper explores the social dimension of software quality, and it may define interesting aspects.
+
+ER: This is related to software development process
 
 ---
 
@@ -115,7 +120,7 @@ Design quality is vital if software is to be maintainable. What practices do dev
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | NO | No |
+|  | no |  | NO | No |
 ---
 
 # 9 - Integrating software quality models into risk-based testing
@@ -128,7 +133,7 @@ Risk-based testing is a frequently used testing approach which utilizes identifi
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | NO | NO |
+|  | yes |  | NO | NO |
 
 DG: This paper integrates existing quality models, but does not seem to define one. However, the referenced models could be used.
 ---
@@ -143,7 +148,7 @@ It is claimed by software quality management that the quality of a software prod
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | NO | No |
+|  | no |  | NO | No |
 ---
 
 # 11 - Software quality through the eyes of the end-user and static analysis tools: A study on Android OSS applications
@@ -156,7 +161,9 @@ Source code analysis tools have been the vehicle for measuring and assessing the
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | YES | Yes |
+|  | unsure |  | YES | Yes |
+
+ER: this paper should be more related to the software development process.
 ---
 
 # 12 - Quality Assurance of Bioinformatics Software: A Case Study of Testing a Biomedical Text Processing Tool Using Metamorphic Testing

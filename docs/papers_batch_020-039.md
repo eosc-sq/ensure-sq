@@ -9,7 +9,7 @@ Software quality is recognized as being very significant for achieving competiti
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure/no |  |  |  |  |
+| unsure/no |  |  |  | NO |
 ---
 
 # 21 - Improving and balancing software qualities
@@ -22,9 +22,10 @@ This Technical Briefing describes the nature of Software Qualities (SQs), ilitie
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  | unsure/yes |  |  |  |
+| no  | unsure/yes |  |  | YES |
 
 **ER**: useful for describing the problem, software characteristics
+**DG**: I think it defines non functional requirements for software quality that we may want to include in our work.
 
 ---
 
@@ -38,7 +39,7 @@ Humans are an integral entity for performing software quality and testing activi
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  |  |  |  |  |
+| no  |  |  |  | NO |
 ---
 
 # 23 - Revisiting code ownership and its relationship with software quality in the scope of modern code review

@@ -8,7 +8,7 @@ Agile methods can deliver software that fulfills customer needs rapidly and cont
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | NO | NO |
+|  | no |  | NO | NO |
 ---
 
 # 1 - The Relation of Test-Related Factors to Software Quality: A Case Study on Apache Systems

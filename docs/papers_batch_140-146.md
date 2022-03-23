@@ -9,7 +9,7 @@ Achieving quality is a perennial problem in software development. It is commerci
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  |  |  |
+| yes |  |  | yes |  |
 
 * *MD* - commercial SW, comparison in different SW.
 
@@ -25,7 +25,7 @@ Quality is recognized as a pre-eminently important characteristic of software, y
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes | no |  |  |  |
+| yes | no |  | yes |  |
 
 **ER**: the same author wrote the article [A model for software product quality, 1995](https://ieeexplore.ieee.org/document/345830). There is also [Security quality model: an extension of Dromey’s model, 2015](https://link.springer.com/article/10.1007/s11219-013-9223-1) 
 ---
@@ -40,7 +40,7 @@ Software reliability modeling of data collected during the testing of a large-sc
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure/no |  |  |  |  |
+| unsure/no |  |  | No |  |
 
 * *MD* - measure SW reliability in production/operation
 
@@ -56,7 +56,7 @@ After surveying detection practices in the best of industry, JPL (Jet Propulstio
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no |  |  |  |  |
+| no |  |  | No |  |
 ---
 
 # 144 - Practice of quality modeling and measurement on software life-cycle
@@ -69,7 +69,7 @@ The authors introduce quality metrics into the quantitative software quality est
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes/unsure |  |  |  |  |
+| yes/unsure |  |  | yes |  |
 ---
 
 # 145 - Software Quality Assurance for Maintenance
@@ -82,7 +82,7 @@ Maintenance plays a vital role in protecting quality as a system evolves. The re
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  |  |  |
+| yes |  |  | yes |  |
 
 * *MD* - for Maintenance, may be interesting for our section "Release, Support, Maintenance, Usability, Reproducibility"
 
@@ -98,5 +98,5 @@ The study reported in this paper establishes a conceptual framework and some key
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  |  |  |
+| yes |  |  | yes |  |
 ---

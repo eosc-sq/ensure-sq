@@ -730,7 +730,10 @@ Software quality is recognized as being very significant for achieving competiti
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure/no |  |  |  |  |
+| unsure/no |  | no |  |  |
+
+**MC**: another example of paper about management of organization, and not that much about quality itself.
+
 
 ---
 
@@ -744,7 +747,10 @@ Code ownership establishes a chain of responsibility for modules in large softwa
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes/unsure |  |  |  |  |
+| yes/unsure |  | no |  |  |
+
+**MC**: I don't think this study is useful to define what SW quality should be.
+
 
 ---
 
@@ -758,7 +764,10 @@ In software product line engineering, the customers mostly concentrate on the fu
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure/no |  |  |  |  |
+| unsure/no |  | no |  |  |
+
+**MC**: their concept of "quality" is too general ("security", "performance"), and it doesn't much our task.
+
 
 ---
 
@@ -772,7 +781,10 @@ Software change history plays an important role in measuring software quality an
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure |  |  |  |  |
+| unsure |  | no |  |  |
+
+**MC**: it seems their criteria of "quality" is the detection of bugs. I don't think this study is useful for us.
+
 
 ---
 
@@ -786,9 +798,12 @@ The literature reports that source code lexicon plays a paramount role in progra
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure/no |  |  |  |  |
+| unsure/no |  | no |  |  |
 
 * *MD* - we propose source code vocabulary normalization approaches
+
+* *MC* - too specific, and probably subjective. Probably related to design patterns, à la Gang of Four.
+
 
 ---
 
@@ -802,7 +817,9 @@ Software quality assessment shall monitor and guide the evolution of a system ba
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure |  |  |  |  |
+| unsure |  | yes |  |  |
+
+**MC**: in the abstract they say they provide "an effective selection of quality measurements", and that it's " based on the type of software". It could be useful to see why they claim their selection is "effective", and also for our Landscaping if some of them are specific to a certain kind of SW.
 
 ---
 
@@ -816,7 +833,7 @@ For projects that rely on empirical process control and deliver frequently worki
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure |  |  |  |  |
+| unsure |  | no |  |  |
 
 ---
 
@@ -830,7 +847,7 @@ Each organization devoted to developing software/web applications should have as
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure |  |  |  |  |
+| unsure |  | no |  |  |
 
 ---
 
@@ -844,7 +861,7 @@ A plethora of recent work leverages historical data to help practitioners better
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes/unsure |  |  |  |  |
+| yes/unsure |  | unsure |  |  |
 
 ---
 
@@ -858,7 +875,7 @@ Over the past decade the dynamic capabilities of self-adaptive software-intensiv
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure |  |  |  |  |
+| unsure |  | no |  |  |
 
 ---
 
@@ -876,6 +893,8 @@ With the prevalent application of multi-core CPUs, software practitioners are fa
 
 * *MD* - probably check the quality attributes in the paper.
 
+* *MC* - perhaps too specific, but it can be useful for the Landscaping, to find specific quality criteria for research SW running, for example, in large clusters. I'm thinking in the research SW of the SKA radiotelescope, or the data analysis infraestructure at CERN, for example.
+
 ---
 
 ## 57 - When process data quality affects the number of bugs: Correlations in software engineering datasets
@@ -888,7 +907,9 @@ Software engineering process information extracted from version control systems 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure |  |  |  |  |
+| unsure |  | no |  |  |
+
+**MC**: I'm not very confident on all the papers discussing "correlations", since I don't expect them to provide any actual discussion on quality criteria itself.
 
 ---
 
@@ -902,7 +923,9 @@ With the rapid development of the software industry, improving the quality of so
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure/no |  |  |  |  |
+| unsure/no |  | no |  |  |
+
+**MC**: too domain-specific.
 
 ---
 
@@ -916,9 +939,13 @@ With the rapid development of the software industry, improving the quality of so
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure |  |  |  |  |
+| unsure |  | no |  |  |
 
 * *MD* - check reference to 13 widely-cited attributes related to software quality
+
+* *MD* - probably not very objective and also based on correlations.
+
+
 
 ---
 
@@ -932,9 +959,11 @@ In the last years the software application portfolio has become a key asset for 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes/unsure |  |  |  |  |
+| yes/unsure |  | yes |  |  |
 
 * *MD* - provide a specialization of the SQuaRE quality model
+
+* *MC* - totally related to SW maintainabily and SW in production.
 
 ---
 
@@ -948,7 +977,7 @@ Enormous amount of open source code is available on the Internet and various cod
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes/unsure |  |  |  |  |
+| yes/unsure |  | unsure |  |  |
 
 * *MD* - software development tasks,... three tasks can contribute to improve the software quality
 
@@ -964,7 +993,9 @@ In this paper we discuss the challenges of software quality for medical software
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure/no |  |  |  |  |
+| unsure/no |  | unsure |  |  |
+
+**MC**: I'd do a quick read to see if they provide any actual criteria specific to medical imaging SW.
 
 ---
 
@@ -978,7 +1009,7 @@ The elicitation, analysis, and specification of quality requirements involve car
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure/no |  |  |  |  |
+| unsure/no |  | no |  |  |
 
 ---
 
@@ -992,7 +1023,9 @@ This study proposes a software quality evaluation model and its computing algori
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure/no |  |  |  |  |
+| unsure/no |  | no |  |  |
+
+**MC**: too domain-specific.
 
 ---
 
@@ -1006,7 +1039,9 @@ In a competitive environment where time-to-market is crucial for success, softwa
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure/no |  |  |  |  |
+| unsure/no |  | no |  |  |
+
+**MC**: probably based on the performance of the monitor SW, rather than criteria on SW itself.
 
 ---
 
@@ -1020,7 +1055,9 @@ Web Services technologies and their supporting collection of de facto standards 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure |  |  |  |  |
+| unsure |  | yes |  |  |
+
+**MC**: probably related to scalabily and data formats. Useful for Landscaping and SW in production.
 
 ---
 
@@ -1034,7 +1071,9 @@ In industrial practice, information on post-release field quality of a product t
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure |  |  |  |  |
+| unsure |  | unsure |  |  |
+
+**MC**: we can check if they provide actual criteria for quality assessment.
 
 ---
 

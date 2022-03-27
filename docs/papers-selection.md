@@ -14,7 +14,7 @@ Industrial software systems are being increasingly developed by large and distri
 
 DG: I think that this paper explores the social dimension of software quality, and it may define interesting aspects.
 
-MC: Related to Perspectives and Lanscaping too.
+**MC**: Related to Perspectives and Lanscaping too.
 
 ---
 
@@ -30,7 +30,7 @@ Source code analysis tools have been the vehicle for measuring and assessing the
 | --- | --- | --- | --- | --- |
 |  |  | Yes | YES | Yes |
 
-MC: Related to SW in production. We need to see which type of SW they consider exactly.
+**MC**: Related to SW in production. We need to see which type of SW they consider exactly.
 
 ---
 
@@ -46,7 +46,7 @@ Today, small- and medium-sized enterprises (SMEs) in the software industry face 
 | --- | --- | --- | --- | --- |
 | yes |  | yes  |  |  |
 
-MC: related to SW in prod.
+**MC**: related to SW in prod.
 
 ---
 
@@ -62,7 +62,7 @@ It is widely accepted that software measures provide an appropriate mechanism fo
 | --- | --- | --- | --- | --- |
 | yes |  | unsure |  |  |
 
-MC: the authors mention "165 measures related to 97 different quality attributes". It's so large that I'm unsure if it's suitable for our task. We'll need to see in detail.
+**MC**: the authors mention "165 measures related to 97 different quality attributes". It's so large that I'm unsure if it's suitable for our task. We'll need to see in detail.
 
 ---
 
@@ -80,7 +80,7 @@ We provide an overview of the approach developed by the Software Improvement Gro
 
 **ER**: software definition, software metrics
 
-MC: related to Landscaping, since it focused on quite specific SW (standard) and criteria (maintainability). They refer to the ISO/IEC 9126 definition.
+**MC**: related to Landscaping, since it focused on quite specific SW (standard) and criteria (maintainability). They refer to the ISO/IEC 9126 definition.
 
 ---
 
@@ -98,7 +98,7 @@ Software quality models are a well-accepted means to support quality management 
 
 **ER**: it should explain software characteristics critically
 
-MC: related to Landscaping at least. The tackle a specific problem: "there is a lack of explicitly stated requirements for quality models with respect to their intended mode of application".
+**MC**: related to Landscaping at least. The tackle a specific problem: "there is a lack of explicitly stated requirements for quality models with respect to their intended mode of application".
 
 ---
 
@@ -112,9 +112,11 @@ Early inspections of software requirements specifications (SRS) are known to be 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  |  |  |
+| yes |  | unsure |  |  |
 
 * *MD* - quality attributes
+
+**MC**: it seems from the abtract that the authors propose a more general evaluation framework which englobes SRS, to take into account economical considerations. I see it's useful, but probably it's not directly related to SW quality, but to making compromises. 
 
 ---
 
@@ -128,9 +130,11 @@ Most external software quality attributes are conceptually subjective. For examp
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes | yes |  |  |  |
+| yes | yes | no  |  |  |
 
 **ER**: software characteristics
+
+**MC**: I'm not sure if "subjective" quality assessment is useful for our definition purposes.
 
 ---
 
@@ -144,7 +148,9 @@ Several tools and methods for source code quality assurance based on static anal
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  |  |  |
+| yes |  |  | yes |  |
+
+**MC**: related to Perspectives of developers.
 
 ---
 

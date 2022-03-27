@@ -465,7 +465,9 @@ We learned from the history of software that great software are theones who mana
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | YES | NO |
+|  |  | unsure | YES | NO |
+
+**MC**: I think this can be interesting for Landscaping if it provides criteria which is specific for FOSS. Otherwise, I think it's not providing much for our task.
 
 ---
 
@@ -479,9 +481,12 @@ This paper presents a critical review of the work published at ICSE'2016 on a pr
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | NO | YES |
+|  |  | NO | NO | YES |
 
-DG: While a criticism, this paper defines quality indicators.
+**DG**: While a criticism, this paper defines quality indicators.
+
+**MC**: I'm not confident at all about this paper (too strong and surprising claims based on a very specific methodology), but if they provide quality indicators we can have a look.
+
 ---
 
 ## 15 - Impact of customization over software quality in ERP projects: an empirical study
@@ -494,7 +499,9 @@ Enterprise resource planning (ERP) systems are recognized as management informat
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | NO | YES |
+|  |  | yes | NO | YES |
+
+**MC**: it might be useful to identify quality criteria specific to certain type of SW.
 
 ---
 
@@ -508,9 +515,11 @@ The adoption of quality assurance methods based on software process improvement 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | NO | Maybe |
+|  |  | no | NO | Maybe |
 
-DG: This seems to be a comparison among existing models.
+**DG**: This seems to be a comparison among existing models.
+
+**MC**: related to quality, but it seems the focus is on productivity.
 
 ---
 
@@ -524,7 +533,9 @@ Software code review, i.e., the practice of having other team members critique c
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | YES | NO |
+|  |  | no | YES | NO |
+
+**MC**: I don't expect this article to be useful to establish a definition of quality or general best practices.
 
 ---
 
@@ -538,7 +549,7 @@ This Technical Briefing describes the nature of Software Qualities (SQs), ilitie
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  | unsure/yes |  |  |  |
+| no  | unsure/yes | no |  |  |
 
 **ER**: useful for describing the problem, software characteristics
 
@@ -554,9 +565,12 @@ Many software engineering problems are multi-objective in nature, which has been
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure/no | unsure |  |  |  |
+| unsure/no | unsure | no |  |  |
 
 **ER**: software metrics
+
+**MC**: I'm not confident at all about this paper (too strong and surprising claims based on a very specific methodology), but if they provide quality indicators we can have a look.
+
 
 ---
 
@@ -570,10 +584,12 @@ How can organizational factors such as structure and culture have an impact on t
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  | yes |  |  |  |
+| no  | yes | yes |  |  |
 
 * *ER* - useful for explaining negative impact on quality
 * *MD* - although I voted no we should discuss
+* *MC*: - it's different point of view, focusing on the organizations. It might be useful when discussing in our report the best practices or how to implement the quality criteria.
+
 
 ---
 
@@ -587,9 +603,11 @@ This special issue, owing to its fundamental software quality focus, comprises a
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  | unsure |  |  |  |
+| no  | unsure | no |  |  |
 
 **ER**: useful for newchallenges for software quality research
+
+**MC**: I think it's better to focus on published peer-review material. Even though this interview might provide interesting insights, I wouldn't consider it.
 
 ---
 
@@ -603,9 +621,11 @@ Software quality is of increasing importance in mission-critical embedded softwa
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes | unsure |  |  |  |
+| yes | unsure | yes |  |  |
 
 **ER**: software metrics
+
+**MC**: a good example of criteria for a specific type of software (critical systems).
 
 ---
 
@@ -619,10 +639,11 @@ It is widely believed that distributed software development is riskier and more 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  |  unsure |  |  |  |
+| no  |  unsure | no |  |  |
 
 * *ER* - this should talk about software metrics, maybe it introduces some software characteristics in relation to the software metrics selected.
 * *MD* - seems just distributed vs collocated teams comparison
+* *MC* - more focused on organizational aspects than quality
 
 ---
 
@@ -636,7 +657,7 @@ This paper examines the concept of Quality in Software Engineering, its differen
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure | unsure |  |  |  |
+| unsure | unsure | no |  |  |
 
 **ER**: useful for introducing the problem
 
@@ -652,9 +673,11 @@ Software metrics-based quality estimation models can be effective tools for iden
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure | unsure |  |  |  |
+| unsure | unsure | no |  |  |
 
 **ER**: useful for software metrics
+
+**MC**: I think that authors might have found interesting correlations between SW quality and system failures, but I don't think this article is useful to define quality itself.
 
 ---
 
@@ -668,9 +691,11 @@ The paper describes results of a longitudinal study of developments in the area 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure/no | unsure |  |  |  |
+| unsure/no | unsure | no |  |  |
 
 **ER**: useful for software development process
+
+**MC**: management of organizations, not that much about quality itself.
 
 ---
 
@@ -684,9 +709,12 @@ Quality is recognized as a pre-eminently important characteristic of software, y
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes | no |  |  |  |
+| yes | no | no |  |  |
 
 **ER**: the same author wrote the article [A model for software product quality, 1995](https://ieeexplore.ieee.org/document/345830). There is also [Security quality model: an extension of Dromey’s model, 2015](https://link.springer.com/article/10.1007/s11219-013-9223-1) 
+
+**MC**: in that case, let's consider the 1995's article, which seems absolutely useful for our task.
+
 
 ---
 

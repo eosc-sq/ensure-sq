@@ -148,7 +148,7 @@ Several tools and methods for source code quality assurance based on static anal
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  | yes |  |
+| yes |  | yes |  |  |
 
 **MC**: related to Perspectives of developers.
 

@@ -164,7 +164,9 @@ Internal software quality, e.g. the quality of code, has great impact on the ove
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  |  |  |
+| yes |  | unsure |  |  |
+
+**MC**: this seems to be proposing some kind of methodology, rather than criteria. We should to check how objective it is.
 
 ---
 
@@ -178,9 +180,11 @@ Software Quality Engineering is an emerging discipline that is concerned with im
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  |  |  |
+| yes |  | yes |  |  |
 
 * *MD* - comparative evaluation of existing quality models
+
+**MC**: I expect this one to have a complete comparison of other methodologies.
 
 ---
 
@@ -194,7 +198,7 @@ The open source software community has published a substantial body of research 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  |  |  |
+| yes |  | yes |  |  |
 
 ---
 
@@ -208,7 +212,7 @@ Recently, software development teams using agile processes have started widely a
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  |  |  |
+| yes |  |  | yes |  |
 
 ---
 
@@ -222,7 +226,7 @@ The support of software quality in a software development process may be regarde
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  |  |  |
+| yes |  | yes |  |  |
 
 ---
 
@@ -236,7 +240,9 @@ We are proposing research on self-adaptive interface assertion enforcement for t
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  |  |  |
+| yes |  | yes |  |  |
+
+**MC**: assertions are general, but perhaps very important for research software. Useful for Landscaping.
 
 ---
 
@@ -250,7 +256,9 @@ This paper examines how the industrial applicability of both ISO/IEC 9126:2001 a
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  |  |  |
+| yes |  | yes |  |  |
+
+**MC**: perhaps too specific, but this one provides a case study on the applicability of ISO/IEC 9126.
 
 ---
 
@@ -264,9 +272,11 @@ A user survey was carried out to evaluate empirically ISO/IEC 9126's dimensional
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes | yes |  |  |  |
+| yes | yes | yes |  |  |
 
 **ER**: however it depends on its content, because ISO/IEC 9126 has been revised by ISO/IEC 25010:2011. 
+
+**MC**: article 99 also refers to ISO/IEC 9126. It'd be interesting to describe what are the novelties in ISO/IEC 25010:2011.
 
 ---
 
@@ -280,7 +290,7 @@ Quality is currently considered one of the main assets with which a firm can enh
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  | yes |  |  |  |
+|  | yes | yes  |  |  |
 
 **ER**: it should identify set of attributes that overlaps various models
 
@@ -296,7 +306,9 @@ Industrial evaluations of COTS software largely used the quality models provided
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  |  |  |
+| yes |  | yes |  |  |
+
+**MC**: this one is specifically on criteria for quality. I expect a detailed review and discussion in this article.
 
 ---
 
@@ -310,7 +322,9 @@ It is very important to improve software quality using program analysis & measur
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  |  |  |
+| yes |  | unsure |  |  |
+
+**MC**: I'm not sure if this one is about quality itself, or to optimize processes in which quality is improved.
 
 ---
 
@@ -324,7 +338,9 @@ A considerable number of software suppliers report improvements in product and s
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  |  |  |
+| yes |  | yes |  |  |
+
+**MC**: any works that are critical with quality standards or methodologies is important, since they're very likely to discuss about their weaknesses and provide hints on how to improve them.
 
 ---
 
@@ -338,7 +354,9 @@ Specifying the quality of software products is a valuable addition to functional
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | Yes |  |
+|  |  | yes | Yes |  |
+
+**MC**: same comments as for 118: articles decribing "pitfalls" of weaknesses are very informative.
 
 ---
 
@@ -352,7 +370,9 @@ This paper has developed from the SoFEA project at The open University which is 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | Yes |  |
+|  |  | yes | Yes |  |
+
+**MC**: important for Landscaping and to identify practices which might be specific to certain disciplines (such as scientific or research software).
 
 ---
 
@@ -366,7 +386,9 @@ Rigorous project management can help raise a software product development proces
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | Yes |  |
+|  |  | no | Yes |  |
+
+**MC**: I don't think they're discussing the same quality concept we're working on.
 
 ---
 
@@ -380,7 +402,7 @@ Many software quality metrics to objectively grasp software products and process
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | Yes |  |
+|  |  | yes | Yes |  |
 
 ---
 
@@ -398,6 +420,8 @@ Achieving quality is a perennial problem in software development. It is commerci
 
 * *MD* - commercial SW, comparison in different SW.
 
+**MC**: Landscaping. Different criteria depending on the application type ("commercial" here). SW in production.
+
 ---
 
 ## 145 - Software Quality Assurance for Maintenance
@@ -410,7 +434,7 @@ Maintenance plays a vital role in protecting quality as a system evolves. The re
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  |  |  |
+| yes |  | yes |  |  |
 
 * *MD* - for Maintenance, may be interesting for our section "Release, Support, Maintenance, Usability, Reproducibility"
 
@@ -426,7 +450,7 @@ The study reported in this paper establishes a conceptual framework and some key
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  |  |  |
+| yes |  | yes |  |  |
 
 ---
 # To be discussed - mixed voting - Total 15 articles

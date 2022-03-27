@@ -10,9 +10,11 @@ Industrial software systems are being increasingly developed by large and distri
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | YES | Yes | 
+|  |  | Yes | YES | Yes | 
 
 DG: I think that this paper explores the social dimension of software quality, and it may define interesting aspects.
+
+MC: Related to Perspectives and Lanscaping too.
 
 ---
 
@@ -26,7 +28,9 @@ Source code analysis tools have been the vehicle for measuring and assessing the
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | YES | Yes |
+|  |  | Yes | YES | Yes |
+
+MC: Related to SW in production. We need to see which type of SW they consider exactly.
 
 ---
 
@@ -40,7 +44,9 @@ Today, small- and medium-sized enterprises (SMEs) in the software industry face 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  |  |  |
+| yes |  | yes  |  |  |
+
+MC: related to SW in prod.
 
 ---
 
@@ -54,7 +60,9 @@ It is widely accepted that software measures provide an appropriate mechanism fo
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  |  |  |
+| yes |  | unsure |  |  |
+
+MC: the authors mention "165 measures related to 97 different quality attributes". It's so large that I'm unsure if it's suitable for our task. We'll need to see in detail.
 
 ---
 
@@ -68,9 +76,11 @@ We provide an overview of the approach developed by the Software Improvement Gro
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes | yes |  |  |  |
+| yes | yes | yes |  |  |
 
 **ER**: software definition, software metrics
+
+MC: related to Landscaping, since it focused on quite specific SW (standard) and criteria (maintainability). They refer to the ISO/IEC 9126 definition.
 
 ---
 
@@ -84,9 +94,11 @@ Software quality models are a well-accepted means to support quality management 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes | yes |  |  |  |
+| yes | yes | yes |  |  |
 
 **ER**: it should explain software characteristics critically
+
+MC: related to Landscaping at least. The tackle a specific problem: "there is a lack of explicitly stated requirements for quality models with respect to their intended mode of application".
 
 ---
 

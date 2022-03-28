@@ -21,3 +21,4 @@ execute the script `python3 parse-zotero.py` in the `scripts`directory.
 | Yes | https://hal.archives-ouvertes.fr/hal-02545142 | Encouraging a wider usage of software derived from research |
 | Yes | https://dl.acm.org/doi/10.1145/2723872.2723882 | An introduction to Docker for reproducible research |
 | Yes | http://journal.frontiersin.org/article/10.3389/fninf.2017.00076/full | Reproducibility vs. Replicability: A Brief History of a Confused Terminology |
+| No  | https://mediatum.ub.tum.de/doc/1110601/1110601.pdf | Software Quality Models in Practice (softare quality is difficult to define, the use of software quality models could make it easier/more tangible |

@@ -643,7 +643,7 @@ It is widely believed that distributed software development is riskier and more 
 
 * *ER* - this should talk about software metrics, maybe it introduces some software characteristics in relation to the software metrics selected.
 * *MD* - seems just distributed vs collocated teams comparison
-* *MC* - more focused on organizational aspects than quality
+* *MC* - more focused on organizational aspects than quality.
 
 ---
 
@@ -802,7 +802,7 @@ The literature reports that source code lexicon plays a paramount role in progra
 
 * *MD* - we propose source code vocabulary normalization approaches
 
-* *MC* - too specific, and probably subjective. Probably related to design patterns, à la Gang of Four.
+* *MC* - too specific, and probably subjective. Probably related to design patterns, *à la Gang of Four*.
 
 
 ---
@@ -1087,7 +1087,9 @@ This paper describes the authors' experiences of initiating and sustaining a pro
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure |  |  |  |  |
+| unsure |  | unsure |  |  |
+
+**MC**: we might have a look at the criteria, but I'm not confident their concept to 'quality' is the same as us.
 
 ---
 
@@ -1101,7 +1103,9 @@ Developing and maintaining quality software is paramount in the information-inte
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure/no |  |  |  |  |
+| unsure/no |  | no |  |  |
+
+**MC**: it seems more related to management than to quality criteria.
 
 ---
 
@@ -1115,7 +1119,9 @@ An increasing number of software process and product standards emphasize the nee
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure |  |  |  |  |
+| unsure |  | yes |  |  |
+
+**MC**: I think it's worth it to have a look. They refer to "high-quality" SW, so I expect they give a definition.
 
 ---
 
@@ -1129,7 +1135,9 @@ Software organizations can significantly improve the quality of their output if 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure/no |  |  |  |  |
+| unsure/no |  | no |  |  |
+
+**MC**: this one proposed a methodology to ensure quality. It's worth to have a look to the proposed criteria. Perhaps also useful for "SW in prod".
 
 ---
 
@@ -1143,7 +1151,9 @@ Our paper describes the requirements and possibilities of integration of metrics
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure |  |  |  |  |
+| unsure |  | yes |  |  |
+
+**MC**: if the propose automatic evaluation with tools, they should provide some objective criteria.
 
 ---
 
@@ -1157,7 +1167,9 @@ High-profile disasters and the ensuing debates in the press are alerting more pe
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | unsure |  |
+|  |  | yes | unsure |  |
+
+**MC**: this should be useful for Landscaping also. Another example of criteria for quality which is different according to the domain. Here the mention a "nuclear power plant" (critical systems?).
 
 ---
 
@@ -1171,7 +1183,9 @@ This paper presents a case study of a software project in the maintenance phase.
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | unsure |  |
+|  |  | no | unsure |  |
+
+**MC**: it seems to be focused on the benefits of "reuse of data", not on quality of SW itself.
 
 ---
 
@@ -1185,7 +1199,9 @@ With the historical characterization of software development as being costly due
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | Maybe |  |
+|  |  | no | Maybe |  |
+
+**MC**: it looks more about organizational aspects than quality itself.
 
 ---
 
@@ -1199,7 +1215,9 @@ Software quality metrics have potential for helping to assure the quality of sof
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | unsure |  |
+|  |  | yes | unsure |  |
+
+**MC**: useful for Landscaping. I expect criteria for quality applied to critical systems here.
 
 ---
 
@@ -1213,7 +1231,9 @@ In this paper we discuss the two dominant modes of thought on the problem of sof
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | unsure |  |
+|  |  | no | unsure |  |
+
+**MC**: probably about organization, not quality itself.
 
 ---
 
@@ -1227,7 +1247,9 @@ Quality management standard BS5740/ISO9001 is a key technology for UK and Europe
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | unsure |  |
+|  |  | yes | unsure |  |
+
+**MC**: it discusses limitations, so it should provide insights about what is missing in the standards.
 
 ---
 
@@ -1241,7 +1263,9 @@ The software created by industrial, educational, and research organizations is i
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | unsure |  |
+|  |  | no | unsure |  |
+
+**MC**: this doesn't seem related to quality itself.
 
 ---
 
@@ -1255,7 +1279,9 @@ With the current worldwide focus on improvement in software process, there is cl
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  |  | unsure |  |
+|  |  | yes | unsure |  |
+
+**MC**: if it's about 'measuring' then it should provide objective criteria.
 
 ---
 
@@ -1269,9 +1295,13 @@ Software reliability modeling of data collected during the testing of a large-sc
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure/no |  |  |  |  |
+| unsure/no |  | no |  |  |
 
 * *MD* - measure SW reliability in production/operation
+
+* *MC* - it seems to be considering "product quality" as non-faulty and "from the customer perspective". It might provide some hints for us, but I don't think it's worth it.
+
+
 
 ---
 
@@ -1285,6 +1315,8 @@ The authors introduce quality metrics into the quantitative software quality est
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes/unsure |  |  |  |  |
+| yes/unsure |  | yes |  |  |
+
+**MC**: if use cases are discussed, it should provide some criteria of quality. Moreover, it's "quantitative".
 
 ---

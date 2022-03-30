@@ -47,9 +47,11 @@ We learned from the history of software that great software are theones who mana
 
 | MD  | ER     | MC  | VL  | DG  | JC  | MV  |
 | --- | ------ | --- | --- | --- | --- | --- |
-|     | unsure |     | YES | NO  | No  | Yes |
+|  No | unsure |     | YES | NO  | No  | Yes |
 
 **ER**: this paper seems to be related to software development process. However it talks about sustainability factor and this could be one of the software dimention characteristics.
+
+**MD**: this seems to be about subjective factors, thus my vote
 
 ---
 
@@ -102,11 +104,15 @@ Industrial software systems are being increasingly developed by large and distri
 
 | MD  | ER  | MC  | VL  | DG  | JC  | MV |
 | --- | --- | --- | --- | --- | --- | -- |
-|     | no  |     | YES | Yes | No  | No |
+| no  | no  | Yes | YES | Yes | No  | No |
 
-DG: I think that this paper explores the social dimension of software quality, and it may define interesting aspects.
+**DG**: I think that this paper explores the social dimension of software quality, and it may define interesting aspects.
 
-ER: This is related to software development process
+**ER**: This is related to software development process
+
+**MC**: Related to Perspectives and Lanscaping too.
+
+**MD**: this seems to be about subjective factors, thus my vote
 
 ---
 
@@ -120,9 +126,11 @@ Design quality is vital if software is to be maintainable. What practices do dev
 
 | MD  | ER  | MC  | VL  | DG  | JC  | MV  |
 | --- | --- | --- | --- | --- | --- | --- |
-|     | no  |     | NO  | No  | Yes | Yes |
+| no  | no  |     | NO  | No  | Yes | Yes |
 
-JC: Could include quality indicators
+**JC**: Could include quality indicators
+
+**MD**: this seems to be about subjective factors, thus my vote
 
 ---
 
@@ -139,6 +147,7 @@ Risk-based testing is a frequently used testing approach which utilizes identifi
 |     | yes |     | NO  | NO  | No  | No  |
 
 DG: This paper integrates existing quality models, but does not seem to define one. However, the referenced models could be used.
+
 ---
 
 # 10 - Challenges of software process and product quality improvement: catalyzing defect root-cause investigation by process enactment data analysis
@@ -166,11 +175,11 @@ Source code analysis tools have been the vehicle for measuring and assessing the
 | --- | ------ | --- | --- | --- | --- | --- |
 |     | unsure |     | YES | Yes | Yes | Yes |
 
-ER: this paper should be more related to the software development process.
+**ER**: this paper should be more related to the software development process.
 
-JC: Could include quality indicators based on end-user dimension
+**JC**: Could include quality indicators based on end-user dimension
 
-MV: The end-user-review aspect could indeed be interesting.
+**MV**: The end-user-review aspect could indeed be interesting.
 
 ---
 
@@ -230,9 +239,11 @@ Enterprise resource planning (ERP) systems are recognized as management informat
 
 | MD  | ER  | MC  | VL  | DG  | JC  | MV  |
 | --- | --- | --- | --- | --- | --- | --- |
-|     | no  |     | NO  | YES | Yes | Yes |
+|     | no  | yes | NO  | YES | Yes | Yes |
 
-JC: Includes definition of software quality
+**JC**: Includes definition of software quality
+
+**MC**: it might be useful to identify quality criteria specific to certain type of SW.
 
 ---
 
@@ -248,7 +259,10 @@ The adoption of quality assurance methods based on software process improvement 
 | --- | --- | --- | --- | ----- | --- | --- |
 |     | no  |     | NO  | Maybe |  No | No  |
 
-DG: This seems to be a comparison among existing models.
+**DG**: This seems to be a comparison among existing models.
+
+**MC**: related to quality, but it seems the focus is on productivity.
+
 ---
 
 # 17 - A systematic literature review on the applications of Bayesian networks to predict software quality
@@ -275,10 +289,10 @@ Search-based software engineering (SBSE) solutions are still not scalable enough
 | MD  | ER  | MC  | VL  | DG  | JC  | MV     |
 | --- | --- | --- | --- | --- | --- | ------ |
 |     | no  |     | NO  | NO  | No  | unsure |
+
+**MV**: Also this one could include quality indicators
+
 ---
-
-MV: Also this one could include quality indicators
-
 
 # 19 - An empirical study of the impact of modern code review practices on software quality
 
@@ -290,5 +304,10 @@ Software code review, i.e., the practice of having other team members critique c
 
 | MD  | ER  | MC  | VL  | DG  | JC  | MV  |
 | --- | --- | --- | --- | --- | --- | --- |
-|     | no  |     | YES | NO  | No  | Yes |
+| no  | no  | no  | YES | NO  | No  | Yes |
+
+**MC**: I don't expect this article to be useful to establish a definition of quality or general best practices.
+
+**MD**: seems only about code review, does not seems to add more than that.
+
 ---

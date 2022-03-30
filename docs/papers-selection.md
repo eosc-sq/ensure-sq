@@ -282,9 +282,9 @@ Quality is currently considered one of the main assets with which a firm can enh
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  | yes | yes  |  |  |
+|     | yes | yes |     | YES |
 
-**ER**: it should identify set of attributes that overlaps various models
+* *ER* - it should identify set of attributes that overlaps various models
 
 ---
 
@@ -298,9 +298,9 @@ Industrial evaluations of COTS software largely used the quality models provided
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  | yes |  |  |
+| yes |     | yes |     | YES |
 
-**MC**: this one is specifically on criteria for quality. I expect a detailed review and discussion in this article.
+* *MC* - this one is specifically on criteria for quality. I expect a detailed review and discussion in this article.
 
 ---
 
@@ -312,11 +312,11 @@ Industrial evaluations of COTS software largely used the quality models provided
 
 It is very important to improve software quality using program analysis & measurement tools and SQA (Software Quality Assurance) method at the appropriate points during the process of development. But in many development departments, there is often not enough time to evaluate and use the tools and SQA method or to accumulate the know-how for effective use. This paper describes the support activity of a software quality analysis & measurement service which is performed by our team of laboratory within the company as a third-party independent staff group. We call this activity HQC (High Quality software creation support virtual Center). The purpose of this activity is as follows. First we improve the software quality engineering process in the development department, for example, we help them to increase efficiency of review or testing. To accomplish this, we use program static analysis tools to detect fault-prone software components. Next we assist in starting their own self-improvement process. In addition, we provide service activity to many development departments concurrently. We have been making progress with these activities, and some development departments have begun to establish improvement process themselves.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| yes |  | unsure |  |  |
+| MD  | ER  | MC     | VL  | DG      |
+| --- | --- | ------ | --- | ------ |
+| yes |     | unsure |     | Unsure |
 
-**MC**: I'm not sure if this one is about quality itself, or to optimize processes in which quality is improved.
+* *MC* - I'm not sure if this one is about quality itself, or to optimize processes in which quality is improved.
 
 ---
 
@@ -330,9 +330,9 @@ A considerable number of software suppliers report improvements in product and s
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  | yes |  |  |
+| yes |     | yes |     | YES |
 
-**MC**: any works that are critical with quality standards or methodologies is important, since they're very likely to discuss about their weaknesses and provide hints on how to improve them.
+* *MC* - any works that are critical with quality standards or methodologies is important, since they're very likely to discuss about their weaknesses and provide hints on how to improve them.
 
 ---
 
@@ -346,9 +346,9 @@ Specifying the quality of software products is a valuable addition to functional
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  | yes | Yes |  |
+|     |     | yes | Yes | Yes |
 
-**MC**: same comments as for 118: articles decribing "pitfalls" of weaknesses are very informative.
+* *MC* - same comments as for 118: articles describing "pitfalls" of weaknesses are very informative.
 
 ---
 
@@ -360,11 +360,12 @@ Specifying the quality of software products is a valuable addition to functional
 
 This paper has developed from the SoFEA project at The open University which is studying the non-technical aspects of quality in software. This involves seeing the technical elements of software development as very much part of a wider context. The culture of an organization as a whole, particularly its management strategies, are regarded as driving and shaping the technology. A particular challenge for management we have observed is how to harmonize a skilled individualist (affectionately dubbed a 'maverick') and a quality management system. We explore the characteristics of an individualist programmer and discuss the options for managing such a person. Some of the experiences of a scientific organization are reported. © 1996 Chapman & Hall.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-|  |  | yes | Yes |  |
+| MD  | ER  | MC  | VL  | DG     |
+| --- | --- | --- | --- | ------ |
+|     |     | yes | Yes | Unsure |
 
-**MC**: important for Landscaping and to identify practices which might be specific to certain disciplines (such as scientific or research software).
+* *MC* - important for Landscaping and to identify practices which might be specific to certain disciplines (such as scientific or research software).
+* *DG* - The paper seems to focus on quality management, rather than defining quality dimensions
 
 ---
 
@@ -376,11 +377,12 @@ This paper has developed from the SoFEA project at The open University which is 
 
 Rigorous project management can help raise a software product development process from an initial, immature stage that is unstable and unrepeatable to an optimized maturity level characterized by continuous improvement and innovation. Goals and actions related to a repeatable project management process have been outlined in the Capability Maturity Model (CMM) developed by the Software Engineering Institute at Carnegie Mellon University. The CMM provides good guidelines for initiating software process improvement particularly in the project management area; however, the successful implementation of the CMM guidelines is often not accomplished without significant organizational change involving increased emphasis on change management, teams and employee empowerment. This paper is empirically based on observations, surveys, and interviews of project team managers and project team members in a large, multinational organization. The focus of the paper is on the development of a project management process that emphasizes project planning, change management, quality management, team work, and process control. Findings presented in this paper are correlated with the CMM guidelines as well as organizational factors that were found to enable or impede the successful deployment of various aspects of a project management improvement plan. The role of education and training in process and quality techniques as well as project management tools that support group work is also examined. This paper provides some insight into the issues faced by organizations based on traditional hierarchy or matrix management as they attempt to move into a more process-driven, quality-oriented development environment. As organizations move towards global markets they need increased emphasis on quality, value, teams, standards and global project management strategies based on structured guidelines to handle process Sow within and between projects, departments, organizations, and national boundaries. © 1996 Chapman & Hall.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-|  |  | no | Yes |  |
+| MD  | ER  | MC  | VL  | DG     |
+| --- | --- | --- | --- | ------ |
+|     |     | no  | Yes | Unsure |
 
-**MC**: I don't think they're discussing the same quality concept we're working on.
+* *MC* - I don't think they're discussing the same quality concept we're working on.
+* *DG* - The paper seems focused on quality management of software. However, the dimensions used could be helpful
 
 ---
 
@@ -394,7 +396,7 @@ Many software quality metrics to objectively grasp software products and process
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-|  |  | yes | Yes |  |
+|     |     | yes | yes | yes |
 
 ---
 
@@ -408,11 +410,10 @@ Achieving quality is a perennial problem in software development. It is commerci
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  |  |  |
+| yes |     |     | yes | yes |
 
 * *MD* - commercial SW, comparison in different SW.
-
-**MC**: Landscaping. Different criteria depending on the application type ("commercial" here). SW in production.
+* *MC* - Landscaping. Different criteria depending on the application type ("commercial" here). SW in production.
 
 ---
 
@@ -424,11 +425,12 @@ Achieving quality is a perennial problem in software development. It is commerci
 
 Maintenance plays a vital role in protecting quality as a system evolves. The results of this study pinpoint how to make maintenance a SQA. Copyright © 1987 by The Institute of Electrical and Electronics Engineers, Inc.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| yes |  | yes |  |  |
+| MD  | ER  | MC  | VL  | DG     |
+| --- | --- | --- | --- | ------ |
+| yes |     | yes | yes | unsure |
 
 * *MD* - for Maintenance, may be interesting for our section "Release, Support, Maintenance, Usability, Reproducibility"
+* *DG* - Abstract is not very informative
 
 ---
 
@@ -442,7 +444,7 @@ The study reported in this paper establishes a conceptual framework and some key
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  | yes |  |  |
+| yes |     | yes | yes | yes |
 
 ---
 
@@ -861,11 +863,11 @@ The paper compares the models used for software quality evaluation to the modell
 
 This paper examines the concept of Quality in Software Engineering, its different contexts and its different meanings to various people. It begins with a commentary on quality issues for systems development and various stakeholders' involvement. It revisits aspects and concepts of systems development methods and highlights the relevance of quality issues to the choice of a process model. A summarised review of some families of methods is presented, where their application domain, lifecycle coverage, strengths and weaknesses are considered. Under the new development era the requirements of software development change; the role of methods and stakeholders change, too. The paper refers to the latest developments in the area of software engineering and emphasises the shift from traditional conceptual modelling to requirements engineering and process metamodelling principles. We provide support for an emerging discipline in the form of a software process metamodel to cover new issues for software quality and process improvement. The widening of the horizons of software engineering both as a 'communication tool' and as a 'scientific discipline' (and not as a 'craft') is needed in order to support both communicative and scientific quality systems properties. In general, we can consider such a discipline as a thinking tool for understanding the generic process and as the origin of combining intuition and quality engineering to transform requirements to adequate human-centred information systems. We conclude with a schematic representation of a Generic Process Metamodel (GPM) indicating facets contributed by Software Engineering, Computer Science, Information Systems, Mathematics, Linguistics, Sociology and Anthropology. Ongoing research and development issues have provided evidence for influence from even more diverse disciplines.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| unsure | unsure | no |  |  |
+| MD     | ER     | MC  | VL  | DG  |
+| ------ | ------ | --- | --- | --- |
+| unsure | unsure | no  |     | NO  |
 
-**ER**: useful for introducing the problem
+* *ER* - useful for introducing the problem
 
 ---
 
@@ -877,13 +879,29 @@ This paper examines the concept of Quality in Software Engineering, its differen
 
 Software metrics-based quality estimation models can be effective tools for identifying which modules are likely to be fault-prone or not fault-prone. The use of such models prior to system deployment can considerably reduce the likelihood of faults discovered during operations, hence improving system reliability. A software quality classification model is calibrated using metrics from a past release or similar project, and is then applied to modules currently under development. Subsequently, a timely prediction of which modules are likely to have faults can be obtained. However, software quality classification models used in practice may not provide a useful balance between the two misclassification rates, especially when there are very few faulty modules in the system being modeled. This paper presents, in the context of case-based reasoning, two practical classification rules that allow appropriate emphasis on each type of misclassification as per the project requirements. The suggested techniques are especially useful for high-assurance systems where faulty modules are rare. The proposed generalized classification methods emphasize on the costs of misclassifications, and the unbalanced distribution of the faulty program modules. We illustrate the proposed techniques with a case study that consists of software measurements and fault data collected over multiple releases of a large-scale legacy telecommunication system. In addition to investigating the two classification methods, a brief relative comparison of the techniques is also presented. It is indicated that the level of classification accuracy and model-robustness observed for the case study would be beneficial in achieving high software reliability of its subsequent system releases. Similar observations are made from our empirical studies with other case studies.
 
+| MD     | ER     | MC  | VL  | DG  |
+| ------ | ------ | --- | --- | --- |
+| unsure | unsure | no  |     | NO  |
+
+* *ER* - useful for software metrics
+* *MC* - I think that authors might have found interesting correlations between SW quality and system failures, but I don't think this article is useful to define quality itself.
+
+---
+
+# 107 - GEQUAMO - A generic, multilayered, customisable, software quality model
+
+## Georgiadou E.
+
+## https://www.scopus.com/inward/record.uri?eid=2-s2.0-3543133647&doi=10.1023%2fA%3a1025817312035&partnerID=40&md5=badb2f8c8a55653a96fec05d28815c48
+
+Software quality models have primarily been based on top down process improvement approaches. Such models are based on the fundamental principle of empowerment of all involved and foster a questioning attitude through the active exchange of ideas and criticism ensuring that the most appropriate approach for quality improvements is adopted. The holistic view of systems enables the incorporation of many viewpoints held by different parties within the same organisation and by the same party at different stages of development. In this paper the GEQUAMO (GEneric, multilayered and customisable) QUAlity MOdel is proposed. GEQUAMO encapsulates the requirements of different stakeholders in a dynamic and flexible manner so as to enable each stakeholder (developer, user or sponsor) to construct their own model reflecting the emphasis/weighting for each attribute/requirement. Using a combination of the CFD (Composite Features Diagramming Technique) developed by the author, and Kiviat diagrams a multilayered and dynamic model is constructed. Instances of models are presented together with the algorithm for the computation of the profiles. Indications of future work conclude the paper.
+
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| unsure | unsure | no |  |  |
+|     | no  |     |     | YES |
 
-**ER**: useful for software metrics
-
-**MC**: I think that authors might have found interesting correlations between SW quality and system failures, but I don't think this article is useful to define quality itself.
+* *ER*: useful for building software quality model
+* *DG* - It's defining a quality model, which is kind of what we need to review, don't we?
 
 ---
 
@@ -895,13 +913,12 @@ Software metrics-based quality estimation models can be effective tools for iden
 
 The paper describes results of a longitudinal study of developments in the area of software product and process quality improvement within a Hungarian software company, IQSOFT Ltd. This company has been active in this area since 1993, trying to build, introduce and maintain an efficiently working quality management system which, e.g., fulfils the ISO 9001 requirements, allows steady software process improvement and, at the same time, conforms to company's own needs. Over the last eight years five phases could be distinguished. Each phase is described shortly, following the same structure, namely: basic starting points, key problem areas, literature consulted, activities and design executed, reflections on what happened and why. The lessons resulting from the analysis of this case have been formulated in terms of guidelines. We feel that these are applicable to any low maturity software development organisation embarking on a product or process quality improvement endeavour. These guidelines are developed around a framework containing the basic issues of software production (project management, technical processes and products). The guidelines advocate a careful step-by-step development of definitions, quality characteristics, and metrics related to these objects while at the same time developing and introducing the associated process.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| unsure/no | unsure | no |  |  |
+| MD        | ER     | MC  | VL  | DG  |
+| --------- | ------ | --- | --- | --- |
+| unsure/no | unsure | no  |     | NO |
 
-**ER**: useful for software development process
-
-**MC**: management of organizations, not that much about quality itself.
+* *ER* - useful for software development process
+* *MC* - management of organizations, not that much about quality itself.
 
 ---
 
@@ -915,11 +932,11 @@ Quality is recognized as a pre-eminently important characteristic of software, y
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes | no | no |  |  |
+| yes | no  | no  | yes | yes |
 
-**ER**: the same author wrote the article [A model for software product quality, 1995](https://ieeexplore.ieee.org/document/345830). There is also [Security quality model: an extension of Dromey’s model, 2015](https://link.springer.com/article/10.1007/s11219-013-9223-1) 
-
-**MC**: in that case, let's consider the 1995's article, which seems absolutely useful for our task.
+* *ER* - the same author wrote the article [A model for software product quality, 1995](https://ieeexplore.ieee.org/document/345830). There is also [Security quality model: an extension of Dromey’s model, 2015](https://link.springer.com/article/10.1007/s11219-013-9223-1) 
+* *MC* - in that case, let's consider the 1995's article, which seems absolutely useful for our task.
+* *DG* - We should probably pick one of them (1995 model, perhaps?)
 
 ---
 
@@ -1258,11 +1275,11 @@ In industrial practice, information on post-release field quality of a product t
 
 This paper describes the authors' experiences of initiating and sustaining a project at CSIRO aimed at accelerating the successful adoption of COTS middleware technologies in large business and scientific information systems. The projects aims are described, along with example outcomes and an assessment of what is needed for wide-scale software component quality assessments to succeed.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| unsure |  | unsure |  |  |
+| MD     | ER  | MC     | VL  | DG  |
+| ------ | --- | ------ | --- | --- |
+| unsure |     | unsure |     | NO  |
 
-**MC**: we might have a look at the criteria, but I'm not confident their concept to 'quality' is the same as us.
+* *MC* - we might have a look at the criteria, but I'm not confident their concept to 'quality' is the same as us.
 
 ---
 
@@ -1274,11 +1291,11 @@ This paper describes the authors' experiences of initiating and sustaining a pro
 
 Developing and maintaining quality software is paramount in the information-intensive society. A myriad of concepts, tools and techniques exist that can be employed to improve the quality of software and at the same time increase developmental efficiencies. Approaches used by many software development units include: Capability Maturity Model (CMM), Total Quality Management (TQM), and ISO 9000-3. Implementation of these approaches without appropriate management oversight does not guarantee success. This study examines the role of the manager vis-à-vis "leadership style" with software quality. Data collected using a questionnaire administered to members of the American Society for Quality (ASQ) - Software Division, suggest that the Transformational leadership style of the manager has a significant positive relationship with the quality of the software developed.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| unsure/no |  | no |  |  |
+| MD        | ER  | MC  | VL  | DG  |
+| --------- | --- | --- | --- | --- |
+| unsure/no |     | no  |     | NO  |
 
-**MC**: it seems more related to management than to quality criteria.
+* *MC* - it seems more related to management than to quality criteria.
 
 ---
 
@@ -1290,11 +1307,11 @@ Developing and maintaining quality software is paramount in the information-inte
 
 An increasing number of software process and product standards emphasize the need for measurement. ISO 9001, for example, provides guidance for monitoring and controlling product and process characteristics during both production and installation. However, standards provide little guidance as to what exactly users should measure and how to use the results to support the development of high-quality software. Furthermore, measurement cannot be defined independent of context. A metric set judged valid on one project may lead to poor quality or high development costs when applied to another project. When quality is measured, several factors come into play, including product characteristics (such as size), process maturity level of the company developing the software product, its development environment (such as the design methodology and CASE tools used), and the development team's skill and experience.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| unsure |  | yes |  |  |
+| MD     | ER  | MC  | VL  | DG  |
+| ------ | --- | --- | --- | --- |
+| unsure |     | yes |     | NO  |
 
-**MC**: I think it's worth it to have a look. They refer to "high-quality" SW, so I expect they give a definition.
+* *MC* - I think it's worth it to have a look. They refer to "high-quality" SW, so I expect they give a definition.
 
 ---
 
@@ -1306,11 +1323,11 @@ An increasing number of software process and product standards emphasize the nee
 
 Software organizations can significantly improve the quality of their output if they have a defined and documented software process, together with the appropriate techniques and tools to measure its effectiveness. Without a defined process it is impossible to measure success or focus on how development capability can be enhanced. To date, a number of software process improvement frameworks have been developed and implemented. However, most of these models have been targeted at large-scale producers. Furthermore, they have applied to companies who use traditional development techniques. Smaller companies and those operating in development areas where speed of delivery is paramount have not, as yet, had process improvement paradigms available for adoption. This study examined the software process in a small company and emerged with the recommendation of the use of the Dynamic Systems Development Method (DSDM) and the Personal Software Process (PSP) for achieving software process improvement.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| unsure/no |  | no |  |  |
+| MD        | ER  | MC  | VL  | DG  |
+| --------- | --- | --- | --- | --- |
+| unsure/no |     | no  |     | NO  |
 
-**MC**: this one proposed a methodology to ensure quality. It's worth to have a look to the proposed criteria. Perhaps also useful for "SW in prod".
+* *MC* - this one proposed a methodology to ensure quality. It's worth to have a look to the proposed criteria. Perhaps also useful for "SW in prod".
 
 ---
 
@@ -1322,11 +1339,11 @@ Software organizations can significantly improve the quality of their output if 
 
 Our paper describes the requirements and possibilities of integration of metrics tools in the field of software quality assurance. Tools for the support of the measurement process are herein classified as Computer Assisted Software Measurement and Evaulation Tools (CAME Tools). Software measurement regarded as a special type of metrics application provides a great amount of basic information for the evaluation of the software development process or the software product itself. Our paper examines the effectiveness and destination of software measurement in tool-based software development and is based on an analysis of more than 20 CAME tools in the Software Measurement Laboratory at the University of Magdeburg. CAME tools are useable for the process, product, and resources evaluation in all phases of the software life cycle (including the problem definition) for different development paradigms. The efficiency of CAME tools is described on the basis of a general measurement framework. This framework includes all steps in the software measurement and evaulation process: metrics definition, selection of the evaluation criteria, tool-based modelling and measurement, value presentation and statistical analysis. The framework includes the main aspects of the process evaluation techniques (Capability Maturity Model, ISO 9000-3 etc.) and product evaluation (ISO 9126, etc.). It is not a disjointed set of aspects: our measurement framework represents an incremental technique for the application of quantification of quality aspects in a required quality assurance.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| unsure |  | yes |  |  |
+| MD     | ER  | MC  | VL  | DG  |
+| ------ | --- | --- | --- | --- |
+| unsure |     | yes |     | NO |
 
-**MC**: if the propose automatic evaluation with tools, they should provide some objective criteria.
+* *MC* - if the propose automatic evaluation with tools, they should provide some objective criteria.
 
 ---
 
@@ -1338,11 +1355,11 @@ Our paper describes the requirements and possibilities of integration of metrics
 
 High-profile disasters and the ensuing debates in the press are alerting more people to the crucial nature of software quality in their everyday lives. This should prompt software professionals to take a second look at how they define software quality. In this task of assessing 'adequate' quality in a software product, context is important. Errors tolerated in word-processing software may not be acceptable in control software for a nuclear power plant. Thus, the meanings of 'safety-critical' and 'mission-critical' must be reexamined in the context of software's contribution to the larger functionality and quality of products and businesses. At the same time, software professionals must ask themselves who is responsible for setting quality goals, and make sure they are achieved.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-|  |  | yes | unsure |  |
+| MD  | ER  | MC  | VL     | DG  |
+| --- | --- | --- | ------ | --- |
+|     |     | yes | unsure | yes |
 
-**MC**: this should be useful for Landscaping also. Another example of criteria for quality which is different according to the domain. Here the mention a "nuclear power plant" (critical systems?).
+* *MC* - this should be useful for Landscaping also. Another example of criteria for quality which is different according to the domain. Here the mention a "nuclear power plant" (critical systems?).
 
 ---
 
@@ -1354,11 +1371,11 @@ High-profile disasters and the ensuing debates in the press are alerting more pe
 
 This paper presents a case study of a software project in the maintenance phase. The case study was based on a sample of modules, representing about 1.3 million lines of code, from a very large telecommunications system. Software quality models were developed to predict the number of faults expected from the coding through operations phases. Since modules from the prior release were often reused to develop a new release, one model incorporated reuse data as additional independent variables. We compare this model's performance to a similar model without reuse data. Software quality models often have product metrics as the only input data for predicting quality. There is an implicit assumption that all the modules have had a similar development history, so that product attributes are the primary drivers of different quality levels. Reuse of software as components and software evolution do not fit this assumption very well, and consequently, traditional models for such environments may not have adequate accuracy. Focusing on the software maintenance phase, this study demonstrated that reuse data can significantly improve the predictive accuracy of software quality models. © 1996 Kluwer Academic Publishers.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-|  |  | no | unsure |  |
+| MD  | ER  | MC  | VL     | DG  |
+| --- | --- | --- | ------ | --- |
+|     |     | no  | unsure | no  |
 
-**MC**: it seems to be focused on the benefits of "reuse of data", not on quality of SW itself.
+* *MC* - it seems to be focused on the benefits of "reuse of data", not on quality of SW itself.
 
 ---
 
@@ -1370,11 +1387,12 @@ This paper presents a case study of a software project in the maintenance phase.
 
 With the historical characterization of software development as being costly due to massive schedule delays, incorporation of the ever-changing technology, budget reductions, and missing customer requirements, the trend of the 1990s in establishing a quality improvement or a quality assurance programme has been overwhelming. The two popular models or frameworks for assessment of a quality assurance programme are the US government-sponsored Capability Maturity Model (CMM) and the internationally recognized ISO-9000 quality standards. Both of these two frameworks share a common concern regarding software quality and process management. Since it is not clear which of these two frameworks is most effective in achieving their shared objectives, it is valuable and timely to provide an objective overview of both models and to compare and contrast their features for quality software development. Because there are many legitimate areas for comparison, we have selected the two most important as a basis for comparison: (1) the role of management, and (2) the application of measurements. We also provide a summary of the reported impact of these two models on the organizations adhering to their standards, and include our observations and analysis. © 1996 Chapman & Hall.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-|  |  | no | Maybe |  |
+| MD  | ER  | MC  | VL     | DG  |
+| --- | --- | --- | ------ | --- |
+|     |     | no  | unsure | YES |
 
-**MC**: it looks more about organizational aspects than quality itself.
+* *MC* - it looks more about organizational aspects than quality itself.
+* *DG* - Comparison between 2 quality models
 
 ---
 
@@ -1386,11 +1404,11 @@ With the historical characterization of software development as being costly due
 
 Software quality metrics have potential for helping to assure the quality of software on large projects such as the Space Shuttle flight software. It is feasible to validate metrics for controlling and predicting software quality during design by validating metrics against a quality factor. Quality factors, like reliability, are of more interest to customers than metrics, like complexity. However quality factors cannot be collected until late in a project. Therefore the need arises to validate metrics, which developers can collect early in a project, against a quality factor. We investigate the feasibility of validating metrics for controlling and predicting quality on the Space Shuttle. The key to the approach is the use of validated metrics for early identification and resolution of quality problems. © 1995 Chapman & Hall.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-|  |  | yes | unsure |  |
+| MD  | ER  | MC  | VL     | DG  |
+| --- | --- | --- | ------ | --- |
+|     |     | yes | unsure | yes |
 
-**MC**: useful for Landscaping. I expect criteria for quality applied to critical systems here.
+* *MC* - useful for Landscaping. I expect criteria for quality applied to critical systems here.
 
 ---
 
@@ -1402,11 +1420,11 @@ Software quality metrics have potential for helping to assure the quality of sof
 
 In this paper we discuss the two dominant modes of thought on the problem of software quality: the bureaucratic approach and the technical approach. The aim of the paper is to pursue the issues of how these approaches affect people, in our case software developers, and how we can assess the effectiveness of each approach in actually achieving quality software. An outline of the main aspects of the organizational approach - process modelling and software standards - is given. In order to address the effects of each of these modes of thought on people we take a psychological perspective. The implications for software engineering, in terms of formalism and mechanization, are discussed. The paper argues that overzealous structure, control and automation can negatively affect the creative process of developing software. A perspective on each of the components of the technical approach in terms of their effectiveness in achieving quality objectives is provided. From recent work we find that process modelling and many software standards do not provide an adequate assessment of the benefits derived from their application. The paper argues that measurement goes some way to addressing these problems. Measurement should form the core of the software development process, especially with respect to product quality assessment. The main conclusion is that by focusing on measurable objectives and results we can best achieve quality software products and highlight the processes which are likely to create them in a repeatable and manageable fashion. Additionally, by adopting measurement in practice we should expect to increase the freedom and creativity of software developers. © 1994 Chapman & Hall.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-|  |  | no | unsure |  |
+| MD  | ER  | MC  | VL     | DG  |
+| --- | --- | --- | ------ | --- |
+|     |     | no  | unsure | no  |
 
-**MC**: probably about organization, not quality itself.
+* *MC* - probably about organization, not quality itself.
 
 ---
 
@@ -1418,11 +1436,11 @@ In this paper we discuss the two dominant modes of thought on the problem of sof
 
 Quality management standard BS5740/ISO9001 is a key technology for UK and Europe in the 1990s. This paper shows that the relevance of BS5750/ISO9001 is limited and suggests that standards bodies must develop and endorse new standards to ensure that software quality improvement programmes continue to be adopted by the information technology industry. © 1994 Chapman & Hall.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-|  |  | yes | unsure |  |
+| MD  | ER  | MC  | VL     | DG  |
+| --- | --- | --- | ------ | --- |
+|     |     | yes | unsure | yes |
 
-**MC**: it discusses limitations, so it should provide insights about what is missing in the standards.
+* *MC* - it discusses limitations, so it should provide insights about what is missing in the standards.
 
 ---
 
@@ -1434,11 +1452,11 @@ Quality management standard BS5740/ISO9001 is a key technology for UK and Europe
 
 The software created by industrial, educational, and research organizations is increasingly large and complex. It also occupies a central role in the reliability and safety of many essential services. We examine the software development process and suggest opportunities for improving the process by using a combination of statistical and other process control techniques. Data, analysis of data, and tools for collecting data are crucial to our approach. Though our views are based upon experiences with large telecommunications systems, they are likely to be useful to many other developers of large software systems.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-|  |  | no | unsure |  |
+| MD  | ER  | MC  | VL     | DG  |
+| --- | --- | --- | ------ | --- |
+|     |     | no  | unsure | no  |
 
-**MC**: this doesn't seem related to quality itself.
+* *MC* - this doesn't seem related to quality itself.
 
 ---
 
@@ -1450,11 +1468,11 @@ The software created by industrial, educational, and research organizations is i
 
 With the current worldwide focus on improvement in software process, there is clearly a need for an understanding of its impact on software engineering productivity and quality. This paper documents an attempt to provide an empirical metrics ″view″ of such initiatives based on data collected in a worldwide benchmarking effort conducted between March, 1991 and December, 1991. Surprisingly, of the more than 300 organizations that participated, fewer than 1 in 5 had any quantifiable performance data available prior to the start of this study. However, those that had embarked on significant process improvement efforts and were actively using metrics were able to demonstrate substantial gains in productivity and quality. In addition, insights derived from this large scale data analysis provide a framework for determining which metrics should be included in a standard software engineering measurement 'dashboard'.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-|  |  | yes | unsure |  |
+| MD  | ER  | MC  | VL     | DG  |
+| --- | --- | --- | ------ | --- |
+|     |     | yes | unsure | no  |
 
-**MC**: if it's about 'measuring' then it should provide objective criteria.
+* *MC* - if it's about 'measuring' then it should provide objective criteria.
 
 ---
 
@@ -1466,15 +1484,12 @@ With the current worldwide focus on improvement in software process, there is cl
 
 Software reliability modeling of data collected during the testing of a large-scale industrial system (System T) was used to measure software quality from the customer perspective. Specifically, software quality was measured in terms of the system operation. The testing phase analyzed, stability test, was an operational profile-driven test in that a controlled load was imposed on the system reflective of the system's busy-hour usage pattern. The usage profile was determined from requirements specifying both the frequency of invocation of each command and the alarm arrival rate for the largest expected user site. For this controlled test environment, a Poisson-type reliability growth model, the exponential nonhomogeneous Poisson process model, exhibited a good fit to the observed failure data. Furthermore, the model demonstrated predictive power for future failure rates. It is concluded that the use of an operational profile to drive system test is an effective test strategy and that the operational profile must be taken into account when predicting field reliability from reliability measured during test.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| unsure/no |  | no |  |  |
+| MD        | ER  | MC  | VL  | DG  |
+| --------- | --- | --- | --- | --- |
+| unsure/no |     | no  | no  | no  |
 
 * *MD* - measure SW reliability in production/operation
-
 * *MC* - it seems to be considering "product quality" as non-faulty and "from the customer perspective". It might provide some hints for us, but I don't think it's worth it.
-
-
 
 ---
 
@@ -1486,10 +1501,10 @@ Software reliability modeling of data collected during the testing of a large-sc
 
 The authors introduce quality metrics into the quantitative software quality estimation technique, embracing the quality estimate of design, as well as of the source code, in studying a quality quantification support system. They outline a quality quantification technique for this system, describe examples of both its application to actual projects and its evaluation, and consider its relationship conventional techniques for estimate indexing of T. J. McCabe (IEEE Trans. Softw. Eng., vol. SE-2, no. 4, 1976) and M. H. Halstead (Elements of Software Science, North Holland, NY, 1977).
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| yes/unsure |  | yes |  |  |
+| MD         | ER  | MC  | VL  | DG  |
+| ---------- | --- | --- | --- | --- |
+| yes/unsure |     | yes | yes | yes |
 
-**MC**: if use cases are discussed, it should provide some criteria of quality. Moreover, it's "quantitative".
+* *MC* - if use cases are discussed, it should provide some criteria of quality. Moreover, it's "quantitative".
 
 ---

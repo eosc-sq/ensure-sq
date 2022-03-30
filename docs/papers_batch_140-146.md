@@ -84,7 +84,7 @@ Maintenance plays a vital role in protecting quality as a system evolves. The re
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  | yes | Unsure |
+| yes |     |     | yes | Unsure |
 
 * *MD* - for Maintenance, may be interesting for our section "Release, Support, Maintenance, Usability, Reproducibility"
 * *DG* - Abstract is not very informative

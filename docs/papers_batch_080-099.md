@@ -35,7 +35,7 @@ Internal software quality, e.g. the quality of code, has great impact on the ove
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  | yes | YES |
+| yes |     |     | yes | YES |
 ---
 
 # 83 - In search for a widely applicable and accepted software quality model for software quality engineering
@@ -116,7 +116,7 @@ Recently, software development teams using agile processes have started widely a
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  |  | yes | Unsure |
+| yes |     |     | yes | Unsure |
 
 * *DG* - Abstract does not provide many details
 

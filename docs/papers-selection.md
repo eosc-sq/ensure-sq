@@ -32,9 +32,11 @@ Today, small- and medium-sized enterprises (SMEs) in the software industry face 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  | yes  |  |  |
+| yes |     | yes |     | NO  |
 
 **MC**: related to SW in prod.
+
+**DG**: I think they apply a quality model (which we may review), but the paper does not define quality dimensions 
 
 ---
 
@@ -46,9 +48,9 @@ Today, small- and medium-sized enterprises (SMEs) in the software industry face 
 
 It is widely accepted that software measures provide an appropriate mechanism for understanding, monitoring, controlling, and predicting the quality of software development projects. In software product lines (SPL), quality is even more important than in a single software product since, owing to systematic reuse, a fault or an inadequate design decision could be propagated to several products in the family. Over the last few years, a great number of quality attributes and measures for assessing the quality of SPL have been reported in literature. However, no studies summarizing the current knowledge about them exist. This paper presents a systematic literature review with the objective of identifying and interpreting all the available studies from 1996 to 2010 that present quality attributes and/or measures for SPL. These attributes and measures have been classified using a set of criteria that includes the life cycle phase in which the measures are applied; the corresponding quality characteristics; their support for specific SPL characteristics (e. g., variability, compositionality); the procedure used to validate the measures, etc. We found 165 measures related to 97 different quality attributes. The results of the review indicated that 92% of the measures evaluate attributes that are related to maintainability. In addition, 67% of the measures are used during the design phase of Domain Engineering, and 56% are applied to evaluate the product line architecture. However, only 25% of them have been empirically validated. In conclusion, the results provide a global vision of the state of the research within this area in order to help researchers in detecting weaknesses, directing research efforts, and identifying new research lines. In particular, there is a need for new measures with which to evaluate both the quality of the artifacts produced during the entire SPL life cycle and other quality characteristics. There is also a need for more validation (both theoretical and empirical) of existing measures. In addition, our results may be useful as a reference guide for practitioners to assist them in the selection or the adaptation of existing measures for evaluating their software product lines. © 2011 Springer Science+Business Media, LLC.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| yes |  | unsure |  |  |
+| MD  | ER  | MC     | VL  | DG  |
+| --- | --- | ------ | --- | --- |
+| yes |     | unsure |     | YES |
 
 **MC**: the authors mention "165 measures related to 97 different quality attributes". It's so large that I'm unsure if it's suitable for our task. We'll need to see in detail.
 
@@ -64,7 +66,7 @@ We provide an overview of the approach developed by the Software Improvement Gro
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes | yes | yes |  |  |
+| yes | yes | yes |     | YES |
 
 **ER**: software definition, software metrics
 
@@ -82,7 +84,7 @@ Software quality models are a well-accepted means to support quality management 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes | yes | yes |  |  |
+| yes | yes | yes |     | YES |
 
 **ER**: it should explain software characteristics critically
 
@@ -98,13 +100,13 @@ Software quality models are a well-accepted means to support quality management 
 
 Early inspections of software requirements specifications (SRS) are known to be an effective and cost-efficient quality assurance technique. However, inspections are often applied with the underlying assumption that they work equally well to assess all kinds of quality attributes of SRS. Little work has yet been done to validate this assumption. At Capgemini sd&m, we set up an inspection technique to assess SRS, the so called "specification quality gate" (QG-Spec). The QG-Spec has been applied to a series of large scale commercial projects. In this paper we present our lessons learned and discuss, which quality attributes are effectively assessed by means of the QG-Spec - and which are not. We argue that our results can be generalized to other existing inspection techniques. We came to the conclusion that inspections have to be carefully balanced with techniques for constructive quality assurance in order to economically arrive at high quality SRS. © 2009 IEEE.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| yes |  | unsure |  |  |
+| MD  | ER  | MC     | VL  | DG  |
+| --- | --- | ------ | --- | --- |
+| yes |     | unsure |     | NO  |
 
 * *MD* - quality attributes
-
-**MC**: it seems from the abtract that the authors propose a more general evaluation framework which englobes SRS, to take into account economical considerations. I see it's useful, but probably it's not directly related to SW quality, but to making compromises. 
+* *MC*: it seems from the abtract that the authors propose a more general evaluation framework which englobes SRS, to take into account economical considerations. I see it's useful, but probably it's not directly related to SW quality, but to making compromises. 
+* *DG* - The focus is on software requirement specification, not software quality
 
 ---
 
@@ -118,7 +120,7 @@ Most external software quality attributes are conceptually subjective. For examp
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes | yes | no  |  |  |
+| yes | yes | no  |     | Yes? |
 
 **ER**: software characteristics
 
@@ -134,9 +136,9 @@ Most external software quality attributes are conceptually subjective. For examp
 
 Several tools and methods for source code quality assurance based on static analysis finally reached a state when they are applicable in practice and recognized by the industry. However, most of these tools are used in an isolated manner and very rarely as organic parts of the quality assurance process. Furthermore, little or no help is provided in interpreting the outputs of these tools. This paper presents Source Inventory, a system for source code-based software quality assessment and monitoring, which is able to collect, store and present measurement data including metrics, coding problems and other kinds of data like bug numbers and test coverage information. It helps software developers, architects and managers to take control over their software's quality by performing continuous code scans, fault detection, coding style verification, architecture violation detection, and automatic report generation considering metric baselines.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| yes |  | yes |  |  |
+| MD  | ER  | MC  | VL  | DG     |
+| --- | --- | --- | --- | ------ |
+| yes |     | yes |     | Unsure |
 
 **MC**: related to Perspectives of developers.
 
@@ -150,9 +152,9 @@ Several tools and methods for source code quality assurance based on static anal
 
 Internal software quality, e.g. the quality of code, has great impact on the overall quality of software. Besides well known manual inspection and review techniques more recent approaches utilize tool-based static code for the evaluation of internal software quality. Despite the high potential of static code analyzers the application of tools alone cannot replace well founded expert opinion. Knowledge, experience and fair judgement is indispensable for a valid, reliable quality assessment, which is accepted by software developers and managers. The EMISQ method (Evaluation Method for Internal Software Quality), guides the assessment process for all stakeholders of an evaluation project. The method is supported by a tool that assists evaluators with their analysis and rating tasks and provides support for generating a code quality report. The application of the method in a pilot project has shown its applicability.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| yes |  | unsure |  |  |
+| MD  | ER  | MC     | VL  | DG  |
+| --- | --- | ------ | --- | --- |
+| yes |     | unsure | yes | yes |
 
 **MC**: this seems to be proposing some kind of methodology, rather than criteria. We should to check how objective it is.
 
@@ -168,11 +170,11 @@ Software Quality Engineering is an emerging discipline that is concerned with im
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  | yes |  |  |
+| yes |     | yes | yes | yes |
 
 * *MD* - comparative evaluation of existing quality models
 
-**MC**: I expect this one to have a complete comparison of other methodologies.
+* *MC* - I expect this one to have a complete comparison of other methodologies.
 
 ---
 
@@ -186,7 +188,7 @@ The open source software community has published a substantial body of research 
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  | yes |  |  |
+| yes |     | yes | yes | yes |
 
 ---
 
@@ -198,9 +200,11 @@ The open source software community has published a substantial body of research 
 
 Recently, software development teams using agile processes have started widely adopting test-driven development. But does TDD really improve software quality? © 2006 IEEE.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| yes |  |  | yes |  |
+| MD  | ER  | MC  | VL  | DG     |
+| --- | --- | --- | --- | ------ |
+| yes |     |     | yes | Unsure |
+
+* *DG* - Abstract does not provide many details
 
 ---
 
@@ -214,7 +218,7 @@ The support of software quality in a software development process may be regarde
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  | yes |  |  |
+| yes |     | yes | yes | yes |
 
 ---
 
@@ -226,11 +230,11 @@ The support of software quality in a software development process may be regarde
 
 We are proposing research on self-adaptive interface assertion enforcement for the purposes of improving scientific software component quality. Demonstrating software correctness through assertions is a well-known technique for quality improvement. However, the performance penalty is often considered too high for deployment. In order to determine if partial enforcement based on adaptive sampling is a viable solution in performance critical environments, we are pursuing research on mechanisms combining static and dynamic analyses to efficiently maximize assertion checking within performance constraints. This paper gives an overview of our initial experiments, current work, and plans. Copyright 2005 ACM.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| yes |  | yes |  |  |
+| MD  | ER  | MC  | VL     | DG  |
+| --- | --- | --- | ------ | --- |
+| yes |     | yes | unsure | NO  |
 
-**MC**: assertions are general, but perhaps very important for research software. Useful for Landscaping.
+* *MC* - assertions are general, but perhaps very important for research software. Useful for Landscaping.
 
 ---
 
@@ -244,9 +248,9 @@ This paper examines how the industrial applicability of both ISO/IEC 9126:2001 a
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| yes |  | yes |  |  |
+| yes |     | yes | yes | yes |
 
-**MC**: perhaps too specific, but this one provides a case study on the applicability of ISO/IEC 9126.
+* *MC* - perhaps too specific, but this one provides a case study on the applicability of ISO/IEC 9126.
 
 ---
 
@@ -258,13 +262,13 @@ This paper examines how the industrial applicability of both ISO/IEC 9126:2001 a
 
 A user survey was carried out to evaluate empirically ISO/IEC 9126's dimensionality, or the classification of characteristics, and internal- consistency reliability. In the survey, users evaluated their satisfaction concerning the quality of a packaged software product according to the criteria of ISO/IEC 9126's subcharacteristics. Overall, results reveal ambiguities in the way that ISO/IEC 9126 is structured in terms of characteristics and subcharacteristics.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| yes | yes | yes |  |  |
+| MD  | ER  | MC  | VL  | DG     |
+| --- | --- | --- | --- | ------ |
+| yes | yes | yes |     | Unsure |
 
-**ER**: however it depends on its content, because ISO/IEC 9126 has been revised by ISO/IEC 25010:2011. 
-
-**MC**: article 99 also refers to ISO/IEC 9126. It'd be interesting to describe what are the novelties in ISO/IEC 25010:2011.
+* *ER* - however it depends on its content, because ISO/IEC 9126 has been revised by ISO/IEC 25010:2011. 
+* *MC* - article 99 also refers to ISO/IEC 9126. It'd be interesting to describe what are the novelties in ISO/IEC 25010:2011.
+* *DG* - I am unsure because this is a user survey based on existing models. We should probably focus on the models... 
 
 ---
 
@@ -441,6 +445,46 @@ The study reported in this paper establishes a conceptual framework and some key
 | yes |  | yes |  |  |
 
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # To be discussed - mixed voting - Total 15 articles
 
 # 3 - The sustainability of quality in free and open source software
@@ -597,11 +641,13 @@ Software code review, i.e., the practice of having other team members critique c
 
 This Technical Briefing describes the nature of Software Qualities (SQs), ilities, or non-functional requirements (reliability, usability, affordability, etc.), and discusses the importance of understanding their nature and interrelationships, and of bringing them into balance in the practice of software engineering. The relevance and timeliness of this topic reflects the current and future trends toward more software-intensive systems, with greater complexity, autonomy, speed of change, and need for interoperability within systems of systems, given the frequent system shortfalls and overruns that occur when their SQ balance is not achieved. It discusses the weaknesses of current SQ standards and guidance, and summarizes research toward strengthening current SQ definitions and relationships. This includes a set of initial SQ ontology elements and relationships, examples of their application to some key SQs, an identification of further research and development needed to make the ontology fully useful and evolvable, and the nature of an international collaborative effort to help improve current practices via a Qualipedia for accessing the evolving body of knowledge for improving SQ engineering. © 2016 Author.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| no  | unsure/yes | no |  |  |
+| MD  | ER         | MC  | VL  | DG  |
+| --- | ---        | --- | --- | --- |
+| no  | unsure/yes | no  |     | YES |
 
 **ER**: useful for describing the problem, software characteristics
+
+**DG**: I think it defines non functional requirements for software quality that we may want to include in our work.
 
 ---
 
@@ -613,14 +659,13 @@ This Technical Briefing describes the nature of Software Qualities (SQs), ilitie
 
 Many software engineering problems are multi-objective in nature, which has been largely recognized by the Search-based Software Engineering (SBSE) community. In this regard, Paretobased search algorithms, e.g., Non-dominated Sorting Genetic Algorithm II, have already shown good performance for solving multi-objective optimization problems. These algorithms produce Pareto fronts, where each Pareto front consists of a set of nondominated solutions. Eventually, a user selects one or more of the solutions from a Pareto front for their specific problems. A key challenge of applying Pareto-based search algorithms is to select appropriate quality indicators, e.g., hypervolume, to assess the quality of Pareto fronts. Based on the results of an extended literature review, we found that the current literature and practice in SBSE lacks a practical guide for selecting quality indicators despite a large number of published SBSE works. In this direction, the paper presents a practical guide for the SBSE community to select quality indicators for assessing Pareto-based search algorithms in different software engineering contexts. The practical guide is derived from the following complementary theoretical and empirical methods: 1) key theoretical foundations of quality indicators; 2) evidence from an extended literature review; and 3) evidence collected from an extensive experiment that was conducted to evaluate eight quality indicators from four different categories with six Pareto-based search algorithms using three real industrial problems from two diverse domains. © 2016 ACM.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| unsure/no | unsure | no |  |  |
+| MD        | ER     | MC  | VL  | DG  |
+| --------- | ------ | --- | --- | --- |
+| unsure/no | unsure | no  |     | NO  |
 
 **ER**: software metrics
 
 **MC**: I'm not confident at all about this paper (too strong and surprising claims based on a very specific methodology), but if they provide quality indicators we can have a look.
-
 
 ---
 
@@ -634,12 +679,33 @@ How can organizational factors such as structure and culture have an impact on t
 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
-| no  | yes | yes |  |  |
+| no  | yes | yes |     | NO  |
 
-* *ER* - useful for explaining negative impact on quality
-* *MD* - although I voted no we should discuss
-* *MC*: - it's different point of view, focusing on the organizations. It might be useful when discussing in our report the best practices or how to implement the quality criteria.
+**ER** - useful for explaining negative impact on quality
 
+**MD** - although I voted no we should discuss
+
+**MC** - it's different point of view, focusing on the organizations. It might be useful when discussing in our report the best practices or how to implement the quality criteria.
+
+**DG** - I think this explores more a social problem
+
+---
+
+## 34 - Introduction of static quality analysis in small- and medium-sized software enterprises: experiences from technology transfer
+
+### Gleirscher M., Golubitskiy D., Irlbeck M., Wagner S.
+
+### https://www.scopus.com/inward/record.uri?eid=2-s2.0-84927804487&doi=10.1007%2fs11219-013-9217-z&partnerID=40&md5=96b5166ac6f386a4db36845b014b836d
+
+Today, small- and medium-sized enterprises (SMEs) in the software industry face major challenges. Their resource constraints require high efficiency in development. Furthermore, quality assurance (QA) measures need to be taken to mitigate the risk of additional, expensive effort for bug fixes or compensations. Automated static analysis (ASA) can reduce this risk because it promises low application effort. SMEs seem to take little advantage of this opportunity. Instead, they still mainly rely on the dynamic analysis approach of software testing. In this article, we report on our experiences from a technology transfer project. Our aim was to evaluate the results static analysis can provide for SMEs as well as the problems that occur when introducing and using static analysis in SMEs. We analysed five software projects from five collaborating SMEs using three different ASA techniques: code clone detection, bug pattern detection and architecture conformance analysis. Following the analysis, we applied a quality model to aggregate and evaluate the results. Our study shows that the effort required to introduce ASA techniques in SMEs is small (mostly below one person-hour each). Furthermore, we encountered only few technical problems. By means of the analyses, we could detect multiple defects in production code. The participating companies perceived the analysis results to be a helpful addition to their current QA and will include the analyses in their QA process. With the help of the Quamoco quality model, we could efficiently aggregate and rate static analysis results. However, we also encountered a partial mismatch with the opinions of the SMEs. We conclude that ASA and quality models can be a valuable and affordable addition to the QA process of SMEs. © Springer Science+Business Media New York 2013.
+
+| MD  | ER  | MC  | VL  | DG  |
+| --- | --- | --- | --- | --- |
+| yes |     | yes |     | NO  |
+
+**MC**: related to SW in prod.
+
+**DG**: I think they apply a quality model (which we may review), but the paper does not define quality dimensions 
 
 ---
 
@@ -651,13 +717,86 @@ How can organizational factors such as structure and culture have an impact on t
 
 This special issue, owing to its fundamental software quality focus, comprises a collection of diverse articles that address the challenges and directions for software quality research. The Web extra at http://youtu.be/ T7V4RSr1KEE is an audio interview in which Davide Falessi speaks with guest editors Annie Kuntzmann-Combelles, Michael Felderer, and Ruth Breu about methods for improving software quality management, testing, and security on intelligent and interconnected devices. © 1984-2012 IEEE.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| no  | unsure | no |  |  |
+| MD  | ER     | MC  | VL  | DG  |
+| --- | ------ | --- | --- | --- |
+| no  | unsure | no  |     | YES |
 
-**ER**: useful for newchallenges for software quality research
+**ER**: useful for new challenges for software quality research
+
+**DG**: I agree
+
 
 **MC**: I think it's better to focus on published peer-review material. Even though this interview might provide interesting insights, I wouldn't consider it.
+
+---
+
+## 38 - Studying the effect of co-change dispersion on software quality
+
+### Kouroshfar E.
+
+### https://www.scopus.com/inward/record.uri?eid=2-s2.0-84886429987&doi=10.1109%2fICSE.2013.6606741&partnerID=40&md5=f9b5aa44f572315b1cd1c58858d1d1a6
+
+Software change history plays an important role in measuring software quality and predicting defects. Co-change metrics such as number of files changed together has been used as a predictor of bugs. In this study, we further investigate the impact of specific characteristics of co-change dispersion on software quality. Using statistical regression models we show that co-changes that include files from different subsystems result in more bugs than co-changes that include files only from the same subsystem. This can be used to improve bug prediction models based on co-changes. © 2013 IEEE.
+
+| MD     | ER  | MC  | VL  | DG  |
+| ------ | --- | --- | --- | --- |
+| unsure |     | no  |     | No  |
+
+**MC**: it seems their criteria of "quality" is the detection of bugs. I don't think this study is useful for us.
+
+---
+
+# 39 - MIDAS: A design quality assessment method for industrial software
+
+## Samarthyam G., Suryanarayana G., Sharma T., Gupta S.
+
+## https://www.scopus.com/inward/record.uri?eid=2-s2.0-84886396370&doi=10.1109%2fICSE.2013.6606640&partnerID=40&md5=ad0d81ee2973d5ee478e587bb1b55aa5
+
+Siemens Corporate Development Center Asia Australia (CT DC AA) develops and maintains software applications for the Industry, Energy, Healthcare, and Infrastructure & Cities sectors of Siemens. The critical nature of these applications necessitates a high level of software design quality. A survey of software architects indicated a low level of satisfaction with existing design assessment practices in CT DC AA and highlighted several shortcomings of existing practices. To address this, we have developed a design assessment method called MIDAS (Method for Intensive Design ASsessments). MIDAS is an expert-based method wherein manual assessment of design quality by experts is directed by the systematic application of design analysis tools through the use of a three view-model consisting of design principles, project-specific constraints, and an 'ility'-based quality model. In this paper, we describe the motivation for MIDAS, its design, and its application to three projects in CT DC AA. We believe that the insights from our MIDAS experience not only provide useful pointers to other organizations and practitioners looking to assess and improve software design quality but also suggest research questions for the software engineering community to explore. © 2013 IEEE.
+
+| MD  | ER  | MC  | VL  | DG  |
+| --- | --- | --- | --- | --- |
+| no  |     |     |     | YES |
+
+**DG**: A quality model is proposed.
+
+---
+
+## 40 - Normalizing source code vocabulary to support program comprehension and software quality
+
+### Guerrouj L.
+
+### https://www.scopus.com/inward/record.uri?eid=2-s2.0-84886391532&doi=10.1109%2fICSE.2013.6606723&partnerID=40&md5=191e7233ea6777ff76ebefbf832bbda5
+
+The literature reports that source code lexicon plays a paramount role in program comprehension, especially when software documentation is scarce, outdated or simply not available. In source code, a significant proportion of vocabulary can be either acronyms and-or abbreviations or concatenation of terms that can not be identified using consistent mechanisms such as naming conventions. It is, therefore, essential to disambiguate concepts conveyed by identifiers to support program comprehension and reap the full benefit of Information Retrieval-based techniques (e.g., feature location and traceability) whose linguistic information (i.e., source code identifiers and comments) used across all software artifacts (e.g., requirements, design, change requests, tests, and source code) must be consistent. To this aim, we propose source code vocabulary normalization approaches that exploit contextual information to align the vocabulary found in the source code with that found in other software artifacts. We were inspired in the choice of context levels by prior works and by our findings. Normalization consists of two tasks: splitting and expansion of source code identifiers. We also investigate the effect of source code vocabulary normalization approaches on software maintenance tasks. Results of our evaluation show that our contextual-aware techniques are accurate and efficient in terms of computation time than state of the art alternatives. In addition, our findings reveal that feature location techniques can benefit from vocabulary normalization when no dynamic information is available. © 2013 IEEE.
+
+| MD        | ER  | MC  | VL  | DG  |
+| --------- | --- | --- | --- | --- |
+| unsure/no |     | no  |     | NO  |
+
+**MD** - "we propose source code vocabulary normalization approaches"
+
+**MC** - too specific, and probably subjective. Probably related to design patterns, *à la Gang of Four*.
+
+**DG** - This may be useful for metadata representation, but not SQ
+
+---
+
+## 41 - Fostering software quality assessment
+
+### Brandtner M.
+
+### https://www.scopus.com/inward/record.uri?eid=2-s2.0-84886382849&doi=10.1109%2fICSE.2013.6606725&partnerID=40&md5=9e042076903be6351b3b97be6a877cb3
+
+Software quality assessment shall monitor and guide the evolution of a system based on quality measurements. This continuous process should ideally involve multiple stakeholders and provide adequate information for each of them to use. We want to support an effective selection of quality measurements based on the type of software and individual information needs of the involved stakeholders. We propose an approach that brings together quality measurements and individual information needs for a context-sensitive tailoring of information related to a software quality assessment. We address the following research question: How can we better support different stakeholders in the quality assessment of a software system? For that we will devise theories, models, and prototypes to capture their individual information needs, tailor information from software repositories to these needs, and enable a contextual analysis of the quality aspects. Such a context-sensitive tailoring will provide a effective and individual view on the latest development trends in a project. We outline the milestones as well as evaluation approaches in this paper. © 2013 IEEE.
+
+| MD     | ER  | MC  | VL  | DG  |
+| ------ | --- | --- | --- | --- |
+| unsure |     | yes |     | YES |
+
+**MC**: in the abstract they say they provide "an effective selection of quality measurements", and that it's " based on the type of software". It could be useful to see why they claim their selection is "effective", and also for our Landscaping if some of them are specific to a certain kind of SW.
+
+**DG** - Quality measure definition may be useful
 
 ---
 
@@ -669,9 +808,9 @@ This special issue, owing to its fundamental software quality focus, comprises a
 
 Software quality is of increasing importance in mission-critical embedded software systems. Due to the fast growing complexity and accompanying risks of failures of these systems, software quality needs to be addressed explicitly by software developers, preferably with a systematic method for an optimal implementation of software qualities, such as reliability, time-behavior and usability. At the Centre of Automation of Mission-critical Systems (CAMS) of the Dutch Royal Navy, a new approach has been defined for software developers to improve the way that they deal with software quality in the process of mission-critical systems engineering. The stepwise approach is based on both an international quality standard for software product quality, i.e. ISO9126, and on Multi-Criteria Decision Making techniques, i.e. analytical hierarchy process (AHP). The stepwise approach has been validated in a case study. In particular, the tailoring of the ISO9126 standard toward the specific CAMS development situation, and the applicability of AHP techniques, from the perspective of software developers, has been investigated. The case study is carried out in a representative software development project, i.e. the software for combat management systems (CMS) of warships. Results of the case study show that software developers can explicitly deal with quality on the basis of both the ISO9126 standard and the AHP techniques, respectively regarding the specification, prioritization and metrication of software product quality. © 2010 The Author(s).
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| yes | unsure | yes |  |  |
+| MD  | ER     | MC  | VL  | DG  |
+| --- | ------ | --- | --- | --- |
+| yes | unsure | yes |     | YES |
 
 **ER**: software metrics
 
@@ -687,15 +826,32 @@ Software quality is of increasing importance in mission-critical embedded softwa
 
 It is widely believed that distributed software development is riskier and more challenging than collocated development. Prior literature on distributed development in software engineering and other fields discuss various challenges, including cultural barriers, expertise transfer dif-ficulties, and communication and coordination overhead. We evaluate this conventional belief by examining the overall development of Windows Vista and comparing the postrelease failures of components that were developed in a distributed fashion with those that were developed by collocated teams. We found a negligible difference in failures. This difference becomes even less significant when controlling for the number of developers working on a binary. We also examine component characteristics such as code churn, complexity, dependency information, and test code coverage and find very little difference between distributed and collocated components to investigate if less complex components are more distributed. Further, we examine the software process and phenomena that occurred during the Vista development cycle and present ways in which the development process utilized may be insensitive to geography by mitigating the difficulties introduced in prior work in this area. © 2009 IEEE.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| no  |  unsure | no |  |  |
+| MD  | ER      | MC  | VL  | DG  |
+| --- | ------- | --- | --- | --- |
+| no  |  unsure | no  |     | NO  |
 
 * *ER* - this should talk about software metrics, maybe it introduces some software characteristics in relation to the software metrics selected.
 * *MD* - seems just distributed vs collocated teams comparison
 * *MC* - more focused on organizational aspects than quality.
 
 ---
+
+# 79 - Engineering models and software quality models: An example and a discussion
+
+## Salvaneschi P., Piazzalunga U.
+
+## https://www.scopus.com/inward/record.uri?eid=2-s2.0-79959190479&doi=10.1145%2f1370731.1370741&partnerID=40&md5=d2ce735f0f93bb485210c6ccb9125006
+
+The paper compares the models used for software quality evaluation to the modelling approach of other engineering fields. The conclusion is that, while large efforts have been devoted to the definition of measurable attributes and related measures, product models specifically developed for measuring quality characteristics are until now not sufficiently explored. We explore the concept of "quality-oriented specialized product models" and we claim that this is an important ingredient for an engineering approach to the software quality measurement. We describe an example of this type of models for measuring the security of a specific type of copy protection mechanisms. The model forecasts the amount of time a hypothetical attacker would need to break the protection. Copyright 2008 ACM.
+
+| MD  | ER  | MC  | VL  | DG  |
+| --- | --- | --- | --- | --- |
+| no  |     |     |     | YES |
+
+* *DG* - I think the comparison may emphasize quality dimensions that could be interesting to include.
+
+---
+
 
 ## 102 - Requirements engineering and process modelling in software quality management - Towards a generic process metamodel
 
@@ -765,8 +921,24 @@ Quality is recognized as a pre-eminently important characteristic of software, y
 
 **MC**: in that case, let's consider the 1995's article, which seems absolutely useful for our task.
 
-
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # To be discussed - single unsure voting - Total 37 articles
 
@@ -778,9 +950,9 @@ Quality is recognized as a pre-eminently important characteristic of software, y
 
 Software quality is recognized as being very significant for achieving competitiveness in the software industry, so improvements in this area are gaining increasing importance. Software quality improvements can only be achieved by managing all of the factors that influence it. However, in a real business system, there are a great number of factors impacting software quality, while the processes are stochastic and resources are limited, so economic data should also be taken into consideration. This paper uses a Markov chain and proposes a systematic framework for modelling the stochastic processes of a quality management system and selection of the optimum set of factors impacting software quality. A methodology is presented for managing the factors that affect software quality with an illustrative hypothetical example for convenience of application of the proposed methodology. © 2014, Springer Science+Business Media New York.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| unsure/no |  | no |  |  |
+| MD        | ER  | MC  | VL  | DG  |
+| --------- | --- | --- | --- | --- |
+| unsure/no |     | no  |     |     |
 
 **MC**: another example of paper about management of organization, and not that much about quality itself.
 
@@ -795,12 +967,11 @@ Software quality is recognized as being very significant for achieving competiti
 
 Code ownership establishes a chain of responsibility for modules in large software systems. Although prior work uncovers a link between code ownership heuristics and software quality, these heuristics rely solely on the authorship of code changes. In addition to authoring code changes, developers also make important contributions to a module by reviewing code changes. Indeed, recent work shows that reviewers are highly active in modern code review processes, often suggesting alternative solutions or providing updates to the code changes. In this paper, we complement traditional code ownership heuristics using code review activity. Through a case study of six releases of the large Qt and OpenStack systems, we find that: (1) 67%-86% of developers did not author any code changes for a module, but still actively contributed by reviewing 21%-39% of the code changes, (2) code ownership heuristics that are aware of reviewing activity share a relationship with software quality, and (3) the proportion of reviewers without expertise shares a strong, increasing relationship with the likelihood of having post-release defects. Our results suggest that reviewing activity captures an important aspect of code ownership, and should be included in approximations of it in future studies. © 2016 ACM.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| yes/unsure |  | no |  |  |
+| MD         | ER  | MC  | VL  | DG  |
+| ---------- | --- | --- | --- | --- |
+| yes/unsure |     | no  |     | NO  |
 
 **MC**: I don't think this study is useful to define what SW quality should be.
-
 
 ---
 
@@ -812,64 +983,13 @@ Code ownership establishes a chain of responsibility for modules in large softwa
 
 In software product line engineering, the customers mostly concentrate on the functionalities of the target product during product configuration. The quality attributes of a target product, such as security and performance, are often assessed until the final product is generated. However, it might be very costly to fix the problem if it is found that the generated product cannot satisfy the customers’ quality requirements. Although the quality of a generated product will be affected by all the life cycles of product development, feature-based product configuration is the first stage where the estimation or prediction of the quality attributes should be considered. As we know, the key issue of predicting the quality attributes for a product configured from feature models is to measure the interdependencies between functional features and quality attributes. The current existing approaches have several limitations on this issue, such as requiring real products for the measurement or involving domain experts’ efforts. To overcome these limitations, we propose a systematic approach of modeling quality attributes in feature models based on domain experts’ judgments using the analytic hierarchical process (AHP) and conducting quality aware product configuration based on the captured quality knowledge. Domain experts’ judgments are adapted to avoid generating the real products for quality evaluation, and AHP is used to reduce domain experts’ efforts involved in the judgments. A prototype tool is developed to implement the concepts of the proposed approach, and a formal evaluation is carried out based on a large-scale case study. © 2013, Springer Science+Business Media New York.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| unsure/no |  | no |  |  |
+| MD        | ER  | MC  | VL  | DG     |
+| --------- | --- | --- | --- | ------ |
+| unsure/no |     | no  |     | Unsure |
 
 **MC**: their concept of "quality" is too general ("security", "performance"), and it doesn't much our task.
 
-
----
-
-## 38 - Studying the effect of co-change dispersion on software quality
-
-### Kouroshfar E.
-
-### https://www.scopus.com/inward/record.uri?eid=2-s2.0-84886429987&doi=10.1109%2fICSE.2013.6606741&partnerID=40&md5=f9b5aa44f572315b1cd1c58858d1d1a6
-
-Software change history plays an important role in measuring software quality and predicting defects. Co-change metrics such as number of files changed together has been used as a predictor of bugs. In this study, we further investigate the impact of specific characteristics of co-change dispersion on software quality. Using statistical regression models we show that co-changes that include files from different subsystems result in more bugs than co-changes that include files only from the same subsystem. This can be used to improve bug prediction models based on co-changes. © 2013 IEEE.
-
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| unsure |  | no |  |  |
-
-**MC**: it seems their criteria of "quality" is the detection of bugs. I don't think this study is useful for us.
-
-
----
-
-## 40 - Normalizing source code vocabulary to support program comprehension and software quality
-
-### Guerrouj L.
-
-### https://www.scopus.com/inward/record.uri?eid=2-s2.0-84886391532&doi=10.1109%2fICSE.2013.6606723&partnerID=40&md5=191e7233ea6777ff76ebefbf832bbda5
-
-The literature reports that source code lexicon plays a paramount role in program comprehension, especially when software documentation is scarce, outdated or simply not available. In source code, a significant proportion of vocabulary can be either acronyms and-or abbreviations or concatenation of terms that can not be identified using consistent mechanisms such as naming conventions. It is, therefore, essential to disambiguate concepts conveyed by identifiers to support program comprehension and reap the full benefit of Information Retrieval-based techniques (e.g., feature location and traceability) whose linguistic information (i.e., source code identifiers and comments) used across all software artifacts (e.g., requirements, design, change requests, tests, and source code) must be consistent. To this aim, we propose source code vocabulary normalization approaches that exploit contextual information to align the vocabulary found in the source code with that found in other software artifacts. We were inspired in the choice of context levels by prior works and by our findings. Normalization consists of two tasks: splitting and expansion of source code identifiers. We also investigate the effect of source code vocabulary normalization approaches on software maintenance tasks. Results of our evaluation show that our contextual-aware techniques are accurate and efficient in terms of computation time than state of the art alternatives. In addition, our findings reveal that feature location techniques can benefit from vocabulary normalization when no dynamic information is available. © 2013 IEEE.
-
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| unsure/no |  | no |  |  |
-
-* *MD* - we propose source code vocabulary normalization approaches
-
-* *MC* - too specific, and probably subjective. Probably related to design patterns, *à la Gang of Four*.
-
-
----
-
-## 41 - Fostering software quality assessment
-
-### Brandtner M.
-
-### https://www.scopus.com/inward/record.uri?eid=2-s2.0-84886382849&doi=10.1109%2fICSE.2013.6606725&partnerID=40&md5=9e042076903be6351b3b97be6a877cb3
-
-Software quality assessment shall monitor and guide the evolution of a system based on quality measurements. This continuous process should ideally involve multiple stakeholders and provide adequate information for each of them to use. We want to support an effective selection of quality measurements based on the type of software and individual information needs of the involved stakeholders. We propose an approach that brings together quality measurements and individual information needs for a context-sensitive tailoring of information related to a software quality assessment. We address the following research question: How can we better support different stakeholders in the quality assessment of a software system? For that we will devise theories, models, and prototypes to capture their individual information needs, tailor information from software repositories to these needs, and enable a contextual analysis of the quality aspects. Such a context-sensitive tailoring will provide a effective and individual view on the latest development trends in a project. We outline the milestones as well as evaluation approaches in this paper. © 2013 IEEE.
-
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| unsure |  | yes |  |  |
-
-**MC**: in the abstract they say they provide "an effective selection of quality measurements", and that it's " based on the type of software". It could be useful to see why they claim their selection is "effective", and also for our Landscaping if some of them are specific to a certain kind of SW.
+**DG**: The quality attributes defined may be useful
 
 ---
 
@@ -881,9 +1001,9 @@ Software quality assessment shall monitor and guide the evolution of a system ba
 
 For projects that rely on empirical process control and deliver frequently working versions of software, developers and project managers regularly need to examine the status of their software quality. This study illustrates that simple goal-oriented changes or extensions to the existing data of projects' respective defect tracking systems could provide valuable and prompt information to improve their software quality assessment and assurance. © 2012 IEEE.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| unsure |  | no |  |  |
+| MD  ---| ER  | MC  | VL  | DG  |
+| ------ | --- | --- | --- | --- |
+| unsure |     | no  |     | NO  |
 
 ---
 
@@ -895,9 +1015,11 @@ For projects that rely on empirical process control and deliver frequently worki
 
 Each organization devoted to developing software/web applications should have as one of its ultimate goals to improve the quality in use of its products. In order to accomplish this, first it has to understand the quality of the current product version and then make appropriate changes to increase the quality of the new version if improvement actions were needed. For this purpose, we have developed a specific strategy called SIQinU (Strategy for understanding and Improving Quality in Use), which allows recognizing problems of quality in use through evaluation and proposes product improvements by understanding and making changes on product attributes. Hence by re-evaluating quality in use of the new version, improvement gains can be gauged. SIQinU is in alignment with GOCAME (Goal-Oriented Context-Aware Measurement and Evaluation), a multi-purpose generic strategy previously developed for measurement and evaluation which relies on: a conceptual framework (with ontological base), a process, and methods and tools. Since the process aspect is paramount in defining SIQinU - given the amount of phases and activities - in this paper we model the functional and behavioral process views illustrating them with excerpts of a real case study. © 2011 ACM.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| unsure |  | no |  |  |
+| MD     | ER  | MC  | VL  | DG  |
+| ------ | --- | --- | --- | --- |
+| unsure |     | no  |     | YES |
+
+**DG** - It has a methodological view that may be useful for quality definition
 
 ---
 
@@ -909,9 +1031,9 @@ Each organization devoted to developing software/web applications should have as
 
 A plethora of recent work leverages historical data to help practitioners better prioritize their software quality assurance efforts. However, the adoption of this prior work in practice remains low. In our work, we identify a set of challenges that need to be addressed to make previous work on quality assurance prioritization more pragmatic. We outline four guidelines that address these challenges to make prior work on software quality assurance more pragmatic: 1) Focused Granularity (i.e., small prioritization units), 2) Timely Feedback (i.e., results can be acted on in a timely fashion), 3) Estimate Effort (i.e., estimate the time it will take to complete tasks), and 4) Evaluate Generality (i.e., evaluate findings across multiple projects and multiple domains). We present two approaches, at the code and change level, that demonstrate how prior approaches can be more pragmatic. © 2011 Author.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| yes/unsure |  | unsure |  |  |
+| MD         | ER  | MC     | VL  | DG     |
+| ---------- | --- | ------ | --- | ------ |
+| yes/unsure |     | unsure |     | UNSURE |
 
 ---
 
@@ -923,9 +1045,9 @@ A plethora of recent work leverages historical data to help practitioners better
 
 Over the past decade the dynamic capabilities of self-adaptive software-intensive systems have proliferated and improved significantly. To advance the field of self-adaptive and self-managing systems further and to leverage the benefits of self-adaptation, we need to develop methods and tools to assess and possibly certify adaptation properties of self-adaptive systems, not only at design time but also, and especially, at run-time. In this paper we propose a framework for evaluating quality-driven self-adaptive software systems. Our framework is based on a survey of self-adaptive system papers and a set of adaptation properties derived from control theory properties. We also establish a mapping between these properties and software quality attributes. Thus, corresponding software quality metrics can then be used to assess adaptation properties. © 2011 ACM.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| unsure |  | no |  |  |
+| MD     | ER  | MC  | VL  | DG  |
+| ------ | --- | --- | --- | --- |
+| unsure |     | no  |     | YES |
 
 ---
 
@@ -937,9 +1059,9 @@ Over the past decade the dynamic capabilities of self-adaptive software-intensiv
 
 With the prevalent application of multi-core CPUs, software practitioners are facing the challenge of developing high quality multi-threaded programs. Applying concurrency design patterns is one of the best practices in multi-core software engineering. We comprehensively surveyed 28 concurrency design patterns, and provided a problem-oriented guide that navigates software developers towards the "right" pattern(s) with minimal search/reading effort. The guide also illustrates the relationship between concurrency design patterns and the quality attributes they address. Additionally, further investigation was conducted on how these concurrency design patterns implement quality attributes tactics. We present a mapping between surveyed concurrency design patterns and the tactics for two important quality attributes: performance and modifiability. The results of these studies provide an insight into concurrency design patterns for software developers who are seeking appropriate or improved solutions to multi-threaded software development issues. © 2010 ACM.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| unsure |  |  |  |  |
+| MD     | ER  | MC  | VL  | DG  |
+| ------ | --- | --- | --- | --- |
+| unsure |     |     |     | NO  |
 
 * *MD* - probably check the quality attributes in the paper.
 
@@ -955,9 +1077,9 @@ With the prevalent application of multi-core CPUs, software practitioners are fa
 
 Software engineering process information extracted from version control systems and bug tracking databases are widely used in empirical software engineering. In prior work, we showed that these data are plagued by quality deficiencies, which vary in its characteristics across projects. In addition, we showed that those deficiencies in the form of bias do impact the results of studies in empirical software engineering. While these findings affect software engineering researchers the impact on practitioners has not yet been substantiated. In this paper we, therefore, explore (i) if the process data quality and characteristics have an influence on the bug fixing process and (ii) if the process quality as measured by the process data has an influence on the product (i.e., software) quality. Specifically, we analyze six Open Source as well as two Closed Source projects and show that process data quality and characteristics have an impact on the bug fixing process: the high rate of empty commit messages in Eclipse, for example, correlates with the bug report quality. We also show that the product quality - measured by number of bugs reported - is affected by process data quality measures. These findings have the potential to prompt practitioners to increase the quality of their software process and its associated data quality. © 2010 IEEE.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| unsure |  | no |  |  |
+| MD     | ER  | MC  | VL  | DG  |
+| ------ | --- | --- | --- | --- |
+| unsure |     | no  |     | NO  |
 
 **MC**: I'm not very confident on all the papers discussing "correlations", since I don't expect them to provide any actual discussion on quality criteria itself.
 
@@ -971,9 +1093,9 @@ Software engineering process information extracted from version control systems 
 
 With the rapid development of the software industry, improving the quality of software development has gained increasing importance. Software manufacturers have recently applied quality improvement techniques to software development to respond to the needs for software quality. Software quality function deployment (SQFD), as a technique for improving the quality of the software development process to create products responsive to customer expectations, is used to maximize customer satisfaction. This paper presents a fuzzy regression and optimization approach to determine target levels in SQFD. The inherent fuzziness of relationships in SQFD modeling justifies the use of fuzzy regression. Fuzzy regression is used to identify the functional relationships between customer requirements and technical attributes, and among technical attributes. Then, a mathematical programming model is developed to determine target levels of technical attributes using the functional relationships obtained by fuzzy regression. A search engine quality improvement problem is presented to illustrate the application of the proposed approach. © 2010 Springer Science+Business Media, LLC.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| unsure/no |  | no |  |  |
+| MD        | ER  | MC  | VL  | DG  |
+| --------- | --- | --- | --- | --- |
+| unsure/no |     | no  |     | NO  |
 
 **MC**: too domain-specific.
 
@@ -987,15 +1109,15 @@ With the rapid development of the software industry, improving the quality of so
 
 'High quality' might seem an obvious requirement for any piece of software, but do the different stakeholder groups involved in its production and use conceptualize this requirement in the same way? Many existing models refine the broad concept of quality into a number of well-defined and measurable attributes related to the software product itself and the development process which produced it. But despite growing awareness of the importance of achieving cultural alignment between holders of different business and IT groups, little attempt has been made to empirically examine the requirements for software quality held by different groups involved in the development process. We conducted a survey of more than 300 current and recently graduated students of one of the leading Executive MBA programs in the United States, asking them to rate the importance of each of 13 widely-cited attributes related to software quality. The results showed business role-related differences in some specific areas and agreement in many others. The results suggest that a strong shared culture may be able to bridge the gulf created between holders of IT and business stakeholder roles. © 2010 Springer Science+Business Media, LLC.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| unsure |  | no |  |  |
+| MD     | ER  | MC  | VL  | DG  |
+| ------ | --- | --- | --- | --- |
+| unsure |     | no  |     | NO |
 
-* *MD* - check reference to 13 widely-cited attributes related to software quality
+**MD** - check reference to 13 widely-cited attributes related to software quality
 
-* *MD* - probably not very objective and also based on correlations.
+**MC** - probably not very objective and also based on correlations.
 
-
+**DG** - +1 to that suggestion
 
 ---
 
@@ -1007,13 +1129,13 @@ With the rapid development of the software industry, improving the quality of so
 
 In the last years the software application portfolio has become a key asset for almost all companies. During their lives, applications undergo lots of changes to add new functionalities or to refactor older ones; these changes tend to reduce the quality of the applications themselves, causing the phenomenon known as software aging. Monitoring of software aging is very important for companies, but up to now there are no standard approaches to perform this task. In addition many of the suggested models assess software aging basing on few software features, whereas this phenomenon affects all of the software aspects. In 2005 ISO/IEC released the SQuaRE quality model which covers several elements of software quality assessment, but some issues make SQuaRE usage quite difficult. The purpose of this paper is to suggest an approach to software aging monitoring that considers the software product in its wholeness and to provide a specialization of the SQuaRE quality model which allows to perform this task. © 2009 IEEE.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| yes/unsure |  | yes |  |  |
+| MD         | ER  | MC  | VL  | DG  |
+| ---------- | --- | --- | --- | --- |
+| yes/unsure |     | yes |     | NO  |
 
 * *MD* - provide a specialization of the SQuaRE quality model
-
 * *MC* - totally related to SW maintainabily and SW in production.
+* *DG* - We should include SQuaRE, but not this one (i think)
 
 ---
 
@@ -1025,9 +1147,9 @@ In the last years the software application portfolio has become a key asset for 
 
 Enormous amount of open source code is available on the Internet and various code search engines (CSE) are available to serve as a means for searching in open source code. However, usage of CSEs is often limited to simple tasks such as searching for relevant code examples. In this paper, we present a generic life-cycle model that can be used to improve software quality by exploiting CSEs. We present three example software development tasks that can be assisted by our life-cycle model and show how these three tasks can contribute to improve the software quality. We also show the application of our life-cycle model with a preliminary evaluation. © 2009 IEEE.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| yes/unsure |  | unsure |  |  |
+| MD         | ER  | MC     | VL  | DG     |
+| ---------- | --- | ------ | --- | ------ |
+| yes/unsure |     | unsure |     | Unsure |
 
 * *MD* - software development tasks,... three tasks can contribute to improve the software quality
 
@@ -1041,9 +1163,9 @@ Enormous amount of open source code is available on the Internet and various cod
 
 In this paper we discuss the challenges of software quality for medical software and present some ideas for improving medical software quality requirements through software engineering methods. We apply the quality requirements engineering method MOQARE to elicit specific quality requirements for an imaginary drug advisory system and report our lessons learned. Copyright 2008 ACM.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| unsure/no |  | unsure |  |  |
+| MD        | ER  | MC     | VL  | DG  |
+| --------- | --- | ------ | --- | --- |
+| unsure/no |     | unsure |     | NO  |
 
 **MC**: I'd do a quick read to see if they provide any actual criteria specific to medical imaging SW.
 
@@ -1057,9 +1179,9 @@ In this paper we discuss the challenges of software quality for medical software
 
 The elicitation, analysis, and specification of quality requirements involve careful balancing of a broad spectrum of competing priorities. Developers must therefore focus on identifying qualities and designing solutions that optimize the product's value to its stakeholders. © 2008 IEEE.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| unsure/no |  | no |  |  |
+| MD        | ER  | MC  | VL  | DG  |
+| --------- | --- | --- | --- | --- |
+| unsure/no |     | no  |  no | NO  |
 
 ---
 
@@ -1071,9 +1193,9 @@ The elicitation, analysis, and specification of quality requirements involve car
 
 This study proposes a software quality evaluation model and its computing algorithm. Existing software quality evaluation models examine multiple characteristics and are characterized by factorial fuzziness. The relevant criteria of this model are derived from the international norm ISO. The main objective of this paper is to propose a novel Analytic Hierarchy Process (AHP) approach for addressing uncertainty and imprecision in service evaluation during pre-negotiation stages, where comparative judgments of decision makers are represented as fuzzy triangular numbers. A new fuzzy prioritization method, which derives crisp priorities from consistent and inconsistent fuzzy comparison matrices, is proposed. The Fuzzy Analytic Hierarchy Process (FAHP)-based decision-making method can provide decision makers or buyers with a valuable guideline for evaluating software quality. Importantly, the proposed model can aids users and developers in assessing software quality, making it highly applicable for academic and commercial purposes. © 2007 Springer Science+Business Media, LLC.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| unsure/no |  | no |  |  |
+| MD        | ER  | MC  | VL  | DG  |
+| --------- | --- | --- | --- | --- |
+| unsure/no |     | no  | no  | no  |
 
 **MC**: too domain-specific.
 
@@ -1087,9 +1209,9 @@ This study proposes a software quality evaluation model and its computing algori
 
 In a competitive environment where time-to-market is crucial for success, software development companies initiate process improvement programs that can shorten the development time. They especially seek improvements in the verification activities since rework commonly constitutes a significant part of the development cost. However, the success of process improvement initiatives is dependent on early and observable results since a lack of feedback on the effect of improvements is a common cause of failure. This paper investigates how to monitor the verification process as input to decisions such as improvement actions. The suggested approach was applied on three industrial software products at Ericsson and the results determined that the approach can be used for quantitative monitoring of process quality and as decision support to do rapid improvement actions. © 2006 ACM.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| unsure/no |  | no |  |  |
+| MD        | ER  | MC  | VL  | DG  |
+| --------- | --- | --- | --- | --- |
+| unsure/no |     | no  | no  | no  |
 
 **MC**: probably based on the performance of the monitor SW, rather than criteria on SW itself.
 
@@ -1103,9 +1225,9 @@ In a competitive environment where time-to-market is crucial for success, softwa
 
 Web Services technologies and their supporting collection of de facto standards are now reaching the point of maturity where they are appearing in production software systems. Service Oriented Architectures (SOAs) using Web Services as an enabling technology are also being discussed widely in the IT press. However, despite the numerous and real advantages of these architectural patterns there are still many software quality challenges that remain unresolved. This is particularly true as we consider more advanced architectures that exploit the technology to its maximum advantage: utility computing and on-demand service discovery and composition, grid computing and multi-agent systems will only become pervasive once the software quality challenges of real-world industrial applications have been addressed. In this paper potential quality issues such as performance, reliability and availability are addressed in terms of the quality assurances that might need to be provided to consumers of services. Proposed XML-based Service Level Agreement (SLA) languages are reviewed as a means of providing these quality assurances in machine-readable ways. We also discuss how SLAs might be automatically negotiated to enable automated, on-demand service discovery and composition. The next section of this paper addresses quality issues from a service provider's perspective. The providers of such services will need to ensure that SLA commitments are met and this poses interesting problems in terms of application management. Network quality of service is currently addressed through such means as IntServ and DiffServ. Research proposals to introduce similar techniques at an application level are described. From the service consumer's perspective, interesting research proposals for proactively ensuring that good quality of service is obtained are also reviewed. These could be particularly important for creating confidence, from a consumer's perspective, in these architectures. Finally, the paper evaluates the challenges and suggests areas where further research is most urgently required. © Springer Science + Business Media, Inc. 2006.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| unsure |  | yes |  |  |
+| MD     | ER  | MC  | VL  | DG  |
+| ------ | --- | --- | --- | --- |
+| unsure |     | yes | no  |  no |
 
 **MC**: probably related to scalabily and data formats. Useful for Landscaping and SW in production.
 
@@ -1119,11 +1241,12 @@ Web Services technologies and their supporting collection of de facto standards 
 
 In industrial practice, information on post-release field quality of a product tends to become available too late in the software development process to affordably guide corrective actions. An important step towards remediation of this problem of late information lies in the ability to provide an early estimation of software post-release field quality. This paper presents the use of a suite of in-process metrics that leverages the software testing effort to provide (1) an estimation of potential software field quality in early software development phases, and (2) the identification of low quality software programs. A controlled case study conducted at North Carolina State University provides initial indication that our approach is effective for making an early assessment of post-release field quality. © 2005 ACM.
 
-| MD  | ER  | MC  | VL  | DG  |
-| --- | --- | --- | --- | --- |
-| unsure |  | unsure |  |  |
+| MD     | ER  | MC     | VL  | DG     |
+| ------ | --- | ------ | --- | ------ |
+| unsure |     | unsure | yes | Unsure |
 
-**MC**: we can check if they provide actual criteria for quality assessment.
+* *MC* - we can check if they provide actual criteria for quality assessment.
+* *DG* - The software quality metrics could be interesting... 
 
 ---
 

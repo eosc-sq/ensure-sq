@@ -30,6 +30,7 @@ Table columns of template:
 * MT - Massimo Torquati
 * MV - Maxime Van den Bossche
 * VL - Violaine Louvet
+* IC - Isabel Campos
 
 # Selected with **yes** and **yes + unsure** - Total 29 articles
 
@@ -455,7 +456,7 @@ A considerable number of software suppliers report improvements in product and s
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 118      |       |            |                          |                |           |         |
+| 118      |       |            |                          |                | IC        |         |
 
 ---
 
@@ -477,7 +478,7 @@ Specifying the quality of software products is a valuable addition to functional
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 120      |       |            |                          |                |           |         |
+| 120      |       |            |                          |                | IC        |         |
 
 ---
 

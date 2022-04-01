@@ -55,7 +55,7 @@ Source code analysis tools have been the vehicle for measuring and assessing the
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-|          |       |            |                          |                |           |         |
+| 11       |       |            |                          |                | DG        |         |
 
 ---
 
@@ -78,7 +78,7 @@ Software quality assessment shall monitor and guide the evolution of a system ba
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-|          |       |            |                          |                |           |         |
+| 41       |       |            |                          |                | ER        |         |
 
 ---
 
@@ -100,7 +100,7 @@ It is widely accepted that software measures provide an appropriate mechanism fo
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-|          |       |            |                          |                |           |         |
+| 45       |       |            |                          |                | JC        |         |
 
 ---
 
@@ -123,7 +123,7 @@ We provide an overview of the approach developed by the Software Improvement Gro
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-|          |       |            |                          |                |           |         |
+| 46       |       |            |                          |                | LC        |         |
 
 ---
 
@@ -146,7 +146,7 @@ Software quality is of increasing importance in mission-critical embedded softwa
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-|          |       |            |                          |                |           |         |
+| 58       |       |            |                          |                | MC        |         |
 
 ---
 
@@ -169,7 +169,7 @@ Software quality models are a well-accepted means to support quality management 
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-|          |       |            |                          |                |           |         |
+| 61       |       |            |                          |                | MD        |         |
 
 ---
 
@@ -191,7 +191,7 @@ Several tools and methods for source code quality assurance based on static anal
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-|          |       |            |                          |                |           |         |
+| 74       |       |            |                          |                | MT        |         |
 
 ---
 
@@ -213,7 +213,7 @@ Internal software quality, e.g. the quality of code, has great impact on the ove
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-|          |       |            |                          |                |           |         |
+| 82       |       |            |                          |                | MV        |         |
 
 ---
 
@@ -236,7 +236,7 @@ Software Quality Engineering is an emerging discipline that is concerned with im
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-|          |       |            |                          |                |           |         |
+| 83       |       |            |                          |                | VL        |         |
 
 ---
 
@@ -256,7 +256,7 @@ The open source software community has published a substantial body of research 
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-|          |       |            |                          |                |           |         |
+| 85       |       |            |                          |                | DG        |         |
 
 ---
 
@@ -278,7 +278,7 @@ Recently, software development teams using agile processes have started widely a
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-|          |       |            |                          |                |           |         |
+| 88       |       |            |                          |                | ER        |         |
 
 ---
 
@@ -298,7 +298,7 @@ The support of software quality in a software development process may be regarde
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-|          |       |            |                          |                |           |         |
+| 92       |       |            |                          |                | JC        |         |
 
 ---
 
@@ -321,7 +321,7 @@ In industrial practice, information on post-release field quality of a product t
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-|          |       |            |                          |                |           |         |
+| 93       |       |            |                          |                | LC        |         |
 
 ---
 
@@ -343,7 +343,7 @@ This paper examines how the industrial applicability of both ISO/IEC 9126:2001 a
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-|          |       |            |                          |                |           |         |
+| 99       |       |            |                          |                | MC        |         |
 
 ---
 
@@ -367,7 +367,7 @@ A user survey was carried out to evaluate empirically ISO/IEC 9126's dimensional
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-|          |       |            |                          |                |           |         |
+| 101      |       |            |                          |                | MD        |         |
 
 ---
 
@@ -389,7 +389,7 @@ Quality is currently considered one of the main assets with which a firm can enh
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-|          |       |            |                          |                |           |         |
+| 108      |       |            |                          |                | MT        |         |
 
 ---
 
@@ -411,7 +411,7 @@ Industrial evaluations of COTS software largely used the quality models provided
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-|          |       |            |                          |                |           |         |
+| 112      |       |            |                          |                | MV        |         |
 
 ---
 
@@ -433,7 +433,7 @@ It is very important to improve software quality using program analysis & measur
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-|          |       |            |                          |                |           |         |
+| 116      |       |            |                          |                | VL        |         |
 
 ---
 

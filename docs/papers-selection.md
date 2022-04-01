@@ -1,3 +1,12 @@
+# Proposed template (for each paper to review):
+
+| Criteria | Definition | Qualitative | Type | Reviewer | Paper_id | Comment |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+|  |  |  |  |  |  |  |
+
+
+
+
 # Selected with **yes** and **yes + unsure** - Total 29 articles
 
 ---

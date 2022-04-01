@@ -1,11 +1,35 @@
 # Proposed template (for each paper to review):
 
-| Criteria | Definition | Qualitative | Type | Reviewer | Paper_id | Comment |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-|  |  |  |  |  |  |  |
+Table columns of template:
 
+* Paper_id: paper id in the list below, for example ID = 11 for the first paper.
+* Name: name of criteria.
+* Definition: description/summary of the criteria.
+* Qualitative/quantitative: if the criteria is objective/measurable (possible to automate) or subjective and difficult to automate.
+* Targeted to SW (see <https://github.com/eosc-sq/overleaf-ensure-sq/blob/main/landscaping.tex>): at the, moment one of:
+  * Library
+  * Framework
+  * Application (such as Monte-Carlo simulation)
+  * Analysis script
+  * Services and platforms
+* Reviewer(s): reviewer short name, for example DG for Daniel Garijo, see below.
+* Comment: any other comment the reviewer sees fit to make.
 
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
+|          |       |            |                          |                |           |         |
 
+## Reviewers
+
+* DG - Daniel Garijo
+* ER - Elisabetta Ronchieri
+* JC - Leyla Jael Castro
+* LC - Laura del Cano
+* MC - Miguel Colom
+* MD - Mario David
+* MT - Massimo Torquati
+* MV - Maxime Van den Bossche
+* VL - Violaine Louvet
 
 # Selected with **yes** and **yes + unsure** - Total 29 articles
 
@@ -27,6 +51,12 @@ Source code analysis tools have been the vehicle for measuring and assessing the
 * *JC* - Could include quality indicators based on end-user dimension
 * *MV* - The end-user-review aspect could indeed be interesting.
 
+### Review
+
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
+|          |       |            |                          |                |           |         |
+
 ---
 
 ## 41 - Fostering software quality assessment
@@ -44,6 +74,12 @@ Software quality assessment shall monitor and guide the evolution of a system ba
 * *MC* - in the abstract they say they provide "an effective selection of quality measurements", and that it's " based on the type of software". It could be useful to see why they claim their selection is "effective", and also for our Landscaping if some of them are specific to a certain kind of SW.
 * *DG* - Quality measure definition may be useful
 
+### Review
+
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
+|          |       |            |                          |                |           |         |
+
 ---
 
 ## 45 - A systematic review of quality attributes and measures for software product lines
@@ -59,6 +95,12 @@ It is widely accepted that software measures provide an appropriate mechanism fo
 | yes |     | unsure |     | yes |
 
 * *MC* - the authors mention "165 measures related to 97 different quality attributes". It's so large that I'm unsure if it's suitable for our task. We'll need to see in detail.
+
+### Review
+
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
+|          |       |            |                          |                |           |         |
 
 ---
 
@@ -77,6 +119,12 @@ We provide an overview of the approach developed by the Software Improvement Gro
 * *ER* - software definition, software metrics
 * *MC* - related to Landscaping, since it focused on quite specific SW (standard) and criteria (maintainability). They refer to the ISO/IEC 9126 definition.
 
+### Review
+
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
+|          |       |            |                          |                |           |         |
+
 ---
 
 ## 58 - Quality specification and metrication, results from a case-study in a mission-critical software domain
@@ -93,6 +141,12 @@ Software quality is of increasing importance in mission-critical embedded softwa
 
 * *ER* - software metrics
 * *MC* - a good example of criteria for a specific type of software (critical systems).
+
+### Review
+
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
+|          |       |            |                          |                |           |         |
 
 ---
 
@@ -111,6 +165,12 @@ Software quality models are a well-accepted means to support quality management 
 * *ER* - it should explain software characteristics critically
 * *MC* - related to Landscaping at least. The tackle a specific problem: "there is a lack of explicitly stated requirements for quality models with respect to their intended mode of application".
 
+### Review
+
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
+|          |       |            |                          |                |           |         |
+
 ---
 
 ## 74 - Continuous software quality supervision using source inventory and columbus
@@ -127,6 +187,12 @@ Several tools and methods for source code quality assurance based on static anal
 
 * *MC* - related to Perspectives of developers.
 
+### Review
+
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
+|          |       |            |                          |                |           |         |
+
 ---
 
 ## 82 - The EMISQ method - Expert based evaluation of internal software quality
@@ -142,6 +208,12 @@ Internal software quality, e.g. the quality of code, has great impact on the ove
 | yes |     | unsure | yes | yes |
 
 * *MC* - this seems to be proposing some kind of methodology, rather than criteria. We should to check how objective it is.
+
+### Review
+
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
+|          |       |            |                          |                |           |         |
 
 ---
 
@@ -160,6 +232,12 @@ Software Quality Engineering is an emerging discipline that is concerned with im
 * *MD* - comparative evaluation of existing quality models
 * *MC* - I expect this one to have a complete comparison of other methodologies.
 
+### Review
+
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
+|          |       |            |                          |                |           |         |
+
 ---
 
 ## 85 - Achieving quality in open-source software
@@ -173,6 +251,12 @@ The open source software community has published a substantial body of research 
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
 | yes |     | yes | yes | yes |
+
+### Review
+
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
+|          |       |            |                          |                |           |         |
 
 ---
 
@@ -190,6 +274,12 @@ Recently, software development teams using agile processes have started widely a
 
 * *DG* - Abstract does not provide many details
 
+### Review
+
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
+|          |       |            |                          |                |           |         |
+
 ---
 
 ## 92 - Software quality development and assurance in RUP, MSF and XP -A comparative study
@@ -203,6 +293,12 @@ The support of software quality in a software development process may be regarde
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
 | yes |     | yes | yes | yes |
+
+### Review
+
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
+|          |       |            |                          |                |           |         |
 
 ---
 
@@ -221,6 +317,12 @@ In industrial practice, information on post-release field quality of a product t
 * *MC* - we can check if they provide actual criteria for quality assessment.
 * *DG* - The software quality metrics could be interesting... 
 
+### Review
+
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
+|          |       |            |                          |                |           |         |
+
 ---
 
 ## 99 - The evolution path for industrial software quality evaluation methods applying ISO/IEC 9126:2001 quality model: Example of MITRE's SQAE method
@@ -236,6 +338,12 @@ This paper examines how the industrial applicability of both ISO/IEC 9126:2001 a
 | yes |     | yes | yes | yes |
 
 * *MC* - perhaps too specific, but this one provides a case study on the applicability of ISO/IEC 9126.
+
+### Review
+
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
+|          |       |            |                          |                |           |         |
 
 ---
 
@@ -255,6 +363,12 @@ A user survey was carried out to evaluate empirically ISO/IEC 9126's dimensional
 * *MC* - article 99 also refers to ISO/IEC 9126. It'd be interesting to describe what are the novelties in ISO/IEC 25010:2011.
 * *DG* - I am unsure because this is a user survey based on existing models. We should probably focus on the models... 
 
+### Review
+
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
+|          |       |            |                          |                |           |         |
+
 ---
 
 ## 108 - Construction of a systemic quality model for evaluating a software product
@@ -270,6 +384,12 @@ Quality is currently considered one of the main assets with which a firm can enh
 |     | yes | yes |     | yes |
 
 * *ER* - it should identify set of attributes that overlaps various models
+
+### Review
+
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
+|          |       |            |                          |                |           |         |
 
 ---
 
@@ -287,6 +407,12 @@ Industrial evaluations of COTS software largely used the quality models provided
 
 * *MC* - this one is specifically on criteria for quality. I expect a detailed review and discussion in this article.
 
+### Review
+
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
+|          |       |            |                          |                |           |         |
+
 ---
 
 ## 116 - Software quality analysis & measurement service activity in the company
@@ -302,6 +428,12 @@ It is very important to improve software quality using program analysis & measur
 | yes |     | unsure |     | unsure |
 
 * *MC* - I'm not sure if this one is about quality itself, or to optimize processes in which quality is improved.
+
+### Review
+
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
+|          |       |            |                          |                |           |         |
 
 ---
 
@@ -319,6 +451,12 @@ A considerable number of software suppliers report improvements in product and s
 
 * *MC* - any works that are critical with quality standards or methodologies is important, since they're very likely to discuss about their weaknesses and provide hints on how to improve them.
 
+### Review
+
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
+|          |       |            |                          |                |           |         |
+
 ---
 
 ## 120 - Specifying software quality with the extended ISO model
@@ -334,6 +472,12 @@ Specifying the quality of software products is a valuable addition to functional
 |     |     | yes | yes | yes |
 
 * *MC* - same comments as for 118: articles describing "pitfalls" of weaknesses are very informative.
+
+### Review
+
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
+|          |       |            |                          |                |           |         |
 
 ---
 
@@ -352,6 +496,12 @@ This paper has developed from the SoFEA project at The open University which is 
 * *MC* - important for Landscaping and to identify practices which might be specific to certain disciplines (such as scientific or research software).
 * *DG* - The paper seems to focus on quality management, rather than defining quality dimensions
 
+### Review
+
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
+|          |       |            |                          |                |           |         |
+
 ---
 
 ## 124 - Software quality: the elusive target
@@ -368,6 +518,12 @@ High-profile disasters and the ensuing debates in the press are alerting more pe
 
 * *MC* - this should be useful for Landscaping also. Another example of criteria for quality which is different according to the domain. Here the mention a "nuclear power plant" (critical systems?).
 
+### Review
+
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
+|          |       |            |                          |                |           |         |
+
 ---
 
 ## 128 - Experiences of software quality management using metrics through the life-cycle
@@ -381,6 +537,12 @@ Many software quality metrics to objectively grasp software products and process
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
 |     |     | yes | yes | yes |
+
+### Review
+
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
+|          |       |            |                          |                |           |         |
 
 ---
 
@@ -398,6 +560,12 @@ Software quality metrics have potential for helping to assure the quality of sof
 
 * *MC* - useful for Landscaping. I expect criteria for quality applied to critical systems here.
 
+### Review
+
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
+|          |       |            |                          |                |           |         |
+
 ---
 
 ## 133 - Software quality standards in practice: the limitations of using ISO-9001 to support software development
@@ -413,6 +581,12 @@ Quality management standard BS5740/ISO9001 is a key technology for UK and Europe
 |     |     | yes | unsure | yes |
 
 * *MC* - it discusses limitations, so it should provide insights about what is missing in the standards.
+
+### Review
+
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
+|          |       |            |                          |                |           |         |
 
 ---
 
@@ -431,6 +605,12 @@ Achieving quality is a perennial problem in software development. It is commerci
 * *MD* - commercial SW, comparison in different SW.
 * *MC* - Landscaping. Different criteria depending on the application type ("commercial" here). SW in production.
 
+### Review
+
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
+|          |       |            |                          |                |           |         |
+
 ---
 
 ## 144 - Practice of quality modeling and measurement on software life-cycle
@@ -446,6 +626,12 @@ The authors introduce quality metrics into the quantitative software quality est
 | yes/unsure |     | yes | yes | yes |
 
 * *MC* - if use cases are discussed, it should provide some criteria of quality. Moreover, it's "quantitative".
+
+### Review
+
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
+|          |       |            |                          |                |           |         |
 
 ---
 
@@ -464,6 +650,12 @@ Maintenance plays a vital role in protecting quality as a system evolves. The re
 * *MD* - for Maintenance, may be interesting for our section "Release, Support, Maintenance, Usability, Reproducibility"
 * *DG* - Abstract is not very informative
 
+### Review
+
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
+|          |       |            |                          |                |           |         |
+
 ---
 
 ## 146 - Quantitative evaluation of software quality
@@ -477,6 +669,12 @@ The study reported in this paper establishes a conceptual framework and some key
 | MD  | ER  | MC  | VL  | DG  |
 | --- | --- | --- | --- | --- |
 | yes |     | yes | yes | yes |
+
+### Review
+
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
+|          |       |            |                          |                |           |         |
 
 ---
 

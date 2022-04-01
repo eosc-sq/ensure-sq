@@ -6,7 +6,7 @@ List of documents:
 
 * [Articles list](docs/articles.md)
 
-## Contributers
+## Contributors
 
 * MD - Mario David
 * ER - Elisabetta Ronchieri

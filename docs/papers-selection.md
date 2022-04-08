@@ -212,9 +212,28 @@ Internal software quality, e.g. the quality of code, has great impact on the ove
 
 ### Review
 
-| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
-| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 82       |       |            |                          |                | MV        |         |
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment   |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-------: |
+| 82       | n/a   | n/a        | n/a                      | n/a            | MV        | See below |
+
+* *MV* - this paper indeed describes the "EMISQ" approach to internal(*) software quality assessment
+  ("internal" as in "quality aspects that are primarily visible to software architects, developers and testers").
+  The overall idea is to combine static analysis tools with expert input, for which EMISQ provides a framework.
+  It provides a corresponding quality model, but seemingly without describing the quality criteria in significant
+  detail. For this, the reader is referred to the ISO 9126 quality model and the following static analysis tools
+  (primarily aimed at C++ and Java code, apparently):
+
+  - CPD: https://pmd.github.io/latest/pmd_userdocs_cpd.html
+  - FindBugs: http://findbugs.sourceforge.net
+  - JLint: http://jlint.sourceforge.net/
+  - JMetric: https://sourceforge.net/projects/jmetric/
+  - PC-Lint: https://gimpel.com/
+  - PMD: https://pmd.github.io/
+  - QJPro: http://qjpro.sourceforge.net/
+
+  (*) "Internal" as in "quality aspects that are primarily visible to software architects, developers and testers".
+  "External" quality aspects "are noticeable by the users of a software product". I think this is indeed a useful
+  distinction.
 
 ---
 

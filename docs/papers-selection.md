@@ -231,9 +231,19 @@ Internal software quality, e.g. the quality of code, has great impact on the ove
   - PMD: https://pmd.github.io/
   - QJPro: http://qjpro.sourceforge.net/
 
-  (*) "Internal" as in "quality aspects that are primarily visible to software architects, developers and testers".
-  "External" quality aspects "are noticeable by the users of a software product". I think this is indeed a useful
-  distinction.
+  (*) The distinction between "internal" and "external" quality aspects seems to be a useful one:
+
+  - "internal software quality": "quality aspects that are primarily visible to software architects, developers and testers":
+
+    - "[...] has a high impact on the external quality and is thus an important part of quality assurance."
+    - "[...] focuses on the source code, internal documentation, architectural descriptions, etc."
+    - "no knowledge about the functional and non-functional specification of the software product is needed nor must the software be executable"
+
+  - "external software quality": "quality aspects that are noticeable by the users of a software product":
+
+    - "Typical [...] attributes are usability, functionality and efficiency."
+    - "[...] requires an operational product that has to be executed in order to be evaluated."
+
 
 ---
 

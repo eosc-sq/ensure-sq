@@ -395,9 +395,14 @@ A user survey was carried out to evaluate empirically ISO/IEC 9126's dimensional
 
 ### Review
 
-| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
-| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 101      |       |            |                          |                | MD        |         |
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment --|
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-------: |
+| 101      | n/a   | n/a        | n/a                      | n/a            | MD        | See below |
+
+* *MD* - paper describes a survey and analysis of ISO/IEC 9126.
+  * It does not define per se any SQ attributes or criteria. Refer to ISO/IEC 9126 for that definition.
+  * The paper may still be relevant if we want to show how difficult and ambiguous it is to evaluate ISO/IEC 9126
+    characteristics to a real world SW by actual users and developers.
 
 ---
 

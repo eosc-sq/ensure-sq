@@ -101,7 +101,29 @@ It is widely accepted that software measures provide an appropriate mechanism fo
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 45       |       |            |                          |                | JC        |         |
+ | 45 | Binary size | Binary size | Quantitative |  | JC | Exclude, not sure how good this criterion is |
+ | 45 | Complexity of the source code | Cyclomatic complexity | Quantitative |  | JC |  |
+ | 45 | Performance |  | Quantitative |  | JC |  |
+ | 45 | Complexity of the source code (for classes and components) |  | Quantitative |  | JC | Requires well established software engineering practices.  Alternative: Yes/No and how (e.g., code review) |
+ | 45 | Complexity of diagrams (for classes and components) |  | Quantitative |  | JC | Requires well established software engineering practices. Alternative: Yes/No and how (e.g., some sort of peer-review) |
+ | 45  | Complexity of an architecture |  | Quantitative |  | JC | Requires well established software engineering practices. Alternative: Yes/No and how (e.g., some sort of peer-review) |
+ | 45 | Complexity of a use case |  | Quantitative |  | JC | Requires well established software engineering practices. Alternative: Yes/No and how (e.g., some sort of peer-review) |
+ | 45 | Complexity of a use case diagram |  | Quantitative |  | JC | Optional, not sure use case diagrams are always needed. Exclude |
+ | 45 | Maintainability Index (MI) (for the whole, for a component, for the architecture |  | Quantitative |  | JC |  |
+ | 45 | Reusability (of the whole and the components) |  | Quantitative |  | JC |  |
+ | 45 | Reusability of the architecture |  | Quantitative |  | JC |  |
+ | 45 | Applicability |  | Quantitative |  | JC | Validation against use cases or requirements (?) |
+ | 45 | Understandability |  | Quantitative |  | JC |  |
+ | 45 | Efficiency |  | Quantitative |  | JC | Exclude (difficult to measure) |
+ | 45 | Effort required for changes |  | Quantitative |  | JC | Exclude (difficult to measure) |
+ | 45 | Size (of modules, lines, components) |  | Quantitative |  | JC | Exclude, not sure how good this criterion is |
+ | 45 | Maturity | Time for the code to fail, number of resolved bugs, number of open bugs | Quantitative |  | JC |  |
+ | 45 | Configuration Complexity |  | Quantitative |  | JC | Configuration to run the code (?) |
+ | 45 | Modularity of the architecture |  | Quantitative |  | JC |  |
+ | 45 | Customizability |  | Quantitative |  | JC | Exclude, looks like related to customization by final user |
+ | 45 | Internal cohesion |  | Quantitative |  | JC | Exclude (difficult to measure). Requires well established software engineering practices |
+ | 45 | Coherence |  | Quantitative |  | JC | Exclude (difficult to measure). Requires well established software engineering practices |
+
 
 ---
 

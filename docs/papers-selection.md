@@ -402,8 +402,16 @@ This paper examines how the industrial applicability of both ISO/IEC 9126:2001 a
 ### Review
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
-| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 99       |       |            |                          |                | MC        |         |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: | 
+ | 99 | consistency | in many aspects of ISO/EIC 9126 | Quantitative | | MC |  |
+ | 99 | independence | interoperativity, changeability, adaptability | Quantitative | | MC |  |
+ | 99 | modularity | changeability, testability | Quantitative | | MC |  |
+ | 99 | documentation | learnability, analysability | Quantitative | | MC |  |
+ | 99 | self-descriptiveness | understandability, operability, analysability | Quantitative | | MC |  |
+ | 99 | anomaly-control | maturity, fault tolerance, recoverability, reliability compliance | Quantitative | | MC |  |
+ | 99 | design simplicity | security, analysability, changeability, stability, testability | Quantitative | | MC |  |
+ 
+Mainly a correlation between their proposed quality factors and the sub-characteristics in ISO/EIC 9126.
 
 ---
 

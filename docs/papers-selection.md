@@ -56,7 +56,34 @@ Source code analysis tools have been the vehicle for measuring and assessing the
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 11       |       |            |                          |                | DG        |         |
+| 11       | Code complexity      |  Paper does not provide a definition, but the less complex the code is, the better          |  Quantitative  | all types | DG        | See below    |
+| 11       | Number of code smells      |  certain structures in the code which indicate a violation of fundamental design principles. The lower code smells, the better. Ref: Martin Fowler and Kent Beck. 1999. Refactoring: improving the design of existing code. Addison-Wesley Professional.  | Quanticative | all types | DG        | See below    |
+| 11       | Comment density      | The idea here is that better commented code is easier to understand | Quantitative  | all types | DG        | See below    |
+| 11       | User reviews      | The paper attempts to find correlation between user reviews and code quality. However, "to some extent, having high or low code quality does not necessary ensure user satisfaction" | Quantitative | apps with a store | DG        | See below    |
+| 11       | PMD quality metrics     | Empty code, Naming, Braces, Import statements, Coupling, Unused Code, Unnecessary, Design, Optimization, String and StringBuffer | Quantitative | apps with a store | DG        | See below    |
+| 11       | Findbugs quality metrics      | Dodgy code, Bad practice, Malicious code, Performance, Correctness, Security, Multithreaded correctness, Internalization | Quantitative | apps with a store | DG        | See below    |
+
+**Comment**
+
+This paper proposes a quality analysis from an empirical point of view. It uses three tools for quantitative analysis: SonarQube, PMD and FindBugs. The quality metrics are not proposed per se in the paper, but are useful candidates.
+
+The paper mentions ISO/IEC 25010 software product quality characteristics. These are: .
+  - functional suitability
+  - performance efficiency
+  - usability
+  - portability
+  - compatibility
+  - reliability
+  - maintainability
+  - security
+
+The following table shows how each tool tackles different metrics. However, some are not defined:
+
+|Abbr.| Tool| Metric|
+|:---:|:---:|:---:|
+|CS| SonarQube| Number of code smells|
+|PD| PMD| Empty code, Naming, Braces, Import statements, Coupling, Unused Code, Unnecessary, Design, Optimization, String and StringBuffer|
+|FB| FindBugs| Dodgy code, Bad practice, Malicious code, Performance, Correctness, Security, Multithreaded correctness, Internalization|
 
 ---
 
@@ -326,7 +353,18 @@ The open source software community has published a substantial body of research 
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 85       |       |            |                          |                | DG        |         |
+| 85       | Code documentation | The code is documented      | Qualitative and quantitative | all types | DG        | See below |
+| 85       | Sustainable community | Is there an active community behind the software product? (i.e., for maintenance/bug fixing) | both |  all types              | DG        | See below |
+| 85       | Code modularity   | The code of the project is not a whole entity, but is fragmented in smaller modulues that make it easier to contribute to | Quantitative | all types | DG        | See below |
+| 85       | Code goes through code reviews/peer review | Each contribution is assessed by a contributor different from the author |  Qualitative                        | All types  | DG        | See below |
+| 85       | Tests | Each method/function has a test to support it | Quantitative | all types | DG        | See below |
+| 85       | Tutorials | Availability of material explaining how to use the target software through examples | Qualitative/Quantitative | All types  | DG        | See below |
+
+
+**Comment**:
+
+The paper focuses on project management for quality, comparing open source software projects with non open initiatives.
+- Quality areas: quality assurance (focuses on process and procedure, learning from mistakes, and ensuring good management practice) and quality control (process of verification and validation)
 
 ---
 

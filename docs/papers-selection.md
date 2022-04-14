@@ -288,7 +288,15 @@ Software Quality Engineering is an emerging discipline that is concerned with im
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 83       |       |            |                          |                | VL        |         |
+| 83       | n/a   | n/a        | n/a                      | n/a            | VL        | See below |
+
+
+The paper dates from 1998. It aims to compare software quality models that respond to different points of view: user, compliance with specifications and quality of the engineering process, inherent quality of the product.
+
+4 models are compared: McCall model, Boehm model, Droney model, ISO/IEC 9126 standard.
+The criteria that stand out: portability, reliability, efficiency, usability, maintainability
+But there is no real precision on indicators or measurements on these different criteria.
+The interesting point is the different perspectives.
 
 ---
 
@@ -490,7 +498,11 @@ It is very important to improve software quality using program analysis & measur
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 116      |       |            |                          |                | VL        |         |
+| 116      | n/a   | n/a        | n/a                      | n/a            | VL        | See below |
+
+The paper dates from 1998 and describes the implementation of a service to help software quality at Toshiba.
+
+It describes rather the organization set up, and is centered on the static analysis with indicators on the graphical interface part (number of events, screens...) and metrics on the back part corresponding to the static analysis of the files without more details.
 
 ---
 

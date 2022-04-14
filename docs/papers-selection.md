@@ -169,8 +169,18 @@ Software quality is of increasing importance in mission-critical embedded softwa
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 58       |       |            |                          |                | MC        |         |
-
+ | 58 | real-time performance |  | Quantitative | critical systems (non exclusive) | MC |  |
+ | 58 | reliability | mission specific | Quantitative | critical systems (non exclusive) | MC |  |
+ | 58 | consistency | same rules along SW development process | Quantitative | | MC |  |
+ | 58 | transparency | | Quantitative | | MC |  |
+ | 58 | usability | feedback from final users | Qualitative | | MC |  |
+ | 58 | effectiveness | useful for final users | Quantitative | | MC |  |
+ | 58 | productivity | fast results from final users | Quantitative | | MC |  |
+ | 58 | usability | easy to use by final users | Quantitative | | MC |  |
+ | 58 | safety |  not prone to error by final users | Quantitative | | MC |  |
+ | 58 | satisfaction |  feedback from final users | Qualitative | | MC |  |
+ | 58 | maintainability |  Easy to modify according to changing needs | Quantitative | | MC |  |
+ | 58 | portability | Easy to implement in different scenarios | Quantitative | | MC |  |
 ---
 
 ## 61 - Software quality models: Purposes, usage scenarios and requirements

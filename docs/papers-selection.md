@@ -386,7 +386,11 @@ Recently, software development teams using agile processes have started widely a
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 88       |       |            |                          |                | ER        |         |
+| 88       | Project creole      | A shared language (between manager and developers)           | Qualitative: managers can improve the way they define features, developers can easily produce well-tailored program                         | All               | ER        | It considers important the development of a shared language or project creole between business people and developers to find some common ground and work together in order to improve software development.
+        |
+
+
+
 
 ---
 

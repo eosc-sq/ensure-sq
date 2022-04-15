@@ -389,7 +389,7 @@ Recently, software development teams using agile processes have started widely a
 | 88       | Test driven development | Definition and development of unit tests for each functionality | Quantitative | All | ER |  |
 | 88       | Project creole      | A shared language (between manager and developers)           | Qualitative: managers can improve the way they define features, developers can easily produce well-tailored program  | All | ER | It considers important the development of a shared language or project creole between business people and developers to find some common ground and work together in order to improve software development.  |
 
-**NOTE: this is a paper of 2 pages**. For my point of view it can be left out.
+**NOTE: this is a paper of 2 pages**. For my point of view it can be left out for quality definition. 
 
 
 ---

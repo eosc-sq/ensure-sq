@@ -106,7 +106,14 @@ Software quality assessment shall monitor and guide the evolution of a system ba
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 41       |       |            |                          |                | ER        |         |
+| 41       | Individual Information | Stakeholder's information influenced by the role involved and the type of software. |  Qualitative  |  All  | ER | Type of software can be rich client, web application and so on. |
+| 41       | Stakeholder context | Detail e.g. stakeholder role and tool-usage data by each stakeholder |  Qualitative |  All | ER        |  Software architects, developers and testers are the considred essential role in the development process. |
+| 41       | Technical context | Information about the source code by using e.g. software metrics |  Quantitative |  All | ER        |  Type of software can be rich client, web application and son. |
+| 41       | Context-sensitive | The relation between the data, the world the data refers to, and the observer's expectations, intentions and interests |  Qualitative |  All | ER        |  The paper provides an illustrative example to support different stakeholders in the quality assessement of a software system. |
+
+
+
+**NOTE: This article is mainly on software quality assessment than software quality definition.** However it contains an interesting approach based on stakeholder's information needs and the tailoring of information for software quality assessment. This paper also provides some guidelines to support the activities carried out by each type of stakeholders.
 
 ---
 

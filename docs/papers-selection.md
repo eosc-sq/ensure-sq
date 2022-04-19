@@ -258,7 +258,13 @@ Several tools and methods for source code quality assurance based on static anal
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 74       |       |            |                          |                | MT        |         |
+| 74       |  n/a  | n/a  | n/a  | C/C++ based software  | MT        |  See below       |
+
+Comment
+
+The paper (very) briefly describes SourceInventory, a system that provides a set of quantitative metrics presented in a user-friendly graphical interface. According to the authors, those metrics are suitable for quality assessment and automatic supervision of code-based software. The paper published in 2008 is just two pages long. It does not contain any helpful information to understand how the tool works or any info related to the underneath technology. However, it is (was) based on the Columbus technology described in a different paper (published in 2002). 
+
+It seems that the SourceInventory system has been superseded by some other tools commercialized by the same spin-off of Szeged University, whose some members wrote the paper. More info here: http://www.frontendart.com.
 
 ---
 

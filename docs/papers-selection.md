@@ -56,7 +56,34 @@ Source code analysis tools have been the vehicle for measuring and assessing the
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 11       |       |            |                          |                | DG        |         |
+| 11       | Code complexity      |  Paper does not provide a definition, but the less complex the code is, the better          |  Quantitative  | all types | DG        | See below    |
+| 11       | Number of code smells      |  certain structures in the code which indicate a violation of fundamental design principles. The lower code smells, the better. Ref: Martin Fowler and Kent Beck. 1999. Refactoring: improving the design of existing code. Addison-Wesley Professional.  | Quanticative | all types | DG        | See below    |
+| 11       | Comment density      | The idea here is that better commented code is easier to understand | Quantitative  | all types | DG        | See below    |
+| 11       | User reviews      | The paper attempts to find correlation between user reviews and code quality. However, "to some extent, having high or low code quality does not necessary ensure user satisfaction" | Quantitative | apps with a store | DG        | See below    |
+| 11       | PMD quality metrics     | Empty code, Naming, Braces, Import statements, Coupling, Unused Code, Unnecessary, Design, Optimization, String and StringBuffer | Quantitative | apps with a store | DG        | See below    |
+| 11       | Findbugs quality metrics      | Dodgy code, Bad practice, Malicious code, Performance, Correctness, Security, Multithreaded correctness, Internalization | Quantitative | apps with a store | DG        | See below    |
+
+**Comment**
+
+This paper proposes a quality analysis from an empirical point of view. It uses three tools for quantitative analysis: SonarQube, PMD and FindBugs. The quality metrics are not proposed per se in the paper, but are useful candidates.
+
+The paper mentions ISO/IEC 25010 software product quality characteristics. These are: .
+  - functional suitability
+  - performance efficiency
+  - usability
+  - portability
+  - compatibility
+  - reliability
+  - maintainability
+  - security
+
+The following table shows how each tool tackles different metrics. However, some are not defined:
+
+|Abbr.| Tool| Metric|
+|:---:|:---:|:---:|
+|CS| SonarQube| Number of code smells|
+|PD| PMD| Empty code, Naming, Braces, Import statements, Coupling, Unused Code, Unnecessary, Design, Optimization, String and StringBuffer|
+|FB| FindBugs| Dodgy code, Bad practice, Malicious code, Performance, Correctness, Security, Multithreaded correctness, Internalization|
 
 ---
 
@@ -79,7 +106,14 @@ Software quality assessment shall monitor and guide the evolution of a system ba
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 41       |       |            |                          |                | ER        |         |
+| 41       | Individual Information | Stakeholder's information influenced by the role involved and the type of software. |  Qualitative  |  All  | ER | Type of software can be rich client, web application and so on. |
+| 41       | Stakeholder context | Detail e.g. stakeholder role and tool-usage data by each stakeholder |  Qualitative |  All | ER        |  Software architects, developers and testers are the considred essential role in the development process. |
+| 41       | Technical context | Information about the source code by using e.g. software metrics |  Quantitative |  All | ER        |  Type of software can be rich client, web application and son. |
+| 41       | Context-sensitive | The relation between the data, the world the data refers to, and the observer's expectations, intentions and interests |  Qualitative |  All | ER        |  The paper provides an illustrative example to support different stakeholders in the quality assessement of a software system. |
+
+
+
+**NOTE: This article is mainly on software quality assessment than software quality definition.** However it contains an interesting approach based on stakeholder's information needs and the tailoring of information for software quality assessment. This paper also provides some guidelines to support the activities carried out by each type of stakeholders.
 
 ---
 
@@ -101,7 +135,29 @@ It is widely accepted that software measures provide an appropriate mechanism fo
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 45       |       |            |                          |                | JC        |         |
+ | 45 | Binary size | Binary size | Quantitative |  | JC | Exclude, not sure how good this criterion is |
+ | 45 | Complexity of the source code | Cyclomatic complexity | Quantitative |  | JC |  |
+ | 45 | Performance |  | Quantitative |  | JC |  |
+ | 45 | Complexity of the source code (for classes and components) |  | Quantitative |  | JC | Requires well established software engineering practices.  Alternative: Yes/No and how (e.g., code review) |
+ | 45 | Complexity of diagrams (for classes and components) |  | Quantitative |  | JC | Requires well established software engineering practices. Alternative: Yes/No and how (e.g., some sort of peer-review) |
+ | 45  | Complexity of an architecture |  | Quantitative |  | JC | Requires well established software engineering practices. Alternative: Yes/No and how (e.g., some sort of peer-review) |
+ | 45 | Complexity of a use case |  | Quantitative |  | JC | Requires well established software engineering practices. Alternative: Yes/No and how (e.g., some sort of peer-review) |
+ | 45 | Complexity of a use case diagram |  | Quantitative |  | JC | Optional, not sure use case diagrams are always needed. Exclude |
+ | 45 | Maintainability Index (MI) (for the whole, for a component, for the architecture |  | Quantitative |  | JC |  |
+ | 45 | Reusability (of the whole and the components) |  | Quantitative |  | JC |  |
+ | 45 | Reusability of the architecture |  | Quantitative |  | JC |  |
+ | 45 | Applicability |  | Quantitative |  | JC | Validation against use cases or requirements (?) |
+ | 45 | Understandability |  | Quantitative |  | JC |  |
+ | 45 | Efficiency |  | Quantitative |  | JC | Exclude (difficult to measure) |
+ | 45 | Effort required for changes |  | Quantitative |  | JC | Exclude (difficult to measure) |
+ | 45 | Size (of modules, lines, components) |  | Quantitative |  | JC | Exclude, not sure how good this criterion is |
+ | 45 | Maturity | Time for the code to fail, number of resolved bugs, number of open bugs | Quantitative |  | JC |  |
+ | 45 | Configuration Complexity |  | Quantitative |  | JC | Configuration to run the code (?) |
+ | 45 | Modularity of the architecture |  | Quantitative |  | JC |  |
+ | 45 | Customizability |  | Quantitative |  | JC | Exclude, looks like related to customization by final user |
+ | 45 | Internal cohesion |  | Quantitative |  | JC | Exclude (difficult to measure). Requires well established software engineering practices |
+ | 45 | Coherence |  | Quantitative |  | JC | Exclude (difficult to measure). Requires well established software engineering practices |
+
 
 ---
 
@@ -147,8 +203,18 @@ Software quality is of increasing importance in mission-critical embedded softwa
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 58       |       |            |                          |                | MC        |         |
-
+ | 58 | real-time performance |  | Quantitative | critical systems (non exclusive) | MC |  |
+ | 58 | reliability | mission specific | Quantitative | critical systems (non exclusive) | MC |  |
+ | 58 | consistency | same rules along SW development process | Quantitative | | MC |  |
+ | 58 | transparency | | Quantitative | | MC |  |
+ | 58 | usability | feedback from final users | Qualitative | | MC |  |
+ | 58 | effectiveness | useful for final users | Quantitative | | MC |  |
+ | 58 | productivity | fast results from final users | Quantitative | | MC |  |
+ | 58 | usability | easy to use by final users | Quantitative | | MC |  |
+ | 58 | safety |  not prone to error by final users | Quantitative | | MC |  |
+ | 58 | satisfaction |  feedback from final users | Qualitative | | MC |  |
+ | 58 | maintainability |  Easy to modify according to changing needs | Quantitative | | MC |  |
+ | 58 | portability | Easy to implement in different scenarios | Quantitative | | MC |  |
 ---
 
 ## 61 - Software quality models: Purposes, usage scenarios and requirements
@@ -168,9 +234,18 @@ Software quality models are a well-accepted means to support quality management 
 
 ### Review
 
-| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
-| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 61       |       |            |                          |                | MD        |         |
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment   |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-------: |
+| 61       | n/a   | n/a        | n/a                      | n/a            | MD        | See below |
+
+* *MD* - The paper does not define any Quality Model, or set of criteria or attributes, instead it
+defines how to make (requirements) for new Quality models. Nonetheless, it identifies three types of
+models:
+  * taxonomic models like the ISO 9126 - *Define Quality*
+  * metric-based models like the maintainability index (MI) - *Assess Quality*
+  * stochastic models like reliability growth models (RGMs) - *Predict Quality*
+
+* May be interesting for landscaping (see figure 1: DAP Classification for Q-Models). 
 
 ---
 
@@ -192,7 +267,13 @@ Several tools and methods for source code quality assurance based on static anal
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 74       |       |            |                          |                | MT        |         |
+| 74       |  n/a  | n/a  | n/a  | C/C++ based software  | MT        |  See below       |
+
+Comment
+
+The paper (very) briefly describes SourceInventory, a system that provides a set of quantitative metrics presented in a user-friendly graphical interface. According to the authors, those metrics are suitable for quality assessment and automatic supervision of code-based software. The paper published in 2008 is just two pages long. It does not contain any helpful information to understand how the tool works or any info related to the underneath technology. However, it is (was) based on the Columbus technology described in a different paper (published in 2002). 
+
+It seems that the SourceInventory system has been superseded by some other tools commercialized by the same spin-off of Szeged University, whose some members wrote the paper. More info here: http://www.frontendart.com.
 
 ---
 
@@ -266,7 +347,15 @@ Software Quality Engineering is an emerging discipline that is concerned with im
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 83       |       |            |                          |                | VL        |         |
+| 83       | n/a   | n/a        | n/a                      | n/a            | VL        | See below |
+
+
+The paper dates from 1998. It aims to compare software quality models that respond to different points of view: user, compliance with specifications and quality of the engineering process, inherent quality of the product.
+
+4 models are compared: McCall model, Boehm model, Droney model, ISO/IEC 9126 standard.
+The criteria that stand out: portability, reliability, efficiency, usability, maintainability
+But there is no real precision on indicators or measurements on these different criteria.
+The interesting point is the different perspectives.
 
 ---
 
@@ -286,7 +375,18 @@ The open source software community has published a substantial body of research 
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 85       |       |            |                          |                | DG        |         |
+| 85       | Code documentation | The code is documented      | Qualitative and quantitative | all types | DG        | See below |
+| 85       | Sustainable community | Is there an active community behind the software product? (i.e., for maintenance/bug fixing) | both |  all types              | DG        | See below |
+| 85       | Code modularity   | The code of the project is not a whole entity, but is fragmented in smaller modulues that make it easier to contribute to | Quantitative | all types | DG        | See below |
+| 85       | Code goes through code reviews/peer review | Each contribution is assessed by a contributor different from the author |  Qualitative                        | All types  | DG        | See below |
+| 85       | Tests | Each method/function has a test to support it | Quantitative | all types | DG        | See below |
+| 85       | Tutorials | Availability of material explaining how to use the target software through examples | Qualitative/Quantitative | All types  | DG        | See below |
+
+
+**Comment**:
+
+The paper focuses on project management for quality, comparing open source software projects with non open initiatives.
+- Quality areas: quality assurance (focuses on process and procedure, learning from mistakes, and ensuring good management practice) and quality control (process of verification and validation)
 
 ---
 
@@ -308,7 +408,11 @@ Recently, software development teams using agile processes have started widely a
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 88       |       |            |                          |                | ER        |         |
+| 88       | Test driven development | Definition and development of unit tests for each functionality | Quantitative | All | ER |  |
+| 88       | Project creole      | A shared language (between manager and developers)           | Qualitative: managers can improve the way they define features, developers can easily produce well-tailored program  | All | ER | It considers important the development of a shared language or project creole between business people and developers to find some common ground and work together in order to improve software development.  |
+
+**NOTE: this is a paper of 2 pages**. For my point of view it can be left out for quality definition. 
+
 
 ---
 
@@ -372,8 +476,16 @@ This paper examines how the industrial applicability of both ISO/IEC 9126:2001 a
 ### Review
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
-| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 99       |       |            |                          |                | MC        |         |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: | 
+ | 99 | consistency | in many aspects of ISO/EIC 9126 | Quantitative | | MC |  |
+ | 99 | independence | interoperativity, changeability, adaptability | Quantitative | | MC |  |
+ | 99 | modularity | changeability, testability | Quantitative | | MC |  |
+ | 99 | documentation | learnability, analysability | Quantitative | | MC |  |
+ | 99 | self-descriptiveness | understandability, operability, analysability | Quantitative | | MC |  |
+ | 99 | anomaly-control | maturity, fault tolerance, recoverability, reliability compliance | Quantitative | | MC |  |
+ | 99 | design simplicity | security, analysability, changeability, stability, testability | Quantitative | | MC |  |
+ 
+Mainly a correlation between their proposed quality factors and the sub-characteristics in ISO/EIC 9126.
 
 ---
 
@@ -395,9 +507,14 @@ A user survey was carried out to evaluate empirically ISO/IEC 9126's dimensional
 
 ### Review
 
-| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
-| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 101      |       |            |                          |                | MD        |         |
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment --|
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-------: |
+| 101      | n/a   | n/a        | n/a                      | n/a            | MD        | See below |
+
+* *MD* - paper describes a survey and analysis of ISO/IEC 9126.
+  * It does not define per se any SQ attributes or criteria. Refer to ISO/IEC 9126 for that definition.
+  * The paper may still be relevant if we want to show how difficult and ambiguous it is to evaluate ISO/IEC 9126
+    characteristics to a real world SW by actual users and developers.
 
 ---
 
@@ -463,7 +580,11 @@ It is very important to improve software quality using program analysis & measur
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 116      |       |            |                          |                | VL        |         |
+| 116      | n/a   | n/a        | n/a                      | n/a            | VL        | See below |
+
+The paper dates from 1998 and describes the implementation of a service to help software quality at Toshiba.
+
+It describes rather the organization set up, and is centered on the static analysis with indicators on the graphical interface part (number of events, screens...) and metrics on the back part corresponding to the static analysis of the files without more details.
 
 ---
 

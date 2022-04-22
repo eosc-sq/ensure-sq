@@ -234,9 +234,18 @@ Software quality models are a well-accepted means to support quality management 
 
 ### Review
 
-| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
-| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 61       |       |            |                          |                | MD        |         |
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment   |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-------: |
+| 61       | n/a   | n/a        | n/a                      | n/a            | MD        | See below |
+
+* *MD* - The paper does not define any Quality Model, or set of criteria or attributes, instead it
+defines how to make (requirements) for new Quality models. Nonetheless, it identifies three types of
+models:
+  * taxonomic models like the ISO 9126 - *Define Quality*
+  * metric-based models like the maintainability index (MI) - *Assess Quality*
+  * stochastic models like reliability growth models (RGMs) - *Predict Quality*
+
+* May be interesting for landscaping (see figure 1: DAP Classification for Q-Models). 
 
 ---
 

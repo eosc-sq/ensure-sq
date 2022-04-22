@@ -8,10 +8,13 @@ List of documents:
 
 ## Contributors
 
-* MD - Mario David
-* ER - Elisabetta Ronchieri
-* MC - Miguel Colom
-* VL - Violaine Louvet
 * DG - Daniel Garijo
+* ER - Elisabetta Ronchieri
 * JC - Leyla Jael Castro
+* LC - Laura del Cano
+* MC - Miguel Colom
+* MD - Mario David
+* MT - Massimo Torquati
 * MV - Maxime Van den Bossche
+* VL - Violaine Louvet
+* IC - Isabel Campos

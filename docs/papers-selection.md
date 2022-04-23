@@ -737,7 +737,11 @@ Quality management standard BS5740/ISO9001 is a key technology for UK and Europe
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 133      |       |            |                          |                | MC        |         |
+| 133      |   NA   |     NA     |           NA             |     NA          | MC        |    Not applicable (NA)     |
+
+This paper is specifically on the ISO-9001 standard, which are general organizational recommendations, not directly related to software.
+The ISO-90003 standard (https://webstore.iec.ch/preview/info_isoiecieee90003%7Bed1.0%7Den.pdf) is about advice to applying these recommendations to organizations dealing with software as a product. However, ISO-90003 is about organization of companies, but again not about software engineering itself. Therefore, neither ISO-9001 nor any of the following revisions or specific applications of the standard is of our interest.
+This paper is not applicable to our study.
 
 ---
 

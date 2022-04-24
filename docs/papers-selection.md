@@ -187,12 +187,13 @@ We provide an overview of the approach developed by the Software Improvement Gro
 | 46       | Unit interface size | Number of parameters in interface | Quantitative | All Types | LC        | Number of parameters per unit |
 | 46       | Module coupling |  | Quantitative | All Types | LC        | Number of parameters per unit | Number of incoming calls per module |
 
-Comment
+**Comment**
 
 The paper presents a standardized measurement model based on the ISO/IEC 9126 definition of maintainability and source code metrics.
 In this ISO standard they propose a hierarchical quality model made of quality characteristics decomposed in subcharacteristics.
 They choose 6 code properties as key metrics for the quality assessment of the subcharacteristics.
 Then they keep a benchmark database to perform comparison and evaluate new measurements. In this database they use metadata attributes to tag each measurement and help with comparing.
+
 The quality characteristics from ISO/IEC 9126 they mention are:
 - Analysability: measured with Volume, Redundancy and Unit size.
 - Changeability: measure with Redundancy, Unit complexity and Module coupling.
@@ -472,7 +473,23 @@ In industrial practice, information on post-release field quality of a product t
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 93       |       |            |                          |                | LC        |         |
+| 93       | Test quantification SM1 | Number of Assertions SLOC* | Quantitative | Java code | LC        | Accounts for coding/testng style |
+| 93       | Test quantification SM2 | Number of Test Cases SLOC* | Quantitative | Java code | LC        | Accounts for coding/testng style |
+| 93       | Test quantification SM3 | Number of Assertions divided by Number of Test Cases | Quantitative | Java code | LC        | Accounts for coding/testng style |
+| 93       | Test quantification SM4 | (TLOC/SLOC*)  divided by (Number of Classes Test Number of ClassesSource) | Quantitative | Java code | LC        | Serves as a control measure to counter the confounding effect of class size |
+| 93       | Cyclomatic complexity | Relative ratio of test to source code in Cyclomatic Complexity | Quantitative | Java code | LC        | Complexity and O-O metrics |
+| 93       | CBO  | Relative ratio of test to source code in Coupling between objects | Quantitative | Java code | LC        | Complexity and O-O metrics |
+| 93       | DIT  | Relative ratio of test to source code in Depth of Inheritance | Quantitative | Java code | LC        | Complexity and O-O metrics |
+| 93       | WMC  | Relative ratio of test to source code in  weighted methods per class | Quantitative | Java code | LC        | Complexity and O-O metrics |
+| 93       | Relative size adjustment  | SLOC* divided by Minimum SLOC* | Quantitative | Java code | LC        | Complexity and O-O metrics |
+
+\* Source Lines of Code (SLOC) is computed as non-blank, non-comment source lines of code
+
+\+ Test Lines of Code (TLOC) is computed as non-blank, non-comment test lines of code
+
+**Comment**
+
+They present a metric suite called the Software Testing and Reliability Early Warning metric suite for Java (STREW-J) that can be used as an early indication of an external measure of software application quality. They put a greater emphasis on internal software metrics, particularly those involving the testing effort. It requires the existence of an extensive suite of automated unit test cases being created as development proceeds.
 
 ---
 

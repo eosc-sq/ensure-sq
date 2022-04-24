@@ -182,10 +182,10 @@ We provide an overview of the approach developed by the Software Improvement Gro
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
 | 46       | Volume | Size of the software application | Quantitative | All Types | LC        | Estimated rebuild value |
 | 46       | Redundancy | Level of redundancy in code | Quantitative | All Types | LC        | Percentage of redundant code |
-| 46       | Unit size | Lowel-level piece of functionality that should be maintained | Quantitative | All Types | LC        | Lines of code is used to Lines of code per unit (Unit=smallest piece of invokable code) code |
-| 46       | Complexity | Of the software application | Quantitative | All Types | LC        | Cyclomatic complexity per unit |
+| 46       | Unit size | Lowel-level piece of functionality that should be maintained | Quantitative | All Types | LC        | Lines of code per unit (Unit=smallest piece of invokable code) code |
+| 46       | Unit complexity | Of the software application | Quantitative | All Types | LC        | Cyclomatic complexity per unit |
 | 46       | Unit interface size | Number of parameters in interface | Quantitative | All Types | LC        | Number of parameters per unit |
-| 46       | Coupling |  | Quantitative | All Types | LC        | Number of parameters per unit | Number of incoming calls per module |
+| 46       | Module coupling |  | Quantitative | All Types | LC        | Number of parameters per unit | Number of incoming calls per module |
 
 Comment
 
@@ -194,10 +194,10 @@ In this ISO standard they propose a hierarchical quality model made of quality c
 They choose 6 code properties as key metrics for the quality assessment of the subcharacteristics.
 Then they keep a benchmark database to perform comparison and evaluate new measurements. In this database they use metadata attributes to tag each measurement and help with comparing.
 The quality characteristics from ISO/IEC 9126 they mention are:
-- Analysability: measured with Volume, Duplication and Unit size.
-- Changeability: measure with Duplication, Unit complexity and Module coupling.
-- Stability: measured with Unit intefacing and Module coupling.
-- Testability: measured with Unit complexing and Unit size.
+- Analysability: measured with Volume, Redundancy and Unit size.
+- Changeability: measure with Redundancy, Unit complexity and Module coupling.
+- Stability: measured with Unit inteface size and Module coupling.
+- Testability: measured with Unit complexity and Unit size.
 
 ---
 

@@ -823,7 +823,22 @@ The authors introduce quality metrics into the quantitative software quality est
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 144      |       |            |                          |                | MT        |         |
+| 144      | ESQUT | It is a source code quality index  |  Quantitative            |  (old) C code  | MT        | See below  |
+
+Comment
+
+The paper's main motivation is that Halstead's and McCabe's metrics are not practical and have some limitations (in the case of programs with GOTO statements and deep nesting). The authors propose a new quantitative metric called ESQUT-C (for C programs) considering:
+ - n. of GOTO statements
+ - n. of module exits
+ - n. of conditional statements
+ - n. of procedure blocks
+ - nesting level of procedure blocks
+ - number of executions
+ - number of lines (LOC)
+ - number of real digits
+
+They also showed how those metrics correlate with McCabe's and Halstead's metrics.
+The paper has been published in 1990.
 
 ---
 

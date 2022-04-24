@@ -570,7 +570,14 @@ Quality is currently considered one of the main assets with which a firm can enh
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 108      |       |            |                          |                | MT        |         |
+| 108      | Systemic model | Extends ISO9126, Dromey and McCall models  |  Mainly qualitative: set of measures and practices   |   all   | MT   | See below     |
+
+Comment
+
+The study proposes a systemic quality model. Authors developed a process framework with which to evaluate product quality considering the processes that contribute to product
+quality. They basically extend ISO 9126 product quality model considering the roles of stakeholders (project managers, developers, and users) trying to evaluate the internal quality,
+which includes functionality, reliability, usability, efficiency, maintainability, and portability characteristics. Authors claimed that those quantities relate to each other and must
+be integrated for a systemic global quality design. The work does not analyze the effect of the method applied on different stakeholders.
 
 ---
 

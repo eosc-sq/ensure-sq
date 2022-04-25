@@ -595,11 +595,30 @@ Industrial evaluations of COTS software largely used the quality models provided
 
 * *MC* - this one is specifically on criteria for quality. I expect a detailed review and discussion in this article.
 
+
 ### Review
 
-| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
-| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 112      |       |            |                          |                | MV        |         |
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment   |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-------: |
+| 112      | n/a   | n/a        | n/a                      | n/a            | MV        | See below |
+
+* *MV* The main message of this paper is that care should be taken when using the ISO 9126 and IEEE 1061
+  standard in software quality evaluations, because:
+
+  1. "[...] a single evaluation model is applied all along the hierarchy of evaluation nodes neglecting important
+    variations due to the presence of different evaluators, of software components and of evaluation purposes."
+
+  2. "[...] the unjustified use of a single aggregation procedure all along the hierarchy (the weighted sum), [...]"
+
+  As such, the paper does not seem to discuss actual (individual) quality criteria -- for these, the above
+  standards are relied upon. But their main message could still be relevant for us, as it applies to the calculation
+  of a global quality measure from the individual quality factors and their weights (which may furthermore differ
+  between the different evaluators). The authors discuss 3 alternatives to the typical arithmetic mean (i.e. weighted
+  average) that is used to this end: (1) ordinal aggregation, (2) geometric means, and (3) dual geometric means.
+  The authors' recommendation seems to be to consider the information from all 3 aggregation procedures.
+
+  (Note: the "COTS" acronym is not defined in the paper, but seems to stand for "commercial off-the-shelf".)
+
 
 ---
 

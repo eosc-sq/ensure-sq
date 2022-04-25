@@ -878,9 +878,33 @@ Maintenance plays a vital role in protecting quality as a system evolves. The re
 
 ### Review
 
-| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
-| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 145      |       |            |                          |                | MV        |         |
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment   |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-------: |
+| 145      | n/a   | n/a        | n/a                      | n/a            | MV        | See below |
+
+* *MV* - The paper presents bug-origin-statistics and lessons learned during a software maintenance effort for
+   "a large, Centrex-type telephone switching system" (it's from 1987). The introduction is more general and could
+   be interesting to summarize here -- they list 3 central issues when it comes to software maintenance:
+
+   1. "the difficulty of performing maintenance activities":
+      "The primary difficulty in performing maintenance tasks stems from the fact that
+      the complexity of large systems increases dramatically over time, largely due to
+      deteriorating program structure. This difficulty is compounded by inaccurate,
+      outdated documentation and flagrant violations of programming standards."
+
+   2. "the high degree of error associated with performing maintenance tasks":
+      "often a direct result of the programs' increasing complexity"
+
+   3. "the low morale of software maintainers":
+      "[...] lack of modern software-engineering and QA approaches in software maintenance",
+      "the maintainers' perception that they are working without support",
+      "pressure during maintenance activities to produce quantity, not quality".
+
+   The paper does not seem to explicitly define criteria for software quality. But one might say that the authors
+   would support a 'maintainability' criterion which measures the ease of carrying out maintenance activities without
+   introducing new bugs. They mention logically complex code as being difficult to maintain, in particular in the
+   absence of (correct) documentation.
+
 
 ---
 

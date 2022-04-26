@@ -922,9 +922,44 @@ The study reported in this paper establishes a conceptual framework and some key
 
 ### Review
 
-| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
-| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 146      |       |            |                          |                | VL        |         |
+| Paper_id |           Name            |                          Definition                          | Qualitative/Quantitative | Targeted to SW | Reviewer |                           Comment                            |
+| :------: | :-----------------------: | :----------------------------------------------------------: | :----------------------: | :------------: | :------: | :----------------------------------------------------------: |
+|   146    |       ACCESSIBILITY       |           facilitates selective use of its parts.            |                          |      All       |    VL    | Necessary for efficiency, testability and human engineering  |
+|   146    |      ACCOUNTABILITY       | its usage can be measured; critical segments of code can be instrumented with probes to measure timing, whether specified branches are exercised, etc. |       Quantitative       |      All       |    VL    |                                                              |
+|   146    |         ACCURACY          | its outputs are sufficiently precise to satisfy their intended us |       Quantitative       |      All       |    VL    |                  Necessary for reliability                   |
+|   146    |      AUGMENTABILITY       | it can easily accommodate expansion in component computational functions or data storage requirements |                          |      All       |    VL    |                 Necessary for modifiability                  |
+|   146    |     COMMUNICATIVENESS     | it  facilitates the specification of inputs and provides outputs whose form and content are easy to assimilate and useful. |                          |      All       |    VL    |       Necessary for testability and human engineering        |
+|   146    |       COMPLETENESS        | all its parts are present and each part is fully developed.  |       Quantitative       |      All       |    VL    | External references are available and required functions are coded and present as designe |
+|   146    |        CONCISENESS        |            excessive information is not present.             |       Quantitative       |      All       |    VL    | Programs are not excessively fragmented nor the same sequence of code is repeated in numerous place ... |
+|   146    |        CONSISTENCY        | it contains uniform notation, terminology and symbology within itself |       Quantitative       |      All       |    VL    |        Coding standards are homogeneously adhered to         |
+|   146    |    DEVICE-INDEPENDENCE    | it can be executed on computer hardware configurations other than its current on |       Quantitative       |      All       |    VL    |                  Necessary for portability                   |
+|   146    |        EFFICIENCY         |     it fulfills its purpose without waste of resources.      |       Quantitative       |      All       |    VL    |              Choice of efficient algorithm ...               |
+|   146    |     HUMAN ENGINEERING     | it fulfills its purpose without wasting the users' time and energy, or degrading their morale |       Qualitative        |      All       |    VL    |   Implies accessibility, robustness and communicativeness    |
+|   146    |        LEGIBILITY         |     its function is easily discerned by reading the code     |       Qualitative        |      All       |    VL    |               Necessary for understandability                |
+|   146    |      MAINTAINABILITY      | it facilitates updating to satisfy new requirements or to correct deficiencies. |                          |      All       |    VL    |         Code understandable, testable and modifiable         |
+|   146    |       MODIFIABILITY       | it facilitates the incorporation of changes, once the nature of the desired change has been determined |                          |      All       |    VL    |                                                              |
+|   146    |        PORTABILITY        | it can be operated easily and well on computer configurations other than its current one. |       Quantitative       |      All       |    VL    |             Use of standard library function ...             |
+|   146    |        RELIABILITY        | it can be expected to perform it s intended functions satisfactorily |                          |      All       |    VL    | The program will compile, load and execute, producing answers of the requisite accuracy |
+|   146    |        ROBUSTNESS         | it can continue to perform despite some violation of the assumptions in its specification |       Quantitative       |      All       |    VL    | The program will properly handle inputs out of range or in different format ... |
+|   146    |    SELF-CONTAINEDNESS     | it performs all its explicit and implicit functions within itself . |                          |      All       |    VL    | Example of implicit functions : initialization, input checking ... |
+|   146    |   SELF-DESCRIPTIVENESS    | it contains enough information for a reader to determine or verify its objectives, assumptions, constraints, inputs, outputs, components, and revision status. |       Qualitative        |      All       |    VL    |       Necessary for testability and understandability        |
+|   146    |      STRUCTUREDNESS       | it possesses a definite pattern of organization of its interdependent parts. |       Qualitative        |      All       |    VL    |   Standard control structure have been followed in coding    |
+|   146    |        TESTABILITY        | it facilitates the establishment of verification criteria and supports evaluation of its performance. |       Quantitative       |      All       |    VL    | requirements are match to specific modules or diagnostics capabilities are provided |
+|   146    |     UNDERSTANDABILITY     |            its purpose is clear to the inspector.            |       Qualitative        |      All       |    VL    | Names are used consistently, modules are self-descriptive, ... |
+|   146    | USABILITY (AS-lS UTILITY) |       it is reliable, efficient and human-engineered.        |                          |      All       |    VL    | The function performed by the program is useful elsewhere, is robust against human errors or does not require excessive core memory... |
+
+The article describe the Boehm software quality model. It identifies characteristics of quality structured in a tree (see above for this characteristics). It also gives a few example of quality metrics (Boehms wrote a book on the subject). It also explains the link between the identification of types of error and when they appear during the software life-cycle and at which phase of the cycke they are corrected. It shows that early application of automated and semiautomated consistency, robustnes and self containedness checkers leads to significant improvements in software error detection. It gives some input on quality-enhancing tools and techniques. Life cycle activities with significant effects on software quality:
+
+- setting software quality objectives and priorities
+- performing software quality benchmarking
+- using software quakity checklists
+- establishing an explicit quality assurance activity
+- using machine-analyzable software specifications
+- ensuring testable software requirements
+- using a requirements-properties matrix
+- establishing standards
+- using an automated code auditor for standards compliance
+- performing design and code inspections
 
 ---
 

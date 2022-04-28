@@ -818,9 +818,32 @@ Achieving quality is a perennial problem in software development. It is commerci
 
 ### Review
 
-| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
-| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 140      |       |            |                          |                | MD        |         |
+| Paper_id | Name       | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
+| :------: | :--------: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
+| 140 | Reliability     | How often does it go wrong? How long is it unavailable? Is any information lost at recovery?                           | Quantitative | | MD | SW in operation |
+| 140 | Efficiency      | The critical resources needed by the operator to carry out the critical tasks can be monitored                         | Quantitative | | MD | SW in operation |
+| 140 | Security        | Measured as the resource cost expended to solve problems caused by unauthorized activity                               | Quantitative | | MD | SW in operation |
+| 140 | Integrity       | Measured as the resource cost expended to solve problems caused by inconsistencies within the system                   | Quantitative | | MD | SW in operation |
+| 140 | Usability       | Measured using user surveys. may also be assessed in terms o f calls upon support staff                                | Quantitative | | MD | SW in operation |
+| 140 | Maintainability | Measured by the resources expended in terms o f time and cost in keeping a system up and running over a period of time | Quantitative | | MD | SW in operation |
+| 140 | Adaptability    | Measured in the same way as maintainability, i.e. by the resources expended in adapting the system to meet new requirements over a period of time | Quantitative | | MD |  |
+| 140 | Portability     | Measured according to Gilb's measure | Quantitative | | MD | see below |
+| 140 | Timeliness      | Assessed in terms of the costs of non-delivery | Quantitative | | MD |  |
+| 140 | Cost~Benefit efficiency | measured in simple financial terms. The costs of installing and maintaining the system are weighed against the assessment of business benefits | Quantitative | | MD |  |
+| 140 | Ease of transition | Assessed in terms o f staff time expended. The effectiveness of transition may be assessed in terms of the quality of the resulting system particularly the area of integrity. | Quantitative  | | MD | SW in operation |
+| 140 | Userfriendliness   | Measured in terms of the effect upon the effectiveness of the user. The measure of user friendliness in business terms is the productivity of the user. | Quantitative | | MD | SW in operation |
+
+* *MD* - How different parties/stakeholders perceived a given Quality Model:
+  * Analysis of Structured interviews to people from 6 different market sectors, and see how they
+    interpret a set of quality attributes.
+  * Attributes suggested by the author and based mainly on:
+    * Watts, R. (1987) Measuring Software Quality, NCC Publications Manchester.
+    * Gilb, T. (1988) Principles of Software Engineering Management, Addison-Wesley.
+    * Measured in general in terms of costs of Resources (Human and Infrastructure).
+  * Portability according to Gilb: P = 1 - (ET/ER)
+    * P represents portability
+    * ET effort required to transfer the system to a new environment
+    * ER represents the effort required to establish the system in its existing environment.
 
 ---
 

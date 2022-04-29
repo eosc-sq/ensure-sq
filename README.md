@@ -18,3 +18,4 @@ List of documents:
 * MV - Maxime Van den Bossche
 * VL - Violaine Louvet
 * IC - Isabel Campos
+* CL - Cerlane Leong

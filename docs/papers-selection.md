@@ -31,6 +31,7 @@ Table columns of template:
 * MV - Maxime Van den Bossche
 * VL - Violaine Louvet
 * IC - Isabel Campos
+* CL - Cerlane Leong
 
 # Selected with **yes** and **yes + unsure** - Total 29 articles
 
@@ -948,7 +949,6 @@ Maintenance plays a vital role in protecting quality as a system evolves. The re
    introducing new bugs. They mention logically complex code as being difficult to maintain, in particular in the
    absence of (correct) documentation.
 
-
 ---
 
 ## 146 - Quantitative evaluation of software quality
@@ -1003,6 +1003,146 @@ The article describe the Boehm software quality model. It identifies characteris
 - establishing standards
 - using an automated code auditor for standards compliance
 - performing design and code inspections
+
+---
+
+## 147 - On the Use of Quality Models to Address Distinct Quality Views
+
+### T. Galli, F. Chiciana, F. Siewe
+
+### https://www.mdpi.com/2571-5577/4/3/41
+
+### Review
+
+| Paper_id | Name | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer | Comment |
+| :------: | :--: | :--------: | :----------------------: | :------------: | :------: | :-----: |
+|   147    |      |            |                          |                | ER       |         |
+
+---
+
+## 148 - Software Product Quality Models, Developments, Trends and Evaluation
+
+### T. Galli, F. Chiciana, F. Siewe.
+
+### https://link.springer.com/article/10.1007/s42979-020-00140-z
+
+### Review
+
+| Paper_id | Name | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer | Comment |
+| :------: | :--: | :--------: | :----------------------: | :------------: | :------: | :-----: |
+|   148    |      |            |                          |                | MT       |         |
+
+---
+
+## 149 - Software Quality Modes: A Systematic Mapping Study
+
+### P. Nistala, K. V. Nori, R. Reddy
+
+### https://ieeexplore.ieee.org/document/8812848
+
+### Review
+
+| Paper_id | Name | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer | Comment |
+| :------: | :--: | :--------: | :----------------------: | :------------: | :------: | :-----: |
+|   149    |      |            |                          |                | MC       |         |
+
+---
+
+## 150 - CESSDA Software Maturity Levels
+
+### John Shepherdson
+
+### https://zenodo.org/record/2614050
+
+### Review
+
+| Paper_id | Name | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer | Comment |
+| :------: | :--: | :--------: | :----------------------: | :------------: | :------: | :-----: |
+|   150    |      |            |                          |                | CL       |         |
+
+---
+
+## 151 - A set of common software quality assurance baseline criteria for research projects
+
+### Pablo Orviz, et al.
+
+### https://digital.csic.es/handle/10261/160086
+
+### Review
+
+| Paper_id | Name | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer | Comment |
+| :------: | :--: | :--------: | :----------------------: | :------------: | :------: | :-----: |
+|   151    |      |            |                          |                | CL       |         |
+
+---
+
+## 152 - EOSC-synergy: A set of Common Service Quality Assurance Baseline Criteria for Research Projects
+
+### Pablo Orviz, et al.
+
+### https://digital.csic.es/handle/10261/214441
+
+### Review
+
+| Paper_id | Name | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer | Comment |
+| :------: | :--: | :--------: | :----------------------: | :------------: | :------: | :-----: |
+|   152    |      |            |                          |                | CL       |         |
+
+---
+
+## 153 - Software Quality Models in Practice
+
+### Stefan Wagner, Klaus Lochmann, Sebastian Winter, Andreas Goeb, Michael Kläs, Sabine Nunnenmacher
+
+### https://mediatum.ub.tum.de/doc/1110601/1110601.pdf
+
+### Review
+
+| Paper_id | Name | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer | Comment |
+| :------: | :--: | :--------: | :----------------------: | :------------: | :------: | :-----: |
+|   153    |      |            |                          |                | DG       |         |
+
+---
+
+## 154 - Software Release Practice HOWTO
+
+### Eric Steven Raymond
+
+### https://tldp.org/HOWTO/Software-Release-Practice-HOWTO/
+
+### Review
+
+| Paper_id | Name | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer | Comment |
+| :------: | :--: | :--------: | :----------------------: | :------------: | :------: | :-----: |
+|   154    |      |            |                          |                | LC       |         |
+
+---
+
+## 155 - DLR Software Engineering Guidelines
+
+### Schlauch, Tobias;  Meinel, Michael;  Haupt, Carina
+
+### https://zenodo.org/record/1344612#.YmvBiHXMKKM
+
+### Review
+
+| Paper_id | Name | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer | Comment |
+| :------: | :--: | :--------: | :----------------------: | :------------: | :------: | :-----: |
+|   155    |      |            |                          |                | VL       |         |
+
+---
+
+## 156 - Guide for Reproducible Research
+
+### The Turing Way Community, Becky Arnold, Louise Bowler, Sarah Gibson, Patricia Herterich, Rosie Higman, ... Kirstie Whitaker.
+
+### http://doi.org/10.5281/zenodo.3233986
+
+### Review
+
+| Paper_id | Name | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer | Comment |
+| :------: | :--: | :--------: | :----------------------: | :------------: | :------: | :-----: |
+|   156    |      |            |                          |                | Severall |         |
 
 ---
 

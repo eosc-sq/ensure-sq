@@ -187,6 +187,12 @@ We provide an overview of the approach developed by the Software Improvement Gro
 | 46       | Unit complexity | Of the software application | Quantitative | All Types | LC        | Cyclomatic complexity per unit |
 | 46       | Unit interface size | Number of parameters in interface | Quantitative | All Types | LC        | Number of parameters per unit |
 | 46       | Module coupling |  | Quantitative | All Types | LC        | Number of parameters per unit | Number of incoming calls per module |
+| 46       | Analysability | measured with Volume, Redundancy and Unit size | Quantitative | All Types | LC        | ISO/IEC 9126 |
+| 46       | Changeability | measure with Redundancy, Unit complexity and Module coupling | Quantitative | All Types | LC        | ISO/IEC 9126 |
+| 46       | Stability | measured with Unit inteface size and Module coupling | Quantitative | All Types | LC        | ISO/IEC 9126 |
+| 46       | Testability | measured with Unit complexity and Unit size | Quantitative | All Types | LC        | ISO/IEC 9126 |
+| 46       | Maintainability |  | Quantitative | All Types | LC        | ISO/IEC 9126 |
+
 
 **Comment**
 
@@ -194,12 +200,6 @@ The paper presents a standardized measurement model based on the ISO/IEC 9126 de
 In this ISO standard they propose a hierarchical quality model made of quality characteristics decomposed in subcharacteristics.
 They choose 6 code properties as key metrics for the quality assessment of the subcharacteristics.
 Then they keep a benchmark database to perform comparison and evaluate new measurements. In this database they use metadata attributes to tag each measurement and help with comparing.
-
-The quality characteristics from ISO/IEC 9126 they mention are:
-- Analysability: measured with Volume, Redundancy and Unit size.
-- Changeability: measure with Redundancy, Unit complexity and Module coupling.
-- Stability: measured with Unit inteface size and Module coupling.
-- Testability: measured with Unit complexity and Unit size.
 
 ---
 

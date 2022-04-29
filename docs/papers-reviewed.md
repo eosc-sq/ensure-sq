@@ -1,4 +1,4 @@
-# Papers hat where reviewed
+# Papers that where reviewed
 
 ## Template
 

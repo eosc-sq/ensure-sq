@@ -775,7 +775,23 @@ Software quality metrics have potential for helping to assure the quality of sof
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 129      |       |            |                          |                | LC        |         |
+| 129      | eta1 | Unique operator count | Quantitative           | Space SW written in HAL/S | LC        |         |
+| 129      | eta2 | Unique operand count | Quantitative           | Space SW written in HAL/S | LC        |         |
+| 129      | n1 | Total operator count | Quantitative           | Space SW written in HAL/S | LC        |         |
+| 129      | n2 | Total operand count | Quantitative           | Space SW written in HAL/S | LC        |         |
+| 129      | stms | Total statement count (executable code; no comments) | Quantitative           | Space SW written in HAL/S | LC        |         |
+| 129      | loc | Total non-commented lines of code | Quantitative           | Space SW written in HAL/S | LC        |         |
+| 129      | comments | Total comment count | Quantitative           | Space SW written in HAL/S | LC        |         |
+| 129      | nodes | Total node count (in control graph) | Quantitative           | Space SW written in HAL/S | LC        |         |
+| 129      | edges | Total edge count (in control graph) | Quantitative           | Space SW written in HAL/S | LC        |         |
+| 129      | paths | Total path count (in control graph) | Quantitative           | Space SW written in HAL/S | LC        |         |
+| 129      | cycles | Total cycle count (in control path) | Quantitative           | Space SW written in HAL/S | LC        |         |
+| 129      | maxpath | Maximum path length (edges in control path) | Quantitative           | Space SW written in HAL/S | LC        |         |
+| 129      | avepath | Average path length (edges in control graph) | Quantitative           | Space SW written in HAL/S | LC        |         |
+
+### Comments
+
+This is a very old paper that tries to relate quality measurements at development time with quality predictions for production. It is only valid for a specific software used in the space shuttle.
 
 ---
 

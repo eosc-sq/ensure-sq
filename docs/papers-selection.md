@@ -733,7 +733,13 @@ High-profile disasters and the ensuing debates in the press are alerting more pe
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 124      |       |            |                          |                | ER        |         |
+| 124      | quality      | For transcendetal view, quality is something that can be recognized but not defined.  | Qualitative | Alwasys true  | ER | This view is similar to Plato's description of the ideal or Aristotele's concept of form: software quality is something we strive as an ideal. |
+| 124      | quality      | For user view, quality is something that fits for purpose.  | Quantitative | Alwasys true  | ER | This view is quite concrete, grounded in product characteristics that meet's the user needs. |
+| 124      | quality      | For manufacturing view, quality is something that is conformant to specification.  | Quantitative | Alwasys true  | ER | This view focuses on product quality during production and affter delivery. This definition is also adpted by `ISO 9001` and the `Capability Maturity Model`.|
+
+
+
+
 
 ---
 

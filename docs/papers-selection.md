@@ -736,6 +736,8 @@ High-profile disasters and the ensuing debates in the press are alerting more pe
 | 124      | quality      | For transcendetal view, quality is something that can be recognized but not defined.  | Qualitative | Alwasys true  | ER | This view is similar to Plato's description of the ideal or Aristotele's concept of form: software quality is something we strive as an ideal. |
 | 124      | quality      | For user view, quality is something that fits for purpose.  | Quantitative | Alwasys true  | ER | This view is quite concrete, grounded in product characteristics that meet's the user needs. |
 | 124      | quality      | For manufacturing view, quality is something that is conformant to specification.  | Quantitative | Alwasys true  | ER | This view focuses on product quality during production and affter delivery. This definition is also adpted by `ISO 9001` and the `Capability Maturity Model`.|
+| 124      | quality      | For product view, quality is tied to inherent characteristics of the product.  | Quantitative | Alwasys true  | ER | This view looks inside the code, by considering the product's inehrent characteristics and measuring internal properties through software metrics.|
+| 124      | quality      | For value-based view, quality is dependent on the amount a customer is willing to pay for it.  | Quantitative | Alwasys true  | ER | This view links view to the various groups involved in software development.|
 
 
 

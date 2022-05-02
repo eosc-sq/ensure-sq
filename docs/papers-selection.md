@@ -1042,9 +1042,20 @@ The article describe the Boehm software quality model. It identifies characteris
 
 ### Review
 
-| Paper_id | Name | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer | Comment |
-| :------: | :--: | :--------: | :----------------------: | :------------: | :------: | :-----: |
-|   149    |      |            |                          |                | MC       |         |
+| Paper_id | Name              |   Definition | Qualitative/Quantitative | Targeted to SW | Reviewer | Comment |
+| :------: | :--:              |   :--------: | :----------------------: | :------------: | :------: | :-----: |
+|   149    |        X          |       X      |            X             |       X        |  MC      |   N/A   |
+
+This article doesn't provide any specific software quality criteria. Instead, it describes a methodology to analyze articles in order to evaluate them and extract the characteristics of the state of the art in software quality models. It's very similar to our own approach here.
+
+The base their analysis on the Bayer's reference architecture paradigm, which has four phases:
+* Planning
+* Realization
+* Documentation
+* Assessement
+
+The article is mainly on analysing the literature (conference papers and journal publications) and to see how they fit on the Bayer's phases.
+The paper concludes that the most referenced quality model standards are ISO 9126 and, more recently, ISO 25000.
 
 ---
 

@@ -451,7 +451,12 @@ The support of software quality in a software development process may be regarde
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 92       |       |            |                          |                | JC        |         |
+| 92 | Customer satisfaction |  | Quantitative (e.g., surveys) |  | JC | Not sure applicable for research sw |
+| 92 | Functional requirements | Yes or not release adheres to functional requirements | Quantitative |  | JC | Useful but not sure how it would work for research sw |
+| 92 | Usability | Easy of usage by end users | Quantitative (e.g., surveys) |  | JC | Not easy for research sw |
+| 92 | Architecture design | Arhitecture showing modules and interactions | Qualitative |  | JC | Not easy for research sw  |
+| 92 | Team work  | Pair programming, code review | ??? |  | JC  | Should be split into more granular criteria |
+
 
 ---
 
@@ -754,7 +759,20 @@ Many software quality metrics to objectively grasp software products and process
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 128      |       |            |                          |                | JC        |         |
+| 128 | Code complexity | How convoluted or not is a code | Quantitative (e.g., Mc Cabe and Halstead metrics) |  | JC | Not easy to understand by developers (comment from paper) |
+| 128 | At file level - number of modules |  | Quantitative |  | JC | For all of these criteria, what would be the acceptable metric/level? |
+| 128 | At file level - number of total steps |  | Quantitative |  | JC |  |
+| 128 | At file level - number of imports/dependencies |  | Quantitative |  | JC |  |
+| 128 | At module level - number of steps |  | Quantitative |  | JC |  |
+| 128 | At module level - number of conditions |  | Quantitative |  | JC |  |
+| 128 | At module level -  number of loops |  | Quantitative |  | JC |  |
+| 128 | At module level - number of arguments |  | Quantitative |  | JC |  |
+| 128 | At module level - number of comments |  | Quantitative |  | JC |  |
+| 128 | At module level - number of procedures |  | Quantitative |  | JC |  |
+| 128 | At system level - number of modules |  | Quantitative |  | JC |  |
+| 128 | At system level - number of procedures |  | Quantitative |  | JC |  |
+
+
 
 ---
 

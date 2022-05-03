@@ -738,10 +738,18 @@ High-profile disasters and the ensuing debates in the press are alerting more pe
 | 124      | quality      | For the manufacturing view, quality is something that is conformant to specification.  | Quantitative | Alwasys true  | ER | This view focuses on product quality during production and after delivery. This definition is also adpted by `ISO 9001` and the `Capability Maturity Model`.|
 | 124      | quality      | For the product view, quality is tied to inherent characteristics of the product.  | Quantitative | Alwasys true  | ER | This view looks inside the code, by considering the product's inehrent characteristics and measuring internal properties through software metrics.|
 | 124      | quality      | For the value-based view, quality is dependent on the amount a customer is willing to pay for it.  | Quantitative | Alwasys true  | ER | This view considers the various groups views in software development and aims at avoiding misunderstanding.|
+| 124      | reliability      | How long the product functions properly between failures. | Quantitative | Alwasys true  | ER | Reliability models plot the number of failures over time. This characteristic is of users'interest.|
+| 124      | usability      | How the product easily supports installation, learning and use according to Tom Gilb. | Quantitative | Alwasys true  | ER | Gilb's technique can be generalized to any quality feature. This characteristic is of users'interest.|
+| 124      | defect counts      | They are the number of known defects recorded against a product during development and use. | Quantitative | Alwasys true  | ER | Defects can be categorized according to the phase or activity where the defect was introduced. This characteristic is of manufacturing'interest.|
+| 124      | rework costs      | It represents the staff effort spent correcting defects before and after release. | Quantitative | Alwasys true  | ER | This characteristic is of manufacturing'interest.|
 
+This paper talks about modeling quality:
+* McCall's quality model (11 quality factors) J.A. McCall, P.K. Richard, G. F. Walters, "Factors in Software Quality", vol 1., 2. and 3, AD/A-049-014/015/055, Nat'l Tech. Information Service, Springfield, Va., 1977
+* ISO 9126 V. Basili and D. Rombach, "The TAME Project: Towards Improvement-Oriented Software Environments", IEEE Trans. Software Eng. , June 1989, pp 758-773
+* Dromey's model G. Dromey, "A model for software-product quality", IEEE Trans. Software Eng., Feb. 1995.
 
-
-
+There are several differences between ISO 9126 and McCall's model. The main problem is the terminology used and the lack of rationale for determining which factors/characteristics should be included in the quality definition.
+Dromey's model allows to determin if a model is incomplete.
 
 ---
 

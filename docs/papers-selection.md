@@ -1146,6 +1146,33 @@ The article describe the Boehm software quality model. It identifies characteris
 | :------: | :--: | :--------: | :----------------------: | :------------: | :------: | :-----: |
 |   155    |      |            |                          |                | VL       |         |
 
+Note: there are no really defined criteria but one can probably extract interesting data from the recommendations made.
+
+Classification of softwares:
+
+- application class 0: personal use, small scope No real distribution internal or external DLR.
+- application class 1: external contribution and use. Software used beyond personal puposes. Need to be traceable and reproducible.
+- application class 2: need to ensure long-term developpement and maintenability. Need appropriate software architecture.
+- application class 3: essential to avoid errors and reduce risks. Critical software.
+
+A decision tree (see article) help the software responsible to choose the right application class with criteria :
+
+- risks for the facility
+- scope (large or not)
+- distribution of the software
+- period for further development (long-term ?)
+
+1.  about qualification: be sure that persons involved have the necessary knowledge and training.
+2. about requirements management: well documented the functional requirements, the quality requirements and the constraints.
+3. about software architecture: well documented the architecture in a comprehension manner for the group, testability of the software is addressed, architectural concepts and decisions can be traced to requirements, key architectural concepts are checked (for example POC), systematic reviwe of the software is carried out to find out whether it meets the specified requirements.
+4. about change management: how performing changes to software in a systematic and comprehensive way: requirements, bugs, optimisations. Often used of web-based ticket systems. Need to preserve the results of the development work in a safe and comprehensible way: use of version control system. Change process coordinated and documented. How to contribute is documented and documentation accessible.
+5. about design and implementation: common rules regarding the programming style, use of design patterns, documentation of design principles. Modular structure of the software as independent as possible. Test of each module. Implementation reflects the software architecture. Automatic check of simple rules. No duplication between comments and source code. Avoid complex solutions and implementation.
+6. about software test: implementation of a tes startegy which may have consequences over the software architecture. Different types of tests : module tests (unit tests), integration tests (about interactions between components), system tests (global), acceptance tests (customer's point of view). Importance of test automation. Necessity to select and systematically evaluate metrics.
+7. about release management: define the process of publishing a release.licensing conditions must be defined. Unique release number. Contains the documentation. 
+8. about automation and dependency management: software development is complex. Ofetn required several software package with a specific version (dependencies) and other programs (development environment). Necessity to automate the build process, the execution of tests, the creation of the release package.
+
+
+
 ---
 
 ## 156 - Guide for Reproducible Research

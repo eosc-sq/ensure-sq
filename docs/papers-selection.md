@@ -712,8 +712,11 @@ This paper has developed from the SoFEA project at The open University which is 
 
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
-| 123      |       |            |                          |                | DG        |         |
+| 123      | Safety | No definition is provided, rather than safety being important  |  Qualitative  | All types | DG        |         |
+| 123      | Certification | Having done audits to the software project in question  |  Qualitative  | All types | DG        |         |
+| 123      | Opennes | Related to certification. Open software tends to be easier to review | Quantitative  | All types | DG        |         |
 
+This paper talks about non-technical aspects for software quality. The paper describes how to identify individualist programmers, which are highly productive but do not document their process. The paper is more for quality managers than for defining objective measures of quality.
 ---
 
 ## 124 - Software quality: the elusive target

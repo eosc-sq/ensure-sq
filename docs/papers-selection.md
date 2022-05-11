@@ -1050,7 +1050,16 @@ The article describe the Boehm software quality model. It identifies characteris
 
 | Paper_id | Name | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer | Comment |
 | :------: | :--: | :--------: | :----------------------: | :------------: | :------: | :-----: |
-|   148    |      |            |                          |                | MT       |         |
+|   148    | n/a     |   n/a         |      n/a                    |   n/a             | MT       | See below      |
+
+
+The paper does not provide quality/quantitative metrics for evaluating software product quality models. Instead, it provides a systematic literature review covering papers published since 2000 and develops a scoring scheme for measuring the relevance of software product quality model families. Authors focused on those models they considered "complete software product quality models", thus not including those models with a limited scope of quality properties such as maintainability or security.
+They fixed a set of criteria regarding whether a publication establishes a new software product quality model family or solely adjusts a quality model already in use. The relevance of the quality models families identified was measured using some quantitative indicators: a) relevance score; b) quality score average; c) publication time range; d) the 12-month average of Google trends called "Google Relative Search Index" (GRSI).
+The first two indicators are related to research intensity. The third one is related to the duration of research on a given software product quality model family. Finally, the GRSI index tries to measure how widespread the model family is in society.
+The 'relevance score' was computed considering the sum of the quality scores of the documents describing the model family. The 'quality score' was constructed to show to which extent the publication is relevant when considering two questions: 1) "How clear and coherent the publication is?" 2) "How actual the publication is?".
+The GRSI index was introduced to account for the potential "practical everyday use" of the quality model considered. The GRSI index was computed going back for a 12-month period from the closing date of the manuscripts.
+As a result, the authors identified 23 quality model families. The first three quality model families with correlating 'relevance score' and 'GRSI' scores are: 1) ISO25010, 2) ISO9126, and 3) SQALE.
+
 
 ---
 

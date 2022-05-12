@@ -7,8 +7,10 @@ Table columns of template:
 * Paper_id: paper id in the list below, for example ID = 11 for the first paper.
 * Name: name of criteria.
 * Definition: description/summary of the criteria.
-* Qualitative/quantitative: if the criteria is objective/measurable (possible to automate) or subjective and difficult to automate.
-* Targeted to SW (see <https://github.com/eosc-sq/overleaf-ensure-sq/blob/main/landscaping.tex>): at the, moment one of:
+* Qualitative/quantitative: if the criteria is objective/measurable (possible to automate) or
+  subjective and difficult to automate.
+* Targeted to SW (see <https://github.com/eosc-sq/overleaf-ensure-sq/blob/main/landscaping.tex>):
+  at the, moment one of:
   * Library
   * Framework
   * Application (such as Monte-Carlo simulation)
@@ -52,7 +54,9 @@ Srisopha K., Alfayez R.
 
 **Quality Model** ("is based on", "mentions"): ISO/IEC 25010
 
-This paper proposes a quality analysis from an empirical point of view. It uses three tools for quantitative analysis: SonarQube, PMD and FindBugs. The quality metrics are not proposed per se in the paper, but are useful candidates.
+This paper proposes a quality analysis from an empirical point of view. It uses three tools for
+quantitative analysis: SonarQube, PMD and FindBugs. The quality metrics are not proposed per se in
+the paper, but are useful candidates.
 
 The paper mentions ISO/IEC 25010 software product quality characteristics. These are:
 
@@ -82,14 +86,16 @@ Brandtner M.
 | Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
 | 41       | Individual Information | Stakeholder's information influenced by the role involved and the type of software. |  Qualitative  |  All  | ER | Type of software can be rich client, web application and so on. |
-| 41       | Stakeholder context | Detail e.g. stakeholder role and tool-usage data by each stakeholder |  Qualitative |  All | ER        |  Software architects, developers and testers are the considred essential role in the development process. |
+| 41       | Stakeholder context | Detail e.g. stakeholder role and tool-usage data by each stakeholder |  Qualitative |  All | ER        |  Software architects, developers and testers are the considered essential role in the development process. |
 | 41       | Technical context | Information about the source code by using e.g. software metrics |  Quantitative |  All | ER        |  Type of software can be rich client, web application and son. |
-| 41       | Context-sensitive | The relation between the data, the world the data refers to, and the observer's expectations, intentions and interests |  Qualitative |  All | ER        |  The paper provides an illustrative example to support different stakeholders in the quality assessement of a software system. |
+| 41       | Context-sensitive | The relation between the data, the world the data refers to, and the observer's expectations, intentions and interests |  Qualitative |  All | ER        |  The paper provides an illustrative example to support different stakeholders in the quality assessment of a software system. |
 
-**Quality Model** ("is based on", "mentions"):
+**Quality Model** ("is based on", "mentions"): Own metrics
 
-**NOTE: This article is mainly on software quality assessment than software quality definition.** However it contains an interesting approach based on stakeholder's information needs and the tailoring of information for software quality assessment. This paper also provides some guidelines to support the activities carried out by each type of stakeholders.
-
+**NOTE: This article is mainly on software quality assessment than software quality definition.**
+However it contains an interesting approach based on stakeholder's information needs and the
+tailoring of information for software quality assessment. This paper also provides some guidelines
+to support the activities carried out by each type of stakeholders.
 
 ## 45 - A systematic review of quality attributes and measures for software product lines
 
@@ -122,7 +128,8 @@ Montagud S., Abrahão S., Insfran E.
  | 45 | Internal cohesion |  | Quantitative |  | JC | Exclude (difficult to measure). Requires well established software engineering practices |
  | 45 | Coherence |  | Quantitative |  | JC | Exclude (difficult to measure). Requires well established software engineering practices |
 
-**Quality Model** ("is based on", "mentions"):
+**Quality Model** ("is based on", "mentions"): Own metrics. (**mdavid**) TO BE Discussed if what
+metrics can be taken from this paper.
 
 ## 46 - Standardized code quality benchmarking for improving software maintainability
 
@@ -138,19 +145,26 @@ Baggen R., Correia J.P., Schill K., Visser J.
 | 46       | Unit complexity | Of the software application | Quantitative | All Types | LC        | Cyclomatic complexity per unit |
 | 46       | Unit interface size | Number of parameters in interface | Quantitative | All Types | LC        | Number of parameters per unit |
 | 46       | Module coupling |  | Quantitative | All Types | LC        | Number of parameters per unit | Number of incoming calls per module |
+| 46       | Analysability | measured with Volume, Redundancy and Unit size | Quantitative | All Types | LC        | ISO/IEC 9126 |
+| 46       | Changeability | measure with Redundancy, Unit complexity and Module coupling | Quantitative | All Types | LC        | ISO/IEC 9126 |
+| 46       | Stability | measured with Unit inteface size and Module coupling | Quantitative | All Types | LC        | ISO/IEC 9126 |
+| 46       | Testability | measured with Unit complexity and Unit size | Quantitative | All Types | LC        | ISO/IEC 9126 |
+| 46       | Maintainability |  | Quantitative | All Types | LC        | ISO/IEC 9126 |
 
 **Quality Model** ("is based on", "mentions"): ISO/IEC 9126
 
-The paper presents a standardized measurement model based on the ISO/IEC 9126 definition of maintainability and source code metrics.
-In this ISO standard they propose a hierarchical quality model made of quality characteristics decomposed in subcharacteristics.
-They choose 6 code properties as key metrics for the quality assessment of the subcharacteristics.
-Then they keep a benchmark database to perform comparison and evaluate new measurements. In this database they use metadata attributes to tag each measurement and help with comparing.
+The paper presents a standardized measurement model based on the ISO/IEC 9126 definition of
+maintainability and source code metrics. In this ISO standard they propose a hierarchical quality
+model made of quality characteristics decomposed in sub-characteristics. They choose 6 code
+properties as key metrics for the quality assessment of the sub-characteristics.
+Then they keep a benchmark database to perform comparison and evaluate new measurements. In this
+database they use metadata attributes to tag each measurement and help with comparing.
 
 The quality characteristics from ISO/IEC 9126 they mention are:
 
 * Analysability: measured with Volume, Redundancy and Unit size.
 * Changeability: measure with Redundancy, Unit complexity and Module coupling.
-* Stability: measured with Unit inteface size and Module coupling.
+* Stability: measured with Unit interface size and Module coupling.
 * Testability: measured with Unit complexity and Unit size.
 
 ## 58 - Quality specification and metrication, results from a case-study in a mission-critical software domain
@@ -174,7 +188,7 @@ Trienekens J.J.M., Kusters R.J., Brussel D.C.
 | 58 | maintainability |  Easy to modify according to changing needs | Quantitative | | MC |  |
 | 58 | portability | Easy to implement in different scenarios | Quantitative | | MC |  |
 
-**Quality Model** ("is based on", "mentions"):
+**Quality Model** ("is based on", "mentions"): ISO/IEC 9126
 
 ## 85 - Achieving quality in open-source software
 
@@ -191,11 +205,13 @@ Aberdour M.
 | 85       | Tests | Each method/function has a test to support it | Quantitative | all types | DG        | See below |
 | 85       | Tutorials | Availability of material explaining how to use the target software through examples | Qualitative/Quantitative | All types  | DG        | See below |
 
-**Quality Model** ("is based on", "mentions"):
+**Quality Model** ("is based on", "mentions"): Own metrics. (OpenSource SW)
 
-The paper focuses on project management for quality, comparing open source software projects with non open initiatives.
+The paper focuses on project management for quality, comparing open source software projects with
+non open initiatives.
 
-* Quality areas: quality assurance (focuses on process and procedure, learning from mistakes, and ensuring good management practice) and quality control (process of verification and validation)
+* Quality areas: quality assurance (focuses on process and procedure, learning from mistakes, and
+  ensuring good management practice) and quality control (process of verification and validation)
 
 ## 88 - Driving software quality: How test-driven development impacts software quality
 
@@ -208,9 +224,25 @@ Crispin L.
 | 88       | Test driven development | Definition and development of unit tests for each functionality | Quantitative | All | ER |  |
 | 88       | Project creole      | A shared language (between manager and developers)           | Qualitative: managers can improve the way they define features, developers can easily produce well-tailored program  | All | ER | It considers important the development of a shared language or project creole between business people and developers to find some common ground and work together in order to improve software development.  |
 
-**Quality Model** ("is based on", "mentions"):
+**Quality Model** ("is based on", "mentions"): Test Driven Development (TDD).
 
-**NOTE: this is a paper of 2 pages**. For my point of view it can be left out for quality definition. 
+**NOTE: this is a paper of 2 pages**. For my point of view it can be left out for quality definition.
+
+## 92 - Software quality development and assurance in RUP, MSF and XP -A comparative study
+
+Zuser W., Heil S., Grechenig T.
+
+<https://www.scopus.com/inward/record.uri?eid=2-s2.0-84885903144&doi=10.1145%2f1083292.1083300&partnerID=40&md5=c47fec6c93dd2cc890ba61b5ce2ab7c1>
+
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
+| 92 | Customer satisfaction |  | Quantitative (e.g., surveys) |  | JC | Not sure applicable for research sw |
+| 92 | Functional requirements | Yes or not release adheres to functional requirements | Quantitative |  | JC | Useful but not sure how it would work for research sw |
+| 92 | Usability | Easy of usage by end users | Quantitative (e.g., surveys) |  | JC | Not easy for research sw |
+| 92 | Architecture design | Arhitecture showing modules and interactions | Qualitative |  | JC | Not easy for research sw  |
+| 92 | Team work  | Pair programming, code review | ??? |  | JC  | Should be split into more granular criteria |
+
+**Quality Model** ("is based on", "mentions"): Own metrics.
 
 ## 93 - Early estimation of software quality using in-process testing metrics: A controlled case study
 
@@ -230,13 +262,17 @@ Nagappan N., Williams L., Vouk M., Osborne J.
 | 93       | WMC  | Relative ratio of test to source code in  weighted methods per class | Quantitative | Java code | LC        | Complexity and O-O metrics |
 | 93       | Relative size adjustment  | SLOC* divided by Minimum SLOC* | Quantitative | Java code | LC        | Complexity and O-O metrics |
 
-**Quality Model** ("is based on", "mentions"):
+**Quality Model** ("is based on", "mentions"): Own metrics. Object Oriented - JAVA.
 
 \* Source Lines of Code (SLOC) is computed as non-blank, non-comment source lines of code
 
 \+ Test Lines of Code (TLOC) is computed as non-blank, non-comment test lines of code
 
-They present a metric suite called the Software Testing and Reliability Early Warning metric suite for Java (STREW-J) that can be used as an early indication of an external measure of software application quality. They put a greater emphasis on internal software metrics, particularly those involving the testing effort. It requires the existence of an extensive suite of automated unit test cases being created as development proceeds.
+They present a metric suite called the Software Testing and Reliability Early Warning metric suite
+for Java (STREW-J) that can be used as an early indication of an external measure of software
+application quality. They put a greater emphasis on internal software metrics, particularly those
+involving the testing effort. It requires the existence of an extensive suite of automated unit test
+cases being created as development proceeds.
 
 ## 99 - The evolution path for industrial software quality evaluation methods applying ISO/IEC 9126:2001 quality model: Example of MITRE's SQAE method
 
@@ -256,7 +292,8 @@ Côté M.-A., Suryn W., Laporte C.Y., Martin R.A.
 
 **Quality Model** ("is based on", "mentions"): ISO/IEC 9126
 
-Mainly a correlation between their proposed quality factors and the sub-characteristics in ISO/EIC 9126.
+Mainly a correlation between their proposed quality factors and the sub-characteristics in
+ISO/EIC 9126.
 
 ## 108 - Construction of a systemic quality model for evaluating a software product
 
@@ -268,14 +305,75 @@ Ortega M., Pérez M., Rojas T.
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
 | 108      | Systemic model | Extends ISO9126, Dromey and McCall models  |  Mainly qualitative: set of measures and practices   |   all   | MT   | See below     |
 
-**Quality Model** ("is based on", "mentions"): Extends ISO9126, Dromey and McCall models
+**Quality Model** ("is based on", "mentions"): Extends ISO9126, Dromey and McCall models.
 
 Comment
 
-The study proposes a systemic quality model. Authors developed a process framework with which to evaluate product quality considering the processes that contribute to product
-quality. They basically extend ISO 9126 product quality model considering the roles of stakeholders (project managers, developers, and users) trying to evaluate the internal quality,
-which includes functionality, reliability, usability, efficiency, maintainability, and portability characteristics. Authors claimed that those quantities relate to each other and must
-be integrated for a systemic global quality design. The work does not analyze the effect of the method applied on different stakeholders.
+The study proposes a systemic quality model. Authors developed a process framework with which to
+evaluate product quality considering the processes that contribute to product quality. They
+basically extend ISO 9126 product quality model considering the roles of stakeholders (project
+managers, developers, and users) trying to evaluate the internal quality, which includes
+functionality, reliability, usability, efficiency, maintainability, and portability characteristics.
+Authors claimed that those quantities relate to each other and must be integrated for a systemic
+global quality design. The work does not analyze the effect of the method applied on different
+stakeholders.
+
+## 124 - Software quality: the elusive target
+
+Kitchenham Barbara, Pfleeger Shari Lawrence
+
+<https://www.scopus.com/inward/record.uri?eid=2-s2.0-0029779819&doi=10.1109%2f52.476281&partnerID=40&md5=0c903484c06cd79cb57e3161badfff3d>
+
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
+| 124      | quality      | For the transcendetal view, quality is something that can be recognized but not defined.  | Qualitative | Alwasys true  | ER | This view is similar to Plato's description of the ideal or Aristotele's concept of form: software quality is something we strive as an ideal. |
+| 124      | quality      | For the user view, quality fits for purpose.  | Quantitative | Alwasys true  | ER | This view is quite concrete, grounded in product characteristics that meet's the user needs. |
+| 124      | quality      | For the manufacturing view, quality is something that is conformant to specification.  | Quantitative | Alwasys true  | ER | This view focuses on product quality during production and after delivery. This definition is also adpted by `ISO 9001` and the `Capability Maturity Model`.|
+| 124      | quality      | For the product view, quality is tied to inherent characteristics of the product.  | Quantitative | Alwasys true  | ER | This view looks inside the code, by considering the product's inehrent characteristics and measuring internal properties through software metrics.|
+| 124      | quality      | For the value-based view, quality is dependent on the amount a customer is willing to pay for it.  | Quantitative | Alwasys true  | ER | This view considers the various groups views in software development and aims at avoiding misunderstanding.|
+| 124      | reliability      | How long the product functions properly between failures. | Quantitative | Alwasys true  | ER | Reliability models plot the number of failures over time. This characteristic is of users'interest.|
+| 124      | usability      | How the product easily supports installation, learning and use according to Tom Gilb. | Quantitative | Alwasys true  | ER | Gilb's technique can be generalized to any quality feature. This characteristic is of users'interest.|
+| 124      | defect counts      | They are the number of known defects recorded against a product during development and use. | Quantitative | Alwasys true  | ER | Defects can be categorized according to the phase or activity where the defect was introduced. This characteristic is of manufacturing'interest.|
+| 124      | rework costs      | It represents the staff effort spent correcting defects before and after release. | Quantitative | Alwasys true  | ER | This characteristic is of manufacturing'interest.|
+
+**Quality Model** ("is based on", "mentions"): Extends ISO9126, Dromey and McCall models.
+
+This paper talks about modeling quality:
+
+* McCall's quality model (11 quality factors) J.A. McCall, P.K. Richard, G. F. Walters, "Factors in
+  Software Quality", vol 1., 2. and 3, AD/A-049-014/015/055, Nat'l Tech. Information Service,
+  Springfield, Va., 1977
+* ISO 9126 V. Basili and D. Rombach, "The TAME Project: Towards Improvement-Oriented Software
+  Environments", IEEE Trans. Software Eng. , June 1989, pp 758-773
+* Dromey's model G. Dromey, "A model for software-product quality", IEEE Trans. Software Eng., Feb.
+  1995.
+
+There are several differences between ISO 9126 and McCall's model. The main problem is the
+terminology used and the lack of rationale for determining which factors/characteristics should be
+included in the quality definition. Dromey's model allows to determine if a model is incomplete.
+
+## 128 - Experiences of software quality management using metrics through the life-cycle
+
+Ogasawara Hideto, Yamada Atsushi, Kojo Michiko
+
+<https://www.scopus.com/inward/record.uri?eid=2-s2.0-0029516009&partnerID=40&md5=68106def0b53f2f1a609753364cb4705>
+
+| Paper_id | Name  | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer  | Comment |
+| :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
+| 128 | Code complexity | How convoluted or not is a code | Quantitative (e.g., Mc Cabe and Halstead metrics) |  | JC | Not easy to understand by developers (comment from paper) |
+| 128 | At file level - number of modules |  | Quantitative |  | JC | For all of these criteria, what would be the acceptable metric/level? |
+| 128 | At file level - number of total steps |  | Quantitative |  | JC |  |
+| 128 | At file level - number of imports/dependencies |  | Quantitative |  | JC |  |
+| 128 | At module level - number of steps |  | Quantitative |  | JC |  |
+| 128 | At module level - number of conditions |  | Quantitative |  | JC |  |
+| 128 | At module level -  number of loops |  | Quantitative |  | JC |  |
+| 128 | At module level - number of arguments |  | Quantitative |  | JC |  |
+| 128 | At module level - number of comments |  | Quantitative |  | JC |  |
+| 128 | At module level - number of procedures |  | Quantitative |  | JC |  |
+| 128 | At system level - number of modules |  | Quantitative |  | JC |  |
+| 128 | At system level - number of procedures |  | Quantitative |  | JC |  |
+
+**Quality Model** ("is based on", "mentions"): Own metrics.
 
 ## 129 - Controlling and predicting the quality of space shuttle software using metrics
 
@@ -299,9 +397,10 @@ Schneidewind N.F.
 | 129      | maxpath | Maximum path length (edges in control path) | Quantitative           | Space SW written in HAL/S | LC        |         |
 | 129      | avepath | Average path length (edges in control graph) | Quantitative           | Space SW written in HAL/S | LC        |         |
 
-**Quality Model** ("is based on", "mentions"):
+**Quality Model** ("is based on", "mentions"): Own metrics. Space SW written in HAL/S
 
-This is a very old paper that tries to relate quality measurements at development time with quality predictions for production. It is only valid for a specific software used in the space shuttle.
+This is a very old paper that tries to relate quality measurements at development time with quality
+predictions for production. It is only valid for a specific software used in the space shuttle.
 
 ## 140 - Modelling software quality in the commercial environment
 
@@ -351,9 +450,11 @@ Hirayama Masayuki, Sato Hiroyuki, Yamada Atushi, Tsuda Junichiro
 | :------: | :---: | :--------: | :----------------------: | :------------: | :-------: | :-----: |
 | 144      | ESQUT | It is a source code quality index  |  Quantitative            |  (old) C code  | MT        | See below  |
 
-**Quality Model** ("is based on", "mentions"):
+**Quality Model** ("is based on", "mentions"): Own metrics. For old C code.
 
-The paper's main motivation is that Halstead's and McCabe's metrics are not practical and have some limitations (in the case of programs with GOTO statements and deep nesting). The authors propose a new quantitative metric called ESQUT-C (for C programs) considering:
+The paper's main motivation is that Halstead's and McCabe's metrics are not practical and have some
+limitations (in the case of programs with GOTO statements and deep nesting). The authors propose a
+new quantitative metric called ESQUT-C (for C programs) considering:
 
 * n. of GOTO statements
 * n. of module exits
@@ -401,7 +502,14 @@ Boehm B.W., Brown J.R., Lipow M.
 
 **Quality Model** ("is based on", "mentions", "defines"): define Boehm software quality model
 
-The article describe the Boehm software quality model. It identifies characteristics of quality structured in a tree (see above for this characteristics). It also gives a few example of quality metrics (Boehms wrote a book on the subject). It also explains the link between the identification of types of error and when they appear during the software life-cycle and at which phase of the cycke they are corrected. It shows that early application of automated and semiautomated consistency, robustnes and self containedness checkers leads to significant improvements in software error detection. It gives some input on quality-enhancing tools and techniques. Life cycle activities with significant effects on software quality:
+The article describe the Boehm software quality model. It identifies characteristics of quality
+structured in a tree (see above for this characteristics). It also gives a few example of quality
+metrics (Boehms wrote a book on the subject). It also explains the link between the identification
+of types of error and when they appear during the software life-cycle and at which phase of the
+cycle they are corrected. It shows that early application of automated and semiautomated
+consistency, robustnes and self containedness checkers leads to significant improvements in software
+error detection. It gives some input on quality-enhancing tools and techniques. Life cycle
+activities with significant effects on software quality:
 
 * setting software quality objectives and priorities
 * performing software quality benchmarking
@@ -413,3 +521,64 @@ The article describe the Boehm software quality model. It identifies characteris
 * establishing standards
 * using an automated code auditor for standards compliance
 * performing design and code inspections
+
+## 155 - DLR Software Engineering Guidelines
+
+Schlauch, Tobias;  Meinel, Michael;  Haupt, Carina
+
+<https://zenodo.org/record/1344612#.YmvBiHXMKKM>
+
+| Paper_id | Name | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer | Comment |
+| :------: | :--: | :--------: | :----------------------: | :------------: | :------: | :-----: |
+|   155    |      |            |                          |                | VL       |         |
+
+**Quality Model** ("is based on", "mentions", "defines"): Own metrics. Points 5, 6, 7 and 8 below.
+
+Note: there are no really defined criteria but one can probably extract interesting data from the
+recommendations made.
+
+Classification of softwares:
+
+* application class 0: personal use, small scope No real distribution internal or external DLR.
+* application class 1: external contribution and use. Software used beyond personal puposes. Need to
+  be traceable and reproducible.
+* application class 2: need to ensure long-term developpement and maintenability. Need appropriate
+  software architecture.
+* application class 3: essential to avoid errors and reduce risks. Critical software.
+
+A decision tree (see article) help the software responsible to choose the right application class
+with criteria :
+
+* risks for the facility
+* scope (large or not)
+* distribution of the software
+* period for further development (long-term ?)
+
+1. about qualification: be sure that persons involved have the necessary knowledge and training.
+2. about requirements management: well documented the functional requirements, the quality
+   requirements and the constraints.
+3. about software architecture: well documented the architecture in a comprehension manner for the
+   group, testability of the software is addressed, architectural concepts and decisions can be
+   traced to requirements, key architectural concepts are checked (for example POC), systematic
+   review of the software is carried out to find out whether it meets the specified requirements.
+4. about change management: how performing changes to software in a systematic and comprehensive
+   way: requirements, bugs, optimisations. Often used of web-based ticket systems. Need to preserve
+   the results of the development work in a safe and comprehensible way: use of version control
+   system. Change process coordinated and documented. How to contribute is documented and
+   documentation accessible.
+5. about design and implementation: common rules regarding the programming style, use of design
+   patterns, documentation of design principles. Modular structure of the software as independent as
+   possible. Test of each module. Implementation reflects the software architecture. Automatic check
+   of simple rules. No duplication between comments and source code. Avoid complex solutions and
+   implementation.
+6. about software test: implementation of a tes startegy which may have consequences over the
+   software architecture. Different types of tests : module tests (unit tests), integration tests
+   (about interactions between components), system tests (global), acceptance tests (customer's
+   point of view). Importance of test automation. Necessity to select and systematically evaluate
+   metrics.
+7. about release management: define the process of publishing a release.licensing conditions must be
+   defined. Unique release number. Contains the documentation.
+8. about automation and dependency management: software development is complex. Often required
+   several software package with a specific version (dependencies) and other programs (development
+   environment). Necessity to automate the build process, the execution of tests, the creation of
+   the release package.

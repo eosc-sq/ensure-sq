@@ -1155,10 +1155,41 @@ The paper concludes that the most referenced quality model standards are ISO 912
 ### https://mediatum.ub.tum.de/doc/1110601/1110601.pdf
 
 ### Review
+The following qualities are sorted in order of importance, according to the paper.
+
+No definitions of the quality dimensions are provided, so I don't add them to the table
 
 | Paper_id | Name | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer | Comment |
 | :------: | :--: | :--------: | :----------------------: | :------------: | :------: | :-----: |
-|   153    |      |            |                          |                | DG       |         |
+|   153    |  Functional suitability    |            |                          |                | DG       |         |
+|   153    |  Availability    |            |                          |                | DG       |         |
+|   153    |  Reliability    |            |                          |                | DG       |         |
+|   153    |  Time behavior    |            |                          |                | DG       |         |
+|   153    |  Performance    |            |                          |                | DG       |         |
+|   153    |  Ease of use    |            |                          |                | DG       |         |
+|   153    |  Fault tolerance    |            |                          |                | DG       |         |
+|   153    |  Security    |            |                          |                | DG       |         |
+|   153    |  Maintainabilityu    |            |                          |                | DG       |         |
+|   153    |  Recoverability    |            |                          |                | DG       |         |
+|   153    |  Operability    |            |                          |                | DG       |         |
+|   153    |  Resource utilization    |            |                          |                | DG       |         |
+|   153    |  Safety    |            |                          |                | DG       |         |
+|   153    |  Interoperability    |            |                          |                | DG       |         |
+|   153    |  Attractiveness    |            |                          |                | DG       |         |
+|   153    |  Compatibility    |            |                          |                | DG       |         |
+|   153    |  Installability    |            |                          |                | DG       |         |
+|   153    |  Technical accessibility   |            |                          |                | DG       |         |
+|   153    |  Portability  |            |                          |                | DG       |         |
+
+**Summary**: The paper/thesis focuses on practitioners to examine software quality models in practice. Three main aspects of quality are dealt with: usage of QMs, importance of quality attributes and the potential improvements to QMs.
+
+- Focused in industry. Results reported through a survey.
+- Quality models are usually adapted to respondent needs.
+- ISO standard 9126 is not well accepted.
+
+Quality models mentioned:
+
+From most used to less used, company-specific, quality gates, defect classification, ISO 9126, Laws, CMMI, ISO 9001, ISO 250000, Rel. Groth.
 
 ---
 

@@ -522,6 +522,121 @@ activities with significant effects on software quality:
 * using an automated code auditor for standards compliance
 * performing design and code inspections
 
+## 150 - CESSDA Software Maturity Levels
+
+John Shepherdson
+
+<https://zenodo.org/record/2614050>
+
+| Paper_id | Name | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer | Comment |
+| :------: | :--: | :--------: | :----------------------: | :------------: | :------: | :-----: |
+|   150    |  Software Maturity Levels (SMMs) (with many sub-criterion)    |       The software maturity levels provide guidance on what minimum, expectedand excellent standards look like, and will be used to evaluate the productsproduced by SPs.     |  Quantitative              |       Yes         | CL       |  For all Qualitative/Quantitative questions, I answer them as Quantiative simply because there is a level, i.e. number, one can answered when talking about the maturity levels. However the actual measurements or management can be a mix.       |
+| :------: | :--: | :--------: | :----------------------: | :------------: | :------: | :-----: |
+|   150    |  Reuse Readiness Levels (RRLs) - used by SMMs |   Reuse Readiness Levels (RRLs), as developed by NASA Earth Science DataSystems, form the basis upon which the software maturity assessments are made. Usability is not only a political imperative of research infrastructures as they need to demonstrate a return on investment, but is also essential for growthwith limited funds and ongoing interoperability.   |  Quantitative  |  Yes   | CL       |         |
+| :------: | :--: | :--------: | :----------------------: | :------------: | :------: | :-----: |
+|   150    |  Capability Maturity Levels (CMMs) - used in combination with RRLs for service providers   |    A framework for organising continuouts process improvement steps into five maturity levels that lay successive foundations for continuous process improvement.         |                          |   No, services (service management) | CL       |         |
+| :------: | :--: | :--------: | :----------------------: | :------------: | :------: | :-----: |
+|   150    | Technology Readiness Levels (TRLs) - used for development of technical research Infrastructure    |  A method for estimating the maturity of technologies during the acquisition phase of a program, developed at NASA during the 1970s. The use of TRLs enables consistent, uniform discussions of technical maturity across different types of technology.     |    Quanitative    |     No, Technology   | CL       |         |
+| :------: | :--: | :--------: | :----------------------: | :------------: | :------: | :-----: |
+|   150    |   Documentation Standard (a part of RRLs and SMMs)   |   Overall document suites: en-user, operational and development documentations.         |      Quantiative    |   Yes, documentations for software             | CL       |         |
+| :------: | :--: | :--------: | :----------------------: | :------------: | :------: | :-----: |
+|   150    |      |            |                          |                | CL       |         |
+| :------: | :--: | :--------: | :----------------------: | :------------: | :------: | :-----: |
+|   150    |      |            |                          |                | CL       |         |
+
+**Quality Model** ("is based on", "mentions", "defines"): Own metrics. Based on maturity of
+technologies at NASA during the 1970s
+
+(Yes) This paper doesn't directly provides quality measurements but instead it is attempting to
+define software maturity levels, sustainability/reusability. However, the maturity levels are
+further broken down into sub-criteria. Two NASA defined readiness levels were mentioned or based on
+to help define these sub-criteria. These readiness levels can extend to services and technologies
+(Research Infrastructure). Many of these sub-criteria however, are relevant to common/known quality
+software criterion. In fact, usuability and sustability are two features of quality software. As
+such, this paper is of interest to software quality measurements.
+
+## 151 - A set of common software quality assurance baseline criteria for research projects
+
+Pablo Orviz, et al.
+
+<https://digital.csic.es/handle/10261/160086>
+
+| Paper_id | Name | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer | Comment |
+| :------: | :--: | :--------: | :----------------------: | :------------: | :------: | :-----: |
+|   151    |      |            |                          |                | CL       |         |
+
+**Quality Model** ("is based on", "mentions", "defines"): Own metrics. Based on DevOps best practices.
+
+Yes, this paper is a consolidation of Software Quality Assurace baseline criteria from ESOC. It also
+contains an applied use case (code workflow with DevOps) of the criteria.
+
+* Code Accessibility
+* Licensing
+* Code Style
+* Code metadata
+* Unit Testing
+* Test Harness
+* Test-Driven Development
+* Documentation
+* Security
+* Code Workflow
+* Semantic Versioning
+* Code Management
+* Code Review
+* Automated Delivery
+* Automated Deployment
+
+## 153 - Software Quality Models in Practice
+
+Stefan Wagner, Klaus Lochmann, Sebastian Winter, Andreas Goeb, Michael Kläs, Sabine Nunnenmacher
+
+<https://mediatum.ub.tum.de/doc/1110601/1110601.pdf>
+
+The following qualities are sorted in order of importance, according to the paper.
+No definitions of the quality dimensions are provided, so I don't add them to the table
+
+| Paper_id | Name | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer | Comment |
+| :------: | :--: | :--------: | :----------------------: | :------------: | :------: | :-----: |
+|   153    |  Functional suitability    |            |                          |                | DG       |         |
+|   153    |  Availability    |            |                          |                | DG       |         |
+|   153    |  Reliability    |            |                          |                | DG       |         |
+|   153    |  Time behavior    |            |                          |                | DG       |         |
+|   153    |  Performance    |            |                          |                | DG       |         |
+|   153    |  Ease of use    |            |                          |                | DG       |         |
+|   153    |  Fault tolerance    |            |                          |                | DG       |         |
+|   153    |  Security    |            |                          |                | DG       |         |
+|   153    |  Maintainabilityu    |            |                          |                | DG       |         |
+|   153    |  Recoverability    |            |                          |                | DG       |         |
+|   153    |  Operability    |            |                          |                | DG       |         |
+|   153    |  Resource utilization    |            |                          |                | DG       |         |
+|   153    |  Safety    |            |                          |                | DG       |         |
+|   153    |  Interoperability    |            |                          |                | DG       |         |
+|   153    |  Attractiveness    |            |                          |                | DG       |         |
+|   153    |  Compatibility    |            |                          |                | DG       |         |
+|   153    |  Installability    |            |                          |                | DG       |         |
+|   153    |  Technical accessibility   |            |                          |                | DG       |         |
+|   153    |  Portability  |            |                          |                | DG       |         |
+
+**Quality Model** ("is based on", "mentions", "defines"): From most used to less used:
+
+* company-specific
+* quality gates
+* defect classification
+* ISO 9126
+* Laws
+* CMMI
+* ISO 9001
+* ISO 250000
+* Rel. Groth.
+
+**Summary**: The paper/thesis focuses on practitioners to examine software quality models in
+practice. Three main aspects of quality are dealt with: usage of QMs, importance of quality
+attributes and the potential improvements to QMs.
+
+* Focused in industry. Results reported through a survey.
+* Quality models are usually adapted to respondent needs.
+* ISO standard 9126 is not well accepted.
+
 ## 155 - DLR Software Engineering Guidelines
 
 Schlauch, Tobias;  Meinel, Michael;  Haupt, Carina

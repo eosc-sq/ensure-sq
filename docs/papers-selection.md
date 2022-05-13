@@ -1114,9 +1114,27 @@ The paper concludes that the most referenced quality model standards are ISO 912
 
 ### Review
 
+(Yes) This paper doesn't directly provides quality measurements but instead it is attempting to define software maturity levels, sustainability/reusability. However, the maturity levels are further broken down into sub-criteria. Two NASA defined readiness levels were mentioned or based on to help define these sub-criteria. These readiness levels can extend to services and technologies (Research Infrastructure). Many of these sub-criteria however, are relevant to common/known quality software criterion. In fact, usuability and sustability are two features of quality software. As such, this paper is of interest to software quality measurements.
+
+
+
 | Paper_id | Name | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer | Comment |
 | :------: | :--: | :--------: | :----------------------: | :------------: | :------: | :-----: |
+|   150    |  Software Maturity Levels (SMMs) (with many sub-criterion)    |       The software maturity levels provide guidance on what minimum, expectedand excellent standards look like, and will be used to evaluate the productsproduced by SPs.     |  Quantitative              |       Yes         | CL       |  For all Qualitative/Quantitative questions, I answer them as Quantiative simply because there is a level, i.e. number, one can answered when talking about the maturity levels. However the actual measurements or management can be a mix.       |
+| :------: | :--: | :--------: | :----------------------: | :------------: | :------: | :-----: |
+|   150    |  Reuse Readiness Levels (RRLs) - used by SMMs |   Reuse Readiness Levels (RRLs), as developed by NASA Earth Science DataSystems, form the basis upon which the software maturity assessments are made. Usability is not only a political imperative of research infrastructures as they need to demonstrate a return on investment, but is also essential for growthwith limited funds and ongoing interoperability.   |  Quantitative  |  Yes   | CL       |         |
+| :------: | :--: | :--------: | :----------------------: | :------------: | :------: | :-----: |
+|   150    |  Capability Maturity Levels (CMMs) - used in combination with RRLs for service providers   |    A framework for organising continuouts process improvement steps into five maturity levels that lay successive foundations for continuous process improvement.         |                          |   No, services (service management) | CL       |         |
+| :------: | :--: | :--------: | :----------------------: | :------------: | :------: | :-----: |
+|   150    | Technology Readiness Levels (TRLs) - used for development of technical research Infrastructure    |  A method for estimating the maturity of technologies during the acquisition phase of a program, developed at NASA during the 1970s. The use of TRLs enables consistent, uniform discussions of technical maturity across different types of technology.     |    Quanitative    |     No, Technology   | CL       |         |
+| :------: | :--: | :--------: | :----------------------: | :------------: | :------: | :-----: |
+|   150    |   Documentation Standard (a part of RRLs and SMMs)   |   Overall document suites: en-user, operational and development documentations.         |      Quantiative    |   Yes, documentations for software             | CL       |         |
+| :------: | :--: | :--------: | :----------------------: | :------------: | :------: | :-----: |
 |   150    |      |            |                          |                | CL       |         |
+| :------: | :--: | :--------: | :----------------------: | :------------: | :------: | :-----: |
+|   150    |      |            |                          |                | CL       |         |
+
+
 
 ---
 
@@ -1127,6 +1145,24 @@ The paper concludes that the most referenced quality model standards are ISO 912
 ### https://digital.csic.es/handle/10261/160086
 
 ### Review
+
+Yes, this paper is a consolidation of Software Quality Assurace baseline criteria from ESOC. It also contains an applied use case (code workflow with DevOps)  of the criteria.
+ - Code Accessibility 
+ - Licensing
+ - Code Style
+ - Code metadata
+ - Unit Testing
+ - Test Harness 
+ - Test-Driven Development
+ - Documentation
+ - Security
+ - Code Workflow
+ - Semantic Versioning
+ - Code Management
+ - Code Review
+ - Automated Delivery
+ - Automated Deployment
+
 
 | Paper_id | Name | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer | Comment |
 | :------: | :--: | :--------: | :----------------------: | :------------: | :------: | :-----: |
@@ -1141,6 +1177,14 @@ The paper concludes that the most referenced quality model standards are ISO 912
 ### https://digital.csic.es/handle/10261/214441
 
 ### Review
+
+No, if we are focusing on capturing software quality criteria.
+Yes, if we are expanding the scope to include also the criteria when the software goes into operation (becomes a service)
+
+This paper attempts to provide an initial approach to Service Quality Assurance by placing the emphasis on the programmatic assessment of the quality conventions, i.e. compiled builds on the DevOps culture. It refers to paper #151 that facilitate the usability and reliability of services.
+
+
+
 
 | Paper_id | Name | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer | Comment |
 | :------: | :--: | :--------: | :----------------------: | :------------: | :------: | :-----: |

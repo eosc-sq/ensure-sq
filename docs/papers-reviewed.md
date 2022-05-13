@@ -586,6 +586,26 @@ contains an applied use case (code workflow with DevOps) of the criteria.
 * Automated Delivery
 * Automated Deployment
 
+## 152 - EOSC-synergy: A set of Common Service Quality Assurance Baseline Criteria for Research Projects
+
+Pablo Orviz, et al.
+
+<https://digital.csic.es/handle/10261/214441>
+
+| Paper_id | Name | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer | Comment |
+| :------: | :--: | :--------: | :----------------------: | :------------: | :------: | :-----: |
+|   152    |      |            |                          |                | CL       |         |
+
+**Quality Model** ("is based on", "mentions", "defines"): Own metrics. Based on DevOps best practices.
+
+No, if we are focusing on capturing software quality criteria.
+Yes, if we are expanding the scope to include also the criteria when the software goes into
+operation (becomes a service)
+
+This paper attempts to provide an initial approach to Service Quality Assurance by placing the
+emphasis on the programmatic assessment of the quality conventions, i.e. compiled builds on the
+DevOps culture. It refers to paper #151 that facilitate the usability and reliability of services.
+
 ## 153 - Software Quality Models in Practice
 
 Stefan Wagner, Klaus Lochmann, Sebastian Winter, Andreas Goeb, Michael Kläs, Sabine Nunnenmacher

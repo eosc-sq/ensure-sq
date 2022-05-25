@@ -1,8 +1,9 @@
 # Template for Quality Models
 
-Create a new file from this one for each QC model
+Create a new file from this one for each QC model list in [Quality model list](qc-model-list.md)
+as follows: `qc-model-ref-<XX>.md`
 
-Reviewer:
+Reviewer: `<Reviewer name/initials>`
 
 Reference:
 

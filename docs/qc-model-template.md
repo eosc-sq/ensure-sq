@@ -7,14 +7,16 @@ Reviewer: `<Reviewer name/initials>`
 
 Reference:
 
-| Codename | Name  | Definition | Automate/Manual | Category |
-| :------: | :---: | :--------: | :-------------: | :------: |
-| | | | | |
+| Codename | Name  | Definition | Automate/Manual | Category | Comment |
+| :------: | :---: | :--------: | :-------------: | :------: | :-----: |
+| | | | | | |
 
 * Codename: the quality metric may have a codename when defining the model (when available))
 * Name: name of the quality metric
 * Definition: definition of the quality metric
 * Automate/Manual: if the metric maybe automated or only evaluated manually (or through interview)
+* Comment: if the criteria/metric is deemed appropriate for our document, or if it is subjective
+  and difficult to measure.
 
 ## Category
 

@@ -9,7 +9,7 @@ Reference:
 
 | Codename | Name  | Definition | Automate/Manual | Category |
 | :------: | :---: | :--------: | :-------------: | :------: |
-| | | | |
+| | | | | |
 
 * Codename: the quality metric may have a codename when defining the model (when available))
 * Name: name of the quality metric
@@ -37,3 +37,4 @@ Reference:
 * Instability.
 * Technical accessibility.
 * Portability.
+* Documentation

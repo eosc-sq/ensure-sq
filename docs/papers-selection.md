@@ -1054,7 +1054,11 @@ The article describe the Boehm software quality model. It identifies characteris
 
 | Paper_id | Name | Definition | Qualitative/Quantitative | Targeted to SW | Reviewer | Comment |
 | :------: | :--: | :--------: | :----------------------: | :------------: | :------: | :-----: |
-|   147    |      |            |                          |                | ER       |         |
+|   147    |  internal quality view   | the set of quality properties of the source code and documentation that are deemed to influence the behaviour and use of the software           |    NA                      |   any             | ER       |  view in ISO IEC 9126 and ISO IEC 25010 standards        |
+|   147    |  external quality view   | the set of quality properties that determine how the software product behaves while it operates           |    Quantitative                      |   any             | ER       |  view in ISO IEC 9126 and ISO IEC 25010 standards        |
+|   147    |  quality-in-use view   | the set of quality properties that determine how the user perceives softwre product quality           |    Qualitative                      |   any             | ER       |  view in ISO IEC 9126 and ISO IEC 25010 standards        |
+
+**Note**: each quality view is used to interpret quality assessment results. The three views derive from ISO IEC 9126 and ISO IEC 25010 standards. This paper list a set of identified quality models. According to the relevance score (RS, the sum of the quality scores), SQALE, ISO9126, and ISO25010 have a RS > 100. However, ISO25010 replaced ISO9126.
 
 ---
 

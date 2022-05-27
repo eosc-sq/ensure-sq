@@ -7,8 +7,8 @@ Reviewer: `<Reviewer name/initials>`
 
 Reference:
 
-| Codename | Name  | Definition | Automate/Manual | Category | Comment |
-| :------: | :---: | :--------: | :-------------: | :------: | :-----: |
+| Codename | Name  | Definition | Aut(omate)/Man(ual) | Category | Comment |
+| :------: | :---: | :--------: | :-----------------: | :------: | :-----: |
 | | | | | | |
 
 * Codename: the quality metric may have a codename when defining the model (when available))

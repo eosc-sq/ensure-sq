@@ -1,7 +1,6 @@
 Reviewer: MC (Miguel Colom)
 
-Reference: (ID = 93) - Early estimation of software quality using in-process testing metrics: A controlled case study, Nagappan N., Williams L., Vouk M., Osborne J.
-<https://www.scopus.com/inward/record.uri?eid=2-s2.0-77955433687&doi=10.1145%2f1083292.1083304&partnerID=40&md5=c3b21a87b407b65539153ab3017b0eda>
+Reference: (ID = 128) - Experiences of software quality management using metrics through the life-cycle, Ogasawara Hideto, Yamada Atsushi, Kojo Michiko <https://www.scopus.com/inward/record.uri?eid=2-s2.0-0029516009&partnerID=40&md5=68106def0b53f2f1a609753364cb4705>
 
 | Codename | Name  | Definition | Aut(omate)/Man(ual) | Category | Comment |
 | :------: | :---: | :--------: | :-----------------: | :------: | :-----: |

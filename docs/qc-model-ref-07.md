@@ -9,9 +9,9 @@ Reference: (ID = 93) - Early estimation of software quality using in-process tes
 |SM2|Number of test cases SLOC*|number of lines of source code containing test cases that check that the program is behaving as expected|Aut|Reliability|it refers to tests intented to be automated, as for example unit test cases|
 |SM3|number of assertions / number of test cases|ratio number of assertions / number of test cases|Aut|Reliability||
 |SM4|control measure to counter the confounding effect of class size on the prediction efficiency|(TLOC+/SLOC*) / (number of test classes / number of source classes)|Aut|Reliability||
-|SM5|cyclomatic complexity test/source ratio|ratio between the sum of cyclomatic complexities of all tests and the whole source code|Aut|Instability|the "cyclomatic complexity" is the number of linearly independent paths in a program. Graph theory applied to software analysis. The paper doesn't provide details on how this metric is calculated exactly.|
-|SM6|coupling between objects (CBO) ratio|ratio between the CBO in the tests and the whole source code|Aut|Instability||
-|SM7|depth of inheritance tree (DIT) ratio|ratio between the DIT of the tests and the DIT of the whole source code|Aut|Instability||
-|SM8|weighted methods per class (WMC) ratio|ratio between the WMC of the tests with respect of the WMC of the whole source code|Aut|Instability|it can be automated if the size of the "weighted" object is a parameter|
-|SM9|SLOC* ratio|SLOC* of the whole project with respect to the minimum SLOC* of its components|Aut|Instability||
+|SM5|cyclomatic complexity test/source ratio|ratio between the sum of cyclomatic complexities of all tests and the whole source code|Aut|Complexity|the "cyclomatic complexity" is the number of linearly independent paths in a program. Graph theory applied to software analysis. The paper doesn't provide details on how this metric is calculated exactly.|
+|SM6|coupling between objects (CBO) ratio|ratio between the CBO in the tests and the whole source code|Aut|Complexity||
+|SM7|depth of inheritance tree (DIT) ratio|ratio between the DIT of the tests and the DIT of the whole source code|Aut|Complexity||
+|SM8|weighted methods per class (WMC) ratio|ratio between the WMC of the tests with respect of the WMC of the whole source code|Aut|Complexity|it can be automated if the size of the "weighted" object is a parameter|
+|SM9|SLOC* ratio|SLOC* of the whole project with respect to the minimum SLOC* of its components|Aut|Complexity||
 

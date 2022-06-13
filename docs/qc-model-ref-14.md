@@ -1,7 +1,5 @@
 # Template for Quality Models
 
-Create a new file from this one for each QC model list in [Quality model list](qc-model-list.md)
-as follows: `qc-model-ref-<XX>.md`
 
 Reviewer: CL
 
@@ -9,20 +7,20 @@ Reference: (ID = 151) - A set of common software quality assurance baseline crit
 
 | Codename | Name  | Definition | Aut(omate)/Man(ual) | Category | Comment |
 | :------: | :---: | :--------: | :-----------------: | :------: | :-----: |
-|CA1  |Open source and publicly available | Following the open-source model, the source code being produced MUST be open and publicly available to promote the adoption and augment the visibility of the software developments.| Manuel |Code Accessibility | |
-|CA2 | Version Control System |Source code MUST use a Version Control System (VCS).It is RECOMMENDED that all software components delivered by the same project agree on a common VCS. | Manual |Code Accessibility | |
-|CA3 | Source code residency |Source code produced within the scope of a broader development project SHOULD reside in a common organization of a version control repository hosting service. | Manual |Code Accessibility | |
+|CA1  |Open source and publicly available | Following the open-source model, the source code being produced MUST be open and publicly available to promote the adoption and augment the visibility of the software developments.| Manuel |Code Accessibility (Availability, Usability, Atrractiveness) | |
+|CA2 | Version Control System |Source code MUST use a Version Control System (VCS).It is RECOMMENDED that all software components delivered by the same project agree on a common VCS. | Manual |Code Accessibility (Technical accessibility)  | |
+|CA3 | Source code residency |Source code produced within the scope of a broader development project SHOULD reside in a common organization of a version control repository hosting service. | Manual |Code Accessibility (Technical accessibility and Attractiveness) | |
 |L1 |Open-source license |As open-source software, source code MUST adhere to an open-source license to be freely used, modified and distributed by others. Non-licensed software is exclusive copyright by default.  | Manual | Licensing | |
 |L2 |Open Source Definition |License MUST be compliant with the Open Source Definition. RECOMMENDED licenses are listed in the Open Source Initiative portal under the Popular Licenses category. |Manual |Licensing  | |
 |L3 | Presence of licenses |Licenses MUST be physically present (e.g. as a LICENSE file) in the root of all the source code repositories related to the software component. |Manual |Licensing | |
-|CW1 |Working state version | The main branch in the source code repository MUST maintain a working state version of the software component. Main branch SHOULD be protected to disallow force pushing, thus preventing untested and unreviewed source code from entering the production-ready version. New features SHOULD only be merged in the main branch whenever the SQA criteria is fulfilled. | Automatic/Manual | Code Workflow | |
-|CW2 |Change Branches |New changes in the source code MUST be placed in individual branches. It is RECOMMENDED to agree on a branch nomenclature, usually by prefixing, to differentiate change types (e.g. feature, release, fix). | Manual | Code Workflow | |
-|CW3 |Secondary long-term branch |The existence of a secondary long-term branch that contains the changes for the next release is RECOMMENDED. Next release changes come from the individual branches. Once ready for release, changes in the secondary long-term branch are merged into the main branch and versioned. At that point in time, main and secondary branches are aligned. This step SHOULD mark a production release.  |Manual |Code Workflow | |
-|CW4 | Semantic Versioning specification |Semantic Versioning specification is RECOMMENDED for tagging the production releases. |Manual  |Code Workflow | |
-|CS1 |Compliance with de-facto style standard |Each individual software product MUST comply with a de-facto code style standard for all the programming languages used in the codebase. Compliance with multiple standards MAY exist.  |Manual |Code Style | |
-|CS2 |Avoid custom code style guidelines |Custom code style guidelines MUST be avoided, only considered in the hypothetical event of programming languages without existing community style standards. Custom styles MUST be documented by defining each convention and its expected output. Custom styles SHOULD evolve over time towards a more consistent definition.  |Manual |Code Style | |
-|CS3 |Allow exceptions |Exceptions of individual conventions from the main definition are allowed but SHOULD be avoided. Absence of standard conventions SHOULD be justified and tracked.  |Manual |Code Style | |
-|CS4 |Automated code style compliance testing |Code style compliance testing MUST be automated and MUST be triggered for each candidate change in the source code. | Automatic |Code Style | |
+|CW1 |Working state version | The main branch in the source code repository MUST maintain a working state version of the software component. Main branch SHOULD be protected to disallow force pushing, thus preventing untested and unreviewed source code from entering the production-ready version. New features SHOULD only be merged in the main branch whenever the SQA criteria is fulfilled. | Automatic/Manual | Code Workflow (Maintainability) | |
+|CW2 |Change Branches |New changes in the source code MUST be placed in individual branches. It is RECOMMENDED to agree on a branch nomenclature, usually by prefixing, to differentiate change types (e.g. feature, release, fix). | Manual | Code Workflow (Maintainability) | |
+|CW3 |Secondary long-term branch |The existence of a secondary long-term branch that contains the changes for the next release is RECOMMENDED. Next release changes come from the individual branches. Once ready for release, changes in the secondary long-term branch are merged into the main branch and versioned. At that point in time, main and secondary branches are aligned. This step SHOULD mark a production release.  |Manual |Code Workflow (Maintainability) | |
+|CW4 | Semantic Versioning specification |Semantic Versioning specification is RECOMMENDED for tagging the production releases. |Manual  |Code Workflow (Maintainability) | |
+|CS1 |Compliance with de-facto style standard |Each individual software product MUST comply with a de-facto code style standard for all the programming languages used in the codebase. Compliance with multiple standards MAY exist.  |Manual |Code Style (Maintainability) | |
+|CS2 |Avoid custom code style guidelines |Custom code style guidelines MUST be avoided, only considered in the hypothetical event of programming languages without existing community style standards. Custom styles MUST be documented by defining each convention and its expected output. Custom styles SHOULD evolve over time towards a more consistent definition.  |Manual |Code Style (Maintainability) | |
+|CS3 |Allow exceptions |Exceptions of individual conventions from the main definition are allowed but SHOULD be avoided. Absence of standard conventions SHOULD be justified and tracked.  |Manual |Code Style (Maintainability) | |
+|CS4 |Automated code style compliance testing |Code style compliance testing MUST be automated and MUST be triggered for each candidate change in the source code. | Automatic |Code Style (Maintainability) | |
 |UT1 |Minimum acceptable code coverage |Minimum acceptable code coverage threshold SHOULD be 70%. Unit testing coverage SHOULD be higher for those sections of the code identified as critical by the developers, such as units part of a security module. Unit testing coverage MAY be lower for external libraries or pieces of code not maintained within the product's code base.  | Automatic |Unit Testing | |
 |UT2 |Separation of main code and units |Units SHOULD reside in the repository code base but separated from the main code. |Manual  |Unit Testing | |
 |UT3 |Unit testing coverage checks |Unit testing coverage MUST be checked on change basis. |Autoamtic |Unit Testing | |
@@ -55,49 +53,27 @@ Reference: (ID = 151) - A set of common software quality assurance baseline crit
 |S7 |Files & Directories creation |World-writable files SHOULD NOT be created while the service is in operation. Whenever they are required, the relevant files MUST be documented. |Manual |Security | |
 |S8 |Files and passwords |World-readable files MUST NOT contain passwords. |Manual |Security | |
 |S9 |Service delivery at operational level |The services delivered SHALL adhere to any extra security policies or requirements set at the operational level. |Manual |Security | |
-|CR1 |Code review functionality |Code reviews MUST be done in the agreed peer review tool within the project, with the following RECOMMENDED functionality: (a) Allows general and specific comments on the line or lines that need to be reviewed. (b) Shows the results of the required change-based test executions. (c) Allows to prevent merges of the candidate change whenever not all the required tests are successful. \\Exceptions to this rule cover the third-party or upstream contributions which MAY use the existing mechanisms or tools for code review provided by the target software project. This exception MUST only be allowed whenever the external revision lifecycle does not interfere with the project deadlines. |Manual |Code Review | |
-|CR2 |Open and collaborative |Code reviews MUST be open and collaborative, allowing external expert revisions. |Manual |Code Review | |
-|CR3 |Lightweight and Informal |Code reviews SHOULD be lightweight and informal, meaning that some of the areas the reviewers MAY focus are: (a) Message description: commit message is clear, self-explanatory and describes precisely the objectives being addressed. (b) Goal or scope: change is needed and/or addresses/fixes the whole set of objectives. (c) Code analysis: useless statements in the code, library or modules imported but never used or code style suggestions. (d) Review of required tests: current battery of tests is sufficient for validation. (e) Review of documentation: whether the change SHOULD bring along a corresponding update in the documentation. |Manual |Code Review | |
-|CR4 |Code review checks |Code reviews MUST be checked on change basis. |Automatic/Manual |Code Review | |
-|CR5 |Security risk assessments |Code reviews SHOULD assess the inherent security risk of the changes, ensuring that the security model has not been downgraded or compromised by the changes. |Manul |Code Review | |
-|AD1 |SCM module as code |A software configuration management (SCM) moduleis treated as code. Version controlled, it SHOULD reside in a different repository than the source code to facilitate the distribution. |Manual |Automated Deployment | |
-|AD2 |SCM tool |It is RECOMMENDED that all software components delivered by the same project agree on a common SCM tool. However, software products are not restricted to provide a unique solution for the automated deployment. |Manual |Automated Deployment | |
-|AD3 |Changes |Any change affecting the application�s deployment or operation MUST be subsequently reflected in the relevant SCM modules. |Manual |Automated Deployment | |
-|AD4 |Official repositories |Official repositories provided by the manufacturer SHOULD be used to host the SCM modules, thus augmenting the visibility and promote external collaboration. |Manual |Automated Deployment | |
+|CR1 |Code review functionality |Code reviews MUST be done in the agreed peer review tool within the project, with the following RECOMMENDED functionality: (a) Allows general and specific comments on the line or lines that need to be reviewed. (b) Shows the results of the required change-based test executions. (c) Allows to prevent merges of the candidate change whenever not all the required tests are successful. \\Exceptions to this rule cover the third-party or upstream contributions which MAY use the existing mechanisms or tools for code review provided by the target software project. This exception MUST only be allowed whenever the external revision lifecycle does not interfere with the project deadlines. |Manual |Code Review  (Maintainability) | |
+|CR2 |Open and collaborative |Code reviews MUST be open and collaborative, allowing external expert revisions. |Manual |Code Review  (Maintainability) | |
+|CR3 |Lightweight and Informal |Code reviews SHOULD be lightweight and informal, meaning that some of the areas the reviewers MAY focus are: (a) Message description: commit message is clear, self-explanatory and describes precisely the objectives being addressed. (b) Goal or scope: change is needed and/or addresses/fixes the whole set of objectives. (c) Code analysis: useless statements in the code, library or modules imported but never used or code style suggestions. (d) Review of required tests: current battery of tests is sufficient for validation. (e) Review of documentation: whether the change SHOULD bring along a corresponding update in the documentation. |Manual |Code Review (Usability and Maintainability) | |
+|CR4 |Code review checks |Code reviews MUST be checked on change basis. |Automatic/Manual |Code Review (Maintainability) | |
+|CR5 |Security risk assessments |Code reviews SHOULD assess the inherent security risk of the changes, ensuring that the security model has not been downgraded or compromised by the changes. |Manul |Code Review (Security and Maintainability)| |
+|AD1 |SCM module as code |A software configuration management (SCM) moduleis treated as code. Version controlled, it SHOULD reside in a different repository than the source code to facilitate the distribution. |Manual |Automated Deployment (Operability) | |
+|AD2 |SCM tool |It is RECOMMENDED that all software components delivered by the same project agree on a common SCM tool. However, software products are not restricted to provide a unique solution for the automated deployment. |Manual |Automated Deployment (Operability) | |
+|AD3 |Changes |Any change affecting the application�s deployment or operation MUST be subsequently reflected in the relevant SCM modules. |Manual |Automated Deployment (Operability) | |
+|AD4 |Official repositories |Official repositories provided by the manufacturer SHOULD be used to host the SCM modules, thus augmenting the visibility and promote external collaboration. |Manual |Automated Deployment (Operability) | |
 
-
-
-
-
-
-
-
-* Codename: the quality metric may have a codename when defining the model (when available))
-* Name: name of the quality metric
-* Definition: definition of the quality metric
-* Automate/Manual: if the metric maybe automated or only evaluated manually (or through interview)
-* Comment: if the criteria/metric is deemed appropriate for our document, or if it is subjective
-  and difficult to measure.
 
 ## Category
 
-* Functional suitability.
-* Availability.
-* Reliability.
-* Time behavior.
-* Performance.
-* Ease of use (Usability)
-* Fault tolerance.
-* Security.
-* Maintainability
-* Recoverability
-* Operability.
-* Resource utilization.
-* Safety.
-* Interoperability.
-* Attractiveness.
-* Compatibility
-* Instability.
-* Technical accessibility.
-* Portability.
+* Code Accessibility
+* Licensing
+* Code Workflow
+* Code Style
+* Unit Testing
+* Functional Testing
+* Integration Testing
 * Documentation
+* Security
+* Code Review
+* Automated Deployment 

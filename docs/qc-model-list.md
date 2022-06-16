@@ -76,12 +76,12 @@ former.
 
 * **Ref-14** (ID = 151) - A set of common software quality assurance baseline criteria for research
                           projects, Pablo Orviz, et al. <https://digital.csic.es/handle/10261/160086>
-  * Assign to: *CL - Cerlane Leong*
+  * Assign to: *CL - Cerlane Leong* **DONE**
 
 * **Ref-15** (ID = 152) - EOSC-synergy: A set of Common Service Quality Assurance Baseline Criteria
                           for Research Projects, Pablo Orviz, et al.
                           <https://digital.csic.es/handle/10261/214441>
-  * Assign to: *CL - Cerlane Leong*
+  * Assign to: *CL - Cerlane Leong* **DONE**
 
 * **Ref-16** (ID = 154) - Software Release Practice HOWTO, Eric Steven Raymond,
                           <https://tldp.org/HOWTO/Software-Release-Practice-HOWTO/>

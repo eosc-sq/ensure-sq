@@ -41,12 +41,12 @@ former.
 * **Ref-07** (ID = 93) - Early estimation of software quality using in-process testing metrics: A
                          controlled case study, Nagappan N., Williams L., Vouk M., Osborne J.
                          <https://www.scopus.com/inward/record.uri?eid=2-s2.0-77955433687&doi=10.1145%2f1083292.1083304&partnerID=40&md5=c3b21a87b407b65539153ab3017b0eda>
-  * Assign to: *MC - Miguel Colom*
+  * Assign to: *MC - Miguel Colom* **DONE**
 
 * **Ref-08** (ID = 128) - Experiences of software quality management using metrics through the
                           life-cycle, Ogasawara Hideto, Yamada Atsushi, Kojo Michiko
                           <https://www.scopus.com/inward/record.uri?eid=2-s2.0-0029516009&partnerID=40&md5=68106def0b53f2f1a609753364cb4705>
-  * Assign to: *MC - Miguel Colom*
+  * Assign to: *MC - Miguel Colom* **DONE**
 
 * **Ref-09** (ID = 129) - Controlling and predicting the quality of space shuttle software using
                           metrics, Schneidewind N.F.
@@ -68,7 +68,7 @@ former.
 * **Ref-12** (ID = 146) - Quantitative evaluation of software quality, Boehm B.W., Brown J.R.,
                           Lipow M.
                           <https://www.scopus.com/inward/record.uri?eid=2-s2.0-85042377749&partnerID=40&md5=86df793c94725cf352a0b8b3d8227c3c>
-  * Assign to: *VL - Violaine Louvet*
+  * Assign to: *VL - Violaine Louvet* **DONE**
 
 * **Ref-13** (ID = 150) - CESSDA Software Maturity Levels, John Shepherdson
                           <https://zenodo.org/record/2614050>

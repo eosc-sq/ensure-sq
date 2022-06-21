@@ -90,9 +90,11 @@ former.
 * **Ref-17** (ID = 156) - Guide for Reproducible Research, The Turing Way Community, Becky Arnold,
                           Louise Bowler, Sarah Gibson, Patricia Herterich, Rosie Higman, ...
                           Kirstie Whitaker. <http://doi.org/10.5281/zenodo.3233986>
-  * Assign to:
+  * Assign to: *LC - Laura del Cano* (Very relevant but no metrics can be extracted to the common quality models list).
 
 * **Ref-18** (ID = 153) - DLR Software Engineering Guidelines, Schlauch, Tobias;  Meinel, Michael;
-                          Haupt, Carina <https://zenodo.org/record/1344612#.YmvBiHXMKKM>
+                          Haupt, Carina <https://zenodo.org/record/6533831>
   * Refers several quality models, it does not define QModels itself.
-  * Assign to:
+  * Assign to: *LC - Laura del Cano* (Not relevant?)
+    
+    Note LC: Interesting paper but no metrics can be extracted to the common quality models list.

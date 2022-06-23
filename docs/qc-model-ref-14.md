@@ -1,9 +1,9 @@
-# Template for Quality Models
+# QM Reference 14: (paper ID = 151)
 
+Reviewer: CL (Cerlane Leong)
 
-Reviewer: CL
-
-Reference: (ID = 151) - A set of common software quality assurance baseline criteria for research projects, Pablo Orviz, et al. https://digital.csic.es/handle/10261/160086
+A set of common software quality assurance baseline criteria for research projects, Pablo Orviz, et al.
+<https://digital.csic.es/handle/10261/160086>
 
 | Codename | Name  | Definition | Aut(omate)/Man(ual) | Category | Comment |
 | :------: | :---: | :--------: | :-----------------: | :------: | :-----: |

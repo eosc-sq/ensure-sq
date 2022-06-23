@@ -1,4 +1,4 @@
-# Template for Quality Models
+# QM Reference 16: (paper ID = 154)
 
 Reviewer:  MD (Mario David)
 

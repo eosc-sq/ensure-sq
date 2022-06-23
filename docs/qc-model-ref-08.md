@@ -1,6 +1,9 @@
+# QM Reference 08: (paper ID = 128)
+
 Reviewer: MC (Miguel Colom)
 
-Reference: (ID = 128) - Experiences of software quality management using metrics through the life-cycle, Ogasawara Hideto, Yamada Atsushi, Kojo Michiko <https://www.scopus.com/inward/record.uri?eid=2-s2.0-0029516009&partnerID=40&md5=68106def0b53f2f1a609753364cb4705>
+Experiences of software quality management using metrics through the life-cycle, Ogasawara Hideto, Yamada Atsushi, Kojo Michiko
+<https://www.scopus.com/inward/record.uri?eid=2-s2.0-0029516009&partnerID=40&md5=68106def0b53f2f1a609753364cb4705>
 
 | Codename | Name  | Definition | Aut(omate)/Man(ual) | Category | Comment |
 | :------: | :---: | :--------: | :-----------------: | :------: | :-----: |

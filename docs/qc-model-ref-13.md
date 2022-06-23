@@ -1,8 +1,8 @@
-# Template for Quality Models
+# QM Reference 13: (paper ID = 150)
 
 Reviewer: MD (Mario David)
 
-Reference: (ID = 150) - CESSDA Software Maturity Levels, John Shepherdson
+CESSDA Software Maturity Levels, John Shepherdson
 <https://zenodo.org/record/2614050>
 
 Define 5 levels of maturity:

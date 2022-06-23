@@ -1,8 +1,9 @@
-# Template for Quality Models
+# QM Reference 15: (paper ID = 152)
 
-Reviewer: CL
+Reviewer: CL (Cerlane Leong)
 
-Reference:  (ID = 152) - EOSC-synergy: A set of Common Service Quality Assurance Baseline Criteria for Research Projects, Pablo Orviz, et al. https://digital.csic.es/handle/10261/214441
+Reference:  (ID = 152) - EOSC-synergy: A set of Common Service Quality Assurance Baseline Criteria for Research Projects, Pablo Orviz, et al.
+<https://digital.csic.es/handle/10261/214441>
 
 | Codename | Name  | Definition | Aut(omate)/Man(ual) | Category | Comment |
 | :------: | :---: | :--------: | :-----------------: | :------: | :-----: |

@@ -1,8 +1,9 @@
-# Template for Quality Models
+# QM Reference 12: (paper ID = 146)
 
 Reviewer: VL (Violaine Louvet)
 
-Reference: (ID = 146) - Quantitative evaluation of software quality, Boehm B.W., Brown J.R., Lipow M. https://www.scopus.com/inward/record.uri?eid=2-s2.0-85042377749&partnerID=40&md5=86df793c94725cf352a0b8b3d8227c3c
+Quantitative evaluation of software quality, Boehm B.W., Brown J.R., Lipow M. 
+<https://www.scopus.com/inward/record.uri?eid=2-s2.0-85042377749&partnerID=40&md5=86df793c94725cf352a0b8b3d8227c3c>
 
 | Codename | Name  | Definition | Aut(omate)/Man(ual) | Category | Comment |
 | :------: | :---: | :--------: | :-----------------: | :------: | :-----: |

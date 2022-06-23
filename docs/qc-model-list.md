@@ -58,7 +58,7 @@ former.
                           Based on:
   * Watts, R. (1987) Measuring Software Quality, NCC Publications Manchester.
   * Gilb, T. (1988) Principles of Software Engineering Management, Addison-Wesley.
-  * Assign to: *MD Mario David*
+  * Assign to: *MD Mario David* **DONE** (many non relevant metrics, since are manual and/or based on interviews)
 
 * **Ref-11** (ID = 144) - Practice of quality modeling and measurement on software life-cycle,
                           Hirayama Masayuki, Sato Hiroyuki, Yamada Atushi, Tsuda Junichiro

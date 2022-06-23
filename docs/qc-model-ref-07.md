@@ -1,6 +1,8 @@
+# Reference: (ID = 93)
+
 Reviewer: MC (Miguel Colom)
 
-Reference: (ID = 93) - Early estimation of software quality using in-process testing metrics: A controlled case study, Nagappan N., Williams L., Vouk M., Osborne J.
+Early estimation of software quality using in-process testing metrics: A controlled case study, Nagappan N., Williams L., Vouk M., Osborne J.
 <https://www.scopus.com/inward/record.uri?eid=2-s2.0-77955433687&doi=10.1145%2f1083292.1083304&partnerID=40&md5=c3b21a87b407b65539153ab3017b0eda>
 
 | Codename | Name  | Definition | Aut(omate)/Man(ual) | Category | Comment |

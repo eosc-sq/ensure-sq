@@ -31,7 +31,7 @@ former.
 * **Ref-05** (ID = 88) - Driving software quality: How test-driven development impacts software
                          quality, Crispin L.
                          <https://www.scopus.com/inward/record.uri?eid=2-s2.0-33846907119&doi=10.1109%2fMS.2006.157&partnerID=40&md5=1c6ac14fdd83073f861f9ec5b1e95701>
-  * Assign to: *MT - Massimo Torquati*
+  * Assign to: *MT - Massimo Torquati* **DONE**
 
 * **Ref-06** (ID = 92) - Software quality development and assurance in RUP, MSF and XP - A
                          comparative study, Zuser W., Heil S., Grechenig T.

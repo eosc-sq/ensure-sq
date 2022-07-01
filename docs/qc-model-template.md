@@ -7,36 +7,42 @@ Reviewer: `<Reviewer name/initials>`
 
 Reference:
 
-| Codename | Name  | Definition | Aut(omate)/Man(ual) | Category | Comment |
-| :------: | :---: | :--------: | :-----------------: | :------: | :-----: |
+| Codename | Name  | Definition | Aut(omate)/Man(ual) | Characteristics | Comment |
+| :------: | :---: | :--------: | :-----------------: | :-------------: | :-----: |
 | | | | | | |
 
 * Codename: the quality metric may have a codename when defining the model (when available))
 * Name: name of the quality metric
 * Definition: definition of the quality metric
 * Automate/Manual: if the metric maybe automated or only evaluated manually (or through interview)
+* Characteristics: see below
 * Comment: if the criteria/metric is deemed appropriate for our document, or if it is subjective
   and difficult to measure.
 
-## Category
+## Software Quality Characteristics
 
-* Functional suitability.
-* Availability.
-* Reliability.
-* Time behavior.
-* Performance.
+* Functional suitability
+* Availability
+* Reliability
+* Time behavior
+* Performance
 * Ease of use (Usability)
-* Fault tolerance.
-* Security.
+* Fault tolerance
+* Security
 * Maintainability
 * Recoverability
-* Operability.
-* Resource utilization.
-* Safety.
-* Interoperability.
-* Attractiveness.
+* Operability / Manageability
+* Resource utilisation
+* Safety
+* Interoperability
+* Attractiveness
 * Compatibility
-* Instability.
-* Technical accessibility.
-* Portability.
-* Documentation
+* Installability
+* Technical accessibility
+* Portability /Adaptability
+* Modifiability
+* Reusability
+* Scalability
+* Supportability
+* Testability
+* Confidentiality

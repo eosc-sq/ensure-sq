@@ -22,7 +22,7 @@ former.
 * **Ref-03** (ID = 45) - A systematic review of quality attributes and measures for software product
                          lines, Montagud S., Abrahão S., Insfran E.
                          <https://www.scopus.com/inward/record.uri?eid=2-s2.0-84865626740&doi=10.1007%2fs11219-011-9146-7&partnerID=40&md5=33b25cd0a25fc09685e06cbc9c988f14>
-  * Assign to: *JC - Leyla Jael Castro*
+  * Assign to: *JC - Leyla Jael Castro* **DONE**
 
 * **Ref-04** (ID = 85) - Achieving quality in open-source software, Aberdour M.
                          <https://www.scopus.com/inward/record.uri?eid=2-s2.0-33846917203&doi=10.1109%2fMS.2007.2&partnerID=40&md5=08d47741430e05c8a0ceb015a1f43a04>
@@ -58,7 +58,7 @@ former.
                           Based on:
   * Watts, R. (1987) Measuring Software Quality, NCC Publications Manchester.
   * Gilb, T. (1988) Principles of Software Engineering Management, Addison-Wesley.
-  * Assign to: *MD Mario David* **DONE** (many non relevant metrics, since are manual and/or based on interviews)
+  * Assign to: *MD Mario David* **DONE**
 
 * **Ref-11** (ID = 144) - Practice of quality modeling and measurement on software life-cycle,
                           Hirayama Masayuki, Sato Hiroyuki, Yamada Atushi, Tsuda Junichiro

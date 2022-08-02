@@ -7,3 +7,5 @@ ISO/IEC 25010:2011 Systems and software engineering — Systems and software Qua
 | Codename | Name  | Definition | Aut(omate)/Man(ual) | Characteristics | Comment |
 | :------: | :---: | :--------: | :-----------------: | :-------------: | :-----: |
 
+None
+

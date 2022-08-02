@@ -13,7 +13,7 @@ former.
                Requirements and Evaluation (SQuaRE) — System and software quality models:
                <https://www.iso.org/standard/35733.html>
   * Articles ID (include ISO/IEC 9126): 11, 46, 58, 99, 108, 124, 147.
-  * Assign to: *ER - Elisabetta Ronchieri*
+  * Assign to: *ER - Elisabetta Ronchieri* **DONE**
 
 * **Ref-02** (ID = 41) - Fostering software quality assessment, Brandtner M.
                <https://www.scopus.com/inward/record.uri?eid=2-s2.0-84886382849&doi=10.1109%2fICSE.2013.6606725&partnerID=40&md5=9e042076903be6351b3b97be6a877cb3>

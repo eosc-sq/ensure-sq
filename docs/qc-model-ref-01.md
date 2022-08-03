@@ -4,7 +4,8 @@ Reviewer:  ER (Elisabetta Ronchieri)
 
 ISO/IEC 25010:2011 Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models: https://www.iso.org/standard/35733.html
 
-(paper ID = 46) Standardized code quality benchmarking for improving software maintainability
+(paper ID = 46) Standardized code quality benchmarking for improving software maintainability: https://www.scopus.com/inward/record.uri?eid=2-s2.0-84860465895&doi=10.1007%2fs11219-011-9144-9&partnerID=40&md5=042a7624f2cb95e1a97643ef8e0f9071
+
 
 | Codename | Name  | Definition | Aut(omate)/Man(ual) | Characteristics | Comment |
 | :------: | :---: | :--------: | :-----------------: | :-------------: | :-----: |

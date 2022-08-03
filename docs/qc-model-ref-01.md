@@ -15,3 +15,11 @@ ISO/IEC 25010:2011 Systems and software engineering — Systems and software Qua
 |          | Cyclomatic Complexity per unit (McCabe) | Evaluate the unit complexity property | aut | Maintainability, Changeability, Testability |  |
 |          | Number of parameters per unit | number of parameters declared in the interface of each unit | aut | Maintainability, Stability |  units with many parameters can be a symptom of bad encapsulation |
 |          | Number of incoming calls per module | number of incoming invocations for each module, evaluating the module coupling property | aut | Maintainability, Changeability, Stability | The notion of module is defined as a delimited group of units (e.g. a class or a file) |
+
+
+(paper ID = 58) Quality specification and metrication, results from a case-study in a mission-critical software domain
+
+
+| Codename | Name  | Definition | Aut(omate)/Man(ual) | Characteristics | Comment |
+| :------: | :---: | :--------: | :-----------------: | :-------------: | :-----: |
+|          | Complex compound set of metrics | | Aut | Reliability | It is not possible to determine a single metric|

@@ -8,9 +8,9 @@ ISO/IEC 25010:2011 Systems and software engineering — Systems and software Qua
 
 | Codename | Name  | Definition | Aut(omate)/Man(ual) | Characteristics | Comment |
 | :------: | :---: | :--------: | :-----------------: | :-------------: | :-----: |
-|          | Volume | size of the software application | aut | Maintainability, Analysability | the larger a system, the more effort it takes to maintain since there is more information to be taken into account. |  
-|          | Redundancy | level of redundancy in code | aut | Maintainability, Analysability, Changeability | duplicated code has to be maintained in all places where it occurs |
-|          | Unit Size | lowest-level piece of functionality that should be maintained | aut | Maintainability, Analysability, Testability | lines of code per unit (unit is the smallest piece of  invokable code) code |
-|          | Unit Complexity | level of complexity that should be comprehended | aut | Maintainability, Changeability, Testability | no specific metric is reported |
-|          | Interface Size | number of parameters in interface | aut | Maintainability, Stability |  units with many parameters can be a symptom of bad encapsulation |
-|          | Module Coupling | number of coupled components/modules | aut | Maintainability, Changeability, Stability | tightly coupled components are more resistant to change |
+|          | Estimated rebuild value | Evaluate the volume property | aut | Maintainability, Analysability | The larger a system, the more effort it takes to maintain since there is more information to be taken into account. The metric is estimated from the number of lines of code. The value is calculated in man-years. |  
+|          | Percentage of Redundant code | evaluate the duplication property | aut | Maintainability, Analysability, Changeability | Duplicated code has to be maintained in all places where it occurs. A line of code is considered redundant if it is part of a code fragment (larger than 6 lines of code) that is repeated literally in at least one other location in the source code. |
+|          | Lines of code per unit | the number of lines of code in each unit, evaluating the unit size property | aut | Maintainability, Analysability, Testability | lines of code per unit (unit is the smallest piece of  invokable code) code |
+|          | Cyclomatic Complexity per unit (McCabe) | Evaluate the unit complexity property | aut | Maintainability, Changeability, Testability |  |
+|          | Number of parameters per unit | number of parameters declared in the interface of each unit | aut | Maintainability, Stability |  units with many parameters can be a symptom of bad encapsulation |
+|          | Number of incoming calls per module | number of incoming invocations for each module, evaluating the module coupling property | aut | Maintainability, Changeability, Stability | The notion of module is defined as a delimited group of units (e.g. a class or a file) |

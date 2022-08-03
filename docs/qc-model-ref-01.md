@@ -17,7 +17,7 @@ ISO/IEC 25010:2011 Systems and software engineering — Systems and software Qua
 |          | Number of incoming calls per module | number of incoming invocations for each module, evaluating the module coupling property | aut | Maintainability, Changeability, Stability | The notion of module is defined as a delimited group of units (e.g. a class or a file) |
 
 
-(paper ID = 58) Quality specification and metrication, results from a case-study in a mission-critical software domain
+(paper ID = 58) Quality specification and metrication, results from a case-study in a mission-critical software domain: https://www.scopus.com/inward/record.uri?eid=2-s2.0-77956057048&doi=10.1007%2fs11219-010-9101-z&partnerID=40&md5=8676a4867b80d63fce5b0d10d732fb63
 
 
 | Codename | Name  | Definition | Aut(omate)/Man(ual) | Characteristics | Comment |

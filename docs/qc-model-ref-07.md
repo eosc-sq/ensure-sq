@@ -16,4 +16,3 @@ Early estimation of software quality using in-process testing metrics: A control
 |SM7|depth of inheritance tree (DIT) ratio|ratio between the DIT of the tests and the DIT of the whole source code|Aut|Maintainability||
 |SM8|weighted methods per class (WMC) ratio|ratio between the WMC of the tests with respect of the WMC of the whole source code|Aut|Maintainability|it can be automated if the size of the "weighted" object is a parameter|
 |SM9|SLOC* ratio|SLOC* of the whole project with respect to the minimum SLOC* of its components|Aut|Maintainability||
-

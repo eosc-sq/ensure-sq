@@ -36,7 +36,7 @@ former.
 * **Ref-06** (ID = 92) - Software quality development and assurance in RUP, MSF and XP - A
                          comparative study, Zuser W., Heil S., Grechenig T.
                          <https://www.scopus.com/inward/record.uri?eid=2-s2.0-84885903144&doi=10.1145%2f1083292.1083300&partnerID=40&md5=c47fec6c93dd2cc890ba61b5ce2ab7c1>
-  * Assign to: *MV - Maxime Van den Bossche*
+  * Assign to: *MV - Maxime Van den Bossche* **DONE**
 
 * **Ref-07** (ID = 93) - Early estimation of software quality using in-process testing metrics: A
                          controlled case study, Nagappan N., Williams L., Vouk M., Osborne J.

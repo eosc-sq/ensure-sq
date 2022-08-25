@@ -26,7 +26,7 @@ former.
 
 * **Ref-04** (ID = 85) - Achieving quality in open-source software, Aberdour M.
                          <https://www.scopus.com/inward/record.uri?eid=2-s2.0-33846917203&doi=10.1109%2fMS.2007.2&partnerID=40&md5=08d47741430e05c8a0ceb015a1f43a04>
-  * Assign to: *DG - Daniel Garijo*
+  * Assign to: *DG - Daniel Garijo* **DONE**
 
 * **Ref-05** (ID = 88) - Driving software quality: How test-driven development impacts software
                          quality, Crispin L.

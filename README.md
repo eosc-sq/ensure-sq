@@ -8,8 +8,10 @@ List of documents:
 
 ## Contributors
 
+* CL - Cerlane Leong
 * DG - Daniel Garijo
 * ER - Elisabetta Ronchieri
+* IC - Isabel Campos
 * JC - Leyla Jael Castro
 * LC - Laura del Cano
 * MC - Miguel Colom
@@ -17,5 +19,3 @@ List of documents:
 * MT - Massimo Torquati
 * MV - Maxime Van den Bossche
 * VL - Violaine Louvet
-* IC - Isabel Campos
-* CL - Cerlane Leong

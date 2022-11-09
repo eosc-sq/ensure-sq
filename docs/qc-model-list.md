@@ -15,10 +15,6 @@ former.
   * Articles ID (include ISO/IEC 9126): 11, 46, 58, 99, 108, 124, 147.
   * Assign to: *ER - Elisabetta Ronchieri* **DONE**
 
-* **Ref-02** (ID = 41) - Fostering software quality assessment, Brandtner M.
-               <https://www.scopus.com/inward/record.uri?eid=2-s2.0-84886382849&doi=10.1109%2fICSE.2013.6606725&partnerID=40&md5=9e042076903be6351b3b97be6a877cb3>
-  * Assign to: *ER - Elisabetta Ronchieri* **DONE**
-
 * **Ref-03** (ID = 45) - A systematic review of quality attributes and measures for software product
                          lines, Montagud S., Abrahão S., Insfran E.
                          <https://www.scopus.com/inward/record.uri?eid=2-s2.0-84865626740&doi=10.1007%2fs11219-011-9146-7&partnerID=40&md5=33b25cd0a25fc09685e06cbc9c988f14>
@@ -86,6 +82,12 @@ former.
 * **Ref-16** (ID = 154) - Software Release Practice HOWTO, Eric Steven Raymond,
                           <https://tldp.org/HOWTO/Software-Release-Practice-HOWTO/>
   * Assign to: *MD Mario David* - **DONE**
+
+## Articles don't define a Quality model - not relevant for the final list
+
+* **Ref-02** (ID = 41) - Fostering software quality assessment, Brandtner M.
+               <https://www.scopus.com/inward/record.uri?eid=2-s2.0-84886382849&doi=10.1109%2fICSE.2013.6606725&partnerID=40&md5=9e042076903be6351b3b97be6a877cb3>
+  * Assign to: *ER - Elisabetta Ronchieri* **DONE**
 
 * **Ref-17** (ID = 156) - Guide for Reproducible Research, The Turing Way Community, Becky Arnold,
                           Louise Bowler, Sarah Gibson, Patricia Herterich, Rosie Higman, ...

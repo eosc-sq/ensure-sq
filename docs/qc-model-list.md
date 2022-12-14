@@ -44,22 +44,12 @@ former.
                           <https://www.scopus.com/inward/record.uri?eid=2-s2.0-0029516009&partnerID=40&md5=68106def0b53f2f1a609753364cb4705>
   * Assign to: *MC - Miguel Colom* **DONE**
 
-* **Ref-09** (ID = 129) - Controlling and predicting the quality of space shuttle software using
-                          metrics, Schneidewind N.F.
-                          <https://www.scopus.com/inward/record.uri?eid=2-s2.0-0343935307&doi=10.1007%2fBF00404649&partnerID=40&md5=b99281a03e36e4acaf4ca5067792314f>
-  * Assign to: *LC* (Not relevant?)
-
 * **Ref-10** (ID = 140) - Modelling software quality in the commercial environment, Gillies A.
                           <https://www.scopus.com/inward/record.uri?eid=2-s2.0-0001332319&doi=10.1007%2fBF01720924&partnerID=40&md5=a0b468b060b629ea3ced5fefac2c2848>
                           Based on:
   * Watts, R. (1987) Measuring Software Quality, NCC Publications Manchester.
   * Gilb, T. (1988) Principles of Software Engineering Management, Addison-Wesley.
   * Assign to: *MD Mario David* **DONE**
-
-* **Ref-11** (ID = 144) - Practice of quality modeling and measurement on software life-cycle,
-                          Hirayama Masayuki, Sato Hiroyuki, Yamada Atushi, Tsuda Junichiro
-                          <https://www.scopus.com/inward/record.uri?eid=2-s2.0-0025022794&partnerID=40&md5=155e3e9926c8e675616e8d839798a6e1>
-  * Assign to: *MT - Massimo Torquati* (Not relevant?)
 
 * **Ref-12** (ID = 146) - Quantitative evaluation of software quality, Boehm B.W., Brown J.R.,
                           Lipow M.
@@ -88,6 +78,16 @@ former.
 * **Ref-02** (ID = 41) - Fostering software quality assessment, Brandtner M.
                <https://www.scopus.com/inward/record.uri?eid=2-s2.0-84886382849&doi=10.1109%2fICSE.2013.6606725&partnerID=40&md5=9e042076903be6351b3b97be6a877cb3>
   * Assign to: *ER - Elisabetta Ronchieri* **DONE**
+
+* **Ref-09** (ID = 129) - Controlling and predicting the quality of space shuttle software using
+                          metrics, Schneidewind N.F.
+                          <https://www.scopus.com/inward/record.uri?eid=2-s2.0-0343935307&doi=10.1007%2fBF00404649&partnerID=40&md5=b99281a03e36e4acaf4ca5067792314f>
+  * Assign to: *LC* (Not relevant?)
+
+* **Ref-11** (ID = 144) - Practice of quality modeling and measurement on software life-cycle,
+                          Hirayama Masayuki, Sato Hiroyuki, Yamada Atushi, Tsuda Junichiro
+                          <https://www.scopus.com/inward/record.uri?eid=2-s2.0-0025022794&partnerID=40&md5=155e3e9926c8e675616e8d839798a6e1>
+  * Assign to: *MT - Massimo Torquati* (Not relevant?)
 
 * **Ref-17** (ID = 156) - Guide for Reproducible Research, The Turing Way Community, Becky Arnold,
                           Louise Bowler, Sarah Gibson, Patricia Herterich, Rosie Higman, ...

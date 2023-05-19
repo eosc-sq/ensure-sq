@@ -31,7 +31,7 @@
     4.2 - Example of tools, services and infrastructures to implement Quality Assurance for RS
 5 - Perspectives
         Editing: Miguel Colom
-        Contributors:
+        Contributors: Massimo Torquati
     5.1 - Developer
     5.2 - User
     5.3 - Resource/Service provider

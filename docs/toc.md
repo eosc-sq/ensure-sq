@@ -12,13 +12,15 @@
     2.3 - Software Quality models: Survey
 3 - Definition of quality
         Editing: Mario David, Daniel Garijo
-        Contributors: Miguel Colom, lisabetta Ronchieri
+        Contributors: Miguel Colom, Elisabetta Ronchieri
     3.1 - Software Quality characteristics
-    3.2 - Software Quality attributes (currently are)
+    3.2 - Software Quality attributes
         3.2.1 - Attribute type: Source Code Metrics
         3.2.2 - Attribute type: Time Metrics
         3.2.3 - Attribute type: Qualitative
-        3.2.4 - Attribute type: DevOps/Automation
+        3.2.4 - Attribute type: DevOps - SW release and management
+        3.2.5 - Attribute type: DevOps - Testing
+        3.2.6 - Attribute type: Service Operability
 4 - Recommendations
         Editing: Violaine Louvet
         Contributors: Elisabetta Ronchieri
@@ -49,5 +51,5 @@
 8 - Summary and conclusions
         Editing: Mario David
         Contributors:
-Bibliography
+References
 ```

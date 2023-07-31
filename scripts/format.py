@@ -5,15 +5,18 @@
 # mcolom and SQ SG3 members
 
 '''
-Data structure from the CSV -> variable eosc_val
+Data structure from the CSV
 {
-    <EOSC-TF_Codename>: {'EOSC-TF_Name': <EOSC-TF_Name>,
-                         'EOSC-TF_Definition': <EOSC-TF_Definition>,
-                         'Characteristics': <Characteristics>,
-                         'RS_level': <RS_level>,
-                         'RS_type': <RS_type>,
-                         'Paper_ID': <Paper_ID>
-                        }
+    <Attribute_type>: {
+                    <EOSC-TF_Codename>: {'EOSC-TF_Name': <EOSC-TF_Name>,
+                                         'EOSC-TF_Definition': <EOSC-TF_Definition>,
+                                         'Characteristics': <Characteristics>,
+                                         'RS_level': <RS_level>,
+                                         'RS_type': <RS_type>,
+                                         'Paper_ID': <Paper_ID>
+                                        },
+                      },
+
 }
 '''
 
@@ -95,30 +98,33 @@ def get_category(models):
 
 
 if __name__ == '__main__':
-    categories = {'EOSC-SCMet': 'Attribute type: Source Code Metrics',
-                  'EOSC-TMet': 'Attribute type: Time Metrics',
-                  'EOSC-Qual': 'Attribute type: Qualitative',
-                  'EOSC-SWRelMan': 'Attribute type: DevOps-SW release and management',
-                  'EOSC-SWTest': 'Attribute type: DevOps - Testing',
-                  'EOSC-SrvOps': 'Attribute type: Service Operability'}
+    models = {'Source Code Metrics': {},
+              'Time Metrics': {},
+              'Qualitative': {},
+              'DevOps-SW release and management': {},
+              'DevOps - Testing': {},
+              'Service Operability': {}
+              }
 
     # All models, according to their type
     # For example, EOSC-SCMet... for source code metrics
     # Read all models
     latex_str = ''
-    models = {}
+    # models = {}
     csv_file = 'Quality_Models.csv'
     with open(csv_file, encoding='utf-8', newline='') as csvf:
         reader = csv.DictReader(csvf)
         for row in reader:
+
+            
             eosc_cn = row['EOSC-TF_Codename']
             orig_attr = (row['Paper_ID'], row['Codename'], row['Name'], row['Definition'])
             if eosc_cn in models.keys():
                 models[eosc_cn]['Orig_Attr'].append(orig_attr)
             else:
                 models[eosc_cn] = {'EOSC-TF_Name': row['EOSC-TF_Name'],
-                                    'Characteristics': row['Characteristics'],
-                                    'Orig_Attr': [orig_attr]
+                                   'Characteristics': row['Characteristics'],
+                                   'Orig_Attr': [orig_attr]
                         }
 
     latex_str += f'\\subsection{{{categ}: {name_def}}}\n\n'

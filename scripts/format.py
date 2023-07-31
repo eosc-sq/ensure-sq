@@ -8,10 +8,11 @@
 Data structure from the CSV -> variable eosc_val
 {
     <EOSC-TF_Codename>: {'EOSC-TF_Name': <EOSC-TF_Name>,
-                            'Characteristics': <Characteristics>,
-                            'Orig_Attr': [
-                            (<Paper_ID>, <Codename>, <Name>, <Definition>),
-                            ]
+                         'EOSC-TF_Definition': <EOSC-TF_Definition>,
+                         'Characteristics': <Characteristics>,
+                         'RS_level': <RS_level>,
+                         'RS_type': <RS_type>,
+                         'Paper_ID': <Paper_ID>
                         }
 }
 '''
@@ -105,25 +106,24 @@ if __name__ == '__main__':
     # For example, EOSC-SCMet... for source code metrics
     # Read all models
     latex_str = ''
-    for categ, name_def in categories.items():
-        models = {}
-        csv_file = categ + '.csv'
-        with open(csv_file, encoding='utf-8', newline='') as csvf:
-            reader = csv.DictReader(csvf)
-            for row in reader:
-                eosc_cn = row['EOSC-TF_Codename']
-                orig_attr = (row['Paper_ID'], row['Codename'], row['Name'], row['Definition'])
-                if eosc_cn in models.keys():
-                    models[eosc_cn]['Orig_Attr'].append(orig_attr)
-                else:
-                    models[eosc_cn] = {'EOSC-TF_Name': row['EOSC-TF_Name'],
-                                       'Characteristics': row['Characteristics'],
-                                       'Orig_Attr': [orig_attr]
-                            }
+    models = {}
+    csv_file = 'Quality_Models.csv'
+    with open(csv_file, encoding='utf-8', newline='') as csvf:
+        reader = csv.DictReader(csvf)
+        for row in reader:
+            eosc_cn = row['EOSC-TF_Codename']
+            orig_attr = (row['Paper_ID'], row['Codename'], row['Name'], row['Definition'])
+            if eosc_cn in models.keys():
+                models[eosc_cn]['Orig_Attr'].append(orig_attr)
+            else:
+                models[eosc_cn] = {'EOSC-TF_Name': row['EOSC-TF_Name'],
+                                    'Characteristics': row['Characteristics'],
+                                    'Orig_Attr': [orig_attr]
+                        }
 
-        latex_str += f'\\subsection{{{categ}: {name_def}}}\n\n'
-        latex_str += get_category(models)
-        # pprint.pprint(models)
+    latex_str += f'\\subsection{{{categ}: {name_def}}}\n\n'
+    latex_str += get_category(models)
+    # pprint.pprint(models)
 
     with open('../latex/09-appendix.tex', 'w', encoding='utf-8') as ftex:
         ftex.write(latex_str)

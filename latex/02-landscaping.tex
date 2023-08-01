@@ -1,0 +1,70 @@
+\subsection{Types and categories of Research SW}
+
+\begin{itemize}
+\item Library
+\item Framework
+\item Application (such as Monte-Carlo simulation)
+\item Analysis script
+\item Services and platforms
+\end{itemize}
+
+
+\subsection{Definition and references of Research SW}
+
+% \dg{[summary discussion] The expectation of research software is that it can support the findings in a paper. In that sense, RS is "expected" to
+% reproduce those findings, while regular software would not necessarily have this expectation (as long as it works).}
+
+The goal of this section is to cross-reference the elements of
+software quality from the previous section with the SG1 typology of
+research software development, in order to identify the tools and
+infrastructures needed to satisfy minimum quality criteria. 
+
+Discussion on definition of research software \url{https://zenodo.org/record/5504016#.ZGc6SnbP2Uk}
+
+As a reminder, SG1 has defined different categories of software
+development related to the context in which they are performed. Others have different categories as well, for instance \url{https://docs.google.com/presentation/d/1uwxSwd8chbG7bVn5lPvNNhv5f_JeeelA2mN9NXhlOhA/edit#slide=id.g183ddf12e8b_0_122} and \url{https://zenodo.org/record/7589725#.ZGc5E3bP2Uk}
+
+\subsection{Software Quality models: Survey}
+
+We follow the methodology proposed by Kitchenham and Charters which has the following steps:
+
+% \cite{kitchenham2007guidelines}
+
+\begin{enumerate}
+    \item Source selection and search: We have searched in the Scopus dataset, including the top five journals in
+    software engineering related to software \footnote{\url{https://research.com/journals-rankings/computer-science/software-programming}}
+    and articles of the  "International Conference on Software Engineering", one of the top venues for Software engineering
+    % \dg{citation needed. Also, add here something about the books we considered, or internal knowledge by the authors}.
+    The search included the keywords "software quality" in the title of the target publications.
+    % \dg{this can be improved, but we already obtain thousands of results}
+    \item Inclusion and exclusion criteria: Excluded journals not in the SE domain. Excluded articles not written in English.
+    \item Selection procedure:
+    % \dg{skim article titles and abstracts. The process was performed by 2-3 people.Final list was agreed upon by the group. Explain what the agreement procedure was}
+    \item Review process:
+    % \dg{After following the selection procedure, we ended up with XX articles, which have been reviewed in this survey}
+\end{enumerate}
+
+Journals: IEEE Transactions on Software Engineering, Empirical Software Engineering, Journal of Systems and Software, Software \& Systems Modeling, 
+Information and Software Technology, IEEE Software, Software Quality Journal. Query used:
+
+\tiny
+\begin{verbatim}
+    TITLE ( software  AND quality )  AND  
+        ( LIMIT-TO ( EXACTSRCTITLE ,  "Software Quality Journal" )  
+        OR  LIMIT-TO ( EXACTSRCTITLE ,  "Proceedings International Conference On Software Engineering" ) 
+        OR  LIMIT-TO ( EXACTSRCTITLE ,  "IEEE Transactions on Software Engineering" )
+        OR  LIMIT-TO ( EXACTSRCTITLE ,  "Empirical Software Engineering" ) 
+        OR  LIMIT-TO ( EXACTSRCTITLE ,  "Journal of Systems and Software" ) 
+        OR  LIMIT-TO ( EXACTSRCTITLE ,  "Software & Systems Modeling" ) 
+        OR  LIMIT-TO ( EXACTSRCTITLE ,  "Information and Software Technology" )  
+        OR  LIMIT-TO ( EXACTSRCTITLE ,  "IEEE Software" )   
+        )  AND  ( LIMIT-TO ( SUBJAREA ,  "COMP" )  OR  LIMIT-TO ( SUBJAREA ,  "ENGI" ) )  
+\end{verbatim}
+\small
+
+As a result, we obtained 272 results. Additional filtering: excluding papers with no abstracts, proceedings/workshop summary,
+and removed those which did not seem related by browsing the abstract and title. Also, removed those papers that did not seem to propose
+quality dimensions (e.g., if they talk about practices)
+
+% Query: \footnote{\url{https://www.scopus.com/results/results.uri?sort=plf-f&src=s&nlo=&nlr=&nls=&sid=b04451f7b887660ce99d73bfdbdc4fc8&sot=a&sdt=a&cluster=scosubjabbr%2c%22COMP%22%2ct%2c%22ENGI%22%2ct%2bscoexactsrctitle%2c%22Software+Quality+Journal%22%2ct%2c%22Proceedings+International+Conference+On+Software+Engineering%22%2ct%2c%22IEEE+Transactions+on+Software+Engineering%22%2ct%2c%22Empirical+Software+Engineering%22%2ct%2c%22Journal+of+Systems+and+Software%22%2ct%2c%22Software+%26+Systems+Modeling%22%2ct%2c%22Information+and+Software+Technology%22%2ct%2c%22IEEE+Software%22%2ct&sl=30&s=TITLE+%28+software+AND+quality+%29&cl=t&offset=201&origin=resultslist&ss=plf-f&ws=r-f&ps=r-f&cs=r-f&cc=10&txGid=cff6749bf8a084912200dbef379950d4} 
+% Also, this book: https://books.google.es/books?hl=en&lr=&id=XTvpAQAAQBAJ&oi=fnd&pg=PR3&dq=software+quality&ots=fohz_-KW0d&sig=5TGlvR3sgAIkAHzs5Iup8Qijpuo#v=onepage&q=software%20quality&f=false looks nice!

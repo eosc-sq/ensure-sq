@@ -1,3 +1,16 @@
 *.pdf
 *.swp
 scripts/format/*.csv
+*.log
+*.pdf
+*.aux
+*.out
+*.synctex.gz
+*.toc
+*.xml
+*.bcf
+*.bbl
+*.blg
+*.dvi
+*.fls
+*.fdb_latexmk

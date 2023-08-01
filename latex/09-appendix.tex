@@ -3,56 +3,56 @@
 \textbf{EOSC-SCMet-01}: Size of the software application: Maintainability
 
 \begin{itemize}
-    \item The software product's rebuild value is estimated from the number of lines of code. This value is calculated in man-years using the  Programming Languages Table of the Software Productivity Research Software Productivity Research \cite[baggen_standardized_2012]
+    \item The software product's rebuild value is estimated from the number of lines of code. This value is calculated in man-years using the  Programming Languages Table of the Software Productivity Research Software Productivity Research \cite{baggen_standardized_2012}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-SCMet-02}: \% of redundant code: Maintainability, Modifiability
 
 \begin{itemize}
-    \item A line of code is considered redundant if it is part of a code fragment (larger than 6 lines of code) that is repeated literally (modulo  white-space) in at least one other location in the source code \cite[baggen_standardized_2012]
+    \item A line of code is considered redundant if it is part of a code fragment (larger than 6 lines of code) that is repeated literally (modulo  white-space) in at least one other location in the source code \cite{baggen_standardized_2012}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-SCMet-03}: \# Lines of code: Maintainability
 
 \begin{itemize}
-    \item Number of lines for the whole software project or components/modules/classes/functions/methods \cite[montagud_systematic_2012,baggen_standardized_2012]
+    \item Number of lines for the whole software project or components/modules/classes/functions/methods \cite{montagud_systematic_2012,baggen_standardized_2012}
     \item Individual, Team, OSS
 \end{itemize}
 
 \textbf{EOSC-SCMet-04}: \% of assertions: Maintainability
 
 \begin{itemize}
-    \item Percentage of lines of source code containing assertions. Assertions are used as a means for demonstrating that the program is behaving as expected and as an indication of how thoroughly the source classes have been tested on a per class level. \cite[nagappan_early_2005]
+    \item Percentage of lines of source code containing assertions. Assertions are used as a means for demonstrating that the program is behaving as expected and as an indication of how thoroughly the source classes have been tested on a per class level. \cite{nagappan_early_2005}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-SCMet-05}: Cyclomatic Complexity: Maintainability
 
 \begin{itemize}
-    \item Cyclomatic complexity (i.e.,  the number of linearly independent paths through a program's source code) of the whole software component or modules/components/classes/functions/methods. Cyclomatic complexity is created by calculating the number of different code paths in the flow of the program. A program that has complex control flow requires more tests to achieve good code coverage and is less maintainable. \footnote{\url{https://docs.microsoft.com/en-us/visualstudio/code-quality/code-metrics-values?view=vs-2022}} \cite[srisopha_software_2018,montagud_systematic_2012,baggen_standardized_2012,nagappan_early_2005]
+    \item Cyclomatic complexity (i.e.,  the number of linearly independent paths through a program's source code) of the whole software component or modules/components/classes/functions/methods. Cyclomatic complexity is created by calculating the number of different code paths in the flow of the program. A program that has complex control flow requires more tests to achieve good code coverage and is less maintainable. \footnote{\url{https://docs.microsoft.com/en-us/visualstudio/code-quality/code-metrics-values?view=vs-2022}} \cite{srisopha_software_2018,montagud_systematic_2012,baggen_standardized_2012,nagappan_early_2005}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-SCMet-06}: Cyclomatic Complexity test/source ratio: Maintainability
 
 \begin{itemize}
-    \item Ratio between the sum of cyclomatic complexities of all tests and the source code \cite[nagappan_early_2005]
+    \item Ratio between the sum of cyclomatic complexities of all tests and the source code \cite{nagappan_early_2005}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-SCMet-07}: Number of arguments: Maintainability
 
 \begin{itemize}
-    \item Number of arguments or parameters used in functions. Functions with many parameters may be a symptom of bad encapsulation \cite[baggen_standardized_2012,ogasawara_experiences_1996]
+    \item Number of arguments or parameters used in functions. Functions with many parameters may be a symptom of bad encapsulation \cite{baggen_standardized_2012,ogasawara_experiences_1996}
     \item Team, OSS
 \end{itemize}
 
 \textbf{EOSC-SCMet-08}: Number of function calls: Maintainability
 
 \begin{itemize}
-    \item Measures the interdependencies between unique classes through parameters, local variables, return types, method calls, generic or template instantiations, base classes, interface implementations, fields defined on external types, and attribute decoration. Good software design dictates that types and methods should have high cohesion and low coupling. High coupling indicates a design that is difficult to reuse and maintain because of its many interdependencies on other types. Source: \url{https://docs.microsoft.com/en-us/visualstudio/code-quality/code-metrics-values?view=vs-2022}. \cite[montagud_systematic_2012,ogasawara_experiences_1996]
+    \item Measures the interdependencies between unique classes through parameters, local variables, return types, method calls, generic or template instantiations, base classes, interface implementations, fields defined on external types, and attribute decoration. Good software design dictates that types and methods should have high cohesion and low coupling. High coupling indicates a design that is difficult to reuse and maintain because of its many interdependencies on other types. Source: \url{https://docs.microsoft.com/en-us/visualstudio/code-quality/code-metrics-values?view=vs-2022}. \cite{montagud_systematic_2012,ogasawara_experiences_1996}
     \item Team, OSS
 \end{itemize}
 
@@ -60,14 +60,14 @@
 
 \begin{itemize}
     \item Degree to which a system or computer program is composed of discrete components such that a change to
-one component has minimal impact on other components. Also number of modules. \cite[iso_central_secretary_systems_nodate,montagud_systematic_2012,aberdour_achieving_2007,ogasawara_experiences_1996,shepherdson_cessda_2019]
+one component has minimal impact on other components. Also number of modules. \cite{iso_25010_2011_2017,montagud_systematic_2012,aberdour_achieving_2007,ogasawara_experiences_1996,shepherdson_cessda_2019}
     \item Individual, Team, OSS
 \end{itemize}
 
 \textbf{EOSC-SCMet-10}: Number of comments: Modifiability
 
 \begin{itemize}
-    \item Number of lines corresponding to comments for the whole software or per modules/components/classes/functions/methods \cite[srisopha_software_2018,montagud_systematic_2012,ogasawara_experiences_1996]
+    \item Number of lines corresponding to comments for the whole software or per modules/components/classes/functions/methods \cite{srisopha_software_2018,montagud_systematic_2012,ogasawara_experiences_1996}
     \item Individual, Team, OSS
 \end{itemize}
 
@@ -75,28 +75,28 @@ one component has minimal impact on other components. Also number of modules. \c
 
 \begin{itemize}
     \item Degree of effectiveness and efficiency with which a product or system can be modified by the intended
-maintainers. Also, the Maintainability Index (MI) calculates an index value between 0 and 100 that represents the relative ease of maintaining the code. A high value means better maintainability. Color coded ratings can be used to quickly identify trouble spots in your code. A green rating is between 20 and 100 and indicates that the code has good maintainability. A yellow rating is between 10 and 19 and indicates that the code is moderately maintainable. A red rating is a rating between 0 and 9. Source \url{https://docs.microsoft.com/en-us/visualstudio/code-quality/code-metrics-values?view=vs-2022}:  \cite[iso_central_secretary_systems_nodate,montagud_systematic_2012]
+maintainers. Also, the Maintainability Index (MI) calculates an index value between 0 and 100 that represents the relative ease of maintaining the code. A high value means better maintainability. Color coded ratings can be used to quickly identify trouble spots in your code. A green rating is between 20 and 100 and indicates that the code has good maintainability. A yellow rating is between 10 and 19 and indicates that the code is moderately maintainable. A red rating is a rating between 0 and 9. Source \url{https://docs.microsoft.com/en-us/visualstudio/code-quality/code-metrics-values?view=vs-2022}:  \cite{iso_25010_2011_2017,montagud_systematic_2012}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-SCMet-12}: Internal cohesion: Maintainability
 
 \begin{itemize}
-    \item Cohesion describes how related the functions within a single module are. Low cohesion implies that a given module performs tasks which are not very related to each other and hence can create problems as the module becomes large. Source \url{https://en.wikipedia.org/wiki/Coupling_(computer_programming)} \cite[iso_central_secretary_isoiecieee_2010,montagud_systematic_2012]
+    \item Cohesion describes how related the functions within a single module are. Low cohesion implies that a given module performs tasks which are not very related to each other and hence can create problems as the module becomes large. Source \url{https://en.wikipedia.org/wiki/Coupling_(computer_programming)} \cite{iso_central_secretary_isoiecieee_2010,montagud_systematic_2012}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-SCMet-13}: Test class to source class ratio: Reliability
 
 \begin{itemize}
-    \item Control measure to counter the confounding effect of class size. The coefficient is calculated by TLOC+/SLOC*  (TLOC = number of test classes, TLSOC = number of source classes) \cite[nagappan_early_2005]
+    \item Control measure to counter the confounding effect of class size. The coefficient is calculated by TLOC+/SLOC*  (TLOC = number of test classes, TLSOC = number of source classes) \cite{nagappan_early_2005}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-SCMet-14}: Coupling Between Objects (CBO) ratio: Maintainability
 
 \begin{itemize}
-    \item Ratio between the CBO in the tests and the whole source code. The higher the inter-object class coupling, the more rigorous the testing should be \cite[nagappan_early_2005]
+    \item Ratio between the CBO in the tests and the whole source code. The higher the inter-object class coupling, the more rigorous the testing should be \cite{nagappan_early_2005}
     \item OSS
 \end{itemize}
 
@@ -104,42 +104,42 @@ maintainers. Also, the Maintainability Index (MI) calculates an index value betw
 
 \begin{itemize}
     \item Ratio between the DIT of the tests and the DIT of the source code. A higher DIT indicates desirable reuse but adds to the
-complexity of the code because a change or a failure in a super class propagates down the inheritance tree. \cite[nagappan_early_2005]
+complexity of the code because a change or a failure in a super class propagates down the inheritance tree. \cite{nagappan_early_2005}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-SCMet-16}: Weighted Methods per Class (WMC) ratio: Maintainability
 
 \begin{itemize}
-    \item Ratio between the WMC of the tests with respect of the WMC of the whole source code. This measure serves to compare the testing effort on a method basis. WMC is an indicator of fault-proneness \cite[nagappan_early_2005]
+    \item Ratio between the WMC of the tests with respect of the WMC of the whole source code. This measure serves to compare the testing effort on a method basis. WMC is an indicator of fault-proneness \cite{nagappan_early_2005}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-SCMet-17}: Source lines of code (SLOC) ratio: Maintainability
 
 \begin{itemize}
-    \item SLOC* of the whole project with respect to the minimum SLOC* of its components \cite[nagappan_early_2005]
+    \item SLOC* of the whole project with respect to the minimum SLOC* of its components \cite{nagappan_early_2005}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-SCMet-18}: Number of include files: Maintainability
 
 \begin{itemize}
-    \item Number of imported modules \cite[ogasawara_experiences_1996]
+    \item Number of imported modules \cite{ogasawara_experiences_1996}
     \item Team, OSS
 \end{itemize}
 
 \textbf{EOSC-SCMet-19}: Number of conditions per module: Maintainability
 
 \begin{itemize}
-    \item Number of condition per module \cite[ogasawara_experiences_1996]
+    \item Number of condition per module \cite{ogasawara_experiences_1996}
     \item Individual, Team, OSS
 \end{itemize}
 
 \textbf{EOSC-SCMet-20}: Number of loops per module: Maintainability
 
 \begin{itemize}
-    \item Number of loops per module \cite[ogasawara_experiences_1996]
+    \item Number of loops per module \cite{ogasawara_experiences_1996}
     \item Individual, Team, OSS
 \end{itemize}
 
@@ -150,35 +150,35 @@ complexity of the code because a change or a failure in a super class propagates
 \textbf{EOSC-Qual-01}: Complexity of diagrams: Maintainability. Reusability
 
 \begin{itemize}
-    \item Complexity of diagrams (UML) for the whole software or modules/components \cite[montagud_systematic_2012]
+    \item Complexity of diagrams (UML) for the whole software or modules/components \cite{montagud_systematic_2012}
     \item Individual, Team, OSS
 \end{itemize}
 
 \textbf{EOSC-Qual-02}: Complexity of architecture: Maintainability. Reusability
 
 \begin{itemize}
-    \item Architecture showing modules and interactions \cite[montagud_systematic_2012,zuser_software_2005]
+    \item Architecture showing modules and interactions \cite{montagud_systematic_2012,zuser_software_2005}
     \item Team, OSS
 \end{itemize}
 
 \textbf{EOSC-Qual-03}: Complexity of a use case: Maintainability. Reusability. Usability
 
 \begin{itemize}
-    \item Complexity of use case diagrams (UML) \cite[montagud_systematic_2012]
+    \item Complexity of use case diagrams (UML) \cite{montagud_systematic_2012}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-Qual-04}: Sustainable community: Supportability
 
 \begin{itemize}
-    \item An active community is behind the software product \cite[aberdour_achieving_2007]
+    \item An active community is behind the software product \cite{aberdour_achieving_2007}
     \item Team, OSS
 \end{itemize}
 
 \textbf{EOSC-Qual-05}: User satisfaction: Attractiveness
 
 \begin{itemize}
-    \item Degree to which a user interface enables pleasing and satisfying interaction for the user \cite[iso_central_secretary_systems_nodate,zuser_software_2005]
+    \item Degree to which a user interface enables pleasing and satisfying interaction for the user \cite{iso_25010_2011_2017,zuser_software_2005}
     \item OSS
 \end{itemize}
 
@@ -186,7 +186,7 @@ complexity of the code because a change or a failure in a super class propagates
 
 \begin{itemize}
     \item Measured using user surveys. However, it may also be assessed in terms of calls upon support staff, e.g. number o f requests for help or support staff time expended. Also, degree to which a product or system can be used by specified users to achieve specified goals with
-effectiveness, efficiency and satisfaction in a specified context of use \cite[iso_central_secretary_systems_nodate,zuser_software_2005,gillies_modelling_1992,boehm_quantitative_1976]
+effectiveness, efficiency and satisfaction in a specified context of use \cite{iso_25010_2011_2017,zuser_software_2005,gillies_modelling_1992,boehm_quantitative_1976}
     \item OSS
 \end{itemize}
 
@@ -194,42 +194,42 @@ effectiveness, efficiency and satisfaction in a specified context of use \cite[i
 
 \begin{itemize}
     \item The reliability of systems from the user's point of view is concerned with three things: (1) How often does it go wrong? (2) How long is it unavailable? (3) Is any information lost at recovery? Also, degree to which a system, product or component performs specified functions under specified conditions for a
-specified period of time. \cite[iso_central_secretary_systems_nodate,gillies_modelling_1992,boehm_quantitative_1976]
+specified period of time. \cite{iso_25010_2011_2017,gillies_modelling_1992,boehm_quantitative_1976}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-Qual-08}: Efficiency: Time behavior, Performance
 
 \begin{itemize}
-    \item Critical resources needed by the operator to carry out the critical tasks can be monitored e.g. if staff time is the critical resource, the elapsed time taken is the best measure o f efficiency. On the other hand, if the computer disk storage is critical, then the percentage of disk space required to carry out the task is the best measure available. \cite[iso_central_secretary_systems_nodate,gillies_modelling_1992,boehm_quantitative_1976]
+    \item Critical resources needed by the operator to carry out the critical tasks can be monitored e.g. if staff time is the critical resource, the elapsed time taken is the best measure o f efficiency. On the other hand, if the computer disk storage is critical, then the percentage of disk space required to carry out the task is the best measure available. \cite{iso_25010_2011_2017,gillies_modelling_1992,boehm_quantitative_1976}
     \item Individual, Team, OSS
 \end{itemize}
 
 \textbf{EOSC-Qual-09}: Portability: Portability
 
 \begin{itemize}
-    \item Degree of effectiveness and efficiency with which a system, product or component can be transferred from one hardware, software or other operational or usage environment to another. \cite[iso_central_secretary_systems_nodate,gillies_modelling_1992,boehm_quantitative_1976,shepherdson_cessda_2019,raymond_software_2013]
+    \item Degree of effectiveness and efficiency with which a system, product or component can be transferred from one hardware, software or other operational or usage environment to another. \cite{iso_25010_2011_2017,gillies_modelling_1992,boehm_quantitative_1976,shepherdson_cessda_2019,raymond_software_2013}
     \item Team, OSS
 \end{itemize}
 
 \textbf{EOSC-Qual-10}: Timeliness: Supportability
 
 \begin{itemize}
-    \item Assessed in terms of the costs of non-delivery. These will possibly include staff time and lost sales. It may also be assessed in terms of the number of days departure from the date agreed with client. \cite[gillies_modelling_1992]
+    \item Assessed in terms of the costs of non-delivery. These will possibly include staff time and lost sales. It may also be assessed in terms of the number of days departure from the date agreed with client. \cite{gillies_modelling_1992}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-Qual-11}: Cost-Benefit efficiency: Maintainability
 
 \begin{itemize}
-    \item Measured in simple financial terms. The costs of installing and maintaining the system are weighed against the assessment of business benefits \cite[gillies_modelling_1992]
+    \item Measured in simple financial terms. The costs of installing and maintaining the system are weighed against the assessment of business benefits \cite{gillies_modelling_1992}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-Qual-12}: Ease of transition: Compatibility
 
 \begin{itemize}
-    \item Assessed in terms of staff time expended. The effectiveness of transition may be assessed in terms of the quality of the resulting system particularly the area of integrity. \cite[iso_central_secretary_systems_nodate,gillies_modelling_1992]
+    \item Assessed in terms of staff time expended. The effectiveness of transition may be assessed in terms of the quality of the resulting system particularly the area of integrity. \cite{iso_25010_2011_2017,gillies_modelling_1992}
     \item OSS
 \end{itemize}
 
@@ -237,126 +237,126 @@ specified period of time. \cite[iso_central_secretary_systems_nodate,gillies_mod
 
 \begin{itemize}
     \item Degree to which a product or system can be used by people with the widest range of characteristics and
-capabilities to achieve a specified goal in a specified context of use. \cite[iso_central_secretary_systems_nodate,boehm_quantitative_1976]
+capabilities to achieve a specified goal in a specified context of use. \cite{iso_25010_2011_2017,boehm_quantitative_1976}
     \item Team, OSS
 \end{itemize}
 
 \textbf{EOSC-Qual-14}: Accountability: Performance, Resource utilization
 
 \begin{itemize}
-    \item Degree to which the actions of an entity can be traced uniquely to the entity. Its usage can be measured; critical segments of code can be instrumented with probes to measure timing, whether specified branches are exercised, etc. \cite[iso_central_secretary_systems_nodate,boehm_quantitative_1976]
+    \item Degree to which the actions of an entity can be traced uniquely to the entity. Its usage can be measured; critical segments of code can be instrumented with probes to measure timing, whether specified branches are exercised, etc. \cite{iso_25010_2011_2017,boehm_quantitative_1976}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-Qual-15}: Accuracy: Performance
 
 \begin{itemize}
-    \item Code outputs are sufficiently precise to satisfy their intended use \cite[boehm_quantitative_1976]
+    \item Code outputs are sufficiently precise to satisfy their intended use \cite{boehm_quantitative_1976}
     \item Individual, Team, OSS
 \end{itemize}
 
 \textbf{EOSC-Qual-16}: Communicativeness: Ease of use
 
 \begin{itemize}
-    \item Metric which facilitates the specification of inputs and provides outputs whose form and content are easy to assimilate and useful. \cite[boehm_quantitative_1976,raymond_software_2013]
+    \item Metric which facilitates the specification of inputs and provides outputs whose form and content are easy to assimilate and useful. \cite{boehm_quantitative_1976,raymond_software_2013}
     \item Individual, Team, OSS
 \end{itemize}
 
 \textbf{EOSC-Qual-17}: Completeness: Supportability, Manageability
 
 \begin{itemize}
-    \item All software parts are present and each part is fully developed. \cite[iso_central_secretary_systems_nodate,boehm_quantitative_1976]
+    \item All software parts are present and each part is fully developed. \cite{iso_25010_2011_2017,boehm_quantitative_1976}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-Qual-18}: Conciseness: Supportability, Resource utilization
 
 \begin{itemize}
-    \item Redundant information about the software code is not present. \cite[boehm_quantitative_1976]
+    \item Redundant information about the software code is not present. \cite{boehm_quantitative_1976}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-Qual-19}: Consistency: Maintainability, Interoperability, Compatibility
 
 \begin{itemize}
-    \item Source code contains uniform notation, terminology and symbology within itself \cite[boehm_quantitative_1976,raymond_software_2013]
+    \item Source code contains uniform notation, terminology and symbology within itself \cite{boehm_quantitative_1976,raymond_software_2013}
     \item Individual, Team, OSS
 \end{itemize}
 
 \textbf{EOSC-Qual-20}: Legibility: Supportability, Maintainability
 
 \begin{itemize}
-    \item Software function is easily discerned by reading the code \cite[boehm_quantitative_1976]
+    \item Software function is easily discerned by reading the code \cite{boehm_quantitative_1976}
     \item Individual, Team, OSS
 \end{itemize}
 
 \textbf{EOSC-Qual-21}: Modifiability: Modifiability
 
 \begin{itemize}
-    \item Degree to which a product or system can be effectively and efficiently modified without introducing defects ordegrading existing product quality. \cite[iso_central_secretary_systems_nodate,boehm_quantitative_1976]
+    \item Degree to which a product or system can be effectively and efficiently modified without introducing defects ordegrading existing product quality. \cite{iso_25010_2011_2017,boehm_quantitative_1976}
     \item Individual, Team, OSS
 \end{itemize}
 
 \textbf{EOSC-Qual-22}: Robustness: Safety
 
 \begin{itemize}
-    \item Software can continue to perform despite some violation of the assumptions in its specification \cite[boehm_quantitative_1976]
+    \item Software can continue to perform despite some violation of the assumptions in its specification \cite{boehm_quantitative_1976}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-Qual-23}: Self-containedness: Supportability
 
 \begin{itemize}
-    \item Software performs all its explicit and implicit functions within itself . \cite[boehm_quantitative_1976]
+    \item Software performs all its explicit and implicit functions within itself . \cite{boehm_quantitative_1976}
     \item Individual, Team, OSS
 \end{itemize}
 
 \textbf{EOSC-Qual-24}: Self-descriptiveness: Supportability, Ease of use
 
 \begin{itemize}
-    \item Software contains enough information for a reader to determine or verify its objectives, assumptions, constraints, inputs, outputs, components, and revision status. \cite[boehm_quantitative_1976]
+    \item Software contains enough information for a reader to determine or verify its objectives, assumptions, constraints, inputs, outputs, components, and revision status. \cite{boehm_quantitative_1976}
     \item Individual, Team, OSS
 \end{itemize}
 
 \textbf{EOSC-Qual-25}: Structuredness: Modifiability, Reusability
 
 \begin{itemize}
-    \item Software possesses a definite pattern of organization of its interdependent parts. \cite[boehm_quantitative_1976]
+    \item Software possesses a definite pattern of organization of its interdependent parts. \cite{boehm_quantitative_1976}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-Qual-26}: Understandability: Supportability
 
 \begin{itemize}
-    \item Software purpose is clear to the inspector. \cite[boehm_quantitative_1976]
+    \item Software purpose is clear to the inspector. \cite{boehm_quantitative_1976}
     \item Individual, Team, OSS
 \end{itemize}
 
 \textbf{EOSC-Qual-27}: Intellectual Property: Supportability, Reusability
 
 \begin{itemize}
-    \item There are multiple statements embedded into the software product describing unrestricted rights and any conditions for use, including commercial and non-commercial use, and the recommended citation. The list of developers is embedded in the source code of the product, in the documentation, and in the expression of the software upon execution. The intellectual property rights statements are expressed in legal language, machine-readable code, and in concise statements in language that can be understood by laypersons, such as a pre-written, recognizable license. \cite[shepherdson_cessda_2019]
+    \item There are multiple statements embedded into the software product describing unrestricted rights and any conditions for use, including commercial and non-commercial use, and the recommended citation. The list of developers is embedded in the source code of the product, in the documentation, and in the expression of the software upon execution. The intellectual property rights statements are expressed in legal language, machine-readable code, and in concise statements in language that can be understood by laypersons, such as a pre-written, recognizable license. \cite{shepherdson_cessda_2019}
     \item Individual, Team, OSS
 \end{itemize}
 
 \textbf{EOSC-Qual-28}: Extensibility: Attractiveness
 
 \begin{itemize}
-    \item There is evidence that the software project has been extended externally by users outside of the original development group using existing documentation only. There is a clear approach for modifying and extending features across a in multiple scenarios, with specific documentation and features to allow the building of extensions which are used across a range of domains by multiple user groups. There may be a library available of user-generated content for extensions and user generated documentation on extension is also available. \cite[shepherdson_cessda_2019]
+    \item There is evidence that the software project has been extended externally by users outside of the original development group using existing documentation only. There is a clear approach for modifying and extending features across a in multiple scenarios, with specific documentation and features to allow the building of extensions which are used across a range of domains by multiple user groups. There may be a library available of user-generated content for extensions and user generated documentation on extension is also available. \cite{shepherdson_cessda_2019}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-Qual-29}: Standards compliance: Functional suitability
 
 \begin{itemize}
-    \item Compliance with open or internationally recognized standards for the software and software development process, is evident and documented, and verified through testing of all components.Ideally independent verification is documented through regular testing and certification from an independent group. \cite[shepherdson_cessda_2019]
+    \item Compliance with open or internationally recognized standards for the software and software development process, is evident and documented, and verified through testing of all components.Ideally independent verification is documented through regular testing and certification from an independent group. \cite{shepherdson_cessda_2019}
     \item Team, OSS
 \end{itemize}
 
 \textbf{EOSC-Qual-30}: Internationalisation and localisation: Usability
 
 \begin{itemize}
-    \item Demonstrable usability: Software has been tested with multiple pseudo or genuine translations. \cite[shepherdson_cessda_2019]
+    \item Demonstrable usability: Software has been tested with multiple pseudo or genuine translations. \cite{shepherdson_cessda_2019}
     \item OSS
 \end{itemize}
 
@@ -365,238 +365,238 @@ capabilities to achieve a specified goal in a specified context of use. \cite[is
 \textbf{EOSC-SWRelMan-01}: Open source : Supportability, Maintainability, Availability
 
 \begin{itemize}
-    \item Following the open-source model, the source code being produced is open and publicly available to promote the adoption and augment the visibility of the software developments. \cite[orviz_set_2017,raymond_software_2013]
+    \item Following the open-source model, the source code being produced is open and publicly available to promote the adoption and augment the visibility of the software developments. \cite{orviz_set_2017,raymond_software_2013}
     \item Individual, Team, OSS
 \end{itemize}
 
 \textbf{EOSC-SWRelMan-02}: Version Control System (VCS): Supportability, Maintainability
 
 \begin{itemize}
-    \item Source code uses a Version Control System (VCS). All software components delivered by the same project agree on a common VCS. \cite[orviz_set_2017]
+    \item Source code uses a Version Control System (VCS). All software components delivered by the same project agree on a common VCS. \cite{orviz_set_2017}
     \item Individual, Team, OSS
 \end{itemize}
 
 \textbf{EOSC-SWRelMan-03}: Source code hosting: Supportability, Maintainability
 
 \begin{itemize}
-    \item Source code produced within the scope of a broader development project resides in a common organization of a version control repository hosting service. \cite[orviz_set_2017]
+    \item Source code produced within the scope of a broader development project resides in a common organization of a version control repository hosting service. \cite{orviz_set_2017}
     \item Team, OSS
 \end{itemize}
 
 \textbf{EOSC-SWRelMan-04}: Working state version: Maintainability
 
 \begin{itemize}
-    \item The main branch in the source code repository maintains a working state version of the software component. Main branch is protected to disallow force pushing, thus preventing untested and un-reviewed source code from entering the production-ready version. New features are merged in the main branch whenever the agreed upon SQA criteria is fulfilled. \cite[orviz_set_2017]
+    \item The main branch in the source code repository maintains a working state version of the software component. Main branch is protected to disallow force pushing, thus preventing untested and un-reviewed source code from entering the production-ready version. New features are merged in the main branch whenever the agreed upon SQA criteria is fulfilled. \cite{orviz_set_2017}
     \item Team, OSS
 \end{itemize}
 
 \textbf{EOSC-SWRelMan-05}: Changes branches: Maintainability
 
 \begin{itemize}
-    \item New changes in the source code are placed in individual branches. Branches follow a common nomenclature, usually by prefixing, to differentiate change types (e.g. feature, release, fix). \cite[orviz_set_2017]
+    \item New changes in the source code are placed in individual branches. Branches follow a common nomenclature, usually by prefixing, to differentiate change types (e.g. feature, release, fix). \cite{orviz_set_2017}
     \item Team, OSS
 \end{itemize}
 
 \textbf{EOSC-SWRelMan-06}: Good patching practice: Maintainability
 
 \begin{itemize}
-    \item Secondary long-term branch that contains the changes for the next software release exists. Next release changes come from the individual branches. Once ready for release, changes in the secondary long-term branch are merged into the main branch and versioned. At that point in time, main and secondary branches are aligned. This step marks a production release. \cite[orviz_set_2017,raymond_software_2013]
+    \item Secondary long-term branch that contains the changes for the next software release exists. Next release changes come from the individual branches. Once ready for release, changes in the secondary long-term branch are merged into the main branch and versioned. At that point in time, main and secondary branches are aligned. This step marks a production release. \cite{orviz_set_2017,raymond_software_2013}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-SWRelMan-07}: Support: Maintainability, Operability
 
 \begin{itemize}
-    \item Existance of an issue tracking system or helpdesk, facilitates structured software development. Leveraging issues to track down both new enhancements and defects (bugs, documentation typos). Applies as well to services to report operational and users issues. \cite[srisopha_software_2018,shepherdson_cessda_2019,orviz_set_2017,orviz_fernandez_eosc-synergy_2020]
+    \item Existance of an issue tracking system or helpdesk, facilitates structured software development. Leveraging issues to track down both new enhancements and defects (bugs, documentation typos). Applies as well to services to report operational and users issues. \cite{srisopha_software_2018,shepherdson_cessda_2019,orviz_set_2017,orviz_fernandez_eosc-synergy_2020}
     \item Team, OSS
 \end{itemize}
 
 \textbf{EOSC-SWRelMan-08}: Code review: Maintainability
 
 \begin{itemize}
-    \item Code reviews are done in the agreed peer review tool within the project, with the following  functionality: (a) Allows general and specific comments on the line or lines that need to be reviewed. (b) Shows the results of the required change-based test executions. (c) Allows to prevent merges of the candidate change whenever not all the required tests are successful. Exceptions to this rule cover the third-party or upstream contributions which MAY use the existing mechanisms or tools for code review provided by the target software project. This exception is only be allowed whenever the external revision lifecycle does not interfere with the project deadlines. \cite[srisopha_software_2018,aberdour_achieving_2007,zuser_software_2005,orviz_set_2017]
+    \item Code reviews are done in the agreed peer review tool within the project, with the following  functionality: (a) Allows general and specific comments on the line or lines that need to be reviewed. (b) Shows the results of the required change-based test executions. (c) Allows to prevent merges of the candidate change whenever not all the required tests are successful. Exceptions to this rule cover the third-party or upstream contributions which MAY use the existing mechanisms or tools for code review provided by the target software project. This exception is only be allowed whenever the external revision lifecycle does not interfere with the project deadlines. \cite{srisopha_software_2018,aberdour_achieving_2007,zuser_software_2005,orviz_set_2017}
     \item Team, OSS
 \end{itemize}
 
 \textbf{EOSC-SWRelMan-09}: Semantic Versioning : Maintainability
 
 \begin{itemize}
-    \item Semantic Versioning specification is followed for tagging the production releases. \cite[orviz_set_2017,raymond_software_2013]
+    \item Semantic Versioning specification is followed for tagging the production releases. \cite{orviz_set_2017,raymond_software_2013}
     \item Individual, Team, OSS
 \end{itemize}
 
 \textbf{EOSC-SWRelMan-10}: Open-source license: Supportability, Maintainability
 
 \begin{itemize}
-    \item As open-source software, source code adheres to an open-source license to be freely used, modified and distributed by others. Non-licensed software is exclusive copyright by default. \cite[orviz_set_2017,raymond_software_2013]
+    \item As open-source software, source code adheres to an open-source license to be freely used, modified and distributed by others. Non-licensed software is exclusive copyright by default. \cite{orviz_set_2017,raymond_software_2013}
     \item Individual, Team, OSS
 \end{itemize}
 
 \textbf{EOSC-SWRelMan-11}: Metadata: Supportability, Maintainability, Availability
 
 \begin{itemize}
-    \item A metadata file (such as Codemeta or Citation File Format) exists along side the code, under its VCS. The metadata file is updated when needed, as is the case of a new version. \cite[orviz_set_2017]
+    \item A metadata file (such as Codemeta or Citation File Format) exists along side the code, under its VCS. The metadata file is updated when needed, as is the case of a new version. \cite{orviz_set_2017}
     \item Team, OSS
 \end{itemize}
 
 \textbf{EOSC-SWRelMan-12}: Packaging: Installability
 
 \begin{itemize}
-    \item Production-ready code is  built as an artifact that can be installed on a system. \cite[shepherdson_cessda_2019,orviz_set_2017,raymond_software_2013]
+    \item Production-ready code is  built as an artifact that can be installed on a system. \cite{shepherdson_cessda_2019,orviz_set_2017,raymond_software_2013}
     \item Team, OSS
 \end{itemize}
 
 \textbf{EOSC-SWRelMan-13}: Register/publish artifact: Installability
 
 \begin{itemize}
-    \item The built artifact is uploaded and registered into a public repository of such artifacts. \cite[orviz_set_2017]
+    \item The built artifact is uploaded and registered into a public repository of such artifacts. \cite{orviz_set_2017}
     \item Team, OSS
 \end{itemize}
 
 \textbf{EOSC-SWRelMan-14}: Notification upon registration: Installability
 
 \begin{itemize}
-    \item Upon success of the package delivery process, a notification is sent to pre-defined parties such as the main developer or team. \cite[orviz_set_2017]
+    \item Upon success of the package delivery process, a notification is sent to pre-defined parties such as the main developer or team. \cite{orviz_set_2017}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-SWRelMan-15}: Code deployment: Installability
 
 \begin{itemize}
-    \item Production-ready code is deployed as a workable system with the minimal user or system administrator interaction leveraging software configuration management (SCM) tools. \cite[orviz_set_2017]
+    \item Production-ready code is deployed as a workable system with the minimal user or system administrator interaction leveraging software configuration management (SCM) tools. \cite{orviz_set_2017}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-SWRelMan-16}: Software Configuration Management (SCM) as code: Installability
 
 \begin{itemize}
-    \item A software configuration management (SCM) module is treated as code. Version controlled, it resides in a different repository than the source code to facilitate the distribution. \cite[orviz_set_2017]
+    \item A software configuration management (SCM) module is treated as code. Version controlled, it resides in a different repository than the source code to facilitate the distribution. \cite{orviz_set_2017}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-SWRelMan-17}: SCM tool: Installability
 
 \begin{itemize}
-    \item All software components delivered by the same project agree on a common SCM tool. However, software products are not restricted to provide a unique solution for the automated deployment. \cite[orviz_set_2017]
+    \item All software components delivered by the same project agree on a common SCM tool. However, software products are not restricted to provide a unique solution for the automated deployment. \cite{orviz_set_2017}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-SWRelMan-18}: SCM code changes: Installability
 
 \begin{itemize}
-    \item Any change affecting the applications deployment or operation is subsequently reflected in the relevant SCM modules. \cite[orviz_set_2017]
+    \item Any change affecting the applications deployment or operation is subsequently reflected in the relevant SCM modules. \cite{orviz_set_2017}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-SWRelMan-19}: SCM official repositories: Installability
 
 \begin{itemize}
-    \item Official repositories provided by the manufacturer are used to host the SCM modules, thus augmenting the visibility and promote external collaboration. \cite[orviz_set_2017]
+    \item Official repositories provided by the manufacturer are used to host the SCM modules, thus augmenting the visibility and promote external collaboration. \cite{orviz_set_2017}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-SWRelMan-20}: Installability: Installability
 
 \begin{itemize}
-    \item Degree of effectiveness and efficiency with which a product or system can be successfully installed and/or uninstalled in a specified environment. Also, a production-ready SW or service is deployed as a workable system with the minimal user or system administrator interaction leveraging Infratructure as Code templates. \cite[iso_central_secretary_systems_nodate,orviz_fernandez_eosc-synergy_2020]
+    \item Degree of effectiveness and efficiency with which a product or system can be successfully installed and/or uninstalled in a specified environment. Also, a production-ready SW or service is deployed as a workable system with the minimal user or system administrator interaction leveraging Infratructure as Code templates. \cite{iso_25010_2011_2017,orviz_fernandez_eosc-synergy_2020}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-SWRelMan-21}: Preserve immutable infrastructures: Installability
 
 \begin{itemize}
-    \item Any future change to a deployed Service is done in the form of a new deployment, in order to preserve immutable infrastructures. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item Any future change to a deployed Service is done in the form of a new deployment, in order to preserve immutable infrastructures. \cite{orviz_fernandez_eosc-synergy_2020}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-SWRelMan-22}: Infrastructure as Code (IaC) validation: Installability
 
 \begin{itemize}
-    \item IaC is validated by specific (unit) testing frameworks for every change being done. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item IaC is validated by specific (unit) testing frameworks for every change being done. \cite{orviz_fernandez_eosc-synergy_2020}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-SWRelMan-23}: Packaging of tarballs: Installability
 
 \begin{itemize}
-    \item Tarballs are not included in the distribution directory. Packaged tarballs are not extracted in the distribution directory \cite[raymond_software_2013]
+    \item Tarballs are not included in the distribution directory. Packaged tarballs are not extracted in the distribution directory \cite{raymond_software_2013}
     \item Individual, Team, OSS
 \end{itemize}
 
 \textbf{EOSC-SWRelMan-24}: Design for upgradability: Compatibility
 
 \begin{itemize}
-    \item Installation layout support different versions and code releases \cite[raymond_software_2013]
+    \item Installation layout support different versions and code releases \cite{raymond_software_2013}
     \item Team, OSS
 \end{itemize}
 
 \textbf{EOSC-SWRelMan-25}: Provide checksums: Maintainability
 
 \begin{itemize}
-    \item Code releases provide checksums with each binaries (tarballs, RPMs, etc.). \cite[raymond_software_2013]
+    \item Code releases provide checksums with each binaries (tarballs, RPMs, etc.). \cite{raymond_software_2013}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-SWRelMan-26}: Documentation version controlled: Supportability
 
 \begin{itemize}
-    \item Documentation is version controlled. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item Documentation is version controlled. \cite{orviz_fernandez_eosc-synergy_2020}
     \item Team, OSS
 \end{itemize}
 
 \textbf{EOSC-SWRelMan-27}: Documentation as code: Supportability, Maintainability, Reusability
 
 \begin{itemize}
-    \item Documentation is treated as code and resides in the same repository where the source code lies. \cite[orviz_set_2017]
+    \item Documentation is treated as code and resides in the same repository where the source code lies. \cite{orviz_set_2017}
     \item Team, OSS
 \end{itemize}
 
 \textbf{EOSC-SWRelMan-28}: Documentation formats: Supportability, Maintainability, Reusability
 
 \begin{itemize}
-    \item Documentation uses plain text format using a markup language, such as Markdown or reStructuredText. All software components delivered by the same project agree on a common markup language. \cite[orviz_set_2017,raymond_software_2013]
+    \item Documentation uses plain text format using a markup language, such as Markdown or reStructuredText. All software components delivered by the same project agree on a common markup language. \cite{orviz_set_2017,raymond_software_2013}
     \item Team, OSS
 \end{itemize}
 
 \textbf{EOSC-SWRelMan-29}: Documentation online: Supportability, Availability
 
 \begin{itemize}
-    \item Documentation is online available in a documentation repository. Documentation is rendered automatically. \cite[orviz_set_2017,orviz_fernandez_eosc-synergy_2020]
+    \item Documentation is online available in a documentation repository. Documentation is rendered automatically. \cite{orviz_set_2017,orviz_fernandez_eosc-synergy_2020}
     \item Team, OSS
 \end{itemize}
 
 \textbf{EOSC-SWRelMan-30}: Documentation updates: Supportability, Maintainability, Reusability
 
 \begin{itemize}
-    \item Documentation is updated on new software or service versions involving any substantial or minimal change in the behavior of the application. \cite[orviz_set_2017,orviz_fernandez_eosc-synergy_2020,raymond_software_2013]
+    \item Documentation is updated on new software or service versions involving any substantial or minimal change in the behavior of the application. \cite{orviz_set_2017,orviz_fernandez_eosc-synergy_2020,raymond_software_2013}
     \item Individual, Team, OSS
 \end{itemize}
 
 \textbf{EOSC-SWRelMan-31}: Documentation updates if inaccurate/unclear: Supportability, Maintainability, Reusability
 
 \begin{itemize}
-    \item Documentation is updated whenever reported as inaccurate or unclear. \cite[orviz_set_2017,orviz_fernandez_eosc-synergy_2020]
+    \item Documentation is updated whenever reported as inaccurate or unclear. \cite{orviz_set_2017,orviz_fernandez_eosc-synergy_2020}
     \item Team, OSS
 \end{itemize}
 
 \textbf{EOSC-SWRelMan-32}: Documentation production: Supportability, Maintainability, Reusability
 
 \begin{itemize}
-    \item Documentation is produced according to the target audience, varying according to the software component specification. The identified types of documentation and their content are README file(one-paragraph description of the application, a "Getting Started" step-by-step description on how to get a development environment running, automated test execution how-to, links to external documentation below, contributing code of conduct, versioning specification, author list and contacts, license information and acknowledgements), Developer documentations (Private API documentation, structure and interfaces and build documentation), Deployment and Administration documentations (Installation and configuration guides, service reference card, FAQs and troubleshooting) and user documentations (Public API documentation and command-line reference). \cite[aberdour_achieving_2007,shepherdson_cessda_2019,orviz_set_2017,orviz_fernandez_eosc-synergy_2020,raymond_software_2013]
+    \item Documentation is produced according to the target audience, varying according to the software component specification. The identified types of documentation and their content are README file(one-paragraph description of the application, a "Getting Started" step-by-step description on how to get a development environment running, automated test execution how-to, links to external documentation below, contributing code of conduct, versioning specification, author list and contacts, license information and acknowledgements), Developer documentations (Private API documentation, structure and interfaces and build documentation), Deployment and Administration documentations (Installation and configuration guides, service reference card, FAQs and troubleshooting) and user documentations (Public API documentation and command-line reference). \cite{aberdour_achieving_2007,shepherdson_cessda_2019,orviz_set_2017,orviz_fernandez_eosc-synergy_2020,raymond_software_2013}
     \item Individual, Team, OSS
 \end{itemize}
 
 \textbf{EOSC-SWRelMan-33}: Documentation PID: Supportability
 
 \begin{itemize}
-    \item Documentation has a Persistent Identifier (PID). \cite[orviz_fernandez_eosc-synergy_2020]
+    \item Documentation has a Persistent Identifier (PID). \cite{orviz_fernandez_eosc-synergy_2020}
     \item Team, OSS
 \end{itemize}
 
 \textbf{EOSC-SWRelMan-34}: Documentation license: Supportability
 
 \begin{itemize}
-    \item Documentation has a non-software license. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item Documentation has a non-software license. \cite{orviz_fernandez_eosc-synergy_2020}
     \item Team, OSS
 \end{itemize}
 
@@ -605,14 +605,14 @@ capabilities to achieve a specified goal in a specified context of use. \cite[is
 \textbf{EOSC-SWTest-01}: Code style: Maintainability, Testability
 
 \begin{itemize}
-    \item Each individual software complies with a de-facto code style standard for all the programming languages used in the codebase. Multiple standard style compliance is possible. \cite[orviz_set_2017,raymond_software_2013]
+    \item Each individual software complies with a de-facto code style standard for all the programming languages used in the codebase. Multiple standard style compliance is possible. \cite{orviz_set_2017,raymond_software_2013}
     \item Individual, Team, OSS
 \end{itemize}
 
 \textbf{EOSC-SWTest-02}: Unit tests: Maintainability, Testability
 
 \begin{itemize}
-    \item Minimum acceptable code coverage threshold is 70\%. Unit testing coverage is higher for those sections of the code identified as critical by the developers, such as units part of a security module. Unit testing coverage may be lower for external libraries or pieces of code not maintained within the product's code base. \cite[aberdour_achieving_2007,nagappan_early_2005,boehm_quantitative_1976,shepherdson_cessda_2019,orviz_set_2017,raymond_software_2013]
+    \item Minimum acceptable code coverage threshold is 70\%. Unit testing coverage is higher for those sections of the code identified as critical by the developers, such as units part of a security module. Unit testing coverage may be lower for external libraries or pieces of code not maintained within the product's code base. \cite{aberdour_achieving_2007,nagappan_early_2005,boehm_quantitative_1976,shepherdson_cessda_2019,orviz_set_2017,raymond_software_2013}
     \item Team, OSS
 \end{itemize}
 
@@ -621,7 +621,7 @@ capabilities to achieve a specified goal in a specified context of use. \cite[is
 \begin{itemize}
     \item When working on automated testing,  Test Doubles (i.e., objects or procedures that look and behave like their release-intended 
 counterparts, but are actually simplified versions that reduce the 
-complexity and facilitate testing) are used to mimic a simplistic behavior of objects and procedures. \cite[orviz_set_2017,orviz_fernandez_eosc-synergy_2020]
+complexity and facilitate testing) are used to mimic a simplistic behavior of objects and procedures. \cite{orviz_set_2017,orviz_fernandez_eosc-synergy_2020}
     \item Team, OSS
 \end{itemize}
 
@@ -629,14 +629,14 @@ complexity and facilitate testing) are used to mimic a simplistic behavior of ob
 
 \begin{itemize}
     \item Software requirements are converted to test cases, and these test cases are checked automatically. Also, degree of effectiveness and efficiency with which test criteria can be established for a system, product or
-component and tests can be performed to determine whether those criteria have been met. \cite[iso_central_secretary_systems_nodate,crispin_driving_2006,zuser_software_2005,orviz_set_2017]
+component and tests can be performed to determine whether those criteria have been met. \cite{iso_25010_2011_2017,crispin_driving_2006,zuser_software_2005,orviz_set_2017}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-SWTest-05}: API testing: Functional suitability, Testability
 
 \begin{itemize}
-    \item API testing MUST cover the validation of the features outlined in the specification (aka contract testing). \cite[orviz_fernandez_eosc-synergy_2020]
+    \item API testing MUST cover the validation of the features outlined in the specification (aka contract testing). \cite{orviz_fernandez_eosc-synergy_2020}
     \item Team, OSS
     \item Service
 \end{itemize}
@@ -644,14 +644,14 @@ component and tests can be performed to determine whether those criteria have be
 \textbf{EOSC-SWTest-06}: Integration testing: Functional suitability, Testability, Interoperability
 
 \begin{itemize}
-    \item Whenever a new functionality is involved, integration testing guarantees the operation of any previously-working interaction with external Services \cite[iso_central_secretary_systems_nodate,orviz_fernandez_eosc-synergy_2020]
+    \item Whenever a new functionality is involved, integration testing guarantees the operation of any previously-working interaction with external Services \cite{iso_25010_2011_2017,orviz_fernandez_eosc-synergy_2020}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-SWTest-07}: Functional testing: Functional suitability, Testability
 
 \begin{itemize}
-    \item Functional testing covers the full scope -e.g. positive, negative, edge cases- for the set of functionality that the software or service claims to provide. \cite[iso_central_secretary_systems_nodate,orviz_fernandez_eosc-synergy_2020]
+    \item Functional testing covers the full scope -e.g. positive, negative, edge cases- for the set of functionality that the software or service claims to provide. \cite{iso_25010_2011_2017,orviz_fernandez_eosc-synergy_2020}
     \item Team, OSS
     \item Service
 \end{itemize}
@@ -659,14 +659,14 @@ component and tests can be performed to determine whether those criteria have be
 \textbf{EOSC-SWTest-08}: Performance testing: Functional suitability, Testability
 
 \begin{itemize}
-    \item Performance testing is carried out to check the Software Application performance under varying loads. \cite[iso_central_secretary_systems_nodate,orviz_fernandez_eosc-synergy_2020]
+    \item Performance testing is carried out to check the Software Application performance under varying loads. \cite{iso_25010_2011_2017,orviz_fernandez_eosc-synergy_2020}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-SWTest-09}: Stress testing: Functional suitability, Testability
 
 \begin{itemize}
-    \item Stress testing is carried out to check the Service to determine the behavioral limits under sudden increased load. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item Stress testing is carried out to check the Service to determine the behavioral limits under sudden increased load. \cite{orviz_fernandez_eosc-synergy_2020}
     \item OSS
     \item Service
 \end{itemize}
@@ -674,7 +674,7 @@ component and tests can be performed to determine whether those criteria have be
 \textbf{EOSC-SWTest-10}: Scalability testing: Functional suitability, Testability
 
 \begin{itemize}
-    \item Scalability testing is carried out to check the Service ability to scale up and/or scale out when its load reaches the limits. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item Scalability testing is carried out to check the Service ability to scale up and/or scale out when its load reaches the limits. \cite{orviz_fernandez_eosc-synergy_2020}
     \item OSS
     \item Service
 \end{itemize}
@@ -682,7 +682,7 @@ component and tests can be performed to determine whether those criteria have be
 \textbf{EOSC-SWTest-11}: Elasticity testing: Functional suitability, Testability
 
 \begin{itemize}
-    \item Elasticity testing is carried out to check the Service ability to scale out or scale in, depending on its demand or workload. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item Elasticity testing is carried out to check the Service ability to scale out or scale in, depending on its demand or workload. \cite{orviz_fernandez_eosc-synergy_2020}
     \item OSS
     \item Service
 \end{itemize}
@@ -690,35 +690,35 @@ component and tests can be performed to determine whether those criteria have be
 \textbf{EOSC-SWTest-12}: Open Web Application Security Project (OWASP): Security
 
 \begin{itemize}
-    \item Application is compliant with Open Web Application Security Project (OWASP) secure coding guidelines \cite[orviz_set_2017]
+    \item Application is compliant with Open Web Application Security Project (OWASP) secure coding guidelines \cite{orviz_set_2017}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-SWTest-13}: Static Application Security Testing (SAST): Security
 
 \begin{itemize}
-    \item Source code uses automated linter tools to perform static application security testing (SAST) that flag common suspicious constructs that may cause a bug or lead to a security risk (e.g. inconsistent data structure sizes or unused resources). \cite[orviz_set_2017]
+    \item Source code uses automated linter tools to perform static application security testing (SAST) that flag common suspicious constructs that may cause a bug or lead to a security risk (e.g. inconsistent data structure sizes or unused resources). \cite{orviz_set_2017}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-SWTest-14}: Security code reviews: Security
 
 \begin{itemize}
-    \item Security code reviews for certain vulnerabilities is done as part of the identification of potential security flaws in the code. Inputs  come from automated linters and manual penetration testing results. \cite[gillies_modelling_1992,shepherdson_cessda_2019,orviz_set_2017]
+    \item Security code reviews for certain vulnerabilities is done as part of the identification of potential security flaws in the code. Inputs  come from automated linters and manual penetration testing results. \cite{gillies_modelling_1992,shepherdson_cessda_2019,orviz_set_2017}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-SWTest-15}: No world-writable files or directories: Security
 
 \begin{itemize}
-    \item World-writable files or directories are not be present in the product's configuration or logging locations. \cite[orviz_set_2017]
+    \item World-writable files or directories are not be present in the product's configuration or logging locations. \cite{orviz_set_2017}
     \item Team, OSS
 \end{itemize}
 
 \textbf{EOSC-SWTest-16}: Public endpoints and APIs encrypted: Security
 
 \begin{itemize}
-    \item The Service public endpoints and APIs are secured with data encryption. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item The Service public endpoints and APIs are secured with data encryption. \cite{orviz_fernandez_eosc-synergy_2020}
     \item Team, OSS
     \item Service
 \end{itemize}
@@ -726,7 +726,7 @@ component and tests can be performed to determine whether those criteria have be
 \textbf{EOSC-SWTest-17}: Strong ciphers: Security
 
 \begin{itemize}
-    \item The Service uses strong ciphers for data encryption. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item The Service uses strong ciphers for data encryption. \cite{orviz_fernandez_eosc-synergy_2020}
     \item Team, OSS
     \item Service
 \end{itemize}
@@ -734,7 +734,7 @@ component and tests can be performed to determine whether those criteria have be
 \textbf{EOSC-SWTest-18}: Authentication and Authorisation: Security, Technical accessibility
 
 \begin{itemize}
-    \item The Service has an authentication and authorization mechanism. The Service validates the credentials and signatures. \cite[shepherdson_cessda_2019,orviz_fernandez_eosc-synergy_2020]
+    \item The Service has an authentication and authorization mechanism. The Service validates the credentials and signatures. \cite{shepherdson_cessda_2019,orviz_fernandez_eosc-synergy_2020}
     \item Team, OSS
     \item Service
 \end{itemize}
@@ -742,7 +742,7 @@ component and tests can be performed to determine whether those criteria have be
 \textbf{EOSC-SWTest-19}: API security assessment: Security
 
 \begin{itemize}
-    \item API testing includes the assessment of the security-related criteria. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item API testing includes the assessment of the security-related criteria. \cite{orviz_fernandez_eosc-synergy_2020}
     \item OSS
     \item Service
 \end{itemize}
@@ -750,7 +750,7 @@ component and tests can be performed to determine whether those criteria have be
 \textbf{EOSC-SWTest-20}: Service compliance with data regulations (GDPR): Security
 
 \begin{itemize}
-    \item The Service handles personal data in compliance with the applicable regulations, such as the General Data Protection Regulation (GDPR) within the European boundaries. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item The Service handles personal data in compliance with the applicable regulations, such as the General Data Protection Regulation (GDPR) within the European boundaries. \cite{orviz_fernandez_eosc-synergy_2020}
     \item Individual, Team, OSS
     \item Service
 \end{itemize}
@@ -758,14 +758,14 @@ component and tests can be performed to determine whether those criteria have be
 \textbf{EOSC-SWTest-21}: Dynamic Application Security Testing (DAST): Security
 
 \begin{itemize}
-    \item DAST checks are executed, through the use of ad-hoc tools, directly to an operational Service in order to uncover runtime security vulnerabilities and any other environment-related issues (e.g. SQL injection, cross-site scripting or DDOS). The latest release of OWASP's Web Security Testing Guide and the NIST's Technical Guide to Information Security Testing and Assessment are considered for carrying out comprehensive Service security testing. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item DAST checks are executed, through the use of ad-hoc tools, directly to an operational Service in order to uncover runtime security vulnerabilities and any other environment-related issues (e.g. SQL injection, cross-site scripting or DDOS). The latest release of OWASP's Web Security Testing Guide and the NIST's Technical Guide to Information Security Testing and Assessment are considered for carrying out comprehensive Service security testing. \cite{orviz_fernandez_eosc-synergy_2020}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-SWTest-22}: Interactive Application Security Testing (IAST): Security
 
 \begin{itemize}
-    \item Interactive Application Security Testing (IAST), analyzes code for security vulnerabilities while the app is run by an automated test. IAST is performed to a service in an operating state. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item Interactive Application Security Testing (IAST), analyzes code for security vulnerabilities while the app is run by an automated test. IAST is performed to a service in an operating state. \cite{orviz_fernandez_eosc-synergy_2020}
     \item OSS
     \item Service
 \end{itemize}
@@ -773,7 +773,7 @@ component and tests can be performed to determine whether those criteria have be
 \textbf{EOSC-SWTest-23}: Security penetration testing: Security
 
 \begin{itemize}
-    \item Penetration testing (manual or automated) is part of the application security verification effort. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item Penetration testing (manual or automated) is part of the application security verification effort. \cite{orviz_fernandez_eosc-synergy_2020}
     \item OSS
 \end{itemize}
 
@@ -781,14 +781,14 @@ component and tests can be performed to determine whether those criteria have be
 
 \begin{itemize}
     \item The security assessment of the target system configuration is particularly important to reduce the risk of security attacks. The benchmarks delivered by the Center for Internet Security (CIS) and the NIST's Security Assurance Requirements for Linux Application Container Deployments is considered for this task. Also, degree to which a product or system protects information and data so that persons or other products or
-systems have the degree of data access appropriate to their types and levels of authorization. \cite[iso_central_secretary_systems_nodate,orviz_fernandez_eosc-synergy_2020]
+systems have the degree of data access appropriate to their types and levels of authorization. \cite{iso_25010_2011_2017,orviz_fernandez_eosc-synergy_2020}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-SWTest-25}: Security as Code (SaC) Testing: Security
 
 \begin{itemize}
-    \item IaC testing covers the security auditing of the IaC templates (SaC) in order to assure the deployment of secured Services. For all the third-party dependencies used in the IaC templates (including all kind of software artefacts, such as Linux packages or container-based images) \cite[orviz_fernandez_eosc-synergy_2020]
+    \item IaC testing covers the security auditing of the IaC templates (SaC) in order to assure the deployment of secured Services. For all the third-party dependencies used in the IaC templates (including all kind of software artefacts, such as Linux packages or container-based images) \cite{orviz_fernandez_eosc-synergy_2020}
     \item OSS
 \end{itemize}
 
@@ -797,28 +797,28 @@ systems have the degree of data access appropriate to their types and levels of 
 \textbf{EOSC-SrvOps-01}: Acceptable Usage Policy (AUP): Supportability
 
 \begin{itemize}
-    \item An Acceptable Usage Policy (AUP) is declared. AUP Is a set of rules applied by the owner, creator or administrator of a network, Service or system, that restrict the ways in which the network, Service or system may be used and sets guidelines as to how it should be used. The AUP can also be referred to as: Acceptable Use Policy or Fair Use Policy. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item An Acceptable Usage Policy (AUP) is declared. AUP Is a set of rules applied by the owner, creator or administrator of a network, Service or system, that restrict the ways in which the network, Service or system may be used and sets guidelines as to how it should be used. The AUP can also be referred to as: Acceptable Use Policy or Fair Use Policy. \cite{orviz_fernandez_eosc-synergy_2020}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-SrvOps-02}: Access Policy and Terms of Use: Supportability
 
 \begin{itemize}
-    \item An Access Policy or Terms of Use (APTU) is declared. APTU represents a binding legal contract between the users (and/or customers), and the Provider of the Service. The Access Policy mandates the users (and/or customers) access to and the use of the Provider's Service. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item An Access Policy or Terms of Use (APTU) is declared. APTU represents a binding legal contract between the users (and/or customers), and the Provider of the Service. The Access Policy mandates the users (and/or customers) access to and the use of the Provider's Service. \cite{orviz_fernandez_eosc-synergy_2020}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-SrvOps-03}: Privacy policy: Supportability
 
 \begin{itemize}
-    \item A Privacy Policy is declared, with a data privacy statement informing the users (and/or customers), about which personal data is collected and processed when they use and interact with the Service. It states which rights the users (and/or customers) have regarding the processing of their data. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item A Privacy Policy is declared, with a data privacy statement informing the users (and/or customers), about which personal data is collected and processed when they use and interact with the Service. It states which rights the users (and/or customers) have regarding the processing of their data. \cite{orviz_fernandez_eosc-synergy_2020}
     \item OSS
 \end{itemize}
 
 \textbf{EOSC-SrvOps-04}: Operational Level Agreement (OLA): Supportability
 
 \begin{itemize}
-    \item The Service includes an Operational Level Agreement (OLA) with the infrastructure where it is integrated. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item The Service includes an Operational Level Agreement (OLA) with the infrastructure where it is integrated. \cite{orviz_fernandez_eosc-synergy_2020}
     \item OSS
     \item Service
 \end{itemize}
@@ -826,7 +826,7 @@ systems have the degree of data access appropriate to their types and levels of 
 \textbf{EOSC-SrvOps-05}: Service Level Agreement (SLA): Supportability
 
 \begin{itemize}
-    \item The Service includes Service Level Agreement (SLA) with user communities. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item The Service includes Service Level Agreement (SLA) with user communities. \cite{orviz_fernandez_eosc-synergy_2020}
     \item OSS
     \item Service
 \end{itemize}
@@ -834,7 +834,7 @@ systems have the degree of data access appropriate to their types and levels of 
 \textbf{EOSC-SrvOps-06}: Monitoring service public endpoints: Availability, Reliability
 
 \begin{itemize}
-    \item The Service public endpoints are monitored, such as probes measuring the http or https response time \cite[orviz_fernandez_eosc-synergy_2020]
+    \item The Service public endpoints are monitored, such as probes measuring the http or https response time \cite{orviz_fernandez_eosc-synergy_2020}
     \item OSS
     \item Service
 \end{itemize}
@@ -842,7 +842,7 @@ systems have the degree of data access appropriate to their types and levels of 
 \textbf{EOSC-SrvOps-07}: Monitoring service public APIs: Availability, Reliability
 
 \begin{itemize}
-    \item The Service public APIs are monitored through the use of functional tests. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item The Service public APIs are monitored through the use of functional tests. \cite{orviz_fernandez_eosc-synergy_2020}
     \item OSS
     \item Service
 \end{itemize}
@@ -850,7 +850,7 @@ systems have the degree of data access appropriate to their types and levels of 
 \textbf{EOSC-SrvOps-08}: Monitoring service Web Interface: Availability, Reliability
 
 \begin{itemize}
-    \item The Service Web interface are monitored, this can be accoplished through the use of automated and periodic functional tests. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item The Service Web interface are monitored, this can be accoplished through the use of automated and periodic functional tests. \cite{orviz_fernandez_eosc-synergy_2020}
     \item OSS
     \item Service
 \end{itemize}
@@ -858,7 +858,7 @@ systems have the degree of data access appropriate to their types and levels of 
 \textbf{EOSC-SrvOps-09}: Monitoring security public endpoints and APIs: Availability, Reliability
 
 \begin{itemize}
-    \item The Service is monitored for public endpoints and APIs secured and strong ciphers for encryption. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item The Service is monitored for public endpoints and APIs secured and strong ciphers for encryption. \cite{orviz_fernandez_eosc-synergy_2020}
     \item OSS
     \item Service
 \end{itemize}
@@ -866,7 +866,7 @@ systems have the degree of data access appropriate to their types and levels of 
 \textbf{EOSC-SrvOps-10}: Monitoring security DAST: Availability, Reliability
 
 \begin{itemize}
-    \item The Service is monitored with DAST security checks. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item The Service is monitored with DAST security checks. \cite{orviz_fernandez_eosc-synergy_2020}
     \item OSS
     \item Service
 \end{itemize}
@@ -874,7 +874,7 @@ systems have the degree of data access appropriate to their types and levels of 
 \textbf{EOSC-SrvOps-11}: Monitoring infrastructure: Availability, Reliability
 
 \begin{itemize}
-    \item The Service is monitored for infrastructure-related criteria. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item The Service is monitored for infrastructure-related criteria. \cite{orviz_fernandez_eosc-synergy_2020}
     \item OSS
     \item Service
 \end{itemize}
@@ -882,7 +882,7 @@ systems have the degree of data access appropriate to their types and levels of 
 \textbf{EOSC-SrvOps-12}: Monitoring with Unit tests: Availability, Reliability
 
 \begin{itemize}
-    \item IaC (unit) tests are reused as monitoring tests, thus avoiding duplication. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item IaC (unit) tests are reused as monitoring tests, thus avoiding duplication. \cite{orviz_fernandez_eosc-synergy_2020}
     \item OSS
 \end{itemize}
 

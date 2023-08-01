@@ -36,9 +36,9 @@ def get_section(cat_def, all_attr):
             latex_str += f'\\textbf{{{attrib["EOSC-TF_Codename"]}}}: {attrib["EOSC-TF_Name"]}: {attrib["Characteristics"]}\n\n'
             latex_str += '\\begin{itemize}\n'
             latex_str += f'    \\item {attrib["EOSC-TF_Definition"]} \\cite{{{str_tag}}}\n'
-            latex_str += f'    \\item {attrib["RS_level"]}\n'
+            latex_str += f'    \\item Research Software level: {attrib["RS_level"]}.\n'
             if attrib["RS_type"]:
-                latex_str += f'    \\item {attrib["RS_type"]}\n'
+                latex_str += f'    \\item Research Software type: {attrib["RS_type"]}.n'
 
             latex_str += '\\end{itemize}\n\n'
 
@@ -47,14 +47,20 @@ def get_section(cat_def, all_attr):
 
 if __name__ == '__main__':
     categories = {'Source Code Metrics': 'EOSC-SCMet',
-                  'Time Metrics': 'EOSC-TMet',
+                  'Time and Performance Metrics': 'EOSC-TMet',
                   'Qualitative': 'EOSC-Qual',
                   'DevOps-SW release and management': 'EOSC-SWRelMan',
                   'DevOps - Testing': 'EOSC-SWTest',
                   'Service Operability': 'EOSC-SrvOps'
-              }
+                 }
 
-    latex_str = ''
+    latex_str = 'Research Software levels are the following:\n'
+    latex_str += '\\begin{itemize}\n'
+    latex_str += '    \\item \\textbf{{Individual}}: easy to implement, good practice for research software at any level.\n'
+    latex_str += '    \\item \\textbf{{Team}}: easy to implement, good practice for research software at any level, useful for some basic coordination when more than one person participates.\n'
+    latex_str += '    \\item \\textbf{{OSS}}: Open Source Software in general, all other cases.\n'
+    latex_str += '\\end{itemize}\n\n'
+
     all_attr = []
     csv_file = 'Quality_Models.csv'
     with open(csv_file, encoding='utf-8', newline='') as csvf:

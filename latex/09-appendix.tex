@@ -1,1633 +1,888 @@
-\subsection{EOSC-SCMet: Attribute type: Source Code Metrics}
+\subsection{Source Code Metrics: Attribute type: EOSC-SCMet}
 
-\textbf{EOSC-SCMet-01}: Rebuild value: Maintainability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{srisopha_software_2018} & - & Estimated rebuild value & Estimated rebuild value: Evaluate the volume property\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-SCMet-01}: Size of the software application: Maintainability
+
+\begin{itemize}
+    \item The software product's rebuild value is estimated from the number of lines of code. This value is calculated in man-years using the  Programming Languages Table of the Software Productivity Research Software Productivity Research \cite[baggen_standardized_2012]
+    \item OSS
+\end{itemize}
 
 \textbf{EOSC-SCMet-02}: \% of redundant code: Maintainability, Modifiability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{srisopha_software_2018} & - & Percentage of Redundant code & Percentage of Redundant code: Evaluate the duplication property\\ \hline
-    \end{supertabular}
-\end{center}
 
-\textbf{EOSC-SCMet-03}: Source Lines Of Code: Maintainability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{srisopha_software_2018} & - & Lines of code per unit & The number of lines of code in each unit, evaluating the unit size property\\ \hline
-        \cite{montagud_systematic_2012} & NumLines & Number of lines & Number of lines for the whole software or components/modules/classes/functions/methods\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item A line of code is considered redundant if it is part of a code fragment (larger than 6 lines of code) that is repeated literally (modulo  white-space) in at least one other location in the source code \cite[baggen_standardized_2012]
+    \item OSS
+\end{itemize}
 
-\textbf{EOSC-SCMet-04}: \% Assertions: Maintainability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{nagappan_early_2005} & SM1 & Percentage of assertions SLOC & Percentage of lines of source code containing assertions\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-SCMet-03}: \# Lines of code: Maintainability
+
+\begin{itemize}
+    \item Number of lines for the whole software project or components/modules/classes/functions/methods \cite[montagud_systematic_2012,baggen_standardized_2012]
+    \item Individual, Team, OSS
+\end{itemize}
+
+\textbf{EOSC-SCMet-04}: \% of assertions: Maintainability
+
+\begin{itemize}
+    \item Percentage of lines of source code containing assertions. Assertions are used as a means for demonstrating that the program is behaving as expected and as an indication of how thoroughly the source classes have been tested on a per class level. \cite[nagappan_early_2005]
+    \item OSS
+\end{itemize}
 
 \textbf{EOSC-SCMet-05}: Cyclomatic Complexity: Maintainability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{srisopha_software_2018} & - & Cyclomatic Complexity per unit (McCabe) & Cyclomatic Complexity per unit (McCabe): Evaluate the unit complexity property\\ \hline
-        \cite{montagud_systematic_2012} & CyComSC & Complexity of the source code & Cyclomatic complexity or the whole software or modules/components/classes/functions/methods. Number of linearly independent paths through a program's source code. Source \url{https://docs.microsoft.com/en-us/visualstudio/code-quality/code-metrics-values?view=vs-2022}: Measures the structural complexity of the code. It is created by calculating the number of different code paths in the flow of the program. A program that has complex control flow requires more tests to achieve good code coverage and is less maintainable.\\ \hline
-    \end{supertabular}
-\end{center}
+
+\begin{itemize}
+    \item Cyclomatic complexity (i.e.,  the number of linearly independent paths through a program's source code) of the whole software component or modules/components/classes/functions/methods. Cyclomatic complexity is created by calculating the number of different code paths in the flow of the program. A program that has complex control flow requires more tests to achieve good code coverage and is less maintainable. \footnote{\url{https://docs.microsoft.com/en-us/visualstudio/code-quality/code-metrics-values?view=vs-2022}} \cite[srisopha_software_2018,montagud_systematic_2012,baggen_standardized_2012,nagappan_early_2005]
+    \item OSS
+\end{itemize}
 
 \textbf{EOSC-SCMet-06}: Cyclomatic Complexity test/source ratio: Maintainability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{nagappan_early_2005} & SM5 & Cyclomatic Complexity test/source ratio & Ratio between the sum of cyclomatic complexities of all tests and the whole source code\\ \hline
-    \end{supertabular}
-\end{center}
+
+\begin{itemize}
+    \item Ratio between the sum of cyclomatic complexities of all tests and the source code \cite[nagappan_early_2005]
+    \item OSS
+\end{itemize}
 
 \textbf{EOSC-SCMet-07}: Number of arguments: Maintainability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{srisopha_software_2018} & - & Number of parameters per unit & Number of parameters declared in the interface of each unit\\ \hline
-        \cite{tanaka_software_1998} & - & Number of arguments & Number of arguments in the functions\\ \hline
-    \end{supertabular}
-\end{center}
+
+\begin{itemize}
+    \item Number of arguments or parameters used in functions. Functions with many parameters may be a symptom of bad encapsulation \cite[baggen_standardized_2012,ogasawara_experiences_1996]
+    \item Team, OSS
+\end{itemize}
 
 \textbf{EOSC-SCMet-08}: Number of function calls: Maintainability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{srisopha_software_2018} & - & Number of incoming calls per module & Number of incoming invocations for each module, evaluating the module coupling property\\ \hline
-        \cite{montagud_systematic_2012} & Cop & Coupling & Source \url{https://docs.microsoft.com/en-us/visualstudio/code-quality/code-metrics-values?view=vs-2022}: Measures the coupling to unique classes through parameters, local variables, return types, method calls, generic or template instantiations, base classes, interface implementations, fields defined on external types, and attribute decoration. Good software design dictates that types and methods should have high cohesion and low coupling. High coupling indicates a design that is difficult to reuse and maintain because of its many interdependencies on other types. Source \url{https://en.wikipedia.org/wiki/Coupling_(computer_programming)}: Coupling refers to the interdependencies between modules\\ \hline
-        \cite{tanaka_software_1998} & - & Number of Steps & Number of function calls\\ \hline
-    \end{supertabular}
-\end{center}
 
-\textbf{EOSC-SCMet-09}: Binary size: Maintainability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{montagud_systematic_2012} & BSize & Binary size & Binary size\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Measures the interdependencies between unique classes through parameters, local variables, return types, method calls, generic or template instantiations, base classes, interface implementations, fields defined on external types, and attribute decoration. Good software design dictates that types and methods should have high cohesion and low coupling. High coupling indicates a design that is difficult to reuse and maintain because of its many interdependencies on other types. Source: \url{https://docs.microsoft.com/en-us/visualstudio/code-quality/code-metrics-values?view=vs-2022}. \cite[montagud_systematic_2012,ogasawara_experiences_1996]
+    \item Team, OSS
+\end{itemize}
 
-\textbf{EOSC-SCMet-10}: Number of modules: Maintainability, Functional suitability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{montagud_systematic_2012} & NumMod & Number of modules & Number of modules/components/classes\\ \hline
-        \cite{aberdour_achieving_2007} & - & Code modularity & The code of the project is fragmented in smaller modules that make it easier to contribute to\\ \hline
-        \cite{tanaka_software_1998} & - & Number of modules & Number of software components the complete source has\\ \hline
-        \cite{shepherdson_cessda_2019} & CA4 & Modularity & It is evident that all functions and data are encapsulated into objects or accessible through web service interfaces. There is consistent error handling with meaningful messages and advice, and use of generic extensions to program languages for stronger type checking and compilation-time error checking. Services are available externally and code within each module contains few independent logical paths.\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-SCMet-09}: Modularity: Maintainability, Functional suitability
 
-\textbf{EOSC-SCMet-11}: Number of comments: Modifiability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{montagud_systematic_2012} & NumComLines & Number of comments & Number of lines corresponding to comments for the whole software or per modules/components/classes/functions/methods\\ \hline
-        \cite{tanaka_software_1998} & - & Number of comments & Number of comments in the source code\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Degree to which a system or computer program is composed of discrete components such that a change to
+one component has minimal impact on other components. Also number of modules. \cite[iso_central_secretary_systems_nodate,montagud_systematic_2012,aberdour_achieving_2007,ogasawara_experiences_1996,shepherdson_cessda_2019]
+    \item Individual, Team, OSS
+\end{itemize}
 
-\textbf{EOSC-SCMet-12}: Maintainability Index (MI): Maintainability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{montagud_systematic_2012} & MI & Maintainability Index (MI) for the whole, for a module/component, for the architecture & Maintainability Index (MI) for the whole, for a module/component, for the architecture: Source \url{https://docs.microsoft.com/en-us/visualstudio/code-quality/code-metrics-values?view=vs-2022}: Calculates an index value between 0 and 100 that represents the relative ease of maintaining the code. A high value means better maintainability. Color coded ratings can be used to quickly identify trouble spots in your code. A green rating is between 20 and 100 and indicates that the code has good maintainability. A yellow rating is between 10 and 19 and indicates that the code is moderately maintainable. A red rating is a rating between 0 and 9 and indicates low maintainability\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-SCMet-10}: Number of comments: Modifiability
 
-\textbf{EOSC-SCMet-13}: Internal cohesion: Maintainability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{montagud_systematic_2012} & Coh & Internal cohesion & Source \url{https://en.wikipedia.org/wiki/Coupling_(computer_programming)}: Cohesion describes how related the functions within a single module are. Low cohesion implies that a given module performs tasks which are not very related to each other and hence can create problems as the module becomes large\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Number of lines corresponding to comments for the whole software or per modules/components/classes/functions/methods \cite[srisopha_software_2018,montagud_systematic_2012,ogasawara_experiences_1996]
+    \item Individual, Team, OSS
+\end{itemize}
 
-\textbf{EOSC-SCMet-14}: Class size and the prediction efficiency: Reliability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{nagappan_early_2005} & SM4 & Control measure to counter the confounding effect of class size on the prediction efficiency & Control measure to counter the confounding effect of class size on the prediction efficiency: (TLOC+/SLOC*) / (number of test classes / number of source classes)\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-SCMet-11}: Maintainability Index (MI): Maintainability
 
-\textbf{EOSC-SCMet-15}: Coupling Between Objects (CBO) ratio: Maintainability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{nagappan_early_2005} & SM6 & Coupling Between Objects (CBO) ratio & Ratio between the CBO in the tests and the whole source code\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Degree of effectiveness and efficiency with which a product or system can be modified by the intended
+maintainers. Also, the Maintainability Index (MI) calculates an index value between 0 and 100 that represents the relative ease of maintaining the code. A high value means better maintainability. Color coded ratings can be used to quickly identify trouble spots in your code. A green rating is between 20 and 100 and indicates that the code has good maintainability. A yellow rating is between 10 and 19 and indicates that the code is moderately maintainable. A red rating is a rating between 0 and 9. Source \url{https://docs.microsoft.com/en-us/visualstudio/code-quality/code-metrics-values?view=vs-2022}:  \cite[iso_central_secretary_systems_nodate,montagud_systematic_2012]
+    \item OSS
+\end{itemize}
 
-\textbf{EOSC-SCMet-16}: Depth of inheritance Tree (DIT) ratio: Maintainability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{nagappan_early_2005} & SM7 & Depth of inheritance Tree (DIT) ratio & Ratio between the DIT of the tests and the DIT of the whole source code\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-SCMet-12}: Internal cohesion: Maintainability
 
-\textbf{EOSC-SCMet-17}: Weighted Methods per Class (WMC) ratio: Maintainability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{nagappan_early_2005} & SM8 & Weighted Methods per Class (WMC) ratio & Ratio between the WMC of the tests with respect of the WMC of the whole source code\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Cohesion describes how related the functions within a single module are. Low cohesion implies that a given module performs tasks which are not very related to each other and hence can create problems as the module becomes large. Source \url{https://en.wikipedia.org/wiki/Coupling_(computer_programming)} \cite[iso_central_secretary_isoiecieee_2010,montagud_systematic_2012]
+    \item OSS
+\end{itemize}
 
-\textbf{EOSC-SCMet-18}: SLOC ratio: Maintainability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{nagappan_early_2005} & SM9 & SLOC ratio & SLOC* of the whole project with respect to the minimum SLOC* of its components\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-SCMet-13}: Test class to source class ratio: Reliability
 
-\textbf{EOSC-SCMet-19}: Number of include files: Maintainability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{tanaka_software_1998} & - & Number of include files & Number of imported modules\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Control measure to counter the confounding effect of class size. The coefficient is calculated by TLOC+/SLOC*  (TLOC = number of test classes, TLSOC = number of source classes) \cite[nagappan_early_2005]
+    \item OSS
+\end{itemize}
 
-\textbf{EOSC-SCMet-20}: Number of conditions: Maintainability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{tanaka_software_1998} & - & Number of conditions & Number of condition checks to perform an operation\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-SCMet-14}: Coupling Between Objects (CBO) ratio: Maintainability
 
-\textbf{EOSC-SCMet-21}: Number of loops: Maintainability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{tanaka_software_1998} & - & Number of loops & Number of loops in the program\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Ratio between the CBO in the tests and the whole source code. The higher the inter-object class coupling, the more rigorous the testing should be \cite[nagappan_early_2005]
+    \item OSS
+\end{itemize}
 
-\subsection{EOSC-TMet: Attribute type: Time Metrics}
+\textbf{EOSC-SCMet-15}: Depth of inheritance Tree (DIT) ratio: Maintainability
 
-\textbf{EOSC-TMet-01}: Effort required for changes: Reliability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{montagud_systematic_2012} & EffCh & Effort required for changes & Time and resources dedicated to resolve an issue\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Ratio between the DIT of the tests and the DIT of the source code. A higher DIT indicates desirable reuse but adds to the
+complexity of the code because a change or a failure in a super class propagates down the inheritance tree. \cite[nagappan_early_2005]
+    \item OSS
+\end{itemize}
 
-\textbf{EOSC-TMet-02}: Maturity: Reliability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{montagud_systematic_2012} & Mat & Maturity & Time for the code to fail, number of resolved bugs, number of open bugs\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-SCMet-16}: Weighted Methods per Class (WMC) ratio: Maintainability
 
-\textbf{EOSC-TMet-03}: Defect rates: Maintainability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{crispin_driving_2006} & - & Defect rates & The number of outstanding defects in a product per period of time\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Ratio between the WMC of the tests with respect of the WMC of the whole source code. This measure serves to compare the testing effort on a method basis. WMC is an indicator of fault-proneness \cite[nagappan_early_2005]
+    \item OSS
+\end{itemize}
 
-\textbf{EOSC-TMet-04}: Integrity: Maintainability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{gillies_modelling_1992} & 8.4 & Integrity & This may be measured as the resource cost expended to solve problems caused by inconsistencies within the system. This may be measured in terms of staff time employed to fix problems and user time wasted.\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-SCMet-17}: Source lines of code (SLOC) ratio: Maintainability
 
-\textbf{EOSC-TMet-05}: Maintainability: Maintainability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{gillies_modelling_1992} & 8.6 & Maintainability & Measured by the resources expended in terms of time and cost in keeping a system up and running over a period of time.\\ \hline
-        \cite{boehm_quantitative_1976} & - & Maintainability & It facilitates updating to satisfy new requirements or to correct deficiencies.\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item SLOC* of the whole project with respect to the minimum SLOC* of its components \cite[nagappan_early_2005]
+    \item OSS
+\end{itemize}
 
-\textbf{EOSC-TMet-06}: Adaptability: Reusability. Adaptability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{gillies_modelling_1992} & 8.7 & Adaptability & Measured in the same way as maintainability, i.e. by the resources expended in adapting the system to meet new requirements over a period of time\\ \hline
-        \cite{boehm_quantitative_1976} & - & Augmentability & it can easily accommodate expansion in component computational functions or data storage requirements\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-SCMet-18}: Number of include files: Maintainability
 
-\textbf{EOSC-TMet-07}: Metrics: Operability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Met01 & Metrics & The Service SHOULD implement the collection of metrics.\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Number of imported modules \cite[ogasawara_experiences_1996]
+    \item Team, OSS
+\end{itemize}
 
-\textbf{EOSC-TMet-08}: Cumulative metrics: Operability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Met01.1 & Cumulative metrics & The collection of metrics SHOULD be cumulative over time and timestamped, so that the values can be queried per time interval.\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-SCMet-19}: Number of conditions per module: Maintainability
 
-\textbf{EOSC-TMet-09}: \# Registered users: Operability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Met01.2 & \# Registered users & The metric Number of registered users SHOULD be collected.\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Number of condition per module \cite[ogasawara_experiences_1996]
+    \item Individual, Team, OSS
+\end{itemize}
 
-\textbf{EOSC-TMet-10}: \# Active users: Operability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Met01.3 & \# Active users & The metric Number of active users over a given period of time MAY be collected.\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-SCMet-20}: Number of loops per module: Maintainability
 
-\textbf{EOSC-TMet-11}: Amount computing resources: Operability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Met01.4 & Amount computing resources & The metric Amount of computing resources per user or per group MAY be collected. The metric unit depends on the type of service and infrastructure. An example is CPU x hours.\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Number of loops per module \cite[ogasawara_experiences_1996]
+    \item Individual, Team, OSS
+\end{itemize}
 
-\textbf{EOSC-TMet-12}: Amount storage resources: Operability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Met01.5 & Amount storage resources & The metric Amount of storage resources per user or per group MAY be collected. The metric unit depends on the type of service and infrastructure. An example is GByte x hours.\\ \hline
-    \end{supertabular}
-\end{center}
+\subsection{Time Metrics: Attribute type: EOSC-TMet}
 
-\subsection{EOSC-Qual: Attribute type: Qualitative}
+\subsection{Qualitative: Attribute type: EOSC-Qual}
 
 \textbf{EOSC-Qual-01}: Complexity of diagrams: Maintainability. Reusability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{montagud_systematic_2012} & ComDiag & Complexity of diagrams & Complexity of diagrams for the whole software or modules/components\\ \hline
-    \end{supertabular}
-\end{center}
+
+\begin{itemize}
+    \item Complexity of diagrams (UML) for the whole software or modules/components \cite[montagud_systematic_2012]
+    \item Individual, Team, OSS
+\end{itemize}
 
 \textbf{EOSC-Qual-02}: Complexity of architecture: Maintainability. Reusability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{montagud_systematic_2012} & ComArc & Complexity of an architecture & Complexity of an architecture\\ \hline
-        \cite{zuser_software_2005} & - & Architecture design & Architecture showing modules and interactions\\ \hline
-    \end{supertabular}
-\end{center}
+
+\begin{itemize}
+    \item Architecture showing modules and interactions \cite[montagud_systematic_2012,zuser_software_2005]
+    \item Team, OSS
+\end{itemize}
 
 \textbf{EOSC-Qual-03}: Complexity of a use case: Maintainability. Reusability. Usability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{montagud_systematic_2012} & ComUC & Complexity of a use case & Complexity of a use case\\ \hline
-        \cite{montagud_systematic_2012} & ComUCDi & Complexity of a use case diagram & Complexity of a use case diagram\\ \hline
-    \end{supertabular}
-\end{center}
+
+\begin{itemize}
+    \item Complexity of use case diagrams (UML) \cite[montagud_systematic_2012]
+    \item OSS
+\end{itemize}
 
 \textbf{EOSC-Qual-04}: Sustainable community: Supportability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{aberdour_achieving_2007} & - & Sustainable community & Active community behind the software product\\ \hline
-    \end{supertabular}
-\end{center}
 
-\textbf{EOSC-Qual-05}: Customer satisfaction: Attractiveness
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{zuser_software_2005} & - & Customer satisfaction & Customer satisfaction\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item An active community is behind the software product \cite[aberdour_achieving_2007]
+    \item Team, OSS
+\end{itemize}
 
-\textbf{EOSC-Qual-06}: Functional requirements: Functional suitability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{zuser_software_2005} & - & Functional requirements & Release adheres to functional requirements\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-Qual-05}: User satisfaction: Attractiveness
 
-\textbf{EOSC-Qual-07}: Usability: Usability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{zuser_software_2005} & - & Usability & Easy of usage by end users\\ \hline
-        \cite{gillies_modelling_1992} & 8.5 & Usability & Measured using user surveys. However, it may also be assessed in terms of calls upon support staff, e.g. number o f requests for help or support staff time expended.\\ \hline
-        \cite{boehm_quantitative_1976} & - & Usability & It is reliable, efficient and human-engineered.\\ \hline
-        \cite{gillies_modelling_1992} & 8.12 & Userfriendliness & Measured in terms of the effect upon the effectiveness of the user. The measure of user friendliness in business terms is the productivity of the user.\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Degree to which a user interface enables pleasing and satisfying interaction for the user \cite[iso_central_secretary_systems_nodate,zuser_software_2005]
+    \item OSS
+\end{itemize}
 
-\textbf{EOSC-Qual-08}: Reliability: Reliability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{gillies_modelling_1992} & 8.1 & Reliability & The reliability of systems from the user's point of view is concerned with three things: (1) How often does it go wrong? (2) How long is it unavailable? (3) Is any information lost at recovery?\\ \hline
-        \cite{boehm_quantitative_1976} & - & Reliability & It can be expected to perform it s intended functions satisfactorily\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-Qual-06}: Usability: Usability
 
-\textbf{EOSC-Qual-09}: Efficiency: Time behavior, Performance
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{gillies_modelling_1992} & 8.2 & Efficiency & The critical resources needed by the operator to carry out the critical tasks can be monitored e.g. if staff time is the critical resource, the elapsed time taken is the best measure o f efficiency. On the other hand, if the computer disk storage is critical, then the percentage of disk space required to carry out the task is the best measure available.\\ \hline
-        \cite{boehm_quantitative_1976} & - & Efficiency & it fulfills its purpose without waste of resources.\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Measured using user surveys. However, it may also be assessed in terms of calls upon support staff, e.g. number o f requests for help or support staff time expended. Also, degree to which a product or system can be used by specified users to achieve specified goals with
+effectiveness, efficiency and satisfaction in a specified context of use \cite[iso_central_secretary_systems_nodate,zuser_software_2005,gillies_modelling_1992,boehm_quantitative_1976]
+    \item OSS
+\end{itemize}
 
-\textbf{EOSC-Qual-10}: Portability: Portability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{gillies_modelling_1992} & 8.8 & Portability & Measured according to Gilb's measure (see below)\\ \hline
-        \cite{boehm_quantitative_1976} & - & Portability & It can be operated easily and well on computer configurations other than its current one.\\ \hline
-        \cite{boehm_quantitative_1976} & - & Device independence & It can be executed on computer hardware configurations other than its current on\\ \hline
-        \cite{shepherdson_cessda_2019} & CA6 & Portability & The software is completely portable to the target platform. In theory at least, the software will run on the target platform provided it is packaged/containerised.\\ \hline
-        \cite{raymond_software_2013} & 6 & Good development practice & Most of these are concerned with ensuring portability across all POSIX and POSIX-like systems\\ \hline
-        \cite{raymond_software_2013} & 6.1 & Choose the most portable language you can & Choose a development language which minimizes the differences of the underlying environments in which it will run.\\ \hline
-        \cite{raymond_software_2013} & 6.7 & Recommended C/C++ portability practices & If you are writing C, feel free to use the full ANSI features.\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-Qual-07}: Reliability: Reliability
 
-\textbf{EOSC-Qual-11}: Timeliness: Supportability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{gillies_modelling_1992} & 8.9 & Timeliness & Assessed in terms of the costs of non-delivery. These will possibly include staff time and lost sales. It may also be assessed in terms of the number of days departure from the date agreed with client.\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item The reliability of systems from the user's point of view is concerned with three things: (1) How often does it go wrong? (2) How long is it unavailable? (3) Is any information lost at recovery? Also, degree to which a system, product or component performs specified functions under specified conditions for a
+specified period of time. \cite[iso_central_secretary_systems_nodate,gillies_modelling_1992,boehm_quantitative_1976]
+    \item OSS
+\end{itemize}
 
-\textbf{EOSC-Qual-12}: Cost-Benefit efficiency: Maintainability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{gillies_modelling_1992} & 8.1 & Cost-Benefit efficiency & Measured in simple financial terms. The costs of installing and maintaining the system are weighed against the assessment of business benefits\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-Qual-08}: Efficiency: Time behavior, Performance
 
-\textbf{EOSC-Qual-13}: Ease of transition: Compatibility
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{gillies_modelling_1992} & 8.11 & Ease of transition & Assessed in terms of staff time expended. The effectiveness of transition may be assessed in terms of the quality of the resulting system particularly the area of integrity.\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Critical resources needed by the operator to carry out the critical tasks can be monitored e.g. if staff time is the critical resource, the elapsed time taken is the best measure o f efficiency. On the other hand, if the computer disk storage is critical, then the percentage of disk space required to carry out the task is the best measure available. \cite[iso_central_secretary_systems_nodate,gillies_modelling_1992,boehm_quantitative_1976]
+    \item Individual, Team, OSS
+\end{itemize}
 
-\textbf{EOSC-Qual-14}: Accessability: Technical accessibility
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{boehm_quantitative_1976} & - & Accessability & Facilitates selective use of its parts.\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-Qual-09}: Portability: Portability
 
-\textbf{EOSC-Qual-15}: Accountability: Performance, Resource utilization
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{boehm_quantitative_1976} & - & Accountability & Its usage can be measured; critical segments of code can be instrumented with probes to measure timing, whether specified branches are exercised, etc.\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Degree of effectiveness and efficiency with which a system, product or component can be transferred from one hardware, software or other operational or usage environment to another. \cite[iso_central_secretary_systems_nodate,gillies_modelling_1992,boehm_quantitative_1976,shepherdson_cessda_2019,raymond_software_2013]
+    \item Team, OSS
+\end{itemize}
 
-\textbf{EOSC-Qual-16}: Accuracy: Performance
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{boehm_quantitative_1976} & - & Accuracy & Its outputs are sufficiently precise to satisfy their intended us\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-Qual-10}: Timeliness: Supportability
 
-\textbf{EOSC-Qual-17}: Communicativeness: Ease of use
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{boehm_quantitative_1976} & - & Communicativeness & It facilitates the specification of inputs and provides outputs whose form and content are easy to assimilate and useful.\\ \hline
-        \cite{raymond_software_2013} & 9 & Good communication practice & Our software and documentation won't do the world much good if nobody but you knows it exists.\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Assessed in terms of the costs of non-delivery. These will possibly include staff time and lost sales. It may also be assessed in terms of the number of days departure from the date agreed with client. \cite[gillies_modelling_1992]
+    \item OSS
+\end{itemize}
 
-\textbf{EOSC-Qual-18}: Completeness: Supportability, Manageability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{boehm_quantitative_1976} & - & Completeness & All its parts are present and each part is fully developed.\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-Qual-11}: Cost-Benefit efficiency: Maintainability
 
-\textbf{EOSC-Qual-19}: Conciseness: Supportability, Resource utilization
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{boehm_quantitative_1976} & - & Conciseness & Excessive information is not present.\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Measured in simple financial terms. The costs of installing and maintaining the system are weighed against the assessment of business benefits \cite[gillies_modelling_1992]
+    \item OSS
+\end{itemize}
 
-\textbf{EOSC-Qual-20}: Consistency: Maintainability, Interoperability, Compatibility
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{boehm_quantitative_1976} & - & Consistency & It contains uniform notation, terminology and symbology within itself\\ \hline
-        \cite{raymond_software_2013} & 3 & Good project- and archive- naming practice & important for project and archive-file names to fit regular patterns that computer programs can parse and understand.\\ \hline
-        \cite{raymond_software_2013} & 3.2 & But respect local conventions where appropriate & Some projects and communities have well-defined conventions for names and version numbers that aren't necessarily compatible with the above advice.\\ \hline
-        \cite{raymond_software_2013} & 3.3 & Try hard to choose a name prefix that is unique and easy to type & The stem prefix should be easy to read, type, and remember\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-Qual-12}: Ease of transition: Compatibility
 
-\textbf{EOSC-Qual-21}: Human engineering: Ease of use, Maintainability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{boehm_quantitative_1976} & - & Human engineering & It fulfills its purpose without wasting the users' time and energy, or degrading their morale\\ \hline
-        \cite{raymond_software_2013} & 10 & Good project-management practice & Good project-management practice\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Assessed in terms of staff time expended. The effectiveness of transition may be assessed in terms of the quality of the resulting system particularly the area of integrity. \cite[iso_central_secretary_systems_nodate,gillies_modelling_1992]
+    \item OSS
+\end{itemize}
 
-\textbf{EOSC-Qual-22}: Legibility: Supportability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{boehm_quantitative_1976} & - & Legibility & Its function is easily discerned by reading the code\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-Qual-13}: Accessibility: Technical accessibility
 
-\textbf{EOSC-Qual-23}: Modifiability: Modifiability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{boehm_quantitative_1976} & - & Modifiability & It facilitates the incorporation of changes, once the nature of the desired change has been determined\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Degree to which a product or system can be used by people with the widest range of characteristics and
+capabilities to achieve a specified goal in a specified context of use. \cite[iso_central_secretary_systems_nodate,boehm_quantitative_1976]
+    \item Team, OSS
+\end{itemize}
 
-\textbf{EOSC-Qual-24}: Robustness: Safety
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{boehm_quantitative_1976} & - & Robustness & It can continue to perform despite some violation of the assumptions in its specification\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-Qual-14}: Accountability: Performance, Resource utilization
 
-\textbf{EOSC-Qual-25}: Self-containedness: Supportability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{boehm_quantitative_1976} & - & Self-containedness & It performs all its explicit and implicit functions within itself .\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Degree to which the actions of an entity can be traced uniquely to the entity. Its usage can be measured; critical segments of code can be instrumented with probes to measure timing, whether specified branches are exercised, etc. \cite[iso_central_secretary_systems_nodate,boehm_quantitative_1976]
+    \item OSS
+\end{itemize}
 
-\textbf{EOSC-Qual-26}: Self-descriptiveness: Supportability, Ease of use
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{boehm_quantitative_1976} & - & Self-descriptiveness & It contains enough information for a reader to determine or verify its objectives, assumptions, constraints, inputs, outputs, components, and revision status.\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-Qual-15}: Accuracy: Performance
 
-\textbf{EOSC-Qual-27}: Structuredness: Modifiability, Reusability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{boehm_quantitative_1976} & - & Structuredness & It possesses a definite pattern of organization of its interdependent parts.\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Code outputs are sufficiently precise to satisfy their intended use \cite[boehm_quantitative_1976]
+    \item Individual, Team, OSS
+\end{itemize}
 
-\textbf{EOSC-Qual-28}: Understandability: Supportability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{boehm_quantitative_1976} & - & Understandability & Its purpose is clear to the inspector.\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-Qual-16}: Communicativeness: Ease of use
 
-\textbf{EOSC-Qual-29}: Intellectual Property: Supportability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{shepherdson_cessda_2019} & CA2 & Intellectual Property & There are multiple statements embedded into the software product describing unrestricted rights and any conditions for use, including commercial and non-commercial use, and the recommended citation. The list of developers is embedded in the source code of the product, in the documentation, and in the expression of the software upon execution. The intellectual property rights statements are expressed in legal language, machine-readable code, and in concise statements in language that can be understood by laypersons, such as a pre-written, recognizable license.\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Metric which facilitates the specification of inputs and provides outputs whose form and content are easy to assimilate and useful. \cite[boehm_quantitative_1976,raymond_software_2013]
+    \item Individual, Team, OSS
+\end{itemize}
 
-\textbf{EOSC-Qual-30}: Extensibility: Attractiveness
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{shepherdson_cessda_2019} & C3 & Extensibility & There is evidence that the software has been extended externally by users outside of the original development group using existing documentation only. There is a clear approach for modifying and extending features across a in multiple scenarios, with specific documentation and features to allow the building of extensions which are used across a range of domains by multiple user groups. There may be a library available of user-generated content for extensions and user generated documentation on extension is also available.\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-Qual-17}: Completeness: Supportability, Manageability
 
-\textbf{EOSC-Qual-31}: Standards compliance: Functional suitability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{shepherdson_cessda_2019} & CA7 & Standards compliance & Compliance with open or internationally recognized standards for the software and software development process, is evident and documented, and verified through testing of all components.Ideally independent verification is documented through regular testing and certification from an independent group.\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item All software parts are present and each part is fully developed. \cite[iso_central_secretary_systems_nodate,boehm_quantitative_1976]
+    \item OSS
+\end{itemize}
 
-\textbf{EOSC-Qual-32}: Internationalisation and localisation: Usability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{shepherdson_cessda_2019} & CA11 & Internationalisation and localisation & Demonstrable usability: Software has been tested with multiple pseudo or genuine translations.\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-Qual-18}: Conciseness: Supportability, Resource utilization
 
-\subsection{EOSC-SWRelMan: Attribute type: DevOps-SW release and management}
+\begin{itemize}
+    \item Redundant information about the software code is not present. \cite[boehm_quantitative_1976]
+    \item OSS
+\end{itemize}
+
+\textbf{EOSC-Qual-19}: Consistency: Maintainability, Interoperability, Compatibility
+
+\begin{itemize}
+    \item Source code contains uniform notation, terminology and symbology within itself \cite[boehm_quantitative_1976,raymond_software_2013]
+    \item Individual, Team, OSS
+\end{itemize}
+
+\textbf{EOSC-Qual-20}: Legibility: Supportability, Maintainability
+
+\begin{itemize}
+    \item Software function is easily discerned by reading the code \cite[boehm_quantitative_1976]
+    \item Individual, Team, OSS
+\end{itemize}
+
+\textbf{EOSC-Qual-21}: Modifiability: Modifiability
+
+\begin{itemize}
+    \item Degree to which a product or system can be effectively and efficiently modified without introducing defects ordegrading existing product quality. \cite[iso_central_secretary_systems_nodate,boehm_quantitative_1976]
+    \item Individual, Team, OSS
+\end{itemize}
+
+\textbf{EOSC-Qual-22}: Robustness: Safety
+
+\begin{itemize}
+    \item Software can continue to perform despite some violation of the assumptions in its specification \cite[boehm_quantitative_1976]
+    \item OSS
+\end{itemize}
+
+\textbf{EOSC-Qual-23}: Self-containedness: Supportability
+
+\begin{itemize}
+    \item Software performs all its explicit and implicit functions within itself . \cite[boehm_quantitative_1976]
+    \item Individual, Team, OSS
+\end{itemize}
+
+\textbf{EOSC-Qual-24}: Self-descriptiveness: Supportability, Ease of use
+
+\begin{itemize}
+    \item Software contains enough information for a reader to determine or verify its objectives, assumptions, constraints, inputs, outputs, components, and revision status. \cite[boehm_quantitative_1976]
+    \item Individual, Team, OSS
+\end{itemize}
+
+\textbf{EOSC-Qual-25}: Structuredness: Modifiability, Reusability
+
+\begin{itemize}
+    \item Software possesses a definite pattern of organization of its interdependent parts. \cite[boehm_quantitative_1976]
+    \item OSS
+\end{itemize}
+
+\textbf{EOSC-Qual-26}: Understandability: Supportability
+
+\begin{itemize}
+    \item Software purpose is clear to the inspector. \cite[boehm_quantitative_1976]
+    \item Individual, Team, OSS
+\end{itemize}
+
+\textbf{EOSC-Qual-27}: Intellectual Property: Supportability, Reusability
+
+\begin{itemize}
+    \item There are multiple statements embedded into the software product describing unrestricted rights and any conditions for use, including commercial and non-commercial use, and the recommended citation. The list of developers is embedded in the source code of the product, in the documentation, and in the expression of the software upon execution. The intellectual property rights statements are expressed in legal language, machine-readable code, and in concise statements in language that can be understood by laypersons, such as a pre-written, recognizable license. \cite[shepherdson_cessda_2019]
+    \item Individual, Team, OSS
+\end{itemize}
+
+\textbf{EOSC-Qual-28}: Extensibility: Attractiveness
+
+\begin{itemize}
+    \item There is evidence that the software project has been extended externally by users outside of the original development group using existing documentation only. There is a clear approach for modifying and extending features across a in multiple scenarios, with specific documentation and features to allow the building of extensions which are used across a range of domains by multiple user groups. There may be a library available of user-generated content for extensions and user generated documentation on extension is also available. \cite[shepherdson_cessda_2019]
+    \item OSS
+\end{itemize}
+
+\textbf{EOSC-Qual-29}: Standards compliance: Functional suitability
+
+\begin{itemize}
+    \item Compliance with open or internationally recognized standards for the software and software development process, is evident and documented, and verified through testing of all components.Ideally independent verification is documented through regular testing and certification from an independent group. \cite[shepherdson_cessda_2019]
+    \item Team, OSS
+\end{itemize}
+
+\textbf{EOSC-Qual-30}: Internationalisation and localisation: Usability
+
+\begin{itemize}
+    \item Demonstrable usability: Software has been tested with multiple pseudo or genuine translations. \cite[shepherdson_cessda_2019]
+    \item OSS
+\end{itemize}
+
+\subsection{DevOps-SW release and management: Attribute type: EOSC-SWRelMan}
 
 \textbf{EOSC-SWRelMan-01}: Open source : Supportability, Maintainability, Availability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_set_2017} & QC.Acc01 & Open source and publicly available & Following the open-source model, the source code being produced MUST be open and publicly available to promote the adoption and augment the visibility of the software developments.\\ \hline
-        \cite{raymond_software_2013} & 6.2 & Don't rely on proprietary code & Don't rely on proprietary languages, libraries, or other code\\ \hline
-    \end{supertabular}
-\end{center}
+
+\begin{itemize}
+    \item Following the open-source model, the source code being produced is open and publicly available to promote the adoption and augment the visibility of the software developments. \cite[orviz_set_2017,raymond_software_2013]
+    \item Individual, Team, OSS
+\end{itemize}
 
 \textbf{EOSC-SWRelMan-02}: Version Control System (VCS): Supportability, Maintainability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_set_2017} & QC.Acc02 & Version Control System (VCS) & Source code MUST use a Version Control System (VCS).It is RECOMMENDED that all software components delivered by the same project agree on a common VCS.\\ \hline
-    \end{supertabular}
-\end{center}
+
+\begin{itemize}
+    \item Source code uses a Version Control System (VCS). All software components delivered by the same project agree on a common VCS. \cite[orviz_set_2017]
+    \item Individual, Team, OSS
+\end{itemize}
 
 \textbf{EOSC-SWRelMan-03}: Source code hosting: Supportability, Maintainability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_set_2017} & QC.Acc03 & Source code hosting & Source code produced within the scope of a broader development project SHOULD reside in a common organization of a version control repository hosting service.\\ \hline
-    \end{supertabular}
-\end{center}
+
+\begin{itemize}
+    \item Source code produced within the scope of a broader development project resides in a common organization of a version control repository hosting service. \cite[orviz_set_2017]
+    \item Team, OSS
+\end{itemize}
 
 \textbf{EOSC-SWRelMan-04}: Working state version: Maintainability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_set_2017} & QC.Wor01 & Working state version & The main branch in the source code repository MUST maintain a working state version of the software component. Main branch SHOULD be protected to disallow force pushing, thus preventing untested and un-reviewed source code from entering the production-ready version. New features SHOULD only be merged in the main branch whenever the SQA criteria is fulfilled.\\ \hline
-    \end{supertabular}
-\end{center}
+
+\begin{itemize}
+    \item The main branch in the source code repository maintains a working state version of the software component. Main branch is protected to disallow force pushing, thus preventing untested and un-reviewed source code from entering the production-ready version. New features are merged in the main branch whenever the agreed upon SQA criteria is fulfilled. \cite[orviz_set_2017]
+    \item Team, OSS
+\end{itemize}
 
 \textbf{EOSC-SWRelMan-05}: Changes branches: Maintainability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_set_2017} & QC.Wor02 & Changes branches & New changes in the source code MUST be placed in individual branches. It is RECOMMENDED to agree on a branch nomenclature, usually by prefixing, to differentiate change types (e.g. feature, release, fix).\\ \hline
-    \end{supertabular}
-\end{center}
+
+\begin{itemize}
+    \item New changes in the source code are placed in individual branches. Branches follow a common nomenclature, usually by prefixing, to differentiate change types (e.g. feature, release, fix). \cite[orviz_set_2017]
+    \item Team, OSS
+\end{itemize}
 
 \textbf{EOSC-SWRelMan-06}: Good patching practice: Maintainability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_set_2017} & QC.Wor03 & Secondary long-term branch & The existence of a secondary long-term branch that contains the changes for the next release is RECOMMENDED. Next release changes come from the individual branches. Once ready for release, changes in the secondary long-term branch are merged into the main branch and versioned. At that point in time, main and secondary branches are aligned. This step SHOULD mark a production release.\\ \hline
-        \cite{raymond_software_2013} & 2 & Good patching practice & Open-source software by writing patches\\ \hline
-    \end{supertabular}
-\end{center}
+
+\begin{itemize}
+    \item Secondary long-term branch that contains the changes for the next software release exists. Next release changes come from the individual branches. Once ready for release, changes in the secondary long-term branch are merged into the main branch and versioned. At that point in time, main and secondary branches are aligned. This step marks a production release. \cite[orviz_set_2017,raymond_software_2013]
+    \item OSS
+\end{itemize}
 
 \textbf{EOSC-SWRelMan-07}: Support: Maintainability, Operability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_set_2017} & QC.Man01 & Issue tracker & An issue tracking system facilitates structured software development. Leveraging issues to track down both new enhancements and defects (bugs, documentation typos) is RECOMMENDED.\\ \hline
-        \cite{shepherdson_cessda_2019} & CA8 & Support & The support by the organisation(s) is clearly defined with frequent and timely updates, releases, etc., responding to the needs of the user communities, as well as consolidation of changes by the community. There is a staffed telephone/email helpdesk available as well as a maintained website. Discussion groups are active and include regular input from the developer(s) and developer organisation(s). There is evidence that continuity of support is implied. Support may be free or fee-based via a support Service Level Agreement (SLA) with the developer(s) or a third party.\\ \hline
-    \end{supertabular}
-\end{center}
+
+\begin{itemize}
+    \item Existance of an issue tracking system or helpdesk, facilitates structured software development. Leveraging issues to track down both new enhancements and defects (bugs, documentation typos). Applies as well to services to report operational and users issues. \cite[srisopha_software_2018,shepherdson_cessda_2019,orviz_set_2017,orviz_fernandez_eosc-synergy_2020]
+    \item Team, OSS
+\end{itemize}
 
 \textbf{EOSC-SWRelMan-08}: Code review: Maintainability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_set_2017} & QC.Man02 & Pull or merge requests & In social coding environments, pull or merge requests represent the cornerstone of collaboration. A pull or merge request provides a place for review and discussion of the changes proposed to be part of an existing version of the code.\\ \hline
-        \cite{orviz_set_2017} & QC.Rev01 & Code review functionality & Code reviews MUST be done in the agreed peer review tool within the project, with the following RECOMMENDED functionality: (a) Allows general and specific comments on the line or lines that need to be reviewed. (b) Shows the results of the required change-based test executions. (c) Allows to prevent merges of the candidate change whenever not all the required tests are successful. Exceptions to this rule cover the third-party or upstream contributions which MAY use the existing mechanisms or tools for code review provided by the target software project. This exception MUST only be allowed whenever the external revision lifecycle does not interfere with the project deadlines.\\ \hline
-        \cite{aberdour_achieving_2007} & - & Code goes through code reviews/peer review & Each contribution is assessed by a contributor different from the author\\ \hline
-        \cite{zuser_software_2005} & - & Team work & Pair programming, code review\\ \hline
-        \cite{orviz_set_2017} & QC.Rev02 & Code review open and collaborative & Code reviews MUST be open and collaborative, allowing external expert revisions.\\ \hline
-        \cite{orviz_set_2017} & QC.Rev03 & Code review lightweight and Informal & Code reviews SHOULD be lightweight and informal, meaning that some of the areas the reviewers MAY focus are: (a) Message description: commit message is clear, self-explanatory and describes precisely the objectives being addressed. (b) Goal or scope: change is needed and/or addresses/fixes the whole set of objectives. (c) Code analysis: useless statements in the code, library or modules imported but never used or code style suggestions. (d) Review of required tests: current battery of tests is sufficient for validation. (e) Review of documentation: whether the change SHOULD bring along a corresponding update in the documentation.\\ \hline
-        \cite{orviz_set_2017} & QC.Rev04 & Code review checks on change basis & Code reviews MUST be checked on change basis.\\ \hline
-        \cite{orviz_set_2017} & QC.Rev05 & Code reviews on security risk assessments & Code reviews SHOULD assess the inherent security risk of the changes, ensuring that the security model has not been downgraded or compromised by the changes.\\ \hline
-    \end{supertabular}
-\end{center}
+
+\begin{itemize}
+    \item Code reviews are done in the agreed peer review tool within the project, with the following  functionality: (a) Allows general and specific comments on the line or lines that need to be reviewed. (b) Shows the results of the required change-based test executions. (c) Allows to prevent merges of the candidate change whenever not all the required tests are successful. Exceptions to this rule cover the third-party or upstream contributions which MAY use the existing mechanisms or tools for code review provided by the target software project. This exception is only be allowed whenever the external revision lifecycle does not interfere with the project deadlines. \cite[srisopha_software_2018,aberdour_achieving_2007,zuser_software_2005,orviz_set_2017]
+    \item Team, OSS
+\end{itemize}
 
 \textbf{EOSC-SWRelMan-09}: Semantic Versioning : Maintainability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_set_2017} & QC.Ver01 & Semantic Versioning specification & Semantic Versioning specification is RECOMMENDED for tagging the production releases.\\ \hline
-        \cite{raymond_software_2013} & 3.1 & Use GNU-style names with a stem and major.minor.patch numbering & All-lower-case alphanumeric stem prefix, followed by a dash, followed by a version number, extension, and other suffixes.\\ \hline
-    \end{supertabular}
-\end{center}
+
+\begin{itemize}
+    \item Semantic Versioning specification is followed for tagging the production releases. \cite[orviz_set_2017,raymond_software_2013]
+    \item Individual, Team, OSS
+\end{itemize}
 
 \textbf{EOSC-SWRelMan-10}: Open-source license: Supportability, Maintainability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_set_2017} & QC.Lic01 & Open-source license & As open-source software, source code MUST adhere to an open-source license to be freely used, modified and distributed by others. Non-licensed software is exclusive copyright by default.\\ \hline
-        \cite{raymond_software_2013} & 4 & Good licensing and copyright practice: the theory & The license you choose defines the social contract you wish to set up among your co-developers and users.\\ \hline
-        \cite{raymond_software_2013} & 5 & Good licensing and copyright practice: the practice & Good licensing and copyright practice: the practice\\ \hline
-        \cite{orviz_set_2017} & QC.Lic01.1 & Presence of licenses & Licenses MUST be physically present (e.g. as a LICENSE file) in the root of all the source code repositories related to the software component.\\ \hline
-        \cite{orviz_set_2017} & QC.Lic02 & Open source definition & License MUST be compliant with the Open Source Definition. RECOMMENDED licenses are listed in the Open Source Initiative portal under the Popular Licenses category.\\ \hline
-    \end{supertabular}
-\end{center}
+
+\begin{itemize}
+    \item As open-source software, source code adheres to an open-source license to be freely used, modified and distributed by others. Non-licensed software is exclusive copyright by default. \cite[orviz_set_2017,raymond_software_2013]
+    \item Individual, Team, OSS
+\end{itemize}
 
 \textbf{EOSC-SWRelMan-11}: Metadata: Supportability, Maintainability, Availability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_set_2017} & QC.Met01 & Metadata file exists & A metadata le SHOULD exist along side the code, under its VCS. The metadata file SHOULD be updated when needed, as is the case of a new version.\\ \hline
-    \end{supertabular}
-\end{center}
+
+\begin{itemize}
+    \item A metadata file (such as Codemeta or Citation File Format) exists along side the code, under its VCS. The metadata file is updated when needed, as is the case of a new version. \cite[orviz_set_2017]
+    \item Team, OSS
+\end{itemize}
 
 \textbf{EOSC-SWRelMan-12}: Packaging: Installability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_set_2017} & QC.Del01 & Automated delivery & Production-ready code MUST be built as an artifact that can be efficiently executed on a system.\\ \hline
-        \cite{shepherdson_cessda_2019} & CA5 & Packaging & A Continuous Integration server job (or equivalent) is available to deploy the packaged/containerised software.Administrators are notified if deployment fails. Versions of deployed software can be upgraded/rolled back from a Continuous Integration server job (or equivalent). Data and/or index files can be restored from a Continuous Integration server job (or equivalent).\\ \hline
-        \cite{raymond_software_2013} & 6.3 & Build systems & A significant advantage of open source distributions is they allow each source package to adapt at compile-time to the environment it finds.\\ \hline
-    \end{supertabular}
-\end{center}
+
+\begin{itemize}
+    \item Production-ready code is  built as an artifact that can be installed on a system. \cite[shepherdson_cessda_2019,orviz_set_2017,raymond_software_2013]
+    \item Team, OSS
+\end{itemize}
 
 \textbf{EOSC-SWRelMan-13}: Register/publish artifact: Installability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_set_2017} & QC.Del02 & Register/publish artifact & The built artifact MUST be uploaded and registered into a public repository of such artifacts.\\ \hline
-    \end{supertabular}
-\end{center}
+
+\begin{itemize}
+    \item The built artifact is uploaded and registered into a public repository of such artifacts. \cite[orviz_set_2017]
+    \item Team, OSS
+\end{itemize}
 
 \textbf{EOSC-SWRelMan-14}: Notification upon registration: Installability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_set_2017} & QC.Del03 & Notification upon registration & Upon success of the package delivery process, a notification MUST be sent to pre-defined parties such as the main developer or team.\\ \hline
-    \end{supertabular}
-\end{center}
+
+\begin{itemize}
+    \item Upon success of the package delivery process, a notification is sent to pre-defined parties such as the main developer or team. \cite[orviz_set_2017]
+    \item OSS
+\end{itemize}
 
 \textbf{EOSC-SWRelMan-15}: Code deployment: Installability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_set_2017} & QC.Dep01 & Code deployment & Production-ready code MUST be deployed as a workable system with the minimal user or system administrator interaction leveraging software configuration management (SCM) tools.\\ \hline
-    \end{supertabular}
-\end{center}
+
+\begin{itemize}
+    \item Production-ready code is deployed as a workable system with the minimal user or system administrator interaction leveraging software configuration management (SCM) tools. \cite[orviz_set_2017]
+    \item OSS
+\end{itemize}
 
 \textbf{EOSC-SWRelMan-16}: Software Configuration Management (SCM) as code: Installability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_set_2017} & QC.Dep02 & Software Configuration Management (SCM) module as code & A software configuration management (SCM) module is treated as code. Version controlled, it SHOULD reside in a different repository than the source code to facilitate the distribution.\\ \hline
-    \end{supertabular}
-\end{center}
+
+\begin{itemize}
+    \item A software configuration management (SCM) module is treated as code. Version controlled, it resides in a different repository than the source code to facilitate the distribution. \cite[orviz_set_2017]
+    \item OSS
+\end{itemize}
 
 \textbf{EOSC-SWRelMan-17}: SCM tool: Installability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_set_2017} & QC.Dep03 & SCM tool & It is RECOMMENDED that all software components delivered by the same project agree on a common SCM tool. However, software products are not restricted to provide a unique solution for the automated deployment.\\ \hline
-    \end{supertabular}
-\end{center}
+
+\begin{itemize}
+    \item All software components delivered by the same project agree on a common SCM tool. However, software products are not restricted to provide a unique solution for the automated deployment. \cite[orviz_set_2017]
+    \item OSS
+\end{itemize}
 
 \textbf{EOSC-SWRelMan-18}: SCM code changes: Installability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_set_2017} & QC.Dep04 & SCM code changes & Any change affecting the applications deployment or operation MUST be subsequently reflected in the relevant SCM modules.\\ \hline
-    \end{supertabular}
-\end{center}
+
+\begin{itemize}
+    \item Any change affecting the applications deployment or operation is subsequently reflected in the relevant SCM modules. \cite[orviz_set_2017]
+    \item OSS
+\end{itemize}
 
 \textbf{EOSC-SWRelMan-19}: SCM official repositories: Installability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_set_2017} & QC.Dep05 & SCM official repositories & Official repositories provided by the manufacturer SHOULD be used to host the SCM modules, thus augmenting the visibility and promote external collaboration.\\ \hline
-    \end{supertabular}
-\end{center}
 
-\textbf{EOSC-SWRelMan-20}: Deployment production-ready service: Installability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Dep01 & Deployment production-ready service & A production-ready Service SHOULD be deployed as a workable system with the minimal user or system administrator interaction leveraging IaC templates.\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Official repositories provided by the manufacturer are used to host the SCM modules, thus augmenting the visibility and promote external collaboration. \cite[orviz_set_2017]
+    \item OSS
+\end{itemize}
+
+\textbf{EOSC-SWRelMan-20}: Installability: Installability
+
+\begin{itemize}
+    \item Degree of effectiveness and efficiency with which a product or system can be successfully installed and/or uninstalled in a specified environment. Also, a production-ready SW or service is deployed as a workable system with the minimal user or system administrator interaction leveraging Infratructure as Code templates. \cite[iso_central_secretary_systems_nodate,orviz_fernandez_eosc-synergy_2020]
+    \item OSS
+\end{itemize}
 
 \textbf{EOSC-SWRelMan-21}: Preserve immutable infrastructures: Installability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Dep02 & Preserve immutable infrastructures & Any future change to a deployed Service SHOULD be done in the form of a new deployment, in order to preserve immutable infrastructures.\\ \hline
-    \end{supertabular}
-\end{center}
+
+\begin{itemize}
+    \item Any future change to a deployed Service is done in the form of a new deployment, in order to preserve immutable infrastructures. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item OSS
+\end{itemize}
 
 \textbf{EOSC-SWRelMan-22}: Infrastructure as Code (IaC) validation: Installability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Dep03 & Infrastructure as Code (IaC) validation on changes & IaC SHOULD be validated by specific (unit) testing frameworks for every change being done.\\ \hline
-    \end{supertabular}
-\end{center}
 
-\textbf{EOSC-SWRelMan-24}: Packaging of tarballs: Installability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{raymond_software_2013} & 7.1 & Packaging of tarballs & The single most annoying mistake newbie developers make is to build tarballs that unpack the files and directories in the distribution into the current directory, potentially stepping on files already located there. Never do this!\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item IaC is validated by specific (unit) testing frameworks for every change being done. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item OSS
+\end{itemize}
 
-\textbf{EOSC-SWRelMan-25}: Design for upgradability: Compatibility
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{raymond_software_2013} & 7.4 & Design for upgradability & Your software will change over time as you put out new releases. Some of these changes will not be backward-compatible. Accordingly, you should give serious thought to designing your installation layouts so that multiple installed versions of your code can coexist on the same system. This is especially important for libraries — you can't count on all your client programs to upgrade in lockstep with your API changes\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-SWRelMan-23}: Packaging of tarballs: Installability
 
-\textbf{EOSC-SWRelMan-26}: Provide checksums: Maintainability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{raymond_software_2013} & 7.5 & Provide checksums & Provide checksums with your binaries (tarballs, RPMs, etc.).\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Tarballs are not included in the distribution directory. Packaged tarballs are not extracted in the distribution directory \cite[raymond_software_2013]
+    \item Individual, Team, OSS
+\end{itemize}
 
-\textbf{EOSC-SWRelMan-27}: Documentation version controlled: Supportability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Doc03 & Documentation version controlled & Documentation MUST be version controlled.\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-SWRelMan-24}: Design for upgradability: Compatibility
 
-\textbf{EOSC-SWRelMan-28}: Documentation as code: Supportability, Maintainability, Reusability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_set_2017} & QC.Doc01 & Documentation as code & Documentation MUST be treated as code. Version controlled, it MAY reside in the same repository where the source code lies.\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Installation layout support different versions and code releases \cite[raymond_software_2013]
+    \item Team, OSS
+\end{itemize}
 
-\textbf{EOSC-SWRelMan-29}: Documentation formats: Supportability, Maintainability, Reusability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_set_2017} & QC.Doc02 & Plain text using markup language & Documentation MUST use plain text format using a markup language, such as Markdown or reStructuredText. It is RECOMMENDED that all software components delivered by the same project agree on a common markup language.\\ \hline
-        \cite{raymond_software_2013} & 8.1 & Documentation formats & Here are the documentation markup formats now in widespread use among open-source developers. man pages, HTML Texinfo DocBook asciidoc\\ \hline
-        \cite{raymond_software_2013} & 8.2 & Good practice recommendations & Maintain your document masters in either XML-DocBook or asciidoc. Ship the XML or asciidoc masters. Generate XHTML from your masters\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-SWRelMan-25}: Provide checksums: Maintainability
 
-\textbf{EOSC-SWRelMan-30}: Documentation online: Supportability, Availability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_set_2017} & QC.Doc03 & Available online & Documentation MUST be online available in a documentation repository. Documentation SHOULD be rendered automatically.\\ \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Doc01 & Documentation online & Documentation MUST be available online, easily findable and accessible.\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Code releases provide checksums with each binaries (tarballs, RPMs, etc.). \cite[raymond_software_2013]
+    \item OSS
+\end{itemize}
 
-\textbf{EOSC-SWRelMan-31}: Documentation updates: Supportability, Maintainability, Reusability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_set_2017} & QC.Doc04 & Documentation updates with new software versions & Documentation MUST be updated on new software versions involving any substantial or minimal change in the behavior of the application.\\ \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Doc04 & Documentation updates & Documentation MUST be updated on new Service versions involving any change in the installation, configuration or behaviour of the Service.\\ \hline
-        \cite{raymond_software_2013} & 6.6 & Sanity-check your documentation and READMEs before release & Spell-check your documentation, README files and error messages in your software.\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-SWRelMan-26}: Documentation version controlled: Supportability
 
-\textbf{EOSC-SWRelMan-32}: Documentation updates if inaccurate/unclear: Supportability, Maintainability, Reusability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_set_2017} & QC.Doc05 & Documentation updates if inaccurate/unclear & Documentation MUST be updated whenever reported as inaccurate or unclear.\\ \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Doc05 & Documentation Inaccuracy and unclear & Documentation MUST be updated whenever reported as inaccurate or unclear.\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Documentation is version controlled. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item Team, OSS
+\end{itemize}
 
-\textbf{EOSC-SWRelMan-33}: Documentation production: Supportability, Maintainability, Reusability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{aberdour_achieving_2007} & - & Code documentation & The code is documented\\ \hline
-        \cite{aberdour_achieving_2007} & - & Tutorials & Availability of material explaining how to use the target software through examples\\ \hline
-        \cite{shepherdson_cessda_2019} & CA1.1 & End-user Documentation & User materials and tutorials can be used as training resources. There is detailed in software contextual user support documentation. Documentation is consistent with current version of the software. User created documentation and comments form part of the documentation available.\\ \hline
-        \cite{shepherdson_cessda_2019} & CA1.2 & Operational Documentation & Documentation is appropriate for different categories of deployment and management of the software. Deployment and configuration demonstrations, materials and tutorials can be used to teach other users. Documentation is consistent with current version of the software. User created documentation and comments form part of the documentation available.\\ \hline
-        \cite{shepherdson_cessda_2019} & CA1.3 & Development Documentation & All stages of the software development lifecycle are fully documented, including design, testing and future improvement planning. Documentation is appropriate for different categories of users. Documentation describes the current version of the software. User created documentation and comments form part of the documentation available.\\ \hline
-        \cite{orviz_set_2017} & QC.Doc06 & Documentation production & Documentation MUST be produced according to the target audience, varying according to the software component specification. The identified types of documentation and their RECOMMENDED content are README file(one-paragraph description of the application, a "Getting Started" step-by-step description on how to get a development environment running, automated test execution how-to, links to external documentation below, contributing code of conduct, versioning specification, author list and contacts, license information and acknowledgements), Developer documentations (Private API documentation, structure and interfaces and build documentation), Deployment and Administration documentations (Installation and configuration guides, service reference card, FAQs and troubleshooting) and user documentations (Public API documentation and command-line reference).\\ \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Doc07 & Documentation Target Audience & Documentation MUST be produced according to the target audience, varying according to the Service specification.\\ \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Doc07.1 & Documentation Deployment and Administration & The identified types of documentation and their RECOMMENDED content are Installation and configuration guides, and Service Reference Card with the following RECOMMENDED content: Brief functional description, List of proceses and daemons, init scripts and options, List of configuration files, locatin and example or template, Log files location and other useful audit information, List of ports, Service state informatio, List of cron jobs, Security information, FAQs and troubleshooting.\\ \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Doc07.2 & Documentation User & Detailed User Guide for the Serice. Public API documentation (if applicable). Command-line (CLI) reference (if applicable)\\ \hline
-        \cite{raymond_software_2013} & 7.2 & Have a README & Have a file called README or READ.ME that is a roadmap of your source distribution\\ \hline
-        \cite{raymond_software_2013} & 8 & Good documentation practice & The most important good documentation practice is to actually write some\\ \hline
-        \cite{raymond_software_2013} & 7.3 & Respect and follow standard file naming practices & standard top-level file names: README INSTALL AUTHORS NEWS HISTORY COPYING LICENSE MANIFEST FAQ TAGS\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-SWRelMan-27}: Documentation as code: Supportability, Maintainability, Reusability
 
-\textbf{EOSC-SWRelMan-34}: Documentation PID: Supportability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Doc02 & Documentation PID & Documentation SHOULD have a Persistent Identifier (PID).\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Documentation is treated as code and resides in the same repository where the source code lies. \cite[orviz_set_2017]
+    \item Team, OSS
+\end{itemize}
 
-\textbf{EOSC-SWRelMan-35}: Documentation license: Supportability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Doc06 & Documentation license & Documentation MUST have a non-software license.\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-SWRelMan-28}: Documentation formats: Supportability, Maintainability, Reusability
 
-\subsection{EOSC-SWTest: Attribute type: DevOps - Testing}
+\begin{itemize}
+    \item Documentation uses plain text format using a markup language, such as Markdown or reStructuredText. All software components delivered by the same project agree on a common markup language. \cite[orviz_set_2017,raymond_software_2013]
+    \item Team, OSS
+\end{itemize}
+
+\textbf{EOSC-SWRelMan-29}: Documentation online: Supportability, Availability
+
+\begin{itemize}
+    \item Documentation is online available in a documentation repository. Documentation is rendered automatically. \cite[orviz_set_2017,orviz_fernandez_eosc-synergy_2020]
+    \item Team, OSS
+\end{itemize}
+
+\textbf{EOSC-SWRelMan-30}: Documentation updates: Supportability, Maintainability, Reusability
+
+\begin{itemize}
+    \item Documentation is updated on new software or service versions involving any substantial or minimal change in the behavior of the application. \cite[orviz_set_2017,orviz_fernandez_eosc-synergy_2020,raymond_software_2013]
+    \item Individual, Team, OSS
+\end{itemize}
+
+\textbf{EOSC-SWRelMan-31}: Documentation updates if inaccurate/unclear: Supportability, Maintainability, Reusability
+
+\begin{itemize}
+    \item Documentation is updated whenever reported as inaccurate or unclear. \cite[orviz_set_2017,orviz_fernandez_eosc-synergy_2020]
+    \item Team, OSS
+\end{itemize}
+
+\textbf{EOSC-SWRelMan-32}: Documentation production: Supportability, Maintainability, Reusability
+
+\begin{itemize}
+    \item Documentation is produced according to the target audience, varying according to the software component specification. The identified types of documentation and their content are README file(one-paragraph description of the application, a "Getting Started" step-by-step description on how to get a development environment running, automated test execution how-to, links to external documentation below, contributing code of conduct, versioning specification, author list and contacts, license information and acknowledgements), Developer documentations (Private API documentation, structure and interfaces and build documentation), Deployment and Administration documentations (Installation and configuration guides, service reference card, FAQs and troubleshooting) and user documentations (Public API documentation and command-line reference). \cite[aberdour_achieving_2007,shepherdson_cessda_2019,orviz_set_2017,orviz_fernandez_eosc-synergy_2020,raymond_software_2013]
+    \item Individual, Team, OSS
+\end{itemize}
+
+\textbf{EOSC-SWRelMan-33}: Documentation PID: Supportability
+
+\begin{itemize}
+    \item Documentation has a Persistent Identifier (PID). \cite[orviz_fernandez_eosc-synergy_2020]
+    \item Team, OSS
+\end{itemize}
+
+\textbf{EOSC-SWRelMan-34}: Documentation license: Supportability
+
+\begin{itemize}
+    \item Documentation has a non-software license. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item Team, OSS
+\end{itemize}
+
+\subsection{DevOps - Testing: Attribute type: EOSC-SWTest}
 
 \textbf{EOSC-SWTest-01}: Code style: Maintainability, Testability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_set_2017} & QC.Sty01 & Code style & Each individual software product MUST comply with a de-facto code style standard for all the programming languages used in the codebase. Compliance with multiple standards MAY exist.\\ \hline
-        \cite{raymond_software_2013} & 6.5 & Sanity-check your code before release & If you're writing C/C++ using GCC, test-compile with -Wall and clean up all warning messages before each release. Compile your code with every compiler you can find — different compilers often find different problems. Specifically, compile your software on true 64-bit machine. Underlying data types can change on 64-bit machines, and you will often find new problems there. Find a UNIX vendor's system and run the lint utility over your software. Run tools that for memory leaks and other run-time errors; Electric Fence and Valgrind are two good ones available in open source.For Python projects, the PyChecker program can be a useful check. It's not out of beta yet, but nevertheless often catches nontrivial errors. If you're writing Perl, check your code with perl -c (and maybe -T, if applicable). Use perl -w and 'use strict' religiously.\\ \hline
-        \cite{orviz_set_2017} & QC.Sty02 & Avoid custom code style guidelines & Custom code style guidelines MUST be avoided, only considered in the hypothetical event of programming languages without existing community style standards. Custom styles MUST be documented by defining each convention and its expected output. Custom styles SHOULD evolve over time towards a more consistent definition.\\ \hline
-        \cite{orviz_set_2017} & QC.Sty03 & Allow exceptions & Exceptions of individual conventions from the main definition are allowed but SHOULD be avoided. Absence of standard conventions SHOULD be justified and tracked.\\ \hline
-        \cite{orviz_set_2017} & QC.Sty04 & Automated code style compliance testing & Code style compliance testing MUST be automated and MUST be triggered for each candidate change in the source code.\\ \hline
-    \end{supertabular}
-\end{center}
+
+\begin{itemize}
+    \item Each individual software complies with a de-facto code style standard for all the programming languages used in the codebase. Multiple standard style compliance is possible. \cite[orviz_set_2017,raymond_software_2013]
+    \item Individual, Team, OSS
+\end{itemize}
 
 \textbf{EOSC-SWTest-02}: Unit tests: Maintainability, Testability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_set_2017} & QC.Uni01 & Minimum acceptable code coverage & Minimum acceptable code coverage threshold SHOULD be 70\%. Unit testing coverage SHOULD be higher for those sections of the code identified as critical by the developers, such as units part of a security module. Unit testing coverage MAY be lower for external libraries or pieces of code not maintained within the product's code base.\\ \hline
-        \cite{orviz_set_2017} & QC.Uni02 & Separation of main code and units & Units SHOULD reside in the repository code base but separated from the main code.\\ \hline
-        \cite{orviz_set_2017} & QC.Uni03 & Unit testing coverage checks & Unit testing coverage MUST be checked on change basis.\\ \hline
-        \cite{orviz_set_2017} & QC.Uni04 & Unit testing coverage automation & Unit testing coverage MUST be automated. When working on automated testing, the use of testing doubles is RECOMMENDED to mimic a simplistic behavior of objects and procedures.\\ \hline
-        \cite{aberdour_achieving_2007} & - & Test coverage & Each method/function has a test to support it\\ \hline
-        \cite{nagappan_early_2005} & SM2 & Number of test cases SLOC* & Number of lines of source code containing test cases that check that the program is behaving as expected\\ \hline
-        \cite{nagappan_early_2005} & SM3 & Number of assertions / number of test cases & Ratio number of assertions / number of test cases\\ \hline
-    \end{supertabular}
-\end{center}
 
-\textbf{EOSC-SWTest-03}: Testability: Maintainability, Testability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{boehm_quantitative_1976} & - & Testability & It facilitates the establishment of verification criteria and supports evaluation of its performance.\\ \hline
-        \cite{shepherdson_cessda_2019} & CA9 & Verification and testing & Actual software application tested and validated through successful use of application output.\\ \hline
-        \cite{raymond_software_2013} & 6.4 & Test your code before release & A good test suite allows the team to buy inexpensive hardware for testing and then easily run regression tests before releases.\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Minimum acceptable code coverage threshold is 70\%. Unit testing coverage is higher for those sections of the code identified as critical by the developers, such as units part of a security module. Unit testing coverage may be lower for external libraries or pieces of code not maintained within the product's code base. \cite[aberdour_achieving_2007,nagappan_early_2005,boehm_quantitative_1976,shepherdson_cessda_2019,orviz_set_2017,raymond_software_2013]
+    \item Team, OSS
+\end{itemize}
 
-\textbf{EOSC-SWTest-04}: Test doubles: Functional suitability, Testability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_set_2017} & QC.Har01 & Test doubles & When working on automated testing, the use of Test Doubles is RECOMMENDED to mimic a simplistic behavior of objects and procedures.\\ \hline
-        \cite{orviz_set_2017} & QC.Har02 & Test doubles in SW repository & Test Doubles SHOULD reside in the software component repository code base but separated from the main code.\\ \hline
-        \cite{orviz_set_2017} & QC.Har03 & Regression testing & Regression testing, that checks the conformance with previous tests, SHOULD be covered at this stage by executing the complete set of Test Doubles available.\\ \hline
-        \cite{orviz_set_2017} & QC.Har04 & Test doubles checked & Test Doubles and regression, MUST be checked on change basis.\\ \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Api03 & Use of test doubles & API testing SHOULD involve the use of test doubles, such as mock servers or stubs, that act as a validation layer for the incoming requests.\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-SWTest-03}: Test doubles: Functional suitability, Testability
 
-\textbf{EOSC-SWTest-05}: Test-Driven Development (TDD): Functional suitability, Maintainability, Functional suitability, Testability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_set_2017} & QC.Tdd01 & Test-Driven Development (TDD) & Software requirements SHOULD be converted to test cases, and these test cases SHOULD be checked automatically.\\ \hline
-        \cite{crispin_driving_2006} & TDD & Test-Driven Development (TDD) & Define and code unit tests for each small bit of program functionality\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item When working on automated testing,  Test Doubles (i.e., objects or procedures that look and behave like their release-intended 
+counterparts, but are actually simplified versions that reduce the 
+complexity and facilitate testing) are used to mimic a simplistic behavior of objects and procedures. \cite[orviz_set_2017,orviz_fernandez_eosc-synergy_2020]
+    \item Team, OSS
+\end{itemize}
 
-\textbf{EOSC-SWTest-06}: API testing: Functional suitability, Testability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Api01 & Validation of features & API testing MUST cover the validation of the features outlined in the specification (aka contract testing).\\ \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Api01.1 & Compliant with OpenAPI Specification (OAS) & Any change in the API not compliant with the OAS MUST NOT pass contract testing.\\ \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Api01.2 & Use of OAS & The use of OAS SHOULD narrow down the applicable set of test cases to the features described in the specification, avoiding unnecessary assertions.\\ \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Fun01.1 & Functional testing, detect feature disruptions & When using APIs, contract testing MUST detect any disruption in the features exposed by the provider to the consumer, through the validation of the API specification.\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-SWTest-04}: Test-Driven Development (TDD): Functional suitability, Maintainability, Testability
 
-\textbf{EOSC-SWTest-07}: Integration testing: Functional suitability, Testability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Int01 & Integration testing & Whenever a new functionality is involved, integration testing MUST guarantee the operation of any previously-working interaction with external Services\\ \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Int02 & Integration testing, avoid non operational services & Integration testing MUST NOT rely on non-operational or out-of-the-warranty services.\\ \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Int03 & Integration testing use pilot/Testbeds & Ad-hoc pilot Service infrastructures and/or local testbeds MAY be used to cope with the integration testing requirements.\\ \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Int04 & Integration testing automation & Integration testing SHOULD be automated.\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Software requirements are converted to test cases, and these test cases are checked automatically. Also, degree of effectiveness and efficiency with which test criteria can be established for a system, product or
+component and tests can be performed to determine whether those criteria have been met. \cite[iso_central_secretary_systems_nodate,crispin_driving_2006,zuser_software_2005,orviz_set_2017]
+    \item OSS
+\end{itemize}
 
-\textbf{EOSC-SWTest-08}: Functional testing: Functional suitability, Testability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Fun01 & Functional testing, full scope & Functional testing SHOULD tend to cover the full scope -e.g. positive, negative, edge cases- for the set of functionality that the Service claims to provide.\\ \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Fun01.2 & Functional testing, Web interface & Functional tests SHOULD include the Web interface of the Service.\\ \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Fun02 & Functional testing, Automation & Functional tests SHOULD be checked automatically.\\ \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Fun03 & Functional testing, Tests provided by developers & Functional tests SHOULD be provided by the developers of the underlying software.\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-SWTest-05}: API testing: Functional suitability, Testability
 
-\textbf{EOSC-SWTest-09}: Performance testing: Functional suitability, Testability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Per01 & Performance testing & Performance testing SHOULD be carried out to check the Service performance under varying loads.\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item API testing MUST cover the validation of the features outlined in the specification (aka contract testing). \cite[orviz_fernandez_eosc-synergy_2020]
+    \item Team, OSS
+    \item Service
+\end{itemize}
 
-\textbf{EOSC-SWTest-10}: Stress testing: Functional suitability, Testability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Per02 & Stress testing & Stress testing SHOULD be carried out to check the Service to determine the behavioral limits under sudden increased load.\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-SWTest-06}: Integration testing: Functional suitability, Testability, Interoperability
 
-\textbf{EOSC-SWTest-11}: Scalability testing: Functional suitability, Testability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Per03 & Scalability testing & Scalability testing MAY be carried out to check the Service ability to scale up and/or scale out when its load reaches the limits.\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Whenever a new functionality is involved, integration testing guarantees the operation of any previously-working interaction with external Services \cite[iso_central_secretary_systems_nodate,orviz_fernandez_eosc-synergy_2020]
+    \item OSS
+\end{itemize}
 
-\textbf{EOSC-SWTest-12}: Elasticity testing: Functional suitability, Testability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Per04 & Elasticity testing & Elasticity testing MAY be carried out to check the Service ability to scale out or scale in, depending on its demand or workload.\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-SWTest-07}: Functional testing: Functional suitability, Testability
 
-\textbf{EOSC-SWTest-13}: Open Web Application Security Project (OWASP): Security
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_set_2017} & QC.Sec01 & OWASP Compliance & Compliance with Open Web Application Security Project (OWASP) secure coding guidelines is RECOMMENDED, even for non-web applications.\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Functional testing covers the full scope -e.g. positive, negative, edge cases- for the set of functionality that the software or service claims to provide. \cite[iso_central_secretary_systems_nodate,orviz_fernandez_eosc-synergy_2020]
+    \item Team, OSS
+    \item Service
+\end{itemize}
 
-\textbf{EOSC-SWTest-14}: Static Application Security Testing (SAST): Security
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_set_2017} & QC.Sec02 & Static Application Security Testing (SAST) & Source code SHALL use automated linter tools to perform static application security testing (SAST) that flag common suspicious constructs that may cause a bug or lead to a security risk (e.g. inconsistent data structure sizes or unused resources).\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-SWTest-08}: Performance testing: Functional suitability, Testability
 
-\textbf{EOSC-SWTest-15}: Security code reviews: Security
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_set_2017} & QC.Sec03 & Security code reviews & Security code reviews for certain vulnerabilities SHOULD be done as part of the identification of potential security flaws in the code. Inputs SHOULD come from automated linters and manual penetration testing results.\\ \hline
-        \cite{gillies_modelling_1992} & 8.3 & Security & This may be measured as the resource cost expended to solve problems caused by unauthorized activity. This resource cost may appear in a number of ways, e.g. staff time to recover system (time) or loss of information (bytes or value).\\ \hline
-        \cite{shepherdson_cessda_2019} & CA10 & Security & Security was addressed in the development phases up to and including product release.\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Performance testing is carried out to check the Software Application performance under varying loads. \cite[iso_central_secretary_systems_nodate,orviz_fernandez_eosc-synergy_2020]
+    \item OSS
+\end{itemize}
 
-\textbf{EOSC-SWTest-16}: No world-writable files or directories: Security
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_set_2017} & QC.Sec04 & No world-writable files or directories & World-writable files or directories MUST NOT be present in the product's configuration or logging locations.\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-SWTest-09}: Stress testing: Functional suitability, Testability
 
-\textbf{EOSC-SWTest-17}: Public endpoints and APIs encrypted: Security
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Sec01 & Public endpoints and APIs encrypted & The Service public endpoints and APIs MUST be secured with data encryption.\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Stress testing is carried out to check the Service to determine the behavioral limits under sudden increased load. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item OSS
+    \item Service
+\end{itemize}
 
-\textbf{EOSC-SWTest-18}: Strong ciphers: Security
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Sec01.1 & Strong ciphers & The Service MUST use strong ciphers for data encryption.\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-SWTest-10}: Scalability testing: Functional suitability, Testability
 
-\textbf{EOSC-SWTest-19}: Authentication and Authorisation: Security, Technical accessibility
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Sec02 & Service authentication & The Service SHOULD have an authentication mechanism.\\ \hline
-        \cite{shepherdson_cessda_2019} & CA12 & Authentication and Authorisation & Full rights management by users, sharing/delegation of permissions/access to individual data from within the system.\\ \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Sec02.1 & Service composition centralized authentication & Whenever dealing with a Service Composition, such as microservice architectures, the Services SHOULD be managed by a centralized authentication mechanism.\\ \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Sec02.2 & Protect the backend services API gateway & In publicly-accessible APIs, Service authentication SHOULD be handled through an API gateway in order to control the traffic and protect the backend services from overuse.\\ \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Sec03 & Service composition centralized authorization & The Service SHOULD implement an authorization mechanism.\\ \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Sec03.1 & Service composition authorization access permissions & In Service Composition environments, the authorization mechanism SHOULD uniquely grant the essential access permissions for each Service according to the principle of least privilege (PoLP).\\ \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Sec04 & Service Credential and Signatures validation & The Service MUST validate the credentials and signatures.\\ \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Sec04.1 & Service credential and certification trusted authority & Credentials used in the Service MUST be signed by a recognized and trusted certification authority.\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Scalability testing is carried out to check the Service ability to scale up and/or scale out when its load reaches the limits. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item OSS
+    \item Service
+\end{itemize}
 
-\textbf{EOSC-SWTest-20}: API security assessment: Security
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Api02 & API security assessment & API testing MUST include the assessment of the security-related criteria.\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-SWTest-11}: Elasticity testing: Functional suitability, Testability
 
-\textbf{EOSC-SWTest-21}: Service compliance with data regulations (GDPR): Security
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Sec05 & Service compliance with data regulations (GDPR) & The Service MUST handle personal data in compliance with the applicable regulations, such as the General Data Protection Regulation (GDPR) within the European boundaries.\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Elasticity testing is carried out to check the Service ability to scale out or scale in, depending on its demand or workload. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item OSS
+    \item Service
+\end{itemize}
 
-\textbf{EOSC-SWTest-22}: Dynamic Application Security Testing (DAST): Security
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Sec06.1 & Dynamic Application Security Testing (DAST) & DAST checks MUST be executed, through the use of ad-hoc tools, directly to an operational Service in order to uncover runtime security vulnerabilities and any other environment-related issues (e.g. SQL injection, cross-site scripting or DDOS). The latest release of OWASP's Web Security Testing Guide and the NIST's Technical Guide to Information Security Testing and Assessment MUST be considered for carrying out comprehensive Service security testing.\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-SWTest-12}: Open Web Application Security Project (OWASP): Security
 
-\textbf{EOSC-SWTest-23}: Interactive Application Security Testing (IAST): Security
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Sec06.2 & Interactive Application Security Testing (IAST) & Interactive Application Security Testing (IAST), analyzes code for security vulnerabilities while the app is run by an automated test. IAST **SHOULD** be performed to a service in an operating state.\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Application is compliant with Open Web Application Security Project (OWASP) secure coding guidelines \cite[orviz_set_2017]
+    \item OSS
+\end{itemize}
 
-\textbf{EOSC-SWTest-24}: Security penetration testing: Security
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Sec06.3 & Security penetration testing & Penetration testing (manual or automated) MAY be part of the application security verification effort.\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-SWTest-13}: Static Application Security Testing (SAST): Security
 
-\textbf{EOSC-SWTest-25}: Security assessment: Security
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Sec06.4 & Security assessment & The security assessment of the target system configuration is particularly important to reduce the risk of security attacks. The benchmarks delivered by the Center for Internet Security (CIS) and the NIST's Security Assurance Requirements for Linux Application Container Deployments MUST be considered for this task.\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item Source code uses automated linter tools to perform static application security testing (SAST) that flag common suspicious constructs that may cause a bug or lead to a security risk (e.g. inconsistent data structure sizes or unused resources). \cite[orviz_set_2017]
+    \item OSS
+\end{itemize}
 
-\textbf{EOSC-SWTest-26}: Security as Code (SaC) Testing: Security
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Sec07 & Security as Code (SaC) Testing & IaC testing MUST cover the security auditing of the IaC templates (SaC) in order to assure the deployment of secured Services. For all the third-party dependencies used in the IaC templates (including all kind of software artefacts, such as Linux packages or container-based images):\\ \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Sec07.1 & SaC Vulnerability scanning & SaC MUST perform vulnerability scanning of the artefact versions in use.\\ \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Sec07.2 & SaC Trust and Signature & SaC SHOULD verify that the artefacts are trusted and digitally signed.\\ \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Sec07.3 & SaC Security policy scans & SaC MUST scan IaC templates to uncover misalignments with widely-accepted security policies, such as non-encrypted secrets or disabled audit logs.\\ \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Sec07.4 & SaC Security requirement violations & SaC MAY be used to seek, in the IaC templates, for violations of security requirements outlined in the applicable regulations.\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-SWTest-14}: Security code reviews: Security
 
-\subsection{EOSC-SrvOps: Attribute type: Service Operability}
+\begin{itemize}
+    \item Security code reviews for certain vulnerabilities is done as part of the identification of potential security flaws in the code. Inputs  come from automated linters and manual penetration testing results. \cite[gillies_modelling_1992,shepherdson_cessda_2019,orviz_set_2017]
+    \item OSS
+\end{itemize}
+
+\textbf{EOSC-SWTest-15}: No world-writable files or directories: Security
+
+\begin{itemize}
+    \item World-writable files or directories are not be present in the product's configuration or logging locations. \cite[orviz_set_2017]
+    \item Team, OSS
+\end{itemize}
+
+\textbf{EOSC-SWTest-16}: Public endpoints and APIs encrypted: Security
+
+\begin{itemize}
+    \item The Service public endpoints and APIs are secured with data encryption. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item Team, OSS
+    \item Service
+\end{itemize}
+
+\textbf{EOSC-SWTest-17}: Strong ciphers: Security
+
+\begin{itemize}
+    \item The Service uses strong ciphers for data encryption. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item Team, OSS
+    \item Service
+\end{itemize}
+
+\textbf{EOSC-SWTest-18}: Authentication and Authorisation: Security, Technical accessibility
+
+\begin{itemize}
+    \item The Service has an authentication and authorization mechanism. The Service validates the credentials and signatures. \cite[shepherdson_cessda_2019,orviz_fernandez_eosc-synergy_2020]
+    \item Team, OSS
+    \item Service
+\end{itemize}
+
+\textbf{EOSC-SWTest-19}: API security assessment: Security
+
+\begin{itemize}
+    \item API testing includes the assessment of the security-related criteria. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item OSS
+    \item Service
+\end{itemize}
+
+\textbf{EOSC-SWTest-20}: Service compliance with data regulations (GDPR): Security
+
+\begin{itemize}
+    \item The Service handles personal data in compliance with the applicable regulations, such as the General Data Protection Regulation (GDPR) within the European boundaries. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item Individual, Team, OSS
+    \item Service
+\end{itemize}
+
+\textbf{EOSC-SWTest-21}: Dynamic Application Security Testing (DAST): Security
+
+\begin{itemize}
+    \item DAST checks are executed, through the use of ad-hoc tools, directly to an operational Service in order to uncover runtime security vulnerabilities and any other environment-related issues (e.g. SQL injection, cross-site scripting or DDOS). The latest release of OWASP's Web Security Testing Guide and the NIST's Technical Guide to Information Security Testing and Assessment are considered for carrying out comprehensive Service security testing. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item OSS
+\end{itemize}
+
+\textbf{EOSC-SWTest-22}: Interactive Application Security Testing (IAST): Security
+
+\begin{itemize}
+    \item Interactive Application Security Testing (IAST), analyzes code for security vulnerabilities while the app is run by an automated test. IAST is performed to a service in an operating state. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item OSS
+    \item Service
+\end{itemize}
+
+\textbf{EOSC-SWTest-23}: Security penetration testing: Security
+
+\begin{itemize}
+    \item Penetration testing (manual or automated) is part of the application security verification effort. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item OSS
+\end{itemize}
+
+\textbf{EOSC-SWTest-24}: Security assessment: Security
+
+\begin{itemize}
+    \item The security assessment of the target system configuration is particularly important to reduce the risk of security attacks. The benchmarks delivered by the Center for Internet Security (CIS) and the NIST's Security Assurance Requirements for Linux Application Container Deployments is considered for this task. Also, degree to which a product or system protects information and data so that persons or other products or
+systems have the degree of data access appropriate to their types and levels of authorization. \cite[iso_central_secretary_systems_nodate,orviz_fernandez_eosc-synergy_2020]
+    \item OSS
+\end{itemize}
+
+\textbf{EOSC-SWTest-25}: Security as Code (SaC) Testing: Security
+
+\begin{itemize}
+    \item IaC testing covers the security auditing of the IaC templates (SaC) in order to assure the deployment of secured Services. For all the third-party dependencies used in the IaC templates (including all kind of software artefacts, such as Linux packages or container-based images) \cite[orviz_fernandez_eosc-synergy_2020]
+    \item OSS
+\end{itemize}
+
+\subsection{Service Operability: Attribute type: EOSC-SrvOps}
 
 \textbf{EOSC-SrvOps-01}: Acceptable Usage Policy (AUP): Supportability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Pol1.1 & Acceptable Usage Policy (AUP) & Acceptable Usage Policy (AUP): Is a set of rules applied by the owner, creator or administrator of a network, Service or system, that restrict the ways in which the network, Service or system may be used and sets guidelines as to how it should be used. The AUP can also be referred to as: Acceptable Use Policy or Fair Use Policy.\\ \hline
-    \end{supertabular}
-\end{center}
+
+\begin{itemize}
+    \item An Acceptable Usage Policy (AUP) is declared. AUP Is a set of rules applied by the owner, creator or administrator of a network, Service or system, that restrict the ways in which the network, Service or system may be used and sets guidelines as to how it should be used. The AUP can also be referred to as: Acceptable Use Policy or Fair Use Policy. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item OSS
+\end{itemize}
 
 \textbf{EOSC-SrvOps-02}: Access Policy and Terms of Use: Supportability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Pol1.2 & Access Policy and Terms of Use & Access Policy or Terms of Use: represent a binding legal contract between the users (and/or customers), and the Provider of the Service. The Access Policy mandates the users (and/or customers) access to and the use of the Provider's Service.\\ \hline
-    \end{supertabular}
-\end{center}
+
+\begin{itemize}
+    \item An Access Policy or Terms of Use (APTU) is declared. APTU represents a binding legal contract between the users (and/or customers), and the Provider of the Service. The Access Policy mandates the users (and/or customers) access to and the use of the Provider's Service. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item OSS
+\end{itemize}
 
 \textbf{EOSC-SrvOps-03}: Privacy policy: Supportability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Pol1.3 & Privacy policy & Privacy Policy: Data privacy statement informing the users (and/or customers), about which personal data is collected and processed when they use and interact with the Service. It states which rights the users (and/or customers) have regarding the processing of their data.\\ \hline
-    \end{supertabular}
-\end{center}
 
-\textbf{EOSC-SrvOps-04}: Service Tracker/Helpdesk: Supportability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Sup01 & Service Tracker/Helpdesk & The Service MUST have a tracker or helpdesk for operational and users issues.\\ \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Sup02 & Service Issue Tracker & The Service SHOULD have a tracker for the underlying software issues.\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item A Privacy Policy is declared, with a data privacy statement informing the users (and/or customers), about which personal data is collected and processed when they use and interact with the Service. It states which rights the users (and/or customers) have regarding the processing of their data. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item OSS
+\end{itemize}
 
-\textbf{EOSC-SrvOps-05}: Operational Level Agreement (OLA): Supportability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Sup03 & Operational Level Agreement (OLA) & The Service SHOULD include an Operational Level Agreement (OLA) with the infrastructure where it is integrated.\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-SrvOps-04}: Operational Level Agreement (OLA): Supportability
 
-\textbf{EOSC-SrvOps-06}: Service Level Agreement (SLA): Supportability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Sup04 & Service Level Agreement (SLA) & The Service MAY include Service Level Agreement (SLA) with user communities.\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item The Service includes an Operational Level Agreement (OLA) with the infrastructure where it is integrated. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item OSS
+    \item Service
+\end{itemize}
 
-\textbf{EOSC-SrvOps-07}: Monitoring service public endpoints: Availability, Reliability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Mon01.1 & Monitoring service public endpoints & The Service public endpoints MUST be monitored.\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-SrvOps-05}: Service Level Agreement (SLA): Supportability
 
-\textbf{EOSC-SrvOps-08}: Monitoring service public APIs: Availability, Reliability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Mon01.2 & Monitoring service public APIs & The Service public APIs MUST be monitored. Use functional tests.\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item The Service includes Service Level Agreement (SLA) with user communities. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item OSS
+    \item Service
+\end{itemize}
 
-\textbf{EOSC-SrvOps-09}: Monitoring service Web Interface: Availability, Reliability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Mon01.3 & Monitoring service Web Interface & The Service Web interface MAY be monitored. Use functional tests.\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-SrvOps-06}: Monitoring service public endpoints: Availability, Reliability
 
-\textbf{EOSC-SrvOps-10}: Monitoring security public endpoints and APIs: Availability, Reliability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Mon02.1 & Monitoring security public endpoints and APIs & The Service MUST be monitored for public endpoints and APIs secured and strong ciphers for encryption. Use Security tests of criteria [SvcQC.Sec02] and [SvcQC.Sec05].\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item The Service public endpoints are monitored, such as probes measuring the http or https response time \cite[orviz_fernandez_eosc-synergy_2020]
+    \item OSS
+    \item Service
+\end{itemize}
 
-\textbf{EOSC-SrvOps-11}: Monitoring security DAST: Availability, Reliability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Mon02.2 & Monitoring security DAST & The Service SHOULD be monitored with DAST checks. Use Security tests of criteria [SvcQC.Sec06].\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-SrvOps-07}: Monitoring service public APIs: Availability, Reliability
 
-\textbf{EOSC-SrvOps-12}: Monitoring infrastructure: Availability, Reliability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Mon03 & Monitoring infrastructure & The Service MUST be monitored for infrastructure-related criteria.\\ \hline
-    \end{supertabular}
-\end{center}
+\begin{itemize}
+    \item The Service public APIs are monitored through the use of functional tests. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item OSS
+    \item Service
+\end{itemize}
 
-\textbf{EOSC-SrvOps-13}: Monitoring with Unit tests: Availability, Reliability
-\nopagebreak[4]
-\begin{center}
-    \tablehead{\hline \textbf{Reference} & \textbf{Codename} & \textbf{Name} & \textbf{Definition} \\ \hline}
-    \tabletail{\hline}
-    \tiny
-    \begin{supertabular}{|p{0.10\linewidth}|p{0.10\linewidth}|p{0.20\linewidth}|p{0.60\linewidth}|} \hline
-        \cite{orviz_fernandez_eosc-synergy_2020} & SvcQC.Mon03.1 & Monitoring with Unit tests & IaC (unit) tests SHOULD be reused as monitoring tests, thus avoiding duplication.\\ \hline
-    \end{supertabular}
-\end{center}
+\textbf{EOSC-SrvOps-08}: Monitoring service Web Interface: Availability, Reliability
+
+\begin{itemize}
+    \item The Service Web interface are monitored, this can be accoplished through the use of automated and periodic functional tests. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item OSS
+    \item Service
+\end{itemize}
+
+\textbf{EOSC-SrvOps-09}: Monitoring security public endpoints and APIs: Availability, Reliability
+
+\begin{itemize}
+    \item The Service is monitored for public endpoints and APIs secured and strong ciphers for encryption. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item OSS
+    \item Service
+\end{itemize}
+
+\textbf{EOSC-SrvOps-10}: Monitoring security DAST: Availability, Reliability
+
+\begin{itemize}
+    \item The Service is monitored with DAST security checks. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item OSS
+    \item Service
+\end{itemize}
+
+\textbf{EOSC-SrvOps-11}: Monitoring infrastructure: Availability, Reliability
+
+\begin{itemize}
+    \item The Service is monitored for infrastructure-related criteria. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item OSS
+    \item Service
+\end{itemize}
+
+\textbf{EOSC-SrvOps-12}: Monitoring with Unit tests: Availability, Reliability
+
+\begin{itemize}
+    \item IaC (unit) tests are reused as monitoring tests, thus avoiding duplication. \cite[orviz_fernandez_eosc-synergy_2020]
+    \item OSS
+\end{itemize}
 

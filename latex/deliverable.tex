@@ -1,0 +1,70 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, total={16.5cm, 22.3cm}]{geometry}
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb,amsfonts,textcomp}
+\usepackage{color}
+\usepackage{array}
+\usepackage{hhline}
+\usepackage{hyperref}
+\usepackage{multirow}
+\usepackage{supertabular}
+\usepackage[table,xcdraw,usenames,dvipsnames]{xcolor}
+\usepackage{parskip}
+\usepackage[backend=biber,style=numeric]{biblatex}
+\usepackage{csquotes}
+\usepackage[toc]{appendix}
+\addbibresource{EOSC_IQRS.bib}
+
+\title{Task Force Sub Group 3 - Review of Software Quality Attributes and Characteristics}
+\author{
+    Campos, Isabel (CSIC/IFCA) \and
+    Cano, Laura del (CSIC/CNB) \and
+    Castro, Leyla Jael (ZB MED) \and
+    Colom, Miguel (ENS Paris-Saclay) \and
+    David, Mario (LIP) \and
+    Garijo, Daniel (UPM) \and
+    Leong, Cerlane (CSCS) \and
+    Louvet, Violaine (CNRS) \and
+    Ronchieri, Elisabetta (INFN/CNAF) \and
+    Torquati, Massimo (UNIPI) \and
+    Van den Bossche, Maxime (KU Leuven)
+    }
+
+\date{\today}
+\begin{document}
+\maketitle
+\tableofcontents
+
+\newpage
+\section{Quality Characteristics}
+
+Software Quality characteristics are taken from ISO/IEC 25010:2011(E)~\cite{iso_25010_2011_2017} except Scalability and Supportability.
+Microsoft: \url{https://docs.microsoft.com/en-us/previous-versions/msp-n-p/ee658094(v=pandp.10)}.
+
+\input{qual-char}
+
+\newpage
+\section{Quality Attributes}
+
+The metrics and attributes where subdivided into four categories and for each metric or attribute,
+a new codename was created by the EOSC Task Force:
+
+\begin{itemize}
+    \item Source Code Metrics (\textbf{EOSC-SCMet}):
+    \item Time metrics (\textbf{EOSC-TMet}):
+    \item Qualitative Attributes (\textbf{EOSC-Qual}):
+    \item DevOps - SW release and management Attributes (\textbf{EOSC-SWRelMan}):
+    \item DevOps - Testing Attributes (\textbf{EOSC-SWTest}):
+    \item Service Operability Attributes (\textbf{EOSC-SrvOps}):
+\end{itemize}
+
+\input{09-appendix}
+
+\newpage
+\printbibliography
+
+\end{document}

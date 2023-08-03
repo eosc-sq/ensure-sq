@@ -50,6 +50,43 @@ Supportability \cite{microsoft_2010}.
 \newpage
 \section{Quality Attributes}
 
+We follow the methodology for the survey, proposed by Kitchenham and Charters \cite{keele2007guidelines} which has the following steps:
+
+\begin{enumerate}
+    \item Source selection and search: We have searched in the Scopus dataset, including the top five journals in
+    software engineering related to software \footnote{\url{https://research.com/journals-rankings/computer-science/software-programming}}
+    and articles of the  "International Conference on Software Engineering", one of the top venues for Software engineering. We also added documentclass
+    and web resources that the Task Force subgroup considered relevants.
+    The search included the keywords "software quality" in the title of the target publications.
+    \item Inclusion and exclusion criteria: Excluded journals not in the SE domain. Excluded articles not written in English.
+    \item Selection procedure: Skim article titles and abstracts. The process was performed by 2-3 people. Final list was agreed upon by the group through discussion
+    about the relevance of the paper and analysis if that paper contains or proposes Software Quality attributes.
+    \item Review process: After following the selection procedure, we ended up with 19 articles, which have been reviewed in this survey. Some of the articles
+    refer to the ISO/IEC 25010:2011(E)~\cite{iso_25010_2011_2017} or to it's precursor ISO/IEC 9126, have been grouped together.
+\end{enumerate}
+
+Journals: IEEE Transactions on Software Engineering, Empirical Software Engineering, Journal of Systems and Software, Software \& Systems Modeling, 
+Information and Software Technology, IEEE Software, Software Quality Journal. Query used:
+
+\tiny
+\begin{verbatim}
+    TITLE ( software  AND quality )  AND  
+        ( LIMIT-TO ( EXACTSRCTITLE ,  "Software Quality Journal" )  
+        OR  LIMIT-TO ( EXACTSRCTITLE ,  "Proceedings International Conference On Software Engineering" ) 
+        OR  LIMIT-TO ( EXACTSRCTITLE ,  "IEEE Transactions on Software Engineering" )
+        OR  LIMIT-TO ( EXACTSRCTITLE ,  "Empirical Software Engineering" ) 
+        OR  LIMIT-TO ( EXACTSRCTITLE ,  "Journal of Systems and Software" ) 
+        OR  LIMIT-TO ( EXACTSRCTITLE ,  "Software & Systems Modeling" ) 
+        OR  LIMIT-TO ( EXACTSRCTITLE ,  "Information and Software Technology" )  
+        OR  LIMIT-TO ( EXACTSRCTITLE ,  "IEEE Software" )   
+        )  AND  ( LIMIT-TO ( SUBJAREA ,  "COMP" )  OR  LIMIT-TO ( SUBJAREA ,  "ENGI" ) )  
+\end{verbatim}
+\small
+
+As a result, we obtained 272 results. Additional filtering: excluding papers with no abstracts, proceedings/workshop summary,
+and removed those which did not seem related by browsing the abstract and title. Also, removed those papers that did not seem to propose
+quality dimensions (e.g., if they talk about practices).
+
 The metrics and attributes where subdivided into four categories and for each metric or attribute,
 a new codename was created by the EOSC Task Force:
 
@@ -61,6 +98,18 @@ a new codename was created by the EOSC Task Force:
     \item DevOps - Testing Attributes (\textbf{EOSC-SWTest}):
     \item Service Operability Attributes (\textbf{EOSC-SrvOps}):
 \end{itemize}
+
+Research Software levels correspond to the four user stories defined in subgroup 1 (Research Software Lifecycle) of
+this Task Force (Infrastructure for Quality Research Software) \footnote{\url{https://docs.google.com/document/d/13TzhxNpGLtbFWYOmWSKkEHFC22ICmVpB/}},
+and are the following:
+
+\begin{enumerate}
+    \item \textbf{Individual} creating research software for own use (e.g. a PhD student): easy to implement, good practice for research software at any level.
+    \item \textbf{Team} creating an application or workflow for use within the team: easy to implement, good practice for research software at any level, useful
+    for some basic coordination when more than one person participates.
+    \item \textbf{OSS} A team / community developing (possibly broadly applicable) open source research software or service platform:
+    Open Source Software in general, all other cases.
+\end{enumerate}
 
 \input{09-appendix}
 

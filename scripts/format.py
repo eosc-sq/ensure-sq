@@ -54,13 +54,7 @@ if __name__ == '__main__':
                   'Service Operability': 'EOSC-SrvOps'
                  }
 
-    latex_str = 'Research Software levels are the following:\n'
-    latex_str += '\\begin{itemize}\n'
-    latex_str += '    \\item \\textbf{{Individual}}: easy to implement, good practice for research software at any level.\n'
-    latex_str += '    \\item \\textbf{{Team}}: easy to implement, good practice for research software at any level, useful for some basic coordination when more than one person participates.\n'
-    latex_str += '    \\item \\textbf{{OSS}}: Open Source Software in general, all other cases.\n'
-    latex_str += '\\end{itemize}\n\n'
-
+    latex_str = ''
     all_attr = []
     csv_file = 'Quality_Models.csv'
     with open(csv_file, encoding='utf-8', newline='') as csvf:

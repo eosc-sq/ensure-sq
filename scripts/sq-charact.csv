@@ -1,6 +1,6 @@
 Characteristic,Definition,Notes
 Functional suitability,Degree to which a product or system provides functions that meet stated and implied needs when used under specified conditions.,-
-Availability,"Degree to which a system, product or component is operational and accessible when required for use, adapted from \cite{iso_central_secretary_isoiecieee_2010}.",-.
+Availability,"Degree to which a system, product or component is operational and accessible when required for use, adapted from \cite{iso_central_secretary_isoiecieee_2010}.",-
 Reliability,"Degree to which a system, product or component performs specific functions under specified conditions for a specified period of time, adapted from \cite{iso_central_secretary_isoiecieee_2010}.","Limitations in reliability are due to faults in requirements, design and implementation, or due to contextual changes."
 Time behaviour,"Degree to which the response and processing times and throughput rates of a product or system, when performing its functions, meet requirements.",-
 Performance,Performance relative to the amount of resources used under stated conditions.,"Resources can include other software products, the software and hardware configuration of the system, and materials (e.g. print paper, storage media)."

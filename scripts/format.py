@@ -38,7 +38,7 @@ def get_section(cat_def, all_attr):
             latex_str += f'    \\item {attrib["EOSC-TF_Definition"]} \\cite{{{str_tag}}}\n'
             latex_str += f'    \\item Research Software level: {attrib["RS_level"]}.\n'
             if attrib["RS_type"]:
-                latex_str += f'    \\item Research Software type: {attrib["RS_type"]}.n'
+                latex_str += f'    \\item Research Software type: {attrib["RS_type"]}.\n'
 
             latex_str += '\\end{itemize}\n\n'
 

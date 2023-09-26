@@ -25,8 +25,9 @@
 
 
 \subsection{Software Quality characteristics}
+\label{subsect_sqchar}
 
-The sub-group identified a total of 25 Software Quality characteristics. They where taken from ISO/IEC 25010:2011(E)~\cite{iso_25010_2011_2017} except Scalability and Supportability. Microsoft: \url{https://docs.microsoft.com/en-us/previous-versions/msp-n-p/ee658094(v=pandp.10)}.
+The sub-group identified a total of 25 Software Quality characteristics. Most where taken from ISO/IEC 25010:2011(E) \cite{iso_25010_2011_2017}, some from ISO/IEC/IEEE 24765:2010(E) \cite{iso_central_secretary_isoiecieee_2010} and Scalability and Supportability from Microsoft \cite{microsoft_2010}.
 
 \textbf{Functional suitability}: Degree to which a product or system provides functions that meet stated and implied needs when used under specified conditions.
 
@@ -80,20 +81,27 @@ The sub-group identified a total of 25 Software Quality characteristics. They wh
 
 \subsection{Software Quality attributes}
 
+Overall, a total of 241 Quality Attributes were gathered in a table and some of these attributes were aggregated into a single attribute when they were from different sources but with the same (or very similar) meaning.
+
+The sub group ended up with 132 Quality Attributes after aggregation and are shown in Appendix~\ref{appendix_qa}. All paper sources have been referenced.
+
 The metrics and attributes where subdivided into four categories and for each metric or attribute,
 a new codename was created by the sub group:
 
 \begin{itemize}
-    \item Source Code Metrics (\textbf{EOSC-SCMet}):
-    \item Time metrics (\textbf{EOSC-TMet}):
-    \item Qualitative Attributes (\textbf{EOSC-Qual}):
-    \item DevOps - SW release and management Attributes (\textbf{EOSC-SWRelMan}):
-    \item DevOps - Testing Attributes (\textbf{EOSC-SWTest}):
-    \item Service Operability Attributes (\textbf{EOSC-SrvOps}):
+    \item Source Code Metrics (\textbf{EOSC-SCMet}): 20 metrics.
+    \item Time metrics (\textbf{EOSC-TMet}): 11 metrics. Metrics related to time or periods time.
+    \item Qualitative Attributes (\textbf{EOSC-Qual}): 30 attributes. Qualitative attributes are obtained in general through surveys to or some manual analysis: SW developers, SW administrators, users. (Are not fit, or not possible to automatize).
+    \item DevOps - SW release and management Attributes (\textbf{EOSC-SWRelMan}): 34 attributes. Based largely in DevOps, most can be automated for verification.
+    \item DevOps - Testing Attributes (\textbf{EOSC-SWTest}): 25 attributes. Based in DevOps, most can be automatically verified.
+    \item Service Operability Attributes (\textbf{EOSC-SrvOps}): 12 attributes. Scientific services or platforms in operation.
 \end{itemize}
 
-In the Appendix is show in bold the EOSC Task Force codename, the name and
-one or more characteristics defined in the section "Software Quality characteristics", it is
-followed by a table containing the source information about the metric or attribute, i.e. the
-reference paper or article, the codename defined there and its definition. In several cases,
-the same (or similar) metric or attribute appears in different papers.
+Figure \ref{fig:sqattr} depicts what is shown In Appendix~\ref{appendix_qa} for each metric or attribute
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.99\linewidth]{imgs/qa.png}
+    \caption{Software Quality Attribute.}
+    \label{fig:sqattr}
+\end{figure}

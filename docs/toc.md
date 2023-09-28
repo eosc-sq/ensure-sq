@@ -45,5 +45,6 @@
 8 - Summary and conclusions
         Editing: Mario David
         Contributors:
+Appendix - Quality Attributes
 References
 ```

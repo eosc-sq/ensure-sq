@@ -38,7 +38,7 @@
     6.2 - Quality Attributes related to SW and services in production
 7 - Metadata for software
         Editing: Daniel Garijo
-        Contributors:
+        Contributors: Leyla Jael Castro
     7.1 - Metadata schema for SW
     7.2 - The case for FAIR for Research Software (FAIR4RS)
     7.3 - Quality Attributes and the FAIR4RS principles

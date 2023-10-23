@@ -1,0 +1,63 @@
+\subsection{Research Software stack and types}
+
+Research Software stack is taken from~\cite{hinsen2019}:
+
+\begin{center}
+    \tablehead{
+        \hline
+        \textbf{Stack} & \textbf{Stack definition} & \textbf{Types} \\
+        \hline
+    }
+    \tabletail{\hline}
+    \tablelasttail{\hline}
+    
+    \bottomcaption{RS stacks, stacks definitions and RS types. Stack level 1 is not considered in this report.}
+    \label{tab:rs_stacks}
+
+    \small
+    \begin{supertabular}{|p{0.15\linewidth}|p{0.5\linewidth}|p{0.3\linewidth}|}
+
+    \hline
+    4 - Project specific code &
+    Software written by scientists for a specific research project. It can take various forms including scripts, notebooks, and workflows, but also special-purpose libraries and utilities. &
+    Library; Analysis script, workflows; Services and platforms \\ \hline
+
+    3 - Domain specific tools &
+    Tools and libraries that implement models and methods which are developed and used by specific communities. Gromacs, MMTK, Amber. &
+    Library; Application (such as Monte-Carlo simulation); Services and platforms
+    \\ \hline
+
+    2 - Scientific infrastructure &
+    Infrastructure created specifically for scientific computing, but not for any particular application domain: mathematical libraries such as BLAS, LAPACK, or SciPy, scientific data management tools such as HDF5. &
+    Library; Framework; Services and platforms\\ \hline
+
+    \it{1 - Non-scientific infrastructure} &
+    \it{Compilers and interpreters, libraries for data management; gcc, python...} &
+    -- \\ \hline
+
+    \end{supertabular}
+\end{center}
+
+The RS types can be summarised next:
+
+\begin{itemize}
+\item Library
+\item Framework
+\item Application (such as Monte-Carlo simulation)
+\item Analysis script
+\item Services and platforms
+\end{itemize}
+
+\subsection{Definition and references of Research SW}
+
+% \dg{[summary discussion] The expectation of research software is that it can support the findings in a paper. In that sense, RS is "expected" to
+% reproduce those findings, while regular software would not necessarily have this expectation (as long as it works).}
+
+The goal of this section is to cross-reference the elements of
+software quality from the previous section with the SG1 typology of
+research software development, in order to identify the tools and
+infrastructures needed to satisfy minimum quality criteria. 
+
+
+As a reminder, SG1 has defined different categories of software
+development related to the context in which they are performed. Others have different categories as well, for instance \url{https://docs.google.com/presentation/d/1uwxSwd8chbG7bVn5lPvNNhv5f_JeeelA2mN9NXhlOhA/edit#slide=id.g183ddf12e8b_0_122} and \url{https://zenodo.org/record/7589725#.ZGc5E3bP2Uk}

@@ -4,17 +4,17 @@
 1 - Introduction
         Editing: Mario David
         Contributors:
-2 - Landscaping
-        Editing: Violaine Louvet
-        Contributors: Elisabetta Ronchieri
-    2.1 - Research Software stack and types
-    2.2 - Definition and references of Research SW
-    2.3 - Software Quality models: Survey
-3 - Definition of quality
+2 - Classification of quality characteristics and attributes
         Editing: Mario David, Daniel Garijo
         Contributors: Miguel Colom, Elisabetta Ronchieri
-    3.1 - Software Quality characteristics
-    3.2 - Software Quality attributes
+    2.1 - Software Quality models: Survey
+    2.2 - Software Quality characteristics
+    2.3 - Software Quality attributes
+3 - Landscaping
+        Editing: Violaine Louvet
+        Contributors: Elisabetta Ronchieri
+    3.1 - Research Software stack and types
+    3.2 - Definition and references of Research SW
 4 - Recommendations
         Editing: Violaine Louvet
         Contributors: Elisabetta Ronchieri

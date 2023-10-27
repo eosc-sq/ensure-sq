@@ -13,17 +13,13 @@
 3 - Landscaping
         Editing: Violaine Louvet
         Contributors: Elisabetta Ronchieri
-    3.1 - Research Software stack and types
-    3.2 - Definition and references of Research SW
+    3.1 - Definition and references of Research SW
+    3.2 - Research Software stack and types
+    3.3 - User stories
 4 - Recommendations
         Editing: Violaine Louvet
         Contributors: Elisabetta Ronchieri
     4.1 - Quality Attributes recommendations
-        4.1.1 - Individual researcher creating software for personal use (e.g. a PhD student)
-        4.1.2 - A research team creating an application or workflow for use within the team
-        4.1.3 - A team / community developing open source software
-        4.1.4 - A team or community creating a service, a platform or an infrastructure
-        4.1.5 - A team / community developing software in an industrial context
     4.2 - Example of tools, services and infrastructures to implement Quality Assurance for RS
 5 - Perspectives
         Editing: Miguel Colom

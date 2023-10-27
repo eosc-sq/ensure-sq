@@ -1,3 +1,17 @@
+\subsection{Definition and references of Research SW}
+
+% \dg{[summary discussion] The expectation of research software is that it can support the findings in a paper. In that sense, RS is "expected" to
+% reproduce those findings, while regular software would not necessarily have this expectation (as long as it works).}
+
+The goal of this section is to cross-reference the elements of
+software quality from the previous section with the SG1 typology of
+research software development, in order to identify the tools and
+infrastructures needed to satisfy minimum quality criteria. 
+
+
+As a reminder, SG1 has defined different categories of software
+development related to the context in which they are performed. Others have different categories as well, for instance \url{https://docs.google.com/presentation/d/1uwxSwd8chbG7bVn5lPvNNhv5f_JeeelA2mN9NXhlOhA/edit#slide=id.g183ddf12e8b_0_122} and \url{https://zenodo.org/record/7589725#.ZGc5E3bP2Uk}
+
 \subsection{Research Software stack and types}
 
 Research Software stack is taken from~\cite{hinsen2019}:
@@ -48,16 +62,150 @@ The RS types can be summarised next:
 \item Services and platforms
 \end{itemize}
 
-\subsection{Definition and references of Research SW}
+\subsection{User stories}
 
-% \dg{[summary discussion] The expectation of research software is that it can support the findings in a paper. In that sense, RS is "expected" to
-% reproduce those findings, while regular software would not necessarily have this expectation (as long as it works).}
+% This was previously in section 4
+\subsubsection{Individual researcher creating software for personal use} 
 
-The goal of this section is to cross-reference the elements of
-software quality from the previous section with the SG1 typology of
-research software development, in order to identify the tools and
-infrastructures needed to satisfy minimum quality criteria. 
+The expected quality criteria are minimal but essential to ensure
+reuse and continuity of developments (usually by another doctoral
+student and/or by the research team), as well as the possibility of
+reproducing the results of associated publications. 
 
+{\bf Practices:}
+\begin{itemize}
+\item Version Control System
+\item Basic documentation Documentation de base (including comments in the code)
+\item License 
+\item archiving and citation
+\item Publication on the code
+\end{itemize}
 
-As a reminder, SG1 has defined different categories of software
-development related to the context in which they are performed. Others have different categories as well, for instance \url{https://docs.google.com/presentation/d/1uwxSwd8chbG7bVn5lPvNNhv5f_JeeelA2mN9NXhlOhA/edit#slide=id.g183ddf12e8b_0_122} and \url{https://zenodo.org/record/7589725#.ZGc5E3bP2Uk}
+{\bf Tools and infrastructure required:}
+\begin{itemize}
+\item Software forge (with public access) - For example gitlab instance
+\item Automatic documentation generator - For example doxygen
+\item Archiving infrastructure (with perennial id) - For example Software Heritage
+\item Cataloguing infrastructure - For example HAL en France
+\item Journal for the publication on codes - For example JOSS
+\end{itemize}
+
+% \violaine{Add needed skills -> need training at PhD, researcher and engineer level \\
+% Add needed support -> help to identify the adapted infrastructures and how to use them}
+
+\subsubsection{A research team creating an application or workflow for use within the team}
+
+The quality criteria are more demanding because it is a question here
+of ensuring continuity in the development carried out by several
+people, over more or less long periods (researchers, engineers,
+doctoral students, trainees...).
+
+In addition to the above elements, more advanced practices must be
+integrated.
+
+{\bf Additional practices:}
+\begin{itemize}
+\item Release management
+\item Testing (unit, functional, regression)
+\item Continuous integration
+\item Programming rules
+\item Bug tracking
+\item License management
+\end{itemize}
+
+{\bf Additional tools and infrastructure required:}
+\begin{itemize}
+\item Continuous integration module - For example Jenkins or gitlab CI
+\item Issue tracking system - For example Jira, Redmine ...
+\item Static web site - For example gitlab pages 
+\item License compatibility tool - For example flict
+\end{itemize}
+
+% \violaine{Add needed skills and support as about license, CI ...}
+
+\subsubsection{A team / community developing open source software}
+
+The software is developed within the framework of a community,
+generally distributed, whose actors have different roles. In general,
+there is a software governance that organizes the developments. The
+aim is to ensure optimal quality so that the whole community can use
+the software with confidence and also make contributions.
+
+{\bf Additional practices:}
+\begin{itemize}
+\item Easy installation
+\item User and developer documentation
+\item Contribution tracking / Copyright management
+\item Regular releases
+\item Code review
+\item Code coveraging
+\item Code quality check
+\item Possibility of online tutorials / avaibility of examples
+\item User support
+\item Ensure visibility
+\item Ensure good development practices and compliance with standards
+\end{itemize}
+
+{\bf Additional tools and infrastructure required:}
+\begin{itemize}
+\item Software forge allowing contributions to the largest number
+\item Test server - For example Cdash ...
+\item Packaging system (such as guix, nix, spack ...) / VM with these systems installed
+\item Container / Kubernetes
+\item Docker registry
+\item Code coverage tool
+\item Static code analysis tool
+\item Notebook server
+\item Forum / chat tool
+\item Code quality verification tool - For example SonarQube
+\item DCO (Developer Certificate of Origin) or CLA (Contributor License Agreement) / Copyright
+\item Synchronization between forges - For example Fediverse, Forge Friends ...
+\item Tool for detecting bad development practices / non compliance with
+standards
+\end{itemize}
+
+Software examples - by far not exhaustive - in different communities
+are: Astropy1 (astronomy);  ESMValTool2 (Earth sciences); VASP3,
+FHI-aims4 (material research); VIP5 (medical sciences); Gromacs6
+(molecular dynamics); Neuron7, Nest8, Genesis (Neuroinformatics); root
+(particle physics); many more examples can be found at, e.g., the
+Research Software Directory
+
+% \violaine{Link with the computing centers for support of packaging system or container}
+
+\subsubsection{A team or community creating a service, a platform or an infrastructure}
+
+The case is quite similar to the previous one but includes additional
+constraints linked to the provision of a service. The necessary means
+in operational terms are more important. 
+
+{\bf Additional practices:}
+\begin{itemize}
+\item Viable business model
+\item Security of the service/platform
+\end{itemize}
+
+{\bf Additional tools and infrastructure required:}
+\begin{itemize}
+\item Storage
+\item VM / Container
+\end{itemize}
+
+\subsubsection{A team / community developing software in an industrial context}
+
+The expected quality criteria are very similar to the case of
+community developments. Depending on the nature of the collaboration
+with the industry, the security aspects may become essential. 
+
+{\bf Additional practices:}
+\begin{itemize}
+\item Code certification
+\item Dependency security
+\end{itemize}
+
+{\bf Additional tools and infrastructure required:}
+\begin{itemize}
+\item Certification Infrastructure
+\item Vulnerability Detection Tool
+\end{itemize}
+

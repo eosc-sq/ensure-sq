@@ -13,7 +13,7 @@
 3 - Landscaping
         Editing: Violaine Louvet
         Contributors: Elisabetta Ronchieri
-    3.1 - Definition and references of Research SW
+    3.1 - Definition and references of Research Software
     3.2 - Research Software stack and types
     3.3 - User stories
 4 - Recommendations

@@ -1,20 +1,17 @@
-\subsection{Definition and references of Research SW}
+\subsection{Definition and references of Research Software}
 
-% \dg{[summary discussion] The expectation of research software is that it can support the findings in a paper. In that sense, RS is "expected" to
-% reproduce those findings, while regular software would not necessarily have this expectation (as long as it works).}
+\dg{[summary discussion] The expectation of research software is that it can support the findings in a paper. In that sense, RS is "expected" to
+reproduce those findings, while regular software would not necessarily have this expectation (as long as it works).}
 
-The goal of this section is to cross-reference the elements of
-software quality from the previous section with the SG1 typology of
-research software development, in order to identify the tools and
-infrastructures needed to satisfy minimum quality criteria. 
+\mdavid{\textbf{Review this subsection}}
 
+The goal of this section is to cross-reference the elements of software quality from the previous section with the subgroup 1 \cite{sg1tf2023} ("Software Lifecycle", see section \ref{sec:introduction}), typology of research software development, in order to identify the tools and infrastructures needed to satisfy minimum quality criteria. 
 
-As a reminder, SG1 has defined different categories of software
-development related to the context in which they are performed. Others have different categories as well, for instance \url{https://docs.google.com/presentation/d/1uwxSwd8chbG7bVn5lPvNNhv5f_JeeelA2mN9NXhlOhA/edit#slide=id.g183ddf12e8b_0_122} and \url{https://zenodo.org/record/7589725#.ZGc5E3bP2Uk}
+As a reminder, subgroup 1 has defined different categories of software development related to the context in which they are performed. Others have different categories as well, for instance \url{https://docs.google.com/presentation/d/1uwxSwd8chbG7bVn5lPvNNhv5f_JeeelA2mN9NXhlOhA/edit#slide=id.g183ddf12e8b_0_122} and \url{https://zenodo.org/record/7589725#.ZGc5E3bP2Uk}
 
 \subsection{Research Software stack and types}
 
-Research Software stack is taken from~\cite{hinsen2019}:
+A typical scientific software stack~\cite{hinsen2019} has the following composition:
 
 \begin{center}
     \tablehead{
@@ -34,11 +31,11 @@ Research Software stack is taken from~\cite{hinsen2019}:
     \hline
     4 - Project specific code &
     Software written by scientists for a specific research project. It can take various forms including scripts, notebooks, and workflows, but also special-purpose libraries and utilities. &
-    Library; Analysis script, workflows; Services and platforms \\ \hline
+    Library; Analysis script and workflows; Services and platforms \\ \hline
 
     3 - Domain specific tools &
     Tools and libraries that implement models and methods which are developed and used by specific communities. Gromacs, MMTK, Amber. &
-    Library; Application (such as Monte-Carlo simulation); Services and platforms
+    Library; Application; Services and platforms
     \\ \hline
 
     2 - Scientific infrastructure &
@@ -52,20 +49,36 @@ Research Software stack is taken from~\cite{hinsen2019}:
     \end{supertabular}
 \end{center}
 
-The RS types can be summarised next:
+Note that Stack level 1 is not considered in this report. The Research Software types are summarised next including some examples:
 
 \begin{itemize}
-\item Library
-\item Framework
-\item Application (such as Monte-Carlo simulation)
-\item Analysis script
-\item Services and platforms
+\item Library: SciPy, TensorFlow, FFTW, BLAS, LAPACK.
+\item Framework: JupyterLab, RStudio.
+\item Application (such as Monte-Carlo simulation Software): Gromacs, Amber, GEANT4, COMSOL.
+\item Analysis script and workflows
+\item Services and platforms: Galaxy server, Scipion, SAPS, O3AS.
 \end{itemize}
 
 \subsection{User stories}
+\label{subsec:user_stories}
 
-% This was previously in section 4
-\subsubsection{Individual researcher creating software for personal use} 
+This document takes the \textit{User Stories} detailed in subgroup 1~\cite{sg1tf2023} and summarised next:
+
+\begin{enumerate}
+    \item \textbf{Individual} - Individual creating research software for own use (e.g. a PhD student): Based on a research question, software is created by a single person with the specific aim of answering the research question and producing research output (paper, dataset, etc).
+    \item \textbf{Team Project} - A research team creating an application or workflow for use within the team: Research software is created by a team to answer a series of research questions (often as part of a larger research project).
+    \item \textbf{Team OSS} - A team / community developing (possibly broadly applicable) open source research software: Software is created by a team (possibly distributed over multiple organizations) to answer a broad range of research questions.
+    \item \textbf{Team Service} - A team or community creating a research service: A service platform is a set of software components which is used to provide services for a large number of users, most of whom make use of these offerings via the Internet (e.g. cloud services).
+\end{enumerate}
+
+
+
+
+\subsection{Users stories previous text}
+
+\mdavid{This was previously in section 4, and needs to be reviewed systematically to associate with the QAttrs of Appendix}
+
+\textbf{Individual researcher creating software for personal use} 
 
 The expected quality criteria are minimal but essential to ensure
 reuse and continuity of developments (usually by another doctoral
@@ -93,7 +106,7 @@ reproducing the results of associated publications.
 % \violaine{Add needed skills -> need training at PhD, researcher and engineer level \\
 % Add needed support -> help to identify the adapted infrastructures and how to use them}
 
-\subsubsection{A research team creating an application or workflow for use within the team}
+\textbf{A research team creating an application or workflow for use within the team}
 
 The quality criteria are more demanding because it is a question here
 of ensuring continuity in the development carried out by several
@@ -123,7 +136,7 @@ integrated.
 
 % \violaine{Add needed skills and support as about license, CI ...}
 
-\subsubsection{A team / community developing open source software}
+\textbf{A team / community developing open source software}
 
 The software is developed within the framework of a community,
 generally distributed, whose actors have different roles. In general,
@@ -173,7 +186,7 @@ Research Software Directory
 
 % \violaine{Link with the computing centers for support of packaging system or container}
 
-\subsubsection{A team or community creating a service, a platform or an infrastructure}
+\textbf{A team or community creating a service, a platform or an infrastructure}
 
 The case is quite similar to the previous one but includes additional
 constraints linked to the provision of a service. The necessary means
@@ -191,7 +204,7 @@ in operational terms are more important.
 \item VM / Container
 \end{itemize}
 
-\subsubsection{A team / community developing software in an industrial context}
+\textbf{A team / community developing software in an industrial context}
 
 The expected quality criteria are very similar to the case of
 community developments. Depending on the nature of the collaboration

@@ -1,39 +1,32 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \miguel{Indeed,having a section in the final document where we give definitions of "quality", "software", "research software", etc. is
+\miguel{For scientific research: reviewed by other peers, reproducible (data + sources, matching the article), Open Access.
+One quality criteria: reproducibility. Define "reproducibility" and "repeatability". Different levels of reproducibility. Bottom level:
+black box (being able to obtain the same results given the same inputs). Higher level: full access to a well-commented source code, and checking
+that the pseudocode matches well the implementation. In the case of a scientific publication, checking that the implementation matches exactly
+what the descriptions in the article.}
+
+% DONE -> \miguel{Indeed,having a section in the final document where we give definitions of "quality", "software", "research software", etc. is
 % quite convenient. It doesn't mean other definitions are not possible, but we need to settle clearly what we're discussing in our own context.}
 % Criteria of quality (brainstorming, to complete by everybody)
-
-% \miguel{For scientific research: reviewed by other peers, reproducible (data + sources, matching the article), Open Access.}
-
-% \dg{We should look at the FAIR4RS reports for the alignment for quality dimensions. In a sense, this is what FAIR aims (at a basic level).}
-
-% \miguel{One quality criteria: reproducibility. Define "reproducibility" and "repeatability". Different levels of reproducibility. Bottom level:
-% black box (being able to obtain the same results given the same inputs). Higher level: full access to a well-commented source code, and checking
-% that the pseudocode matches well the implementation. In the case of a scientific publication, checking that the implementation matches exactly
-% what the descriptions in the article.}
-
-% \dg{We should first define what we understand by software. We can reuse the definition in FAIR4RS.}
-
-% These refer to the work done on identifying Quality Models and Attributes - table under discussion as of March 2023
+% DONE -> in introduction and this section \dg{We should first define what we understand by software. We can reuse the definition in FAIR4RS.}
+% DONE -> section Metadata \dg{We should look at the FAIR4RS reports for the alignment for quality dimensions. In a sense, this is what FAIR aims (at a basic level).}
 % DONE -> \dg{Missing the initial table here, although we had only summaries. We should see how each of those papers defined software quality dimensions.}
-
 % DONE -> \eli{Concerning Quality Definition, there are various software models and standards that can be referred.
 % However, the most recent ones are ISO and IEEE. Existing models and standards provide a full set of software characteristics: unfortunately
 % they quite often have different meaning and do not have a match with software metrics used to measure software characteristics.}
+% DONE -> \miguel{Perhaps the definition of quality and the classification should appear first in the document. First this section, and then Landscaping.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\miguel{Perhaps the definition of quality and the classification should appear first in the document. First this section, and then Landscaping.}
 
 An important notion in software engineering is \textit{quality}, understood as a series of desirable particularities that are met in \textit{good} computer programs, meaning that they are well adapted to their purpose, accurate, highly available, or any other property which makes it excellent.
 Whereas this is a concept which is easy to understand, arriving at a consensus on how to properly define is a way more complex task. Indeed, the problem can be address from plenty of different perspectives, each of them giving more or less importance to some of the particularities.
 
 It is not the goal in this report to propose any particular definitions, but to analyse how the problem has been addressed in significant works in the literature and how the characteristics can be classified as attributes.
 
-In Section~\ref{subsect_sqchar} we shall review which are, according to the literature, the \textit{characteristics} that might be related to good software. From this list, we discuss which of the characteristics are very significant to assess the quality of software, and we shall refer to these special characteristics as \textit{attributes}, that we classify in Section~\ref{sec:SW_quality_attributes}.
+In Section~\ref{subsect:sqchar} we shall review which are, according to the literature, the \textit{characteristics} that might be related to good software. From this list, we discuss which of the characteristics are very significant to assess the quality of software, and we shall refer to these special characteristics as \textit{attributes}, that we classify in Section~\ref{subsec:SW_quality_attributes}.
 
 \subsection{Software Quality models: Survey}
 
-We follow the methodology for the survey, proposed by Kitchenham and Charters \cite{keele2007guidelines} which has the following steps:
+A survey has been conducted by the subgroup and follows the methodology proposed by Kitchenham and Charters \cite{keele2007guidelines} consisting of the following steps:
 
 \begin{enumerate}
     \item Source selection and search: We have searched in the Scopus dataset, including the top five journals in software engineering related to software \footnote{\url{https://research.com/journals-rankings/computer-science/software-programming}} and articles of the  ``International Conference on Software Engineering", one of the top venues for Software engineering. We also added documents and web resources that the Task Force subgroup considered relevants. The search included the keywords ``software quality" in the title of the target publications.
@@ -42,7 +35,7 @@ We follow the methodology for the survey, proposed by Kitchenham and Charters \c
     \item Review process: After following the selection procedure, we ended up with 19 articles, which have been reviewed in this survey. Some of the articles refer to the ISO/IEC 25010:2011(E)\cite{iso_25010_2011_2017} or to its precursor ISO/IEC 9126, have been grouped together.
 \end{enumerate}
 
-Journals: IEEE Transactions on Software Engineering, Empirical Software Engineering, Journal of Systems and Software, Software \& Systems Modeling, Information and Software Technology, IEEE Software, Software Quality Journal. Query used:
+The journals that where considered are: "IEEE Transactions on Software Engineering", "Empirical Software Engineering", "Journal of Systems and Software", "Software \& Systems Modeling", "Information and Software Technology", "IEEE Software", "Software Quality Journal". The following query was used:
 
 \tiny
 \begin{verbatim}
@@ -59,7 +52,7 @@ Journals: IEEE Transactions on Software Engineering, Empirical Software Engineer
 \end{verbatim}
 \small
 
-As a result, the sub group obtained 272 results. Additional filtering excluded:
+As a result, the subgroup obtained 272 results. Additional selection excluded:
 
 \begin{itemize}
     \item Papers with no abstracts.
@@ -68,29 +61,33 @@ As a result, the sub group obtained 272 results. Additional filtering excluded:
     \item Papers that did not seem to propose quality dimensions (e.g., if they talk about practices).
 \end{itemize}
 
-There where 147 papers after filtering + 4 documents that were not published as paper but considered relevant by the sub group. In the end there were 19 articles that were reviewed by 2-3 persons each.
+There where 147 papers remaining after the abovementioned selection to which 4 more documents where added, they were not published as paper but considered relevant by the subgroup. In the end of this process, there were 19 articles remaining that were reviewed by 2-3 persons each.
 
 % Query: \footnote{\url{https://www.scopus.com/results/results.uri?sort=plf-f&src=s&nlo=&nlr=&nls=&sid=b04451f7b887660ce99d73bfdbdc4fc8&sot=a&sdt=a&cluster=scosubjabbr%2c%22COMP%22%2ct%2c%22ENGI%22%2ct%2bscoexactsrctitle%2c%22Software+Quality+Journal%22%2ct%2c%22Proceedings+International+Conference+On+Software+Engineering%22%2ct%2c%22IEEE+Transactions+on+Software+Engineering%22%2ct%2c%22Empirical+Software+Engineering%22%2ct%2c%22Journal+of+Systems+and+Software%22%2ct%2c%22Software+%26+Systems+Modeling%22%2ct%2c%22Information+and+Software+Technology%22%2ct%2c%22IEEE+Software%22%2ct&sl=30&s=TITLE+%28+software+AND+quality+%29&cl=t&offset=201&origin=resultslist&ss=plf-f&ws=r-f&ps=r-f&cs=r-f&cc=10&txGid=cff6749bf8a084912200dbef379950d4} 
 % Also, this book: https://books.google.es/books?hl=en&lr=&id=XTvpAQAAQBAJ&oi=fnd&pg=PR3&dq=software+quality&ots=fohz_-KW0d&sig=5TGlvR3sgAIkAHzs5Iup8Qijpuo#v=onepage&q=software%20quality&f=false looks nice!
 
 \subsection{Software Quality characteristics}
-\label{subsect_sqchar}
+\label{subsect:sqchar}
+
 We identified a list of significant quality characteristics mainly from three sources:
+
 \begin{itemize}
     \item The ISO/IEC 25010:2011(E) standard~\cite{iso_25010_2011_2017};
     \item The ISO/IEC/IEEE 24765:2010(E) standard~\cite{iso_central_secretary_isoiecieee_2010};
     \item The chapter \textit{Design Fundamentals} of the Microsoft Application Architecture Guide~\cite{microsoft_2010}.
 \end{itemize}
 
-The ISO/IEC/IEEE 24765:2010(E) settles a common vocabulary for systems and software engineering, in a way that it is always applicable to general applications. This standardised list provides a vast quantity of very precise definitions that avoid trivial misinterpretations, and that therefore we apply in this report. \miguel{The ISO/IEC/IEEE 24765:2010(E) standard has been deprecated in favour of ISO/IEC/IEEE 24765:2017. Are we using anything very related to :2010, or can we use :2017?}
-%
-The ISO/IEC 25010:2011(E) is a recent (2017) norm that proposes two models for the characteristics. The first group is made according to the context on which the software product is used, and contains five characteristics. The second group is made of eight characteristics according to characteristics of the software of computer system itself, without relying on how it is used.
-%
+The ISO/IEC/IEEE 24765:2010(E) settles a common vocabulary for systems and software engineering, in a way that it is always applicable to general applications. This standardised list provides a vast quantity of very precise definitions that avoid trivial misinterpretations, and that therefore we apply in this report.
+
+\miguel{The ISO/IEC/IEEE 24765:2010(E) standard has been deprecated in favour of ISO/IEC/IEEE 24765:2017. Are we using anything very related to :2010, or can we use :2017?}
+
+The ISO/IEC 25010:2011(E) is a recent (2017) norm that proposes two models for the characteristics. The first group is related to the context on which the software product is used, and contains five characteristics. The second group has eight characteristics according to characteristics of the software of computer system itself, without relying on how it is used.
+
 The chapter Quality Attributes from Microsoft's Application Architecture Guide also helped establishing a common terminology in our definitions.
 
-From our analysis of the existing literature we extracted an enormous list of characteristics which were associated to the concept of quality in any way. All the characteristics were taken into account in our study, but some of them where filter out since they were not useful to perform the classification in quality attributes. Indeed, some of the characteristics were pertinent at the time of the publication of the article, but after the years got obsolete. For example, we can no longer consider that producing a very small compiled binary is \textit{per se} an indication of quality, when years ago it could be directly related to the ability of storing the program in a very limited memory or permanent media. Other characteristics were discarded because they were very specific to an application domain, such as real-time or critical systems. They remain valid characteristics to take into account, but they are not general enough.
+The analysis of the existing literature resulted in a significant number of characteristics which were associated to the concept of quality. All the characteristics were taken into account in our study, but some of them where filtered out since they were not useful to perform the classification in quality attributes. Indeed, some of the characteristics were pertinent at the time of the publication of the article, but after a few years they became obsolete. For example, producing a very small compiled binary is \textit{per se} an indication of quality does not make much sense these days, when in the past it could be directly related to the ability of storing the program in a very limited memory or permanent media. Other characteristics were discarded because they were very specific to an application domain, such as real-time or critical systems. They remain valid characteristics to take into account, but they are not general enough or not applicable to Research Software.
 
-In the end, we end up identifying 25 significant quality characteristics from the three sources mentioned above.
+The end result was 25 significant quality characteristics from the three abovementioned sources.
 
 \textbf{Functional suitability}: Degree to which a product or system provides functions that meet stated and implied needs when used under specified conditions.
 
@@ -143,15 +140,11 @@ In the end, we end up identifying 25 significant quality characteristics from th
 \textbf{Confidentiality}: Degree to which a product or system ensures that data are accessible only to those authorised to have access.
 
 \subsection{Software Quality attributes}
-\label{sec:SW_quality_attributes}
-% https://www.softwaretestinghelp.com/what-are-the-quality-attributes/
+\label{subsec:SW_quality_attributes}
 
-Overall, a total of 241 Quality Attributes were gathered in a table and some of these attributes were aggregated into a single attribute when they were from different sources but with the same (or very similar) meaning.
+The result of the survey was a total of 241 Quality Attributes. All attributes were gathered in a table and some were aggregated into a single attribute when they were from different sources but with the same (or very similar) definition or meaning.
 
-The sub group ended up with 132 Quality Attributes after aggregation and are shown in Appendix~\ref{appendix_qa}. All paper sources have been referenced.
-
-The metrics and attributes where subdivided into four categories and for each metric or attribute,
-a new codename was created by the sub group:
+The subgroup ended up with 132 Quality Attributes after aggregation and the list is shown in Appendix~\ref{appendix_qa}. All paper sources have been referenced. The metrics and attributes where subdivided into six categories and for each metric or attribute, a new codename was created by the subgroup in order to have a coherent naming convention throughout the document:
 
 \begin{itemize}
     \item Source Code Metrics (\textbf{EOSC-SCMet}): 20 metrics.
@@ -162,7 +155,7 @@ a new codename was created by the sub group:
     \item Service Operability Attributes (\textbf{EOSC-SrvOps}): 12 attributes. Scientific services or platforms in operation.
 \end{itemize}
 
-Figure \ref{fig:sqattr} depicts what is shown In Appendix~\ref{appendix_qa} for each metric or attribute
+Figure \ref{fig:sqattr} depicts what is shown in Appendix~\ref{appendix_qa} for each metric or attribute.
 
 \begin{figure}[h]
     \centering
@@ -170,3 +163,14 @@ Figure \ref{fig:sqattr} depicts what is shown In Appendix~\ref{appendix_qa} for 
     \caption{Software Quality Attribute.}
     \label{fig:sqattr}
 \end{figure}
+
+For each attribute it's shown:
+
+\begin{itemize}
+    \item Attribute codename: naming convention created by the subgroup.
+    \item Attribute name: from the references.
+    \item Attribute characteristics: one or more from subsection \ref{subsect:sqchar}.
+    \item Attribute definition: from the reference(s), can be an aggregation from more than one reference.
+    \item Attribute paper references.
+    \item Attribute RS level: from the user stories in subsection \ref{subsec:user_stories}.
+\end{itemize}

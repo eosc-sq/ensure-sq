@@ -1,45 +1,96 @@
 \subsection{Quality Attributes related to SW release management}
 
+The following list are the Quality Attributes recommended for SW release and management:
+
+\begin{itemize}
+    \item \textbf{EOSC-TMet-02}: \# Resolved bugs
+    \item \textbf{EOSC-TMet-03}: \# Open bugs
+    \item \textbf{EOSC-TMet-04}: Defect rates
+    \item \textbf{EOSC-SWRelMan-07}: Support
+    \item \textbf{EOSC-SWRelMan-09}: Semantic Versioning
+    \item \textbf{EOSC-SWRelMan-12}: Packaging
+    \item \textbf{EOSC-SWRelMan-13}: Register/publish artifact
+    \item \textbf{EOSC-SWRelMan-17}: SCM tool
+    \item \textbf{EOSC-SWRelMan-20}: Installability
+    \item \textbf{EOSC-SWRelMan-25}: Provide checksums
+    \item \textbf{EOSC-SWRelMan-29}: Documentation online
+    \item \textbf{EOSC-SWRelMan-32}: Documentation production
+\end{itemize}
+
 \subsection{Quality Attributes related to SW and services in production}
 
+The following list are the Quality Attributes recommended for Services and platforms in production:
+
+\begin{itemize}
+    \item \textbf{EOSC-TMet-02}: \# Resolved bugs
+    \item \textbf{EOSC-TMet-03}: \# Open bugs
+    \item \textbf{EOSC-TMet-04}: Defect rates
+    \item \textbf{EOSC-TMet-08}: \# Registered users
+    \item \textbf{EOSC-TMet-09}: \# Active users
+    \item \textbf{EOSC-TMet-10}: Amount computing resources
+    \item \textbf{EOSC-TMet-11}: Amount storage resources
+    \item \textbf{EOSC-SWRelMan-07}: Support
+    \item \textbf{EOSC-SWRelMan-17}: SCM tool
+    \item \textbf{EOSC-SWRelMan-20}: Installability
+    \item \textbf{EOSC-SWRelMan-22}: Infrastructure as Code (IaC) validation
+    \item \textbf{EOSC-SWRelMan-29}: Documentation online
+    \item \textbf{EOSC-SWRelMan-32}: Documentation production
+    \item \textbf{EOSC-SWTest-16}: Public endpoints and APIs encrypted
+    \item \textbf{EOSC-SWTest-17}: Strong ciphers
+    \item \textbf{EOSC-SWTest-18}: Authentication and Authorization
+    \item \textbf{EOSC-SWTest-20}: Service compliance with data regulations (GDPR)
+    \item \textbf{EOSC-SWTest-24}: Security assessment
+    \item \textbf{EOSC-SrvOps-01}: Acceptable Usage Policy (AUP)
+    \item \textbf{EOSC-SrvOps-02}: Access Policy and Terms of Use
+    \item \textbf{EOSC-SrvOps-03}: Privacy policy
+    \item \textbf{EOSC-SrvOps-04}: Operational Level Agreement (OLA)
+    \item \textbf{EOSC-SrvOps-05}: Service Level Agreement (SLA)
+    \item \textbf{EOSC-SrvOps-06}: Monitoring service public endpoints
+    \item \textbf{EOSC-SrvOps-07}: Monitoring service public APIs
+    \item \textbf{EOSC-SrvOps-09}: Monitoring security public endpoints and APIs
+\end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \miguel{Scalability. Depending on the volume of the data or the computational needs, it's a matter of system design, but eventually of the
-% quality of the platform/software.}
+\newpage
 
-% \dg{[Jael, Daniel] Make sure this work aligns with SG1, which takes into account the software research cycle.}
+\miguel{Scalability. Depending on the volume of the data or the computational needs, it's a matter of system design, but eventually of the
+quality of the platform/software.}
 
-% [Abdulrahman] Define an agreed upon procedure for SW packaging. What to have as containers/conda packages, what to have as e.g. Easybuild recipes. Should we promote one portable solution or a combination of several?
+\dg{[Jael, Daniel] Make sure this work aligns with SG1, which takes into account the software research cycle.}
 
-% \eli{Portability. Depending on the design of the software.}
+\textbf{Abdulrahman} Define an agreed upon procedure for SW packaging. What to have as containers/conda packages, what to have as e.g. Easybuild recipes. Should we promote one portable solution or a combination of several?
 
-% \miguel{The problem of the containers (Docket et al.) and software development in online platforms. Advantage of containers: easier to release
-% and to ensure reproducibility and to ensure the service. Disadvantages: containers freeze the environment, and thus they stop receiving bug
-% fixing and security updates. Dependency with outdated software components.}
+\eli{Portability. Depending on the design of the software.}
 
-% \miguel{Quality of documentation: is the documentation of the research SW always synchronized with its release?}
+\miguel{The problem of the containers (Docket et al.) and software development in online platforms. Advantage of containers: easier to release
+and to ensure reproducibility and to ensure the service. Disadvantages: containers freeze the environment, and thus they stop receiving bug
+fixing and security updates. Dependency with outdated software components.}
 
-% \miguel{Is the research SW associated with any scientific papers?
-% For example, k-means clustering in scikit-learn \url{https://scikit-learn.org/stable///modules/clustering.html#k-means}) is associated with:
-% “k-means++: The advantages of careful seeding” Arthur, David, and Sergei Vassilvitskii, Proceedings of the eighteenth annual ACM-SIAM symposium
-% on Discrete algorithms, Society for Industrial and Applied Mathematics (2007)
-% The source code provides the author names, but no reference paper:
-% \url{https://github.com/scikit-learn/scikit-learn/blob/main/sklearn/cluster/_kmeans.py}
-% However, is it associated with any other paper which provides a detailed procedure and a pseudocode? Without this , one can't have a good level of reproducibility.}
+\miguel{Quality of documentation: is the documentation of the research SW always synchronized with its release?}
 
-% \miguel{Does the SW perform self tests? Say, unit tests.}
+\miguel{Is the research SW associated with any scientific papers?
+For example, k-means clustering in scikit-learn \url{https://scikit-learn.org/stable/modules/clustering.html\#k-means}) is associated with:
+k-means++: The advantages of careful seeding” Arthur, David, and Sergei Vassilvitskii, Proceedings of the eighteenth annual ACM-SIAM symposium
+on Discrete algorithms, Society for Industrial and Applied Mathematics (2007)
+The source code provides the author names, but no reference paper:
+\url{https://github.com/scikit-learn/scikit-learn/blob/main/sklearn/cluster/_kmeans.py}
+However, is it associated with any other paper which provides a detailed procedure and a pseudocode? Without this, one can't have a good level of reproducibility.}
 
-% \miguel{Does the SW follow some known methodology which includes verifications in order to ensure it works well? At which level? For example,
-% if it uses continuous integration, does it include any step to ensure that the results are scientifically valid, or just unit tests?}
+\miguel{Does the SW perform self tests? Say, unit tests.}
 
-% \miguel{Stability of research SW. Does it ensure backwards compatibility between versions?}
+\miguel{Does the SW follow some known methodology which includes verifications in order to ensure it works well? At which level? For example,
+if it uses continuous integration, does it include any step to ensure that the results are scientifically valid, or just unit tests?}
 
-% \cerlane{Do we mean 'Maintenance' or 'Maintainability'?}
+\miguel{Stability of research SW. Does it ensure backwards compatibility between versions?}
 
-% \cerlane{Traditionally “portability” can refer to the portability across hardware architecture, system and platform (compilers and libraries)
-% by applying good software engineering practices. With containers, portability can also be achieved by restricting the supported system and platform
-% in the container. A multi-architecture container can further improve portability.}
+\cerlane{Do we mean 'Maintenance' or 'Maintainability'?}
 
-% \cerlane{Reproducibility is easier to achieve on the same system, software and hardware. However, it doesn't always imply a complete numerical
-% reproducibility. To achieve numerical reproducibility, one would have to even avoid the use of certain optimisation compiler options, optimised Maths 
-% libraries and apply very good software engineering techniques when applying algorithms, particularly with MPI.}
+\cerlane{Traditionally “portability” can refer to the portability across hardware architecture, system and platform (compilers and libraries)
+by applying good software engineering practices. With containers, portability can also be achieved by restricting the supported system and platform
+in the container. A multi-architecture container can further improve portability.}
+
+\cerlane{Reproducibility is easier to achieve on the same system, software and hardware. However, it doesn't always imply a complete numerical
+reproducibility. To achieve numerical reproducibility, one would have to even avoid the use of certain optimisation compiler options, optimised Maths 
+libraries and apply very good software engineering techniques when applying algorithms, particularly with MPI.}
+
+\mdavid{We will take the SW lifecycle diagram from SG1 and connect it here, or some of the previous sections.}

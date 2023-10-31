@@ -1,15 +1,50 @@
 \subsection{Definition and references of Research Software}
 
-\dg{[summary discussion] The expectation of research software is that it can support the findings in a paper. In that sense, RS is "expected" to
-reproduce those findings, while regular software would not necessarily have this expectation (as long as it works).}
+Research software are not only software. To be able to clearly
+identify quality attributes for research software, it is essential to
+define the object we are talking about.
 
-\mdavid{\textbf{Review this subsection}}
+The Source Codes and Softwares College from the Committee for Open
+Science in France proposes the following definition : 
+``Research software is developed to meet specific scientific needs. It
+is designed, maintained, and used by scientists (researchers and
+engineers) and research institutions, possibly on an international
+scale. It can result from research work as well as support it, notably
+through publications before/on/around/with the software. It can be
+formalized in different ways (a platform, a middleware, a workflow or
+a library, a module or plugin of another software) and thus be in
+interaction in an ecosystem or on the contrary be more
+autonomous.'' \footnote{(\url{https://www.ouvrirlascience.fr/research-software-as-a-pillar-of-open-science/}).}
 
-The goal of this section is to cross-reference the elements of software quality from the previous section with the subgroup 1 \cite{sg1tf2023} ("Software Lifecycle", see section \ref{sec:introduction}), typology of research software development, in order to identify the tools and infrastructures needed to satisfy minimum quality criteria. 
+The most important characteristic is the link with publications. The
+purpose of research software is that it support the scientific
+results, and from that it is expected to reproduce the published
+results. Regular software would not necessarily have this expectation.
 
-As a reminder, subgroup 1 has defined different categories of software development related to the context in which they are performed. Others have different categories as well, for instance \url{https://docs.google.com/presentation/d/1uwxSwd8chbG7bVn5lPvNNhv5f_JeeelA2mN9NXhlOhA/edit#slide=id.g183ddf12e8b_0_122} and \url{https://zenodo.org/record/7589725#.ZGc5E3bP2Uk}
+The goal of this section is to cross-reference the elements of
+software quality from the previous section with the subgroup 1
+\cite{sg1tf2023} ("Software Lifecycle", see section
+\ref{sec:introduction}), typology of research software development, in
+order to identify the tools and infrastructures needed to satisfy
+minimum quality criteria, given the specificities of research software.  
 
-\subsection{Research Software stack and types}
+As a reminder, subgroup 1 has defined different categories of software
+development related to the context in which they are performed:
+
+\begin{enumerate}
+    \item \textbf{Individual development} - Individual creating research software for own use (e.g. a PhD student): Based on a research question, software is created by a single person with the specific aim of answering the research question and producing research output (paper, dataset, etc).
+    \item \textbf{Team Project} - A research team creating an application or workflow for use within the team: Research software is created by a team to answer a series of research questions (often as part of a larger research project).
+    \item \textbf{Team OSS} - A team / community developing (possibly broadly applicable) open source research software: Software is created by a team (possibly distributed over multiple organizations) to answer a broad range of research questions.
+    \item \textbf{Team Service} - A team or community creating a research service: A service platform is a set of software components which is used to provide services for a large number of users, most of whom make use of these offerings via the Internet (e.g. cloud services).
+\end{enumerate}
+
+There are other proposals with different categorization, for instance \footnote{\url{https://docs.google.com/presentation/d/1uwxSwd8chbG7bVn5lPvNNhv5f_JeeelA2mN9NXhlOhA}} and \footnote{\url{https://zenodo.org/record/7589725}}.
+
+\subsection{Research Software stack}
+
+We can have another approach to categorize research software based on
+their position in the global software stack, following
+\cite{hinsen2019}.
 
 A typical scientific software stack~\cite{hinsen2019} has the following composition:
 
@@ -59,166 +94,95 @@ Note that Stack level 1 is not considered in this report. The Research Software 
     \item \textbf{Services and platforms}: Galaxy server, Scipion, SAPS, O3AS.
 \end{enumerate}
 
-\subsection{User stories}
-\label{subsec:user_stories}
 
-This document takes the \textit{User Stories} detailed in subgroup 1~\cite{sg1tf2023} and summarised next:
+\subsection{Expectation for Research Software stack and types}
 
-\begin{enumerate}
-    \item \textbf{Individual} - Individual creating research software for own use (e.g. a PhD student): Based on a research question, software is created by a single person with the specific aim of answering the research question and producing research output (paper, dataset, etc).
-    \item \textbf{Team Project} - A research team creating an application or workflow for use within the team: Research software is created by a team to answer a series of research questions (often as part of a larger research project).
-    \item \textbf{Team OSS} - A team / community developing (possibly broadly applicable) open source research software: Software is created by a team (possibly distributed over multiple organizations) to answer a broad range of research questions.
-    \item \textbf{Team Service} - A team or community creating a research service: A service platform is a set of software components which is used to provide services for a large number of users, most of whom make use of these offerings via the Internet (e.g. cloud services).
-\end{enumerate}
+To be able to identify quality attributes for research
+software, we need to understand clearly what is expected for the
+different types identified in the two above sections.
 
+\subsubsection{By research software type}
 
+The different expectations described below add up to each other, when
+the context of development grow in complexity.
 
+\textbf{Individual researcher creating software for personal use}
 
-\subsection{Users stories previous text}
+The author must be able to manage the different versions of the
+code. He often has to come back to the software after a long time (to
+answer to a reviewer for a publication, to adress a new scientific
+question ...).
 
-\mdavid{This was previously in section 4, and needs to be reviewed systematically to associate with the QAttrs of Appendix}
+He perhaps needs to excute the software on different computers and
+different operating systems (for example the use of a supercomputer).
 
-\textbf{Individual researcher creating software for personal use} 
+He has to share the code when he submits his article.
 
-The expected quality criteria are minimal but essential to ensure
-reuse and continuity of developments (usually by another doctoral
-student and/or by the research team), as well as the possibility of
-reproducing the results of associated publications. 
+\textbf{A research team creating an application or workflow for use
+  within the team}
 
-{\bf Practices:}
-\begin{itemize}
-\item Version Control System
-\item Basic documentation Documentation de base (including comments in the code)
-\item License 
-\item archiving and citation
-\item Publication on the code
-\end{itemize}
+The team must be able to manage the development with several
+people. The way to program must be homogeneous, and everybody must
+have a clear vision of who does what.
 
-{\bf Tools and infrastructure required:}
-\begin{itemize}
-\item Software forge (with public access) - For example gitlab instance
-\item Automatic documentation generator - For example doxygen
-\item Archiving infrastructure (with perennial id) - For example Software Heritage
-\item Cataloguing infrastructure - For example HAL en France
-\item Journal for the publication on codes - For example JOSS
-\end{itemize}
-
-% \violaine{Add needed skills -> need training at PhD, researcher and engineer level \\
-% Add needed support -> help to identify the adapted infrastructures and how to use them}
-
-\textbf{A research team creating an application or workflow for use within the team}
-
-The quality criteria are more demanding because it is a question here
-of ensuring continuity in the development carried out by several
-people, over more or less long periods (researchers, engineers,
-doctoral students, trainees...).
-
-In addition to the above elements, more advanced practices must be
-integrated.
-
-{\bf Additional practices:}
-\begin{itemize}
-\item Release management
-\item Testing (unit, functional, regression)
-\item Continuous integration
-\item Programming rules
-\item Bug tracking
-\item License management
-\end{itemize}
-
-{\bf Additional tools and infrastructure required:}
-\begin{itemize}
-\item Continuous integration module - For example Jenkins or gitlab CI
-\item Issue tracking system - For example Jira, Redmine ...
-\item Static web site - For example gitlab pages 
-\item License compatibility tool - For example flict
-\end{itemize}
-
-% \violaine{Add needed skills and support as about license, CI ...}
+New arrival in the team must be able to easily understand the
+structure of the software and the way to develop in the code.
 
 \textbf{A team / community developing open source software}
 
-The software is developed within the framework of a community,
-generally distributed, whose actors have different roles. In general,
-there is a software governance that organizes the developments. The
-aim is to ensure optimal quality so that the whole community can use
-the software with confidence and also make contributions.
+For a community research software, it is important to facilitate
+different types of contribution and to manage correctly rights
+attribution.
 
-{\bf Additional practices:}
-\begin{itemize}
-\item Easy installation
-\item User and developer documentation
-\item Contribution tracking / Copyright management
-\item Regular releases
-\item Code review
-\item Code coveraging
-\item Code quality check
-\item Possibility of online tutorials / avaibility of examples
-\item User support
-\item Ensure visibility
-\item Ensure good development practices and compliance with standards
-\end{itemize}
+Taking into consideration validation and verification is crucial. The
+code has to be easy to maintain et to upgrade.
 
-{\bf Additional tools and infrastructure required:}
-\begin{itemize}
-\item Software forge allowing contributions to the largest number
-\item Test server - For example Cdash ...
-\item Packaging system (such as guix, nix, spack ...) / VM with these systems installed
-\item Container / Kubernetes
-\item Docker registry
-\item Code coverage tool
-\item Static code analysis tool
-\item Notebook server
-\item Forum / chat tool
-\item Code quality verification tool - For example SonarQube
-\item DCO (Developer Certificate of Origin) or CLA (Contributor License Agreement) / Copyright
-\item Synchronization between forges - For example Fediverse, Forge Friends ...
-\item Tool for detecting bad development practices / non compliance with
-standards
-\end{itemize}
+A community software must be as easy as possible to install, use and report
+bug, problems or suggestions.
+A real animation around the software must be organized with support to users.
 
-Software examples - by far not exhaustive - in different communities
-are: Astropy1 (astronomy);  ESMValTool2 (Earth sciences); VASP3,
-FHI-aims4 (material research); VIP5 (medical sciences); Gromacs6
-(molecular dynamics); Neuron7, Nest8, Genesis (Neuroinformatics); root
-(particle physics); many more examples can be found at, e.g., the
-Research Software Directory
+\textbf{A team or community creating a service, a platform or an
+  infrastructure}
 
-% \violaine{Link with the computing centers for support of packaging system or container}
+The main expectation is here the disponibility of the service and
+insure security for users.
 
-\textbf{A team or community creating a service, a platform or an infrastructure}
+\textbf{A team / community developing software in an industrial
+  context}
 
-The case is quite similar to the previous one but includes additional
-constraints linked to the provision of a service. The necessary means
-in operational terms are more important. 
+In the case of industrial context, expectations can vary depending of
+the contract between academic researchers and compagny.
 
-{\bf Additional practices:}
-\begin{itemize}
-\item Viable business model
-\item Security of the service/platform
-\end{itemize}
+\subsubsection{Layer by layer in the software stack}
 
-{\bf Additional tools and infrastructure required:}
-\begin{itemize}
-\item Storage
-\item VM / Container
-\end{itemize}
+For this categorization, the point of view is more a user point of
+view than a developer point of view.
 
-\textbf{A team / community developing software in an industrial context}
+\textbf{A scientific infrastructure}
 
-The expected quality criteria are very similar to the case of
-community developments. Depending on the nature of the collaboration
-with the industry, the security aspects may become essential. 
+A scientific infrastructure as described in \cite{hinsen2019} is by
+definition a software used in another software. It is not a standalone
+code.
 
-{\bf Additional practices:}
-\begin{itemize}
-\item Code certification
-\item Dependency security
-\end{itemize}
+It must therefore be easy to install, and easy to interface with
+another software.
+Users expect that this type of software are robust and with a
+sufficient sustainability because it is often the foundation of their code.
 
-{\bf Additional tools and infrastructure required:}
-\begin{itemize}
-\item Certification Infrastructure
-\item Vulnerability Detection Tool
-\end{itemize}
+\textbf{A domain specific tool}
 
+A domain specific tool is close to a community software. It must be
+easy to install on different operating systems, and easy to use. It
+should have good retrocompatibility.
+
+It must also be easy to cite. It is important for users to be able to
+know precisely what the software does without having to read the source. 
+
+\textbf{A project specific code}
+
+A project specific code is close to a personal or a team code. It has
+a important role
+for reproductibility. It must be easily citable and archive for
+sustainibility reasons.
+
+It often depends of scientific infrastructures.

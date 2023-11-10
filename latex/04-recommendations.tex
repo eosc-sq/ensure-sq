@@ -1,14 +1,213 @@
 \subsection{Quality Attributes recommendations}
 
-\mdavid{Expand on the explanation based on the diagram}
-Figure \ref{fig:rslifecycle} is taken from the sub group 1 report \cite{sg1tf2023}
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.99\linewidth]{imgs/rs_lifecycle.png}
-    \caption{Research Software lifecycle.}
-    \label{fig:rslifecycle}
-\end{figure}
+\subsubsection{Common recommendations}
+
+Table~\ref{tab:rs_recc00} shows the list of Quality Attributes that are common to all types of Software, and to all user stories described in subsection~\ref{subsec:defrs}. They are deemed important and not too difficult to implement even by an individual research or software developer.
+
+\begin{center}
+    \tablehead{\hline \textbf{RS Stack} & \textbf{RS Type} \\ \hline}
+    \tabletail{\hline}
+    \bottomcaption{Recommended common Quality Attributes.}
+    \label{tab:rs_recc00}
+    \small
+    \begin{supertabular}{|p{0.65\linewidth}|p{0.35\linewidth}|} \hline
+    \textbf{All} &
+    \textbf{All} \\ \hline \hline
+
+    \multicolumn{2}{|l|}{\textbf{EOSC-SCMet-02}: \% of redundant code} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SCMet-10}: Number of comments} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-Qual-27}: Intellectual Property} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-01}: Open source} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-02}: Version Control System (VCS)} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-10}: Open-source license} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-29}: Documentation online} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-30}: Documentation updates} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-32}: Documentation production} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-15}: No world-writable files or directories} \\ \hline
+
+\end{supertabular}
+\end{center}
+
+\subsubsection{User story: Individual development}
+
+\begin{center}
+    \tablehead{\hline \textbf{RS Stack} & \textbf{RS Type} \\ \hline}
+    \tabletail{\hline}
+    \bottomcaption{Recommended Quality Attributes, individual development, Analysis script and workflows.}
+    \label{tab:rs_recc01}
+    \small
+    \begin{supertabular}{|p{0.65\linewidth}|p{0.35\linewidth}|} \hline
+    4: \textbf{Project specific code} &
+    4: \textbf{Analysis script and workflows} \\ \hline \hline
+    \multicolumn{2}{|l|}{\textbf{All common Quality Attributes}: table \ref{tab:rs_recc00}} \\ \hline
+
+\end{supertabular}
+\end{center}
+
+\begin{center}
+    \tablehead{\hline \textbf{RS Stack} & \textbf{RS Type} \\ \hline}
+    \tabletail{\hline}
+    \bottomcaption{Recommended Quality Attributes, individual development, library.}
+    \label{tab:rs_recc02}
+    \small
+    \begin{supertabular}{|p{0.65\linewidth}|p{0.35\linewidth}|} \hline
+    4: \textbf{Project specific code} &
+    1: \textbf{Library} \\ \hline \hline
+
+    \multicolumn{2}{|l|}{\textbf{All common Quality Attributes}: table \ref{tab:rs_recc00}} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-12}: Packaging} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-15}: Code deployment} \\ \hline
+
+\end{supertabular}
+\end{center}
+
+\subsubsection{User story: Team Project}
+
+\begin{center}
+    \tablehead{\hline \textbf{RS Stack} & \textbf{RS Type} \\ \hline}
+    \tabletail{\hline}
+    \bottomcaption{Recommended Quality Attributes, team project, analysis script and workflows.}
+    \label{tab:rs_recc03}
+    \small
+    \begin{supertabular}{|p{0.65\linewidth}|p{0.35\linewidth}|} \hline
+    4: \textbf{Project specific code} &
+    4: \textbf{Analysis script and workflows} \\ \hline \hline
+
+    \multicolumn{2}{|l|}{\textbf{All from User story: Individual development}: table \ref{tab:rs_recc01}} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-TMet-02}: \# Resolved bugs} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-TMet-03}: \# Open bugs} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-03}: Source code hosting} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-04}: Working state version} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-07}: Support} \\ \hline
+
+\end{supertabular}
+\end{center}
+
+\begin{center}
+    \tablehead{\hline \textbf{RS Stack} & \textbf{RS Type} \\ \hline}
+    \tabletail{\hline}
+    \bottomcaption{Recommended Quality Attributes, team project, library.}
+    \label{tab:rs_recc04}
+    \small
+    \begin{supertabular}{|p{0.65\linewidth}|p{0.35\linewidth}|} \hline
+    4: \textbf{Project specific code} &
+    1: \textbf{Library} \\ \hline \hline
+
+    \multicolumn{2}{|l|}{\textbf{All from User story: Individual development}: table \ref{tab:rs_recc02}} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-TMet-02}: \# Resolved bugs} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-TMet-03}: \# Open bugs} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-03}: Source code hosting} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-04}: Working state version} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-07}: Support} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-12}: Packaging} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-15}: Code deployment} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-01}: Code style} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-02}: Unit tests} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-03}: Test doubles} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-07}: Functional testing} \\ \hline
+
+\end{supertabular}
+\end{center}
+
+\begin{center}
+    \tablehead{\hline \textbf{RS Stack} & \textbf{RS Type} \\ \hline}
+    \tabletail{\hline}
+    \bottomcaption{Recommended Quality Attributes, team project, services and platforms.}
+    \label{tab:rs_recc05}
+    \small
+    \begin{supertabular}{|p{0.65\linewidth}|p{0.35\linewidth}|} \hline
+    4: \textbf{Project specific code} &
+    5: \textbf{Services and platforms} \\ \hline \hline
+
+    \multicolumn{2}{|l|}{\textbf{All from User story: team project, library}: table \ref{tab:rs_recc04}} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-05}: API testing} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-06}: Integration testing} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-16}: Public endpoints and APIs encrypted} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-17}: Strong ciphers} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-18}: Authentication and Authorization} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-20}: Service compliance with data regulations (GDPR)} \\ \hline
+
+\end{supertabular}
+\end{center}
+
+\subsubsection{User story: Team OSS}
+
+\begin{center}
+    \tablehead{\hline \textbf{RS Stack} & \textbf{RS Type} \\ \hline}
+    \tabletail{\hline}
+    \bottomcaption{Recommended Quality Attributes, team OSS, library.}
+    \label{tab:rs_recc06}
+    \small
+    \begin{supertabular}{|p{0.65\linewidth}|p{0.35\linewidth}|} \hline
+    3 and 2: \textbf{Domain specific tools} and  \textbf{Scientific infrastructure} &
+    1: \textbf{Library} \\ \hline \hline
+
+    \multicolumn{2}{|l|}{\textbf{All from User story: Team Project}: table \ref{tab:rs_recc04}} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-TMet-04}: Defect rates} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-08}: Code review} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-26}: Documentation version controlled} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-27}: Documentation as code} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-28}: Documentation formats} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-08}: Performance testing} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-13}: Static Application Security Testing (SAST)} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-14}: Security code reviews} \\ \hline
+
+\end{supertabular}
+\end{center}
+
+\begin{center}
+    \tablehead{\hline \textbf{RS Stack} & \textbf{RS Type} \\ \hline}
+    \tabletail{\hline}
+    \bottomcaption{Recommended Quality Attributes, team OSS, frameworks and applications.}
+    \label{tab:rs_recc07}
+    \small
+    \begin{supertabular}{|p{0.65\linewidth}|p{0.35\linewidth}|} \hline
+    3 and 2: \textbf{Domain specific tools} and  \textbf{Scientific infrastructure} &
+    2 and 3: \textbf{Framework, Application} \\ \hline \hline
+
+    \multicolumn{2}{|l|}{\textbf{All from User story: Team OSS, Library}: table \ref{tab:rs_recc06}} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-04}: Test-Driven Development (TDD)} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-10}: Scalability testing} \\ \hline
+
+\end{supertabular}
+\end{center}
+
+\subsubsection{User story: Team Service}
+
+\begin{center}
+    \tablehead{\hline \textbf{RS Stack} & \textbf{RS Type} \\ \hline}
+    \tabletail{\hline}
+    \bottomcaption{Recommended Quality Attributes, team service, services and platforms.}
+    \label{tab:rs_recc08}
+    \small
+    \begin{supertabular}{|p{0.65\linewidth}|p{0.35\linewidth}|} \hline
+    3 and 2: \textbf{Domain specific tools} and \textbf{Scientific infrastructure} &
+    5: \textbf{Services and platforms} \\ \hline \hline
+
+    \multicolumn{2}{|l|}{\textbf{All from User story: Team Project}: table \ref{tab:rs_recc05}} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-TMet-04}: Defect rates} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-08}: Code review} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-26}: Documentation version controlled} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-27}: Documentation as code} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-28}: Documentation formats} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-04}: Test-Driven Development (TDD)} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-08}: Performance testing} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-09}: Stress testing} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-10}: Scalability testing} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-12}: Open Web Application Security Project (OWASP)} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-13}: Static Application Security Testing (SAST)} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-14}: Security code reviews} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-19}: API security assessment} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-21}: Dynamic Application Security Testing (DAST)} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-22}: Interactive Application Security Testing (IAST)} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-23}: Security penetration testing} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-24}: Security assessment} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-25}: Security as Code (SaC) Testing} \\ \hline
+
+\end{supertabular}
+\end{center}
+
 
 \subsection{Example of tools, services and infrastructures to implement Quality Assurance for RS}
 

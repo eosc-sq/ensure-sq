@@ -1,3 +1,34 @@
+\subsection{Common recommendations}
+
+\begin{center}
+    \tablehead{
+        \hline
+        \textbf{RS Stack} & \textbf{RS Type} \\
+        \hline
+    }
+    \tabletail{\hline}
+    \tablelasttail{\hline}
+    \bottomcaption{Recommended common Quality Attributes.}
+    \label{tab:rs_recc00}
+    \small
+    \begin{supertabular}{|p{0.5\linewidth}|p{0.5\linewidth}|} \hline
+    \textbf{All} &
+    \textbf{All} \\ \hline \hline
+
+    \multicolumn{2}{|l|}{\textbf{EOSC-SCMet-02}: \% of redundant code} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SCMet-10}: Number of comments} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-Qual-27}: Intellectual Property} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-01}: Open source} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-02}: Version Control System (VCS)} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-10}: Open-source license} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-29}: Documentation online} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-30}: Documentation updates} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-32}: Documentation production} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-15}: No world-writable files or directories} \\ \hline
+
+\end{supertabular}
+\end{center}
+
 \subsection{User story: Individual development}
 
 \begin{center}
@@ -8,23 +39,13 @@
     }
     \tabletail{\hline}
     \tablelasttail{\hline}
+    \bottomcaption{Recommended Quality Attributes, individual development, Analysis script and workflows.}
     \label{tab:rs_recc01}
     \small
     \begin{supertabular}{|p{0.5\linewidth}|p{0.5\linewidth}|} \hline
     4: \textbf{Project specific code} &
-    1: \textbf{Library} \\ \hline \hline
-
-    \multicolumn{2}{|l|}{\textbf{EOSC-SCMet-02}: \% of redundant code} \\ \hline
-    \multicolumn{2}{|l|}{\textbf{EOSC-SCMet-10}: Number of comments} \\ \hline
-    \multicolumn{2}{|l|}{\textbf{EOSC-Qual-27}: Intellectual Property} \\ \hline
-    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-01}: Open source} \\ \hline
-    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-02}: Version Control System (VCS)} \\ \hline
-    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-10}: Open-source license} \\ \hline
-    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-12}: Packaging} \\ \hline
-    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-15}: Code deployment} \\ \hline
-    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-29}: Documentation online} \\ \hline
-    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-30}: Documentation updates} \\ \hline
-    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-15}: No world-writable files or directories} \\ \hline
+    4: \textbf{Analysis script and workflows} \\ \hline \hline
+    \multicolumn{2}{|l|}{\textbf{All common Quality Attributes}: table \ref{tab:rs_recc00}} \\ \hline
 
 \end{supertabular}
 \end{center}
@@ -37,235 +58,249 @@
     }
     \tabletail{\hline}
     \tablelasttail{\hline}
-    \label{tab:rs_recc01}
+    \bottomcaption{Recommended Quality Attributes, individual development, library.}
+    \label{tab:rs_recc02}
     \small
     \begin{supertabular}{|p{0.5\linewidth}|p{0.5\linewidth}|} \hline
     4: \textbf{Project specific code} &
-    4: \textbf{Analysis script and workflows} \\ \hline \hline
+    1: \textbf{Library} \\ \hline \hline
 
-    \multicolumn{2}{|l|}{\textbf{EOSC-SCMet-02}: \% of redundant code} \\ \hline
-    \multicolumn{2}{|l|}{\textbf{EOSC-SCMet-10}: Number of comments} \\ \hline
-    \multicolumn{2}{|l|}{\textbf{EOSC-Qual-27}: Intellectual Property} \\ \hline
-    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-01}: Open source} \\ \hline
-    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-02}: Version Control System (VCS)} \\ \hline
-    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-10}: Open-source license} \\ \hline
-    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-29}: Documentation online} \\ \hline
-    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-30}: Documentation updates} \\ \hline
-    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-15}: No world-writable files or directories} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{All common Quality Attributes}: table \ref{tab:rs_recc00}} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-12}: Packaging} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-15}: Code deployment} \\ \hline
 
 \end{supertabular}
 \end{center}
 
 \subsection{User story: Team Project}
 
-RS stack 4: \textbf{Project specific code} \newline
-RS type 1: \textbf{Library}
+\begin{center}
+    \tablehead{
+        \hline
+        \textbf{RS Stack} & \textbf{RS Type} \\
+        \hline
+    }
+    \tabletail{\hline}
+    \tablelasttail{\hline}
+    \bottomcaption{Recommended Quality Attributes, team project, analysis script and workflows.}
+    \label{tab:rs_recc03}
+    \small
+    \begin{supertabular}{|p{0.5\linewidth}|p{0.5\linewidth}|} \hline
+    4: \textbf{Project specific code} &
+    4: \textbf{Analysis script and workflows} \\ \hline \hline
 
-\begin{itemize}
-    \item \textbf{EOSC-SCMet-02}: \% of redundant code
-    \item \textbf{EOSC-SCMet-10}: Number of comments
-    \item \textbf{EOSC-TMet-02}: \# Resolved bugs
-    \item \textbf{EOSC-TMet-03}: \# Open bugs
-    \item \textbf{EOSC-Qual-27}: Intellectual Property
-    \item \textbf{EOSC-SWRelMan-01}: Open source
-    \item \textbf{EOSC-SWRelMan-02}: Version Control System (VCS)
-    \item \textbf{EOSC-SWRelMan-03}: Source code hosting
-    \item \textbf{EOSC-SWRelMan-04}: Working state version
-    \item \textbf{EOSC-SWRelMan-07}: Support
-    \item \textbf{EOSC-SWRelMan-10}: Open-source license
-    \item \textbf{EOSC-SWRelMan-12}: Packaging
-    \item \textbf{EOSC-SWRelMan-15}: Code deployment
-    \item \textbf{EOSC-SWRelMan-29}: Documentation online
-    \item \textbf{EOSC-SWRelMan-30}: Documentation updates
-    \item \textbf{EOSC-SWRelMan-32}: Documentation production
-    \item \textbf{EOSC-SWTest-01}: Code style
-    \item \textbf{EOSC-SWTest-02}: Unit tests
-    \item \textbf{EOSC-SWTest-03}: Test doubles
-    \item \textbf{EOSC-SWTest-07}: Functional testing
-    \item \textbf{EOSC-SWTest-15}: No world-writable files or directories
-\end{itemize}
-\hrule
+    \multicolumn{2}{|l|}{\textbf{All from User story: Individual development}: table \ref{tab:rs_recc01}} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-TMet-02}: \# Resolved bugs} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-TMet-03}: \# Open bugs} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-03}: Source code hosting} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-04}: Working state version} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-07}: Support} \\ \hline
 
-RS stack 4: \textbf{Project specific code} \newline
-RS type 4: \textbf{Analysis script and workflows}
+\end{supertabular}
+\end{center}
 
-\begin{itemize}
-    \item \textbf{EOSC-SCMet-02}: \% of redundant code
-    \item \textbf{EOSC-SCMet-10}: Number of comments
-    \item \textbf{EOSC-TMet-02}: \# Resolved bugs
-    \item \textbf{EOSC-TMet-03}: \# Open bugs
-    \item \textbf{EOSC-Qual-27}: Intellectual Property
-    \item \textbf{EOSC-SWRelMan-01}: Open source
-    \item \textbf{EOSC-SWRelMan-02}: Version Control System (VCS)
-    \item \textbf{EOSC-SWRelMan-03}: Source code hosting
-    \item \textbf{EOSC-SWRelMan-04}: Working state version
-    \item \textbf{EOSC-SWRelMan-07}: Support
-    \item \textbf{EOSC-SWRelMan-10}: Open-source license
-    \item \textbf{EOSC-SWRelMan-29}: Documentation online
-    \item \textbf{EOSC-SWRelMan-30}: Documentation updates
-    \item \textbf{EOSC-SWTest-15}: No world-writable files or directories
-\end{itemize}
-\hrule
+\begin{center}
+    \tablehead{
+        \hline
+        \textbf{RS Stack} & \textbf{RS Type} \\
+        \hline
+    }
+    \tabletail{\hline}
+    \tablelasttail{\hline}
+    \bottomcaption{Recommended Quality Attributes, team project, library.}
+    \label{tab:rs_recc04}
+    \small
+    \begin{supertabular}{|p{0.5\linewidth}|p{0.5\linewidth}|} \hline
+    4: \textbf{Project specific code} &
+    1: \textbf{Library} \\ \hline \hline
 
-RS stack 4: \textbf{Project specific code} \newline
-RS type 5: \textbf{Services and platforms}
+    \multicolumn{2}{|l|}{\textbf{All from User story: Individual development}: table \ref{tab:rs_recc02}} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-TMet-02}: \# Resolved bugs} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-TMet-03}: \# Open bugs} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-03}: Source code hosting} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-04}: Working state version} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-07}: Support} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-12}: Packaging} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-15}: Code deployment} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-01}: Code style} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-02}: Unit tests} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-03}: Test doubles} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-07}: Functional testing} \\ \hline
 
-\begin{itemize}
-    \item \textbf{EOSC-SCMet-02}: \% of redundant code
-    \item \textbf{EOSC-SCMet-10}: Number of comments
-    \item \textbf{EOSC-TMet-02}: \# Resolved bugs
-    \item \textbf{EOSC-TMet-03}: \# Open bugs
-    \item \textbf{EOSC-Qual-27}: Intellectual Property
-    \item \textbf{EOSC-SWRelMan-01}: Open source
-    \item \textbf{EOSC-SWRelMan-02}: Version Control System (VCS)
-    \item \textbf{EOSC-SWRelMan-03}: Source code hosting
-    \item \textbf{EOSC-SWRelMan-04}: Working state version
-    \item \textbf{EOSC-SWRelMan-07}: Support
-    \item \textbf{EOSC-SWRelMan-10}: Open-source license
-    \item \textbf{EOSC-SWRelMan-12}: Packaging
-    \item \textbf{EOSC-SWRelMan-15}: Code deployment
-    \item \textbf{EOSC-SWRelMan-29}: Documentation online
-    \item \textbf{EOSC-SWRelMan-30}: Documentation updates
-    \item \textbf{EOSC-SWRelMan-32}: Documentation production
-    \item \textbf{EOSC-SWTest-01}: Code style
-    \item \textbf{EOSC-SWTest-02}: Unit tests
-    \item \textbf{EOSC-SWTest-03}: Test doubles
-    \item \textbf{EOSC-SWTest-05}: API testing
-    \item \textbf{EOSC-SWTest-06}: Integration testing
-    \item \textbf{EOSC-SWTest-15}: No world-writable files or directories
-    \item \textbf{EOSC-SWTest-16}: Public endpoints and APIs encrypted
-    \item \textbf{EOSC-SWTest-17}: Strong ciphers
-    \item \textbf{EOSC-SWTest-18}: Authentication and Authorization
-    \item \textbf{EOSC-SWTest-20}: Service compliance with data regulations (GDPR)
-\end{itemize}
-\hrule
+\end{supertabular}
+\end{center}
+
+\begin{center}
+    \tablehead{
+        \hline
+        \textbf{RS Stack} & \textbf{RS Type} \\
+        \hline
+    }
+    \tabletail{\hline}
+    \tablelasttail{\hline}
+    \bottomcaption{Recommended Quality Attributes, team project, services and platforms.}
+    \label{tab:rs_recc05}
+    \small
+    \begin{supertabular}{|p{0.5\linewidth}|p{0.5\linewidth}|} \hline
+    4: \textbf{Project specific code} &
+    5: \textbf{Services and platforms} \\ \hline \hline
+
+    \multicolumn{2}{|l|}{\textbf{All common Quality Attributes}: table \ref{tab:rs_recc00}} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-TMet-02}: \# Resolved bugs} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-TMet-03}: \# Open bugs} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-03}: Source code hosting} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-04}: Working state version} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-07}: Support} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-12}: Packaging} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-15}: Code deployment} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-01}: Code style} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-02}: Unit tests} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-03}: Test doubles} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-05}: API testing} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-06}: Integration testing} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-16}: Public endpoints and APIs encrypted} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-17}: Strong ciphers} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-18}: Authentication and Authorization} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-20}: Service compliance with data regulations (GDPR)} \\ \hline
+
+\end{supertabular}
+\end{center}
 
 \subsection{User story: Team OSS}
 
-RS stack 3 and 2: \textbf{Domain specific tools} and  \textbf{Scientific infrastructure} \newline
-RS type 1: \textbf{Library}
+\begin{center}
+    \tablehead{
+        \hline
+        \textbf{RS Stack} & \textbf{RS Type} \\
+        \hline
+    }
+    \tabletail{\hline}
+    \tablelasttail{\hline}
+    \bottomcaption{Recommended Quality Attributes, team OSS, library.}
+    \label{tab:rs_recc06}
+    \small
+    \begin{supertabular}{|p{0.5\linewidth}|p{0.5\linewidth}|} \hline
+    3 and 2: \textbf{Domain specific tools} and  \textbf{Scientific infrastructure} &
+    1: \textbf{Library} \\ \hline \hline
 
-\begin{itemize}
-    \item \textbf{EOSC-SCMet-02}: \% of redundant code
-    \item \textbf{EOSC-SCMet-10}: Number of comments
-    \item \textbf{EOSC-TMet-02}: \# Resolved bugs
-    \item \textbf{EOSC-TMet-03}: \# Open bugs
-    \item \textbf{EOSC-TMet-04}: Defect rates
-    \item \textbf{EOSC-Qual-27}: Intellectual Property
-    \item \textbf{EOSC-SWRelMan-01}: Open source
-    \item \textbf{EOSC-SWRelMan-02}: Version Control System (VCS)
-    \item \textbf{EOSC-SWRelMan-03}: Source code hosting
-    \item \textbf{EOSC-SWRelMan-04}: Working state version
-    \item \textbf{EOSC-SWRelMan-07}: Support
-    \item \textbf{EOSC-SWRelMan-08}: Code review
-    \item \textbf{EOSC-SWRelMan-10}: Open-source license
-    \item \textbf{EOSC-SWRelMan-12}: Packaging
-    \item \textbf{EOSC-SWRelMan-15}: Code deployment
-    \item \textbf{EOSC-SWRelMan-26}: Documentation version controlled
-    \item \textbf{EOSC-SWRelMan-27}: Documentation as code
-    \item \textbf{EOSC-SWRelMan-28}: Documentation formats
-    \item \textbf{EOSC-SWRelMan-29}: Documentation online
-    \item \textbf{EOSC-SWRelMan-30}: Documentation updates
-    \item \textbf{EOSC-SWRelMan-32}: Documentation production
-    \item \textbf{EOSC-SWTest-01}: Code style
-    \item \textbf{EOSC-SWTest-02}: Unit tests
-    \item \textbf{EOSC-SWTest-03}: Test doubles
-    \item \textbf{EOSC-SWTest-07}: Functional testing
-    \item \textbf{EOSC-SWTest-08}: Performance testing
-    \item \textbf{EOSC-SWTest-13}: Static Application Security Testing (SAST)
-    \item \textbf{EOSC-SWTest-14}: Security code reviews
-    \item \textbf{EOSC-SWTest-15}: No world-writable files or directories
-\end{itemize}
-\hrule
+    \multicolumn{2}{|l|}{\textbf{All common Quality Attributes}: table \ref{tab:rs_recc00}} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-TMet-02}: \# Resolved bugs} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-TMet-03}: \# Open bugs} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-TMet-04}: Defect rates} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-03}: Source code hosting} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-04}: Working state version} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-07}: Support} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-08}: Code review} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-12}: Packaging} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-15}: Code deployment} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-26}: Documentation version controlled} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-27}: Documentation as code} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-28}: Documentation formats} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-01}: Code style} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-02}: Unit tests} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-03}: Test doubles} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-07}: Functional testing} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-08}: Performance testing} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-13}: Static Application Security Testing (SAST)} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-14}: Security code reviews} \\ \hline
 
-RS stack 3 and 2: \textbf{Domain specific tools} and \textbf{Scientific infrastructure} \newline
-RS type 2 and 3: \textbf{Framework, Application}
+\end{supertabular}
+\end{center}
 
-\begin{itemize}
-    \item \textbf{EOSC-SCMet-02}: \% of redundant code
-    \item \textbf{EOSC-SCMet-10}: Number of comments
-    \item \textbf{EOSC-TMet-02}: \# Resolved bugs
-    \item \textbf{EOSC-TMet-03}: \# Open bugs
-    \item \textbf{EOSC-TMet-04}: Defect rates
-    \item \textbf{EOSC-Qual-27}: Intellectual Property
-    \item \textbf{EOSC-SWRelMan-01}: Open source
-    \item \textbf{EOSC-SWRelMan-02}: Version Control System (VCS)
-    \item \textbf{EOSC-SWRelMan-03}: Source code hosting
-    \item \textbf{EOSC-SWRelMan-04}: Working state version
-    \item \textbf{EOSC-SWRelMan-07}: Support
-    \item \textbf{EOSC-SWRelMan-08}: Code review
-    \item \textbf{EOSC-SWRelMan-10}: Open-source license
-    \item \textbf{EOSC-SWRelMan-12}: Packaging
-    \item \textbf{EOSC-SWRelMan-15}: Code deployment
-    \item \textbf{EOSC-SWRelMan-26}: Documentation version controlled
-    \item \textbf{EOSC-SWRelMan-27}: Documentation as code
-    \item \textbf{EOSC-SWRelMan-28}: Documentation formats
-    \item \textbf{EOSC-SWRelMan-29}: Documentation online
-    \item \textbf{EOSC-SWRelMan-30}: Documentation updates
-    \item \textbf{EOSC-SWRelMan-32}: Documentation production
-    \item \textbf{EOSC-SWTest-01}: Code style
-    \item \textbf{EOSC-SWTest-02}: Unit tests
-    \item \textbf{EOSC-SWTest-03}: Test doubles
-    \item \textbf{EOSC-SWTest-04}: Test-Driven Development (TDD)
-    \item \textbf{EOSC-SWTest-07}: Functional testing
-    \item \textbf{EOSC-SWTest-08}: Performance testing
-    \item \textbf{EOSC-SWTest-10}: Scalability testing
-    \item \textbf{EOSC-SWTest-13}: Static Application Security Testing (SAST)
-    \item \textbf{EOSC-SWTest-14}: Security code reviews
-    \item \textbf{EOSC-SWTest-15}: No world-writable files or directories
-\end{itemize}
-\hrule
+\begin{center}
+    \tablehead{
+        \hline
+        \textbf{RS Stack} & \textbf{RS Type} \\
+        \hline
+    }
+    \tabletail{\hline}
+    \tablelasttail{\hline}
+    \bottomcaption{Recommended Quality Attributes, team OSS, frameworks and applications.}
+    \label{tab:rs_recc07}
+    \small
+    \begin{supertabular}{|p{0.5\linewidth}|p{0.5\linewidth}|} \hline
+    3 and 2: \textbf{Domain specific tools} and  \textbf{Scientific infrastructure} &
+    2 and 3: \textbf{Framework, Application} \\ \hline \hline
+
+    \multicolumn{2}{|l|}{\textbf{All common Quality Attributes}: table \ref{tab:rs_recc00}} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-TMet-02}: \# Resolved bugs} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-TMet-03}: \# Open bugs} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-TMet-04}: Defect rates} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-03}: Source code hosting} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-04}: Working state version} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-07}: Support} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-08}: Code review} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-12}: Packaging} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-15}: Code deployment} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-26}: Documentation version controlled} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-27}: Documentation as code} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-28}: Documentation formats} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-01}: Code style} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-02}: Unit tests} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-03}: Test doubles} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-04}: Test-Driven Development (TDD)} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-07}: Functional testing} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-08}: Performance testing} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-10}: Scalability testing} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-13}: Static Application Security Testing (SAST)} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-14}: Security code reviews} \\ \hline
+
+\end{supertabular}
+\end{center}
+
 
 \subsection{User story: Team Service}
 
-RS stack 3 and 2: \textbf{Domain specific tools} and \textbf{Scientific infrastructure} \newline
-RS type 5: \textbf{Services and platforms}
+\begin{center}
+    \tablehead{
+        \hline
+        \textbf{RS Stack} & \textbf{RS Type} \\
+        \hline
+    }
+    \tabletail{\hline}
+    \tablelasttail{\hline}
+    \bottomcaption{Recommended Quality Attributes, team service, services and platforms.}
+    \label{tab:rs_recc08}
+    \small
+    \begin{supertabular}{|p{0.5\linewidth}|p{0.5\linewidth}|} \hline
+    3 and 2: \textbf{Domain specific tools} and \textbf{Scientific infrastructure} &
+    5: \textbf{Services and platforms} \\ \hline \hline
 
-\begin{itemize}
-    \item \textbf{EOSC-SCMet-02}: \% of redundant code
-    \item \textbf{EOSC-SCMet-10}: Number of comments
-    \item \textbf{EOSC-TMet-02}: \# Resolved bugs
-    \item \textbf{EOSC-TMet-03}: \# Open bugs
-    \item \textbf{EOSC-TMet-04}: Defect rates
-    \item \textbf{EOSC-Qual-27}: Intellectual Property
-    \item \textbf{EOSC-SWRelMan-01}: Open source
-    \item \textbf{EOSC-SWRelMan-02}: Version Control System (VCS)
-    \item \textbf{EOSC-SWRelMan-03}: Source code hosting
-    \item \textbf{EOSC-SWRelMan-04}: Working state version
-    \item \textbf{EOSC-SWRelMan-07}: Support
-    \item \textbf{EOSC-SWRelMan-08}: Code review
-    \item \textbf{EOSC-SWRelMan-10}: Open-source license
-    \item \textbf{EOSC-SWRelMan-12}: Packaging
-    \item \textbf{EOSC-SWRelMan-15}: Code deployment
-    \item \textbf{EOSC-SWRelMan-26}: Documentation version controlled
-    \item \textbf{EOSC-SWRelMan-27}: Documentation as code
-    \item \textbf{EOSC-SWRelMan-28}: Documentation formats
-    \item \textbf{EOSC-SWRelMan-29}: Documentation online
-    \item \textbf{EOSC-SWRelMan-30}: Documentation updates
-    \item \textbf{EOSC-SWRelMan-32}: Documentation production
-    \item \textbf{EOSC-SWTest-01}: Code style
-    \item \textbf{EOSC-SWTest-02}: Unit tests
-    \item \textbf{EOSC-SWTest-03}: Test doubles
-    \item \textbf{EOSC-SWTest-04}: Test-Driven Development (TDD)
-    \item \textbf{EOSC-SWTest-05}: API testing
-    \item \textbf{EOSC-SWTest-06}: Integration testing
-    \item \textbf{EOSC-SWTest-08}: Performance testing
-    \item \textbf{EOSC-SWTest-09}: Stress testing
-    \item \textbf{EOSC-SWTest-10}: Scalability testing
-    \item \textbf{EOSC-SWTest-12}: Open Web Application Security Project (OWASP)
-    \item \textbf{EOSC-SWTest-13}: Static Application Security Testing (SAST)
-    \item \textbf{EOSC-SWTest-14}: Security code reviews
-    \item \textbf{EOSC-SWTest-15}: No world-writable files or directories
-    \item \textbf{EOSC-SWTest-16}: Public endpoints and APIs encrypted
-    \item \textbf{EOSC-SWTest-17}: Strong ciphers
-    \item \textbf{EOSC-SWTest-18}: Authentication and Authorization
-    \item \textbf{EOSC-SWTest-19}: API security assessment
-    \item \textbf{EOSC-SWTest-20}: Service compliance with data regulations (GDPR)
-    \item \textbf{EOSC-SWTest-21}: Dynamic Application Security Testing (DAST)
-    \item \textbf{EOSC-SWTest-22}: Interactive Application Security Testing (IAST)
-    \item \textbf{EOSC-SWTest-23}: Security penetration testing
-    \item \textbf{EOSC-SWTest-24}: Security assessment
-    \item \textbf{EOSC-SWTest-25}: Security as Code (SaC) Testing
-\end{itemize}
-\hrule
+    \multicolumn{2}{|l|}{\textbf{All common Quality Attributes}: table \ref{tab:rs_recc00}} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-TMet-02}: \# Resolved bugs} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-TMet-03}: \# Open bugs} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-TMet-04}: Defect rates} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-03}: Source code hosting} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-04}: Working state version} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-07}: Support} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-08}: Code review} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-12}: Packaging} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-15}: Code deployment} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-26}: Documentation version controlled} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-27}: Documentation as code} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-28}: Documentation formats} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-01}: Code style} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-02}: Unit tests} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-03}: Test doubles} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-04}: Test-Driven Development (TDD)} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-05}: API testing} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-06}: Integration testing} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-08}: Performance testing} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-09}: Stress testing} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-10}: Scalability testing} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-12}: Open Web Application Security Project (OWASP)} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-13}: Static Application Security Testing (SAST)} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-14}: Security code reviews} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-16}: Public endpoints and APIs encrypted} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-17}: Strong ciphers} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-18}: Authentication and Authorization} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-19}: API security assessment} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-20}: Service compliance with data regulations (GDPR)} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-21}: Dynamic Application Security Testing (DAST)} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-22}: Interactive Application Security Testing (IAST)} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-23}: Security penetration testing} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-24}: Security assessment} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-25}: Security as Code (SaC) Testing} \\ \hline
 
+\end{supertabular}
+\end{center}

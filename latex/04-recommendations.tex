@@ -5,6 +5,8 @@
 
 Table~\ref{tab:rs_recc00} shows the list of Quality Attributes that are common to all types of Software, and to all user stories described in subsection~\ref{subsec:defrs}. They are deemed important and not too difficult to implement even by an individual research or software developer.
 
+These attributes are about documentation, open source code including a license, visible description about intellectual property that is important to establish ownership and scientific recognition. Also avoid redundant code and about security; no world writable files and directories.
+
 \begin{center}
     \tablehead{\hline \textbf{RS Stack} & \textbf{RS Type} \\ \hline}
     \tabletail{\hline}
@@ -31,6 +33,8 @@ Table~\ref{tab:rs_recc00} shows the list of Quality Attributes that are common t
 
 \subsubsection{User story: Individual development}
 
+The case of individual development of analysis script and workflows (table~\ref{tab:rs_recc01}), the recommendation are the common attributes listed in table~\ref{tab:rs_recc00}.
+
 \begin{center}
     \tablehead{\hline \textbf{RS Stack} & \textbf{RS Type} \\ \hline}
     \tabletail{\hline}
@@ -44,6 +48,8 @@ Table~\ref{tab:rs_recc00} shows the list of Quality Attributes that are common t
 
 \end{supertabular}
 \end{center}
+
+In the case of software type "Library", packaging and code deployment are added to the common attributes as listed in table \ref{tab:rs_recc02}.
 
 \begin{center}
     \tablehead{\hline \textbf{RS Stack} & \textbf{RS Type} \\ \hline}
@@ -63,6 +69,8 @@ Table~\ref{tab:rs_recc00} shows the list of Quality Attributes that are common t
 \end{center}
 
 \subsubsection{User story: Team Project}
+
+The case for a team working on a project on analysis script and workflows, there is an increase in responsibility, as such it's recommended to add support that includes the reporting and solving bugs and source code hosting in common VCS repositories, as shown in table \ref{tab:rs_recc03}.
 
 \begin{center}
     \tablehead{\hline \textbf{RS Stack} & \textbf{RS Type} \\ \hline}
@@ -84,6 +92,8 @@ Table~\ref{tab:rs_recc00} shows the list of Quality Attributes that are common t
 \end{supertabular}
 \end{center}
 
+The case of research software type "Library", the recommendation is to add testing with respect to the previous cases, this is shown in table \ref{tab:rs_recc04}.
+
 \begin{center}
     \tablehead{\hline \textbf{RS Stack} & \textbf{RS Type} \\ \hline}
     \tabletail{\hline}
@@ -100,8 +110,6 @@ Table~\ref{tab:rs_recc00} shows the list of Quality Attributes that are common t
     \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-03}: Source code hosting} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-04}: Working state version} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-07}: Support} \\ \hline
-    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-12}: Packaging} \\ \hline
-    \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-15}: Code deployment} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-01}: Code style} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-02}: Unit tests} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-03}: Test doubles} \\ \hline
@@ -109,6 +117,8 @@ Table~\ref{tab:rs_recc00} shows the list of Quality Attributes that are common t
 
 \end{supertabular}
 \end{center}
+
+Table \ref{tab:rs_recc05} regards the development, deployment and operation of a service, added recommendations related to further types of tests such as APIs and integration (when applicable). Furthermore, there are several attributes related to securiry such as the use of service certificates to encrypt endpoints, use of strong authentication and authorization mechanisms even in the case of limited access to the services.
 
 \begin{center}
     \tablehead{\hline \textbf{RS Stack} & \textbf{RS Type} \\ \hline}
@@ -133,6 +143,8 @@ Table~\ref{tab:rs_recc00} shows the list of Quality Attributes that are common t
 
 \subsubsection{User story: Team OSS}
 
+This subsection describes the recommendations when a medium to large team is responsible for the development of Open Source Software for research. Thus, the increase in responsability with respect to the previous cases of smaller teams or individual researchers. Added Quality Attributes for more complete documentation, more types of tests including security and peer code review, as shown in table \ref{tab:rs_recc06}.
+
 \begin{center}
     \tablehead{\hline \textbf{RS Stack} & \textbf{RS Type} \\ \hline}
     \tabletail{\hline}
@@ -156,6 +168,8 @@ Table~\ref{tab:rs_recc00} shows the list of Quality Attributes that are common t
 \end{supertabular}
 \end{center}
 
+Table \ref{tab:rs_recc07} show the case for a Framework or Application, it adds further types of testing such as scalability and development methodology called Test-Driven Development (TDD).
+
 \begin{center}
     \tablehead{\hline \textbf{RS Stack} & \textbf{RS Type} \\ \hline}
     \tabletail{\hline}
@@ -174,6 +188,8 @@ Table~\ref{tab:rs_recc00} shows the list of Quality Attributes that are common t
 \end{center}
 
 \subsubsection{User story: Team Service}
+
+This subsection refers to a medium/large team developing an Open Source scientific research service or platform, that will be used by a large number of researchers, possibly from different fields. The list is significant with several types of tests including security, complete set of documentation, helpdesk for support and bug reporting.
 
 \begin{center}
     \tablehead{\hline \textbf{RS Stack} & \textbf{RS Type} \\ \hline}

@@ -1,6 +1,6 @@
 %% massimo: I added the following paragraph to introduce what we mean (or at least what I understood) about "perspectives" and then introduce the plot of the discussion.  
 Perspectives on research software quality include many different aspects that researchers and the scientific community at large consider relevant when evaluating the quality of software used or developed in a particular research field. These aspects are all equally essential to ensure the credibility and reliability of the research results themselves while meeting the expectations of software users. Clearly, the different perspectives on the quality of research software can branch significantly based on the individuals using it, the type of software, and the context in which it is used. 
-In the following, we discuss perspectives according to three different points of view: that of the developers of research software, that of the users who may be either other researchers extending research into the same or different research field or mere users of the software, and finally the point of view of the providers of the services and resources that enable the execution of the software and/or the fruition of the results produced by the software.  
+In the following, we discuss perspectives according to two distict point of view: that of the developers of research software, and that of the users who may be either other researchers extending research into the same or different research field or mere software users. Finally, we discuss the aspects related to the services and resources that enable the development, the execution, and the fruition of the results produced by the software.  
 
 \subsection{Developers}
 % \miguel{Are the authors of the research SW obtaining an official acknowledgement of the value of their work? Does this have an impact on their career?}
@@ -42,6 +42,7 @@ Research software users are heterogeneous and can include individuals with diffe
 
 The diversity of users highlights the interdisciplinary nature of research software, which often spans various scientific fields and application domains. Adequate documentation, hands-on tutorials, and the steady availability of user support are crucial for ensuring that research software meets the users' needs and contributes to advancing knowledge in different fields.  
 
+%% maybe a subsection on reproduciability
 From the user's perspective, reproducing the results of a study, potentially published in a scientific manuscript, involves having access to the software and data used to produce the results. 
 Users should have access to the software's source code to inspect the algorithms used, verify their implementation, and understand how the software works in any aspect.
 To this end, the availability of comprehensive documentation is essential. Users should have access to clear instructions on how to set up the software, install dependencies, compile the code, and reproduce specific experiments or analyses. The source-code documentation is certainly a plus to enhance transparency and reproducibility.
@@ -49,12 +50,36 @@ To this end, the availability of comprehensive documentation is essential. Users
 The access to the datasets used in the study is essential for reproducing results through the research software. Users should have access to the same data used by the authors to run the software. Moreover, knowledge of the computational environment, including the operating system, software versions, dependencies, and hardware specifications used to obtain the results, is essential to facilitate the user to reproduce the results. Containers technology and virtual environments are more and more often used, when possible, to help recreate the exact computational environment.
 
 However, users of research software should also recognize that exact reproducibility may not always be achievable due to factors such as variability in data, slightly different hardware-software platforms, or even inherent randomness and complexities in the specific algorithms used. 
-Collaborative and transparent practices within the research community and between the research software developers and the user community, may contribute to increasing the culture of reproducibility, ensuring that the results produced using research software are easely verifiable.
+Collaborative and transparent practices within the research community and between the research software developers and the user community, may contribute to increasing the culture of reproducibility, ensuring the results produced using research software are easely verifiable.
 
 
-\subsection{Resource/Service providers}
+\subsection{Service providers}
 
 % \miguel{Examples of service providers for research SW: Galaxy project, Jupyter lab, IEEE's Code Ocean, supercomputing infrastructures (BSC, and others), CERN data analysis platform, ...}
 % \miguel{Can the SW be put inside a container?}
 % \miguel{Are the developers providing timely updates (bug fixes, security updates)}
 % \cerlane{Question: Are we talking about service providers of the Infrastructure or research SW?}
+
+In this section, a service provider refers to a service offered by an external organization to assist individual researchers and research entities in developing and releasing their research software. 
+An external service provider may offer either physical resources or software tools and infrastructures.  
+Several service providers meet the needs of researchers and developers engaged in research software development. Examples are GitHub, Zenodo, and AWS, to mention a few. Many software developers use such external services to enhance collaboration, streamline software development, maintain and disseminate the software they developed. 
+
+However, although not every research software project needs to leverage services offered by service providers, the possibility of relying on such services without worrying about the maintainability of the service itself is undoubtedly an excellent value for research software developers.  
+For example, researchers often rely on cloud services, such as AWS, Azure, and GCP, to access scalable computing infrastructures using a pay-as-you-need service model. These computing infrastructures are usually complex to manage and maintain, requiring specialized expertise and a consistent budget. Additionally, they provide flexibility in handling different workloads and optimizing resource utilization. 
+Therefore, service providers enable the development and execution of the software and/or the fruition of the results produced by the software.
+
+External services that represent an added value for research software can materialize in various forms. The following are some particularly significant services.
+\begin{itemize}
+\item \textbf{Code hosting and version control}. Examples are GitHub and GitLab, which offer version control, collaboration features (e.g., issue tracking), and code sharing. These platforms help to maintain a transparent development process. 
+\item \textbf{Continuous Integration and Deployment}. Examples are Travis CI and Jenkins. These services automate the testing and deployment of software, ensuring code quality and streamlining the release process. 
+\item \textbf{Containerization Services}. Examples are Docker Hub and Container Registries, which offer services that facilitate the packaging, distribution, and sharing of research software along with its dependencies, thus enhancing the reproducibility, portability, and scalability. 
+\item \textbf{Cloud Computing Platforms}. Examples are Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform (GCP), which provide scalable infrastructure, enabling researchers to access computing resources on-demand. 
+\item \textbf{Software and Data Repositories}. Examples are Zenodo, Dryad, Figshare, which offer archiving and sharing services for data and software, enhancing the accessibility of research artifacts. SoftwareHeritage is an example of archiving and preservation of the source code of software projects. It strongly emphasizes long-term preservation of source code, aiming to provide a reliable and persistent archive to ensure the availability of software code for future generations.
+\item \textbf{Collaboration Platforms}. Examples are Slack and Microsoft Teams, which offer communication and collaboration tools that enhance team coordination, project management, and encourage real-time communication.
+\item \textbf{High-Performance Computing Centers}. Several National and Regional HPC Centers provide researchers with access to powerful computing resources, enabling the execution of complex simulations and analyses that require substantial computational power.
+\end{itemize}
+
+There are also code review, training, and consultancy services for improving software development and maintenance. For example, Crucible facilitates code review processes to help maintain code quality, identify issues, and ensure that contributions meet established standards. Software Carpentry provides workshops, training events, and educational resources to help researchers improve their software and data skills. 
+
+Given the vast amount of potentially valuable services for research software, one open issue is the fragmentation of such external services, i.e., the phenomenon where various software services, tools, or platforms are heterogeneous, often resulting in the parcellization of services with scarce interoperability and increasing the cost of accessing them. On the other hand, research software developers who heavily invest in one set of services may become locked into a particular platform or ecosystem, thus limiting their flexibility and introducing difficulties in migrating to alternative solutions. These phenomena can have important implications for research software developers. .
+

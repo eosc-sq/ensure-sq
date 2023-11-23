@@ -230,9 +230,15 @@ This subsection refers to a medium/large team developing an Open Source scientif
 % \violaine{The idea is to refer to some search software of the different categories and show the similarities and differences with
 % the analysis of the top to point out the possible lacks in the current service offer} 
 
-\subsubsection{About version control}
+%% tox, linting and pipelines, pull requests (github) merge requests (gitlab), the issue trackers, or other helpdesks, pytest, junit, sonarcloud, you name it,
 
-The quality attributes concerned by version control are the following :
+%% and this will be examples of tools and services that can be part of
+%% the infrastructure for quality in research software
+%% XXXXX Ajouter des définitions de ce dont on parle ??? XXXXXXXXX
+
+\subsubsection{About version control and software forge}
+
+The quality attributes concerned by version control are the following:
 \begin{itemize}
   \item EOSC-SWRelMan-02: Version Control System (VCS)
   \item EOSC-SWRelMan-03: Source code hosting
@@ -249,11 +255,32 @@ Sources Codes College of the Committee for Open Science illustrate the
 landscaping in France \cite{leberre:hal-04208924}.
 
 An important point is that most of the software forge integrate a huge
-variety of tools, most of them listed below, and not only control version.
+variety of tools, most of them listed below, and not only control
+version.
+
+%% XXXX parler des requêtes de fusion, PR, MR : gestion des
+%% collaborations communautaires XXXXXXX
+%% Une personne peut contribuer au code en communi-
+%% cant un correctif ou une amélioration au projet, soit sous forme de « patch »
+%% (fichier contenant les changements apportés), soit en réalisant une requête
+%% de fusion des changements (une « pull request », PR, ou « merge request », MR,
+%% selon les plateformes).
+
+\subsubsection{About continuous integration}
+
+There is no direct quality attibutes related to continuous integration
+but, with software forges, this is the basics for a minimal software quality, on which
+are based most of the other tools through tasks automation (build, tests, deployment,
+documentation ...).
+
+Concerning continuous integration system, we can mention some tools
+like Jenkins (\url{https://www.jenkins.io/}), gitLab CI
+(\url{https://docs.gitlab.com/ee/ci/}), Travis CI
+(\url{https://travis-ci.com/}) ...
 
 \subsubsection{About intellectual property and license}
 
-The quality attributes concerned by legal issues are the following :
+The quality attributes concerned by legal issues are the following:
 \begin{itemize}
   \item EOSC-Qual-27: Intellectual Property
   \item EOSC-SWRelMan-01: Open source
@@ -270,14 +297,54 @@ Agreement (CLA).
 
 \subsubsection{About packaging}
 
+The quality attributes related to this topic are:
 \begin{itemize}
   \item EOSC-SWRelMan-12: Packaging
   \item EOSC-SWRelMan-15: Code deployment
 \end{itemize}
 
-guix, nix, containers ...
+It is an endless topic including various type of tools and
+services. We focus on mostly used tools in academic research and open
+source context. This is {\bf not} an exhaustive list.
+
+\begin{center}
+    \tablehead{\hline \textbf{Tools} & \textbf{Usage} & \textbf{URL} & \textbf{Comment} \\ \hline}
+    \tabletail{\hline}
+    \bottomcaption{Tools and services for packaging and deployment}
+    \label{tab:tools_pack}
+    \small
+    \begin{supertabular}{|p{0.12\linewidth}|p{0.2\linewidth}|p{0.25\linewidth}|p{0.35\linewidth}|} \hline
+    \textbf{Guix} & Packaging system & \url{https://guix.gnu.org/en/}
+    & Generate reproductible environment \\ \hline
+    \textbf{Nix} & Packaging system & \url{https://nixos.org/}
+    & Generate reproductible environment \\ \hline
+    \textbf{CMake} & Build system & \url{https://cmake.org/}
+    & Include many process like compilation, packaging, testing  \\ \hline
+
+
+    \textbf{Docker} & Container technology & \url{https://www.docker.com/}
+    &  Certainly the most used \\ \hline
+    \textbf{Singularity} & Container technology & \url{https://sylabs.io/}
+    & Technology used in many computing center  \\ \hline
+    \textbf{Kubernetes} & Container orchestration & \url{https://kubernetes.io/}
+    & Mostly used in services deployment  \\ \hline
+    \textbf{Openshift} & PaaS & \url{https://www.redhat.com/fr/technologies/cloud-computing/openshift}
+    & Based on docker and kubernetes technologies  \\ \hline
+
+
+\end{supertabular}
+\end{center}
+
+It had to be noticed that all this tools and services are available on
+some research infrastructures, for example some computing centers.
+
+\textcolor{red}{Give some examples of infrastructures which integrate
+  this tools?}
 
 \subsubsection{About documentation}
+
+Documentation is of critical interest for software and cover many
+quality attributes: 
 
 \begin{itemize}
   \item EOSC-SWRelMan-29: Documentation online
@@ -288,20 +355,62 @@ guix, nix, containers ...
   \item EOSC-SWRelMan-28: Documentation formats
 \end{itemize}
 
-automatic generation
-on line doc, tutorials ...
+It is most of the time a manual effort but there exists some tools
+which can help, for documentation generation or access.
 
+\begin{center}
+    \tablehead{\hline \textbf{Tools} & \textbf{Usage} & \textbf{URL} & \textbf{Comment} \\ \hline}
+    \tabletail{\hline}
+    \bottomcaption{Tools and services for documentation}
+    \label{tab:tools_pack}
+    \small
+    \begin{supertabular}{|p{0.12\linewidth}|p{0.2\linewidth}|p{0.25\linewidth}|p{0.35\linewidth}|} \hline
+    \textbf{doxygen} & Automatic generation & \url{https://www.doxygen.nl/}
+    & Multi-languages \\ \hline
+    \textbf{Sphynx} & Automatic generation & \url{https://www.sphinx-doc.org/en/master/}
+    & For Python language \\ \hline
+    \textbf{Javadoc} & Automatic generation & \url{https://www.oracle.com/java/technologies/javase/javadoc-tool.html}
+    & For Java language  \\ \hline
+
+
+    \textbf{MediaWiki} & Wiki engine & \url{https://www.mediawiki.org/wiki/MediaWiki}
+    &  Available on gitlab platform \\ \hline
+    \textbf{Gitlab pages} &  & \url{}
+    & Available in gitlab platform with CI  \\ \hline
+    \textbf{Hugo} & Static web site generation & \url{https://gohugo.io/}
+    &   Based on Go language \\ \hline
+    \textbf{Pelican} & Static web site generation & \url{https://getpelican.com/}
+    &  based on Python language \\ \hline
+
+
+\end{supertabular}
+\end{center}
 
 \subsubsection{About bugs management}
+
+Bug tracking system or more generally issue tracking system are
+common components for software development and concerned quality
+attributes are:
 
 \begin{itemize}
   \item EOSC-TMet-02: \# Resolved bugs
   \item EOSC-TMet-03: \# Open bugs
 \end{itemize}
 
-bug tracking system
+Most software forges include a bug or issue tracking system. Some
+other tools are for example Redmine (which is also a forge software
+like, \url{https://www.redmine.org/}), Trac
+(\url{http://trac.edgewall.org/}), GLPI
+(\url{https://www.glpi-project.org/}), Request Tracker
+(\url{https://bestpractical.com/request-tracker}) or Bugzilla
+(\url{https://www.bugzilla.org/}).
+
+% https://en.wikipedia.org/wiki/Comparison_of_issue-tracking_systems
 
 \subsubsection{About tests}
+
+Software testing is considered as a best practice for software
+development and cover lots of quality attributes:
 
 \begin{itemize}
   \item EOSC-SWTest-02: Unit tests
@@ -316,21 +425,42 @@ bug tracking system
   \item EOSC-SWTest-09: Stress testing
 \end{itemize}
 
-Tests management
-CI
+This is an important and very broad topic and there is a lot of tools
+which can help, especially to automatize testing, depending of the
+programming language, we can cite for example:
 
+\begin{itemize}
+\item For Python tox
+  (\url{https://tox.wiki}), pytest (\url{https://pytest.org/}),
+\item For Java, JUnit (\url{https://junit.org/}),
+\item For C++, CppUnit (\url{http://freedesktop.org/wiki/Software/cppunit})
+\end{itemize}
 
 \subsubsection{About support}
+
+Even if there is only one quality attribute about it: 
 
 \begin{itemize}
   \item EOSC-SWRelMan-07: Support
 \end{itemize}
 
-forums
-lists
+support cover a large topic from bug report to community animation and
+many tools can help to interact with users and contributers:
+
+\begin{itemize}
+\item Internet forum system, for example Discourse
+  (\url{https://www.discourse.org/} also include in the software
+  forge gitlab)
+\item Online chat service as mattermost (\url{https://mattermost.com/} also include in the software
+  forge gitlab) or Rocket.chat (\url{https://rocket.chat/})
+\item Mailing list management software as sympa
+  (\url{https://www.sympa.community/})
+\end{itemize}
 
 \subsubsection{About code analysis}
 
+Static and dynamic program analysis contribute to software quality
+with different attributes:
 \begin{itemize}
   \item EOSC-SCMet-02: \% of redundant code
   \item EOSC-SCMet-10: Number of comments
@@ -339,12 +469,45 @@ lists
   \item EOSC-SWRelMan-08: Code review
 \end{itemize}
 
-Programmation rules
-static analysis
-coverage
-code review
+Many tools can help for this analysis but also following best
+practices as coding conventions and well identified programming rules
+is essential.
+
+\begin{center}
+    \tablehead{\hline \textbf{Tools} & \textbf{Usage} & \textbf{URL} & \textbf{Comment} \\ \hline}
+    \tabletail{\hline}
+    \bottomcaption{Tools for static and dynamic code analysis}
+    \label{tab:tools_pack}
+    \small
+    \begin{supertabular}{|p{0.12\linewidth}|p{0.2\linewidth}|p{0.25\linewidth}|p{0.35\linewidth}|} \hline
+    \textbf{Pylint} & Static code analysis & \url{https://pylint.pycqa.org/}
+    & For Python language. Others *lint tools exists for others
+    languages : CPPlint for CPP, JSLint for JavaScript \\ \hline
+    \textbf{Hadolint} & Dockerfile linter & \url{https://github.com/hadolint/hadolint}
+    & To insure best practice in Docker images \\ \hline
+    \textbf{checkstyle} & Static code analysis & \url{https://checkstyle.sourceforge.net/}
+    & For Java language  \\ \hline
+    \textbf{pycodestyle} & Static code analysis & \url{https://pypi.org/project/pycodestyle/}
+    & Check Python code against some of the style conventions in \href{http://www.python.org/dev/peps/pep-0008/}{PEP 8}  \\ \hline
+    \textbf{flake8} & Static code analysis & \url{https://flake8.pycqa.org/en/latest/#}
+    & Check Python code against some of the style conventions in \href{http://www.python.org/dev/peps/pep-0008/}{PEP 8} \\ \hline
+    \textbf{SonarQube} & Automatic reviews with static analysis of code & \url{http://sonarqube.org/}
+    & Supports many programming languages  \\ \hline
+
+    \textbf{gcov} & Dynamic coverage analysis & \url{https://gcc.gnu.org/onlinedocs/gcc/Gcov.html}
+    & Program must be compiled with specific options  \\ \hline
+    \textbf{valgrind} & Memory error detection & \url{https://www.valgrind.org/}
+    & Runs programs on a virtual processor  \\ \hline
+
+
+\end{supertabular}
+\end{center}
+
 
 \subsubsection{About security}
+
+Security is a critical topic especially for software related to
+platform or service. Many quality attributes are related to secure code:
 
 \begin{itemize}
   \item EOSC-SWTest-16: Public endpoints and APIs encrypted
@@ -364,9 +527,30 @@ code review
   \item EOSC-SWTest-25: Security as Code (SaC) Testing
 \end{itemize}
 
+Some of the analysis tools above include secure analysis. Other like
+Splint (\url{http://www.splint.org/}, for C language) or 
+Bandit (\url{https://bandit.readthedocs.io/en/latest/} for Python
+language) are more specific to security issues.
+
 \subsubsection{Tranversal needs}
 
-Training
+Any tool, infrastructure or service are not enough to produce quality
+software. Training is crucial at different level (students,
+researchers, engineers, legal services ...) to promote best practices
+and a good use of the different tools and sercices listed below.
 
-At different levels (students, researchers, engineers, legal services ...)
+This can be done in different ways:
+\begin{itemize}
+\item Introduce specific courses in formal education,
+\item Lifelong training,
+\item On line training (like MOOC)
+\item Seminar, webinar ...
+\end{itemize}
 
+It is also of crucial importance to develop proximity support for all
+scientific communities on this different topics.
+
+
+\textcolor{red}{Some conclusions ? Need a software forge with enough
+  tools to answer the main needs, infrastructure to be able to deploy
+  a minima runners}

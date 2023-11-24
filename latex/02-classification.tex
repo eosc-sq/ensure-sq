@@ -1,9 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\miguel{For scientific research: reviewed by other peers, reproducible (data + sources, matching the article), Open Access.
-One quality criteria: reproducibility. Define "reproducibility" and "repeatability". Different levels of reproducibility. Bottom level:
-black box (being able to obtain the same results given the same inputs). Higher level: full access to a well-commented source code, and checking
-that the pseudocode matches well the implementation. In the case of a scientific publication, checking that the implementation matches exactly
-what the descriptions in the article.}
+%\miguel{For scientific research: reviewed by other peers, reproducible (data + sources, matching the article), Open Access. One quality criteria: reproducibility. Define "reproducibility" and "repeatability". Different levels of reproducibility. Bottom level: black box (being able to obtain the same results given the same inputs). Higher level: full access to a well-commented source code, and checking that the pseudocode matches well the implementation. In the case of a scientific publication, checking that the implementation matches exactly what the descriptions in the article.}
 
 % DONE -> \miguel{Indeed,having a section in the final document where we give definitions of "quality", "software", "research software", etc. is
 % quite convenient. It doesn't mean other definitions are not possible, but we need to settle clearly what we're discussing in our own context.}
@@ -17,12 +13,28 @@ what the descriptions in the article.}
 % DONE -> \miguel{Perhaps the definition of quality and the classification should appear first in the document. First this section, and then Landscaping.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-An significant notion in software engineering is \textit{quality}, understood as a series of desirable particularities that are met in \textit{good} computer programs, meaning that they are well adapted to their purpose, accurate, highly available, or any other property which makes it excellent.
+A significant notion in software engineering is \textit{quality}, understood as a series of desirable particularities that are met in \textit{good} computer programs, meaning that they are well adapted to their purpose, accurate, highly available, or any other property which makes them excellent.
 Whereas this is a concept which is easy to understand, arriving at a consensus on how to properly define is a way more complex task. Indeed, the problem can be address from plenty of different perspectives, each of them giving more or less importance to some of the particularities.
 
-It is not the goal in this report to propose any particular definitions, but to analyse how the problem has been addressed in significant works in the literature and how the characteristics can be classified as attributes.
+It is not the goal of this report to propose any particular definitions, but to analyse how the problem has been addressed in relevant works in the literature and how the characteristics can be classified as attributes.
 
 In Section~\ref{subsect:sqchar} we shall review which are, according to the literature, the \textit{characteristics} that one can related to good software. The characteristics can relate to quality from very different points of view (from metrics of the source code to service operability, to cite some), and we classify them as \textit{attributes} in Section~\ref{subsec:SW_quality_attributes}.
+
+Although reproducibility does not explicitly appear as a characteristic of the software itself in our survey, it is a fundamental requirement for research software. Indeed, the Scientific Method is, after all, based on the possibility of being able to repeat the experiments and refuting them to build up new knowledge. Specifically for research software, we need to consider its reproducibility as a characteristic of quality.
+
+The definitions about what is repeatability, reproducibility, and replicability depend much on each research field. Sometimes the concepts of reproducibility and replicability have their meaning swapped with respect to other communities or disciplines.
+
+Some consensus seems to have been reached in computational sciencies after the report \textit{Artifact Review and Badging}\footnote{\url{https://www.acm.org/publications/policies/artifact-review-and-badging-current}} version 1.1 by ACM. The scope of their definitions is intended to be very wide and to cover as many disciples as possible. They refer, in a generic way, to the \textit{team} and their \textit{experimental setup}.
+
+Let us therefore use this definitions along this report, and put them in the context of computer science, with the meaning which follows:
+
+\begin{itemize}
+    \item \textbf{Repeatability}. Performed with the same team and same experimental setup. In our context, it means that the software can be executed as many times as needed. Researchers should be able to run the program several times until they obtain the required results.
+    
+    \item \textbf{Reproducibility}. Performed with a different team and the same experimental setup. Related to computing, we could think of two group of developers which need to obtain results from a program given its source code. If the two groups have exactly the same computer hardware and the same environment, they could simply compile the same source code, obtain the same executable binary code, execute the program, and obtain the same (or equivalent) results when providing the program the same input data.
+
+    \item \textbf{Replicability}. Performed with a different team and also a different experimental setup. In our context and following the previous example, now one of the groups do not have access to the source code of the research code, but instead they have the corresponding detailed description published in a journal. These detailed descriptions can be, for example, a pseudocode or text in the article where all the parameters and significant operations are totally specified. We can understand the replicability as their capacity to arrive at an equivalent program after following the descriptions. Lack of replicability could be explained in this examples because of missing pre or post processing step, missing parameters or their values, or ambiguous parts under the interpretation of the reader.
+\end{itemize}
 
 \subsection{Software Quality models: survey}
 We based the classification into characteristics and attributed on a thorough review of the literature, to avoid that personal preferences or pre-established believes of the members of the subgroup biased the classification and eventually the recommendations. Indeed, some protocol is required and we followed the methodology proposed by Kitchenham and Charters~\cite{keele2007guidelines} which consists of the following steps:
@@ -157,7 +169,7 @@ We ended up with a list of 25 significant quality characteristics from the three
 \end{enumerate}
 
 
-\subsection{Software Quality attributes and metrics}
+\subsection{Software Quality attributes and Metrics}
 \label{subsec:SW_quality_attributes}
 The software quality characteristics which are classified in the previous section can actually be seen from very different points of view, thus allowing for a different type of classification of characteristics in different classes, that we will refer to as \textit{attributes}.
 

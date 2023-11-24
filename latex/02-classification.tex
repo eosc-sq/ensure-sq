@@ -37,6 +37,7 @@ Let us therefore use this definitions along this report, and put them in the con
 \end{itemize}
 
 \subsection{Software Quality models: survey}
+
 We based the classification into characteristics and attributed on a thorough review of the literature, to avoid that personal preferences or pre-established believes of the members of the subgroup biased the classification and eventually the recommendations. Indeed, some protocol is required and we followed the methodology proposed by Kitchenham and Charters~\cite{keele2007guidelines} which consists of the following steps:
 
 \begin{enumerate}
@@ -171,6 +172,7 @@ We ended up with a list of 25 significant quality characteristics from the three
 
 \subsection{Software Quality attributes and Metrics}
 \label{subsec:SW_quality_attributes}
+
 The software quality characteristics which are classified in the previous section can actually be seen from very different points of view, thus allowing for a different type of classification of characteristics in different classes, that we will refer to as \textit{attributes}.
 
 The procedure we followed was to identify a total of 241 quality attributes, that were gathered into a single table. We found that, depending on the source, the same attribute could be found under different names, but with a very similar definition of meaning. Those were merged to prevent duplicates.
@@ -179,10 +181,15 @@ We ended up with 132 quality attributes, which the reader can find in the Append
 
 \begin{itemize}
     \item Source Code Metrics (\textbf{EOSC-SCMet}): 20 metrics. Metrics related to the source code, such as the number of lines of code or the number of assertions, for example.
+
     \item Time metrics (\textbf{EOSC-TMet}): 11 metrics. Metrics related to time or periods time. For example, the number of resolved bug per period of time.
+
     \item Qualitative Attributes (\textbf{EOSC-Qual}): 30 attributes. Qualitative attributes are obtained in general through surveys to or some manual analysis by sofware developers, administrators, or users. In general, these are not possible to automate and might be subjetive.
+
     \item DevOps - Software release and management Attributes (\textbf{EOSC-SWRelMan}): 34 attributes. Largely based on the \textit{DevOps} methodology, the can be automated for verification. For example, the possibility of having code reviews in the software development process.
+
     \item DevOps - Testing Attributes (\textbf{EOSC-SWTest}): 25 attributes. Again based in DevOps, these are related to software testing and can also can be automatically verified. For example, whether integration tests are used in the system.
+
     \item Service Operability Attributes (\textbf{EOSC-SrvOps}): 12 attributes. They refer to scientific services or platforms in operation. For example, whether the system provides monitoring services.
 \end{itemize}
 
@@ -193,7 +200,7 @@ In the Appendix~\ref{appendix_qa} each attribute or metric entry has the followi
     \item Name: as found in the source reference;
     \item Associated characteristics: one or more from subsection~\ref{subsect:sqchar};
     \item Definition: obtained from aggregating the source references;
-    \item Research software level: from the user stories in subsection~\ref{subsec:user_stories}; \miguel{Beware of broken ref.}
+    \item Research software level: from the user stories in subsection~\ref{subsec:defrs};
     \item Reference to the source articles.
 \end{itemize}
 

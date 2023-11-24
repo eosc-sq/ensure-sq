@@ -1,6 +1,6 @@
 \subsection{Quality Attributes related to SW release management}
 
-The following list are the Quality Attributes recommended for SW release and management:
+Table \ref{tab:rs_rel} shows the list of recommended Quality Attributes for SW release and management. They include the existence of a helpdesk and/or bug tracking system, recommendation for software versioning and packaging and documentation. It's linked to the RS lifecycle diagram \ref{fig:rslifecycle} boxes \textit{Maintenance}, \textit{Community Feedback} and \textit{Deployment}.
 
 \begin{center}
     \tablehead{\hline}
@@ -26,7 +26,7 @@ The following list are the Quality Attributes recommended for SW release and man
 
 \subsection{Quality Attributes related to services and platforms in production}
 
-The following list are the Quality Attributes recommended for services and platforms in production:
+Table \ref{tab:rs_serviceprod} shows the list of recommended Quality Attributes for services and platforms in production. They include the existence of a helpdesk and/or bug tracking system, monitoring, accounting, authentication and authorization mechanisms, documentation and policies to access and use the service or platform.
 
 \begin{center}
     \tablehead{\hline}
@@ -65,44 +65,35 @@ The following list are the Quality Attributes recommended for services and platf
 \end{center}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newpage
+% \eli{Portability. Depending on the design of the software.}
 
-\miguel{Scalability. Depending on the volume of the data or the computational needs, it's a matter of system design, but eventually of the
-quality of the platform/software.}
+% \miguel{The problem of the containers (Docket et al.) and software development in online platforms. Advantage of containers: easier to release
+% and to ensure reproducibility and to ensure the service. Disadvantages: containers freeze the environment, and thus they stop receiving bug
+% fixing and security updates. Dependency with outdated software components.}
 
-\dg{[Jael, Daniel] Make sure this work aligns with SG1, which takes into account the software research cycle.}
+% \miguel{Is the research SW associated with any scientific papers?
+% For example, k-means clustering in scikit-learn \url{https://scikit-learn.org/stable/modules/clustering.html\#k-means}) is associated with:
+% k-means++: The advantages of careful seeding” Arthur, David, and Sergei Vassilvitskii, Proceedings of the eighteenth annual ACM-SIAM symposium
+% on Discrete algorithms, Society for Industrial and Applied Mathematics (2007)
+% The source code provides the author names, but no reference paper:
+% \url{https://github.com/scikit-learn/scikit-learn/blob/main/sklearn/cluster/_kmeans.py}
+% However, is it associated with any other paper which provides a detailed procedure and a pseudocode? Without this, one can't have a good level of reproducibility.}
 
-\eli{Portability. Depending on the design of the software.}
+% \miguel{Stability of research SW. Does it ensure backwards compatibility between versions?}
 
-\miguel{The problem of the containers (Docket et al.) and software development in online platforms. Advantage of containers: easier to release
-and to ensure reproducibility and to ensure the service. Disadvantages: containers freeze the environment, and thus they stop receiving bug
-fixing and security updates. Dependency with outdated software components.}
+% \cerlane{Traditionally “portability” can refer to the portability across hardware architecture, system and platform (compilers and libraries)
+% by applying good software engineering practices. With containers, portability can also be achieved by restricting the supported system and platform
+% in the container. A multi-architecture container can further improve portability.}
 
-\miguel{Quality of documentation: is the documentation of the research SW always synchronized with its release?}
+% \cerlane{Reproducibility is easier to achieve on the same system, software and hardware. However, it doesn't always imply a complete numerical
+% reproducibility. To achieve numerical reproducibility, one would have to even avoid the use of certain optimisation compiler options, optimised Maths 
+% libraries and apply very good software engineering techniques when applying algorithms, particularly with MPI.}
 
-\miguel{Is the research SW associated with any scientific papers?
-For example, k-means clustering in scikit-learn \url{https://scikit-learn.org/stable/modules/clustering.html\#k-means}) is associated with:
-k-means++: The advantages of careful seeding” Arthur, David, and Sergei Vassilvitskii, Proceedings of the eighteenth annual ACM-SIAM symposium
-on Discrete algorithms, Society for Industrial and Applied Mathematics (2007)
-The source code provides the author names, but no reference paper:
-\url{https://github.com/scikit-learn/scikit-learn/blob/main/sklearn/cluster/_kmeans.py}
-However, is it associated with any other paper which provides a detailed procedure and a pseudocode? Without this, one can't have a good level of reproducibility.}
 
-\miguel{Does the SW perform self tests? Say, unit tests.}
-
-\miguel{Does the SW follow some known methodology which includes verifications in order to ensure it works well? At which level? For example,
-if it uses continuous integration, does it include any step to ensure that the results are scientifically valid, or just unit tests?}
-
-\miguel{Stability of research SW. Does it ensure backwards compatibility between versions?}
-
-\cerlane{Do we mean 'Maintenance' or 'Maintainability'?}
-
-\cerlane{Traditionally “portability” can refer to the portability across hardware architecture, system and platform (compilers and libraries)
-by applying good software engineering practices. With containers, portability can also be achieved by restricting the supported system and platform
-in the container. A multi-architecture container can further improve portability.}
-
-\cerlane{Reproducibility is easier to achieve on the same system, software and hardware. However, it doesn't always imply a complete numerical
-reproducibility. To achieve numerical reproducibility, one would have to even avoid the use of certain optimisation compiler options, optimised Maths 
-libraries and apply very good software engineering techniques when applying algorithms, particularly with MPI.}
-
-\mdavid{We will take the SW lifecycle diagram from SG1 and connect it here, or some of the previous sections.}
+% DONE \miguel{Scalability. Depending on the volume of the data or the computational needs, it's a matter of system design, but eventually of the quality of the platform/software.}
+% DONE \miguel{Quality of documentation: is the documentation of the research SW always synchronized with its release?}
+% DONE \dg{[Jael, Daniel] Make sure this work aligns with SG1, which takes into account the software research cycle.}
+% DONE \miguel{Does the SW follow some known methodology which includes verifications in order to ensure it works well? At which level? For example, if it uses continuous integration, does it include any step to ensure that the results are scientifically valid, or just unit tests?}
+% DONE \miguel{Does the SW perform self tests? Say, unit tests.}
+% DONE \cerlane{Do we mean 'Maintenance' or 'Maintainability'?}
+% DONE \mdavid{We will take the SW lifecycle diagram from SG1 and connect it here, or some of the previous sections.}

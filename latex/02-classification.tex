@@ -20,7 +20,7 @@ It is not the goal of this report to propose any particular definitions, but to 
 
 In Section~\ref{subsect:sqchar} we shall review which are, according to the literature, the \textit{characteristics} that one can related to good software. The characteristics can relate to quality from very different points of view (from metrics of the source code to service operability, to cite some), and we classify them as \textit{attributes} in Section~\ref{subsec:SW_quality_attributes}.
 
-Although reproducibility does not explicitly appear as a characteristic of the software itself in our survey, it is a fundamental requirement for research software. Indeed, the Scientific Method is, after all, based on the possibility of being able to repeat the experiments and refuting them to build up new knowledge. Specifically for research software, we need to consider its reproducibility as a characteristic of quality.
+Although reproducibility does not explicitly appear as a characteristic of the software itself in our survey, it is a fundamental requirement for research software. See Section~\ref{subsec:defrs} for our definitions and context of \textit{research software}. Indeed, the Scientific Method is, after all, based on the possibility of being able to repeat the experiments and refuting them to build up new knowledge. Specifically for research software, we need to consider its reproducibility as a characteristic of quality.
 
 The definitions about what is repeatability, reproducibility, and replicability depend much on each research field. Sometimes the concepts of reproducibility and replicability have their meaning swapped with respect to other communities or disciplines.
 
@@ -33,7 +33,7 @@ Let us therefore use this definitions along this report, and put them in the con
     
     \item \textbf{Reproducibility}. Performed with a different team and the same experimental setup. Related to computing, we could think of two group of developers which need to obtain results from a program given its source code. If the two groups have exactly the same computer hardware and the same environment, they could simply compile the same source code, obtain the same executable binary code, execute the program, and obtain the same (or equivalent) results when providing the program the same input data.
 
-    \item \textbf{Replicability}. Performed with a different team and also a different experimental setup. In our context and following the previous example, now one of the groups do not have access to the source code of the research code, but instead they have the corresponding detailed description published in a journal. These detailed descriptions can be, for example, a pseudocode or text in the article where all the parameters and significant operations are totally specified. We can understand the replicability as their capacity to arrive at an equivalent program after following the descriptions. Lack of replicability could be explained in this examples because of missing pre or post processing step, missing parameters or their values, or ambiguous parts under the interpretation of the reader.
+    \item \textbf{Replicability}. Performed with a different team and also a different experimental setup. In our context and following the previous example, now one of the groups do not have access to the source code of the research method, but instead they have the corresponding detailed description published in a journal. These detailed descriptions can be, for example, a pseudocode or text in the article where all the parameters and significant operations are totally specified. We can understand as replicability as their capacity to arrive at an equivalent program after following the descriptions. Lack of replicability could be explained in this examples because of missing pre or post processing steps, missing parameters or their values, or ambiguous parts left for the interpretation of the reader.
 \end{itemize}
 
 \subsection{Software Quality models: survey}
@@ -132,7 +132,7 @@ We ended up with a list of 25 significant quality characteristics from the three
         \item \textbf{Survivability}, defined as the the degree to which a product or system continues to fulfil its mission by providing essential services in a timely manner despite the presence of attacks, covered by \textbf{Recoverability} (4.2.5.4).
         \item \textbf{Immunity}, defined as the degree to which a product or system is resistant to certain attacks, covered by \textbf{Integrity} (4.2.6.2).
     \end{itemize}
-    \miguel{What are these numbers?}% Security contributes to trust (4.1.3.2).
+    \miguel{What are these numbers? They are from the ISO document. REMOVE them}% Security contributes to trust (4.1.3.2).
 
     \item \textbf{Confidentiality}: degree to which a product or system ensures that data are accessible only to those who have been authorised access. This characteristic is a Security characteristic specialized on the privacy of the data.
 
@@ -193,7 +193,7 @@ We ended up with 132 quality attributes, which the reader can find in the Append
     \item Service Operability Attributes (\textbf{EOSC-SrvOps}): 12 attributes. They refer to scientific services or platforms in operation. For example, whether the system provides monitoring services.
 \end{itemize}
 
-In the Appendix~\ref{appendix_qa} each attribute or metric entry has the following elements, as shown in Figure~\ref{fig:sqattr}:
+In Appendix~\ref{appendix_qa} each attribute or metric entry has the following elements, as shown in Figure~\ref{fig:sqattr}:
 
 \begin{itemize}
     \item Codename: naming convention proposed by the subgroup;

@@ -52,29 +52,19 @@ their position in the global software stack, following
 A typical scientific software stack~\cite{hinsen2019} has the following composition:
 
 \begin{center}
-    \tablehead{
-        \hline
-        \textbf{Stack} & \textbf{Stack definition} & \textbf{Types} \\
-        \hline
-    }
-    \tabletail{\hline}
-    \tablelasttail{\hline}
-    
     \bottomcaption{RS stacks, stacks definitions and RS types. Stack level 1 is not considered in this report.}
     \label{tab:rs_stacks}
-
     \small
-    \begin{supertabular}{|p{0.15\linewidth}|p{0.5\linewidth}|p{0.3\linewidth}|}
+    \begin{tabular}[t]{|p{0.15\linewidth}|p{0.5\linewidth}|p{0.25\linewidth}|} \hline
 
-    \hline
-    4 - Project specific code &
+    \textbf{Stack} & \textbf{Stack definition} & \textbf{Types} \\ \hline \hline
+      4 - Project specific code &
     Software written by scientists for a specific research project. It can take various forms including scripts, notebooks, and workflows, but also special-purpose libraries and utilities. &
     Library; Analysis script and workflows; Services and platforms \\ \hline
 
     3 - Domain specific tools &
     Tools and libraries that implement models and methods which are developed and used by specific communities. Gromacs, MMTK, Amber. &
-    Library; Application; Services and platforms
-    \\ \hline
+    Library; Application; Services and platforms \\ \hline
 
     2 - Scientific infrastructure &
     Infrastructure created specifically for scientific computing, but not for any particular application domain: mathematical libraries such as BLAS, LAPACK, or SciPy, scientific data management tools such as HDF5. &
@@ -84,7 +74,7 @@ A typical scientific software stack~\cite{hinsen2019} has the following composit
     \it{Compilers and interpreters, libraries for data management; gcc, python...} &
     -- \\ \hline
 
-    \end{supertabular}
+    \end{tabular}
 \end{center}
 
 Note that Stack level 1 is not considered in this report. The Research Software types are summarised next including some examples:

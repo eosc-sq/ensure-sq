@@ -36,6 +36,8 @@ Let us therefore use this definitions along this report, and put them in the con
     \item \textbf{Replicability}. Performed with a different team and also a different experimental setup. In our context and following the previous example, now one of the groups do not have access to the source code of the research method, but instead they have the corresponding detailed description published in a journal. These detailed descriptions can be, for example, a pseudocode or text in the article where all the parameters and significant operations are totally specified. We can understand as replicability as their capacity to arrive at an equivalent program after following the descriptions. Lack of replicability could be explained in this examples because of missing pre or post processing steps, missing parameters or their values, or ambiguous parts left for the interpretation of the reader.
 \end{itemize}
 
+In Section~\ref{sec:user_repro_results} we discuss on the perspectives of users regarding reproducibility of research software.
+
 \subsection{Software Quality models: survey}
 
 We based the classification into characteristics and attributed on a thorough review of the literature, to avoid that personal preferences or pre-established believes of the members of the subgroup biased the classification and eventually the recommendations. Indeed, some protocol is required and we followed the methodology proposed by Kitchenham and Charters~\cite{keele2007guidelines} which consists of the following steps:
@@ -79,7 +81,7 @@ We based the classification into characteristics and attributed on a thorough re
     \end{itemize}
 
     \item Inclusion and exclusion criteria. The most important criterion for non considering articles in our survey survey was to exclude those which simply did not belong to the software engineering field. We did not attempt to tighten much the criteria for the exclusion, as we intended to gather as much as related material as possible, to be filtered out in the next field. Another early exclusion criterion was the language, and we excluded those articles not written in English.
-    \item Selection procedure. The included articles were further analysed from their abstract and titles. This allowed to assess the pertinence of the article to the software engineering domain and their relevance to be used as a source for general quality software recommendations, assuming it mentioned software quality attributes. After this selection step, 147 papers remained. Although the protocol that we followed ensured that no human bias was introduced, it also prevented that some very relevant papers related to Quality were added. Four additional articles were added in this step, after the subgroup discussed the issue. \miguel{which are the topics or the article?}
+    \item Selection procedure. The included articles were further analysed from their abstract and titles. This allowed to assess the pertinence of the article to the software engineering domain and their relevance to be used as a source for general quality software recommendations, assuming it mentioned software quality attributes. After this selection step, 147 papers remained. Although the protocol that we followed ensured that no human bias was introduced, it also prevented that some very relevant papers related to Quality were added. Four additional articles were added in this step, after the subgroup discussed the issue. \miguel{which are these articles or the topics?}
     \item Review process. After the selection, 19 relevant articles remained. These are the ones which are finally reviewed in our survey. We performed this step by groups of 2 or 3 reviewers in our subgroup per article. %After following the selection procedure, we ended up with 19 articles, which have been reviewed in this survey. Some of the articles refer to the ISO/IEC 25010:2011(E)\cite{iso_25010_2011_2017} or to its precursor ISO/IEC 9126, have been grouped together.
 \end{enumerate}
 
@@ -120,20 +122,19 @@ We ended up with a list of 25 significant quality characteristics from the three
 
     \item \textbf{Time behaviour}: degree to which the response, processing times, and throughput rates of a product or system meet the requirements when performing its functions.
 
-    \item \textbf{Performance}: Performance\miguel{ToDo: look for a different word, loop definition!} relative to the amount of resources used under stated conditions. The \textit{resources} might include other software products, the software and hardware configuration of the system, and any needed supplies (as for example print paper or storage media).
+    \item \textbf{Performance}:  Related to how well the system works taking into account the amount of resources used under stated conditions. The \textit{resources} might include other software products, the software and hardware configuration of the system, and any needed supplies (as for example print paper or storage media).
 
-    \item \textbf{Ease of use (or \textit{usability})}: degree to which a product or system can be used by particular users to achieve their own goals with effectiveness, efficiency, and satisfaction in a given context of use. This definition was adapted from ISO 9241-210 \miguel{ToDo: add citation}. Usability can either be specified or measured as a product quality characteristic in terms of its sub-characteristics, or specified or measured directly by a subset of quality-in-use \miguel{Review what we mean with this, it's not clear to me.}.
+    \item \textbf{Ease of use (or \textit{usability})}: degree to which a product or system can be used by particular users to achieve their own goals with effectiveness, efficiency, and satisfaction in a given context of use. This definition was adapted from the ISO 9241-210 standard. Usability can either be specified or measured as a product quality characteristic in terms of its sub-characteristics, or specified or measured directly by a subset of quality-in-use \miguel{Review what we mean with this, it's not clear to me.}.
 
     \item \textbf{Fault tolerance}: degree to which a system, product, or component operates as intended despite the presence of hardware or software faults. We adapted this definition from ~\cite{iso_central_secretary_isoiecieee_2010}.
 
     \item \textbf{Security}: degree to which a product or system protects the information and data it manages (say, stores or transmits) in a way that access is only given to persons or system with the appropriate level of authorisation they were granted.
     Related to Security we can also find:
     \begin{itemize}
-        \item \textbf{Survivability}, defined as the the degree to which a product or system continues to fulfil its mission by providing essential services in a timely manner despite the presence of attacks, covered by \textbf{Recoverability} (4.2.5.4).
-        \item \textbf{Immunity}, defined as the degree to which a product or system is resistant to certain attacks, covered by \textbf{Integrity} (4.2.6.2).
+        \item \textbf{Survivability}, defined as the the degree to which a product or system continues to fulfil its mission by providing essential services in a timely manner despite the presence of attacks, covered by \textbf{Recoverability}.
+        \item \textbf{Immunity}, defined as the degree to which a product or system is resistant to certain attacks, covered by \textbf{Integrity}.
     \end{itemize}
-    \miguel{What are these numbers? They are from the ISO document. REMOVE them}% Security contributes to trust (4.1.3.2).
-
+    
     \item \textbf{Confidentiality}: degree to which a product or system ensures that data are accessible only to those who have been authorised access. This characteristic is a Security characteristic specialized on the privacy of the data.
 
     \item \textbf{Maintainability}: degree of effectiveness and efficiency with which a product or system can be modified by the intended maintainers. Modifications can include corrections, improvements, or adaptation of the software to changes in the environment, and in the requirements and functional specifications. Modifications include both those carried out by specialised support staff, as well as those carried out by business or operational staff or end users. Maintainability can be interpreted as either an inherent capability of the product or system to facilitate maintenance activities, or the quality-in-use experienced by the maintainers for the goal of maintaining the product or system. It includes installation of updates and upgrades. 
@@ -142,23 +143,23 @@ We ended up with a list of 25 significant quality characteristics from the three
 
     \item \textbf{Operability} and \textbf{Manageability}: degree to which a product or system has attributes that make it easy to operate and control. In the context of ISO 9241-110, \textit{Operability} corresponds to \textit{Controllability}, that is, the operator's error tolerance and the conformity with users' expectations.
 
-    \item \textbf{Resource utilisation}: degree to which the amount and types of resources consumed by a product or system when performing its functions, meet the requirements. Human resources are included as part of efficiency (4.1.2).
+    \item \textbf{Resource utilisation}: degree to which the amount and types of resources consumed by a product or system when performing its functions, meet the requirements. Human resources are included in this category.
 
-    \item \textbf{Safety}: degree to which a product or system mitigates the potential risk to people \miguel{define better} in the intended contexts of use.
+    \item \textbf{Safety}: degree to which a product or system mitigates the potential personal risk to humans or to system components, in the intended contexts of use.
 
     \item \textbf{Interoperability}: degree to which two or more systems, products, or components can share data, encoded in agreed formats. This definition was adapted from ~\cite{iso_central_secretary_isoiecieee_2010}.
 
     \item \textbf{Attractiveness}: degree to which a user interface enables pleasing and satisfying interaction with the user. For example, one can include here properties of the product or system such as the use of colour and the nature of the graphical design. This characteristic is also known as \textit{interface aesthetics}.
 
-    \item \textbf{Compatibility}: degree to which a product, system, or component can exchange information with other products, systems or components, and performs its designed functions, sharing the same hardware or software environment. This definition was adapted from~\cite{iso_central_secretary_isoiecieee_2010}. \miguel{ToDO: check differences with \textit{Interoperability}.}
+    \item \textbf{Compatibility}: degree to which a product, system, or component can exchange information with other products, systems or components, and performs its designed functions, sharing the same hardware or software environment. This definition was adapted from~\cite{iso_central_secretary_isoiecieee_2010}. This definition is very close to the one of \textit{Interoperability}. Here we focus on the ability of the software to perform its functions in a suitable environments, whereas in Interoperability we refer to the format of the data which is exchanged.
 
-    \item \textbf{Installability}: degree of effectiveness and efficiency a product or system can be successfully installed and/or uninstalled \miguel{ToDo: avoid using the same work in the definition} in a specified environment.
+    \item \textbf{Installability}: degree of effectiveness and efficiency a product or system can be successfully added or removed in a specified environment.
 
     \item \textbf{Technical accessibility}: degree to which a product or system can be used by people with the widest range of diversity and capabilities to achieve a specified goal in a concrete context of use. The range of capabilities includes diversity associated with age or any functional diversity. Accessibility can be specified or measured either as the extent to which a product or system can be used by users with diverse capabilities to achieve specified goals with effectiveness, efficiency, freedom from risk and satisfaction in a specified context of use, or by the presence of properties supportting specifically accessibility in the product.
 
     \item \textbf{Portability / Adaptability}: degree of effectiveness and efficiency with which a system, product, or component can be transferred from one hardware, software or other operational or usage environment to a different one. This definition was adapted from~\cite{iso_central_secretary_isoiecieee_2010}. Portability can be interpreted as either an inherent capability of the product or system to facilitate porting activities, or the quality-in-use experienced for the goal of porting the product or system.
 
-    \item \textbf{Modifiability}: degree to which a product or system can be effectively and efficiently modified without introducing defects or degrading the product. Implementation includes coding, designing, documenting and verifying changes. Modularity (4.2.7.1) and analysability (4.2.7.3) can influence modifiability. Modifiability is a combination of changeability and stability. \miguel{ToDo: again, explain what the note is referring to, and the numbers.}
+    \item \textbf{Modifiability}: degree to which a product or system can be effectively and efficiently modified without introducing defects or degrading the product.% Implementation includes coding, designing, documenting and verifying changes.
 
     \item \textbf{Reusability}: degree to which a software artefacts (say, code, executable files, or any assets) can be exploited in other systems, or utilised to build other artefacts.
 
@@ -207,6 +208,6 @@ In Appendix~\ref{appendix_qa} each attribute or metric entry has the following e
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.99\linewidth]{imgs/qa.png}
-    \caption{The structure of each Attribute or Metric entry in the Appendix.}
+    \caption{The structure of each Attribute or Metric entry, as it appears in the Appendix.}
     \label{fig:sqattr}
 \end{figure}

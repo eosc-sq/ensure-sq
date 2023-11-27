@@ -227,11 +227,15 @@ This subsection refers to a medium/large team developing an Open Source scientif
 
 \subsection{Example of tools, services and infrastructures to implement Quality Assurance for RS}
 
-% \violaine{The idea is to refer to some search software of the different categories and show the similarities and differences with
-% the analysis of the top to point out the possible lacks in the current service offer} 
 %% XXXXX Add definitions XXXXXXXXX
 
 \subsubsection{About version control and software forge}
+
+Version control systems help tracking and managing changes made to
+files and particularly to source code.
+
+Software forge is a web-based collaborative platform for developping
+and sharing codes.
 
 The quality attributes concerned by version control are the following:
 \begin{itemize}
@@ -253,15 +257,16 @@ An important point is that most of the software forge integrate a huge
 variety of tools, most of them listed below, and not only control
 version.
 
-%% XXXX parler des requêtes de fusion, PR, MR : gestion des
-%% collaborations communautaires XXXXXXX
-%% Une personne peut contribuer au code en communi-
-%% cant un correctif ou une amélioration au projet, soit sous forme de « patch »
-%% (fichier contenant les changements apportés), soit en réalisant une requête
-%% de fusion des changements (une « pull request », PR, ou « merge request », MR,
-%% selon les plateformes).
+Software forges is although an key platform to manage contributions to
+the code. It integrate mechanism as Pull Request or Merge Request
+which allow any developper to contribute to the code: add a new
+fonctionality, fix a bug, ... 
 
 \subsubsection{About continuous integration}
+
+Continous integration is one of the best practices in software
+development in which changes are immediately and automaticaly rebuild
+tested and run. 
 
 There is no direct quality attibutes related to continuous integration
 but, with software forges, this is the basics for a minimal software quality, on which
@@ -291,6 +296,9 @@ Developer Certificate of Origin (DCO), or Contributor License
 Agreement (CLA).
 
 \subsubsection{About packaging}
+
+Software packaging is the process to build a easy to install and self
+contained package for a software in order to be able to use it easely.
 
 The quality attributes related to this topic are:
 \begin{itemize}
@@ -332,9 +340,6 @@ source context. This is {\bf not} an exhaustive list.
 
 It had to be noticed that all this tools and services are available on
 some research infrastructures, for example some computing centers.
-
-\textcolor{red}{Give some examples of infrastructures which integrate
-  this tools?}
 
 \subsubsection{About documentation}
 
@@ -546,6 +551,3 @@ It is also of crucial importance to develop proximity support for all
 scientific communities on this different topics.
 
 
-\textcolor{red}{Some conclusions ? Need a software forge with enough
-  tools to answer the main needs, infrastructure to be able to deploy
-  a minima runners}

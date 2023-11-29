@@ -1,8 +1,16 @@
+\dg{Daniel is currently working on this section}
+
+\dg{small intro on the relationship between quality and metadata. The scope is tricky, and so it is the level of granularity}
+
 \subsection{Metadata schema for SW}
 
 Using metadata to describe research outcomes is becoming a more common practice, thanks partially to the importance of metadata to realise and implement the FAIR principles. Metadata can make it easier for registries and aggregators to present research software with some common descriptors so they can be indexed and compared. Although metadata on its own does not guaranty quality, some metadata elements can align to quality principles. In the case of research software, there are two main metadata schemas agreed and adopted by broad communities. Codemeta \cite{Boettigeral2017} aims at creating a minimal metadata schema for science software and code. It is based on two types from schema.org \cite{guha_schemaorg_2016}, namely \href{https://schema.org/SoftwareSourceCode}{SoftwareSourceCode} and \href{https://schema.org/SoftwareApplication}{softwareApplication}. It provides a list of metadata attributes to describe software that can be then expressed in XML or JSON. Bioschemas, a collaborative community project aiming at adding structured markup to Life Science websites, provides a profile (i.e., a recommendation of usage created on top of a schema.org type) corresponding to a \href{https://bioschemas.org/profiles/ComputationalTool}{ComputationalTool}, based on the schema.org type \href{https://schema.org/SoftwareApplication}{softwareApplication}. Different from Codemeta, Bioschemas preserves the semantic layer from schema.org.
 
+\dg{there are many other vocabularies for describing software. Some extend schema.org and codemeta. Some other profiles model i/o types. Mention them, and mention that codemeta is the current recommendation that has most community support. Repos are adopting such as InvenioRDM, ASCL for interoperating records.}
+
 \subsection{The case for FAIR for Research Software (FAIR4RS)}
+
+\dg{maybe move this for an annex? I would like to elaborate on the recommendations that are also being pushed by the community. But that the rlationship with quality is not always one to one. Also, there are existing recommendations and tools to help asswss the fairness. But as for quality, we do this in the next section}
 
 The FAIR principles for Research Software are stated in \cite{chue_hong_neil_p_2022_6623556}, they
 are reproduced here for reference:
@@ -97,6 +105,10 @@ show in Appendix \ref{appendix_qa} is represented in the following table:
 \textbf{R2}
 
 \textbf{R3} EOSC-Qual-29, EOSC-SWRelMan-32
+
+\dg{need justification, and a way of knowing which principle it was. Maybe the justification can be added to the table, while a summary should follow}
+
+\dg{finally, I would like to reflect on: are there principles that maybe should be reported but are not aligned with the quality attributes we identified?}
 
 
 % \textcolor{red}{DG: To be developed further once the quality metrics and criteria is clear. The scope of this section is not

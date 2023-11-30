@@ -7,8 +7,7 @@ Table~\ref{tab:rs_recc00} shows the list of Quality Attributes that are common t
 These attributes are about documentation, open source code including a license, visible description about intellectual property that is important to establish ownership and scientific recognition. Also avoid redundant code and about security; no world writable files and directories.
 
 \begin{center}
-\begin{table}
-  \label{tab:rs_recc00}
+\begin{table}[h]
   \small
   \begin{tabular}{|p{0.65\linewidth}|p{0.35\linewidth}|} \hline
 
@@ -28,64 +27,63 @@ These attributes are about documentation, open source code including a license, 
 
   \end{tabular}
   \caption{Recommended common Quality Attributes.}
-
+  \label{tab:rs_recc00}
 \end{table}
 \end{center}
 
 \subsubsection{User story: Individual development}
 
-The case of individual development of analysis script and workflows (table~\ref{tab:rs_recc01}), the recommendation are the common attributes listed in table~\ref{tab:rs_recc00}.
+The case of individual development of analysis script and workflows (Table~\ref{tab:rs_recc01}), the recommendation are the common attributes listed in Table~\ref{tab:rs_recc00}.
 
 \begin{center}
-\begin{table}
-  \label{tab:rs_recc01}
+\begin{table}[h]
   \small
   \begin{tabular}{|p{0.65\linewidth}|p{0.35\linewidth}|} \hline
 
     \textbf{RS Stack} & \textbf{RS Type} \\ \hline \hline
     4: \textbf{Project specific code} &
     4: \textbf{Analysis script and workflows} \\ \hline \hline
-    \multicolumn{2}{|l|}{\textbf{All common Quality Attributes}: table \ref{tab:rs_recc00}} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{All common Quality Attributes}: Table \ref{tab:rs_recc00}} \\ \hline
 
   \end{tabular}
   \caption{Recommended Quality Attributes, individual development, Analysis script and workflows.}
+  \label{tab:rs_recc01}
 \end{table}
 \end{center}
 
-In the case of software type ``Library'', we add packaging and code deployment to the common attributes as listed in table \ref{tab:rs_recc02} (c.f. RS lifecycle diagram \ref{fig:rslifecycle} box 5).
+In the case of software type ``Library'', we add packaging and code deployment to the common attributes as listed in Table \ref{tab:rs_recc02} (c.f. RS lifecycle diagram \ref{fig:rslifecycle} box 5).
 
 \begin{center}
 \begin{table}
-  \label{tab:rs_recc02}
   \small
   \begin{tabular}{|p{0.65\linewidth}|p{0.35\linewidth}|} \hline
 
     \textbf{RS Stack} & \textbf{RS Type} \\ \hline \hline
     4: \textbf{Project specific code} &
     1: \textbf{Library} \\ \hline \hline
-    \multicolumn{2}{|l|}{\textbf{All common Quality Attributes}: table \ref{tab:rs_recc00}} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{All common Quality Attributes}: Table \ref{tab:rs_recc00}} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-12}: Packaging} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-15}: Code deployment} \\ \hline
 
   \end{tabular}
   \caption{Recommended Quality Attributes, individual development, library.}
+  \label{tab:rs_recc02}
 \end{table}
 \end{center}
 
 \subsubsection{User story: Team Project}
 
-The case for a team working on a project on analysis script and workflows, there is an increase in responsibility, as such it's recommended to add support that includes the reporting and solving bugs and source code hosting in common VCS repositories, as shown in table \ref{tab:rs_recc03}. See RS lifecycle diagram \ref{fig:rslifecycle} boxes \textit{Maintenance} and \textit{Community Feedback}.
+The case for a team working on a project on analysis script and workflows, there is an increase in responsibility, as such it's recommended to add support that includes the reporting and solving bugs and source code hosting in common VCS repositories, as shown in Table \ref{tab:rs_recc03}. See RS lifecycle diagram \ref{fig:rslifecycle} boxes \textit{Maintenance} and \textit{Community Feedback}.
 
 \begin{center}
 \begin{table}
-  \label{tab:rs_recc03}
   \small
   \begin{tabular}{|p{0.65\linewidth}|p{0.35\linewidth}|} \hline
 
     \textbf{RS Stack} & \textbf{RS Type} \\ \hline \hline
     4: \textbf{Project specific code} &
     4: \textbf{Analysis script and workflows} \\ \hline \hline
-    \multicolumn{2}{|l|}{\textbf{All from User story: Individual development}: table \ref{tab:rs_recc01}} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{All from User story: Individual development}: Table \ref{tab:rs_recc01}} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-TMet-02}: \# Resolved bugs} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-TMet-03}: \# Open bugs} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-03}: Source code hosting} \\ \hline
@@ -94,6 +92,7 @@ The case for a team working on a project on analysis script and workflows, there
 
   \end{tabular}
   \caption{Recommended Quality Attributes, team project, analysis script and workflows.}
+  \label{tab:rs_recc03}
 \end{table}
 \end{center}
 
@@ -102,14 +101,13 @@ See RS lifecycle diagram \ref{fig:rslifecycle} boxes \textit{Maintenance}, \text
 
 \begin{center}
 \begin{table}
-  \label{tab:rs_recc04}
   \small
   \begin{tabular}{|p{0.65\linewidth}|p{0.35\linewidth}|} \hline
 
     \textbf{RS Stack} & \textbf{RS Type} \\ \hline \hline
     4: \textbf{Project specific code} &
     1: \textbf{Library} \\ \hline \hline
-    \multicolumn{2}{|l|}{\textbf{All from User story: Individual development}: table \ref{tab:rs_recc02}} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{All from User story: Individual development}: Table \ref{tab:rs_recc02}} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-TMet-02}: \# Resolved bugs} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-TMet-03}: \# Open bugs} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-03}: Source code hosting} \\ \hline
@@ -122,6 +120,7 @@ See RS lifecycle diagram \ref{fig:rslifecycle} boxes \textit{Maintenance}, \text
 
   \end{tabular}
   \caption{Recommended Quality Attributes, team project, library.}
+  \label{tab:rs_recc04}
 \end{table}
 \end{center}
 
@@ -130,14 +129,13 @@ Table \ref{tab:rs_recc05} regards the development, deployment and operation of a
 \begin{center}
 \begin{table}
 
-  \label{tab:rs_recc05}
   \small
   \begin{tabular}{|p{0.65\linewidth}|p{0.35\linewidth}|} \hline
 
     \textbf{RS Stack} & \textbf{RS Type} \\ \hline \hline
     4: \textbf{Project specific code} &
     5: \textbf{Services and platforms} \\ \hline \hline
-    \multicolumn{2}{|l|}{\textbf{All from User story: team project, library}: table \ref{tab:rs_recc04}} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{All from User story: team project, library}: Table \ref{tab:rs_recc04}} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-05}: API testing} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-06}: Integration testing} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-16}: Public endpoints and APIs encrypted} \\ \hline
@@ -147,24 +145,24 @@ Table \ref{tab:rs_recc05} regards the development, deployment and operation of a
 
   \end{tabular}
   \caption{Recommended Quality Attributes, team project, services and platforms.}
+  \label{tab:rs_recc05}
 \end{table}
 \end{center}
 
 \subsubsection{User story: Team OSS}
 
-This subsection describes the recommendations when a medium to large team is responsible for the development of Open Source Software for research. Thus, the increase in responsability with respect to the previous cases of smaller teams or individual researchers. We add Quality Attributes for more complete documentation, additional types of tests including security and peer code review, as shown in table \ref{tab:rs_recc06}. See RS lifecycle diagram \ref{fig:rslifecycle} box \textit{Testing/CICD}.
+This subsection describes the recommendations when a medium to large team is responsible for the development of Open Source Software for research. Thus, the increase in responsability with respect to the previous cases of smaller teams or individual researchers. We add Quality Attributes for more complete documentation, additional types of tests including security and peer code review, as shown in Table \ref{tab:rs_recc06}. See RS lifecycle diagram \ref{fig:rslifecycle} box \textit{Testing/CICD}.
 
 \begin{center}
 \begin{table}
 
-  \label{tab:rs_recc06}
   \small
   \begin{tabular}{|p{0.65\linewidth}|p{0.35\linewidth}|} \hline
 
     \textbf{RS Stack} & \textbf{RS Type} \\ \hline \hline
     3 and 2: \textbf{Domain specific tools} and  \textbf{Scientific infrastructure} &
     1: \textbf{Library} \\ \hline \hline
-    \multicolumn{2}{|l|}{\textbf{All from User story: Team Project}: table \ref{tab:rs_recc04}} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{All from User story: Team Project}: Table \ref{tab:rs_recc04}} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-TMet-04}: Defect rates} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-08}: Code review} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-26}: Documentation version controlled} \\ \hline
@@ -176,6 +174,7 @@ This subsection describes the recommendations when a medium to large team is res
 
   \end{tabular}
   \caption{Recommended Quality Attributes, team OSS, library.}
+  \label{tab:rs_recc06}
 \end{table}
 \end{center}
 
@@ -184,19 +183,19 @@ Table \ref{tab:rs_recc07} shows the case for a Framework or Application, it adds
 \begin{center}
 \begin{table}
 
-  \label{tab:rs_recc07}
   \small
   \begin{tabular}{|p{0.65\linewidth}|p{0.35\linewidth}|} \hline
 
     \textbf{RS Stack} & \textbf{RS Type} \\ \hline \hline
     3 and 2: \textbf{Domain specific tools} and  \textbf{Scientific infrastructure} &
     2 and 3: \textbf{Framework, Application} \\ \hline \hline
-    \multicolumn{2}{|l|}{\textbf{All from User story: Team OSS, Library}: table \ref{tab:rs_recc06}} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{All from User story: Team OSS, Library}: Table \ref{tab:rs_recc06}} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-04}: Test-Driven Development (TDD)} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-10}: Scalability testing} \\ \hline
 
   \end{tabular}
   \caption{Recommended Quality Attributes, team OSS, frameworks and applications.}
+  \label{tab:rs_recc07}
 \end{table}
 \end{center}
 
@@ -207,14 +206,13 @@ This subsection refers to a medium/large team developing an Open Source scientif
 \begin{center}
 \begin{table}
 
-  \label{tab:rs_recc08}
   \small
   \begin{tabular}{|p{0.65\linewidth}|p{0.35\linewidth}|} \hline
 
     \textbf{RS Stack} & \textbf{RS Type} \\ \hline  \hline
     3 and 2: \textbf{Domain specific tools} and \textbf{Scientific infrastructure} &
     5: \textbf{Services and platforms} \\ \hline \hline
-    \multicolumn{2}{|l|}{\textbf{All from User story: Team Project}: table \ref{tab:rs_recc05}} \\ \hline
+    \multicolumn{2}{|l|}{\textbf{All from User story: Team Project}: Table \ref{tab:rs_recc05}} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-TMet-04}: Defect rates} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-08}: Code review} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-26}: Documentation version controlled} \\ \hline
@@ -236,129 +234,98 @@ This subsection refers to a medium/large team developing an Open Source scientif
 
   \end{tabular}
   \caption{Recommended Quality Attributes, team service, services and platforms.}
+  \label{tab:rs_recc08}
 \end{table}
 \end{center}
 
 \subsection{Example of tools, services and infrastructures to implement Quality Assurance for RS}
 
-%% XXXXX Add definitions XXXXXXXXX
-
 \subsubsection{About version control and software forge}
 
-Version control systems help tracking and managing changes made to
-files and particularly to source code.
+Version control systems help track and manage changes to files and particularly to source code. Software forge is a web-based collaborative platform for developing and sharing codes.
 
-Software forge is a web-based collaborative platform for developping
-and sharing codes.
+The Quality Attributes related to version control are the following:
 
-The quality attributes concerned by version control are the following:
 \begin{itemize}
   \item EOSC-SWRelMan-02: Version Control System (VCS)
   \item EOSC-SWRelMan-03: Source code hosting
   \item EOSC-SWRelMan-04: Working state version
 \end{itemize}
 
-Version control is the essential basic tool for software development.
-Software forges have become vital tools for all software developers.
-This type of infrastructures is often deployed, at different level :
-laboratory, project, institution. Commercial software forge (as
-github.com, gitlab.com ...) are also significantly used in academic
-context. A recent report of the Software and
-Sources Codes College of the Committee for Open Science illustrate the
-landscaping in France \cite{leberre:hal-04208924}.
+Version control is an essential tool for software development. Software forges have become vital tools for all software developers. This type of infrastructures is often deployed, at different levels; laboratory, project, institution, etc.. Commercial software forges (such as Github and Gitlab), are significantly used in the academic context. A recent report of the Software and Sources Codes College of the Committee for Open Science illustrate the landscaping in France \cite{leberre:hal-04208924}, shows this trend.
 
-An important point is that most of the software forge integrate a huge
-variety of tools, most of them listed below, and not only control
-version.
+An important point is that most of the software forges integrate a large variety of tools (most of them listed below), that goes far beyond version control.
 
-Software forges is although an key platform to manage contributions to
-the code. It integrate mechanism as Pull Request or Merge Request
-which allow any developper to contribute to the code: add a new
-fonctionality, fix a bug, ... 
+Software forges are a key platform to manage contributions to the code from many diverse people. It integrates the mechanism of Pull or Merge Requests allowing any developer to contribute to the code and being peer reviewed, such as adding a new functionality, bug and security fixing, etc..
 
-\subsubsection{About continuous integration}
+\subsubsection{About Continuous Integration/Continuous Delivery - CI/CD}
+\label{sec_cicd}
 
-Continous integration is one of the best practices in software
-development in which changes are immediately and automaticaly rebuild
-tested and run. 
+Continuous Integration and Continuous Delivery (CI/CD), is one of the best practices in software development that implement the DevOps methodology. Changes are immediately and automatically tested and executed, and packages (or artifacts) are built and published in public repositories. 
 
-There is no direct quality attibutes related to continuous integration
-but, with software forges, this is the basics for a minimal software quality, on which
-are based most of the other tools through tasks automation (build, tests, deployment,
-documentation ...).
+CI/CD systems are the way to implement the verification of a set of Quality Attributes. The set of QA's to be verified, is implemented through a pipeline that is executed in one such CI/CD service. The CI/CD system is connected with the software forges, and the pipelines are triggered when there are changes in the source code.
+Package building, testing, deployment, documentation linting, are some of the tasks that can be automated in CI/CD pipelines.
 
-Concerning continuous integration system, we can mention some tools
-like Jenkins (\url{https://www.jenkins.io/}), gitLab CI
-(\url{https://docs.gitlab.com/ee/ci/}), Travis CI
-(\url{https://travis-ci.com/}) ...
+Examples of CI/CD systems are services such as; Jenkins (\url{https://www.jenkins.io/}), gitLab CI (\url{https://docs.gitlab.com/ee/ci/}) and Travis CI(\url{https://travis-ci.com/}).
+
+The Software Quality as a Service (SQAaaS) platform (\url{https://sqaaas.eosc-synergy.eu}), is a service developed in EOSC-Synergy project\footnote{\url{https://www.eosc-synergy.eu/}.}, it allows Jenkins pipeline composition for automatic tests as well as Badge awarding according to pre-defined verification of Quality Attributes.
 
 \subsubsection{About intellectual property and license}
 
-The quality attributes concerned by legal issues are the following:
+The quality attributes related to legal issues and licensing are:
+
 \begin{itemize}
-  \item EOSC-Qual-27: Intellectual Property
-  \item EOSC-SWRelMan-01: Open source
-  \item EOSC-SWRelMan-10: Open-source license
+  \item EOSC-Qual-27: Intellectual Property (IP)
+  \item EOSC-SWRelMan-01: Open Source
+  \item EOSC-SWRelMan-10: Open-Source license
 \end{itemize}
 
-There is no real tools or infrastructure for the management of legal
-issues, the most important is here the support provided by he
-institutions.
+There is no real tool to verify the IP, where support can be provided by the institution. This support must be as large as possible including the help about Developer Certificate of Origin (DCO), or Contributor License Agreement (CLA).
 
-This support must be as large as possible including the help about
-Developer Certificate of Origin (DCO), or Contributor License
-Agreement (CLA).
+Regarding Open Source and license, there are tools to verify that a given Open Source license file is present in the software forge, comparing it with a know database of Open Source licenses, one such tool is ``\textit{licensee}''\footnote{\url{https://github.com/licensee/licensee}}.
 
 \subsubsection{About packaging}
 
-Software packaging is the process to build a easy to install and self
-contained package for a software in order to be able to use it easely.
+Software packaging is the process to build an easy to install and self contained package or artifact of a software, in order to be able to easily install it.
 
-The quality attributes related to this topic are:
+The Quality Attributes regarding this topic are:
+
 \begin{itemize}
   \item EOSC-SWRelMan-12: Packaging
   \item EOSC-SWRelMan-15: Code deployment
 \end{itemize}
 
-It is an endless topic including various type of tools and
-services. We focus on mostly used tools in academic research and open
+The number of packaging system is very large, thus we list just a few of such tools and services. We focus on mostly used tools in academic research and open
 source context. This is {\bf not} an exhaustive list.
 
 \begin{center}
-\begin{table}
+\begin{table}[h]
 
-  \label{tab:tools_pack}
   \small
   \begin{tabular}{|p{0.12\linewidth}|p{0.2\linewidth}|p{0.25\linewidth}|p{0.35\linewidth}|} \hline
 
     \textbf{Tools} & \textbf{Usage} & \textbf{URL} & \textbf{Comment} \\ \hline \hline
-    \textbf{Guix} & Packaging system & \url{https://guix.gnu.org/en/}
-    & Generate reproductible environment \\ \hline
-    \textbf{Nix} & Packaging system & \url{https://nixos.org/}
-    & Generate reproductible environment \\ \hline
-    \textbf{CMake} & Build system & \url{https://cmake.org/}
-    & Include many process like compilation, packaging, testing  \\ \hline
-    \textbf{Docker} & Container technology & \url{https://www.docker.com/}
-    &  Certainly the most used \\ \hline
-    \textbf{Singularity} & Container technology & \url{https://sylabs.io/}
-    & Technology used in many computing center  \\ \hline
-    \textbf{Kubernetes} & Container orchestration & \url{https://kubernetes.io/}
-    & Mostly used in services deployment  \\ \hline
-    \textbf{Openshift} & PaaS & \url{https://www.redhat.com/fr/technologies/cloud-computing/openshift}
-    & Based on docker and kubernetes technologies  \\ \hline
+    \textbf{Guix} & Packaging system & \url{https://guix.gnu.org/en/} & Generate reproductible environment \\ \hline
+    \textbf{Nix} & Packaging system & \url{https://nixos.org/} & Generate reproductible environment \\ \hline
+    \textbf{CMake} & Build system & \url{https://cmake.org/} & Include many process like compilation, packaging, testing  \\ \hline
+    \textbf{Docker} & Container technology & \url{https://www.docker.com/} &  Certainly the most used \\ \hline
+    \textbf{Singularity} & Container technology & \url{https://sylabs.io/} & Technology used in many computing center  \\ \hline
+    \textbf{Kubernetes} & Container orchestration & \url{https://kubernetes.io/} & Mostly used in services deployment  \\ \hline
+    \textbf{Openshift} & PaaS & \url{https://www.redhat.com/fr/technologies/cloud-computing/openshift} & Based on docker and kubernetes technologies  \\ \hline
+    \textbf{RPM} & Package manager & \url{https://rpm.org/} & RedHat and derivatives packaging system \\ \hline
+    \textbf{deb} & Package system & \url{https://wiki.debian.org/Packaging} & Debian/Ubuntu and derivatives packaging system \\ \hline
 
   \end{tabular}
   \caption{Tools and services for packaging and deployment}
+  \label{tab:tools_pack01}
 \end{table}
 \end{center}
 
-It had to be noticed that all this tools and services are available on
-some research infrastructures, for example some computing centers.
+It should be noticed that all this tools, services and packaging systems are available or used in most research infrastructures.
 
 \subsubsection{About documentation}
 
-Documentation is of critical interest for software and cover many
-quality attributes: 
+Documentation is of critical interest for software and cover many Quality Attributes: 
 
 \begin{itemize}
   \item EOSC-SWRelMan-29: Documentation online
@@ -369,62 +336,43 @@ quality attributes:
   \item EOSC-SWRelMan-28: Documentation formats
 \end{itemize}
 
-It is most of the time a manual effort but there exists some tools
-which can help, for documentation generation or access.
+The production of documentation is mostly manual but there are quite a few number of tools that help generate or produce it.
 
 \begin{center}
 \begin{table}
 
-  \label{tab:tools_pack}
   \small
   \begin{tabular}{|p{0.12\linewidth}|p{0.2\linewidth}|p{0.25\linewidth}|p{0.35\linewidth}|} \hline
 
     \textbf{Tools} & \textbf{Usage} & \textbf{URL} & \textbf{Comment} \\ \hline \hline
-    \textbf{doxygen} & Automatic generation & \url{https://www.doxygen.nl/}
-    & Multi-languages \\ \hline
-    \textbf{Sphynx} & Automatic generation & \url{https://www.sphinx-doc.org/en/master/}
-    & For Python language \\ \hline
-    \textbf{Javadoc} & Automatic generation & \url{https://www.oracle.com/java/technologies/javase/javadoc-tool.html}
-    & For Java language  \\ \hline
-    \textbf{MediaWiki} & Wiki engine & \url{https://www.mediawiki.org/wiki/MediaWiki}
-    &  Available on gitlab platform \\ \hline
-    \textbf{Gitlab pages} &  & \url{}
-    & Available in gitlab platform with CI  \\ \hline
-    \textbf{Hugo} & Static web site generation & \url{https://gohugo.io/}
-    &   Based on Go language \\ \hline
-    \textbf{Pelican} & Static web site generation & \url{https://getpelican.com/}
-    &  based on Python language \\ \hline
+    \textbf{doxygen} & Automatic generation & \url{https://www.doxygen.nl/} & Multi-languages \\ \hline
+    \textbf{Sphynx} & Automatic generation & \url{https://www.sphinx-doc.org/en/master/} & For Python language \\ \hline
+    \textbf{Javadoc} & Automatic generation & \url{https://www.oracle.com/java/technologies/javase/javadoc-tool.html} & For Java language  \\ \hline
+    \textbf{MediaWiki} & Wiki engine & \url{https://www.mediawiki.org/wiki/MediaWiki} &  Available on gitlab platform \\ \hline
+    \textbf{Gitlab pages} & Automatic generation & \url{https://docs.gitlab.com/ee/user/project/pages/} & Available in gitlab platform with CI  \\ \hline
+    \textbf{Hugo} & Static web site generation & \url{https://gohugo.io/} & Based on Go language \\ \hline
+    \textbf{Pelican} & Static web site generation & \url{https://getpelican.com/} & based on Python language \\ \hline
 
   \end{tabular}
   \caption{Tools and services for documentation}
+  \label{tab:tools_pack02}
 \end{table}
 \end{center}
 
-\subsubsection{About bugs management}
+\subsubsection{About management bugs}
 
-Bug tracking system or more generally issue tracking system are
-common components for software development and concerned quality
-attributes are:
+Bug tracking systems or more generally issue tracking systems are common components for software development, the relevant Quality Attributes are:
 
 \begin{itemize}
   \item EOSC-TMet-02: \# Resolved bugs
   \item EOSC-TMet-03: \# Open bugs
 \end{itemize}
 
-Most software forges include a bug or issue tracking system. Some
-other tools are for example Redmine (which is also a forge software
-like, \url{https://www.redmine.org/}), Trac
-(\url{http://trac.edgewall.org/}), GLPI
-(\url{https://www.glpi-project.org/}), Request Tracker
-(\url{https://bestpractical.com/request-tracker}) or Bugzilla
-(\url{https://www.bugzilla.org/}).
-
-% https://en.wikipedia.org/wiki/Comparison_of_issue-tracking_systems
+Most software forges include a bug or issue tracking system. There are other tools such as Redmine (which is also a forge software like, \url{https://www.redmine.org/}), Trac (\url{http://trac.edgewall.org/}), GLPI (\url{https://www.glpi-project.org/}), Request Tracker (\url{https://bestpractical.com/request-tracker}) or Bugzilla (\url{https://www.bugzilla.org/}).
 
 \subsubsection{About tests}
 
-Software testing is considered as a best practice for software
-development and cover lots of quality attributes:
+Automated Software testing is considered a best practice in software development. They can be implemented in CI/CD pipelines (Section~\ref{sec_cicd}), and cover the following Quality Attributes:
 
 \begin{itemize}
   \item EOSC-SWTest-02: Unit tests
@@ -439,102 +387,82 @@ development and cover lots of quality attributes:
   \item EOSC-SWTest-09: Stress testing
 \end{itemize}
 
-This is an important and very broad topic and there is a lot of tools
-which can help, especially to automatize testing, depending of the
-programming language, we can cite for example:
+There are a large number of tools and they cover several programming languages and frameworks, we list below a few of them:
 
 \begin{itemize}
-\item For Python tox
-  (\url{https://tox.wiki}), pytest (\url{https://pytest.org/}),
-\item For Java, JUnit (\url{https://junit.org/}),
-\item For C++, CppUnit (\url{http://freedesktop.org/wiki/Software/cppunit})
+\item For Python; tox (\url{https://tox.wiki}), pytest (\url{https://pytest.org/}).
+\item For Java; JUnit (\url{https://junit.org/}).
+\item For C++; CppUnit (\url{http://freedesktop.org/wiki/Software/cppunit}).
 \end{itemize}
 
 \subsubsection{About support}
 
-Even if there is only one quality attribute about it: 
+The existence of a helpdesk where users, operators, developers can create tickets about bugs, questions, new features, security issues, operation or usage of the software or service, is very important and contributes to the trust and adoption of the corresponding software or service. The Quality Attribute related to support is:
 
 \begin{itemize}
   \item EOSC-SWRelMan-07: Support
 \end{itemize}
 
-support cover a large topic from bug report to community animation and
-many tools can help to interact with users and contributers:
+There are many services that can be used for support and we list a few of them:
 
 \begin{itemize}
-\item Internet forum system, for example Discourse
-  (\url{https://www.discourse.org/} also include in the software
-  forge gitlab)
-\item Online chat service as mattermost (\url{https://mattermost.com/} also include in the software
-  forge gitlab) or Rocket.chat (\url{https://rocket.chat/})
-\item Mailing list management software as sympa
-  (\url{https://www.sympa.community/})
+  \item Github issues \url{https://docs.github.com/en/issues}: is an issue tracking system integrated within the Github repository
+  \item Gitlab issues \url{https://gitlab.com/gitlab-org/gitlab/-/issues}: is to Github but for Gitlab.
+  \item Jira from Atlassian \url{https://www.atlassian.com/software/jira}: is an issue and project tracking system.
+  \item Request Tracker - RT \url{https://bestpractical.com/request-tracker}: Helpdesk.
+  \item Zammad \url{https://zammad.com/en}: Ticketing system.
 \end{itemize}
 
 \subsubsection{About code analysis}
 
-Static and dynamic program analysis contribute to software quality
-with different attributes:
+Static code analysis contribute to Software quality, the relevant Quality Attributes are the following:
+
 \begin{itemize}
   \item EOSC-SCMet-02: \% of redundant code
   \item EOSC-SCMet-10: Number of comments
-  \item EOSC-SWTest-15: No world-writable files or directories
   \item EOSC-SWTest-01: Code style
+  \item EOSC-SWTest-15: No world-writable files or directories
   \item EOSC-SWRelMan-08: Code review
 \end{itemize}
 
-Many tools can help for this analysis but also following best
-practices as coding conventions and well identified programming rules
-is essential.
+There are many tools that can help to automate this analysis as part of CI/CD pipelines, they follow best practices and implement code conventions checking and well identified programming rules.
 
 \begin{center}
 \begin{table}
 
-  \label{tab:tools_pack}
   \small
   \begin{tabular}{|p{0.12\linewidth}|p{0.2\linewidth}|p{0.25\linewidth}|p{0.35\linewidth}|} \hline
 
     \textbf{Tools} & \textbf{Usage} & \textbf{URL} & \textbf{Comment} \\ \hline \hline
-    \textbf{Pylint} & Static code analysis & \url{https://pylint.pycqa.org/}
-    & For Python language. Others *lint tools exists for others
-    languages : CPPlint for CPP, JSLint for JavaScript \\ \hline
-    \textbf{Hadolint} & Dockerfile linter & \url{https://github.com/hadolint/hadolint}
-    & To insure best practice in Docker images \\ \hline
-    \textbf{checkstyle} & Static code analysis & \url{https://checkstyle.sourceforge.net/}
-    & For Java language  \\ \hline
-    \textbf{pycodestyle} & Static code analysis & \url{https://pypi.org/project/pycodestyle/}
-    & Check Python code against some of the style conventions in \href{http://www.python.org/dev/peps/pep-0008/}{PEP 8}  \\ \hline
-    \textbf{flake8} & Static code analysis & \url{https://flake8.pycqa.org/en/latest/#}
-    & Check Python code against some of the style conventions in \href{http://www.python.org/dev/peps/pep-0008/}{PEP 8} \\ \hline
-    \textbf{SonarQube} & Automatic reviews with static analysis of code & \url{http://sonarqube.org/}
-    & Supports many programming languages  \\ \hline
-    \textbf{gcov} & Dynamic coverage analysis & \url{https://gcc.gnu.org/onlinedocs/gcc/Gcov.html}
-    & Program must be compiled with specific options  \\ \hline
-    \textbf{valgrind} & Memory error detection & \url{https://www.valgrind.org/}
-    & Runs programs on a virtual processor  \\ \hline
+    \textbf{Pylint} & Static code analysis & \url{https://pylint.pycqa.org/} & For Python language. Others *lint tools exists for others languages : CPPlint for CPP, JSLint for JavaScript \\ \hline
+    \textbf{Hadolint} & Dockerfile linter & \url{https://github.com/hadolint/hadolint} & To insure best practice in Docker images \\ \hline
+    \textbf{checkstyle} & Static code analysis & \url{https://checkstyle.sourceforge.net/} & For Java language  \\ \hline
+    \textbf{pycodestyle} & Static code analysis & \url{https://pypi.org/project/pycodestyle/} & Check Python code against some of the style conventions in \href{http://www.python.org/dev/peps/pep-0008/}{PEP 8}  \\ \hline
+    \textbf{flake8} & Static code analysis & \url{https://flake8.pycqa.org/en/latest/#} & Check Python code against some of the style conventions in \href{http://www.python.org/dev/peps/pep-0008/}{PEP 8} \\ \hline
+    \textbf{SonarQube} & Automatic reviews with static analysis of code & \url{http://sonarqube.org/} & Supports many programming languages  \\ \hline
+    \textbf{gcov} & Dynamic coverage analysis & \url{https://gcc.gnu.org/onlinedocs/gcc/Gcov.html} & Program must be compiled with specific options  \\ \hline
+    \textbf{valgrind} & Memory error detection & \url{https://www.valgrind.org/} & Runs programs on a virtual processor  \\ \hline
 
   \end{tabular}
   \caption{Tools for static and dynamic code analysis}
+  \label{tab:tools_pack03}
 \end{table}
 \end{center}
 
-
 \subsubsection{About security}
 
-Security is a critical topic especially for software related to
-platform or service. Many quality attributes are related to secure code:
+Security is a critical topic especially for platforms and services, but as well for other types of Software. Several Quality Attributes are related to security:
 
 \begin{itemize}
-  \item EOSC-SWTest-16: Public endpoints and APIs encrypted
-  \item EOSC-SWTest-17: Strong ciphers
-  \item EOSC-SWTest-18: Authentication and Authorization
-  \item EOSC-SWTest-20: Service compliance with data regulations (GDPR)
   \item EOSC-TMet-04: Defect rates
-  \item EOSC-SWTest-14: Security code reviews
   \item EOSC-SWTest-12: Open Web Application Security Project (OWASP)
   \item EOSC-SWTest-13: Static Application Security Testing (SAST)
   \item EOSC-SWTest-14: Security code reviews
+  \item EOSC-SWTest-16: Public endpoints and APIs encrypted
+  \item EOSC-SWTest-17: Strong ciphers
+  \item EOSC-SWTest-18: Authentication and Authorization
   \item EOSC-SWTest-19: API security assessment
+  \item EOSC-SWTest-20: Service compliance with data regulations (GDPR)
   \item EOSC-SWTest-21: Dynamic Application Security Testing (DAST)
   \item EOSC-SWTest-22: Interactive Application Security Testing (IAST)
   \item EOSC-SWTest-23: Security penetration testing
@@ -542,25 +470,19 @@ platform or service. Many quality attributes are related to secure code:
   \item EOSC-SWTest-25: Security as Code (SaC) Testing
 \end{itemize}
 
-Some of the analysis tools above include secure analysis. Other like
-Splint (\url{http://www.splint.org/}, for C language) or 
-Bandit (\url{https://bandit.readthedocs.io/en/latest/} for Python
-language) are more specific to security issues.
+Some of the analysis tools include dynamic security analysis. Others, such as Splint (\url{http://www.splint.org/}, for C language) or  Bandit (\url{https://bandit.readthedocs.io/en/latest/} for Python language) can be used for static security code analysis.
 
 \subsubsection{Tranversal needs}
 
-Any tool, infrastructure or service are not enough to produce quality
-software. Training is crucial at different level (students,
-researchers, engineers, legal services ...) to promote best practices
-and a good use of the different tools and sercices listed below.
+The tools and services listed in the previous sections are not enough to produce high quality software. Training is crucial at different level (students, researchers, and even software developers), in order to promote best practices and a good use of the different tools and services.
 
 This can be done in different ways:
+
 \begin{itemize}
-\item Introduce specific courses in formal education,
-\item Lifelong training,
-\item On line training (like MOOC)
-\item Seminar, webinar ...
+\item Introduction of specific courses in formal education.
+\item Lifelong training.
+\item On line training (such as MOOCs)
+\item Seminars, webinars, tutorials, hands-on courses.
 \end{itemize}
 
-It is also of crucial importance to develop proximity support for all
-scientific communities on this different topics.
+It is also of crucial importance to develop proximity support for all scientific communities on these topics.

@@ -1,16 +1,20 @@
-\dg{Daniel is currently working on this section}
+%\dg{small intro on the relationship between quality and metadata. The scope is tricky, and so it is the level of granularity}
 
-\dg{small intro on the relationship between quality and metadata. The scope is tricky, and so it is the level of granularity}
+Software metadata has become a crucial asset for deploying and publishing software, as it describes the key aspects of a software package (e.g., name, license, authors, etc.), aids comparing it against similar efforts and helps users with faceted search. Package managers like Pypi,\footnote{\url{https://pypi.org/}} Maven Central\footnote{\url{https://search.maven.org/}} or CRAN\footnote{\url{https://cran.r-project.org/}} provide ways of gathering metadata using their own metadata representation.
 
-\subsection{Metadata schema for SW}
+With the increasing adoption of the FAIR principles, using metadata to describe research outcomes is becoming a more common practice, including research software and code. As with package managers, metadata makes it easier for tool registries and aggregators to present research software with common descriptors so they can be indexed and compared. Although metadata on its own does not guaranty quality, some metadata elements align to quality principles (e.g, documentation, licensing, version naming, etc.). 
 
-Using metadata to describe research outcomes is becoming a more common practice, thanks partially to the importance of metadata to realise and implement the FAIR principles. Metadata can make it easier for registries and aggregators to present research software with some common descriptors so they can be indexed and compared. Although metadata on its own does not guaranty quality, some metadata elements can align to quality principles. In the case of research software, there are two main metadata schemas agreed and adopted by broad communities. Codemeta \cite{Boettigeral2017} aims at creating a minimal metadata schema for science software and code. It is based on two types from schema.org \cite{guha_schemaorg_2016}, namely \href{https://schema.org/SoftwareSourceCode}{SoftwareSourceCode} and \href{https://schema.org/SoftwareApplication}{softwareApplication}. It provides a list of metadata attributes to describe software that can be then expressed in XML or JSON. Bioschemas, a collaborative community project aiming at adding structured markup to Life Science websites, provides a profile (i.e., a recommendation of usage created on top of a schema.org type) corresponding to a \href{https://bioschemas.org/profiles/ComputationalTool}{ComputationalTool}, based on the schema.org type \href{https://schema.org/SoftwareApplication}{softwareApplication}. Different from Codemeta, Bioschemas preserves the semantic layer from schema.org.
+\subsection{Metadata schemas for Software}
 
-\dg{there are many other vocabularies for describing software. Some extend schema.org and codemeta. Some other profiles model i/o types. Mention them, and mention that codemeta is the current recommendation that has most community support. Repos are adopting such as InvenioRDM, ASCL for interoperating records.}
+\dg{Daniel is currently working on this section. Mention DOAP, OntoSoft, SWO, etc. Then Codemeta + Bioschemas + Sd. State the initatives adopting them and then SIRS report}~\cite{sirs_2019}
 
-\subsection{The case for FAIR for Research Software (FAIR4RS)}
+In the case of research software, there are two main metadata schemas agreed and adopted by broad communities. Codemeta \cite{Boettigeral2017} aims at creating a minimal metadata schema for science software and code. It is based on two types from schema.org \cite{guha_schemaorg_2016}, namely \href{https://schema.org/SoftwareSourceCode}{SoftwareSourceCode} and \href{https://schema.org/SoftwareApplication}{softwareApplication}. It provides a list of metadata attributes to describe software that can be then expressed in XML or JSON. Bioschemas, a collaborative community project aiming at adding structured markup to Life Science websites, provides a profile (i.e., a recommendation of usage created on top of a schema.org type) corresponding to a \href{https://bioschemas.org/profiles/ComputationalTool}{ComputationalTool}, based on the schema.org type \href{https://schema.org/SoftwareApplication}{softwareApplication}. Different from Codemeta, Bioschemas preserves the semantic layer from schema.org.
 
-\dg{maybe move this for an annex? I would like to elaborate on the recommendations that are also being pushed by the community. But that the rlationship with quality is not always one to one. Also, there are existing recommendations and tools to help asswss the fairness. But as for quality, we do this in the next section}
+\dg{there are many other vocabularies for describing software. Some extend schema.org and codemeta. Some other profiles model i/o types. Mention them, and mention that codemeta is the current recommendation that has most community support. Repos are adopting such as InvenioRDM, ASCL for interoperating records. DOAP, all the efforts in codemeta, etc.}
+
+\subsection{The FAIR principles for Research Software (FAIR4RS)}
+
+\dg{maybe move this for an annex? I would like to elaborate on the recommendations that are also being pushed by the community. But that the relationship with quality is not always one to one. Also, there are existing recommendations and tools to help assess the fairness. But as for quality, we do this in the next section. Emphasize the importance of FAIR, and how it is shaping part of the EOSC ecosystem.}
 
 The FAIR principles for Research Software are stated in \cite{chue_hong_neil_p_2022_6623556}, they
 are reproduced here for reference:
@@ -66,7 +70,7 @@ upon, or incorporated into other software).}
     \item \textbf{R3} - Software meets domain-relevant community standards.
 \end{itemize}
 
-\subsection{Quality Attributes and the FAIR4RS principles}
+\subsection{Mapping Quality Attributes to FAIR4RS}
 
 In this subsection, the relation or link between the FAIR4RS principles and the Quality Attributes
 show in Appendix \ref{appendix_qa} is represented in the following table:

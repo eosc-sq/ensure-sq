@@ -1,53 +1,28 @@
 \subsection{Definition and references of Research Software}
 \label{subsec:defrs}
 
-Research software are not only software. To be able to clearly
-identify quality attributes for research software, it is essential to
-define the object we are talking about.
+Research software is not only software. To be able to clearly identify quality attributes for research software we rely on its definition given in page \ref{def_rs}.
 
-The Source Codes and Softwares College from the Committee for Open
-Science in France proposes the following definition: 
-``Research software is developed to meet specific scientific needs. It
-is designed, maintained, and used by scientists (researchers and
-engineers) and research institutions, possibly on an international
-scale. It can result from research work as well as support it, notably
-through publications before/on/around/with the software. It can be
-formalized in different ways (a platform, a middleware, a workflow or
-a library, a module or plugin of another software) and thus be in
-interaction in an ecosystem or on the contrary be more
-autonomous.'' \footnote{(\url{https://www.ouvrirlascience.fr/research-software-as-a-pillar-of-open-science/}).}
+The most important characteristic is the link with scientific publications. The purpose of research software is that it support the scientific results, and from that it is expected to reproduce the published results. Regular software does not necessarily have this expectation.
 
-The most important characteristic is the link with publications. The
-purpose of research software is that it support the scientific
-results, and from that it is expected to reproduce the published
-results. Regular software would not necessarily have this expectation.
+The goal of this section is to cross-reference the elements of software quality from the previous section with the \textit{sub-group 1} \cite{sg1tf2023} (``Software Lifecycle'', c.f. Section \ref{sec:introduction}), typology of research software development, in order to identify the tools and infrastructures needed to satisfy minimum quality criteria, taking into account the specificities of research software.  
 
-The goal of this section is to cross-reference the elements of
-software quality from the previous section with the subgroup 1
-\cite{sg1tf2023} ("Software Lifecycle", see section
-\ref{sec:introduction}), typology of research software development, in
-order to identify the tools and infrastructures needed to satisfy
-minimum quality criteria, given the specificities of research software.  
-
-As a reminder, subgroup 1 has defined different categories of software
-development related to the context in which they are performed:
+As a reminder, \textit{sub-group 1} has defined different categories of software development related to the context in which they are performed:
 
 \begin{enumerate}
-    \item \textbf{Individual development} - Individual creating research software for own use (e.g. a PhD student): Based on a research question, software is created by a single person with the specific aim of answering the research question and producing research output (paper, dataset, etc).
-    \item \textbf{Team Project} - A research team creating an application or workflow for use within the team: Research software is created by a team to answer a series of research questions (often as part of a larger research project).
+    \item \textbf{Individual development} - Individual creating research software for his/her own use (e.g. a PhD student): Based on a research question, software is created by a single person with the specific aim of answering the research question and producing a research output (paper, dataset, etc).
+    \item \textbf{Team Project} - A research team creating an application or workflow for the use within the team: Research software is created by a team to answer a series of research questions (often as part of a larger research project).
     \item \textbf{Team OSS} - A team / community developing (possibly broadly applicable) open source research software: Software is created by a team (possibly distributed over multiple organizations) to answer a broad range of research questions.
-    \item \textbf{Team Service} - A team or community creating a research service: A service platform is a set of software components which is used to provide services for a large number of users, most of whom make use of these offerings via the Internet (e.g. cloud services).
+    \item \textbf{Team Service} - A team or community creating a research service: A service platform is a set of software components which are used to provide services for a large number of users, most of whom make use of these offerings via the Internet (e.g. cloud services).
 \end{enumerate}
 
-There are other proposals with different categorization, for instance \footnote{\url{https://docs.google.com/presentation/d/1uwxSwd8chbG7bVn5lPvNNhv5f_JeeelA2mN9NXhlOhA}} and \footnote{\url{https://zenodo.org/record/7589725}}.
+Although there are other references, for instance \footnote{\url{https://docs.google.com/presentation/d/1uwxSwd8chbG7bVn5lPvNNhv5f_JeeelA2mN9NXhlOhA}} define similar or equivalent categories as enumerated above while \footnote{\url{https://zenodo.org/record/7589725}} rely on the same definition of RS as we did in page \ref{def_rs}.
 
 \subsection{Research Software stack}
 
-We can have another approach to categorize research software based on
-their position in the global software stack, following
-\cite{hinsen2019}.
+% \mdavid remove this: We can have another approach to categorize research software based on their position in the global software stack, following \cite{hinsen2019}.
 
-\dg{Should comment on the Tom Honeyman proposal for research software: research code (i.e., glue), research prototypes (tools used for research) and research infrastructure. I think it makes sense for us too}
+% \mdavid: need some reference to include text if appropriate \dg{Should comment on the Tom Honeyman proposal for research software: research code (i.e., glue), research prototypes (tools used for research) and research infrastructure. I think it makes sense for us too}
 
 A typical scientific software stack~\cite{hinsen2019} has the following composition:
 
@@ -58,7 +33,7 @@ A typical scientific software stack~\cite{hinsen2019} has the following composit
     \begin{tabular}[t]{|p{0.15\linewidth}|p{0.5\linewidth}|p{0.25\linewidth}|} \hline
 
     \textbf{Stack} & \textbf{Stack definition} & \textbf{Types} \\ \hline \hline
-      4 - Project specific code &
+    4 - Project specific code &
     Software written by scientists for a specific research project. It can take various forms including scripts, notebooks, and workflows, but also special-purpose libraries and utilities. &
     Library; Analysis script and workflows; Services and platforms \\ \hline
 
@@ -90,92 +65,56 @@ Note that Stack level 1 is not considered in this report. The Research Software 
 
 \subsection{Expectation for Research Software stack and types}
 
-To be able to identify quality attributes for research
-software, we need to understand clearly what is expected for the
-different types identified in the two above sections.
+To be able to identify quality attributes for research software, we need to understand clearly what is expected from the different types identified in the previous sections.
 
 \subsubsection{By research software type}
 
-The different expectations described below add up to each other, when
-the context of development grow in complexity.
+The different expectations described below add up to each other, when the context of development grow in complexity.
 
 \textbf{Individual researcher creating software for personal use}
 
-The author must be able to manage the different versions of the
-code. He often has to come back to the software after a long time (to
-answer to a reviewer for a publication, to adress a new scientific
-question ...).
+The author must be able to manage the different versions of the code. He often has to come back to the software after a long time (to answer to a reviewer for a publication, to address a new scientific question or confirm previous results).
 
-He perhaps needs to excute the software on different computers and
-different operating systems (for example the use of a supercomputer).
+He perhaps needs to execute the software on different computers and different operating systems or versions (for example the use of a supercomputer).
 
 He has to share the code when he submits his article.
 
-\textbf{A research team creating an application or workflow for use
-  within the team}
+\textbf{A research team creating an application or workflow for use within the team}
 
-The team must be able to manage the development with several
-people. The way to program must be homogeneous, and everybody must
-have a clear vision of who does what.
+The team must be able to manage the development with several people. The way to program should be homogeneous, and everybody must have a clear vision of who does what.
 
-New arrival in the team must be able to easily understand the
-structure of the software and the way to develop in the code.
+A new arrival in the team must be able to easily understand the structure of the software and the way to develop its code.
 
-\textbf{A team / community developing open source software}
+\textbf{A team / community developing Open Source Software}
 
-For a community research software, it is important to facilitate
-different types of contribution and to manage correctly rights
-attribution.
+For a community research software, it is important to facilitate different types of contribution and to manage correctly the rights attribution.
 
-Taking into consideration validation and verification is crucial. The
-code has to be easy to maintain et to upgrade.
+It's important to take into account validation and verification of the code. The code has to be easy to maintain and to upgrade.
 
-A community software must be as easy as possible to install, use and report
-bug, problems or suggestions.
-A real animation around the software must be organized with support to users.
+A community software must be as easy as possible to install, use and report bugs, problems or suggestions/new features. Strong software support must be in place to help the users.
 
-\textbf{A team or community creating a service, a platform or an
-  infrastructure}
+\textbf{A team or community creating a service, a platform or an infrastructure}
 
-The main expectation is here the disponibility of the service and
-insure security for users.
+The main expectation is availability, reliability and security of the service or platform for users and operators.
 
-\textbf{A team / community developing software in an industrial
-  context}
+\textbf{A team / community developing software in an industrial context}
 
-In the case of industrial context, expectations can vary depending of
-the contract between academic researchers and compagny.
+In the case of industrial context, expectations can vary depending of the contract between academic researchers and the company.
 
 \subsubsection{Layer by layer in the software stack}
 
-For this categorization, the point of view is more a user point of
-view than a developer point of view.
+Regarding this categorization, the user point of view supersedes the developer point of view.
 
 \textbf{A scientific infrastructure}
 
-A scientific infrastructure as described in \cite{hinsen2019} is by
-definition a software used in another software. It is not a standalone
-code.
+A scientific infrastructure, as described in \cite{hinsen2019}, is by definition a software used by other software. That is, it's not a standalone code. Therefore it must be easy to install and to interface/integrate with other software.
 
-It must therefore be easy to install, and easy to interface with
-another software.
-Users expect that this type of software are robust and with a
-sufficient sustainability because it is often the foundation of their code.
+Users expect that this type of software to be robust and with a sufficient sustainability since it's often the foundation of their own code.
 
 \textbf{A domain specific tool}
 
-A domain specific tool is close to a community software. It must be
-easy to install on different operating systems, and easy to use. It
-should have good retrocompatibility.
-
-It must also be easy to cite. It is important for users to be able to
-know precisely what the software does without having to read the source. 
+A domain specific tool is similar to that of a community software. It must be easy to install on different operating systems and easy to use. It should have good retro-compatibility. It should be easy to cite. It's important for users to be able to know precisely what the software does without having to read the source. 
 
 \textbf{A project specific code}
 
-A project specific code is close to a personal or a team code. It has
-a important role
-for reproductibility. It must be easily citable and archive for
-sustainibility reasons.
-
-It often depends of scientific infrastructures.
+A project specific code has similar characteristics and requirements to that of a single person or team developing the code. Reproducibility plays an important role. It must be easily citable and archived for sustainability reasons. It often depends on the scientific infrastructures.

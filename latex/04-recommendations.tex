@@ -54,7 +54,7 @@ The case of individual development of analysis script and workflows (Table~\ref{
 In the case of software type ``Library'', we add packaging and code deployment to the common attributes as listed in Table \ref{tab:rs_recc02} (c.f. RS lifecycle diagram \ref{fig:rslifecycle} box 5).
 
 \begin{center}
-\begin{table}
+\begin{table}[h]
   \small
   \begin{tabular}{|p{0.65\linewidth}|p{0.35\linewidth}|} \hline
 
@@ -76,7 +76,7 @@ In the case of software type ``Library'', we add packaging and code deployment t
 The case for a team working on a project on analysis script and workflows, there is an increase in responsibility, as such it's recommended to add support that includes the reporting and solving bugs and source code hosting in common VCS repositories, as shown in Table \ref{tab:rs_recc03}. See RS lifecycle diagram \ref{fig:rslifecycle} boxes \textit{Maintenance} and \textit{Community Feedback}.
 
 \begin{center}
-\begin{table}
+\begin{table}[h]
   \small
   \begin{tabular}{|p{0.65\linewidth}|p{0.35\linewidth}|} \hline
 
@@ -100,7 +100,7 @@ The case of research software type ``Library'', the recommendation is to add tes
 See RS lifecycle diagram \ref{fig:rslifecycle} boxes \textit{Maintenance}, \textit{Community Feedback} and \textit{Testing/CICD}.
 
 \begin{center}
-\begin{table}
+\begin{table}[h]
   \small
   \begin{tabular}{|p{0.65\linewidth}|p{0.35\linewidth}|} \hline
 
@@ -127,7 +127,7 @@ See RS lifecycle diagram \ref{fig:rslifecycle} boxes \textit{Maintenance}, \text
 Table \ref{tab:rs_recc05} regards the development, deployment and operation of a service, we add recommendations related to further types of tests such as APIs and integration (when applicable). Furthermore, there are several Quality Attributes related to security such as the use of service certificates to encrypt endpoints, use of strong authentication and authorization mechanisms even in the case of limited access to the services. See RS lifecycle diagram \ref{fig:rslifecycle} boxes \textit{Maintenance}, \textit{Community Feedback} and \textit{Testing/CICD}.
 
 \begin{center}
-\begin{table}
+\begin{table}[h]
 
   \small
   \begin{tabular}{|p{0.65\linewidth}|p{0.35\linewidth}|} \hline
@@ -154,7 +154,7 @@ Table \ref{tab:rs_recc05} regards the development, deployment and operation of a
 This subsection describes the recommendations when a medium to large team is responsible for the development of Open Source Software for research. Thus, the increase in responsability with respect to the previous cases of smaller teams or individual researchers. We add Quality Attributes for more complete documentation, additional types of tests including security and peer code review, as shown in Table \ref{tab:rs_recc06}. See RS lifecycle diagram \ref{fig:rslifecycle} box \textit{Testing/CICD}.
 
 \begin{center}
-\begin{table}
+\begin{table}[h]
 
   \small
   \begin{tabular}{|p{0.65\linewidth}|p{0.35\linewidth}|} \hline
@@ -181,7 +181,7 @@ This subsection describes the recommendations when a medium to large team is res
 Table \ref{tab:rs_recc07} shows the case for a Framework or Application, it adds further types of testing such as scalability and development methodology called Test-Driven Development (TDD). See RS lifecycle diagram \ref{fig:rslifecycle} box \textit{Testing/CICD}.
 
 \begin{center}
-\begin{table}
+\begin{table}[h]
 
   \small
   \begin{tabular}{|p{0.65\linewidth}|p{0.35\linewidth}|} \hline
@@ -204,7 +204,7 @@ Table \ref{tab:rs_recc07} shows the case for a Framework or Application, it adds
 This subsection refers to a medium/large team developing an Open Source scientific research service or platform, that will be used by a large number of researchers, possibly from different fields. The list of Quality Attributes is significant with several types of tests including security, complete set of documentation, helpdesk for support and bug reporting. See RS lifecycle diagram \ref{fig:rslifecycle} boxes \textit{Maintenance}, \textit{Community Feedback} and \textit{Testing/CICD}.
 
 \begin{center}
-\begin{table}
+\begin{table}[h]
 
   \small
   \begin{tabular}{|p{0.65\linewidth}|p{0.35\linewidth}|} \hline
@@ -339,7 +339,7 @@ Documentation is of critical interest for software and cover many Quality Attrib
 The production of documentation is mostly manual but there are quite a few number of tools that help generate or produce it.
 
 \begin{center}
-\begin{table}
+\begin{table}[h]
 
   \small
   \begin{tabular}{|p{0.12\linewidth}|p{0.2\linewidth}|p{0.25\linewidth}|p{0.35\linewidth}|} \hline
@@ -428,7 +428,7 @@ Static code analysis contribute to Software quality, the relevant Quality Attrib
 There are many tools that can help to automate this analysis as part of CI/CD pipelines, they follow best practices and implement code conventions checking and well identified programming rules.
 
 \begin{center}
-\begin{table}
+\begin{table}[h]
 
   \small
   \begin{tabular}{|p{0.12\linewidth}|p{0.2\linewidth}|p{0.25\linewidth}|p{0.35\linewidth}|} \hline
@@ -472,7 +472,7 @@ Security is a critical topic especially for platforms and services, but as well 
 
 Some of the analysis tools include dynamic security analysis. Others, such as Splint (\url{http://www.splint.org/}, for C language) or  Bandit (\url{https://bandit.readthedocs.io/en/latest/} for Python language) can be used for static security code analysis.
 
-\subsubsection{Tranversal needs}
+\subsubsection{Transversal needs}
 
 The tools and services listed in the previous sections are not enough to produce high quality software. Training is crucial at different level (students, researchers, and even software developers), in order to promote best practices and a good use of the different tools and services.
 

@@ -1,4 +1,3 @@
-%% massimo: I added the following paragraph to introduce what we mean (or at least what I understood) about "perspectives" and then introduce the plot of the discussion.
 
 Perspectives regarding research software quality include many different aspects that researchers and the scientific community at large consider relevant when evaluating the quality of software used or developed in a particular research field. These aspects are all equally essential to ensure the credibility and reliability of the research results themselves while meeting the expectations of software users. Clearly, the different perspectives on the quality of research software can branch significantly based on the individuals using it, the type of software, and the context in which it is used.
 
@@ -6,14 +5,10 @@ In the following, we shall discuss perspectives according to two distinct points
 
 \subsection{Developers}
 
-% \miguel{Are the authors of the research SW obtaining an official acknowledgement of the value of their work? Does this have an impact on their career?}
-% \miguel{Which are the licenses available? Which one should the developer use? Are the developers free to pick any SW license, or is it their employer who picks it?}
-% \miguel{Does the developers of research SW have all the rights about the research SW they produce? Intellectual property (authoring), exploitation, re-use, re-licensing.}
-
 Research software is developed by different individuals e.g., academic researchers, research software engineers (\href{https://society-rse.org/}{RSE}s), as well as entities such as research departments in industries and academic laboratories, depending on the context and purpose of the software.
 
-The category \textit{research software developer} includes, but it is not limited to, the following:
-% \mdavid{we should link this with the user stories of section 3}
+Section~\ref{subsec:defrs} defines several categories of software development related to the context in which they are performed. Here, we refer to the category of  \textit{research software developer}, which includes, but is not limited to, the following:
+% \mdavid{we should link this with the user stories of section 3} -> Massimo: DONE
 
 \begin{itemize}
     \item \textbf{Academic Researchers and RSEs}: Researchers who develop software tools or applications to support their own research projects. Such software is often tailored to specific research needs and might be used extensively only in the research group or laboratory in which it originated. Increasingly, however, groups of academic researchers, in some cases with heterogeneous expertise, are collaborating within a laboratory or research project to build tools and software frameworks for their current research and to facilitate the study of other individuals or research groups. A virtuous example of research software that is widely used in academia and industry, resulting from the collaboration of European research groups with other international research players is \href{https://foundation.quantum-espresso.org/}{Quantum ESPRESSO}, a software suite for first-principles electronic-structure calculations and materials modeling, distributed under the \href{https://www.gnu.org/licenses/}{GNU General Public License}.
@@ -64,19 +59,14 @@ The access to the data used in the study is essential for reproducing results th
 However, users of research software should also recognize that exact reproducibility may not always be achievable due to some endogenous factors, such as data variability and different hardware-software platforms over time, or even due to exogenous factors related to the inherent randomness of the specific methodology used (e.g., Monte Carlo methods). Collaborative and transparent practices within the research community and between research software developers and the user community can help increase the culture of reproducibility by ensuring that results produced using research software are easily verifiable.
 
 \subsection{Service providers}
-
-% \miguel{Examples of service providers for research SW: Galaxy project, Jupyter lab, IEEE's Code Ocean, supercomputing infrastructures (BSC, and others), CERN data analysis platform, ...}
-% \mdavid{This is mentioned in section 4, and has to do with building packages/artifacts and publish them in a givven public repository of such atifacts} \miguel{Can the SW be put inside a container?}
-% \miguel{Are the developers providing timely updates (bug fixes, security updates)}
-% \cerlane{Question: Are we talking about service providers of the Infrastructure or research SW?}
+% \mdavid{This is mentioned in section 4, and has to do with building packages/artifacts and publish them in a givven public repository of such atifacts} 
 
 In this section, an \textit{external service provider} (or simply \textit{service provider}) refers to a company or organization that offers services to assist individual researchers and research entities in developing and releasing their research software. A service provider may offer either physical resources or software tools and infrastructures. Several service providers meet the needs of researchers and developers engaged in research software development. Examples include \href{https://github.com}{GitHub}, \href{https://zenodo.org/}{Zenodo}, and \href{https://slack.com}{Slack}, to mention a few. Many software developers use such external services to enhance collaboration, streamline software development, maintain and disseminate the software they developed. 
 
 However, although not every research software project needs to leverage services offered by external service providers, the possibility of relying on such services without worrying about the maintainability of the service itself is undoubtedly an excellent value for research software developers. For example, researchers often rely on cloud services, such as Amazon Web Services (\href{https://aws.amazon.com/}{AWS}) and Google Cloud Platform (\href{https://cloud.google.com/}{GCP}), to access scalable computing infrastructures using a pay-as-you-go service model in which customers are charged on the basis of their actual usage or consumption of a service, rather than paying upfront a fixed fee. These computing infrastructures are usually complex to manage and maintain, requiring specialized expertise and a consistent budget. Additionally, they provide flexibility in handling different workloads and optimizing resource utilization. Therefore, service providers are crucial actors to enable the development and execution of the software and the fruition of the results produced by the research software.
 
-External services that represent an added value for research software can materialize in various forms. The following are some particularly significant services.
-
-% \mdavid{some of these services are mentioned in section 4, please link with them}
+External services that represent an added value for research software can materialize in various forms. We refer the reader to Section~\ref{subsec:attributesrecomen}, for quality attributes recommendations related to services. The following are some particularly significant services.
+% \mdavid{some of these services are mentioned in section 4, please link with them} -> Massimo: DONE?
 
 \begin{itemize}
     \item \textbf{Code hosting and version control}. Examples are \href{https://github.com}{GitHub} and \href{https://about.gitlab.com/}{GitLab}, which offer version control, collaboration features (e.g., issue tracking), and code sharing. These platforms help to maintain a transparent development process.
@@ -93,4 +83,3 @@ External services that represent an added value for research software can materi
 There are also code review, training, and consultancy services for improving software development and maintenance. For example, \href{https://www.reviewboard.org/}{Code Review} facilitates code review processes to help maintain code quality, identify issues, and ensure that contributions meet established standards. \href{https://software-carpentry.org/}{Software Carpentry} provides workshops, training events, and educational resources to help researchers improve their software and data skills.
 
 Given the large number of potentially valuable services for research software, an open problem is the fragmentation of these external services, i.e., the phenomenon whereby various software services, tools, or platforms are distributed and heterogeneous, which often results in the parcelization of services with poor interoperability and increased access costs. On the other hand, research software developers who invest in a single set of services from a specific vendor may become locked into a particular platform or ecosystem, thus limiting their flexibility and interoperability and introducing difficulties in migrating to alternative solutions. These phenomena can have important practical implications for research software developers that could be overcome by building open and interoperable multi-service infrastructures for research software.
-

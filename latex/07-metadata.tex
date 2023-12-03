@@ -10,7 +10,7 @@ A number of schemas, vocabularies and ontologies describe software at different 
 
 Other schemas have been specialized for a given domamin. For example, the Software Ontology (SWO)\footnote{\url{http://purl.obolibrary.org/obo/swo.owl}} builds on the Open Biomedical Ontologies such as the Basic Formal Ontology \cite{spear2016functions} to describe software. These ontologies describe a thorough taxonomy of input and output types and formats, particular to the biomedical domain.
 
-Finally, other community initiatives have opted for a lightweight approach. Codemeta \cite{Boettigeral2017} aims at creating a minimal metadata schema for research software and code. It is based on two types from schema.org \cite{guha_schemaorg_2016}, namely \href{https://schema.org/SoftwareSourceCode}{SoftwareSourceCode} and \href{https://schema.org/SoftwareApplication}{softwareApplication}. In addition, the Codemeta initiative has aligned metadata schemas from many software registries and repositories,\footnote{\url{https://codemeta.github.io/crosswalk/}} making it easier to exchange records between them. Codemeta is one of the recommendations from the Scholarly infrastructures for research software~\cite{sirs_2019}, which calls for EU representatives to ``help establish a stable, long-term governance" for the vocabulary. Two different initiatives have already proposed Codemeta extensions to capture the semantics of software tools. The first one is Bioschemas,\footnote{\url{https://bioschemas.org/}} a collaborative community project aiming at adding structured markup to Life Science websites, which provides a profile (i.e., a recommendation of usage created on top of a schema.org type) for describing \href{https://bioschemas.org/profiles/ComputationalTool}{ComputationalTool}s. The second one is the Software Description Ontology \cite{garijo2019okg}, which extends Codemeta in with additional metadata fields to capture executable commands, configuration and limitations of a software component. 
+Finally, other community initiatives have opted for a lightweight approach. Codemeta \cite{Boettigeral2017} aims at creating a minimal metadata schema for research software and code. It is based on two types from schema.org \cite{guha_schemaorg_2016}, namely \href{https://schema.org/SoftwareSourceCode}{SoftwareSourceCode} and \href{https://schema.org/SoftwareApplication}{softwareApplication}. In addition, the Codemeta initiative has aligned metadata schemas from many software registries and repositories,\footnote{\url{https://codemeta.github.io/crosswalk/}} making it easier to exchange records between them. Codemeta is one of the recommendations from the Scholarly infrastructures for research software~\cite{sirs_2019}, which calls for EU representatives to ``help establish a stable, long-term governance" for the vocabulary. Two different initiatives have already proposed Codemeta extensions to capture the semantics of software tools. The first one is Bioschemas,\footnote{\url{https://bioschemas.org/}} a collaborative community project aiming at adding structured markup to Life Science websites, which provides a profile (i.e., a recommendation of usage created on top of a schema.org type) for describing \href{https://bioschemas.org/profiles/ComputationalTool}{ComputationalTool}s. The second one is the Software Description Ontology \cite{garijo2019okg}, which extends Codemeta with additional metadata fields to capture executable commands, configuration and limitations of a software component. 
 
 
 
@@ -18,11 +18,12 @@ Finally, other community initiatives have opted for a lightweight approach. Code
 
 %\dg{there are many other vocabularies for describing software. Some extend schema.org and codemeta. Some other profiles model i/o types. Mention them, and mention that codemeta is the current recommendation that has most community support. Repos are adopting such as InvenioRDM, ASCL for interoperating records. DOAP, all the efforts in codemeta, etc.}
 
-\subsection{The FAIR principles for Research Software (FAIR4RS)}\label{subsec:fair4rs}
+\subsection{The FAIR principles for Research Software (FAIR4RS)}
+\label{subsec:fair4rs}
 
 %\dg{maybe move this for an annex? I would like to elaborate on the recommendations that are also being pushed by the community. But that the relationship with quality is not always one to one. Also, there are existing recommendations and tools to help assess the fairness. But as for quality, we do this in the next section. Emphasize the importance of FAIR, and how it is shaping part of the EOSC ecosystem.}
 
-After the FAIR guiding principles for data were proposed \cite{wilkinson_fair_2016}, the scientific community has discussed how to adapt them to different research artefacts. The FAIR Principles for Research Software Working Group\footnote{\url{https://www.rd-alliance.org/groups/fair-research-software-fair4rs-wg}} was created in September 2021 by the Research Data Alliance to adapt the FAIR principles to reseaech software. As a result, \cite{chue_hong_neil_p_2022_6623556} summarizes the community discussion, defining the FAIR4RS principles as follows:
+After the FAIR guiding principles for data were proposed \cite{wilkinson_fair_2016}, the scientific community discussed how to adapt them to different research artifacts. The FAIR Principles for Research Software Working Group\footnote{\url{https://www.rd-alliance.org/groups/fair-research-software-fair4rs-wg}} was created in September 2021 by the Research Data Alliance to adapt the FAIR principles to research software. As a result, \cite{chue_hong_neil_p_2022_6623556} summarizes the community discussion, defining the FAIR4RS principles as follows:
 
 %Since research software and their associated research object (e.g., algorithms, workflows, etc.) is different from a data, and the FAIR principles for Research Software 
 
@@ -79,50 +80,107 @@ upon, or incorporated into other software).}
 
 \subsection{Mapping Quality Attributes to FAIR4RS}\label{subsec:fair4rs_fair}
 
-\dg{Daniel will finish this section on 30 nov. Also put which codemeta properties may help address the quality attribute}
-In this subsection, the relation or link between the FAIR4RS principles and the Quality Attributes
-show in Appendix \ref{appendix_qa} is represented in the following table:
+Many of the FAIR4RS principles described in Section \ref{subsec:fair4rs}  are tightly coupled with good practices for quality software and code. Table \ref{tab:cfs} aligns each of the FAIR4RS principles with  the quality attribute from show in Appendix \ref{appendix_qa}. For each alignment we provide a brief explanation justifying the rationale of our decision. 
 
-\textbf{F1} EOSC-SWRelMan-11, EOSC-SWRelMan-25
-
-\textbf{F1.1} EOSC-SWRelMan-05, EOSC-SWRelMan-33
-
-\textbf{F1.2} EOSC-SWRelMan-02, EOSC-SWRelMan-04, EOSC-SWRelMan-09
-
-\textbf{F2} EOSC-SWRelMan-11, EOSC-Qual-24, EOSC-SWRelMan-26, EOSC-SWRelMan-29, EOSC-SWRelMan-30
-
-\textbf{F3} EOSC-SWRelMan-11
-
-\textbf{F4} EOSC-SWRelMan-11
+%, suggesting which metadata fields from Codemeta (if any) may be relevant for addressing that quality attribute. 
 
 
-\textbf{A1} maybe EOSC-SWRelMan-01
+%In this subsection, the relation or link between the FAIR4RS principles and the Quality Attributes
+%show in Appendix \ref{appendix_qa} is represented in the following table:
+\begin{table}[]
+\footnotesize
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{\begin{tabular}[c]{@{}l@{}}FAIR4RS\\  principle\end{tabular}} &
+  \textbf{\begin{tabular}[c]{@{}l@{}}Quality \\ Attribute\end{tabular}} &
+  \textbf{Rationale} \\ \hline
+F1 &
+  \begin{tabular}[c]{@{}l@{}}EOSC-SWRelMan-11,\\ EOSC-SWRelMan-13, \\ EOSC-SWRelMan-25,\end{tabular} &
+  \begin{tabular}[c]{@{}l@{}}A codemeta file with metadata of a software component should be \\ appropriately identified and tied to its corresponding software project.\\ A software project package should be uploaded to a public registry. \\ The Codemetadata file should contain the software identifier and its \\ corresponding version \\ Checksums must be used to identify each software binary file uniquely\end{tabular} \\ \hline
+F1.1 &
+  \begin{tabular}[c]{@{}l@{}}EOSC-SWRelMan-05, \\ EOSC-SWRelMan-33\end{tabular} &
+  \begin{tabular}[c]{@{}l@{}}Different branches should be used to address code changes with \\ different scope. \\ Each branch should be identified uniquely within a code repository. \\ The documentation associated to a project must have a persistent \\ identifier\end{tabular} \\ \hline
+F1.2 &
+  \begin{tabular}[c]{@{}l@{}}EOSC-SWRelMan-02, \\ EOSC-SWRelMan-04,\\ EOSC-SWRelMan-06, \\ EOSC-SWRelMan-09\end{tabular} &
+  \begin{tabular}[c]{@{}l@{}}A version control system should exist for the software project code, \\ with a main identified branch where new features are merged. \\ A strategy for transitioning between version releases should be \\ in place.\\ Semantic versioning should be used to uniquely define each \\ code release.\end{tabular} \\ \hline
+F2 &
+  \begin{tabular}[c]{@{}l@{}}EOSC-SWRelMan-11,\\ EOSC-SWRelMan-26, \\ EOSC-SWRelMan-29, \\ EOSC-SWRelMan-30,\\ EOSC-SWRelMan-31,\\ EOSC-SWRelMan-32,\\ EOSC-Qual-24\end{tabular} &
+  \begin{tabular}[c]{@{}l@{}}The software project should contain enough information for a reader \\ to verify its objectives. A Codemeta file or citation file formal file \\ should describe relevant project metadata.\\ Documentation should be used to describe the research software \\ component, using version control to track differences between \\ software versions. \\ A README file should be provided describing the project with \\ metadata in a human-readable format (e.g., installation instructions, \\ authors, citation, etc.)\end{tabular} \\ \hline
+F3 &
+  EOSC-SWRelMan-11 &
+  \begin{tabular}[c]{@{}l@{}}A Codemeta file should contain an identifier of the software project \\ it describes\end{tabular} \\ \hline
+F4 &
+  EOSC-SWRelMan-11 &
+  \begin{tabular}[c]{@{}l@{}}A Codemeta file should be provided to facilitate metadata \\ propagation when releasing code (e.g., storing the code \\ in Zenodo)\end{tabular} \\ \hline
+A1 &
+  EOSC-SWRelMan-01 &
+  The software project should be publicly available online \\ \hline
+A1.1 &
+  EOSC-SWRelMan-01 &
+  The software project should be publicly available online \\ \hline
+A1.2 &
+  EOSC-SWTest-18 &
+  \begin{tabular}[c]{@{}l@{}}An authentication mechanism should be enabled for the \\ target service\end{tabular} \\ \hline
+A2 &
+   &
+   \\ \hline
+I1 &
+  \begin{tabular}[c]{@{}l@{}}EOSC-Qual-29\\ EOSC-SWTest-01\end{tabular} &
+  \begin{tabular}[c]{@{}l@{}}The software component should comply with internationally \\ recognized standards.\\ Code should follows standard best practices\end{tabular} \\ \hline
+I2 &
+   &
+   \\ \hline
+R1 &
+  \begin{tabular}[c]{@{}l@{}}EOSC-SWRelMan-11,\\ EOSC-SWRelMan-29\end{tabular} &
+  \begin{tabular}[c]{@{}l@{}}A codemeta file and documentation should describe the software \\ project with accurate, relevant attributes\end{tabular} \\ \hline
+R1.1 &
+  \begin{tabular}[c]{@{}l@{}}EOSC-SWRelMan-10, \\ EOSC-SWRelMan-34, \\ EOSC-SrvOps-01, \\ EOSC-SrvOps-02\end{tabular} &
+  \begin{tabular}[c]{@{}l@{}}A license should be associated with the software project, \\ especially if the project is open source. The documentation of a \\ software project should also  provide a license.\\ In case a service is deployed, an acceptable usage policy and a\\  terms of use policy should be clearly defined\end{tabular} \\ \hline
+R1.2 &
+  \begin{tabular}[c]{@{}l@{}}EOSC-SWRelMan-29,\\ EOSC-SWRelMan-30\end{tabular} &
+  \begin{tabular}[c]{@{}l@{}}Software documentation should motivate the rationale and \\ organizations behind the development of a software project, \\ as well as related initiatives it may have  been derived from.\end{tabular} \\ \hline
+R2 &
+  \begin{tabular}[c]{@{}l@{}}EOSC-SWTest-25\\ EOSC-SWRelMan-12\end{tabular} &
+  \begin{tabular}[c]{@{}l@{}}Third party dependencies should be documented and checked \\ for security flaws.\\ A software project should be adequately packaged and installed, \\ containing all the third party dependencies needed for doing so.\end{tabular} \\ \hline
+R3 &
+  \begin{tabular}[c]{@{}l@{}}EOSC-Qual-29, \\ EOSC-SWRelMan-32\end{tabular} &
+  \begin{tabular}[c]{@{}l@{}}A software project should comply with internationally adopted \\ standards. \\ Project documentation should be adapted to the domain-relevant\\ community.\end{tabular} \\ \hline
+\end{tabular}
+\caption{Mapping FAIR4RS to software quality attributes}
+\label{tab:cfs}
+\end{table}
 
-\textbf{A1.1} maybe EOSC-SWRelMan-01
+%\textbf{F1} EOSC-SWRelMan-11, EOSC-SWRelMan-25
 
-\textbf{A1.2} EOSC-SWTest-18
+%\textbf{F1.1} EOSC-SWRelMan-05, EOSC-SWRelMan-33
 
-\textbf{A2}
+%\textbf{F1.2} EOSC-SWRelMan-02, EOSC-SWRelMan-04, EOSC-SWRelMan-09
 
-\textbf{I1} EOSC-Qual-29
+%\textbf{F2} EOSC-SWRelMan-11, EOSC-Qual-24, EOSC-SWRelMan-26, EOSC-SWRelMan-29, EOSC-SWRelMan-30
 
-\textbf{I2} maybe EOSC-SWTest-16
+%\textbf{F3} EOSC-SWRelMan-11
 
-\textbf{R1}
-
-\textbf{R1.1} EOSC-SWRelMan-10, EOSC-SWRelMan-34, EOSC-SrvOps-01, EOSC-SrvOps-02
-
-\textbf{R1.2} EOSC-Qual-27, EOSC-SWTest-20
-
-\textbf{R2}
-
-\textbf{R3} EOSC-Qual-29, EOSC-SWRelMan-32
-
-\dg{need justification, and a way of knowing which principle it was. Maybe the justification can be added to the table, while a summary should follow}
-
-\dg{finally, I would like to reflect on: are there principles that maybe should be reported but are not aligned with the quality attributes we identified?}
+%\textbf{F4} EOSC-SWRelMan-11
 
 
-% \textcolor{red}{DG: To be developed further once the quality metrics and criteria is clear. The scope of this section is not
-% defining metadata for software, but stating how capturing these metadata may help addressing some of the quality metrics.
-% For example, capturing schema:keywords may help having a complete description (not the greatest example, I know).}
+%\textbf{A1} maybe EOSC-SWRelMan-01
+
+%\textbf{A1.1} maybe EOSC-SWRelMan-01
+
+%\textbf{A1.2} EOSC-SWTest-18
+
+%\textbf{A2}
+
+%\textbf{I1} EOSC-Qual-29
+
+%\textbf{I2} maybe EOSC-SWTest-16
+
+%\textbf{R1}
+
+%\textbf{R1.1} EOSC-SWRelMan-10, EOSC-SWRelMan-34, EOSC-SrvOps-01, EOSC-SrvOps-02
+
+%\textbf{R1.2} EOSC-Qual-27, EOSC-SWTest-20
+
+%\textbf{R2}
+
+%\textbf{R3} EOSC-Qual-29, EOSC-SWRelMan-32

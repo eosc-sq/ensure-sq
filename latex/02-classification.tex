@@ -14,11 +14,19 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 A significant notion in software engineering is \textit{quality}, understood as a series of desirable particularities that are met in \textit{good} computer programs, meaning that they are well adapted to their purpose, accurate, highly available, or any other property which makes them excellent.
+
 Whereas this is a concept which is easy to understand, arriving at a consensus on how to properly define it, is a significantly more complex task. Indeed, the problem can be address from plenty of different perspectives, each of them giving more or less importance to some of the particularities.
 
 It is not the goal of this report to propose any particular definitions, but to analyse how the problem has been addressed in relevant works in the literature and how the characteristics can be classified as attributes. As such, in Section \ref{subsec:sqm_survey} we detail the method used for a survey of the literature.
 
-In Section~\ref{subsect:sqchar} we review what are, according to the literature, the \textit{characteristics} that can be related to good software. The characteristics can be related to quality from very different points of view (ranging from metrics of the source code to service operability, just as an example). These  are classified as \textit{attributes} in Section~\ref{subsec:SW_quality_attributes}.
+In Section~\ref{subsect:sqchar} we review what are, according to the literature, the \textit{Quality Characteristics} that can be related to good software. The characteristics can be related to quality from very different points of view (ranging from metrics of the source code to service operability, just as an example). These are classified as \textit{Quality Attributes and Metrics} in Section~\ref{subsec:SW_quality_attributes}.
+
+It's quite important to define the notion of \textbf{Verification and Validation} (\textbf{V\&V}) of the \textit{Quality Attributes and Metrics}, since this is the cornerstone to prove the correctness and and user requirements satisfaction of a given Software or service. The following definitions from 610.12-1990 - IEEE Standard Glossary of Software Engineering Terminology~\cite{ieee610} apply:
+
+\begin{itemize}
+    \item Software Validation: The process of evaluating software during or at the end of the development process to determine whether it satisfies specified requirements.
+    \item Software Verification: The process of evaluating software to determine whether the products of a given development phase satisfy the conditions imposed at the start of that phase.
+\end{itemize}
 
 Although reproducibility does not explicitly appear as a characteristic of the software itself in our survey, it is a fundamental requirement for research software. See Section~\ref{subsec:defrs} for our definitions and context of \textit{research software}. Indeed, the Scientific Method is, after all, based on the possibility of being able to repeat the experiments and refuting them to build up new knowledge. Specifically for research software, we need to consider its reproducibility as a characteristic of quality.
 
@@ -38,7 +46,7 @@ We shall therefore, use these definitions in this report and put them in the con
 
 In Section~\ref{sec:user_repro_results} we discuss the users perspectives regarding reproducibility of research software.
 
-\subsection{Software Quality models: survey}
+\subsection{Software Quality Models: survey}
 \label{subsec:sqm_survey}
 
 The classification into characteristics and attributes is based on a thorough review of the literature, in order to avoid biases on the classification and recommendations with the personal preferences or pre-established beliefs of the members of the \textit{sub-group}. We followed the protocol and methodology proposed by Kitchenham and Charters~\cite{keele2007guidelines} consisting of the following steps:
@@ -93,7 +101,7 @@ The classification into characteristics and attributes is based on a thorough re
 
 The list of relevant articles obtained by this procedure, allowed us to defined a list of characteristics and attributes which are presented in the following sections.
 
-\subsection{Software Quality characteristics}
+\subsection{Software Quality Characteristics}
 \label{subsect:sqchar}
 
 We identified a list of significant quality characteristics mainly from three sources:
@@ -169,14 +177,14 @@ We ended up with a list of 25 significant quality characteristics from the three
     \item \textbf{Testability}; degree of effectiveness and efficiency with which test criteria can be established for a system, product, or component. Then the tests might be run to determine whether the criteria have been met~\cite{iso_25010_2011_2017}.
 \end{enumerate}
 
-\subsection{Software Quality attributes and metrics}
+\subsection{Software Quality Attributes and Metrics}
 \label{subsec:SW_quality_attributes}
 
-The software quality characteristics which are classified in the previous section can actually be seen from very different points of view, thus allowing for a different type of classification of characteristics in different classes, that we will refer to as \textit{attributes}.
+The \textit{Software Quality Characteristics} which are classified in the previous section can actually be seen from very different points of view, thus allowing for a different type of classification of characteristics in different classes, that we will refer to as \textit{Quality Attributes and Metrics}.
 
-The procedure we followed was to identify a total of 241 quality attributes, that were gathered into a single table. We found that, depending on the source, the same attribute could be found under different names, but with a very similar definition of meaning. Those were merged to prevent duplicates.
+The procedure we followed was to identify a total of 241 \textit{Quality Attributes and Metrics}, that were gathered into a single table. We found that, depending on the source, the same attribute or metric could be found under different names, but with a very similar definition of meaning. Those were merged to prevent duplicates.
 
-We ended up with 132 quality attributes, which the reader can find in the Appendix~\ref{appendix_qa}, it includes the references to the original articles used. We considered attributes which objectively could be treated as \textit{metrics}. The attributes were subdivided into six categories and, for each metric or attribute, a new codename was proposed in order to have a coherent naming convention throughout the document. The following categories and their codenames are proposed:
+We ended up with 132 \textit{Quality Attributes and Metrics}, it includes the references to the original articles used. We considered attributes which objectively could be treated as \textit{metrics}. The attributes were subdivided into six categories and, for each metric or attribute, a new codename was proposed in order to have a coherent naming convention throughout the document. The following categories and their codenames are proposed:
 
 \begin{itemize}
     \item Source Code Metrics (\textbf{EOSC-SCMet}): 20 metrics. Metrics related to the source code, such as the number of lines of code or the number of assertions, for example.
@@ -185,7 +193,7 @@ We ended up with 132 quality attributes, which the reader can find in the Append
 
     \item Qualitative Attributes (\textbf{EOSC-Qual}): 30 attributes. Qualitative attributes are obtained in general through surveys to, or some manual analysis by sofware developers, administrators, or users. In general, these are not possible to automate and are in general subjetive.
 
-    \item DevOps - Software Release and Management Attributes (\textbf{EOSC-SWRelMan}): 34 attributes. Largely based on the \textit{DevOps} methodology, they can be automated for verification. Although the possibility of having code reviews in the software development process is a manual step.
+    \item DevOps - Software Release and Management Attributes (\textbf{EOSC-SWRelMan}): 34 attributes. Largely based on the \textit{DevOps} methodology, they can be automated for Verification \& Validation. Although the possibility of having code reviews in the software development process is a manual step.
 
     \item DevOps - Testing Attributes (\textbf{EOSC-SWTest}): 25 attributes. Again based in DevOps, these are related to software testing and can also can be automatically verified. For example, whether integration tests are used in the system.
 

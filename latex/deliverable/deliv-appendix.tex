@@ -3,13 +3,13 @@
 \textbf{EOSC-SCMet-01}: Size of the software application: Maintainability.
 
 \begin{itemize}
-    \item The software product's rebuild value is estimated from the number of lines of code. This value is calculated in man-years using the  Programming Languages Table of the Software Productivity Research Software Productivity Research \cite{baggen_standardized_2012}.
+    \item The software product's rebuild value is estimated from the number of lines of code. This value is calculated in man-years using the Programming Languages Table of the Software Productivity Research Software Productivity Research \cite{baggen_standardized_2012}.
 \end{itemize}
 
 \textbf{EOSC-SCMet-02}: \% of redundant code: Maintainability, Modifiability.
 
 \begin{itemize}
-    \item A line of code is considered redundant if it is part of a code fragment (larger than 6 lines of code) that is repeated literally (modulo  white-space) in at least one other location in the source code \cite{baggen_standardized_2012}.
+    \item A line of code is considered redundant if it is part of a code fragment (larger than 6 lines of code) that is repeated literally (modulo white-space) in at least one other location in the source code \cite{baggen_standardized_2012}.
 \end{itemize}
 
 \textbf{EOSC-SCMet-03}: \# Lines of code: Maintainability.
@@ -27,7 +27,7 @@
 \textbf{EOSC-SCMet-05}: Cyclomatic Complexity: Maintainability.
 
 \begin{itemize}
-    \item Cyclomatic complexity (i.e.,  the number of linearly independent paths through a program's source code) of the whole software component or modules/components/classes/functions/methods. Cyclomatic complexity is created by calculating the number of different code paths in the flow of the program. A program that has complex control flow requires more tests to achieve good code coverage and is less maintainable \cite{srisopha_software_2018,montagud_systematic_2012,baggen_standardized_2012,nagappan_early_2005}.
+    \item Cyclomatic complexity (i.e.,  the number of linearly independent paths through a program's source code) of the whole software component or modules/components/classes/functions/methods. Cyclomatic complexity is created by calculating the number of different code paths in the flow of the program. A program that has complex control flow requires more tests to achieve good code coverage and is less maintainable \cite{srisopha_software_2018,montagud_systematic_2012,baggen_standardized_2012,nagappan_early_2005,ogasawara_experiences_1996}.
 \end{itemize}
 
 \textbf{EOSC-SCMet-06}: Cyclomatic Complexity test/source ratio: Maintainability.
@@ -102,23 +102,25 @@
     \item SLOC of the whole project with respect to the minimum SLOC of its components \cite{nagappan_early_2005}.
 \end{itemize}
 
-\textbf{EOSC-SCMet-18}: Number of include files: Maintainability.
+% \mdavid This is basically modularity EOSC-SCMet-09 already referenced there
+% \textbf{EOSC-SCMet-18}: Number of include files: Maintainability.
 
-\begin{itemize}
-    \item Number of imported modules \cite{ogasawara_experiences_1996}.
-\end{itemize}
+% \begin{itemize}
+%     \item Number of imported modules \cite{ogasawara_experiences_1996}.
+% \end{itemize}
 
-\textbf{EOSC-SCMet-19}: Number of conditions per module: Maintainability.
+% \mdavid This is Cyclomatic complexity, will be reference there
+% \textbf{EOSC-SCMet-19}: Number of conditions per module: Maintainability.
 
-\begin{itemize}
-    \item Number of conditions per module \cite{ogasawara_experiences_1996}.
-\end{itemize}
+% \begin{itemize}
+%     \item Number of conditions per module \cite{ogasawara_experiences_1996}.
+% \end{itemize}
 
-\textbf{EOSC-SCMet-20}: Number of loops per module: Maintainability.
+% \textbf{EOSC-SCMet-20}: Number of loops per module: Maintainability.
 
-\begin{itemize}
-    \item Number of loops per module \cite{ogasawara_experiences_1996}.
-\end{itemize}
+% \begin{itemize}
+%     \item Number of loops per module \cite{ogasawara_experiences_1996}.
+% \end{itemize}
 
 \subsection{Time and Performance Metrics: EOSC-TMet}
 
@@ -214,36 +216,24 @@
     \item An active community is behind the software product \cite{aberdour_achieving_2007}.
 \end{itemize}
 
-% \mdavid this is a Characteristic from the ISO25010 product quality characteristics and subcharacteristics we did not list any "Characteristic from the ISO25010 Quality in use characteristics and subcharacteristics" in our document or deliverable in the section of Quality Characteristics thus we are removing this as QAttribute
 \textbf{EOSC-Qual-05}: User satisfaction: Attractiveness.
 
 \begin{itemize}
     \item Degree to which a user interface enables pleasing and satisfying interaction for the user \cite{iso_25010_2011_2017,zuser_software_2005}.
 \end{itemize}
 
-% \mdavid this is a Characteristic from the ISO25010 product quality characteristics and subcharacteristics we did not list any "Characteristic from the ISO25010 Quality in use characteristics and subcharacteristics" in our document or deliverable in the section of Quality Characteristics thus we are removing this as QAttribute
 \textbf{EOSC-Qual-06}: Usability: Usability.
 
 \begin{itemize}
     \item Measured using user surveys. However, it may also be assessed in terms of calls upon support staff, e.g. number of requests for help or support staff time expended. Also, degree to which a product or system can be used by specified users to achieve specific goals with effectiveness, efficiency and satisfaction in a specified context of use \cite{iso_25010_2011_2017,zuser_software_2005,gillies_modelling_1992,boehm_quantitative_1976}.
 \end{itemize}
 
-% \mdavid this is a Characteristic from the ISO25010 product quality characteristics and subcharacteristics we did not list any "Characteristic from the ISO25010 Quality in use characteristics and subcharacteristics" in our document or deliverable in the section of Quality Characteristics thus we are removing this as QAttribute
 \textbf{EOSC-Qual-07}: Reliability: Reliability.
 
 \begin{itemize}
     \item The reliability of systems from the user's point of view is concerned with three things: (1) How often does it go wrong? (2) How long is it unavailable? (3) Is any information lost at recovery? Also, degree to which a system, product or component performs specific functions under specified conditions for a specified period of time \cite{iso_25010_2011_2017,gillies_modelling_1992,boehm_quantitative_1976}.
 \end{itemize}
 
-% \mdavid this is a Characteristic from the ISO25010 Quality in use characteristics and subcharacteristics we did not list any "Characteristic from the ISO25010 Quality in use characteristics and subcharacteristics" in our document or deliverable in the section of Quality Characteristics thus we are removing this as QAttribute
-
-% \textbf{EOSC-Qual-08}: Efficiency: Time behavior, Performance.
-
-% \begin{itemize}
-%     \item Critical resources needed by the operator to carry out the critical tasks can be monitored e.g. if staff time is the critical resource, the elapsed time taken is the best measure of efficiency. On the other hand, if the computer disk storage is critical, then the percentage of disk space required to carry out the task is the best measure available \cite{iso_25010_2011_2017,gillies_modelling_1992,boehm_quantitative_1976}.
-% \end{itemize}
-
-% \mdavid this is a Characteristic from the ISO25010 product quality characteristics and subcharacteristics we did not list any "Characteristic from the ISO25010 Quality in use characteristics and subcharacteristics" in our document or deliverable in the section of Quality Characteristics thus we are removing this as QAttribute
 \textbf{EOSC-Qual-08}: Portability: Portability.
 
 \begin{itemize}

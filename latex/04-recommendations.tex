@@ -7,14 +7,13 @@ Table~\ref{tab:rs_recc00} shows the list of Quality Attributes that are common t
 
 These attributes are about documentation, open source code including a license, visible description about intellectual property that is important to establish ownership and scientific recognition. They also include avoiding redundant code and addressing security concerns (e.g. no world writable files and directories).
 
-\begin{center}
 \begin{table}[h]
-  \small
-  \begin{tabular}{|p{0.65\linewidth}|p{0.35\linewidth}|} \hline
+  \centering
+  \scriptsize
+  \begin{tabular}{|p{0.55\linewidth}|p{0.3\linewidth}|} \hline
 
     \textbf{RS Stack} & \textbf{RS Type} \\ \hline \hline
-    \textbf{All} &
-    \textbf{All} \\ \hline \hline
+    \textbf{All} & \textbf{All} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-SCMet-02}: \% of redundant code} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-SCMet-10}: Number of comments} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-Qual-27}: Intellectual Property} \\ \hline
@@ -30,38 +29,34 @@ These attributes are about documentation, open source code including a license, 
   \caption{Recommended common Quality Attributes.}
   \label{tab:rs_recc00}
 \end{table}
-\end{center}
 
 \subsubsection{User story: Individual development}
 
 In the case of individual development of analysis script and workflows (Table~\ref{tab:rs_recc01}), the recommendations are the common attributes listed in Table~\ref{tab:rs_recc00}.
 
-\begin{center}
 \begin{table}[h]
-  \small
-  \begin{tabular}{|p{0.65\linewidth}|p{0.35\linewidth}|} \hline
+  \centering
+  \scriptsize
+  \begin{tabular}{|p{0.55\linewidth}|p{0.3\linewidth}|} \hline
 
     \textbf{RS Stack} & \textbf{RS Type} \\ \hline \hline
-    4: \textbf{Project specific code} &
-    4: \textbf{Analysis script and workflows} \\ \hline \hline
+    4: \textbf{Project specific code} & 4: \textbf{Analysis script and workflows} \\ \hline
     \multicolumn{2}{|l|}{\textbf{All common Quality Attributes}: Table \ref{tab:rs_recc00}} \\ \hline
 
   \end{tabular}
   \caption{Recommended Quality Attributes, individual development, Analysis script and workflows.}
   \label{tab:rs_recc01}
 \end{table}
-\end{center}
 
 In the case of software type ``Library'', we add packaging and code deployment to the common attributes as listed in Table \ref{tab:rs_recc02} (c.f. RS lifecycle diagram \ref{fig:rslifecycle} box 5).
 
-\begin{center}
 \begin{table}[h]
-  \small
-  \begin{tabular}{|p{0.65\linewidth}|p{0.35\linewidth}|} \hline
+  \centering
+  \scriptsize
+  \begin{tabular}{|p{0.55\linewidth}|p{0.3\linewidth}|} \hline
 
     \textbf{RS Stack} & \textbf{RS Type} \\ \hline \hline
-    4: \textbf{Project specific code} &
-    1: \textbf{Library} \\ \hline \hline
+    4: \textbf{Project specific code} & 1: \textbf{Library} \\ \hline
     \multicolumn{2}{|l|}{\textbf{All common Quality Attributes}: Table \ref{tab:rs_recc00}} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-12}: Packaging} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-15}: Code deployment} \\ \hline
@@ -70,20 +65,18 @@ In the case of software type ``Library'', we add packaging and code deployment t
   \caption{Recommended Quality Attributes, individual development, library.}
   \label{tab:rs_recc02}
 \end{table}
-\end{center}
 
 \subsubsection{User story: Team Project}
 
 In the case of a team working on a project on analysis script and workflows, there is an increase in responsibility. As such it's recommended to add support that includes the reporting and solving bugs and source code hosting in common VCS repositories, as shown in Table \ref{tab:rs_recc03}. See RS lifecycle diagram \ref{fig:rslifecycle} boxes \textit{Maintenance} and \textit{Community Feedback}.
 
-\begin{center}
 \begin{table}[h]
-  \small
-  \begin{tabular}{|p{0.65\linewidth}|p{0.35\linewidth}|} \hline
+  \centering
+  \scriptsize
+  \begin{tabular}{|p{0.55\linewidth}|p{0.3\linewidth}|} \hline
 
     \textbf{RS Stack} & \textbf{RS Type} \\ \hline \hline
-    4: \textbf{Project specific code} &
-    4: \textbf{Analysis script and workflows} \\ \hline \hline
+    4: \textbf{Project specific code} & 4: \textbf{Analysis script and workflows} \\ \hline
     \multicolumn{2}{|l|}{\textbf{All from User story: Individual development}: Table \ref{tab:rs_recc01}} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-TMet-02}: \# Resolved bugs} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-TMet-03}: \# Open bugs} \\ \hline
@@ -95,19 +88,17 @@ In the case of a team working on a project on analysis script and workflows, the
   \caption{Recommended Quality Attributes, team project, analysis script and workflows.}
   \label{tab:rs_recc03}
 \end{table}
-\end{center}
 
 The case of research software type ``Library'', the recommendation is to add testing with respect to the previous cases, this is shown in table \ref{tab:rs_recc04}.
 See RS lifecycle diagram \ref{fig:rslifecycle} boxes \textit{Maintenance}, \textit{Community Feedback} and \textit{Testing/CICD}.
 
-\begin{center}
 \begin{table}[h]
-  \small
-  \begin{tabular}{|p{0.65\linewidth}|p{0.35\linewidth}|} \hline
+  \centering
+  \scriptsize
+  \begin{tabular}{|p{0.55\linewidth}|p{0.3\linewidth}|} \hline
 
     \textbf{RS Stack} & \textbf{RS Type} \\ \hline \hline
-    4: \textbf{Project specific code} &
-    1: \textbf{Library} \\ \hline \hline
+    4: \textbf{Project specific code} & 1: \textbf{Library} \\ \hline
     \multicolumn{2}{|l|}{\textbf{All from User story: Individual development}: Table \ref{tab:rs_recc02}} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-TMet-02}: \# Resolved bugs} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-TMet-03}: \# Open bugs} \\ \hline
@@ -123,19 +114,16 @@ See RS lifecycle diagram \ref{fig:rslifecycle} boxes \textit{Maintenance}, \text
   \caption{Recommended Quality Attributes, team project, library.}
   \label{tab:rs_recc04}
 \end{table}
-\end{center}
 
 Table \ref{tab:rs_recc05} regards the development, deployment and operation of a service. We add recommendations related to further types of tests such as APIs and integration (when applicable). Furthermore, there are several Quality Attributes related to security such as the use of service certificates to encrypt endpoints, use of strong authentication and authorization mechanisms even in the case of limited access to the services. See RS lifecycle diagram \ref{fig:rslifecycle} boxes \textit{Maintenance}, \textit{Community Feedback} and \textit{Testing/CICD}.
 
-\begin{center}
 \begin{table}[h]
-
-  \small
-  \begin{tabular}{|p{0.65\linewidth}|p{0.35\linewidth}|} \hline
+  \centering
+  \scriptsize
+  \begin{tabular}{|p{0.55\linewidth}|p{0.3\linewidth}|} \hline
 
     \textbf{RS Stack} & \textbf{RS Type} \\ \hline \hline
-    4: \textbf{Project specific code} &
-    5: \textbf{Services and platforms} \\ \hline \hline
+    4: \textbf{Project specific code} & 5: \textbf{Services and platforms} \\ \hline
     \multicolumn{2}{|l|}{\textbf{All from User story: team project, library}: Table \ref{tab:rs_recc04}} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-05}: API testing} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-06}: Integration testing} \\ \hline
@@ -148,21 +136,18 @@ Table \ref{tab:rs_recc05} regards the development, deployment and operation of a
   \caption{Recommended Quality Attributes, team project, services and platforms.}
   \label{tab:rs_recc05}
 \end{table}
-\end{center}
 
 \subsubsection{User story: Team OSS}
 
 This subsection describes the recommendations when a medium to large team is responsible for the development of Open Source Software for research. Thus, the increase in responsibility with respect to the previous cases of smaller teams or individual researchers. We add Quality Attributes for more complete documentation, additional types of tests including security and peer code review, as shown in Table \ref{tab:rs_recc06}. See RS lifecycle diagram \ref{fig:rslifecycle} box \textit{Testing/CICD}.
 
-\begin{center}
 \begin{table}[h]
-
-  \small
-  \begin{tabular}{|p{0.65\linewidth}|p{0.35\linewidth}|} \hline
+  \centering
+  \scriptsize
+  \begin{tabular}{|p{0.55\linewidth}|p{0.3\linewidth}|} \hline
 
     \textbf{RS Stack} & \textbf{RS Type} \\ \hline \hline
-    3 and 2: \textbf{Domain specific tools} and  \textbf{Scientific infrastructure} &
-    1: \textbf{Library} \\ \hline \hline
+    3 and 2: \textbf{Domain specific tools} and  \textbf{Scientific infrastructure} & 1: \textbf{Library} \\ \hline
     \multicolumn{2}{|l|}{\textbf{All from User story: Team Project}: Table \ref{tab:rs_recc04}} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-TMet-04}: Defect rates} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-08}: Code review} \\ \hline
@@ -177,19 +162,16 @@ This subsection describes the recommendations when a medium to large team is res
   \caption{Recommended Quality Attributes, team OSS, library.}
   \label{tab:rs_recc06}
 \end{table}
-\end{center}
 
 Table \ref{tab:rs_recc07} shows the case for a Framework or Application, it adds further types of testing such as scalability and development methodology called Test-Driven Development (TDD). See RS lifecycle diagram \ref{fig:rslifecycle} box \textit{Testing/CICD}.
 
-\begin{center}
 \begin{table}[h]
-
-  \small
-  \begin{tabular}{|p{0.65\linewidth}|p{0.35\linewidth}|} \hline
+  \centering
+  \scriptsize
+  \begin{tabular}{|p{0.55\linewidth}|p{0.3\linewidth}|} \hline
 
     \textbf{RS Stack} & \textbf{RS Type} \\ \hline \hline
-    3 and 2: \textbf{Domain specific tools} and  \textbf{Scientific infrastructure} &
-    2 and 3: \textbf{Framework, Application} \\ \hline \hline
+    3 and 2: \textbf{Domain specific tools} and  \textbf{Scientific infrastructure} & 2 and 3: \textbf{Framework, Application} \\ \hline
     \multicolumn{2}{|l|}{\textbf{All from User story: Team OSS, Library}: Table \ref{tab:rs_recc06}} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-04}: Test-Driven Development (TDD)} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-SWTest-10}: Scalability testing} \\ \hline
@@ -198,21 +180,18 @@ Table \ref{tab:rs_recc07} shows the case for a Framework or Application, it adds
   \caption{Recommended Quality Attributes, team OSS, frameworks and applications.}
   \label{tab:rs_recc07}
 \end{table}
-\end{center}
 
 \subsubsection{User story: Team Service}
 
 This subsection refers to a medium to large team developing an Open Source scientific research service or platform that will be used by a large number of researchers, possibly from different fields. The list of Quality Attributes is significant with several types of tests including security, complete set of documentation, helpdesk for support and bug reporting. See RS lifecycle diagram \ref{fig:rslifecycle} boxes \textit{Maintenance}, \textit{Community Feedback} and \textit{Testing/CICD}.
 
-\begin{center}
 \begin{table}[h]
-
-  \small
-  \begin{tabular}{|p{0.65\linewidth}|p{0.35\linewidth}|} \hline
+  \centering
+  \scriptsize
+  \begin{tabular}{|p{0.55\linewidth}|p{0.3\linewidth}|} \hline
 
     \textbf{RS Stack} & \textbf{RS Type} \\ \hline  \hline
-    3 and 2: \textbf{Domain specific tools} and \textbf{Scientific infrastructure} &
-    5: \textbf{Services and platforms} \\ \hline \hline
+    3 and 2: \textbf{Domain specific tools} and \textbf{Scientific infrastructure} & 5: \textbf{Services and platforms} \\ \hline
     \multicolumn{2}{|l|}{\textbf{All from User story: Team Project}: Table \ref{tab:rs_recc05}} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-TMet-04}: Defect rates} \\ \hline
     \multicolumn{2}{|l|}{\textbf{EOSC-SWRelMan-08}: Code review} \\ \hline
@@ -237,7 +216,6 @@ This subsection refers to a medium to large team developing an Open Source scien
   \caption{Recommended Quality Attributes, team service, services and platforms.}
   \label{tab:rs_recc08}
 \end{table}
-\end{center}
 
 \subsection{Example of tools, services and infrastructures to implement Quality Assurance for RS}
 
@@ -299,11 +277,10 @@ The Quality Attributes regarding this topic are:
 The number of packaging system is very large, thus we list just a few of such tools and services. We focus on mostly used tools in academic research and open
 source context. This is {\bf not} an exhaustive list.
 
-\begin{center}
 \begin{table}[h]
-
-  \small
-  \begin{tabular}{|p{0.12\linewidth}|p{0.2\linewidth}|p{0.25\linewidth}|p{0.35\linewidth}|} \hline
+  \centering
+  \scriptsize
+  \begin{tabular}{|p{0.08\linewidth}|p{0.16\linewidth}|p{0.26\linewidth}|p{0.39\linewidth}|} \hline
 
     \textbf{Tools} & \textbf{Usage} & \textbf{URL} & \textbf{Comment} \\ \hline \hline
     \textbf{Guix} & Packaging system & \url{https://guix.gnu.org/en/} & Generate reproducible environment \\ \hline
@@ -320,7 +297,6 @@ source context. This is {\bf not} an exhaustive list.
   \caption{Tools and services for packaging and deployment}
   \label{tab:tools_pack01}
 \end{table}
-\end{center}
 
 It should be noted that each of these tools, services and packaging systems are available or used in most research infrastructures.
 
@@ -339,11 +315,10 @@ Documentation is of critical interest for software and covers many Quality Attri
 
 The production of documentation is mostly manual but there are quite a few number of tools that help generate or produce it.
 
-\begin{center}
 \begin{table}[h]
-
-  \small
-  \begin{tabular}{|p{0.12\linewidth}|p{0.2\linewidth}|p{0.25\linewidth}|p{0.35\linewidth}|} \hline
+  \centering
+  \scriptsize
+  \begin{tabular}{|p{0.12\linewidth}|p{0.18\linewidth}|p{0.33\linewidth}|p{0.27\linewidth}|} \hline
 
     \textbf{Tools} & \textbf{Usage} & \textbf{URL} & \textbf{Comment} \\ \hline \hline
     \textbf{Doxygen} & Automatic generation & \url{https://www.doxygen.nl/} & Multi-languages \\ \hline
@@ -358,7 +333,6 @@ The production of documentation is mostly manual but there are quite a few numbe
   \caption{Tools and services for documentation}
   \label{tab:tools_pack02}
 \end{table}
-\end{center}
 
 \subsubsection{About management bugs}
 
@@ -391,9 +365,9 @@ Automated Software testing is considered a best practice in software development
 There are a large number of tools and they cover several programming languages and frameworks, we list below a few of them:
 
 \begin{itemize}
-\item For Python; tox (\url{https://tox.wiki}), pytest (\url{https://pytest.org/}).
-\item For Java; JUnit (\url{https://junit.org/}).
-\item For C++; CppUnit (\url{http://freedesktop.org/wiki/Software/cppunit}).
+  \item For Python; tox (\url{https://tox.wiki}), pytest (\url{https://pytest.org/}).
+  \item For Java; JUnit (\url{https://junit.org/}).
+  \item For C++; CppUnit (\url{http://freedesktop.org/wiki/Software/cppunit}).
 \end{itemize}
 
 \subsubsection{About support}
@@ -428,11 +402,10 @@ Static code analysis contribute to Software quality, the relevant Quality Attrib
 
 There are many tools that can help to automate this analysis as part of CI/CD pipelines. These follow best practices and implement code conventions checking and well identified programming rules.
 
-\begin{center}
 \begin{table}[h]
-
-  \small
-  \begin{tabular}{|p{0.12\linewidth}|p{0.2\linewidth}|p{0.25\linewidth}|p{0.35\linewidth}|} \hline
+  \centering
+  \scriptsize
+  \begin{tabular}{|p{0.08\linewidth}|p{0.18\linewidth}|p{0.32\linewidth}|p{0.32\linewidth}|} \hline
 
     \textbf{Tools} & \textbf{Usage} & \textbf{URL} & \textbf{Comment} \\ \hline \hline
     \textbf{Pylint} & Static code analysis & \url{https://pylint.pycqa.org/} & For Python language. Others *lint tools exists for others languages : CPPlint for CPP, JSLint for JavaScript \\ \hline
@@ -448,7 +421,6 @@ There are many tools that can help to automate this analysis as part of CI/CD pi
   \caption{Tools for static and dynamic code analysis}
   \label{tab:tools_pack03}
 \end{table}
-\end{center}
 
 \subsubsection{About security}
 
@@ -480,10 +452,10 @@ The tools and services listed in the previous sections are not enough to produce
 This can be done in different ways:
 
 \begin{itemize}
-\item Introduction of specific courses in formal education.
-\item Lifelong training.
-\item On line training (such as MOOCs)
-\item Seminars, webinars, tutorials, hands-on courses.
+  \item Introduction of specific courses in formal education.
+  \item Lifelong training.
+  \item On line training (such as MOOCs)
+  \item Seminars, webinars, tutorials, hands-on courses.
 \end{itemize}
 
 It is also of crucial importance to develop proximity support for all scientific communities on these topics.

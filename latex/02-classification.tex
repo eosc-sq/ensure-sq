@@ -32,7 +32,7 @@ Although reproducibility does not explicitly appear as a characteristic of the s
 
 The definitions about what is repeatability, reproducibility, and replicability depend much on each research field. Sometimes the concepts of reproducibility and replicability have their meaning swapped with respect to other communities or disciplines.
 
-Some consensus seems to have been reached in computational sciencies after the report \textit{Artifact Review and Badging}\footnote{\url{https://www.acm.org/publications/policies/artifact-review-and-badging-current}} version 1.1 by ACM. The scope of their definitions is intended to be very wide and to cover as many disciplines as possible. They refer, in a generic way, to the \textit{team} and their \textit{experimental setup}.
+Some consensus seems to have been reached in computational sciences after the report \textit{Artifact Review and Badging}\footnote{\url{https://www.acm.org/publications/policies/artifact-review-and-badging-current}} version 1.1 by ACM. The scope of their definitions is intended to be very wide and to cover as many disciplines as possible. They refer, in a generic way, to the \textit{team} and their \textit{experimental setup}.
 
 We shall therefore, use these definitions in this report and put them in the context of computer science with the following meaning:
 
@@ -44,7 +44,7 @@ We shall therefore, use these definitions in this report and put them in the con
     \item \textbf{Replicability}: Performed by a different team and with a different experimental setup. In our context and following the previous example, one of the groups do not have access to the source code of the research method, but instead they have the corresponding detailed description published in a journal. These detailed descriptions can be, for example, a pseudocode or text in the article where all the parameters and significant operations are completely specified. Thus replicability is defined as their capacity to arrive at an equivalent program after following the descriptions. Lack of replicability could be explained in this example due to missing pre or post processing steps, missing parameters or their values, or ambiguous parts left for the interpretation of the reader.
 \end{itemize}
 
-In Section~\ref{sec:user_repro_results} we discuss the users perspectives regarding reproducibility of research software.
+In Section~\ref{sec:user_repro_results} we discuss the users' perspectives regarding reproducibility of research software.
 
 \subsection{Software Quality Models: survey}
 \label{subsec:sqm_survey}
@@ -162,8 +162,8 @@ We ended up with a list of 25 significant quality characteristics from the three
 
     \item \textbf{Installability}; degree of effectiveness and efficiency a product or system can be successfully added or removed in a specified environment~\cite{iso_25010_2011_2017}.
 
-    \item \textbf{Accessibility}; degree to which a product or system can be used by people with the widest range of diversity and capabilities to achieve a specified goal in a concrete context of use~\cite{iso_25010_2011_2017}. The range of capabilities includes diversity associated with age or any functional diversity. Accessibility can be specified or measured either as the extent to which a product or system can be used by users with diverse capabilities to achieve specified goals with effectiveness, efficiency, freedom from risk and satisfaction in a specific context of use, or by the presence of properties supporting specifically accessibility in the product.
-
+    \item \textbf{Accessibility}; degree to which a product or system can be used by people with the widest range of diversity and capabilities to achieve a specified goal in a concrete context of use~\cite{iso_25010_2011_2017}. The range of capabilities includes diversity associated with age or any functional diversity. Accessibility can be specified or measured either as the extent to which a product or system can be used by users with diverse capabilities to achieve specified goals with effectiveness, efficiency, freedom from risk and satisfaction in a specific context of use, or by the presence of properties which specifically support the product's accessibility.
+    
     \item \textbf{Portability / Adaptability}; degree of effectiveness and efficiency with which a system, product, or component can be transferred from one hardware, software or other operational or usage environment to a different one~\cite{iso_25010_2011_2017}. Portability can be interpreted as either an inherent capability of the product or system to facilitate porting activities, or the quality-in-use experienced for the goal of porting the product or system.
 
     \item \textbf{Modifiability}; degree to which a product or system can be effectively and efficiently modified without introducing defects or degrading the product~\cite{iso_25010_2011_2017}.
@@ -172,8 +172,8 @@ We ended up with a list of 25 significant quality characteristics from the three
 
     \item \textbf{Scalability}; this characteristic can be seen from the point of view of the system, or the applications. In the first case
     it's the measure of a system's ability to increase or decrease in performance and cost in response to changes in application and system processing demands. Examples would include how well a hardware system performs when the number of users is increased, how well a database withstands growing numbers of queries, or how well an operating system performs on different classes of hardware. Enterprises that are growing rapidly should pay special attention to scalability when evaluating hardware and software~\cite{gartner_2021}. When referring to algorithms, protocols, or applications it can be defined as being able to efficiently handle a growing demand of work or need of more performance by means of adding more resources to the system on which the software is running. Resources can be added both to single nodes (vertical scalability) and to the system as a whole (horizontal scalability)~\cite{bondi_2000}.
-sssssss
-    \item \textbf{Supportability}; is it defined as the ability of the system to provide helpful information  to identify and resolve issues in case of malfunction~\cite{microsoft_2010}. The existence of a helpdesk,  issue tracking, bug reporting, or related services also contribute to supportability~\cite{orviz_fernandez_eosc-synergy_2020}.
+
+    \item \textbf{Supportability}; is it defined as the ability of the system to provide helpful information  to identify and resolve issues in case of malfunction~\cite{microsoft_2010}. The existence of a helpdesk, issue tracking, bug reporting, or related services also contribute to supportability~\cite{orviz_fernandez_eosc-synergy_2020}.
 
     \item \textbf{Testability}; degree of effectiveness and efficiency with which test criteria can be established for a system, product, or component. Then the tests might be run to determine whether the criteria have been met~\cite{iso_25010_2011_2017}.
 \end{enumerate}
@@ -181,9 +181,9 @@ sssssss
 \subsection{Software Quality Attributes and Metrics}
 \label{subsec:SW_quality_attributes}
 
-The \textit{Software Quality Characteristics} which are classified in the previous section can actually be seen from very different points of view, thus allowing for a different type of classification of characteristics in different classes, that we will refer to as \textit{Quality Attributes and Metrics}.
+The \textit{Software Quality Characteristics} which are classified in the previous section can actually be seen from very different points of view, thus allowing for a different type of classification of characteristics in different classes, which we will refer to as \textit{Quality Attributes and Metrics}.
 
-The survey and procedure described in Section~\ref{subsec:sqm_survey} allowed us to identify 239 \textit{Quality Attributes and Metrics} that were gathered into a single table. We found that, depending on the source, the same attribute or metric could be found under different names, but with a very similar definition of meaning. Those were merged to prevent duplicates.
+The survey and procedure described in Section~\ref{subsec:sqm_survey} allowed us to identify 239 \textit{Quality Attributes and Metrics} that were gathered into a single table. We found that, depending on the source, the same attribute or metric could be found under different names, but with a very similar definition of meaning. Those were merged to prevent duplication.
 
 We ended up with 127 \textit{Quality Attributes and Metrics}, it includes the references to the original articles used. We considered attributes which objectively could be treated as \textit{metrics}. The attributes were subdivided into six categories and, for each metric or attribute, a new codename was proposed in order to have a coherent naming convention throughout the document. The following categories and their codenames are proposed:
 

@@ -3,7 +3,7 @@
 
 Research software is not only software. To be able to clearly identify quality attributes for research software we rely on its definition given in page \ref{def_rs}.
 
-The most important characteristic is the link with scientific publications. The purpose of research software is that it support the scientific results, and from that it is expected to reproduce the published results. Regular software does not necessarily have this expectation.
+The most important characteristic is the link with scientific publications. The purpose of research software is that it supports the scientific results, and from that it is expected to reproduce the published results. Regular software does not necessarily have this expectation.
 
 The goal of this section is to cross-reference the elements of software quality from the previous section with the \textit{sub-group 1} \cite{sg1tf2023} (``Software Lifecycle'', c.f. Section \ref{sec:introduction}), typology of research software development, in order to identify the tools and infrastructures needed to satisfy minimum quality criteria, taking into account the specificities of research software.  
 
@@ -12,7 +12,7 @@ As a reminder, \textit{sub-group 1} has defined different categories of software
 \begin{enumerate}
     \item \textbf{Individual development} - Individual creating research software for his/her own use (e.g. a PhD student): Based on a research question, software is created by a single person with the specific aim of answering the research question and producing a research output (paper, dataset, etc).
     \item \textbf{Team Project} - A research team creating an application or workflow for the use within the team: Research software is created by a team to answer a series of research questions (often as part of a larger research project).
-    \item \textbf{Team OSS} - A team / community developing (possibly broadly applicable) open source research software: Software is created by a team (possibly distributed over multiple organizations) to answer a broad range of research questions.
+    \item \textbf{Team OSS} - A team / community developing (possibly broadly applicable) open source research software: Software is created by a team (possibly distributed over multiple organisations) to answer a broad range of research questions.
     \item \textbf{Team Service} - A team or community creating a research service: A service platform is a set of software components which are used to provide services for a large number of users, most of whom make use of these offerings via the Internet (e.g. cloud services).
 \end{enumerate}
 
@@ -37,7 +37,7 @@ A typical scientific software stack~\cite{hinsen2019} has the composition shown 
     Library; Analysis script and workflows; Services and platforms \\ \hline
 
     3 - Domain specific tools &
-    Tools and libraries that implement models and methods which are developed and used by specific communities. Gromacs, MMTK, Amber. &
+    Tools and libraries that implement models and methods which are developed and used by specific communities. GROMACS, MMTK, Amber. &
     Library; Application; Services and platforms \\ \hline
 
     2 - Scientific infrastructure &
@@ -75,6 +75,8 @@ The different expectations described below add up to each other, when the contex
 
 \textbf{Individual researcher creating software for personal use}
 
+% \maxime: I think that, regardless of the gender that the 'author' English noun may have, it would be better to e.g. use "(s)he" or "he/she" or "he or she" instead of just "he/him/...".
+
 The author must be able to manage the different versions of the code. He often has to come back to the software after a long time (to answer to a reviewer for a publication, to address a new scientific question or confirm previous results).
 
 He perhaps needs to execute the software on different computers and different operating systems or versions (for example the use of a supercomputer).
@@ -105,13 +107,13 @@ In the case of industrial context, expectations can vary depending of the contra
 
 \subsubsection{Layer by layer in the software stack}
 
-Regarding this categorization, the user point of view supersedes the developer point of view.
+Regarding this categorisation, the user's point of view supersedes the developer's point of view.
 
 \textbf{A scientific infrastructure}
 
 A scientific infrastructure, as described in \cite{hinsen2019}, is by definition a software used by other software. That is, it's not a standalone code. Therefore it must be easy to install and to interface/integrate with other software.
 
-Users expect that this type of software to be robust and with a sufficient sustainability since it's often the foundation of their own code.
+Users expect this type of software to be robust and to be sufficiently sustainable since it's often the foundation of their own code.
 
 \textbf{A domain specific tool}
 

@@ -1,8 +1,8 @@
 %\dg{small intro on the relationship between quality and metadata. The scope is tricky, and so it is the level of granularity}
 
-Software metadata has become a crucial asset when deploying and publishing software, as it describes the key aspects of a software package (e.g., name, id, version, license, authors, etc.), aids comparison against similar efforts and helps users with faceted search. Package managers like Pypi,\footnote{\url{https://pypi.org/}} Maven Central\footnote{\url{https://search.maven.org/}} or CRAN\footnote{\url{https://cran.r-project.org/}} provide ways of gathering metadata using their own metadata representation.
+Software metadata has become a crucial asset when deploying and publishing software, as it describes the key aspects of a software package (e.g. the name, id, version, license, authors, etc.), aids comparison against similar efforts and helps users with faceted search. Package managers like Pypi,\footnote{\url{https://pypi.org/}} Maven Central\footnote{\url{https://search.maven.org/}} or CRAN\footnote{\url{https://cran.r-project.org/}} provide ways of gathering metadata using their own metadata representation.
 
-With the increasing adoption of the FAIR principles~\cite{wilkinson_fair_2016}, using metadata to describe research outcomes (including research software and code) is becoming a common practice. As with package managers, metadata makes it easier for tool registries and aggregators to present research software with common descriptors so they can be indexed and compared. Although metadata on its own does not guaranty quality, some metadata elements align to quality principles (e.g, documentation, licensing, version naming, etc.). In this section we review common metadata schemas in Section \ref{subsec:schemas}, we discuss the relationship between FAIR and software code quality in Section \ref{subsec:fair4rs}, and map  which quality software quality attributes are most related to FAIR (Section \ref{subsec:fair4rs_fair}).
+With the increasing adoption of the FAIR principles~\cite{wilkinson_fair_2016}, using metadata to describe research outcomes (including research software and code) is becoming a common practice. As with package managers, metadata make it easier for tool registries and aggregators to present research software with common descriptors so they can be indexed and compared. Although metadata on their own does not guaranty quality, some metadata elements align to quality principles (e.g, documentation, licensing, version naming, etc.). In this section we review common metadata schemas in Section \ref{subsec:schemas}, we discuss the relationship between FAIR and software code quality in Section \ref{subsec:fair4rs}, and map which quality software quality attributes are most closely related to FAIR (Section \ref{subsec:fair4rs_fair}).
 
 \subsection{Metadata schemas for Software}
 \label{subsec:schemas}
@@ -132,7 +132,7 @@ I2 &
    \\ \hline
 R1 &
   \begin{tabular}[c]{@{}l@{}}EOSC-SWRelMan-11,\\ EOSC-SWRelMan-29\end{tabular} &
-  \begin{tabular}[c]{@{}l@{}}A codemeta file and documentation should describe the software \\ project with accurate, relevant attributes\end{tabular} \\ \hline
+  \begin{tabular}[c]{@{}l@{}}A Codemeta file and documentation should describe the software \\ project with accurate, relevant attributes\end{tabular} \\ \hline
 R1.1 &
   \begin{tabular}[c]{@{}l@{}}EOSC-SWRelMan-10, \\ EOSC-SWRelMan-34, \\ EOSC-SrvOps-01, \\ EOSC-SrvOps-02\end{tabular} &
   \begin{tabular}[c]{@{}l@{}}A license should be associated with the software project, \\ especially if the project is open source. The documentation of a \\ software project should also  provide a license.\\ In case a service is deployed, an acceptable usage policy and a\\  terms of use policy should be clearly defined\end{tabular} \\ \hline

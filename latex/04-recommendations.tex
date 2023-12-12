@@ -89,7 +89,7 @@ In the case of a team working on a project on analysis script and workflows, the
   \label{tab:rs_recc03}
 \end{table}
 
-The case of research software type ``Library'', the recommendation is to add testing with respect to the previous cases, this is shown in table \ref{tab:rs_recc04}.
+The case of Research Software type ``Library'', the recommendation is to add testing with respect to the previous cases, this is shown in table \ref{tab:rs_recc04}.
 See RS lifecycle diagram \ref{fig:rslifecycle} boxes \textit{Maintenance}, \textit{Community Feedback} and \textit{Testing/CICD}.
 
 \begin{table}[h]
@@ -181,9 +181,27 @@ Table \ref{tab:rs_recc07} shows the case for a Framework or Application, it adds
   \label{tab:rs_recc07}
 \end{table}
 
+The Quality Attributes related to software release management are shown in Table \ref{tab:rs_rel}. In the case of an Open Source Software development team, software release and management is part of its responsibility. Thus, the additional recommended Quality Attributes include the existence of a helpdesk and/or bug tracking system, recommendation for software versioning, packaging and documentation. This reflects the RS lifecycle diagram \ref{fig:rslifecycle} boxes \textit{Maintenance}, \textit{Community Feedback} and \textit{Deployment}.
+
+\begin{table}[h]
+    \centering
+    \scriptsize
+    \begin{tabular}{|p{0.6\linewidth}|} \hline
+
+        \textbf{EOSC-SWRelMan-09}: Semantic Versioning \\ \hline
+        \textbf{EOSC-SWRelMan-13}: Register/publish artefact \\ \hline
+        \textbf{EOSC-SWRelMan-17}: SCM tool \\ \hline
+        \textbf{EOSC-SWRelMan-20}: Installability \\ \hline
+        \textbf{EOSC-SWRelMan-25}: Provide checksums \\ \hline
+
+    \end{tabular}
+    \caption{Recommended Quality Attributes for SW release and management.}
+    \label{tab:rs_rel}
+\end{table}
+
 \subsubsection{User story: Team Service}
 
-This subsection refers to a medium to large team developing an Open Source scientific research service or platform that will be used by a large number of researchers, possibly from different fields. The list of Quality Attributes is significant with several types of tests including security, complete set of documentation, helpdesk for support and bug reporting. See RS lifecycle diagram \ref{fig:rslifecycle} boxes \textit{Maintenance}, \textit{Community Feedback} and \textit{Testing/CICD}.
+This subsection refers to a medium to large team developing an Open Source scientific research service or platform that is used by many researchers, possibly from different fields. The list of Quality Attributes is significant with several types of tests including security, complete set of documentation, helpdesk for support and bug reporting. See RS lifecycle diagram \ref{fig:rslifecycle} boxes \textit{Maintenance}, \textit{Community Feedback} and \textit{Testing/CICD}.
 
 \begin{table}[h]
   \centering
@@ -217,7 +235,50 @@ This subsection refers to a medium to large team developing an Open Source scien
   \label{tab:rs_recc08}
 \end{table}
 
-\subsection{Example of tools, services and infrastructures to implement Quality Assurance for RS}
+In the case of services and platforms in production, additional Quality Attributes are recommended. Table \ref{tab:rs_serviceprod} shows this list. They include the existence of a helpdesk and/or bug tracking system, monitoring, accounting, authentication and authorization mechanisms, documentation and policies to access and use the service or platform.
+
+\begin{table}[h]
+    \centering
+    \scriptsize
+    \begin{tabular}{|p{0.6\linewidth}|} \hline
+
+        \textbf{EOSC-TMet-08}: \# Registered users \\ \hline
+        \textbf{EOSC-TMet-09}: \# Active users \\ \hline
+        \textbf{EOSC-TMet-10}: Amount computing resources \\ \hline
+        \textbf{EOSC-TMet-11}: Amount storage resources \\ \hline
+        \textbf{EOSC-SWRelMan-17}: SCM tool \\ \hline
+        \textbf{EOSC-SWRelMan-20}: Installability \\ \hline
+        \textbf{EOSC-SWRelMan-22}: Infrastructure as Code (IaC) validation \\ \hline
+        \textbf{EOSC-SWTest-16}: Public endpoints and APIs encrypted \\ \hline
+        \textbf{EOSC-SWTest-17}: Strong ciphers \\ \hline
+        \textbf{EOSC-SWTest-18}: Authentication and Authorization \\ \hline
+        \textbf{EOSC-SWTest-20}: Service compliance with data regulations (GDPR) \\ \hline
+        \textbf{EOSC-SWTest-24}: Security assessment \\ \hline
+        \textbf{EOSC-SrvOps-01}: Acceptable Usage Policy (AUP) \\ \hline
+        \textbf{EOSC-SrvOps-02}: Access Policy and Terms of Use \\ \hline
+        \textbf{EOSC-SrvOps-03}: Privacy policy \\ \hline
+        \textbf{EOSC-SrvOps-04}: Operational Level Agreement (OLA) \\ \hline
+        \textbf{EOSC-SrvOps-05}: Service Level Agreement (SLA) \\ \hline
+        \textbf{EOSC-SrvOps-06}: Monitoring service public endpoints \\ \hline
+        \textbf{EOSC-SrvOps-07}: Monitoring service public APIs \\ \hline
+        \textbf{EOSC-SrvOps-09}: Monitoring security public endpoints and APIs \\ \hline
+
+    \end{tabular}
+    \caption{Recommended Quality Attributes for a service or platform in production.}
+    \label{tab:rs_serviceprod}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \eli{Portability. Depending on the design of the software.}
+
+% \miguel{The problem of the containers (Docket et al.) and software development in online platforms. Advantage of containers: easier to releaseand to ensure reproducibility and to ensure the service. Disadvantages: containers freeze the environment, and thus they stop receiving bug fixing and security updates. Dependency with outdated software components.}
+
+% \miguel{Stability of research SW. Does it ensure backwards compatibility between versions?}
+
+% \cerlane{Traditionally “portability” can refer to the portability across hardware architecture, system and platform (compilers and libraries) by applying good software engineering practices. With containers, portability can also be achieved by restricting the supported system and platform in the container. A multi-architecture container can further improve portability.}
+
+\newpage
+\subsection{Example of tools, services and infrastructures}
 
 \subsubsection{About version control and software forges}
 

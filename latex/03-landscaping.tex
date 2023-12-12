@@ -1,28 +1,24 @@
 \subsection{Definition and references of Research Software}
 \label{subsec:defrs}
 
-Research software is not only software. To be able to clearly identify quality attributes for research software we rely on its definition given in page \ref{def_rs}.
+Research Software is not only software. To be able to clearly identify quality attributes for Research Software we rely on its definition given in page \ref{def_rs}.
 
-The most important characteristic is the link with scientific publications. The purpose of research software is that it supports the scientific results, and from that it is expected to reproduce the published results. Regular software does not necessarily have this expectation.
+The most important characteristic is the link with scientific publications. The purpose of Research Software is that it supports the scientific results, and from that it is expected to reproduce the published results. Regular software does not necessarily have this expectation.
 
-The goal of this section is to cross-reference the elements of software quality from the previous section with the \textit{sub-group 1} \cite{sg1tf2023} (``Software Lifecycle'', c.f. Section \ref{sec:introduction}), typology of research software development, in order to identify the tools and infrastructures needed to satisfy minimum quality criteria, taking into account the specificities of research software.  
+The goal of this section is to cross-reference the elements of software quality from the previous section with the \textit{sub-group 1} \cite{sg1tf2023} (``Software Lifecycle'', c.f. Section \ref{sec:introduction}), typology of Research Software development, in order to identify the tools and infrastructures needed to satisfy minimum quality criteria, taking into account the specificities of Research Software.  
 
 As a reminder, \textit{sub-group 1} has defined different categories of software development related to the context in which they are performed:
 
 \begin{enumerate}
-    \item \textbf{Individual development} - Individual creating research software for his/her own use (e.g. a PhD student): Based on a research question, software is created by a single person with the specific aim of answering the research question and producing a research output (paper, dataset, etc).
-    \item \textbf{Team Project} - A research team creating an application or workflow for the use within the team: Research software is created by a team to answer a series of research questions (often as part of a larger research project).
-    \item \textbf{Team OSS} - A team / community developing (possibly broadly applicable) open source research software: Software is created by a team (possibly distributed over multiple organisations) to answer a broad range of research questions.
+    \item \textbf{Individual development} - Individual creating Research Software for his/her own use (e.g. a PhD student): Based on a research question, software is created by a single person with the specific aim of answering the research question and producing research output (paper, dataset, etc).
+    \item \textbf{Team Project} - A research team creating an application or workflow for the use within the team: Research Software is created by a team to answer a series of research questions (often as part of a larger research project).
+    \item \textbf{Team OSS} - A team / community developing (possibly broadly applicable) open source Research Software: Software is created by a team (possibly distributed over multiple organisations) to answer a broad range of research questions.
     \item \textbf{Team Service} - A team or community creating a research service: A service platform is a set of software components which are used to provide services for a large number of users, most of whom make use of these offerings via the Internet (e.g. cloud services).
 \end{enumerate}
 
 Although there are other references, for instance \footnote{\url{https://docs.google.com/presentation/d/1uwxSwd8chbG7bVn5lPvNNhv5f_JeeelA2mN9NXhlOhA}} define similar or equivalent categories as enumerated above while \footnote{\url{https://zenodo.org/record/7589725}} rely on the same definition of RS as we did in page \ref{def_rs}.
 
 \subsection{Research Software stack}
-
-% \mdavid remove this: We can have another approach to categorize research software based on their position in the global software stack, following \cite{hinsen2019}.
-
-% \mdavid: need some reference to include text if appropriate \dg{Should comment on the Tom Honeyman proposal for research software: research code (i.e., glue), research prototypes (tools used for research) and research infrastructure. I think it makes sense for us too}
 
 A typical scientific software stack~\cite{hinsen2019} has the composition shown in Table~\ref{tab:rs_stacks}.
 
@@ -66,21 +62,19 @@ Note that Stack level 1 is not considered in this report. The Research Software 
 
 \subsection{Expectation for Research Software stack and types}
 
-To be able to identify quality attributes for research software, we need to understand clearly what is expected from the different types identified in the previous sections.
+To be able to identify quality attributes for Research Software, we need to understand clearly what is expected from the different types identified in the previous sections.
 
-\subsubsection{By research software type}
+\subsubsection{By Research Software type}
 
 The different expectations described below add up to each other, when the context of development grow in complexity.
 
 \textbf{Individual researcher creating software for personal use}
 
-% \maxime: I think that, regardless of the gender that the 'author' English noun may have, it would be better to e.g. use "(s)he" or "he/she" or "he or she" instead of just "he/him/...".
+The author must be able to manage the different versions of the code. He/She often has to come back to the software after a long time (to answer to a reviewer for a publication, to address a new scientific question or confirm previous results).
 
-The author must be able to manage the different versions of the code. He often has to come back to the software after a long time (to answer to a reviewer for a publication, to address a new scientific question or confirm previous results).
+He/She perhaps needs to execute the software on different computers and different operating systems or versions (for example the use of a supercomputer).
 
-He perhaps needs to execute the software on different computers and different operating systems or versions (for example the use of a supercomputer).
-
-He has to share the code when he submits his article.
+He/She has to share the code when he/she submits his article.
 
 \textbf{A research team creating an application or workflow for use within the team}
 
@@ -90,7 +84,7 @@ A new arrival in the team must be able to easily understand the structure of the
 
 \textbf{A team / community developing Open Source Software}
 
-For a community research software, it is important to facilitate different types of contribution and to manage correctly the rights attribution.
+For a community Research Software, it is important to facilitate different types of contribution and to manage correctly the rights attribution.
 
 It's important to take into account Validation \& Verification of the code. The code has to be easy to maintain and to upgrade.
 
@@ -102,7 +96,7 @@ The main expectation is availability, reliability and security of the service or
 
 \textbf{A team / community developing software in an industrial context}
 
-In the case of industrial context, expectations can vary depending of the contract between academic researchers and the company.
+In the case of industrial context, expectations can vary depending on the contract between academic researchers and the company.
 
 \subsubsection{Layer by layer in the software stack}
 

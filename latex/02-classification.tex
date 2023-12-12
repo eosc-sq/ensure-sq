@@ -1,18 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\miguel{For scientific research: reviewed by other peers, reproducible (data + sources, matching the article), Open Access. One quality criteria: reproducibility. Define "reproducibility" and "repeatability". Different levels of reproducibility. Bottom level: black box (being able to obtain the same results given the same inputs). Higher level: full access to a well-commented source code, and checking that the pseudocode matches well the implementation. In the case of a scientific publication, checking that the implementation matches exactly what the descriptions in the article.}
-
-% DONE -> \miguel{Indeed,having a section in the final document where we give definitions of "quality", "software", "research software", etc. is
-% quite convenient. It doesn't mean other definitions are not possible, but we need to settle clearly what we're discussing in our own context.}
-% Criteria of quality (brainstorming, to complete by everybody)
-% DONE -> in introduction and this section \dg{We should first define what we understand by software. We can reuse the definition in FAIR4RS.}
-% DONE -> section Metadata \dg{We should look at the FAIR4RS reports for the alignment for quality dimensions. In a sense, this is what FAIR aims (at a basic level).}
-% DONE -> \dg{Missing the initial table here, although we had only summaries. We should see how each of those papers defined software quality dimensions.}
-% DONE -> \eli{Concerning Quality Definition, there are various software models and standards that can be referred.
-% However, the most recent ones are ISO and IEEE. Existing models and standards provide a full set of software characteristics: unfortunately
-% they quite often have different meaning and do not have a match with software metrics used to measure software characteristics.}
-% DONE -> \miguel{Perhaps the definition of quality and the classification should appear first in the document. First this section, and then Landscaping.}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 A significant notion in software engineering is \textit{quality}, understood as a series of desirable particularities that are met in \textit{good} computer programs, meaning that they are well adapted to their purpose, accurate, highly available, or any other property which makes them excellent.
 
 Whereas this is a concept which is easy to understand, arriving at a consensus on how to properly define it, is a significantly more complex task. Indeed, the problem can be addressed from plenty of different perspectives, each of them giving more or less importance to some particularities.
@@ -28,7 +13,7 @@ It's quite important to define the notion of \textbf{Verification and Validation
     \item Software Verification: The process of evaluating software to determine whether the products of a given development phase satisfy the conditions imposed at the start of that phase.
 \end{itemize}
 
-Although reproducibility does not explicitly appear as a characteristic of the software itself in our survey, it is a fundamental requirement for research software. See Section~\ref{subsec:defrs} for our definitions and context of \textit{research software}. Indeed, the Scientific Method is, after all, based on the possibility of being able to repeat the experiments and refuting them to build up new knowledge. Specifically for research software, we need to consider its reproducibility as a characteristic of quality.
+Although reproducibility does not explicitly appear as a characteristic of the software itself in our survey, it is a fundamental requirement for Research Software. See Section~\ref{subsec:defrs} for our definitions and context of \textit{Research Software}. Indeed, the Scientific Method is, after all, based on the possibility of being able to repeat the experiments and refuting them to build up new knowledge. Specifically for Research Software, we need to consider its reproducibility as a characteristic of quality.
 
 The definitions about what is repeatability, reproducibility, and replicability depend much on each research field. Sometimes the concepts of reproducibility and replicability have their meaning swapped with respect to other communities or disciplines.
 
@@ -44,7 +29,7 @@ We shall therefore, use these definitions in this report and put them in the con
     \item \textbf{Replicability}: Performed by a different team and with a different experimental setup. In our context and following the previous example, one of the groups do not have access to the source code of the research method, but instead they have the corresponding detailed description published in a journal. These detailed descriptions can be, for example, a pseudocode or text in the article where all the parameters and significant operations are completely specified. Thus, replicability is defined as their capacity to arrive at an equivalent program after following the descriptions. Lack of replicability could be explained in this example due to missing pre or post-processing steps, missing parameters or their values, or ambiguous parts left for the interpretation of the reader.
 \end{itemize}
 
-In Section~\ref{sec:user_repro_results} we discuss the users' perspectives regarding reproducibility of research software.
+In Section~\ref{sec:user_repro_results} we discuss the users' perspectives regarding reproducibility of Research Software.
 
 \subsection{Software Quality Models: survey}
 \label{subsec:sqm_survey}
@@ -96,9 +81,6 @@ The classification into characteristics and attributes is based on a thorough re
     \item \textbf{Review process}: After the previous selection procedure, 19 relevant articles remained. These are the ones which are finally reviewed in our survey. We performed this step by groups of 2 or 3 reviewers per article, in our \textit{sub-group}.
 \end{enumerate}
 
-% Query: \footnote{\url{https://www.scopus.com/results/results.uri?sort=plf-f&src=s&nlo=&nlr=&nls=&sid=b04451f7b887660ce99d73bfdbdc4fc8&sot=a&sdt=a&cluster=scosubjabbr%2c%22COMP%22%2ct%2c%22ENGI%22%2ct%2bscoexactsrctitle%2c%22Software+Quality+Journal%22%2ct%2c%22Proceedings+International+Conference+On+Software+Engineering%22%2ct%2c%22IEEE+Transactions+on+Software+Engineering%22%2ct%2c%22Empirical+Software+Engineering%22%2ct%2c%22Journal+of+Systems+and+Software%22%2ct%2c%22Software+%26+Systems+Modeling%22%2ct%2c%22Information+and+Software+Technology%22%2ct%2c%22IEEE+Software%22%2ct&sl=30&s=TITLE+%28+software+AND+quality+%29&cl=t&offset=201&origin=resultslist&ss=plf-f&ws=r-f&ps=r-f&cs=r-f&cc=10&txGid=cff6749bf8a084912200dbef379950d4} 
-% Also, this book: https://books.google.es/books?hl=en&lr=&id=XTvpAQAAQBAJ&oi=fnd&pg=PR3&dq=software+quality&ots=fohz_-KW0d&sig=5TGlvR3sgAIkAHzs5Iup8Qijpuo#v=onepage&q=software%20quality&f=false looks nice!
-
 The list of relevant articles obtained by this procedure, allowed us to define a list of characteristics and attributes which are presented in the following sections.
 
 \subsection{Software Quality Characteristics}
@@ -114,8 +96,6 @@ We identified a list of significant quality characteristics mainly from three so
     \item The chapter \textit{Design Fundamentals} of the Microsoft Application Architecture Guide~\cite{microsoft_2010}; the chapter \textit{Quality Attributes} from the Microsoft's Application Architecture Guide also helped establish a common terminology in our definitions.
 
 \end{itemize}
-
-%DONE; answer yes \miguel{The ISO/IEC/IEEE 24765:2010(E) standard has been deprecated in favour of ISO/IEC/IEEE 24765:2017. Are we using anything very related to :2010, or can we use :2017?}
 
 The analysis of the existing literature resulted in a significant number of characteristics which were associated with the concept of quality. All the characteristics were taken into account in our study, but some of them were filtered out since they were not useful to perform the classification in quality attributes. Indeed, some characteristics were pertinent at the time of the publication of the article, but after a few years they became obsolete. For example, producing a very small sized compiled binary \textit{per se} as an indication of quality does not make much sense nowadays, whereas in the past it could be directly related to the ability of storing the program in a very limited memory or permanent media. Other characteristics were discarded because they were very specific to a given domain, such as real-time applications or critical systems. They remain valid characteristics to take into account, but they are not general enough or not applicable to Research Software or useful to the proposed recommendations.
 
@@ -185,14 +165,14 @@ The \textit{Software Quality Characteristics} which are classified in the previo
 
 The survey and procedure described in Section~\ref{subsec:sqm_survey} allowed us to identify 239 \textit{Quality Attributes and Metrics} that were gathered into a single table. We found that, depending on the source, the same attribute or metric could be found under different names, but with a very similar definition of meaning. Those were merged to prevent duplication.
 
-We ended up with 127 \textit{Quality Attributes and Metrics}, it includes the references to the original articles used. We considered attributes which objectively could be treated as \textit{metrics}. The attributes were subdivided into six categories and, for each metric or attribute, a new codename was proposed in order to have a coherent naming convention throughout the document. The following categories and their codenames are proposed:
+We ended up with 126 \textit{Quality Attributes and Metrics}, it includes the references to the original articles used. We considered attributes which objectively could be treated as \textit{metrics}. The attributes were subdivided into six categories and, for each metric or attribute, a new codename was proposed in order to have a coherent naming convention throughout the document. The following categories and their codenames are proposed:
 
 \begin{itemize}
     \item Source Code Metrics (\textbf{EOSC-SCMet}): 17 metrics. Metrics related to the source code, such as the number of lines of code or the number of assertions, for example.
 
     \item Time and Performance Metrics (\textbf{EOSC-TMet}): 11 metrics. Metrics related to time or periods of time. For example, the number of resolved bugs per period of time.
 
-    \item Qualitative Attributes (\textbf{EOSC-Qual}): 28 attributes. Qualitative attributes are obtained in general through surveys to, or some manual analysis by software developers, administrators, or users. In general, these are not possible to automate and are in general subjective.
+    \item Qualitative Attributes (\textbf{EOSC-Qual}): 27 attributes. Qualitative attributes are obtained in general through surveys to, or some manual analysis by software developers, administrators, or users. In general, these are not possible to automate and are in general subjective.
 
     \item DevOps - Software Release and Management Attributes (\textbf{EOSC-SWRelMan}): 34 attributes. Largely based on the \textit{DevOps} methodology, they can be automated for Verification \& Validation. Although the possibility of having code reviews in the software development process is a manual step.
 
@@ -208,7 +188,7 @@ In Appendix~\ref{appendix_qa} each attribute or metric entry has the following e
     \item Name: as found in the source reference;
     \item Associated characteristics: one or more from subsection~\ref{subsect:sqchar};
     \item Definition: obtained from aggregating or merging the source references;
-    \item Research software level: from the user stories in subsection~\ref{subsec:defrs};
+    \item Research Software level: from the user stories in subsection~\ref{subsec:defrs};
     \item Reference to the source articles.
 \end{itemize}
 

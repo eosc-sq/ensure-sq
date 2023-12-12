@@ -1,6 +1,7 @@
-\documentclass[a4paper]{article}
-\usepackage[utf8]{inputenc}
+\documentclass[a4paper, 10pt]{article}
+%\usepackage[utf8]{inputenc}
 \usepackage[a4paper, total={185mm, 213mm}]{geometry}
+\usepackage[a4paper]{geometry}
 \usepackage{url}
 \usepackage{verbatim}
 \usepackage[english]{babel}
@@ -19,11 +20,12 @@
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\setlength{\headheight}{107pt}
+\setlength{\headheight}{34pt}
 \setlength{\footskip}{33pt}
-\lhead{\includegraphics[height=1cm]{imgs/header.png}}
-\lfoot{\includegraphics[height=1cm]{imgs/footer-l.png}}
-\rfoot{\includegraphics[height=1cm]{imgs/footer-r.png}}
+\fancyhead[CR]{}
+\fancyhead[L]{\includegraphics[height=1cm]{imgs/header.png}}
+\fancyfoot[L]{\includegraphics[height=1cm]{imgs/footer-l.png}}
+\fancyfoot[R]{\includegraphics[height=1cm]{imgs/footer-r.png}}
 
 \addbibresource{EOSC_IQRS.bib}
 
@@ -86,25 +88,20 @@
 \input{05-perspectives}
 \newpage
 
-\section{Software in production}
-\label{sec:sw_in_prod}
-\input{06-sw_in_prod}
-\newpage
-
 \section{Metadata for quality software}
 \label{sec:metadata}
-\input{07-metadata}
+\input{06-metadata}
 \newpage
 
 \section{Summary and conclusions}
 \label{sec:summary}
-\input{08-summary}
+\input{07-summary}
 \newpage
 
 \appendix
 \section{Quality Attributes}
 \label{appendix_qa}
-\input{09-appendix}
+\input{08-appendix}
 
 \newpage
 \printbibliography

@@ -13,7 +13,7 @@
 \usepackage{multirow}
 \usepackage[table,xcdraw,usenames,dvipsnames]{xcolor}
 \usepackage{parskip}
-\usepackage[backend=biber,style=numeric]{biblatex}
+\usepackage[backend=biber,style=numeric,sorting=none]{biblatex}
 \usepackage{csquotes}
 \usepackage{orcidlink}
 \usepackage[toc]{appendix}
@@ -56,6 +56,16 @@ A significant notion in software engineering is \textit{quality}, understood as 
 
 Whereas this is a concept which is easy to understand, arriving at a consensus on how to properly define it, is a significantly more complex task. Indeed, the problem can be addressed from plenty of different perspectives, each of them giving more or less importance to some particularities.
 
+The present document regards the work performed by \textit{sub-group 3} \textbf{Software Quality} in research.
+
+As such, it is deemed important to have a definition of Research Software (\textbf{RS} from here on). Thus, the sub-group has taken the following definition~\cite{gruenpeter_defining_2021}: 
+
+\textit{``Research Software (RS) is commonly used to refer to software used and/or generated in a research context, including and not limited to scientific, non-scientific, commercial, academic and non-academic research.''}
+
+Another, more thorough definition, comes from the ``Source Codes and Softwares College from the Committee for Open Science'' in France, it encompasses the previous definition:
+
+\textit{``Research software is developed to meet specific scientific needs. It is designed, maintained, and used by scientists (researchers and engineers) and research institutions, possibly on an international scale. It can result from research work as well as support it, notably through publications before/on/around/with the software. It can be formalized in different ways (a platform, a middleware, a workflow or a library, a module or plugin of another software) and thus be in interaction in an ecosystem or on the contrary be more autonomous.''} \footnote{(\url{https://www.ouvrirlascience.fr/research-software-as-a-pillar-of-open-science/}).}
+
 It is not the goal of this report to propose any particular definitions, but to analyse how the problem has been addressed in relevant works in the literature and how the characteristics can be classified as attributes. As such, in Section \ref{subsec:sqm_survey} we detail the method used for a survey of the literature.
 
 In Section~\ref{subsect:sqchar} we review what are, according to the literature, the \textit{Quality Characteristics} that can be related to good software. The characteristics can be related to quality from very different points of view (ranging from metrics of the source code to service operability, just as an example). These are classified as \textit{Quality Attributes and Metrics} in Section~\ref{subsec:SW_quality_attributes}.
@@ -64,7 +74,7 @@ It's quite important to define the notion of \textbf{Verification and Validation
 
 \begin{itemize}
     \item Software Validation: The process of evaluating software during or at the end of the development process to determine whether it satisfies specified requirements.
-    \item Software Verification: The process of evaluating software to determine whether the products of a given development phase satisfy the conditions imposed at the start of that phase.
+    \item Software Verification: The process of evaluating software to determine whether the products of a given development phase satisfy the conditions imposed at the start of the respective phase.
 \end{itemize}
 
 \subsection{Software Quality Models: survey}
@@ -109,11 +119,11 @@ The classification into characteristics and attributes is based on a thorough re
         \item Articles that did not propose any quality dimensions. For example, those papers that just discuss practices.
     \end{itemize}
 
-    \item \textbf{Inclusion and exclusion criteria}: The most important criterion for not considering articles in our survey was; to exclude those which simply did not belong to the software engineering field. We did not attempt to tighten much the criteria for the exclusion, as we intended to gather as much related material as possible to be filtered out in the next field. Another early exclusion criterion was the language; we excluded non-English articles.
+    \item \textbf{Inclusion and exclusion criteria}: The most important criterion for not considering articles in our survey was to exclude those which simply did not belong to the software engineering field. We did not attempt to tighten much the criteria for the exclusion, as we intended to gather as much related material as possible to be filtered out in the next field. Another early exclusion criterion was the language; we excluded non-English articles.
 
-    \item \textbf{Selection procedure}: The selected articles were further analysed by reading their title and abstract. This allowed us to assess the pertinence of the article to the software engineering domain and their relevance to be used as a source for general quality software recommendations, assuming it mentioned software quality attributes. 147 papers remained after this selection step. Although the protocol that we followed ensured that no human bias was introduced, it also prevented some very relevant papers related to Quality from being considered. Four additional articles were added in this step \cite{orviz_set_2017,orviz_fernandez_eosc-synergy_2020,raymond_software_2013,shepherdson_cessda_2019}, after the \textit{sub-group} discussed the issue.
+    \item \textbf{Selection procedure}: After the previous selection, 147 papers remained for further analyses by reading their title and abstract. This allowed us to assess the pertinence of the article to the software engineering domain and their relevance to be used as a source for general quality software recommendations, assuming it mentioned software quality attributes. Although the protocol that we followed ensured that no human bias was introduced, it also prevented some very relevant papers related to Quality from being considered. Four additional articles were added in this step \cite{orviz_set_2017,orviz_fernandez_eosc-synergy_2020,raymond_software_2013,shepherdson_cessda_2019}, after the \textit{sub-group} discussed the issue.
 
-    \item \textbf{Review process}: After the previous selection procedure, 19 relevant articles remained. These are the ones which are finally reviewed in our survey. We performed this step by groups of 2 or 3 reviewers per article, in our \textit{sub-group}.
+    \item \textbf{Review process}: After the previous analysis and selection procedure, 19 relevant articles remained. These are the ones which are finally reviewed in our survey. We performed this step by groups of 2 or 3 reviewers per article, in our \textit{sub-group}.
 \end{enumerate}
 
 The list of relevant articles obtained by this procedure, allowed us to define a list of characteristics and attributes which are presented in the following sections.

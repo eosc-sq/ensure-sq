@@ -28,26 +28,24 @@ Regarding the Task Force \textbf{``Infrastructure for Quality Research Software'
 
 The present document regards the work performed by \textit{sub-group 3} \textbf{Software Quality} in research.
 
-As such, it is deemed important to have a definition of Research Software (\textbf{RS} from here on). Thus, the sub-group has taken the following definition~\cite{gruenpeter_defining_2021}: 
+It is deemed important to have a definition of Research Software (\textbf{RS} from here on). The sub-group has adopted the following definition~\cite{gruenpeter_defining_2021}: 
 
 \textit{``Research Software (RS) is commonly used to refer to software used and/or generated in a research context, including and not limited to scientific, non-scientific, commercial, academic and non-academic research.''}
-
-Another, more thorough definition, comes from the ``Source Codes and Softwares College from the Committee for Open Science'' in France, it encompasses the previous definition:
-
-\textit{``Research software is developed to meet specific scientific needs. It is designed, maintained, and used by scientists (researchers and engineers) and research institutions, possibly on an international scale. It can result from research work as well as support it, notably through publications before/on/around/with the software. It can be formalized in different ways (a platform, a middleware, a workflow or a library, a module or plugin of another software) and thus be in interaction in an ecosystem or on the contrary be more autonomous.''} \footnote{(\url{https://www.ouvrirlascience.fr/research-software-as-a-pillar-of-open-science/}).}
 
 \label{def_rs}
 
 The main objectives of this report are:
 
 \begin{itemize}
-    \item Improve the quality of RS, both from the technical and organizational point of view for RS in general and in particular the software used in the services offered through EOSC.
-    \item Identify Quality Attributes that are appropriate for RS and make recommendations.
+    \item To provide technical and organisational recommendations to improve RS quality based on a thorough review of the literature, in particular the software used in the services offered through EOSC.
+
+    \item Identify Quality Attributes that are appropriate for RS and make recommendations for RS based on a set of such Quality Attributes.
+
 \end{itemize}
 
 \subsection{The Research Software lifecycle}
 
-The Research Software lifecycle has been the work of \textit{sub-group 1} of this taskforce and is reported here~\cite{sg1tf2023}. This document reproduces the diagram show in Figure~\ref{fig:rslifecycle} due to its relevance regarding both the Quality Attributes related to the development phase (center box number 3), the Quality Attributes related to the Software release and management (boxes ``Maintenance'' and ``Deployment'' number 5) and the Quality Attributes related to FAIR for Research Software (box ``Publication'' number 4).
+The Research Software lifecycle has been the work of \textit{sub-group 1} of this Task Force and is reported here~\cite{sg1tf2023}. This document reproduces the diagram show in Figure~\ref{fig:rslifecycle} due to its relevance regarding both the Quality Attributes related to the development phase (center box number 3), the Quality Attributes related to the Software release and management (boxes ``Maintenance'' and ``Deployment'' number 5) and the Quality Attributes related to FAIR for Research Software (box ``Publication'' number 4).
 
 \begin{figure}[h]
     \centering
@@ -58,4 +56,18 @@ The Research Software lifecycle has been the work of \textit{sub-group 1} of thi
 
 \subsection{Document organization}
 
-The structure of the document is as follows. Section~\ref{sec:classification} describes a survey conducted within the sub-group for articles and documents containing Quality Models and corresponding Quality Attributes as well as Quality Characteristics, the attributes are listed in Appendix~\ref{appendix_qa}. In Section~\ref{sec:landscaping}, the RS stacks, RS types and user stories, are identified. This classification is important because the recommendations in Section~\ref{sec:recommendations} for what Software Quality Attributes are more relevant, depend on the stack, type and users or teams in their role as developers, also recommendations are given for software release and management and services/platforms in production. In Section~\ref{sec:perspectives}, the user perspectives are described, i.e., the point of view of developers, users and resource (or service) providers. Section~\ref{sec:metadata} associates Quality Attributes and FAIR principles for RS. Last, the summary and conclusions are drawn in Section~\ref{sec:summary}.
+The structure of the document is as follows:
+
+\begin{itemize}
+    \item Section~\ref{sec:classification} describes a survey conducted within the sub-group. The objective was to search for articles and documents describing Quality Models and corresponding Quality Attributes or Quality Characteristics. The complete list of Quality Attributes are given in Appendix~\ref{appendix_qa}.
+    
+    \item In Section~\ref{sec:landscaping}, the RS stacks, RS types and user stories, are identified. This classification is important for the recommendations in next section.
+
+    \item In Section~\ref{sec:recommendations}, recommendations are given for what Software Quality Attributes are more relevant for RS, depending on the stack, type and users or teams in their role as developers. There are also recommendations for software release and management and for services/platforms in production.
+    
+    \item In Section~\ref{sec:perspectives}, the user perspectives are described, i.e., the point of view of developers, users and resource (or service) providers.
+    
+    \item Section~\ref{sec:metadata} associates Quality Attributes and FAIR principles for RS.
+    
+    \item Last, the summary and conclusions are drawn in Section~\ref{sec:summary}.
+\end{itemize}

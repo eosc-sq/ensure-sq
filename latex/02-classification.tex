@@ -1,4 +1,4 @@
-A significant notion in software engineering is \textit{quality}, understood as a series of desirable particularities that are met in \textit{good} computer programs, meaning that they are well adapted to their purpose, accurate, highly available, or any other property which makes them excellent.
+A significant notion in software engineering is \textit{quality}, understood as a series of desirable particularities that are required for improved computer programs, meaning that they are well adapted to their purpose, accurate, highly available, or any other property which makes them more robust.
 
 Whereas this is a concept which is easy to understand, arriving at a consensus on how to properly define it, is a significantly more complex task. Indeed, the problem can be addressed from plenty of different perspectives, each of them giving more or less importance to some particularities.
 
@@ -6,23 +6,24 @@ It is not the goal of this report to propose any particular definitions, but to 
 
 In Section~\ref{subsect:sqchar} we review what are, according to the literature, the \textit{Quality Characteristics} that can be related to good software. The characteristics can be related to quality from very different points of view (ranging from metrics of the source code to service operability, just as an example). These are classified as \textit{Quality Attributes and Metrics} in Section~\ref{subsec:SW_quality_attributes}.
 
-It's quite important to define the notion of \textbf{Verification and Validation} (\textbf{V\&V}) of the \textit{Quality Attributes and Metrics}, since this is the cornerstone to prove the correctness and user requirements satisfaction of a given Software or service. The following definitions from 610.12-1990 - IEEE Standard Glossary of Software Engineering Terminology~\cite{ieee610} apply:
+It is quite important to define the notions of \textbf{Verification and Validation} (\textbf{V\&V}) of the \textit{Quality Attributes and Metrics}, as well as \textbf{Test}, since this is the cornerstone to prove the correctness and user requirements satisfaction of a given Software or service. The following definitions from 610.12-1990 - IEEE Standard Glossary of Software Engineering Terminology~\cite{ieee610} apply:
 
 \begin{itemize}
     \item Software Validation: The process of evaluating software during or at the end of the development process to determine whether it satisfies specified requirements.
     \item Software Verification: The process of evaluating software to determine whether the products of a given development phase satisfy the conditions imposed at the start of the respective phase.
+    \item Software Test: An activity in which a system or component is executed under specified conditions, the results are observed or recorded, and an evaluation i s made of some aspect of the system or component.
 \end{itemize}
 
 Although reproducibility does not explicitly appear as a characteristic of the software itself in our survey, it is a fundamental requirement for Research Software. See Section~\ref{subsec:defrs} for our definitions and context of \textit{Research Software}. Indeed, the Scientific Method is, after all, based on the possibility of being able to repeat the experiments and refuting them to build up new knowledge. Specifically for Research Software, we need to consider its reproducibility as a characteristic of quality.
 
-The definitions about what is repeatability, reproducibility, and replicability depend much on each research field. Sometimes the concepts of reproducibility and replicability have their meaning swapped with respect to other communities or disciplines.
+The definitions of repeatability, reproducibility, and replicability depend much on each research field. Sometimes the concepts of reproducibility and replicability have their meaning swapped with respect to other communities or disciplines.
 
 Some consensus seems to have been reached in computational sciences after the report \textit{Artefact Review and Badging}\footnote{\url{https://www.acm.org/publications/policies/artifact-review-and-badging-current}} version 1.1 by ACM. The scope of their definitions is intended to be very wide and to cover as many disciplines as possible. They refer, in a generic way, to the \textit{team} and their \textit{experimental setup}.
 
-We shall therefore, use these definitions in this report and put them in the context of computer science with the following meaning:
+We shall use these definitions in this report and put them in the context of computer science with the following meaning:
 
 \begin{itemize}
-    \item \textbf{Repeatability}: Performed with the same team and same experimental setup. In our context, it means that the software can be executed as many times as needed. Researchers should be able to run the program several times until they obtain the required results.
+    \item \textbf{Repeatability}: Performed with the same team and same experimental setup. In our context, it means that the software can be executed as many times as needed. Researchers should be able to run the program several times always obtaining the same results.
     
     \item \textbf{Reproducibility}: Performed by a different team but the same experimental setup. Regarding computing, we could think of two groups of developers which need to obtain results from a program given its source code. If the two groups have exactly the same computer hardware and the same environment, they could simply compile the same source code, obtain the same executable binary code, execute the program, and obtain the same (or equivalent) results when providing the program with the same input data.
 
@@ -142,7 +143,7 @@ We ended up with a list of 25 significant quality characteristics from the three
     \item \textbf{Safety}; degree to which a product or system mitigates the potential personal risk to humans or to system components, in the intended contexts of use~\cite{iso_25010_2011_2017}.
 
     \item \textbf{Scalability}; this characteristic can be seen from the point of view of the system, or the applications. In the first case
-    it's the measure of a system's ability to increase or decrease in performance and cost in response to changes in application and system processing demands. Examples would include how well a hardware system performs when the number of users is increased, how well a database withstands growing numbers of queries, or how well an operating system performs on different classes of hardware. Enterprises that are growing rapidly should pay special attention to scalability when evaluating hardware and software~\cite{gartner_2021}. When referring to algorithms, protocols, or applications it can be defined as being able to efficiently handle a growing demand of work or need of more performance by means of adding more resources to the system on which the software is running. Resources can be added both to single nodes (vertical scalability) and to the system as a whole (horizontal scalability)~\cite{bondi_2000}.
+    it is the measure of a system's ability to increase or decrease in performance and cost in response to changes in application and system processing demands. Examples would include how well a hardware system performs when the number of users is increased, how well a database withstands growing numbers of queries, or how well an operating system performs on different classes of hardware. Enterprises that are growing rapidly should pay special attention to scalability when evaluating hardware and software~\cite{gartner_2021}. When referring to algorithms, protocols, or applications it can be defined as being able to efficiently handle a growing demand of work or need of more performance by means of adding more resources to the system on which the software is running. Resources can be added both to single nodes (vertical scalability) and to the system as a whole (horizontal scalability)~\cite{bondi_2000}.
 
     \item \textbf{Security}; degree to which a product or system protects the information and data it manages (say, stores or transmits) in a way that access is only given to persons or systems with the appropriate level of authorisation they were granted~\cite{iso_25010_2011_2017}. Related to Security we can also find:
     \begin{itemize}

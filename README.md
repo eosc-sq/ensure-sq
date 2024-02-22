@@ -4,7 +4,7 @@ Ensuring Software Quality
 
 List of documents:
 
-* [Articles list](docs/articles.md)
+* [Articles list](docs/list-papers/articles.md)
 
 ## Contributors
 

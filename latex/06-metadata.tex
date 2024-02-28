@@ -81,7 +81,7 @@ Many of the FAIR4RS principles described in Section \ref{subsec:fair4rs}  are ti
 %In this subsection, the relation or link between the FAIR4RS principles and the Quality Attributes
 %show in Appendix \ref{appendix_qa} is represented in the following table:
 
-\begin{table}[ht]
+\begin{table}[h]
 \centering
 \scriptsize
   \begin{tabular}{|p{0.1\linewidth}|p{0.15\linewidth}|p{0.65\linewidth}|} \hline
@@ -89,41 +89,45 @@ Many of the FAIR4RS principles described in Section \ref{subsec:fair4rs}  are ti
     \textbf{FAIR4RS  principle} & \textbf{Quality Attribute} & \textbf{Rationale} \\ \hline
 
     F1 & \makecell{EOSC-SWRelMan-11 \\ EOSC-SWRelMan-13 \\ EOSC-SWRelMan-25} &
-    A codemeta file with metadata of a software component should be appropriately identified and tied to its corresponding software project. A software project package should be uploaded to a public registry. The Codemetadata file should contain the software identifier and its corresponding version Checksums must be used to identify each software binary file uniquely. \\ \hline
+    A metadata file describing a software component should be appropriately identified and tied to its corresponding software project (e.g., on the source code repository). A software project package should be uploaded to a public registry (e.g., everytime there is a new release). The metadata file should contain the software identifier and its corresponding version Checksums must be used to identify each software binary file uniquely. \\ \hline
 
     F1.1 & \makecell{EOSC-SWRelMan-05 \\ EOSC-SWRelMan-33} &
-    Different branches should be used to address code changes with different scope. Each branch should be identified uniquely within a code repository. The documentation associated to a project must have a persistent identifier. \\ \hline
+    Different branches should be used to address code changes with different scope. Each branch should be identified uniquely within a code repository. The documentation associated to a project must have a persistent identifier and linked to/from the metadata describing the software whenever needed (i.e., if the documentation resides  outside the software, each one will have its own persistent identifier). \\ \hline
 
     F1.2 & \makecell{EOSC-SWRelMan-02 \\ EOSC-SWRelMan-04 \\ EOSC-SWRelMan-06 \\ EOSC-SWRelMan-09} &
-    A version control system should exist for the software project code, with a main identified branch where new features are merged. A strategy for transitioning between version releases should be in place. Semantic versioning should be used to uniquely define each code release. \\ \hline
+    A version control system should exist for the software project code, with a main identified branch where new features are merged. A strategy for transitioning between version releases should be in place. Changelogs and/or release notes should be used to keep trace of changes between versions/releases. Semantic versioning should be used to uniquely define each code release. \\ \hline
 
     F2 & \makecell{EOSC-SWRelMan-11 \\ EOSC-SWRelMan-26 \\ EOSC-SWRelMan-29 \\ EOSC-SWRelMan-30 \\ EOSC-SWRelMan-31 \\ EOSC-SWRelMan-32 \\ EOSC-Qual-24} &
-    The software project should contain enough information for a reader to verify its objectives. A Codemeta file or citation file formal file should describe relevant project metadata. Documentation should be used to describe the Research Software component, using version control to track differences between software versions. A README file should be provided describing the project with metadata in a human-readable format (e.g., installation instructions, authors, citation, etc.). \\ \hline
+    The software project should contain enough information for a reader to verify its objectives. A file including information about the authors (aka creators or contributors) should be provided (e.g., citation file) together with a metadata file describing the software project with links to/from the actual software (be aware that information about the project is not necessarily the same as for the software itself). Software project could benefit from a Software Management Plan. Documentation should be used to describe the Research Software component, using version control to track differences between software versions. A README file should be provided describing the project with metadata in a human-readable format (e.g., installation instructions, authors, citation, etc.). \\ \hline
 
-    F3 & EOSC-SWRelMan-11 & A Codemeta file should contain an identifier of the software project it describes. \\ \hline
-    F4 & EOSC-SWRelMan-11 & A Codemeta file should be provided to facilitate metadata propagation when releasing code (e.g. storing the code in Zenodo). \\ \hline
+    F3 & EOSC-SWRelMan-11 & A metadata file should contain an identifier of the software project it describes. \\ \hline
+    F4 & EOSC-SWRelMan-11 & A metadata file should be provided to facilitate metadata propagation when releasing code (e.g. storing the code in Zenodo). \\ \hline
     A1 & & \\ \hline
     A1.1 & EOSC-SWRelMan-01 & The software project should be publicly available online. \\ \hline
-    A1.2 & EOSC-SWTest-18 & An authentication mechanism should be enabled for the target service. \\ \hline
-    A2 & & \\ \hline
+    A1.2 & EOSC-SWTest-18 &
+    An authentication mechanism should be enabled for the target service. Metadata describing the software should include, when necessary, information on how to access the software (e.g., membership, payment, free of access) and complemented with a license (discussed later in this table). \\ \hline
+
+    A2 & EOSC-SWRelMan-13 &
+    Metadata can be made accessible via registries. It is therefore a good idea to register the software in appropriate registries (e.g., some communities will have their own software registries or will suggest one of general purpose). \\ \hline
+
     I1 & \makecell{EOSC-Qual-29 \\ EOSC-SWTest-01} &
     The software component should comply with internationally recognized standards. Code should follow standard best practices. \\ \hline
 
-    I2 & & \\ \hline
+    I2 & EOSC-SWRelMan-11 & Metadata should point to its documentation, tutorials, etc. \\ \hline
     R1 & \makecell{EOSC-SWRelMan-11 \\ EOSC-SWRelMan-29} &
-    A Codemeta file and documentation should describe the software project with accurate, relevant attributes. \\ \hline
+    A metadata file and documentation should describe the software project with accurate, relevant attributes. \\ \hline
 
     R1.1 & \makecell{EOSC-SWRelMan-10 \\ EOSC-SWRelMan-34 \\ EOSC-SrvOps-01 \\ EOSC-SrvOps-02} &
-    A license should be associated with the software project, especially if the project is open source. The documentation of a software project should also provide a license. In case a service is deployed, an ``Acceptable Usage Policy'' and ``Terms of Use'' policy should be clearly defined. \\ \hline
+    A license should be associated with the software project, especially if the project is open source. The documentation of a software project should also provide a license. In case a service is deployed, an “Acceptable Usage Policy” and “Terms of Use” policy should be clearly defined. \\ \hline
 
     R1.2 & \makecell{EOSC-SWRelMan-29 \\ EOSC-SWRelMan-30} &
-    Software documentation should motivate the rationale and organizations behind the development of a software project, as well as related initiatives that may have  been derived from. \\ \hline
+    Software documentation should motivate the rationale and organizations behind the development of a software project, as well as related initiatives that may have been derived from. Funding sources should also be acknowledged. \\ \hline
 
     R2 & \makecell{EOSC-SWTest-25 \\ EOSC-SWRelMan-12} &
     Third party dependencies should be documented and checked for security flaws. A software project should be adequately packaged and installed, containing all the third party dependencies needed for doing so. \\ \hline
 
     R3 & \makecell{EOSC-Qual-29 \\ EOSC-SWRelMan-32} &
-    A software project should comply with internationally adopted standards. Project documentation should be adapted to the domain-relevant community. \\ \hline
+    A software project should comply with internationally adopted standards. Project documentation should be adapted to the domain-relevant community. Metadata should also comply to community standards (e.g., Codemeta, Bioschemas, see more information in section \ref{subsec:schemas}). \\ \hline
 
   \end{tabular}
 \caption{Mapping FAIR4RS to software quality attributes}

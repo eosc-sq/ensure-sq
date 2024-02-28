@@ -13,12 +13,8 @@ Other schemas have been specialized for a given domain. For example, the Softwar
 
 Finally, other community initiatives have opted for a lightweight approach. Codemeta~\cite{Boettigeral2017} aims at creating a minimal metadata schema for Research Software and code. It is based on two types from \url{https://schema.org}~\cite{guha_schemaorg_2016}, namely \href{https://schema.org/SoftwareSourceCode}{SoftwareSourceCode} and \href{https://schema.org/SoftwareApplication}{softwareApplication}. In addition, the Codemeta initiative has aligned metadata schemas from many software registries and repositories\footnote{\url{https://codemeta.github.io/crosswalk/}} making it easier to exchange records between them. Codemeta is one of the recommendations from the Scholarly infrastructures for Research Software~\cite{sirs_2019}, which calls for EU representatives to ``help establish a stable, long-term governance'' for the vocabulary. Two different initiatives have already proposed Codemeta extensions to capture the semantics of software tools. The first one is Bioschemas\footnote{\url{https://bioschemas.org/}}, a collaborative community project aiming at adding structured markup to Life Science websites, which provides a profile (i.e., a recommendation of usage created on top of a schema.org type) for describing \href{https://bioschemas.org/profiles/ComputationalTool}{ComputationalTool}s. The second one is the Software Description Ontology \cite{garijo2019okg}, which extends Codemeta with additional metadata fields to capture executable commands, configuration and limitations of a software component. 
 
-%\dg{there are many other vocabularies for describing software. Some extend schema.org and codemeta. Some other profiles model i/o types. Mention them, and mention that codemeta is the current recommendation that has most community support. Repos are adopting such as InvenioRDM, ASCL for interoperating records. DOAP, all the efforts in codemeta, etc.}
-
 \subsection{The FAIR principles for Research Software (FAIR4RS)}
 \label{subsec:fair4rs}
-
-%\dg{maybe move this for an annex? I would like to elaborate on the recommendations that are also being pushed by the community. But that the relationship with quality is not always one to one. Also, there are existing recommendations and tools to help assess the fairness. But as for quality, we do this in the next section. Emphasize the importance of FAIR, and how it is shaping part of the EOSC ecosystem.}
 
 After the FAIR guiding principles for data were proposed \cite{wilkinson_fair_2016}, the scientific community discussed how to adapt them to different research artefacts. The FAIR Principles for Research Software Working Group\footnote{\url{https://www.rd-alliance.org/groups/fair-research-software-fair4rs-wg}} was created in September 2021 by the Research Data Alliance to adapt the FAIR principles to Research Software. As a result \cite{chue_hong_neil_p_2022_6623556} summarizes the community discussion, defining the FAIR4RS principles as follows:
 
@@ -77,14 +73,10 @@ upon, or incorporated into other software).}
 
 Many of the FAIR4RS principles described in Section \ref{subsec:fair4rs}  are tightly coupled with good practices for quality software and code. Table \ref{tab:cfs} aligns each of the FAIR4RS principles with the Software Quality Attributes shown in Appendix \ref{appendix_qa}. For each alignment we provide a brief explanation justifying the rationale of our decision. 
 
-%, suggesting which metadata fields from Codemeta (if any) may be relevant for addressing that quality attribute. 
-%In this subsection, the relation or link between the FAIR4RS principles and the Quality Attributes
-%show in Appendix \ref{appendix_qa} is represented in the following table:
-
 \begin{table}[h]
 \centering
-\scriptsize
-  \begin{tabular}{|p{0.1\linewidth}|p{0.15\linewidth}|p{0.65\linewidth}|} \hline
+\tiny
+  \begin{tabular}{|p{0.1\linewidth}|p{0.15\linewidth}|p{0.7\linewidth}|} \hline
 
     \textbf{FAIR4RS  principle} & \textbf{Quality Attribute} & \textbf{Rationale} \\ \hline
 
@@ -133,39 +125,3 @@ Many of the FAIR4RS principles described in Section \ref{subsec:fair4rs}  are ti
 \caption{Mapping FAIR4RS to software quality attributes}
 \label{tab:cfs}
 \end{table}
-
-%\textbf{F1} EOSC-SWRelMan-11, EOSC-SWRelMan-25
-
-%\textbf{F1.1} EOSC-SWRelMan-05, EOSC-SWRelMan-33
-
-%\textbf{F1.2} EOSC-SWRelMan-02, EOSC-SWRelMan-04, EOSC-SWRelMan-09
-
-%\textbf{F2} EOSC-SWRelMan-11, EOSC-Qual-24, EOSC-SWRelMan-26, EOSC-SWRelMan-29, EOSC-SWRelMan-30
-
-%\textbf{F3} EOSC-SWRelMan-11
-
-%\textbf{F4} EOSC-SWRelMan-11
-
-
-%\textbf{A1} maybe EOSC-SWRelMan-01
-
-%\textbf{A1.1} maybe EOSC-SWRelMan-01
-
-%\textbf{A1.2} EOSC-SWTest-18
-
-%\textbf{A2}
-
-%\textbf{I1} EOSC-Qual-29
-
-%\textbf{I2} maybe EOSC-SWTest-16
-
-%\textbf{R1}
-
-%\textbf{R1.1} EOSC-SWRelMan-10, EOSC-SWRelMan-34, EOSC-SrvOps-01, EOSC-SrvOps-02
-
-%\textbf{R1.2} EOSC-Qual-27, EOSC-SWTest-20
-
-%\textbf{R2}
-
-%\textbf{R3} EOSC-Qual-29, EOSC-SWRelMan-32
-
